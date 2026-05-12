@@ -1,0 +1,458 @@
+[
+  {
+    "asignatura": "Fundamentos de programación",
+    "fuentes": [
+      {
+        "fuente": "PROMETEO",
+        "total_preguntas": 21,
+        "unidades": [
+          {
+            "unidad": "Test unidad 01",
+            "total": 9,
+            "preguntas": [
+  {
+    "id": "f1p01",
+    "pregunta": "Cuando hablamos de 'paradigma de programación', ¿a qué nos estamos refiriendo realmente?",
+    "opciones": {
+      "A": "A la versión del lenguaje que estamos usando",
+      "B": "A la forma de pensar y estructurar soluciones en código, incluyendo cómo modelamos el estado",
+      "C": "A la cantidad de librerías que tiene un lenguaje",
+      "D": "A las convenciones de estilo (sangrías, nombres de variables, etc.)"
+    },
+    "correcta": "B",
+    "justificacion": "Un paradigma es un marco conceptual que determina cómo se estructura el código y cómo se razona sobre la lógica del programa."
+  },
+  {
+    "id": "f1p02",
+    "pregunta": "¿Cuál de las siguientes descripciones encaja mejor con el paradigma imperativo?",
+    "opciones": {
+      "A": "Describes el resultado que quieres y el motor decide cómo obtenerlo",
+      "B": "Defines reglas y hechos, y un motor de inferencia deduce las respuestas",
+      "C": "Te centras en una secuencia de instrucciones que modifican un estado mediante variables y estructuras",
+      "D": "Solo utilizas funciones matemáticas sin efectos secundarios"
+    },
+    "correcta": "C",
+    "justificacion": "El paradigma imperativo se basa en dar órdenes explícitas paso a paso que cambian el estado del programa (variables)."
+  },
+  {
+    "id": "f1p03",
+    "pregunta": "¿Por qué se dice que lenguajes como SQL se consideran declarativos?",
+    "opciones": {
+      "A": "Porque obligan a declarar todas las variables al principio",
+      "B": "Porque describen 'qué' se quiere obtener, dejando que el motor decida el 'cómo'",
+      "C": "Porque no permiten trabajar con bases de datos reales",
+      "D": "Porque siempre son más rápidos que el enfoque imperativo"
+    },
+    "correcta": "B",
+    "justificacion": "En el enfoque declarativo se especifica el resultado deseado y el sistema subyacente gestiona la ejecución técnica."
+  },
+  {
+    "id": "f1p06",
+    "pregunta": "¿Cuál es el propósito principal de la notación Big-O en el desarrollo de software?",
+    "opciones": {
+      "A": "Medir el tiempo exacto en segundos que tarda un programa",
+      "B": "Clasificar algoritmos según cómo crece su requerimiento de tiempo o espacio al aumentar la entrada",
+      "C": "Contar cuántas líneas de código tiene un archivo",
+      "D": "Determinar si un programa tiene errores de sintaxis"
+    },
+    "correcta": "B",
+    "justificacion": "Big-O analiza la eficiencia teórica y escalabilidad de un algoritmo en función del tamaño de los datos de entrada."
+  },
+  {
+    "id": "f1p07",
+    "pregunta": "¿Qué complejidad temporal representa típicamente recorrer una lista completa con un bucle simple?",
+    "opciones": {
+      "A": "O(1) - Constante",
+      "B": "O(n) - Lineal",
+      "C": "O(n²) - Cuadrática",
+      "D": "O(log n) - Logarítmica"
+    },
+    "correcta": "B",
+    "justificacion": "Es lineal O(n) porque el tiempo de ejecución crece proporcionalmente al número de elementos procesados."
+  },
+  {
+    "id": "f1p09",
+    "pregunta": "En el contexto de código limpio, ¿qué significa 'refactorizar'?",
+    "opciones": {
+      "A": "Añadir nuevas funcionalidades al programa",
+      "B": "Mejorar la estructura interna del código sin cambiar su comportamiento externo",
+      "C": "Reescribir el programa desde cero en un lenguaje diferente",
+      "D": "Corregir errores críticos que impiden la compilación"
+    },
+    "correcta": "B",
+    "justificacion": "Refactorizar busca aumentar la legibilidad y mantenibilidad del código manteniendo su funcionalidad intacta."
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 02",
+            "total": 17,
+            "preguntas": [
+  {
+    "id": "f2p01",
+    "pregunta": "En Java, ¿cuál es la diferencia principal entre un tipo primitivo (ej. int) y su clase envoltorio (Integer)?",
+    "opciones": {
+      "A": "No hay diferencia real, solo cambian las mayúsculas",
+      "B": "El primitivo guarda el valor directamente y es más ligero, mientras que el wrapper es un objeto en el heap con métodos y posibilidad de ser null",
+      "C": "El primitivo solo se usa en proyectos pequeños",
+      "D": "El wrapper siempre es más rápido que el primitivo"
+    },
+    "correcta": "B",
+    "justificacion": "Los primitivos almacenan valores directos, mientras que los wrappers son objetos que ofrecen funcionalidades adicionales pero con mayor coste de memoria."
+  },
+  {
+    "id": "f2p03",
+    "pregunta": "¿Qué afirmación describe mejor el autoboxing y el unboxing en Java?",
+    "opciones": {
+      "A": "Autoboxing es convertir un String en un int",
+      "B": "Autoboxing convierte automáticamente un primitivo en su wrapper, y unboxing lo contrario",
+      "C": "Ambos procesos son gratuitos en términos de rendimiento",
+      "D": "Solo existen para los tipos int e Integer"
+    },
+    "correcta": "B",
+    "justificacion": "Java realiza estas conversiones de forma automática para facilitar el uso de colecciones que requieren objetos."
+  },
+  {
+    "id": "f2p06",
+    "pregunta": "En la gestión de memoria de Java, ¿qué se almacena principalmente en el 'Stack'?",
+    "opciones": {
+      "A": "Todos los objetos creados con 'new'",
+      "B": "Variables locales y referencias a objetos",
+      "C": "El código fuente del programa",
+      "D": "Las imágenes y archivos externos"
+    },
+    "correcta": "B",
+    "justificacion": "El Stack gestiona la ejecución de hilos y almacena variables de ámbito local, mientras que los objetos residen en el Heap."
+  },
+  {
+    "id": "f2p07",
+    "pregunta": "¿Cuál es la función principal del Garbage Collector (GC)?",
+    "opciones": {
+      "A": "Detectar errores de sintaxis en el código",
+      "B": "Identificar y liberar la memoria ocupada por objetos en el heap que ya no tienen referencias activas",
+      "C": "Aumentar la velocidad de la CPU",
+      "D": "Organizar los archivos en el disco duro"
+    },
+    "correcta": "B",
+    "justificacion": "El GC automatiza la gestión de memoria eliminando objetos inalcanzables para evitar fugas de memoria (memory leaks)."
+  },
+  {
+    "id": "f2p10",
+    "pregunta": "¿Cuál es el principal riesgo de hacer una conversión explícita (casting) de double a int?",
+    "opciones": {
+      "A": "Que el programa no compile",
+      "B": "Que se produzca un redondeo perfecto",
+      "C": "Que se pierda la parte decimal (truncamiento) y se pueda producir overflow",
+      "D": "Que Java lo convierta automáticamente a long"
+    },
+    "correcta": "C",
+    "justificacion": "El casting a entero elimina los decimales sin redondear, lo que puede alterar significativamente el valor original."
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 03",
+            "total": 10,
+            "preguntas": [
+  {
+    "id": "f3p01",
+    "pregunta": "¿Cuál es la diferencia principal entre el switch clásico y el switch expression (moderno) en Java?",
+    "opciones": {
+      "A": "El moderno solo cambia la palabra clave",
+      "B": "El moderno permite devolver valores directamente, usa '->' y elimina la necesidad de 'break'",
+      "C": "El moderno solo funciona con enteros",
+      "D": "El moderno es más lento"
+    },
+    "correcta": "B",
+    "justificacion": "Las expresiones switch mejoran la seguridad al evitar el 'fall-through' accidental y permitir la asignación directa de resultados."
+  },
+  {
+    "id": "f3p02",
+    "pregunta": "¿Por qué se consideran buena práctica los 'enum' cuando se combinan con switch?",
+    "opciones": {
+      "A": "Porque ocupan menos memoria",
+      "B": "Porque evitan errores tipográficos y ayudan al compilador a detectar casos no manejados",
+      "C": "Porque obligan a que los métodos sean estáticos",
+      "D": "Porque solo sirven para proyectos pequeños"
+    },
+    "correcta": "B",
+    "justificacion": "El uso de enums proporciona seguridad de tipos y permite que el IDE/compilador verifique la exhaustividad del switch."
+  },
+  {
+    "id": "f3p04",
+    "pregunta": "¿Cuál es la relación correcta entre break, continue y return?",
+    "opciones": {
+      "A": "Break salta una iteración, continue sale del bucle",
+      "B": "Break sale del bucle actual, continue salta a la siguiente iteración y return finaliza el método",
+      "C": "Todos hacen lo mismo",
+      "D": "Return solo se usa en bucles while"
+    },
+    "correcta": "B",
+    "justificacion": "Cada palabra clave tiene un impacto distinto en el flujo: break rompe el ciclo, continue lo reinicia y return abandona la función."
+  },
+  {
+    "id": "f3p06",
+    "pregunta": "¿A qué se refiere el término 'código espagueti'?",
+    "opciones": {
+      "A": "Código escrito en Python",
+      "B": "Código con anidación excesiva y lógica enredada, difícil de mantener",
+      "C": "Código que utiliza muchas librerías externas",
+      "D": "Código optimizado para alto rendimiento"
+    },
+    "correcta": "B",
+    "justificacion": "Se refiere a estructuras de control mal organizadas que dificultan seguir el hilo de ejecución del programa."
+  },
+  {
+    "id": "f3p09",
+    "pregunta": "¿Qué ventaja aporta una Máquina de Estados Finitos (FSM) frente a múltiples booleanos?",
+    "opciones": {
+      "A": "Es más rápida de escribir",
+      "B": "Garantiza un único estado válido, evitando combinaciones lógicas imposibles",
+      "C": "Permite usar menos memoria RAM",
+      "D": "No requiere el uso de clases"
+    },
+    "correcta": "B",
+    "justificacion": "Una FSM modela transiciones claras, asegurando que el sistema no entre en estados inconsistentes o contradictorios."
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 04",
+            "total": 10,
+            "preguntas": [
+  {
+    "id": "f4p01",
+    "pregunta": "En Java, cuando pasamos un objeto como parámetro a un método, ¿qué se copia realmente?",
+    "opciones": {
+      "A": "Se copia el objeto completo con todos sus atributos",
+      "B": "Se copia la referencia (dirección de memoria) al objeto",
+      "C": "Se crea un nuevo objeto idéntico al original",
+      "D": "Se pasa directamente el objeto sin copiar nada"
+    },
+    "correcta": "B",
+    "justificacion": "En Java todo se pasa por valor; en el caso de objetos, el 'valor' que se copia es la dirección de memoria (referencia)."
+  },
+  {
+    "id": "f4p02",
+    "pregunta": "Si dentro de un método modificamos un atributo de un objeto recibido como parámetro, ¿qué ocurre fuera del método?",
+    "opciones": {
+      "A": "El objeto original no se ve afectado",
+      "B": "El objeto original refleja los cambios realizados",
+      "C": "Se crea una copia del objeto con los cambios",
+      "D": "El método genera un error de compilación"
+    },
+    "correcta": "B",
+    "justificacion": "Como el método trabaja sobre la misma referencia de memoria, los cambios en el estado interno del objeto son visibles globalmente."
+  },
+  {
+    "id": "f4p03",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la sobrecarga de métodos (overloading) es correcta?",
+    "opciones": {
+      "A": "Depende únicamente del tipo de retorno del método",
+      "B": "Permite tener varios métodos con el mismo nombre pero diferente firma (parámetros)",
+      "C": "Se resuelve en tiempo de ejecución (runtime)",
+      "D": "Solo se puede aplicar a constructores"
+    },
+    "correcta": "B",
+    "justificacion": "La sobrecarga permite reutilizar nombres de métodos siempre que varíen el número, tipo u orden de sus parámetros."
+  },
+  {
+    "id": "f4p05",
+    "pregunta": "En modularización, ¿qué significa el principio de 'alta cohesión'?",
+    "opciones": {
+      "A": "Que los módulos dependan mucho unos de otros",
+      "B": "Que cada módulo o método realice una única tarea bien definida",
+      "C": "Que todo el código esté en un solo archivo",
+      "D": "Que el programa sea capaz de ejecutarse en varios servidores"
+    },
+    "correcta": "B",
+    "justificacion": "La alta cohesión implica que los elementos de un módulo están estrechamente relacionados en cuanto a su propósito."
+  },
+  {
+    "id": "f4p07",
+    "pregunta": "¿Cuál es la característica principal de los métodos estáticos (static)?",
+    "opciones": {
+      "A": "Solo pueden ser privados",
+      "B": "No cambian su valor nunca",
+      "C": "Pertenecen a la clase y se invocan sin necesidad de crear una instancia u objeto",
+      "D": "Solo se ejecutan una vez al iniciar el programa"
+    },
+    "correcta": "C",
+    "justificacion": "Los métodos estáticos pueden llamarse usando el nombre de la clase, ya que no dependen del estado de un objeto concreto."
+  },
+  {
+    "id": "f4p09",
+    "pregunta": "En Javadoc, ¿para qué sirve la etiqueta @param?",
+    "opciones": {
+      "A": "Para definir el autor del código",
+      "B": "Para documentar cada parámetro de entrada de un método, explicando su propósito",
+      "C": "Para indicar el tipo de retorno de la función",
+      "D": "Para declarar una variable global"
+    },
+    "correcta": "B",
+    "justificacion": "@param es la etiqueta estándar para describir qué información recibe el método y qué representan sus parámetros."
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 05",
+            "total": 10,
+            "preguntas": [
+  {
+    "id": "f5p01",
+    "pregunta": "Al comparar arrays y colecciones en Java, ¿cuál es la principal diferencia estructural?",
+    "opciones": {
+      "A": "Los arrays son dinámicos y las colecciones tienen tamaño fijo",
+      "B": "Los arrays tienen tamaño fijo y memoria contigua con acceso O(1), mientras que las colecciones son dinámicas y pueden crecer según necesidad",
+      "C": "Ambos tienen exactamente el mismo rendimiento y características",
+      "D": "Las colecciones solo pueden almacenar tipos primitivos"
+    },
+    "correcta": "B",
+    "justificacion": "Los arrays se reservan en bloques contiguos de memoria con un tamaño inmutable, mientras que las colecciones gestionan la memoria de forma flexible."
+  },
+  {
+    "id": "f5p03",
+    "pregunta": "Respecto al bucle foreach y al Iterator, ¿qué diferencia clave los distingue al modificar colecciones?",
+    "opciones": {
+      "A": "Foreach permite eliminar elementos de forma segura, Iterator no",
+      "B": "Iterator permite eliminar elementos con remove() de forma segura, mientras que foreach genera ConcurrentModificationException",
+      "C": "Ambos permiten exactamente las mismas operaciones de modificación",
+      "D": "Ninguno de los dos puede recorrer colecciones, solo arrays"
+    },
+    "correcta": "B",
+    "justificacion": "El Iterator mantiene el control del estado de la colección, permitiendo borrados durante el recorrido que el foreach no soporta."
+  },
+  {
+    "id": "f5p05",
+    "pregunta": "¿Qué es la clase 'Collections' (en plural) en Java?",
+    "opciones": {
+      "A": "La interfaz base de todas las listas",
+      "B": "Una clase con métodos estáticos utilitarios (sort, binarySearch, reverse, etc.) que operan sobre colecciones",
+      "C": "Un tipo de array moderno",
+      "D": "Una base de datos integrada en Java"
+    },
+    "correcta": "B",
+    "justificacion": "Collections es una clase de utilidad que proporciona algoritmos polimórficos para manipular o buscar en colecciones."
+  },
+  {
+    "id": "f5p06",
+    "pregunta": "¿Cuál es un requisito indispensable para usar el método Collections.binarySearch()?",
+    "opciones": {
+      "A": "Que la lista esté vacía",
+      "B": "Que la lista esté ordenada previamente",
+      "C": "Que la lista contenga solo números",
+      "D": "Que la lista sea de tipo LinkedList"
+    },
+    "correcta": "B",
+    "justificacion": "La búsqueda binaria asume que los datos están ordenados; de lo contrario, el algoritmo no puede descartar mitades y falla."
+  },
+  {
+    "id": "f5p07",
+    "pregunta": "¿Cómo logra un HashMap obtener un valor de forma casi instantánea (O(1) promedio)?",
+    "opciones": {
+      "A": "Recorriendo toda la lista hasta encontrar la clave",
+      "B": "Convirtiendo las claves en índices mediante una función hash",
+      "C": "Almacenando los datos en archivos de texto",
+      "D": "Ordenando los datos cada vez que se inserta uno nuevo"
+    },
+    "correcta": "B",
+    "justificacion": "El hashing permite calcular directamente la posición de memoria del valor a partir de la clave, evitando búsquedas secuenciales."
+  },
+  {
+    "id": "f5p09",
+    "pregunta": "¿Por qué es crítico que una clase implemente correctamente hashCode() y equals() para usarse en un HashMap?",
+    "opciones": {
+      "A": "Solo para que el código sea más bonito",
+      "B": "Porque HashMap usa hashCode() para localizar el bucket y equals() para distinguir entre claves en caso de colisión",
+      "C": "Solo afectan al rendimiento, no a la corrección del programa",
+      "D": "Porque equals() se usa para ordenar las claves alfabéticamente"
+    },
+    "correcta": "B",
+    "justificacion": "Sin estos métodos, el HashMap no puede identificar de forma única los objetos, lo que provoca la pérdida de datos o duplicados."
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 06",
+            "total": 10,
+            "preguntas": [
+  {
+    "id": "f6p01",
+    "pregunta": "¿Qué es la recursividad en programación?",
+    "opciones": {
+      "A": "Un tipo de bucle que se repite un número fijo de veces",
+      "B": "Una técnica donde una función se llama a sí misma para resolver un problema dividiéndolo en versiones más simples",
+      "C": "Un método para ordenar arrays de forma automática",
+      "D": "Una estructura de datos similar a las listas enlazadas"
+    },
+    "correcta": "B",
+    "justificacion": "La recursividad se basa en el principio de 'divide y vencerás', donde un problema se define en términos de una versión más pequeña de sí mismo."
+  },
+  {
+    "id": "f6p02",
+    "pregunta": "¿Cuáles son los dos elementos esenciales que toda función recursiva debe tener?",
+    "opciones": {
+      "A": "Bucle for y bucle while",
+      "B": "Entrada y salida",
+      "C": "Caso base y llamada recursiva",
+      "D": "Array y lista"
+    },
+    "correcta": "C",
+    "justificacion": "El caso base detiene la ejecución y la llamada recursiva permite avanzar hacia la solución."
+  },
+  {
+    "id": "f6p03",
+    "pregunta": "¿Qué ocurre si una función recursiva no tiene un caso base correctamente definido?",
+    "opciones": {
+      "A": "El programa se ejecuta más rápido",
+      "B": "Se produce un bucle infinito que provoca un StackOverflowError",
+      "C": "Java optimiza automáticamente la función",
+      "D": "La función devuelve siempre el valor 0"
+    },
+    "correcta": "B",
+    "justificacion": "Sin un punto de parada, la pila de llamadas (stack) se llena de marcos de ejecución hasta agotar la memoria asignada."
+  },
+  {
+    "id": "f6p04",
+    "pregunta": "¿Qué estructura de memoria utiliza Java para gestionar las llamadas recursivas?",
+    "opciones": {
+      "A": "El heap (montículo)",
+      "B": "La pila de llamadas (call stack) con comportamiento LIFO",
+      "C": "Una cola FIFO",
+      "D": "El registro de variables globales"
+    },
+    "correcta": "B",
+    "justificacion": "Cada llamada se apila (push) y se desapila (pop) siguiendo una estructura de 'Último en entrar, Primero en salir'."
+  },
+  {
+    "id": "f6p07",
+    "pregunta": "¿En qué escenario es más natural y legible usar recursión en lugar de iteración?",
+    "opciones": {
+      "A": "Para sumar los números de un array simple",
+      "B": "Para recorrer estructuras jerárquicas como árboles de directorios o documentos XML/JSON",
+      "C": "Para imprimir una lista de 10 elementos",
+      "D": "Para realizar operaciones matemáticas básicas como una resta"
+    },
+    "correcta": "B",
+    "justificacion": "La naturaleza recursiva de los árboles (un nodo es padre de otros sub-árboles) encaja perfectamente con algoritmos recursivos."
+  },
+  {
+    "id": "f6p09",
+    "pregunta": "¿Qué es la 'memoización' en el contexto de algoritmos recursivos?",
+    "opciones": {
+      "A": "Borrar la memoria después de cada llamada",
+      "B": "Almacenar resultados de cálculos costosos para reutilizarlos y no tener que recalcularlos",
+      "C": "Limitar el número de variables globales",
+      "D": "Convertir el código recursivo a un bucle for"
+    },
+    "correcta": "B",
+    "justificacion": "La memoización es una técnica de optimización que reduce drásticamente la complejidad temporal en problemas como la serie de Fibonacci."
+  }
+]
+          }
+          
+        ]
+      }
+    ]
+  }     
+]

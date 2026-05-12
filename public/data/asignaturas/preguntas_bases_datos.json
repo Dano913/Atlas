@@ -1,0 +1,620 @@
+[
+  {
+    "asignatura": "Bases de datos",
+    "fuentes": [
+      {
+        "fuente": "PROMETEO",
+        "total_preguntas": 21,
+        "unidades": [
+          {
+            "unidad": "Test unidad 01",
+            "total": 11,
+            "preguntas": [
+  {
+    "id": "db-p01",
+    "pregunta": "¿Por qué los sistemas basados en archivos tradicionales generaban problemas en la gestión de la información?",
+    "opciones": {
+      "A": "Porque eran demasiado rápidos",
+      "B": "Porque impedían el acceso a los datos",
+      "C": "Porque producían redundancia y falta de coherencia entre los datos",
+      "D": "Porque no permitían almacenar información"
+    },
+    "correcta": "C",
+    "justificacion": "Los sistemas de archivos tradicionales a menudo almacenaban los mismos datos en múltiples lugares, lo que llevaba a inconsistencias cuando se actualizaba la información en un lugar pero no en otros."
+  },
+  {
+    "id": "db-p02",
+    "pregunta": "¿Cuál es la principal función de un Sistema Gestor de Bases de Datos (SGBD)?",
+    "opciones": {
+      "A": "Ejecutar programas",
+      "B": "Actuar como intermediario entre usuarios y datos, gestionando su almacenamiento y acceso",
+      "C": "Crear sistemas operativos",
+      "D": "Eliminar información automáticamente"
+    },
+    "correcta": "B",
+    "justificacion": "Un SGBD es el software que permite a los usuarios definir, crear, mantener y controlar el acceso a la base de datos."
+  },
+  {
+    "id": "db-p03",
+    "pregunta": "En el diseño de bases de datos, ¿por qué es importante separar los datos de las aplicaciones que los utilizan?",
+    "opciones": {
+      "A": "Para reducir el tamaño del software",
+      "B": "Para mejorar la independencia y facilitar cambios sin afectar a las aplicaciones",
+      "C": "Para eliminar el uso de SQL",
+      "D": "Para evitar errores de compilación"
+    },
+    "correcta": "B",
+    "justificacion": "La independencia de datos permite modificar la estructura de almacenamiento o la estrategia de acceso sin tener que cambiar los programas de aplicación."
+  },
+  {
+    "id": "db-p04",
+    "pregunta": "En un modelo Entidad-Relación, ¿qué representa una entidad y por qué es fundamental en el diseño?",
+    "opciones": {
+      "A": "Un tipo de dato",
+      "B": "Un objeto del mundo real sobre el que queremos almacenar información",
+      "C": "Una relación entre tablas",
+      "D": "Un atributo"
+    },
+    "correcta": "B",
+    "justificacion": "Las entidades son los bloques básicos del modelo E-R y representan cosas u objetos (físicos o abstractos) que son relevantes para el sistema."
+  },
+  {
+    "id": "db-p05",
+    "pregunta": "¿Qué diferencia existe entre una entidad y un atributo dentro de un modelo E-R?",
+    "opciones": {
+      "A": "No hay diferencia",
+      "B": "La entidad es un objeto y el atributo es una característica de ese objeto",
+      "C": "El atributo es más importante",
+      "D": "La entidad es una tabla"
+    },
+    "correcta": "B",
+    "justificacion": "Los atributos describen las propiedades de las entidades (por ejemplo, el nombre y la edad son atributos de la entidad Persona)."
+  },
+  {
+    "id": "db-p06",
+    "pregunta": "En un diagrama E-R, ¿por qué es importante definir correctamente la cardinalidad de las relaciones?",
+    "opciones": {
+      "A": "Para reducir el número de tablas",
+      "B": "Porque determina cómo se relacionan los datos en la base de datos final",
+      "C": "Porque elimina atributos",
+      "D": "Porque evita usar claves"
+    },
+    "correcta": "B",
+    "justificacion": "La cardinalidad expresa el número de entidades a las que otra entidad puede estar asociada mediante una relación (1:1, 1:N, N:M)."
+  },
+  {
+    "id": "db-p07",
+    "pregunta": "¿Por qué la clave primaria es un elemento fundamental en una tabla?",
+    "opciones": {
+      "A": "Porque reduce el tamaño",
+      "B": "Porque identifica de forma única cada registro",
+      "C": "Porque elimina errores automáticamente",
+      "D": "Porque mejora el diseño visual"
+    },
+    "correcta": "B",
+    "justificacion": "La clave primaria garantiza que no haya dos filas iguales en una tabla y permite referenciar registros de forma inequívoca."
+  },
+  {
+    "id": "db-p08",
+    "pregunta": "¿Qué papel desempeñan las claves foráneas en una base de datos relacional?",
+    "opciones": {
+      "A": "Crear tablas",
+      "B": "Relacionar tablas entre sí",
+      "C": "Eliminar datos",
+      "D": "Validar código"
+    },
+    "correcta": "B",
+    "justificacion": "Una clave foránea es un campo en una tabla que apunta a la clave primaria de otra tabla, estableciendo un vínculo entre ambas."
+  },
+  {
+    "id": "db-p09",
+    "pregunta": "¿Cómo se implementa una relación N:M en un modelo relacional?",
+    "opciones": {
+      "A": "Eliminándola",
+      "B": "Creando una tabla intermedia con claves foráneas",
+      "C": "Duplicando tablas",
+      "D": "Ignorándola"
+    },
+    "correcta": "B",
+    "justificacion": "Las relaciones muchos-a-muchos se resuelven creando una tabla asociativa que contiene las claves primarias de las dos tablas relacionadas."
+  },
+  {
+    "id": "db-p10",
+    "pregunta": "¿Cuál es el objetivo principal de la normalización en bases de datos?",
+    "opciones": {
+      "A": "Aumentar el número de tablas",
+      "B": "Reducir redundancia y mejorar integridad",
+      "C": "Reducir código",
+      "D": "Eliminar relaciones"
+    },
+    "correcta": "B",
+    "justificacion": "La normalización organiza los datos para minimizar la duplicidad y asegurar que las dependencias de datos tengan sentido lógico."
+  },
+  {
+    "id": "db-p11",
+    "pregunta": "¿Qué caracteriza a la Primera Forma Normal (1FN)?",
+    "opciones": {
+      "A": "Tablas grandes",
+      "B": "Valores atómicos",
+      "C": "Claves compuestas",
+      "D": "Relaciones"
+    },
+    "correcta": "B",
+    "justificacion": "La 1FN exige que cada columna contenga valores atómicos (indivisibles) y que no haya grupos repetidos."
+  },
+  {
+    "id": "db-p12",
+    "pregunta": "¿Qué problema elimina la Segunda Forma Normal (2FN)?",
+    "opciones": {
+      "A": "Redundancia total",
+      "B": "Dependencias parciales",
+      "C": "Relaciones",
+      "D": "Claves"
+    },
+    "correcta": "B",
+    "justificacion": "La 2FN requiere estar en 1FN y que todos los atributos no clave dependan de la clave primaria completa, no solo de una parte de ella."
+  },
+  {
+    "id": "db-p13",
+    "pregunta": "¿Qué son las dependencias transitivas que elimina la 3FN?",
+    "opciones": {
+      "A": "Dependencias directas",
+      "B": "Dependencias indirectas entre atributos no clave",
+      "C": "Claves",
+      "D": "Relaciones"
+    },
+    "correcta": "B",
+    "justificacion": "La 3FN elimina situaciones donde un atributo no clave depende de otro atributo no clave en lugar de depender directamente de la clave primaria."
+  },
+  {
+    "id": "db-p14",
+    "pregunta": "¿Qué tipo de lenguaje es SQL y qué implica esto?",
+    "opciones": {
+      "A": "Imperativo",
+      "B": "Declarativo",
+      "C": "Binario",
+      "D": "Compilado"
+    },
+    "correcta": "B",
+    "justificacion": "SQL es declarativo porque el usuario especifica 'qué' datos quiere obtener, no 'cómo' debe el sistema proceder para encontrarlos."
+  },
+  {
+    "id": "db-p15",
+    "pregunta": "¿Qué diferencia hay entre DDL y DML en SQL?",
+    "opciones": {
+      "A": "Ninguna",
+      "B": "DDL define estructura y DML manipula datos",
+      "C": "DML crea tablas",
+      "D": "DDL elimina datos"
+    },
+    "correcta": "B",
+    "justificacion": "DDL (Data Definition Language) se usa para crear/alterar tablas, y DML (Data Manipulation Language) para insertar, consultar o actualizar registros."
+  },
+  {
+    "id": "db-p16",
+    "pregunta": "¿Por qué es importante definir correctamente los tipos de datos en SQL?",
+    "opciones": {
+      "A": "Para decorar",
+      "B": "Para evitar errores y optimizar almacenamiento",
+      "C": "Para compilar",
+      "D": "Para ejecutar"
+    },
+    "correcta": "B",
+    "justificacion": "Elegir el tipo de dato adecuado (INT, VARCHAR, DATE, etc.) asegura la integridad de los datos y hace que la base de datos sea más eficiente."
+  },
+  {
+    "id": "db-p17",
+    "pregunta": "¿Qué garantiza la restricción NOT NULL?",
+    "opciones": {
+      "A": "Valores únicos",
+      "B": "Campo obligatorio",
+      "C": "Relación",
+      "D": "Eliminación"
+    },
+    "correcta": "B",
+    "justificacion": "La restricción NOT NULL impide que se inserten valores nulos en una columna, obligando a que siempre tenga un valor."
+  },
+  {
+    "id": "db-p18",
+    "pregunta": "¿Por qué UNIQUE evita errores en una base de datos?",
+    "opciones": {
+      "A": "Porque elimina datos",
+      "B": "Porque evita duplicados",
+      "C": "Porque crea tablas",
+      "D": "Porque valida código"
+    },
+    "correcta": "B",
+    "justificacion": "La restricción UNIQUE asegura que todos los valores de una columna sean diferentes entre sí, evitando duplicidad de información sensible."
+  },
+  {
+    "id": "db-p19",
+    "pregunta": "¿Qué función tiene la restricción CHECK en SQL?",
+    "opciones": {
+      "A": "Validar reglas o condiciones sobre los datos",
+      "B": "Crear tablas",
+      "C": "Eliminar datos",
+      "D": "Insertar datos"
+    },
+    "correcta": "A",
+    "justificacion": "CHECK permite especificar una condición que cada fila de la tabla debe cumplir (por ejemplo, que la edad sea mayor de 18)."
+  },
+  {
+    "id": "db-p20",
+    "pregunta": "¿Qué representa una fila dentro de una tabla relacional?",
+    "opciones": {
+      "A": "Columna",
+      "B": "Registro",
+      "C": "Tabla",
+      "D": "Clave"
+    },
+    "correcta": "B",
+    "justificacion": "En el modelo relacional, una fila (o tupla) representa un registro individual que contiene los datos de una instancia específica de la entidad."
+  },
+  {
+    "id": "db-dec-p01",
+    "pregunta": "Una base de datos es:",
+    "opciones": {
+      "A": "Un programa",
+      "B": "Un conjunto de tablas sin relación",
+      "C": "Un conjunto organizado de datos relacionados",
+      "D": "Un sistema operativo"
+    },
+    "correcta": "C",
+    "justificacion": "Una base de datos es una colección organizada de información estructurada, o datos, típicamente almacenados electrónicamente en un sistema informático."
+  },
+  {
+    "id": "db-dec-p02",
+    "pregunta": "¿Qué problema resolvieron los SGBD frente a los ficheros planos?",
+    "opciones": {
+      "A": "El coste",
+      "B": "La duplicidad e inconsistencia de datos",
+      "C": "El uso de SQL",
+      "D": "La velocidad de Internet"
+    },
+    "correcta": "B",
+    "justificacion": "Los SGBD centralizan la gestión de datos, evitando que la misma información esté repetida y desactualizada en diferentes archivos."
+  },
+  {
+    "id": "db-dec-p03",
+    "pregunta": "¿Qué es un SGBD?",
+    "opciones": {
+      "A": "Un lenguaje",
+      "B": "Un modelo de datos",
+      "C": "Un software para gestionar bases de datos",
+      "D": "Una tabla"
+    },
+    "correcta": "C",
+    "justificacion": "SGBD (Sistema Gestor de Bases de Datos) es el software que interactúa con los usuarios, las aplicaciones y la propia base de datos para capturar y analizar datos."
+  },
+  {
+    "id": "db-dec-p04",
+    "pregunta": "El modelo relacional fue propuesto por:",
+    "opciones": {
+      "A": "Bill Gates",
+      "B": "Edgar F. Codd",
+      "C": "Tim Berners-Lee",
+      "D": "Oracle"
+    },
+    "correcta": "B",
+    "justificacion": "Edgar F. Codd propuso el modelo relacional en 1970 mientras trabajaba para IBM."
+  },
+  {
+    "id": "db-dec-p05",
+    "pregunta": "El modelo relacional organiza la información en:",
+    "opciones": {
+      "A": "Árboles",
+      "B": "Grafos",
+      "C": "Tablas",
+      "D": "Documentos"
+    },
+    "correcta": "C",
+    "justificacion": "En el modelo relacional, todos los datos se representan en términos de tuplas, agrupadas en relaciones (tablas)."
+  },
+  {
+    "id": "db-dec-p06",
+    "pregunta": "SQL se utiliza principalmente para:",
+    "opciones": {
+      "A": "Diseñar interfaces",
+      "B": "Gestionar y consultar bases de datos",
+      "C": "Crear diagramas",
+      "D": "Programar servidores"
+    },
+    "correcta": "B",
+    "justificacion": "SQL (Structured Query Language) es el lenguaje estándar para comunicarse con sistemas de gestión de bases de datos relacionales."
+  },
+  {
+    "id": "db-dec-p07",
+    "pregunta": "La arquitectura ANSI/SPARC se compone de:",
+    "opciones": {
+      "A": "2 niveles",
+      "B": "3 niveles",
+      "C": "4 niveles",
+      "D": "5 niveles"
+    },
+    "correcta": "B",
+    "justificacion": "Se compone de tres niveles: externo (vistas), conceptual (lógico) e interno (físico)."
+  },
+  {
+    "id": "db-dec-p08",
+    "pregunta": "El nivel externo de ANSI/SPARC representa:",
+    "opciones": {
+      "A": "El almacenamiento físico",
+      "B": "El modelo lógico global",
+      "C": "Las vistas de usuario",
+      "D": "Los índices"
+    },
+    "correcta": "C",
+    "justificacion": "El nivel externo describe la parte de la base de datos que es relevante para cada usuario o aplicación específica."
+  },
+  {
+    "id": "db-dec-p09",
+    "pregunta": "El modelo Entidad-Relación se usa para:",
+    "opciones": {
+      "A": "Crear tablas físicas",
+      "B": "Representar conceptualmente la realidad",
+      "C": "Ejecutar consultas",
+      "D": "Optimizar índices"
+    },
+    "correcta": "B",
+    "justificacion": "Es una herramienta para el modelado de datos que permite representar las entidades relevantes de un sistema y sus interrelaciones."
+  },
+  {
+    "id": "db-dec-p10",
+    "pregunta": "Una entidad representa:",
+    "opciones": {
+      "A": "Un atributo",
+      "B": "Una relación",
+      "C": "Un objeto del mundo real",
+      "D": "Una clave"
+    },
+    "correcta": "C",
+    "justificacion": "Una entidad es una 'cosa' u 'objeto' en el mundo real que es distinguible de todos los demás objetos."
+  },
+  {
+    "id": "db-dec-p11",
+    "pregunta": "En un diagrama E-R, las entidades se representan con:",
+    "opciones": {
+      "A": "Óvalos",
+      "B": "Rombos",
+      "C": "Rectángulos",
+      "D": "Flechas"
+    },
+    "correcta": "C",
+    "justificacion": "En la notación estándar de Chen, los rectángulos representan conjuntos de entidades."
+  },
+  {
+    "id": "db-dec-p12",
+    "pregunta": "La clave primaria sirve para:",
+    "opciones": {
+      "A": "Relacionar tablas",
+      "B": "Identificar registros de forma única",
+      "C": "Evitar claves foráneas",
+      "D": "Crear vistas"
+    },
+    "correcta": "B",
+    "justificacion": "Una clave primaria es un campo o conjunto de campos que identifica de forma única cada fila de una tabla."
+  },
+  {
+    "id": "db-dec-p13",
+    "pregunta": "Una relación 1:N se implementa:",
+    "opciones": {
+      "A": "Con una tabla intermedia",
+      "B": "Con una FK en el lado N",
+      "C": "Con una FK en el lado 1",
+      "D": "Con una PK compuesta"
+    },
+    "correcta": "B",
+    "justificacion": "Para implementar una relación uno-a-muchos, se coloca la clave primaria de la entidad '1' como clave foránea en la tabla de la entidad 'N'."
+  },
+  {
+    "id": "db-dec-p14",
+    "pregunta": "Una relación N:M se transforma en:",
+    "opciones": {
+      "A": "Una FK",
+      "B": "Una vista",
+      "C": "Una tabla intermedia",
+      "D": "Un índice"
+    },
+    "correcta": "C",
+    "justificacion": "Las relaciones muchos-a-muchos no pueden representarse directamente en el modelo relacional y requieren una tabla adicional."
+  },
+  {
+    "id": "db-dec-p15",
+    "pregunta": "La tabla intermedia de una N:M contiene:",
+    "opciones": {
+      "A": "Una PK simple",
+      "B": "Solo atributos",
+      "C": "Las PK de ambas entidades como FK",
+      "D": "Datos duplicados"
+    },
+    "correcta": "C",
+    "justificacion": "La tabla intermedia vincula ambas entidades mediante sus respectivas claves primarias, que actúan como claves foráneas."
+  },
+  {
+    "id": "db-dec-p16",
+    "pregunta": "Un atributo multivaluado:",
+    "opciones": {
+      "A": "Cumple 1FN",
+      "B": "Viola 1FN",
+      "C": "Viola 2FN",
+      "D": "Viola 3FN"
+    },
+    "correcta": "B",
+    "justificacion": "La Primera Forma Normal exige que cada atributo contenga solo valores atómicos; un atributo con múltiples valores rompe esta regla."
+  },
+  {
+    "id": "db-dec-p17",
+    "pregunta": "La integridad referencial garantiza que:",
+    "opciones": {
+      "A": "No haya duplicados",
+      "B": "Las FK apunten a valores existentes",
+      "C": "Los datos estén ordenados",
+      "D": "No existan NULL"
+    },
+    "correcta": "B",
+    "justificacion": "Asegura que las relaciones entre tablas permanezcan consistentes, impidiendo que una clave foránea apunte a un registro inexistente."
+  },
+  {
+    "id": "db-dec-p18",
+    "pregunta": "El diseño lógico consiste en:",
+    "opciones": {
+      "A": "Crear el modelo E-R",
+      "B": "Convertir el modelo E-R en tablas",
+      "C": "Insertar datos",
+      "D": "Optimizar consultas"
+    },
+    "correcta": "B",
+    "justificacion": "Es la fase donde el esquema conceptual (E-R) se traduce al esquema del modelo de datos que utiliza el SGBD (normalmente el relacional)."
+  },
+  {
+    "id": "db-dec-p19",
+    "pregunta": "Normalizar una base de datos sirve para:",
+    "opciones": {
+      "A": "Aumentar redundancia",
+      "B": "Evitar anomalías",
+      "C": "Reducir claves",
+      "D": "Eliminar relaciones"
+    },
+    "correcta": "B",
+    "justificacion": "La normalización previene anomalías de inserción, actualización y borrado al organizar los datos de forma lógica."
+  },
+  {
+    "id": "db-dec-p20",
+    "pregunta": "La 1ª Forma Normal (1FN) exige:",
+    "opciones": {
+      "A": "Claves compuestas",
+      "B": "Valores atómicos",
+      "C": "No dependencias transitivas",
+      "D": "PK simples"
+    },
+    "correcta": "B",
+    "justificacion": "Una tabla está en 1FN si todos sus atributos son atómicos y no hay grupos repetitivos."
+  },
+  {
+    "id": "db-dec-p21",
+    "pregunta": "La 2ª Forma Normal (2FN) elimina:",
+    "opciones": {
+      "A": "Listas",
+      "B": "Dependencias transitivas",
+      "C": "Dependencias parciales",
+      "D": "Claves foráneas"
+    },
+    "correcta": "C",
+    "justificacion": "La 2FN elimina las dependencias de atributos no clave respecto a solo una parte de la clave primaria (en claves compuestas)."
+  },
+  {
+    "id": "db-dec-p22",
+    "pregunta": "La 3ª Forma Normal (3FN) elimina:",
+    "opciones": {
+      "A": "Dependencias parciales",
+      "B": "Dependencias transitivas",
+      "C": "Valores atómicos",
+      "D": "PK compuestas"
+    },
+    "correcta": "B",
+    "justificacion": "La 3FN elimina las dependencias entre atributos que no forman parte de la clave primaria."
+  },
+  {
+    "id": "db-dec-p23",
+    "pregunta": "Una dependencia transitiva ocurre cuando:",
+    "opciones": {
+      "A": "Un atributo depende de la PK",
+      "B": "Un atributo depende de otro no clave",
+      "C": "Hay FK",
+      "D": "Hay una N:M"
+    },
+    "correcta": "B",
+    "justificacion": "Ocurre cuando un atributo A depende de B, y B depende de la clave primaria, por lo que A depende indirectamente de la clave."
+  },
+  {
+    "id": "db-dec-p24",
+    "pregunta": "Una tabla en 3FN:",
+    "opciones": {
+      "A": "Siempre cumple BCNF",
+      "B": "Nunca cumple BCNF",
+      "C": "Puede no cumplir BCNF",
+      "D": "No tiene dependencias"
+    },
+    "correcta": "C",
+    "justificacion": "BCNF (Boyce-Codd Normal Form) es una versión ligeramente más fuerte de la 3FN; una tabla en 3FN podría no cumplir BCNF si tiene claves candidatas solapadas."
+  },
+  {
+    "id": "db-dec-p25",
+    "pregunta": "BCNF es:",
+    "opciones": {
+      "A": "Inferior a 3FN",
+      "B": "Igual que 2FN",
+      "C": "Más estricta que 3FN",
+      "D": "Solo teórica"
+    },
+    "correcta": "C",
+    "justificacion": "BCNF es una forma normal superior que resuelve anomalías que la 3FN no puede manejar en ciertos casos específicos."
+  },
+  {
+    "id": "db-dec-p26",
+    "pregunta": "Una tabla cumple BCNF si:",
+    "opciones": {
+      "A": "No tiene FK",
+      "B": "Cada determinante es clave candidata",
+      "C": "No tiene PK compuesta",
+      "D": "Está normalizada"
+    },
+    "correcta": "B",
+    "justificacion": "La regla de BCNF establece que para cada dependencia funcional no trivial X -> Y, X debe ser una superclave."
+  },
+  {
+    "id": "db-dec-p27",
+    "pregunta": "Una desnormalización controlada se usa para:",
+    "opciones": {
+      "A": "Romper integridad",
+      "B": "Reducir coherencia",
+      "C": "Mejorar rendimiento",
+      "D": "Eliminar tablas"
+    },
+    "correcta": "C",
+    "justificacion": "A veces se introduce redundancia de forma deliberada para evitar uniones (joins) costosas y acelerar las consultas de lectura."
+  },
+  {
+    "id": "db-dec-p28",
+    "pregunta": "Un error común es pensar que:",
+    "opciones": {
+      "A": "Las FK son necesarias",
+      "B": "La normalización es útil",
+      "C": "Excel sustituye a un SGBD",
+      "D": "SQL es estándar"
+    },
+    "correcta": "C",
+    "justificacion": "Excel es una hoja de cálculo, no un sistema de gestión de bases de datos relacionales; carece de integridad referencial y escalabilidad para datos complejos."
+  },
+  {
+    "id": "db-dec-p29",
+    "pregunta": "Una base de datos bien diseñada es:",
+    "opciones": {
+      "A": "Rígida",
+      "B": "Difícil de mantener",
+      "C": "Coherente y escalable",
+      "D": "Dependiente del hardware"
+    },
+    "correcta": "C",
+    "justificacion": "Un buen diseño asegura que los datos sean precisos, consistentes y que el sistema pueda crecer sin problemas."
+  },
+  {
+    "id": "db-dec-p30",
+    "pregunta": "Regla fundamental en bases de datos:",
+    "opciones": {
+      "A": "Programar primero",
+      "B": "Priorizar integridad y coherencia",
+      "C": "Evitar claves",
+      "D": "Minimizar tablas"
+    },
+    "correcta": "B",
+    "justificacion": "La integridad de los datos es el aspecto más crítico; sin ella, la información almacenada pierde su valor y fiabilidad."
+  }
+
+            ]
+          }
+        ]
+      }
+    ]
+  }    
+]

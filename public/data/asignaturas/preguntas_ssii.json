@@ -1,0 +1,2221 @@
+[
+  {
+    "asignatura": "Sistemas Informáticos",
+    "fuentes":[
+      {
+        "fuente": "PROMETEO",
+        "total_preguntas": 20,
+        "unidades": [
+          {
+            "unidad": 1,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-u1-p01",
+                "pregunta": "¿Cuál es la definición más adecuada de un sistema operativo?",
+                "opciones": {
+                  "A": "Un programa de diseño gráfico",
+                  "B": "Software base que gestiona el hardware y permite ejecutar aplicaciones",
+                  "C": "Un componente físico del ordenador como la RAM",
+                  "D": "Una aplicación automática de usuario"
+                },
+                "correcta": "B",
+                "justificacion": "El SO actúa como intermediario entre el hardware y el usuario, gestionando recursos."
+              },
+              {
+                "id": "si-u1-p02",
+                "pregunta": "¿Qué significan las siglas AOSP en el contexto de Android?",
+                "opciones": {
+                  "A": "Android Open System Protocol",
+                  "B": "Android Open Source Project",
+                  "C": "All Operating System Package",
+                  "D": "Android Original Software Part"
+                },
+                "correcta": "B",
+                "justificacion": "AOSP es el proyecto de código abierto de Android liderado por Google."
+              },
+              {
+                "id": "si-u1-p03",
+                "pregunta": "Sobre el mito de que 'el software libre es siempre gratis', ¿cuál es la afirmación correcta?",
+                "opciones": {
+                  "A": "Es cierto, nunca se puede cobrar por él",
+                  "B": "Es falso, el término 'libre' se refiere a libertades de uso, no al precio",
+                  "C": "Solo es gratis si se usa en Linux",
+                  "D": "Libre y gratis significan exactamente lo mismo"
+                },
+                "correcta": "B",
+                "justificacion": "La libertad del software es independiente de si tiene un coste comercial o no."
+              },
+              {
+                "id": "si-u1-p04",
+                "pregunta": "¿Qué tipo de licencia se vincula al hardware original del equipo y pierde validez si este se cambia?",
+                "opciones": {
+                  "A": "Licencia Retail",
+                  "B": "Licencia GPL",
+                  "C": "Licencia OEM",
+                  "D": "Licencia de prueba (Trial)"
+                },
+                "correcta": "C",
+                "justificacion": "Las licencias OEM están ligadas a la placa base del equipo donde se instalan primero."
+              },
+              {
+                "id": "si-u1-p10",
+                "pregunta": "¿Qué criterio es fundamental para seleccionar un sistema operativo a nivel empresarial?",
+                "opciones": {
+                  "A": "El color de los iconos del escritorio",
+                  "B": "La seguridad, la integración y la capacidad de escalar",
+                  "C": "Que tenga el fondo de pantalla más bonito",
+                  "D": "Solo el nombre de la marca"
+                },
+                "correcta": "B",
+                "justificacion": "En empresas, se prioriza la estabilidad, la seguridad y cómo se integra con el resto de servidores."
+              },
+              {
+                "id": "si-u1-p36",
+                "pregunta": "Según la jerarquía de un sistema informático, ¿cuáles son sus tres pilares?",
+                "opciones": {
+                  "A": "Pantalla, Teclado y Ratón",
+                  "B": "Hardware, Software y Usuario",
+                  "C": "Windows, Linux y macOS",
+                  "D": "CPU, RAM y Disco Duro"
+                },
+                "correcta": "B",
+                "justificacion": "El sistema es la suma de hardware, software y las personas que lo operan."
+              },
+              {
+                "id": "si-u1-p37",
+                "pregunta": "¿Cuál es la función principal de la Memoria RAM?",
+                "opciones": {
+                  "A": "Guardar archivos para siempre aunque se apague el PC",
+                  "B": "Almacenar temporalmente los datos y programas con los que se está operando",
+                  "C": "Aumentar la velocidad de internet",
+                  "D": "Controlar la temperatura de la CPU"
+                },
+                "correcta": "B",
+                "justificacion": "La RAM es memoria volátil de acceso rápido para los procesos activos."
+              },
+              {
+                "id": "si-u1-p39",
+                "pregunta": "¿Qué componente es el encargado de procesar todas las instrucciones y realizar los cálculos?",
+                "opciones": {
+                  "A": "Memoria Caché",
+                  "B": "Tarjeta de Red",
+                  "C": "CPU (Procesador)",
+                  "D": "Disco SSD"
+                },
+                "correcta": "C",
+                "justificacion": "La CPU es el 'cerebro' del ordenador donde se ejecutan las instrucciones del software."
+              },
+              {
+                "id": "u01-p01",
+                "pregunta": "El sistema operativo se encarga de:",
+                "opciones": {
+                  "A": "Comunicación usuario-servidor",
+                  "B": "Comunicación CPU-usuario",
+                  "C": "Comunicación máquina-usuario",
+                  "D": "Comunicación máquina-interfaz"
+                },
+                "correcta": "C",
+                "justificacion": "El sistema operativo actúa como intermediario entre la máquina y el usuario."
+              },
+              {
+                "id": "u01-p02",
+                "pregunta": "La licencia GPL nos permite:",
+                "opciones": {
+                  "A": "Usar, modificar y distribuir el software",
+                  "B": "Estar vinculada al hardware",
+                  "C": "Auditar el código",
+                  "D": "A y C son correctas"
+                },
+                "correcta": "A",
+                "justificacion": "La GPL permite usar, estudiar, modificar y redistribuir el software."
+              },
+              {
+                "id": "u01-p03",
+                "pregunta": "¿Qué sistema operativo debo elegir?",
+                "opciones": {
+                  "A": "El más barato",
+                  "B": "El que mejor licencia tenga",
+                  "C": "El que mejor soporte tenga",
+                  "D": "Debo considerar todas las características del hardware"
+                },
+                "correcta": "D",
+                "justificacion": "La elección depende de varios factores, incluido el hardware."
+              },
+              {
+                "id": "u01-p21",
+                "pregunta": "Compatibilidad de los sistemas informáticos:",
+                "opciones": {
+                  "A": "Todas son correctas",
+                  "B": "Compatibilidad de controladores",
+                  "C": "Compatibilidad de datos",
+                  "D": "Compatibilidad de periféricos"
+                },
+                "correcta": "A",
+                "justificacion": "La compatibilidad incluye controladores, datos y periféricos."
+              },
+              {
+                "id": "u01-p22",
+                "pregunta": "Requisitos mínimos hardware/software:",
+                "opciones": {
+                  "A": "El software funciona y el hardware es limitado",
+                  "B": "El software no funciona bien",
+                  "C": "El software funciona con limitaciones",
+                  "D": "El hardware funciona con limitaciones"
+                },
+                "correcta": "C",
+                "justificacion": "Los requisitos mínimos permiten que el software funcione con limitaciones."
+              },
+              {
+                "id": "u01-p23",
+                "pregunta": "¿Qué describen los requisitos recomendados?",
+                "opciones": {
+                  "A": "Experiencia incompleta",
+                  "B": "Experiencia fluida y estable",
+                  "C": "Funcionamiento mínimo",
+                  "D": "Uso con errores frecuentes"
+                },
+                "correcta": "B",
+                "justificacion": "Los requisitos recomendados apuntan a una experiencia fluida."
+              },
+              {
+                "id": "u01-p27",
+                "pregunta": "Linux es un sistema operativo solo para desarrolladores",
+                "opciones": {
+                  "A": "Verdadero",
+                  "B": "Falso"
+                },
+                "correcta": "B",
+                "justificacion": "Linux puede usarse por cualquier tipo de usuario."
+              },
+              {
+                "id": "u01-p28",
+                "pregunta": "Linux carece de aplicaciones cotidianas",
+                "opciones": {
+                  "A": "Verdadero",
+                  "B": "Falso"
+                },
+                "correcta": "B",
+                "justificacion": "Linux dispone de aplicaciones para uso cotidiano."
+              },
+              {
+                "id": "u01-p29",
+                "pregunta": "Linux es fácil de usar",
+                "opciones": {
+                  "A": "Verdadero",
+                  "B": "Falso"
+                },
+                "correcta": "A",
+                "justificacion": "En el contexto del test se considera que Linux es fácil de usar."
+              },
+              {
+                "id": "u01-p30",
+                "pregunta": "Jerarquía de un sistema informático:",
+                "opciones": {
+                  "A": "Software",
+                  "B": "Hardware",
+                  "C": "Programas",
+                  "D": "A y B son correctas"
+                },
+                "correcta": "B",
+                "justificacion": "La jerarquía del sistema informático parte del hardware como base."
+              },
+              {
+                "id": "u01-p31",
+                "pregunta": "Clasificación de sistemas operativos:",
+                "opciones": {
+                  "A": "Licencia y sistema de archivos",
+                  "B": "Ámbito de uso y arquitectura",
+                  "C": "Arquitectura y licencia",
+                  "D": "Ámbito de uso y licencia"
+                },
+                "correcta": "D",
+                "justificacion": "La clasificación puede hacerse por ámbito de uso y por licencia."
+              },
+              {
+                "id": "u01-p32",
+                "pregunta": "¿El software es gratis?",
+                "opciones": {
+                  "A": "Siempre depende de la licencia",
+                  "B": "El software libre siempre es gratis",
+                  "C": "No es gratis, pero se puede usar y modificar",
+                  "D": "Nunca es gratis"
+                },
+                "correcta": "C",
+                "justificacion": "El software libre puede usarse y modificarse; no siempre implica coste cero."
+              },
+              {
+                "id": "u01-p01v3",
+                "pregunta": "¿Qué es un sistema informático?",
+                "opciones": {
+                  "A": "Un conjunto de programas informáticos",
+                  "B": "Solo el hardware de un ordenador",
+                  "C": "La combinación de hardware, software y usuario",
+                  "D": "Un sistema operativo"
+                },
+                "correcta": "C",
+                "justificacion": "Un sistema informático está formado por hardware, software y usuario."
+              },
+              {
+                "id": "u01-p02v3",
+                "pregunta": "¿Cuál es la función principal del sistema operativo?",
+                "opciones": {
+                  "A": "Ejecutar aplicaciones ofimáticas",
+                  "B": "Coordinar el uso del hardware y ofrecer servicios a las aplicaciones",
+                  "C": "Fabricar dispositivos",
+                  "D": "Almacenar datos en la nube"
+                },
+                "correcta": "B",
+                "justificacion": "El sistema operativo coordina el hardware y ofrece servicios a las aplicaciones."
+              },
+              {
+                "id": "u01-p03v3",
+                "pregunta": "Sin un sistema operativo, el hardware sería:",
+                "opciones": {
+                  "A": "Inutilizable por falta de coordinación",
+                  "B": "Más seguro",
+                  "C": "Más rápido",
+                  "D": "Autónomo"
+                },
+                "correcta": "A",
+                "justificacion": "Sin sistema operativo, el hardware no tendría coordinación para funcionar correctamente."
+              },
+              {
+                "id": "u01-p04v3",
+                "pregunta": "¿Qué caracteriza al software libre?",
+                "opciones": {
+                  "A": "Que siempre es gratuito y no necesita licencias",
+                  "B": "Que no tiene soporte",
+                  "C": "Que permite usar y modificar el código",
+                  "D": "Que solo funciona en Linux"
+                },
+                "correcta": "C",
+                "justificacion": "El software libre permite usar, estudiar, modificar y distribuir el código."
+              },
+              {
+                "id": "u01-p05v3",
+                "pregunta": "El software libre siempre es gratis:",
+                "opciones": {
+                  "A": "Verdadero",
+                  "B": "Falso",
+                  "C": "Depende del sistema operativo",
+                  "D": "Cierto solo en Linux"
+                },
+                "correcta": "B",
+                "justificacion": "El software libre no tiene por qué ser gratis; libertad y precio no son lo mismo."
+              },
+              {
+                "id": "u01-p06v3",
+                "pregunta": "Una licencia OEM:",
+                "opciones": {
+                  "A": "Se puede mover libremente entre equipos",
+                  "B": "Se puede reinstalar solo en el mismo equipo",
+                  "C": "Es siempre gratuita",
+                  "D": "No tiene limitaciones"
+                },
+                "correcta": "B",
+                "justificacion": "La licencia OEM suele quedar vinculada al equipo original."
+              },
+              {
+                "id": "u01-p07v3",
+                "pregunta": "Android se basa técnicamente en:",
+                "opciones": {
+                  "A": "Windows",
+                  "B": "Unix",
+                  "C": "Linux",
+                  "D": "MacOS"
+                },
+                "correcta": "C",
+                "justificacion": "Android está basado en el kernel de Linux."
+              },
+              {
+                "id": "u01-p08v3",
+                "pregunta": "¿Qué factor NO influye al elegir un sistema operativo?",
+                "opciones": {
+                  "A": "Uso personal o empresarial",
+                  "B": "Tipo de hardware",
+                  "C": "Color del equipo",
+                  "D": "Necesidades del usuario"
+                },
+                "correcta": "C",
+                "justificacion": "El color del equipo no influye en la elección del sistema operativo."
+              }
+            ]
+          },
+          {
+            "unidad": 2,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-u2-p11",
+                "pregunta": "¿Qué comando de Linux permite ver los permisos detallados, el tamaño y la fecha de modificación de los archivos?",
+                "opciones": {
+                  "A": "ls -a",
+                  "B": "ls -l",
+                  "C": "cd ..",
+                  "D": "dir /w"
+                },
+                "correcta": "B",
+                "justificacion": "El parámetro '-l' muestra el listado en formato largo, incluyendo los permisos rwx."
+              },
+              {
+                "id": "si-u2-p12",
+                "pregunta": "Si queremos dar todos los permisos al usuario, lectura y ejecución al grupo, y solo lectura a otros, ¿qué número usamos en chmod?",
+                "opciones": {
+                  "A": "777",
+                  "B": "754",
+                  "C": "644",
+                  "D": "751"
+                },
+                "correcta": "B",
+                "justificacion": "7 (rwx), 5 (r-x) y 4 (r--)."
+              },
+              {
+                "id": "si-u2-p13",
+                "pregunta": "¿Qué comando de Windows se utiliza para listar el contenido de un directorio?",
+                "opciones": {
+                  "A": "ls",
+                  "B": "dir",
+                  "C": "list",
+                  "D": "show"
+                },
+                "correcta": "B",
+                "justificacion": "'dir' es el comando equivalente a 'ls' en el entorno CMD de Windows."
+              },
+              {
+                "id": "si-u2-p14",
+                "pregunta": "En Linux, ¿qué representa la letra 'r' en los permisos de un archivo?",
+                "opciones": {
+                  "A": "Root",
+                  "B": "Read (Lectura)",
+                  "C": "Run (Ejecución)",
+                  "D": "Rewrite (Sobrescribir)"
+                },
+                "correcta": "B",
+                "justificacion": "Los permisos básicos son Read (r), Write (w) y Execute (x)."
+              },
+              {
+                "id": "si-u2-p15",
+                "pregunta": "¿Qué comando de Linux se usa para cambiar los permisos de un archivo o directorio?",
+                "opciones": {
+                  "A": "chown",
+                  "B": "chmod",
+                  "C": "chperm",
+                  "D": "attrib"
+                },
+                "correcta": "B",
+                "justificacion": "'chmod' (change mode) es el comando estándar para gestionar los bits de permisos."
+              },
+              {
+                "id": "si-u2-p17",
+                "pregunta": "¿Qué comando de Linux nos permite ver los archivos ocultos (los que empiezan por punto)?",
+                "opciones": {
+                  "A": "ls -l",
+                  "B": "ls -a",
+                  "C": "ls -h",
+                  "D": "ls -x"
+                },
+                "correcta": "B",
+                "justificacion": "El parámetro '-a' (all) muestra todas las entradas, incluyendo las ocultas."
+              },
+              {
+                "id": "si-u2-p18",
+                "pregunta": "Al trabajar con permisos en formato simbólico (letras), ¿qué letra representa al grupo?",
+                "opciones": {
+                  "A": "u",
+                  "B": "g",
+                  "C": "o",
+                  "D": "a"
+                },
+                "correcta": "B",
+                "justificacion": "u (user), g (group), o (others) y a (all)."
+              },
+              {
+                "id": "si-u2-p20",
+                "pregunta": "¿Qué comando se usa en Linux para cambiar el propietario de un archivo?",
+                "opciones": {
+                  "A": "chmod",
+                  "B": "chown",
+                  "C": "passwd",
+                  "D": "useradd"
+                },
+                "correcta": "B",
+                "justificacion": "'chown' (change owner) cambia el usuario y/o el grupo propietario del archivo."
+              },
+              {
+                "id": "si-u3-p58",
+                "pregunta": "¿Qué comando de Linux permite ver los procesos activos del sistema en tiempo real?",
+                "opciones": {
+                  "A": "ls -l",
+                  "B": "top (o htop)",
+                  "C": "cd /proc",
+                  "D": "mkdir"
+                },
+                "correcta": "B",
+                "justificacion": "top y htop son esenciales para monitorizar el consumo de CPU y RAM."
+              },
+              {
+                "id": "si-u3-p59",
+                "pregunta": "¿Qué hace el comando 'chmod 777 archivo'?",
+                "opciones": {
+                  "A": "Borra el archivo",
+                  "B": "Otorga permisos de lectura, escritura y ejecución a todo el mundo",
+                  "C": "Cambia el nombre del archivo a '777'",
+                  "D": "Oculta el archivo"
+                },
+                "correcta": "B",
+                "justificacion": "El 7 representa la suma de r(4)+w(2)+x(1); al ponerlo tres veces, se aplica a dueño, grupo y otros."
+              },
+              {
+                "id": "u01-p07",
+                "pregunta": "¿Con qué comando abrimos el manual de ayuda en Linux?",
+                "opciones": {
+                  "A": "nam",
+                  "B": "man",
+                  "C": "manual",
+                  "D": "sos"
+                },
+                "correcta": "B",
+                "justificacion": "El comando man muestra el manual de ayuda."
+              },
+              {
+                "id": "u01-p08",
+                "pregunta": "¿Cuál es la extensión de los ejecutables en Linux?",
+                "opciones": {
+                  "A": "tgz",
+                  "B": "zip",
+                  "C": "exe",
+                  "D": "No tienen extensión"
+                },
+                "correcta": "D",
+                "justificacion": "En Linux los ejecutables no dependen de una extensión fija."
+              },
+              {
+                "id": "u01-p10",
+                "pregunta": "Si veo el símbolo $ en la terminal significa que:",
+                "opciones": {
+                  "A": "Soy root",
+                  "B": "Soy administrador",
+                  "C": "Soy un usuario normal",
+                  "D": "Cualquier usuario lo ve"
+                },
+                "correcta": "C",
+                "justificacion": "El símbolo $ suele indicar un usuario estándar."
+              },
+              {
+                "id": "u01-p11",
+                "pregunta": "¿A qué número corresponde el permiso de lectura en Linux?",
+                "opciones": {
+                  "A": "6",
+                  "B": "0",
+                  "C": "2",
+                  "D": "4"
+                },
+                "correcta": "D",
+                "justificacion": "El permiso de lectura corresponde al valor 4."
+              },
+              {
+                "id": "u01-p12",
+                "pregunta": "¿En qué directorio se encuentran los ficheros de configuración?",
+                "opciones": {
+                  "A": "bin",
+                  "B": "var",
+                  "C": "bash",
+                  "D": "etc"
+                },
+                "correcta": "D",
+                "justificacion": "Los archivos de configuración del sistema suelen estar en /etc."
+              },
+              {
+                "id": "u01-p13",
+                "pregunta": "Comando Linux para actualizar el sistema:",
+                "opciones": {
+                  "A": "sudo apt-get install",
+                  "B": "sudo apt-get upgrade",
+                  "C": "sudo apt-get update",
+                  "D": "B y C son correctas"
+                },
+                "correcta": "D",
+                "justificacion": "update actualiza la lista de paquetes y upgrade instala las actualizaciones."
+              },
+              {
+                "id": "u01-p15",
+                "pregunta": "¿Qué comando cambia el propietario de un archivo?",
+                "opciones": {
+                  "A": "chmod",
+                  "B": "chown",
+                  "C": "pwd",
+                  "D": "mkdir"
+                },
+                "correcta": "B",
+                "justificacion": "chown cambia el propietario de un archivo."
+              },
+              {
+                "id": "u01-p16",
+                "pregunta": "Mostrar directorios en forma de árbol:",
+                "opciones": {
+                  "A": "mkdir -L 2",
+                  "B": "mkdir -r /home/user",
+                  "C": "tree -r 2 /home/user",
+                  "D": "tree -L 2 /home"
+                },
+                "correcta": "D",
+                "justificacion": "tree -L 2 muestra el árbol de directorios hasta nivel 2."
+              },
+              {
+                "id": "u01-p17",
+                "pregunta": "¿Con qué comando sabes qué usuario estás usando?",
+                "opciones": {
+                  "A": "waiomin",
+                  "B": "amiwho",
+                  "C": "minwaio",
+                  "D": "whoami"
+                },
+                "correcta": "D",
+                "justificacion": "whoami muestra el usuario actual."
+              },
+              {
+                "id": "u01-p18",
+                "pregunta": "Crear un archivo vacío en Linux:",
+                "opciones": {
+                  "A": "nano",
+                  "B": "touch",
+                  "C": "echo",
+                  "D": "print"
+                },
+                "correcta": "B",
+                "justificacion": "touch crea un archivo vacío."
+              },
+              {
+                "id": "u01-p19",
+                "pregunta": "¿A qué permisos equivale chmod 755?",
+                "opciones": {
+                  "A": "Todos pueden leer",
+                  "B": "Todos pueden leer y ejecutar",
+                  "C": "El propietario tiene todos los permisos",
+                  "D": "B y C son correctas"
+                },
+                "correcta": "D",
+                "justificacion": "El propietario tiene control total y el resto puede leer y ejecutar."
+              },
+              {
+                "id": "u01-p20",
+                "pregunta": "¿Qué comando es similar a head pero muestra el final?",
+                "opciones": {
+                  "A": "nano",
+                  "B": "cat",
+                  "C": "tail",
+                  "D": "history"
+                },
+                "correcta": "C",
+                "justificacion": "tail muestra las últimas líneas de un archivo."
+              },
+              {
+                "id": "si-t1-p14",
+                "pregunta": "¿Qué archivo se ejecuta automáticamente cada vez que se abre una nueva terminal interactiva en Linux?",
+                "opciones": {
+                  "A": ".bash_profile",
+                  "B": ".bashrc",
+                  "C": "boot_file",
+                  "D": ".bash_history"
+                },
+                "correcta": "B",
+                "justificacion": "El archivo .bashrc se ejecuta en cada nueva sesión de terminal interactiva."
+              },
+              {
+                "id": "si-t1-p28",
+                "pregunta": "¿Qué ocurre con el archivo '.bash_history' al cerrar una sesión de terminal?",
+                "opciones": {
+                  "A": "Se borra todo el historial",
+                  "B": "Se guardan los comandos ejecutados durante la sesión",
+                  "C": "Se ejecuta como un script de arranque",
+                  "D": "Se cifra automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "Al cerrar la sesión, los comandos usados se vuelcan al archivo .bash_history."
+              },
+              {
+                "id": "u03-p17",
+                "pregunta": "¿Qué comando se utiliza en Linux para abrir el manual de ayuda?",
+                "opciones": {
+                  "A": "nam",
+                  "B": "man",
+                  "C": "manual",
+                  "D": "helpman"
+                },
+                "correcta": "B",
+                "justificacion": "El comando man abre el manual de ayuda en Linux."
+              },
+              {
+                "id": "u03-p18",
+                "pregunta": "¿Cuál es una extensión habitual de paquetes instalables en Linux?",
+                "opciones": {
+                  "A": ".deb",
+                  "B": ".exe",
+                  "C": ".zip",
+                  "D": ".tgz"
+                },
+                "correcta": "A",
+                "justificacion": "Los paquetes en sistemas Debian y derivados suelen usar la extensión .deb."
+              },
+              {
+                "id": "u03-p19",
+                "pregunta": "¿Qué indica el símbolo $ en la terminal de Linux?",
+                "opciones": {
+                  "A": "Usuario root",
+                  "B": "Usuario administrador",
+                  "C": "Usuario estándar",
+                  "D": "Error del sistema"
+                },
+                "correcta": "C",
+                "justificacion": "El símbolo $ suele indicar una sesión de usuario estándar."
+              },
+              {
+                "id": "u03-p20",
+                "pregunta": "¿Qué valor numérico representa el permiso de lectura en Linux?",
+                "opciones": {
+                  "A": "6",
+                  "B": "0",
+                  "C": "2",
+                  "D": "4"
+                },
+                "correcta": "D",
+                "justificacion": "El permiso de lectura equivale al valor numérico 4."
+              },
+              {
+                "id": "u03-p21",
+                "pregunta": "¿En qué directorio se encuentran habitualmente los archivos de configuración del sistema en Linux?",
+                "opciones": {
+                  "A": "/bin",
+                  "B": "/var",
+                  "C": "/etc",
+                  "D": "/conf"
+                },
+                "correcta": "C",
+                "justificacion": "Los archivos de configuración del sistema suelen estar en /etc."
+              },
+              {
+                "id": "u03-p22",
+                "pregunta": "¿Qué comando actualiza la lista de paquetes disponibles en Linux?",
+                "opciones": {
+                  "A": "sudo apt-get install",
+                  "B": "sudo apt-get upgrade",
+                  "C": "sudo apt-get update",
+                  "D": "sudo update"
+                },
+                "correcta": "C",
+                "justificacion": "apt-get update actualiza la lista de paquetes disponibles."
+              },
+              {
+                "id": "u03-p23",
+                "pregunta": "¿Qué comando muestra el usuario actualmente identificado?",
+                "opciones": {
+                  "A": "waiomin",
+                  "B": "whoami",
+                  "C": "amiwho",
+                  "D": "iduser"
+                },
+                "correcta": "B",
+                "justificacion": "El comando whoami muestra el usuario actual."
+              },
+              {
+                "id": "u03-p24",
+                "pregunta": "¿Qué comando permite crear un archivo vacío?",
+                "opciones": {
+                  "A": "nano",
+                  "B": "touch",
+                  "C": "echo",
+                  "D": "print"
+                },
+                "correcta": "B",
+                "justificacion": "touch permite crear un archivo vacío."
+              },
+              {
+                "id": "u03-p25",
+                "pregunta": "¿A qué permisos equivale chmod 755?",
+                "opciones": {
+                  "A": "Todos los usuarios pueden leer",
+                  "B": "El propietario tiene permisos completos; el resto puede leer y ejecutar",
+                  "C": "Todos los usuarios pueden leer y escribir",
+                  "D": "Ninguna de las anteriores"
+                },
+                "correcta": "B",
+                "justificacion": "755 da permisos completos al propietario y lectura/ejecución al resto."
+              },
+              {
+                "id": "u03-p26",
+                "pregunta": "¿Qué comando muestra el espacio disponible en disco?",
+                "opciones": {
+                  "A": "df -h",
+                  "B": "disk -h",
+                  "C": "free -d",
+                  "D": "mem -d"
+                },
+                "correcta": "A",
+                "justificacion": "df -h muestra el espacio disponible en disco."
+              },
+              {
+                "id": "u03-p27",
+                "pregunta": "¿Qué comando permite ver los procesos en ejecución?",
+                "opciones": {
+                  "A": "ls",
+                  "B": "ps",
+                  "C": "run",
+                  "D": "exec"
+                },
+                "correcta": "B",
+                "justificacion": "ps permite ver los procesos en ejecución."
+              },
+              {
+                "id": "u03-p28",
+                "pregunta": "¿Qué indica el símbolo # en la terminal de Linux?",
+                "opciones": {
+                  "A": "Usuario estándar",
+                  "B": "Usuario root",
+                  "C": "Usuario invitado",
+                  "D": "Error de permisos"
+                },
+                "correcta": "B",
+                "justificacion": "El símbolo # indica una sesión con privilegios de root."
+              },
+              {
+                "id": "u03-p30",
+                "pregunta": "¿Qué comando permite ver la ruta del directorio actual?",
+                "opciones": {
+                  "A": "pwd",
+                  "B": "path",
+                  "C": "whereami",
+                  "D": "curdir"
+                },
+                "correcta": "A",
+                "justificacion": "pwd muestra la ruta del directorio actual."
+              },
+              {
+                "id": "u02-p27",
+                "pregunta": "En Linux, fichero del usuario que se ejecuta al iniciar sesión",
+                "opciones": {
+                  "A": "/etc/fstab",
+                  "B": ".bashrc",
+                  "C": ".bash_profile",
+                  "D": "/etc/hosts"
+                },
+                "correcta": "C",
+                "justificacion": ".bash_profile se ejecuta en sesiones de inicio de sesión de Bash."
+              }
+            ]
+          },
+          {
+            "unidad": 3,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-u2-p16",
+                "pregunta": "¿Cuál es el sistema de archivos que utiliza Windows 11 por defecto?",
+                "opciones": {
+                  "A": "FAT32",
+                  "B": "EXT4",
+                  "C": "NTFS",
+                  "D": "ExFAT"
+                },
+                "correcta": "C",
+                "justificacion": "NTFS es el sistema de archivos moderno de Microsoft que permite permisos de seguridad avanzados."
+              },
+              {
+                "id": "si-u2-p45",
+                "pregunta": "¿Cuál es la función del 'Journaling' en sistemas de archivos como EXT4 o NTFS?",
+                "opciones": {
+                  "A": "Cambiar el color de las carpetas",
+                  "B": "Llevar un registro de los cambios para recuperar el sistema rápidamente tras un fallo",
+                  "C": "Cifrar los correos electrónicos",
+                  "D": "Eliminar virus automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "El journaling evita la corrupción del sistema de archivos al anotar las operaciones antes de ejecutarlas."
+              },
+              {
+                "id": "si-u2-p46",
+                "pregunta": "¿Qué nombre recibe la partición de Linux utilizada como memoria virtual cuando la RAM física se llena?",
+                "opciones": {
+                  "A": "Root",
+                  "B": "Home",
+                  "C": "Swap (Área de intercambio)",
+                  "D": "Boot"
+                },
+                "correcta": "C",
+                "justificacion": "La partición Swap actúa como una extensión de la RAM en el disco duro."
+              },
+              {
+                "id": "si-u2-p47",
+                "pregunta": "En Windows, ¿cuál es la herramienta gráfica para gestionar las particiones del disco duro?",
+                "opciones": {
+                  "A": "Administrador de tareas",
+                  "B": "Administrador de discos",
+                  "C": "Panel de control de red",
+                  "D": "Bloc de notas"
+                },
+                "correcta": "B",
+                "justificacion": "Desde el Administrador de Discos podemos reducir, ampliar o crear nuevas particiones."
+              },
+              {
+                "id": "si-u2-p48",
+                "pregunta": "¿Qué es la partición '/home' en una instalación típica de Linux?",
+                "opciones": {
+                  "A": "Donde se guarda el núcleo del sistema",
+                  "B": "Donde se guardan los datos personales y configuraciones de los usuarios",
+                  "C": "Donde se instalan todos los drivers",
+                  "D": "Una partición para archivos temporales que se borra al reiniciar"
+                },
+                "correcta": "B",
+                "justificacion": "Separar /home permite reinstalar el sistema operativo sin perder los documentos del usuario."
+              },
+              {
+                "id": "si-u2-p49",
+                "pregunta": "Antes de realizar particiones en un disco con datos, ¿cuál es la acción más crítica?",
+                "opciones": {
+                  "A": "Subir el volumen de los altavoces",
+                  "B": "Hacer una copia de seguridad (Backup) de los datos importantes",
+                  "C": "Cambiar el fondo de pantalla",
+                  "D": "Desconectar el teclado"
+                },
+                "correcta": "B",
+                "justificacion": "Cualquier manipulación de particiones conlleva un riesgo de pérdida de datos si algo falla."
+              },
+              {
+                "id": "si-u2-p50",
+                "pregunta": "¿Qué significa que un sistema operativo sea Multi-usuario?",
+                "opciones": {
+                  "A": "Que solo puede tener una cuenta configurada",
+                  "B": "Que permite que varios usuarios tengan sus propios entornos y archivos aislados en la misma máquina",
+                  "C": "Que se puede instalar en muchos ordenadores a la vez",
+                  "D": "Que tiene muchos iconos en el escritorio"
+                },
+                "correcta": "B",
+                "justificacion": "Sistemas como Windows y Linux gestionan permisos individuales para diferentes personas."
+              },
+              {
+                "id": "u01-p09",
+                "pregunta": "¿Cuál es la versión LTS de Ubuntu?",
+                "opciones": {
+                  "A": "25",
+                  "B": "23",
+                  "C": "24",
+                  "D": "26"
+                },
+                "correcta": "C",
+                "justificacion": "La opción correcta indicada en el test es la 24."
+              },
+              {
+                "id": "u01-p24",
+                "pregunta": "Para cambiar el orden de arranque debemos:",
+                "opciones": {
+                  "A": "Bootear un USB",
+                  "B": "Reinstalar el SO",
+                  "C": "Entrar en la configuración del sistema",
+                  "D": "Ninguna de las anteriores"
+                },
+                "correcta": "C",
+                "justificacion": "El orden de arranque se modifica desde BIOS o UEFI."
+              },
+              {
+                "id": "u01-p25",
+                "pregunta": "Diferencia entre BIOS y UEFI:",
+                "opciones": {
+                  "A": "Solo la interfaz",
+                  "B": "Sistema de archivos",
+                  "C": "Soporte para discos >2TB e interfaz moderna",
+                  "D": "Más de 2 particiones e interfaz"
+                },
+                "correcta": "C",
+                "justificacion": "UEFI ofrece una interfaz más moderna y soporta discos grandes."
+              },
+              {
+                "id": "u01-p26",
+                "pregunta": "Rufus es:",
+                "opciones": {
+                  "A": "Hardware para leer USB",
+                  "B": "Software de recuperación",
+                  "C": "Software para máquinas virtuales",
+                  "D": "Software para crear USB booteables"
+                },
+                "correcta": "D",
+                "justificacion": "Rufus se utiliza para crear USB de arranque."
+              },
+              {
+                "id": "si-t1-p04",
+                "pregunta": "¿Qué comando de Linux permite visualizar los sistemas de ficheros montados?",
+                "opciones": {
+                  "A": "df -h",
+                  "B": "mount",
+                  "C": "lsblk",
+                  "D": "fdisk"
+                },
+                "correcta": "B",
+                "justificacion": "El comando mount sin argumentos muestra todos los sistemas de ficheros montados actualmente."
+              },
+              {
+                "id": "si-t1-p10",
+                "pregunta": "¿Qué comando se utiliza en Linux para comprobar y reparar sistemas de ficheros?",
+                "opciones": {
+                  "A": "fsck",
+                  "B": "frepair",
+                  "C": "chkdsk",
+                  "D": "format"
+                },
+                "correcta": "A",
+                "justificacion": "fsck (File System Check) es la utilidad para verificar la integridad y reparar errores."
+              },
+              {
+                "id": "si-t1-p21",
+                "pregunta": "¿Qué herramienta de Windows permite visualizar si el sistema ha arrancado en modo Legacy o UEFI?",
+                "opciones": {
+                  "A": "msconfig",
+                  "B": "regedit",
+                  "C": "msinfo32",
+                  "D": "dxdiag"
+                },
+                "correcta": "C",
+                "justificacion": "Información del Sistema (msinfo32) muestra el Modo de BIOS."
+              },
+              {
+                "id": "si-t1-p22",
+                "pregunta": "¿Qué comando de Linux muestra el espacio libre y ocupado de los discos en formato legible?",
+                "opciones": {
+                  "A": "du -sh",
+                  "B": "df -h",
+                  "C": "free -m",
+                  "D": "ls -l"
+                },
+                "correcta": "B",
+                "justificacion": "El comando df con el parámetro -h muestra el uso del disco de forma legible."
+              },
+              {
+                "id": "si-t1-p23",
+                "pregunta": "¿Cuál es el sistema de archivos nativo y más común en las distribuciones actuales de Linux?",
+                "opciones": {
+                  "A": "NTFS",
+                  "B": "FAT32",
+                  "C": "EXT4",
+                  "D": "APFS"
+                },
+                "correcta": "C",
+                "justificacion": "EXT4 es el sistema de archivos por defecto en la gran mayoría de distribuciones Linux modernas."
+              },
+              {
+                "id": "u02-p05",
+                "pregunta": "En UEFI, ¿qué partición es necesaria para el arranque?",
+                "opciones": {
+                  "A": "NTFS 1 GB",
+                  "B": "EXT4 512 MB",
+                  "C": "ESP FAT32 ~512 MB",
+                  "D": "linux-swap 4 GB"
+                },
+                "correcta": "C",
+                "justificacion": "UEFI arranca desde la partición del sistema EFI, normalmente en FAT32."
+              },
+              {
+                "id": "u02-p08",
+                "pregunta": "¿Cómo verificar en Linux si se arrancó en UEFI?",
+                "opciones": {
+                  "A": "uname -r",
+                  "B": "lsb_release -a",
+                  "C": "Comprobar si existe /sys/firmware/efi",
+                  "D": "systemctl get-default"
+                },
+                "correcta": "C",
+                "justificacion": "Ese directorio existe cuando el sistema ha arrancado en modo UEFI."
+              },
+              {
+                "id": "u02-p09",
+                "pregunta": "Herramienta para comprobar/reparar sistemas de ficheros en Linux",
+                "opciones": {
+                  "A": "fdisk",
+                  "B": "ckfs",
+                  "C": "df",
+                  "D": "fsck"
+                },
+                "correcta": "D",
+                "justificacion": "fsck verifica y repara sistemas de ficheros."
+              },
+              {
+                "id": "u02-p10",
+                "pregunta": "Orden para ver sistemas de ficheros montados",
+                "opciones": {
+                  "A": "lsblk",
+                  "B": "mount",
+                  "C": "mkdir",
+                  "D": "uname"
+                },
+                "correcta": "B",
+                "justificacion": "mount muestra o gestiona los sistemas de archivos montados."
+              },
+              {
+                "id": "u02-p26",
+                "pregunta": "En Windows, herramienta para ver si es BIOS/UEFI",
+                "opciones": {
+                  "A": "dxdiag",
+                  "B": "regedit",
+                  "C": "msinfo32",
+                  "D": "perfmon"
+                },
+                "correcta": "C",
+                "justificacion": "msinfo32 muestra el modo de arranque del sistema."
+              },
+              {
+                "id": "u03-p29",
+                "pregunta": "¿Qué sistema de archivos permite archivos mayores de 4 GB en una unidad USB?",
+                "opciones": {
+                  "A": "FAT32",
+                  "B": "ext2",
+                  "C": "NTFS",
+                  "D": "DOSFS"
+                },
+                "correcta": "C",
+                "justificacion": "NTFS permite archivos de más de 4 GB."
+              }
+            ]
+          },
+          {
+            "unidad": 4,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-u2-p41",
+                "pregunta": "¿Qué es el Dual Boot o arranque dual?",
+                "opciones": {
+                  "A": "Un sistema con dos tarjetas gráficas",
+                  "B": "Tener dos monitores conectados al mismo PC",
+                  "C": "La configuración que permite elegir entre dos o más sistemas operativos al encender el equipo",
+                  "D": "Un tipo de memoria RAM de doble canal"
+                },
+                "correcta": "C",
+                "justificacion": "El arranque dual permite instalar Windows y Linux en el mismo disco y elegir cuál iniciar."
+              },
+              {
+                "id": "si-u2-p42",
+                "pregunta": "¿En qué consiste una partición de tipo Extendida en el esquema MBR?",
+                "opciones": {
+                  "A": "Una partición que aumenta la velocidad del procesador",
+                  "B": "Un contenedor que permite crear dentro múltiples particiones lógicas para superar el límite de 4 primarias",
+                  "C": "Una partición que se borra automáticamente al apagar",
+                  "D": "El espacio que ocupa el archivo de paginación de Windows"
+                },
+                "correcta": "B",
+                "justificacion": "En MBR, si necesitas más de 4 particiones, debes crear una extendida para albergar unidades lógicas."
+              },
+              {
+                "id": "si-u2-p43",
+                "pregunta": "¿Qué ventaja principal ofrece el esquema de particiones GPT frente al antiguo MBR?",
+                "opciones": {
+                  "A": "Es compatible con disquetes",
+                  "B": "No permite más de 2 particiones",
+                  "C": "Soporta discos de más de 2 TB y permite un número mucho mayor de particiones (hasta 128)",
+                  "D": "Solo funciona con sistemas operativos de 32 bits"
+                },
+                "correcta": "C",
+                "justificacion": "GPT es el estándar moderno asociado a UEFI que elimina las limitaciones de MBR."
+              },
+              {
+                "id": "si-u2-p44",
+                "pregunta": "¿Qué sucede si eliminamos la partición donde reside el gestor de arranque (como GRUB)?",
+                "opciones": {
+                  "A": "El ordenador arranca más rápido",
+                  "B": "No podremos iniciar ninguno de los sistemas operativos instalados",
+                  "C": "Windows se reinstala automáticamente",
+                  "D": "Se duplica la memoria RAM disponible"
+                },
+                "correcta": "B",
+                "justificacion": "El gestor de arranque es el software que presenta el menú de elección; sin él, la BIOS/UEFI no sabe qué cargar."
+              },
+              {
+                "id": "si-u2-p19",
+                "pregunta": "Para que Linux pueda montar particiones de Windows en un arranque dual sin errores, ¿qué debemos asegurar?",
+                "opciones": {
+                  "A": "Que Windows esté en modo hibernación",
+                  "B": "Que el inicio rápido (Fast Boot) esté desactivado y el apagado sea completo",
+                  "C": "Que la partición sea FAT32 obligatoriamente",
+                  "D": "Que no haya contraseña en Windows"
+                },
+                "correcta": "B",
+                "justificacion": "Si Windows no se apaga totalmente, bloquea el sistema de archivos NTFS y Linux no puede escribir en él."
+              },
+              {
+                "id": "si-t1-p01",
+                "pregunta": "¿Cuál es el gestor de arranque predeterminado en las distribuciones de Linux modernas?",
+                "opciones": {
+                  "A": "LILO",
+                  "B": "GRUB Legacy",
+                  "C": "GRUB 2",
+                  "D": "BOOTMGR"
+                },
+                "correcta": "C",
+                "justificacion": "GRUB 2 es el estándar actual en Linux."
+              },
+              {
+                "id": "si-t1-p02",
+                "pregunta": "¿Qué tabla de particiones permite el uso de discos con una capacidad superior a 2 TB?",
+                "opciones": {
+                  "A": "MBR",
+                  "B": "GPT",
+                  "C": "FAT32",
+                  "D": "NTFS"
+                },
+                "correcta": "B",
+                "justificacion": "GPT supera el límite de 2 TB de MBR y permite un mayor número de particiones."
+              },
+              {
+                "id": "si-t1-p03",
+                "pregunta": "¿Cuál es la capacidad máxima aproximada que soporta el esquema de particiones MBR?",
+                "opciones": {
+                  "A": "512 GB",
+                  "B": "1 TB",
+                  "C": "2 TB",
+                  "D": "4 TB"
+                },
+                "correcta": "C",
+                "justificacion": "MBR tiene una limitación técnica que le impide gestionar discos de más de 2 Terabytes."
+              },
+              {
+                "id": "si-t1-p05",
+                "pregunta": "En un arranque dual (Dual Boot), ¿qué sistema operativo se recomienda instalar primero?",
+                "opciones": {
+                  "A": "Linux",
+                  "B": "macOS",
+                  "C": "Cualquiera es igual",
+                  "D": "Windows"
+                },
+                "correcta": "D",
+                "justificacion": "Se recomienda instalar Windows primero porque suele sobreescribir el sector de arranque."
+              },
+              {
+                "id": "si-t1-p06",
+                "pregunta": "¿Qué sistema de ficheros es recomendable para una partición de datos compartida entre Windows y Linux que soporte archivos de más de 4 GB?",
+                "opciones": {
+                  "A": "FAT32",
+                  "B": "EXT4",
+                  "C": "NTFS",
+                  "D": "BTRFS"
+                },
+                "correcta": "C",
+                "justificacion": "NTFS permite archivos de gran tamaño y es compatible tanto en lectura como en escritura para ambos sistemas."
+              },
+              {
+                "id": "si-t1-p17",
+                "pregunta": "¿Qué componente del arranque se encarga de transferir el control al Kernel del sistema operativo?",
+                "opciones": {
+                  "A": "BIOS",
+                  "B": "MBR",
+                  "C": "Bootloader",
+                  "D": "POST"
+                },
+                "correcta": "C",
+                "justificacion": "El cargador de arranque localiza el kernel en el disco y lo carga en la memoria RAM para iniciar el sistema."
+              },
+              {
+                "id": "si-t1-p25",
+                "pregunta": "¿Cuál es el número máximo de particiones primarias que permite el esquema MBR?",
+                "opciones": {
+                  "A": "2",
+                  "B": "4",
+                  "C": "128",
+                  "D": "Ilimitadas"
+                },
+                "correcta": "B",
+                "justificacion": "MBR solo permite 4 particiones primarias. Para tener más, se debe crear una partición extendida."
+              },
+              {
+                "id": "si-t1-p30",
+                "pregunta": "¿Cuál es el requisito de seguridad en Windows 10/11 para un correcto arranque dual junto a Linux?",
+                "opciones": {
+                  "A": "Desactivar el Firewall",
+                  "B": "Activar el inicio rápido (Fast Boot)",
+                  "C": "Asegurar un apagado completo (sin hibernación del núcleo)",
+                  "D": "Formatear en FAT16"
+                },
+                "correcta": "C",
+                "justificacion": "Windows debe apagarse completamente para que Linux pueda montar las particiones NTFS sin riesgo de corrupción."
+              },
+              {
+                "id": "u02-p01",
+                "pregunta": "¿Qué es GRUB2?",
+                "opciones": {
+                  "A": "Un gestor de arranque",
+                  "B": "El kernel del sistema",
+                  "C": "La BIOS del equipo",
+                  "D": "Un antivirus"
+                },
+                "correcta": "A",
+                "justificacion": "GRUB2 es un gestor de arranque que carga el sistema operativo."
+              },
+              {
+                "id": "u02-p02",
+                "pregunta": "¿Cuántas particiones primarias permite MBR por disco?",
+                "opciones": {
+                  "A": "2",
+                  "B": "4",
+                  "C": "64",
+                  "D": "128"
+                },
+                "correcta": "B",
+                "justificacion": "MBR admite hasta 4 particiones primarias por disco."
+              },
+              {
+                "id": "u02-p03",
+                "pregunta": "¿Cuál es el tamaño máximo aproximado de disco que gestiona MBR?",
+                "opciones": {
+                  "A": "2 TB",
+                  "B": "8 TB",
+                  "C": "9.4 ZB",
+                  "D": "512 GB"
+                },
+                "correcta": "A",
+                "justificacion": "El límite práctico de MBR es aproximadamente 2 TB."
+              },
+              {
+                "id": "u02-p04",
+                "pregunta": "¿Qué distingue a GPT frente a MBR?",
+                "opciones": {
+                  "A": "Redundancia y CRC32 en la tabla de particiones",
+                  "B": "Máximo 4 particiones",
+                  "C": "Límite de 2 TB",
+                  "D": "No compatible con UEFI"
+                },
+                "correcta": "A",
+                "justificacion": "GPT guarda copias de la tabla de particiones y usa CRC32 para detectar errores."
+              },
+              {
+                "id": "u02-p06",
+                "pregunta": "Orden recomendado para dual boot Windows + Linux",
+                "opciones": {
+                  "A": "Instalar primero Linux y luego Windows",
+                  "B": "Instalar primero Windows y luego Linux",
+                  "C": "Da igual el orden",
+                  "D": "Depende del tipo de disco"
+                },
+                "correcta": "B",
+                "justificacion": "Windows puede sobrescribir el cargador de arranque; después Linux puede instalar GRUB."
+              },
+              {
+                "id": "u02-p07",
+                "pregunta": "¿Por qué desactivar Inicio rápido (Fast Startup) en dual boot?",
+                "opciones": {
+                  "A": "Acelera demasiado el arranque",
+                  "B": "Impide instalar controladores en Linux",
+                  "C": "No apaga completamente y puede bloquear NTFS desde Linux",
+                  "D": "Reduce la vida del SSD"
+                },
+                "correcta": "C",
+                "justificacion": "Puede dejar NTFS en estado de hibernación y causar problemas al montar particiones desde Linux."
+              },
+              {
+                "id": "u02-p28",
+                "pregunta": "¿El arranque dual ralentiza el ordenador?",
+                "opciones": {
+                  "A": "Sí, siempre",
+                  "B": "No, el otro SO está inactivo y no afecta",
+                  "C": "Solo con menos de 16 GB RAM",
+                  "D": "Solo con SSD"
+                },
+                "correcta": "B",
+                "justificacion": "Solo se ejecuta un sistema operativo a la vez, así que el otro no afecta al rendimiento."
+              },
+              {
+                "id": "u02-p29",
+                "pregunta": "Tamaño máximo teórico de disco soportado por GPT",
+                "opciones": {
+                  "A": "2 TB",
+                  "B": "16 TB",
+                  "C": "9.4 ZB",
+                  "D": "16 EB"
+                },
+                "correcta": "C",
+                "justificacion": "GPT permite un tamaño teórico de aproximadamente 9.4 zettabytes."
+              }
+            ]
+          },
+          {
+            "unidad": 5,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-u3-p21",
+                "pregunta": "¿Qué protocolo se encarga de asignar direcciones IP de forma automática a los dispositivos de una red?",
+                "opciones": {
+                  "A": "DNS",
+                  "B": "HTTP",
+                  "C": "DHCP",
+                  "D": "TCP"
+                },
+                "correcta": "C",
+                "justificacion": "DHCP permite que los dispositivos obtengan su configuración de red sin intervención manual."
+              },
+              {
+                "id": "si-u3-p22",
+                "pregunta": "¿Cuál es la función principal del protocolo DNS?",
+                "opciones": {
+                  "A": "Cifrar las comunicaciones de red",
+                  "B": "Traducir nombres de dominio (como google.com) en direcciones IP",
+                  "C": "Enviar correos electrónicos",
+                  "D": "Dividir una red en subredes"
+                },
+                "correcta": "B",
+                "justificacion": "El DNS actúa como la agenda de Internet, convirtiendo nombres legibles en IPs."
+              },
+              {
+                "id": "si-u3-p23",
+                "pregunta": "¿Qué dispositivo trabaja en la Capa 2 (Enlace de datos) del modelo OSI y utiliza direcciones MAC?",
+                "opciones": {
+                  "A": "Hub",
+                  "B": "Router",
+                  "C": "Switch",
+                  "D": "Repetidor"
+                },
+                "correcta": "C",
+                "justificacion": "A diferencia del Hub, el Switch segmenta la red basándose en la MAC del destinatario."
+              },
+              {
+                "id": "si-u3-p24",
+                "pregunta": "¿Cuántas capas tiene el modelo OSI?",
+                "opciones": {
+                  "A": "4",
+                  "B": "5",
+                  "C": "7",
+                  "D": "8"
+                },
+                "correcta": "C",
+                "justificacion": "El modelo OSI se divide en 7 capas, desde la física hasta la de aplicación."
+              },
+              {
+                "id": "si-u3-p25",
+                "pregunta": "¿Cuál de las siguientes es una dirección IP de Clase C?",
+                "opciones": {
+                  "A": "10.0.0.1",
+                  "B": "172.16.0.5",
+                  "C": "192.168.1.50",
+                  "D": "224.0.0.1"
+                },
+                "correcta": "C",
+                "justificacion": "Las direcciones de Clase C comienzan en el rango 192.0.0.0 hasta 223.255.255.255."
+              },
+              {
+                "id": "si-u3-p26",
+                "pregunta": "En una subred con máscara /24, ¿cuántas direcciones IP totales hay disponibles (incluyendo red y broadcast)?",
+                "opciones": {
+                  "A": "128",
+                  "B": "254",
+                  "C": "256",
+                  "D": "512"
+                },
+                "correcta": "C",
+                "justificacion": "Un /24 deja 8 bits para hosts (2^8 = 256). Para hosts utilizables serían 254."
+              },
+              {
+                "id": "si-u3-p27",
+                "pregunta": "¿Qué comando se usa en Windows para verificar la conectividad con otro equipo mediante paquetes ICMP?",
+                "opciones": {
+                  "A": "ipconfig",
+                  "B": "tracert",
+                  "C": "ping",
+                  "D": "netstat"
+                },
+                "correcta": "C",
+                "justificacion": "El comando ping es la herramienta básica para comprobar si un host remoto responde."
+              },
+              {
+                "id": "si-u3-p28",
+                "pregunta": "¿Cuál es el puerto estándar para el protocolo HTTP?",
+                "opciones": {
+                  "A": "21",
+                  "B": "80",
+                  "C": "443",
+                  "D": "3306"
+                },
+                "correcta": "B",
+                "justificacion": "El puerto 80 es para tráfico web no cifrado (HTTP), mientras que el 443 es para HTTPS."
+              },
+              {
+                "id": "si-u3-p29",
+                "pregunta": "¿Qué protocolo se utiliza para la transferencia de archivos de forma remota?",
+                "opciones": {
+                  "A": "SMTP",
+                  "B": "SSH",
+                  "C": "FTP",
+                  "D": "ICMP"
+                },
+                "correcta": "C",
+                "justificacion": "FTP (File Transfer Protocol) es el protocolo diseñado específicamente para mover archivos entre sistemas."
+              },
+              {
+                "id": "si-u3-p30",
+                "pregunta": "En el modelo TCP/IP, ¿en qué capa se ubica el protocolo IP?",
+                "opciones": {
+                  "A": "Capa de Aplicación",
+                  "B": "Capa de Transporte",
+                  "C": "Capa de Internet",
+                  "D": "Capa de Acceso a la Red"
+                },
+                "correcta": "C",
+                "justificacion": "La capa de Internet es donde reside el direccionamiento IP y el enrutamiento."
+              },
+              {
+                "id": "si-u3-p51",
+                "pregunta": "¿Qué comando utilizarías en Windows para conocer la dirección IP, la máscara de subred y la puerta de enlace predeterminada?",
+                "opciones": {
+                  "A": "ifconfig",
+                  "B": "ipconfig",
+                  "C": "ping -all",
+                  "D": "netstat"
+                },
+                "correcta": "B",
+                "justificacion": "ipconfig es el comando estándar en Windows para mostrar la configuración de los adaptadores de red."
+              },
+              {
+                "id": "si-u3-p52",
+                "pregunta": "En un entorno Linux, ¿qué comando se usa actualmente para gestionar y visualizar las direcciones IP?",
+                "opciones": {
+                  "A": "ip addr (o ip a)",
+                  "B": "show ip",
+                  "C": "get-network",
+                  "D": "config-network"
+                },
+                "correcta": "A",
+                "justificacion": "La herramienta moderna en distribuciones actuales es iproute2 con el comando ip addr."
+              },
+              {
+                "id": "si-u3-p53",
+                "pregunta": "¿Cuál es la función principal del comando ping?",
+                "opciones": {
+                  "A": "Descargar archivos de internet",
+                  "B": "Comprobar la conectividad con otro equipo mediante el protocolo ICMP",
+                  "C": "Cambiar la dirección MAC de la tarjeta",
+                  "D": "Cifrar la conexión de red"
+                },
+                "correcta": "B",
+                "justificacion": "El ping envía paquetes de eco para verificar si un destino es alcanzable y medir el tiempo de respuesta."
+              },
+              {
+                "id": "si-u3-p54",
+                "pregunta": "¿Qué indica una máscara de subred (por ejemplo, 255.255.255.0)?",
+                "opciones": {
+                  "A": "La velocidad máxima de la conexión",
+                  "B": "Qué parte de la dirección IP pertenece a la red y qué parte pertenece al host",
+                  "C": "El nombre del equipo en la red",
+                  "D": "El número de puertos abiertos en el router"
+                },
+                "correcta": "B",
+                "justificacion": "La máscara delimita el rango de red, permitiendo que los equipos sepan si un destino está en su misma red local o fuera."
+              },
+              {
+                "id": "si-u3-p55",
+                "pregunta": "Si un equipo tiene la IP 192.168.1.10 y la máscara 255.255.255.0, ¿cuál sería la dirección de red?",
+                "opciones": {
+                  "A": "192.168.1.255",
+                  "B": "192.168.1.0",
+                  "C": "192.168.1.1",
+                  "D": "255.255.255.255"
+                },
+                "correcta": "B",
+                "justificacion": "En una red de clase C (/24), el último octeto se reserva en .0 para identificar la red."
+              },
+              {
+                "id": "si-u3-p56",
+                "pregunta": "¿Para qué sirve el comando tracert (Windows) o traceroute (Linux)?",
+                "opciones": {
+                  "A": "Para borrar el historial del navegador",
+                  "B": "Para mostrar la ruta que sigue un paquete hasta llegar a un destino, indicando cada salto (router)",
+                  "C": "Para aumentar la potencia del WiFi",
+                  "D": "Para ver quién está conectado a mi carpeta compartida"
+                },
+                "correcta": "B",
+                "justificacion": "Es vital para diagnosticar en qué punto de la red se está perdiendo la conexión."
+              },
+              {
+                "id": "si-u3-p57",
+                "pregunta": "¿Qué es la Puerta de Enlace Predeterminada (Default Gateway)?",
+                "opciones": {
+                  "A": "La dirección IP del propio equipo",
+                  "B": "La dirección IP del router que permite salir a otras redes o a Internet",
+                  "C": "El servidor que traduce nombres de dominio",
+                  "D": "Un tipo de cable de red blindado"
+                },
+                "correcta": "B",
+                "justificacion": "Sin la puerta de enlace configurada, el tráfico no sabría cómo salir de la red local."
+              },
+              {
+                "id": "si-u3-p60",
+                "pregunta": "¿Cuál es la función de un servidor DNS?",
+                "opciones": {
+                  "A": "Asignar direcciones IP automáticamente (DHCP)",
+                  "B": "Traducir nombres de dominio (ej. www.cachyos.org) en direcciones IP",
+                  "C": "Almacenar las páginas web para que carguen más rápido",
+                  "D": "Limpiar los archivos temporales del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "El DNS actúa como la agenda de Internet, permitiéndonos usar nombres en lugar de números IP."
+              },
+              {
+                "id": "si-t1-p08",
+                "pregunta": "¿Cuántos bits componen una dirección IPv6?",
+                "opciones": {
+                  "A": "32 bits",
+                  "B": "64 bits",
+                  "C": "128 bits",
+                  "D": "256 bits"
+                },
+                "correcta": "C",
+                "justificacion": "Las direcciones IPv6 tienen una longitud de 128 bits."
+              },
+              {
+                "id": "si-t1-p09",
+                "pregunta": "¿En qué capa del modelo OSI se sitúa el direccionamiento IP?",
+                "opciones": {
+                  "A": "Física",
+                  "B": "Enlace",
+                  "C": "Red",
+                  "D": "Transporte"
+                },
+                "correcta": "C",
+                "justificacion": "La capa de Red (Capa 3) es la encargada del direccionamiento lógico y el enrutamiento de paquetes."
+              },
+              {
+                "id": "si-t1-p11",
+                "pregunta": "¿Cuál es la característica principal de la dirección de broadcast en una subred simétrica?",
+                "opciones": {
+                  "A": "Siempre es una dirección par",
+                  "B": "Siempre es una dirección impar",
+                  "C": "Es la primera dirección del rango",
+                  "D": "Es igual a la dirección de red"
+                },
+                "correcta": "B",
+                "justificacion": "Si la dirección de red es par, el broadcast resultará impar."
+              },
+              {
+                "id": "si-t1-p12",
+                "pregunta": "Si una subred tiene 4 hosts en total, ¿cuántos están disponibles para asignar a dispositivos?",
+                "opciones": {
+                  "A": "4",
+                  "B": "3",
+                  "C": "2",
+                  "D": "1"
+                },
+                "correcta": "C",
+                "justificacion": "De los 4 hosts, se deben restar 2: uno para la dirección de red y otro para el broadcast."
+              },
+              {
+                "id": "si-t1-p13",
+                "pregunta": "¿Qué máscara de subred es necesaria para obtener al menos 6 subredes a partir de una red /24?",
+                "opciones": {
+                  "A": "/25",
+                  "B": "/26",
+                  "C": "/27",
+                  "D": "/28"
+                },
+                "correcta": "C",
+                "justificacion": "Con /27 tomamos 3 bits (2^3 = 8), lo que permite albergar las 6 subredes solicitadas."
+              },
+              {
+                "id": "si-t1-p15",
+                "pregunta": "¿Qué clase de direcciones IPv4 comprende el rango desde 224.0.0.0 hasta 239.255.255.255?",
+                "opciones": {
+                  "A": "Clase B",
+                  "B": "Clase C",
+                  "C": "Clase D (Multicast)",
+                  "D": "Clase E"
+                },
+                "correcta": "C",
+                "justificacion": "El rango que comienza por los bits 1110 corresponde a la Clase D, utilizada para Multicast."
+              },
+              {
+                "id": "si-t1-p16",
+                "pregunta": "¿Qué protocolo de transporte se caracteriza por garantizar una entrega fiable de los datos?",
+                "opciones": {
+                  "A": "UDP",
+                  "B": "IP",
+                  "C": "TCP",
+                  "D": "HTTP"
+                },
+                "correcta": "C",
+                "justificacion": "TCP es orientado a conexión y asegura que los datos lleguen correctamente mediante confirmaciones."
+              },
+              {
+                "id": "si-t1-p18",
+                "pregunta": "¿Cómo se representa la abreviación de ceros consecutivos en una dirección IPv6?",
+                "opciones": {
+                  "A": "Mediante un asterisco (*)",
+                  "B": "Mediante un punto (.)",
+                  "C": "Mediante el uso de doble dos puntos (::)",
+                  "D": "Mediante guiones (--)"
+                },
+                "correcta": "C",
+                "justificacion": "IPv6 permite comprimir grupos de ceros una sola vez por dirección utilizando el símbolo '::'."
+              },
+              {
+                "id": "si-t1-p19",
+                "pregunta": "¿Cuál es la función principal de la máscara de red?",
+                "opciones": {
+                  "A": "Determinar el ancho de banda",
+                  "B": "Identificar qué bits pertenecen a la red y cuáles al host",
+                  "C": "Aumentar la velocidad de la RAM",
+                  "D": "Contar el número de routers en el camino"
+                },
+                "correcta": "B",
+                "justificacion": "La máscara delimita la frontera entre la porción de red y la porción de host de una dirección IP."
+              },
+              {
+                "id": "si-t1-p20",
+                "pregunta": "¿Qué dirección IPv4 se utiliza universalmente para representar el localhost o loopback?",
+                "opciones": {
+                  "A": "192.168.1.1",
+                  "B": "8.8.8.8",
+                  "C": "127.0.0.1",
+                  "D": "10.0.0.1"
+                },
+                "correcta": "C",
+                "justificacion": "El rango 127.0.0.0/8 está reservado para pruebas de bucle de retorno, siendo 127.0.0.1 la más común."
+              },
+              {
+                "id": "si-t1-p26",
+                "pregunta": "En direccionamiento IPv4, ¿cuál es el rango de la Clase A?",
+                "opciones": {
+                  "A": "0.0.0.0 a 127.255.255.255",
+                  "B": "128.0.0.0 a 191.255.255.255",
+                  "C": "192.0.0.0 a 223.255.255.255",
+                  "D": "224.0.0.0 a 239.255.255.255"
+                },
+                "correcta": "A",
+                "justificacion": "La Clase A utiliza el primer octeto para la red y comprende el rango del 0 al 127."
+              },
+              {
+                "id": "si-t1-p27",
+                "pregunta": "¿Qué protocolo de transporte se prefiere para aplicaciones de tiempo real como streaming o juegos online?",
+                "opciones": {
+                  "A": "TCP",
+                  "B": "UDP",
+                  "C": "FTP",
+                  "D": "SSH"
+                },
+                "correcta": "B",
+                "justificacion": "UDP es más rápido al no requerir confirmación de entrega, lo que reduce la latencia."
+              },
+              {
+                "id": "u02-p15",
+                "pregunta": "OSI: ¿qué capa usa direcciones MAC?",
+                "opciones": {
+                  "A": "Física",
+                  "B": "Enlace de datos",
+                  "C": "Red",
+                  "D": "Transporte"
+                },
+                "correcta": "B",
+                "justificacion": "La capa 2, enlace de datos, usa direcciones MAC."
+              },
+              {
+                "id": "u02-p16",
+                "pregunta": "OSI: ¿en qué capa opera el enrutamiento IP?",
+                "opciones": {
+                  "A": "Física",
+                  "B": "Internet",
+                  "C": "Transporte",
+                  "D": "Red"
+                },
+                "correcta": "D",
+                "justificacion": "El enrutamiento IP pertenece a la capa de red."
+              },
+              {
+                "id": "u02-p17",
+                "pregunta": "Protocolo orientado a conexión y fiable",
+                "opciones": {
+                  "A": "UDP",
+                  "B": "TCP",
+                  "C": "IP",
+                  "D": "ARP"
+                },
+                "correcta": "B",
+                "justificacion": "TCP es fiable y orientado a conexión."
+              },
+              {
+                "id": "u02-p18",
+                "pregunta": "¿Cuántos bits tiene una dirección IPv4?",
+                "opciones": {
+                  "A": "16",
+                  "B": "32",
+                  "C": "64",
+                  "D": "128"
+                },
+                "correcta": "B",
+                "justificacion": "IPv4 usa 32 bits."
+              },
+              {
+                "id": "u02-p19",
+                "pregunta": "¿Cuántos bits tiene una dirección IPv6?",
+                "opciones": {
+                  "A": "32",
+                  "B": "64",
+                  "C": "96",
+                  "D": "128"
+                },
+                "correcta": "D",
+                "justificacion": "IPv6 usa 128 bits."
+              },
+              {
+                "id": "u02-p20",
+                "pregunta": "¿Cuál de estos rangos es privado (IPv4, clase C)?",
+                "opciones": {
+                  "A": "100.64.0.0-100.127.255.255",
+                  "B": "192.168.0.0-192.168.255.255",
+                  "C": "172.0.0.0-172.15.255.255",
+                  "D": "169.254.0.0-169.254.255.255"
+                },
+                "correcta": "B",
+                "justificacion": "Es el rango privado clase C."
+              },
+              {
+                "id": "u02-p21",
+                "pregunta": "Dirección loopback en IPv4",
+                "opciones": {
+                  "A": "0.0.0.0",
+                  "B": "127.0.0.1",
+                  "C": "255.255.255.255",
+                  "D": "128.0.0.1"
+                },
+                "correcta": "B",
+                "justificacion": "127.0.0.1 es la dirección loopback."
+              },
+              {
+                "id": "u02-p22",
+                "pregunta": "Máscara por defecto de una red IPv4 clase B",
+                "opciones": {
+                  "A": "255.0.0.0",
+                  "B": "255.255.0.0",
+                  "C": "255.255.255.0",
+                  "D": "255.255.255.128"
+                },
+                "correcta": "B",
+                "justificacion": "La máscara por defecto de clase B es 255.255.0.0."
+              },
+              {
+                "id": "u02-p23",
+                "pregunta": "Broadcast de la red 145.32.0.0/16",
+                "opciones": {
+                  "A": "145.32.0.255",
+                  "B": "145.32.255.255",
+                  "C": "145.32.255.0",
+                  "D": "145.32.0.0"
+                },
+                "correcta": "B",
+                "justificacion": "En una red /16, el broadcast es 145.32.255.255."
+              },
+              {
+                "id": "u02-p24",
+                "pregunta": "Abreviación correcta: 5199:0000:0000:1767:0000:0000:0000:00a5",
+                "opciones": {
+                  "A": "5199:0:0:1767:0:0:0a5",
+                  "B": "5199:0:0:1767::a5",
+                  "C": "5199::1767::a5",
+                  "D": "5199:0:1767::a5"
+                },
+                "correcta": "B",
+                "justificacion": "Se eliminan ceros a la izquierda y se usa :: una sola vez para comprimir bloques consecutivos de ceros."
+              },
+              {
+                "id": "u02-p25",
+                "pregunta": "Prefijo fe80::/10 en IPv6 corresponde a",
+                "opciones": {
+                  "A": "Unicast global",
+                  "B": "Unicast local único (ULA)",
+                  "C": "Unicast local en enlace (link-local)",
+                  "D": "Multicast"
+                },
+                "correcta": "C",
+                "justificacion": "fe80::/10 está reservado para direcciones link-local."
+              },
+              {
+                "id": "u02-p30",
+                "pregunta": "OSI: ¿qué capa traduce y cifra datos?",
+                "opciones": {
+                  "A": "Sesión",
+                  "B": "Presentación",
+                  "C": "Aplicación",
+                  "D": "Transporte"
+                },
+                "correcta": "B",
+                "justificacion": "La capa de presentación se encarga de la traducción, compresión y cifrado."
+              }
+            ]
+          },
+          {
+            "unidad": 6,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-t1-p07",
+                "pregunta": "¿Qué nivel de RAID ofrece alto rendimiento (striping) pero no tiene tolerancia a fallos?",
+                "opciones": {
+                  "A": "RAID 0",
+                  "B": "RAID 1",
+                  "C": "RAID 5",
+                  "D": "RAID 10"
+                },
+                "correcta": "A",
+                "justificacion": "RAID 0 distribuye los datos entre discos para ganar velocidad, pero si falla un disco se pierde toda la información."
+              },
+              {
+                "id": "si-t1-p24",
+                "pregunta": "¿Qué nivel de RAID es conocido como espejo (mirroring)?",
+                "opciones": {
+                  "A": "RAID 0",
+                  "B": "RAID 1",
+                  "C": "RAID 5",
+                  "D": "RAID 6"
+                },
+                "correcta": "B",
+                "justificacion": "El RAID 1 duplica los datos en dos discos; si uno falla, el sistema sigue funcionando con el otro."
+              },
+              {
+                "id": "si-t1-p29",
+                "pregunta": "En un RAID 5 de 3 discos de 2 TB cada uno, ¿cuál es la capacidad útil?",
+                "opciones": {
+                  "A": "6 TB",
+                  "B": "4 TB",
+                  "C": "2 TB",
+                  "D": "1 TB"
+                },
+                "correcta": "B",
+                "justificacion": "En RAID 5 se pierde la capacidad de un disco para paridad (n-1). Con 3 discos de 2TB, quedan 4TB útiles."
+              },
+              {
+                "id": "u02-p11",
+                "pregunta": "¿Qué nivel de RAID no aporta tolerancia a fallos?",
+                "opciones": {
+                  "A": "RAID 0",
+                  "B": "RAID 1",
+                  "C": "RAID 5",
+                  "D": "RAID 6"
+                },
+                "correcta": "A",
+                "justificacion": "RAID 0 no tiene redundancia."
+              },
+              {
+                "id": "u02-p12",
+                "pregunta": "¿Qué nivel de RAID implementa espejado (mirroring)?",
+                "opciones": {
+                  "A": "RAID 0",
+                  "B": "RAID 1",
+                  "C": "RAID 5",
+                  "D": "RAID 10"
+                },
+                "correcta": "B",
+                "justificacion": "RAID 1 duplica los datos en dos discos."
+              },
+              {
+                "id": "u02-p13",
+                "pregunta": "Mínimo de discos necesarios para RAID 5",
+                "opciones": {
+                  "A": "2",
+                  "B": "4",
+                  "C": "5",
+                  "D": "3"
+                },
+                "correcta": "D",
+                "justificacion": "RAID 5 requiere al menos 3 discos."
+              },
+              {
+                "id": "u02-p14",
+                "pregunta": "En RAID 6, ¿cuántos discos pueden fallar sin pérdida de datos?",
+                "opciones": {
+                  "A": "0",
+                  "B": "1",
+                  "C": "2",
+                  "D": "3"
+                },
+                "correcta": "C",
+                "justificacion": "RAID 6 soporta el fallo de dos discos."
+              }
+            ]
+          },
+          {
+            "unidad": 7,
+            "total": 11,
+            "preguntas": [
+              {
+                "id": "si-u1-p05",
+                "pregunta": "En virtualización, ¿cómo se denomina al sistema operativo instalado en la máquina real que hospeda a los demás?",
+                "opciones": {
+                  "A": "Guest (Invitado)",
+                  "B": "Kernel",
+                  "C": "Host (Anfitrión)",
+                  "D": "Root"
+                },
+                "correcta": "C",
+                "justificacion": "El Host es el sistema físico sobre el cual corren las máquinas virtuales."
+              },
+              {
+                "id": "si-u1-p06",
+                "pregunta": "En virtualización, ¿cómo se denomina al sistema operativo que corre dentro de una máquina virtual?",
+                "opciones": {
+                  "A": "Host",
+                  "B": "Guest (Invitado)",
+                  "C": "BIOS",
+                  "D": "Hypervisor"
+                },
+                "correcta": "B",
+                "justificacion": "El sistema Guest es el que vive dentro del entorno emulado."
+              },
+              {
+                "id": "si-u1-p07",
+                "pregunta": "¿Cuál es una ventaja típica de la virtualización?",
+                "opciones": {
+                  "A": "Aumenta siempre el rendimiento del hardware real",
+                  "B": "Elimina la necesidad de tener disco duro físico",
+                  "C": "Permite que coexistan varios sistemas aislados en un mismo equipo físico",
+                  "D": "Hace que el ordenador no consuma electricidad"
+                },
+                "correcta": "C",
+                "justificacion": "La principal ventaja es la consolidación de servidores y el aislamiento de entornos para pruebas."
+              },
+              {
+                "id": "si-u1-p08",
+                "pregunta": "¿Cuál es un inconveniente frecuente de usar un sistema operativo como invitado (Guest)?",
+                "opciones": {
+                  "A": "No puede tener conexión a red bajo ningún concepto",
+                  "B": "Suele ofrecer menor rendimiento que una instalación nativa debido a la capa de emulación",
+                  "C": "Consume 0 MB de memoria RAM",
+                  "D": "Solo puede ejecutar programas de diseño"
+                },
+                "correcta": "B",
+                "justificacion": "Al haber una capa intermedia (Hypervisor), el acceso al hardware no es tan directo y el rendimiento puede ser inferior."
+              },
+              {
+                "id": "si-u1-p09",
+                "pregunta": "¿Qué herramienta de virtualización se menciona habitualmente para crear máquinas virtuales de forma gratuita?",
+                "opciones": {
+                  "A": "Adobe Photoshop",
+                  "B": "Oracle VirtualBox",
+                  "C": "Microsoft Excel",
+                  "D": "VLC Player"
+                },
+                "correcta": "B",
+                "justificacion": "VirtualBox es una de las soluciones de virtualización de código abierto y gratuitas más populares."
+              },
+              {
+                "id": "si-u1-p31",
+                "pregunta": "¿Por qué se dice que el rendimiento de un Sistema Operativo invitado (Guest) suele ser menor?",
+                "opciones": {
+                  "A": "Porque no tiene acceso a internet",
+                  "B": "Debido al uso de hardware emulado y la capa intermedia del hipervisor",
+                  "C": "Porque consume 0 MB de RAM",
+                  "D": "Porque el procesador se apaga automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "La emulación de hardware genera un consumo de recursos extra que no existe en una instalación nativa."
+              },
+              {
+                "id": "si-u1-p32",
+                "pregunta": "¿Cuál es la forma real en la que una máquina virtual obtiene conexión de red?",
+                "opciones": {
+                  "A": "Conectando un cable físico directamente a la VM",
+                  "B": "A través de un conector interno que emula el cable (adaptador virtual)",
+                  "C": "No puede tener red bajo ningún concepto",
+                  "D": "Usando solo señales de radio internas del procesador"
+                },
+                "correcta": "B",
+                "justificacion": "El software de virtualización crea un adaptador de red virtual que actúa como puente con el hardware real."
+              },
+              {
+                "id": "si-u1-p33",
+                "pregunta": "En el contexto de VirtualBox, ¿qué acción es recomendable al clonar una máquina virtual para evitar conflictos en la red física?",
+                "opciones": {
+                  "A": "Cambiar el color del escritorio",
+                  "B": "Reiniciar las direcciones MAC de las tarjetas de red",
+                  "C": "Desinstalar el sistema operativo",
+                  "D": "Borrar el archivo ISO"
+                },
+                "correcta": "B",
+                "justificacion": "Si dos máquinas tienen la misma MAC en la misma red, se producen conflictos de comunicación."
+              },
+              {
+                "id": "si-u1-p34",
+                "pregunta": "¿Qué tipo de clonación crea una copia totalmente independiente de la máquina original?",
+                "opciones": {
+                  "A": "Clonación enlazada",
+                  "B": "Clonación completa",
+                  "C": "Clonación simbólica",
+                  "D": "Clonación incremental"
+                },
+                "correcta": "B",
+                "justificacion": "La clonación completa duplica todos los archivos de disco, haciendo que la nueva máquina no dependa de la original."
+              },
+              {
+                "id": "si-u1-p35",
+                "pregunta": "¿Qué es un disco de diferenciación en virtualización?",
+                "opciones": {
+                  "A": "Un disco que mejora el brillo de la pantalla",
+                  "B": "Un disco que solo guarda los cambios realizados respecto a un disco maestro o base",
+                  "C": "Un disco físico externo conectado por USB",
+                  "D": "Un software para limpiar el registro de Windows"
+                },
+                "correcta": "B",
+                "justificacion": "Permite ahorrar espacio, ya que varias máquinas pueden compartir un disco base y solo escribir sus diferencias."
+              },
+              {
+                "id": "si-u1-p38",
+                "pregunta": "Estadísticamente, ¿cuándo recomienda Olga arriesgarse a contestar una pregunta si las respuestas negativas restan 0.33?",
+                "opciones": {
+                  "A": "Cuando no tienes ni idea de ninguna opción",
+                  "B": "Solo cuando dudas entre dos opciones (50% de probabilidad)",
+                  "C": "Nunca, bajo ninguna circunstancia",
+                  "D": "Siempre, en todas las preguntas"
+                },
+                "correcta": "B",
+                "justificacion": "Si dudas entre dos, la probabilidad matemática juega a tu favor."
+              },
+              {
+                "id": "si-u1-p40",
+                "pregunta": "Al clonar una máquina virtual, ¿qué es una clonación enlazada?",
+                "opciones": {
+                  "A": "Una copia que requiere que la máquina original esté siempre presente para funcionar",
+                  "B": "Una copia que se envía por correo electrónico",
+                  "C": "Una copia que borra el disco duro original",
+                  "D": "Una copia que solo funciona en la nube"
+                },
+                "correcta": "A",
+                "justificacion": "La clonación enlazada ahorra espacio pero depende totalmente de los archivos de disco de la máquina origen."
+              },
+              {
+                "id": "u01-p04",
+                "pregunta": "¿Qué ocurre si un ordenador no puede virtualizar?",
+                "opciones": {
+                  "A": "Te compras uno nuevo",
+                  "B": "Usas VirtualBox y se soluciona",
+                  "C": "Usas VMware",
+                  "D": "Activar la virtualización en la UEFI antes de cambiar de equipo"
+                },
+                "correcta": "D",
+                "justificacion": "Antes de cambiar de equipo, conviene comprobar si la virtualización puede activarse en BIOS o UEFI."
+              },
+              {
+                "id": "u01-p05",
+                "pregunta": "Ventajas de la virtualización:",
+                "opciones": {
+                  "A": "Entorno controlado",
+                  "B": "Reducción de costes",
+                  "C": "Cohesión",
+                  "D": "C es correcta y A incorrecta"
+                },
+                "correcta": "B",
+                "justificacion": "La virtualización aporta ahorro de costes y mejora la gestión de recursos."
+              },
+              {
+                "id": "u01-p06",
+                "pregunta": "¿Cuál es el principal inconveniente de la virtualización?",
+                "opciones": {
+                  "A": "Tiempo de ejecución",
+                  "B": "Tiempo de creación de máquinas",
+                  "C": "Inestabilidad",
+                  "D": "Tiempo de testing"
+                },
+                "correcta": "A",
+                "justificacion": "La virtualización introduce sobrecarga y puede aumentar el tiempo de ejecución."
+              },
+              {
+                "id": "u02-p09v3",
+                "pregunta": "¿Qué es una máquina virtual?",
+                "opciones": {
+                  "A": "Un ordenador físico",
+                  "B": "Un software que emula un ordenador real",
+                  "C": "Un sistema operativo portátil",
+                  "D": "Un disco duro externo"
+                },
+                "correcta": "B",
+                "justificacion": "Una máquina virtual es un entorno software que emula un ordenador."
+              },
+              {
+                "id": "u02-p10v3",
+                "pregunta": "Las máquinas virtuales de hardware permiten:",
+                "opciones": {
+                  "A": "Ejecutar varias máquinas virtuales en una física",
+                  "B": "Usar solo un sistema operativo",
+                  "C": "Eliminar el sistema anfitrión",
+                  "D": "Aumentar siempre el rendimiento"
+                },
+                "correcta": "A",
+                "justificacion": "Permiten ejecutar varias máquinas virtuales sobre una máquina física."
+              },
+              {
+                "id": "u02-p11v3",
+                "pregunta": "El sistema operativo instalado en la máquina real se llama:",
+                "opciones": {
+                  "A": "Guest",
+                  "B": "Virtual",
+                  "C": "Host",
+                  "D": "Emulado"
+                },
+                "correcta": "C",
+                "justificacion": "El sistema operativo de la máquina real se denomina host."
+              },
+              {
+                "id": "u02-p12v3",
+                "pregunta": "El sistema operativo instalado en una máquina virtual se denomina:",
+                "opciones": {
+                  "A": "Host",
+                  "B": "Base",
+                  "C": "Invitado (guest)",
+                  "D": "Físico"
+                },
+                "correcta": "C",
+                "justificacion": "El sistema operativo de una máquina virtual se llama guest o invitado."
+              },
+              {
+                "id": "u02-p13v3",
+                "pregunta": "Una desventaja de la virtualización es:",
+                "opciones": {
+                  "A": "Menor flexibilidad",
+                  "B": "Mayor consumo de energía siempre",
+                  "C": "Pérdida de rendimiento",
+                  "D": "Falta de compatibilidad"
+                },
+                "correcta": "C",
+                "justificacion": "La virtualización puede provocar cierta pérdida de rendimiento."
+              },
+              {
+                "id": "u02-p14v3",
+                "pregunta": "Una ventaja clara de la virtualización en empresas es:",
+                "opciones": {
+                  "A": "Mayor coste",
+                  "B": "Menor estabilidad",
+                  "C": "Ahorro de tiempo y administración",
+                  "D": "Menor seguridad"
+                },
+                "correcta": "C",
+                "justificacion": "La virtualización ayuda a ahorrar tiempo y simplificar la administración."
+              },
+              {
+                "id": "u02-p15v3",
+                "pregunta": "¿Cuál de los siguientes es un software de virtualización?",
+                "opciones": {
+                  "A": "Ubuntu",
+                  "B": "VirtualBox",
+                  "C": "Rufus",
+                  "D": "Windows Update"
+                },
+                "correcta": "B",
+                "justificacion": "VirtualBox es un software de virtualización."
+              },
+              {
+                "id": "u02-p16v3",
+                "pregunta": "¿Qué debe hacerse primero si un ordenador no permite la virtualización?",
+                "opciones": {
+                  "A": "Comprar un ordenador nuevo",
+                  "B": "Intentar activar la virtualización en la UEFI/BIOS",
+                  "C": "Cambiar VirtualBox por VMware",
+                  "D": "Instalar otro sistema operativo"
+                },
+                "correcta": "B",
+                "justificacion": "Lo primero es comprobar y activar la virtualización en la BIOS o UEFI."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

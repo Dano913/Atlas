@@ -1,0 +1,1099 @@
+[
+  {
+    "asignatura": "Programacion",
+    "fuentes": [
+      {
+        "fuente": "PROMETEO",
+        "total_preguntas": 21,
+        "unidades": [
+          {
+            "unidad": "Test unidad 01",
+            "total": 9,
+            "preguntas": [
+              {
+                "id": "u1p01",
+                "pregunta": "¿Cuál de los siguientes NO es un componente fundamental del JDK (Java Development Kit)?",
+                "opciones": {
+                  "A": "El compilador javac que transforma código fuente en bytecode",
+                  "B": "La máquina virtual JVM que ejecuta el bytecode",
+                  "C": "Un navegador web integrado para ejecutar applets Java",
+                  "D": "Bibliotecas de clases que proporcionan funcionalidades básicas"
+                },
+                "correcta": "C",
+                "justificacion": "El JDK incluye herramientas de desarrollo y el entorno de ejecución, pero no incluye navegadores web."
+              },
+              {
+                "id": "u1p02",
+                "pregunta": "¿Cuál es la característica principal de las versiones LTS (Long Term Support) de Java?",
+                "opciones": {
+                  "A": "Ofrecen la mayor velocidad de ejecución",
+                  "B": "Son versiones de prueba gratuitas",
+                  "C": "Proporcionan estabilidad y soporte a largo plazo para proyectos empresariales",
+                  "D": "Incluyen automáticamente todas las herramientas de desarrollo gráfico"
+                },
+                "correcta": "C",
+                "justificacion": "Las versiones LTS garantizan soporte y parches de seguridad por varios años."
+              },
+              {
+                "id": "u1p03",
+                "pregunta": "¿Cuál de estos IDEs destaca por su inteligencia artificial integrada que sugiere correcciones automáticas?",
+                "opciones": {
+                  "A": "Eclipse",
+                  "B": "IntelliJ IDEA",
+                  "C": "VSCode",
+                  "D": "NetBeans"
+                },
+                "correcta": "B",
+                "justificacion": "IntelliJ IDEA es reconocido por su avanzado motor de análisis y sugerencias inteligentes."
+              },
+              {
+                "id": "u1p04",
+                "pregunta": "¿Cuál es el propósito principal de Git?",
+                "opciones": {
+                  "A": "Compilar código Java",
+                  "B": "Ejecutar tests unitarios",
+                  "C": "Rastrear cambios en el código y coordinar trabajo en equipo",
+                  "D": "Optimizar el rendimiento"
+                },
+                "correcta": "C",
+                "justificacion": "Git es un sistema de control de versiones para gestionar el historial del código."
+              },
+              {
+                "id": "u1p05",
+                "pregunta": "¿Cuál es la definición correcta de un algoritmo?",
+                "opciones": {
+                  "A": "Un programa de terminal",
+                  "B": "Una secuencia lógica, finita y no ambigua de pasos para resolver un problema",
+                  "C": "Un archivo de código compilado",
+                  "D": "Una herramienta de depuración"
+                },
+                "correcta": "B",
+                "justificacion": "Un algoritmo debe ser preciso, finito y definido."
+              },
+              {
+                "id": "u1p06",
+                "pregunta": "Según el teorema de Böhm-Jacopini, ¿cuáles son las tres estructuras fundamentales?",
+                "opciones": {
+                  "A": "Bucles, funciones y variables",
+                  "B": "Clases, interfaces y métodos",
+                  "C": "Secuencia, selección e iteración",
+                  "D": "Entrada, procesamiento y salida"
+                },
+                "correcta": "C",
+                "justificacion": "Estas tres estructuras bastan para representar cualquier algoritmo computable."
+              },
+              {
+                "id": "u1p07",
+                "pregunta": "¿Cuál es el orden correcto para compilar y ejecutar un programa Java?",
+                "opciones": {
+                  "A": "java NombreClase.java -> javac NombreClase",
+                  "B": "javac NombreClase.java -> java NombreClase",
+                  "C": "java -compile -> java",
+                  "D": "compile -> run"
+                },
+                "correcta": "B",
+                "justificacion": "javac genera el bytecode (.class) y java lo ejecuta en la JVM."
+              },
+              {
+                "id": "u1p08",
+                "pregunta": "¿Qué ventaja principal ofrecen los IDEs modernos respecto a la terminal?",
+                "opciones": {
+                  "A": "Compilación más rápida",
+                  "B": "Depuración paso a paso con puntos de interrupción",
+                  "C": "Eliminación automática de todos los bugs",
+                  "D": "Reducción del tamaño del ejecutable"
+                },
+                "correcta": "B",
+                "justificacion": "La inspección de variables y el flujo de ejecución son claves en los IDEs."
+              },
+              {
+                "id": "u1p09",
+                "pregunta": "¿Qué comando Git guarda una versión en el repositorio local?",
+                "opciones": {
+                  "A": "git init",
+                  "B": "git push",
+                  "C": "git commit",
+                  "D": "git pull"
+                },
+                "correcta": "C",
+                "justificacion": "El commit crea un hito en el historial local."
+              }
+            ]
+          },
+          {
+            "unidad": "Test unidad 02",
+            "total": 17,
+            "preguntas": [
+              {
+                "id": "u2p01",
+                "pregunta": "¿Cuál es el método obligatorio que actúa como punto de entrada en Java?",
+                "opciones": {
+                  "A": "public void inicio()",
+                  "B": "public static void main(String[] args)",
+                  "C": "public static main(String args)",
+                  "D": "private static void init()"
+                },
+                "correcta": "B",
+                "justificacion": "Es la firma estándar reconocida por la JVM para iniciar la ejecución."
+              },
+              {
+                "id": "u2p02",
+                "pregunta": "¿Qué significa que Java sea de tipificación fuerte?",
+                "opciones": {
+                  "A": "Debe compilarse siempre",
+                  "B": "Requiere declarar el tipo de cada variable antes de usarla",
+                  "C": "Solo admite variables privadas",
+                  "D": "Las variables son constantes"
+                },
+                "correcta": "B",
+                "justificacion": "El tipo de dato se comprueba estrictamente en tiempo de compilación."
+              },
+              {
+                "id": "u2p03",
+                "pregunta": "¿Cómo se declara correctamente una constante en Java?",
+                "opciones": {
+                  "A": "var PI = 3.14;",
+                  "B": "static PI = 3.14;",
+                  "C": "final double PI = 3.14159;",
+                  "D": "double final PI = 3.14;"
+                },
+                "correcta": "C",
+                "justificacion": "La palabra clave 'final' impide que el valor de la variable se modifique."
+              },
+              {
+                "id": "u2p04",
+                "pregunta": "Si ejecutas int resultado = 17 % 5;, ¿qué valor tendrá resultado?",
+                "opciones": {
+                  "A": "3",
+                  "B": "2",
+                  "C": "17",
+                  "D": "5"
+                },
+                "correcta": "B",
+                "justificacion": "17 dividido por 5 da un residuo de 2."
+              },
+              {
+                "id": "u2p05",
+                "pregunta": "¿Qué operador verifica si dos valores NO son iguales?",
+                "opciones": {
+                  "A": "==",
+                  "B": "=",
+                  "C": "!=",
+                  "D": "<>"
+                },
+                "correcta": "C",
+                "justificacion": "En Java, != es el operador de desigualdad."
+              },
+              {
+                "id": "u2p06",
+                "pregunta": "¿Cuál de estos es un tipo de referencia en Java?",
+                "opciones": {
+                  "A": "int",
+                  "B": "double",
+                  "C": "String",
+                  "D": "boolean"
+                },
+                "correcta": "C",
+                "justificacion": "String es un objeto (clase), los demás son tipos primitivos."
+              },
+              {
+                "id": "u2p07",
+                "pregunta": "¿Qué conversión realiza Java automáticamente (sin casting)?",
+                "opciones": {
+                  "A": "double a int",
+                  "B": "int a long",
+                  "C": "String a int",
+                  "D": "float a boolean"
+                },
+                "correcta": "B",
+                "justificacion": "Se permite la conversión automática hacia tipos con mayor rango (widening)."
+              },
+              {
+                "id": "u2p08",
+                "pregunta": "Si int numero = (int) 3.99;, ¿qué valor tendrá numero?",
+                "opciones": {
+                  "A": "3",
+                  "B": "4",
+                  "C": "3.99",
+                  "D": "Error"
+                },
+                "correcta": "A",
+                "justificacion": "El casting a entero trunca los decimales, no redondea."
+              },
+              {
+                "id": "u2p09",
+                "pregunta": "¿Qué comentario genera documentación Javadoc?",
+                "opciones": {
+                  "A": "// comentario",
+                  "B": "/* bloque */",
+                  "C": "/** Javadoc */",
+                  "D": "# comentario"
+                },
+                "correcta": "C",
+                "justificacion": "Javadoc utiliza el formato especial con doble asterisco inicial."
+              },
+              {
+                "id": "u2p10",
+                "pregunta": "¿Cuál es la convención (camelCase) para nombrar variables?",
+                "opciones": {
+                  "A": "SalarioMensual",
+                  "B": "salario_mensual",
+                  "C": "SALARIO_MENSUAL",
+                  "D": "salarioMensual"
+                },
+                "correcta": "D",
+                "justificacion": "Camel case: primera letra minúscula, resto de palabras con mayúscula inicial."
+              },
+              {
+                "id": "u2p11",
+                "pregunta": "¿Qué representa la expresión matriz[1][2]?",
+                "opciones": {
+                  "A": "La tercera fila y la segunda columna",
+                  "B": "La segunda fila y la tercera columna",
+                  "C": "La primera fila y la tercera columna",
+                  "D": "La segunda fila completa"
+                },
+                "correcta": "B",
+                "justificacion": "Los índices empiezan en 0. [1] es la segunda posición y [2] es la tercera."
+              },
+              {
+                "id": "u2p12",
+                "pregunta": "¿Cuál es la instrucción correcta para comparar el contenido de dos cadenas (String)?",
+                "opciones": {
+                  "A": "a == b",
+                  "B": "a.equals(b)",
+                  "C": "a = b",
+                  "D": "compare(a, b)"
+                },
+                "correcta": "B",
+                "justificacion": "== compara direcciones de memoria; .equals() compara el contenido del texto."
+              },
+              {
+                "id": "u2p13",
+                "pregunta": "¿Qué método elimina espacios en blanco al inicio y al final de un String?",
+                "opciones": {
+                  "A": "texto.clean()",
+                  "B": "texto.strip()",
+                  "C": "texto.trim()",
+                  "D": "texto.delete()"
+                },
+                "correcta": "C",
+                "justificacion": ".trim() es el método estándar para limpiar espacios en los extremos en Java."
+              },
+              {
+                "id": "u2p14",
+                "pregunta": "¿Cuál es el valor final de la expresión lógica: (3 > 5) || (7 <= 8)?",
+                "opciones": {
+                  "A": "false",
+                  "B": "true",
+                  "C": "error",
+                  "D": "null"
+                },
+                "correcta": "B",
+                "justificacion": "False || True es True. Basta con que una condición se cumpla en un OR."
+              },
+              {
+                "id": "u2p15",
+                "pregunta": "¿Qué ocurre si accedemos a un índice fuera del rango de un array?",
+                "opciones": {
+                  "A": "Devuelve 0",
+                  "B": "El programa sigue",
+                  "C": "ArrayIndexOutOfBoundsException en tiempo de ejecución",
+                  "D": "Se redimensiona solo"
+                },
+                "correcta": "C",
+                "justificacion": "Java lanza una excepción de seguridad si el índice no es válido."
+              },
+              {
+                "id": "u2p16",
+                "pregunta": "¿Cuál es la característica principal de un lenguaje de bajo nivel?",
+                "opciones": {
+                  "A": "Abstracción del hardware",
+                  "B": "Cercanía al lenguaje máquina y control directo del hardware",
+                  "C": "Facilidad para humanos",
+                  "D": "Multiplataforma"
+                },
+                "correcta": "B",
+                "justificacion": "Los lenguajes de bajo nivel se comunican casi directamente con el procesador."
+              },
+              {
+                "id": "u2p17",
+                "pregunta": "¿Cuál es la recomendación general para el anidamiento de estructuras?",
+                "opciones": {
+                  "A": "Sin límites",
+                  "B": "Máximo 3-4 niveles para legibilidad",
+                  "C": "Mínimo 10 niveles",
+                  "D": "No anidar nunca"
+                },
+                "correcta": "B",
+                "justificacion": "Demasiados niveles dificultan mucho la lectura y mantenimiento del código."
+              }
+            ]
+          },
+          {
+            "unidad": "Test unidad 03",
+            "total": 10,
+            "preguntas": [
+              {
+                "id": "u3p01",
+                "pregunta": "¿Cuál es la función principal de una estructura if en Java?",
+                "opciones": {
+                  "A": "Repetir un bloque de código indefinidamente",
+                  "B": "Evaluar una expresión booleana y ejecutar código solo si es verdadera",
+                  "C": "Saltar a una etiqueta específica en el programa",
+                  "D": "Crear una nueva variable con un valor condicional"
+                },
+                "correcta": "B",
+                "justificacion": "La estructura if evalúa una condición booleana y ejecuta el bloque de código asociado únicamente si el resultado es true."
+              },
+              {
+                "id": "u3p02",
+                "pregunta": "¿Cuál es la diferencia fundamental entre if-else e if simple?",
+                "opciones": {
+                  "A": "if-else es más rápido que if simple",
+                  "B": "if-else solo funciona con números",
+                  "C": "if-else proporciona una alternativa para cuando la condición es falsa",
+                  "D": "if-else puede evaluar múltiples condiciones simultáneamente"
+                },
+                "correcta": "C",
+                "justificacion": "A diferencia del if simple, el if-else permite definir un bloque de código alternativo (else) que se ejecuta cuando la condición no se cumple."
+              },
+              {
+                "id": "u3p03",
+                "pregunta": "¿Cuándo es más apropiado usar una cadena if-else-if en lugar de múltiples if independientes?",
+                "opciones": {
+                  "A": "Cuando necesitas evaluar múltiples condiciones mutuamente excluyentes de forma ordenada",
+                  "B": "Cuando quieres que todas las condiciones se evalúen siempre",
+                  "C": "Cuando necesitas mejor rendimiento de compilación",
+                  "D": "Cuando trabajas con valores de punto flotante"
+                },
+                "correcta": "A",
+                "justificacion": "La estructura if-else-if detiene la evaluación en cuanto encuentra una condición verdadera, ideal para casos excluyentes."
+              },
+              {
+                "id": "u3p04",
+                "pregunta": "¿En qué situación es más recomendable usar switch en lugar de if-else?",
+                "opciones": {
+                  "A": "Cuando necesitas comparar una variable contra múltiples valores específicos y discretos",
+                  "B": "Cuando tienes solo dos opciones",
+                  "C": "Cuando trabajas con datos de texto muy largos",
+                  "D": "Cuando necesitas rendimiento máximo sin importar legibilidad"
+                },
+                "correcta": "A",
+                "justificacion": "El switch mejora la legibilidad y eficiencia cuando se compara una sola variable con múltiples valores constantes posibles."
+              },
+              {
+                "id": "u3p05",
+                "pregunta": "¿Cuál es la principal ventaja de las switch expressions introducidas en Java 14?",
+                "opciones": {
+                  "A": "Permiten eliminar la necesidad de break statements",
+                  "B": "Son mucho más rápidas que switch tradicionales",
+                  "C": "Funcionan solo con números enteros",
+                  "D": "Permiten más de 100 casos simultáneamente"
+                },
+                "correcta": "A",
+                "justificacion": "Las nuevas expresiones switch (usando ->) eliminan el riesgo de 'fall-through' accidental al no requerir el comando break."
+              },
+              {
+                "id": "u3p06",
+                "pregunta": "Si ejecutas el código: int i = 5; while(i < 3) { System.out.println(i); i++; }, ¿cuántas veces se ejecutará?",
+                "opciones": {
+                  "A": "0 veces",
+                  "B": "2 veces",
+                  "C": "5 veces",
+                  "D": "Infinitamente"
+                },
+                "correcta": "A",
+                "justificacion": "Como la condición (5 < 3) es falsa desde el primer momento, el flujo del programa nunca entra en el bloque del bucle while."
+              },
+              {
+                "id": "u3p07",
+                "pregunta": "¿Cuál es la característica principal que distingue do-while de while?",
+                "opciones": {
+                  "A": "do-while es más rápido",
+                  "B": "do-while garantiza que el código se ejecute al menos una vez",
+                  "C": "do-while no necesita llaves {} para envolver el código",
+                  "D": "do-while no puede tener incrementos"
+                },
+                "correcta": "B",
+                "justificacion": "En el bucle do-while la condición se evalúa al final, lo que asegura que el cuerpo del bucle se ejecute al menos una vez."
+              },
+              {
+                "id": "u3p08",
+                "pregunta": "¿Cuál es el contexto ideal para usar un bucle for en lugar de while?",
+                "opciones": {
+                  "A": "Cuando no sabes cuántas iteraciones necesitas",
+                  "B": "Cuando conoces el número exacto de iteraciones o trabajas con rangos específicos",
+                  "C": "Cuando necesitas leer un archivo línea por línea",
+                  "D": "Cuando quieres garantizar al menos una ejecución"
+                },
+                "correcta": "B",
+                "justificacion": "El bucle for integra la inicialización, la condición y el incremento en una sola línea, siendo ideal para iteraciones contadas."
+              },
+              {
+                "id": "u3p09",
+                "pregunta": "¿Cuál es la ventaja principal del bucle for-each sobre un for tradicional?",
+                "opciones": {
+                  "A": "Es significativamente más rápido",
+                  "B": "Simplifica la iteración sobre colecciones y evita errores como IndexOutOfBoundsException",
+                  "C": "Permite modificar elementos de la colección durante la iteración",
+                  "D": "Solo funciona con arrays"
+                },
+                "correcta": "B",
+                "justificacion": "El for-each abstrae el manejo de índices, eliminando la posibilidad de cometer errores al calcular los límites del array o colección."
+              },
+              {
+                "id": "u3p10",
+                "pregunta": "¿Cuál es la recomendación de buenas prácticas para limitar la profundidad de anidamiento?",
+                "opciones": {
+                  "A": "No hay límite, cuanto más anidamiento mejor",
+                  "B": "Máximo 1 nivel de anidamiento",
+                  "C": "No más de 3-4 niveles, extrayendo lógica a métodos separados si es necesario",
+                  "D": "Máximo 10 niveles de anidamiento"
+                },
+                "correcta": "C",
+                "justificacion": "Mantener un anidamiento bajo (3-4 niveles) es crucial para la legibilidad; más niveles suelen indicar la necesidad de refactorizar el código."
+              }
+            ]
+          },
+          {
+            "unidad": "Test unidad 04",
+            "total": 10,
+            "preguntas": [
+              
+  {
+    "id": "u4p01",
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe mejor un array unidimensional en Java?",
+    "opciones": {
+      "A": "Una colección de elementos de distintos tipos almacenados en posiciones aleatorias",
+      "B": "Una secuencia ordenada y contigua de memoria con elementos del mismo tipo",
+      "C": "Una estructura dinámica que cambia de tamaño automáticamente",
+      "D": "Un conjunto de variables sin índice asociado"
+    },
+    "correcta": "B",
+    "justificacion": "Un array unidimensional es una secuencia contigua de elementos homogéneos en memoria[cite: 161]."
+  },
+  {
+    "id": "u4p02",
+    "pregunta": "Si declaramos int[] numeros = new int[5];, ¿cuál es el índice del último elemento?",
+    "opciones": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "Depende de los valores almacenados"
+    },
+    "correcta": "A",
+    "justificacion": "Con tamaño 5, los índices van de 0 a 4; por lo tanto, el último índice es 4[cite: 164]."
+  },
+  {
+    "id": "u4p03",
+    "pregunta": "¿Qué ocurre si intentamos acceder a numeros [5] en el array del ejercicio anterior?",
+    "opciones": {
+      "A": "Devuelve siempre 0",
+      "B": "El compilador muestra un error y no deja ejecutar el programa",
+      "C": "Se produce una excepción en tiempo de ejecución (ArrayIndexOutOfBoundsException)",
+      "D": "El acceso se redirige automáticamente a la última posición válida"
+    },
+    "correcta": "C",
+    "justificacion": "Acceder fuera de rango lanza ArrayIndexOutOfBoundsException en tiempo de ejecución[cite: 164]."
+  },
+  {
+    "id": "u4p04",
+    "pregunta": "Dado el array int[][] matriz = new int[3][4]; ¿qué representa la expresión matriz[1][2]?",
+    "opciones": {
+      "A": "La tercera fila y la segunda columna",
+      "B": "La segunda fila y la tercera columna",
+      "C": "La primera fila y la tercera columna",
+      "D": "La segunda fila completa"
+    },
+    "correcta": "B",
+    "justificacion": "El primer índice representa la fila (1 es la segunda) y el segundo la columna (2 es la tercera)[cite: 164]."
+  },
+  {
+    "id": "u4p05",
+    "pregunta": "¿Cuál de las siguientes sentencias obtiene correctamente la longitud de un array unidimensional llamado datos?",
+    "opciones": {
+      "A": "datos.length()",
+      "B": "length(datos)",
+      "C": "datos.length",
+      "D": "size(datos)"
+    },
+    "correcta": "C",
+    "justificacion": "En Java la longitud de un array se obtiene mediante la propiedad 'length' sin paréntesis[cite: 164]."
+  },
+  {
+    "id": "u4p06",
+    "pregunta": "¿Cuál es la forma correcta de declarar e inicializar un array de enteros con los valores 1, 2, 3, 4 y 5?",
+    "opciones": {
+      "A": "int[] numeros = (1, 2, 3, 4, 5);",
+      "B": "int[] numeros = new int(1, 2, 3, 4, 5);",
+      "C": "int[] numeros = {1, 2, 3, 4, 5};",
+      "D": "int numeros[] = [1, 2, 3, 4, 5]"
+    },
+    "correcta": "C",
+    "justificacion": "La sintaxis con llaves {1, 2, 3, 4, 5} es la forma correcta de inicialización literal[cite: 164]."
+  },
+  {
+    "id": "u4p07",
+    "pregunta": "¿Qué significa que los objetos de tipo String en Java sean inmutables?",
+    "opciones": {
+      "A": "Que no se pueden comparar entre sí",
+      "B": "Que su contenido no puede cambiar una vez creado; cualquier 'cambio' genera un nuevo objeto",
+      "C": "Que solo se pueden crear dentro del método main",
+      "D": "Que ocupan siempre la misma cantidad de memoria"
+    },
+    "correcta": "B",
+    "justificacion": "Cualquier operación que supuestamente modifica un String en realidad crea un nuevo objeto en memoria[cite: 164]."
+  },
+  {
+    "id": "u4p08",
+    "pregunta": "¿Qué instrucción compara correctamente el contenido de dos cadenas String (a y b)?",
+    "opciones": {
+      "A": "a == b",
+      "B": "a.equals(b)",
+      "C": "a = b",
+      "D": "compare(a, b)"
+    },
+    "correcta": "B",
+    "justificacion": "El método equals() compara el contenido de las cadenas, mientras que == compara sus referencias en memoria[cite: 164]."
+  },
+  {
+    "id": "u4p09",
+    "pregunta": "¿Qué método utilizarías para eliminar espacios en blanco al principio y al final de una cadena?",
+    "opciones": {
+      "A": "texto.clean()",
+      "B": "texto.trim()",
+      "C": "texto.stripSpaces()",
+      "D": "texto.remove('')"
+    },
+    "correcta": "B",
+    "justificacion": "El método trim() elimina los espacios en blanco situados al inicio y al final de la cadena[cite: 164]."
+  },
+  {
+    "id": "u4p10",
+    "pregunta": "¿Por qué se recomienda usar StringBuilder para concatenaciones de texto frecuentes dentro de un bucle?",
+    "opciones": {
+      "A": "Porque convierte automáticamente todas las cadenas a mayúsculas",
+      "B": "Porque evita la inmutabilidad de String y mejora el rendimiento en concatenaciones repetidas",
+      "C": "Porque obliga a que el código sea thread-safe",
+      "D": "Porque solo así se puede imprimir por consola"
+    },
+    "correcta": "B",
+    "justificacion": "StringBuilder permite modificar el texto sin crear nuevos objetos, mejorando significativamente el rendimiento[cite: 164]."
+  }
+
+            ]
+          },
+          {
+            "unidad": "Test unidad 05",
+            "total": 10,
+            "preguntas": [
+              
+  {
+    "id": "u5p01",
+    "pregunta": "¿Cuál es la principal diferencia entre la POO y los modelos procedimentales tradicionales?",
+    "opciones": {
+      "A": "La POO no utiliza funciones, solo variables globales",
+      "B": "La POO modela el software como una colección de objetos que representan entidades con estado y comportamiento",
+      "C": "La POO es más lenta pero más fácil de aprender",
+      "D": "La POO solo se puede usar en Java"
+    },
+    "correcta": "B",
+    "justificacion": "La POO modela el software como objetos con estado y comportamiento, a diferencia del enfoque procedimental[cite: 83]."
+  },
+  {
+    "id": "u5p02",
+    "pregunta": "¿Cuál es la relación correcta entre clase y objeto?",
+    "opciones": {
+      "A": "Ambos términos significan exactamente lo mismo",
+      "B": "La clase es una plantilla o molde, mientras que el objeto es una instancia específica creada a partir de ella",
+      "C": "Un objeto es una colección de clases",
+      "D": "La clase solo existe en documentación"
+    },
+    "correcta": "B",
+    "justificacion": "La clase actúa como el molde y el objeto es la instancia específica resultante[cite: 83]."
+  },
+  {
+    "id": "u5p03",
+    "pregunta": "¿Cuál es la función principal de un constructor en una clase?",
+    "opciones": {
+      "A": "Destruir objetos cuando ya no se necesitan",
+      "B": "Inicializar el estado del objeto y garantizar que comienza en condiciones válidas",
+      "C": "Convertir un objeto a texto",
+      "D": "Copiar los valores de un objeto a otro"
+    },
+    "correcta": "B",
+    "justificacion": "El constructor inicializa el estado y asegura que el objeto nazca con valores válidos[cite: 83]."
+  },
+  {
+    "id": "u5p04",
+    "pregunta": "¿Por qué es importante declarar los atributos de una clase como private en lugar de public?",
+    "opciones": {
+      "A": "Porque ocupa menos memoria",
+      "B": "Porque el compilador lo obliga",
+      "C": "Para proteger el estado interno del objeto y permitir acceso controlado mediante getters/setters",
+      "D": "Para que el código sea más rápido"
+    },
+    "correcta": "C",
+    "justificacion": "El uso de private protege el estado interno y permite controlar el acceso mediante métodos específicos[cite: 83]."
+  },
+  {
+    "id": "u5p05",
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la herencia?",
+    "opciones": {
+      "A": "Una subclase no puede tener sus propios atributos",
+      "B": "Una clase puede heredar de múltiples clases simultáneamente en Java",
+      "C": "Permite crear nuevas clases basadas en otras existentes, reutilizando código y especializando comportamientos",
+      "D": "La herencia solo es útil en aplicaciones grandes"
+    },
+    "correcta": "C",
+    "justificacion": "La herencia permite la reutilización de código de una clase base y su especialización en subclases[cite: 83]."
+  },
+  {
+    "id": "u5p06",
+    "pregunta": "¿Cuál es el propósito de utilizar la palabra clave super en una subclase?",
+    "opciones": {
+      "A": "Acceder a atributos privados de la superclase directamente",
+      "B": "Crear una instancia de la superclase",
+      "C": "Invocar constructores y métodos de la superclase, reutilizando su lógica",
+      "D": "Impedir que la subclase modifique el comportamiento"
+    },
+    "correcta": "C",
+    "justificacion": "La palabra clave super permite invocar la lógica ya existente en la superclase (constructores o métodos)[cite: 83]."
+  },
+  {
+    "id": "u5p07",
+    "pregunta": "¿Qué significa el término polimorfismo en el contexto de la POO?",
+    "opciones": {
+      "A": "Tener muchas clases heredando de una sola superclase",
+      "B": "Una misma acción puede tener diferentes comportamientos según el tipo real del objeto (binding dinámico)",
+      "C": "La capacidad de una clase de implementar múltiples interfaces",
+      "D": "La imposibilidad de crear objetos de una clase abstracta"
+    },
+    "correcta": "B",
+    "justificacion": "El polimorfismo permite que una misma acción se comporte de forma distinta según el objeto que la ejecute[cite: 83, 84]."
+  },
+  {
+    "id": "u5p08",
+    "pregunta": "¿Cuál es la principal diferencia entre una interfaz y una clase abstracta?",
+    "opciones": {
+      "A": "Las interfaces pueden tener atributos con valores, las clases abstractas no",
+      "B": "Una clase puede implementar múltiples interfaces, pero solo heredar de una clase abstracta",
+      "C": "Las clases abstractas son más modernas",
+      "D": "Las interfaces no pueden tener métodos con implementación"
+    },
+    "correcta": "B",
+    "justificacion": "En Java se permite la implementación múltiple de interfaces, pero la herencia simple de clases abstractas[cite: 84]."
+  },
+  {
+    "id": "u5p09",
+    "pregunta": "¿Cuál es la importancia de usar la anotación @Override al redefinir un método?",
+    "opciones": {
+      "A": "Es obligatorio usarla",
+      "B": "Ayuda al compilador a detectar errores en la firma del método y asegura su existencia en la clase padre",
+      "C": "Hace que el método sea más rápido",
+      "D": "Permite que el método tenga un nombre diferente"
+    },
+    "correcta": "B",
+    "justificacion": "La anotación @Override facilita que el compilador verifique que el método realmente existe en la clase superior y que la firma es correcta[cite: 84]."
+  },
+  {
+    "id": "u5p10",
+    "pregunta": "¿Qué establece el principio SRP (Single Responsibility Principle) en el diseño de clases?",
+    "opciones": {
+      "A": "Cada clase debe tener exactamente un atributo",
+      "B": "Cada clase debe tener exactamente un método público",
+      "C": "Cada clase debe tener una única responsabilidad principal, evitando acumular demasiadas funcionalidades",
+      "D": "Cada clase debe heredar de una única superclase"
+    },
+    "correcta": "C",
+    "justificacion": "El principio SRP dicta que cada clase debe encargarse de una única funcionalidad para mejorar la mantenibilidad[cite: 84]."
+  }
+
+            ]
+          },
+          {
+            "unidad": "Test unidad 06",
+            "total": 10,
+            "preguntas": [
+  {
+    "id": "u6p01",
+    "pregunta": "¿Qué son las excepciones en Java?",
+    "opciones": {
+      "A": "Eventos que interrumpen el flujo normal de ejecución cuando ocurre un error o condición inesperada",
+      "B": "Variables especiales que almacenan errores del sistema",
+      "C": "Métodos que se ejecutan automáticamente al final del programa",
+      "D": "Comentarios que documentan posibles fallos en el código"
+    },
+    "correcta": "A",
+    "justificacion": "Las excepciones son eventos que interrumpen el flujo normal cuando ocurre un error, y deben gestionarse para evitar que el programa termine abruptamente. [cite: 233, 291]"
+  },
+  {
+    "id": "u6p02",
+    "pregunta": "¿Cuál es la función del bloque try-catch en Java?",
+    "opciones": {
+      "A": "Optimizar el rendimiento del programa",
+      "B": "Detectar y manejar excepciones: el código susceptible de fallar va en try y la gestión del error en catch",
+      "C": "Compilar el código más rápidamente",
+      "D": "Crear bucles condicionales avanzados"
+    },
+    "correcta": "B",
+    "justificacion": "try-catch es el mecanismo básico: el código que puede fallar va en try y la gestión del error en catch, permitiendo controlar el fallo. [cite: 240, 291]"
+  },
+  {
+    "id": "u6p03",
+    "pregunta": "¿Qué diferencia hay entre throw y throws en el manejo de excepciones?",
+    "opciones": {
+      "A": "Son exactamente lo mismo, solo cambia la ortografía",
+      "B": "throw lanza manualmente una excepción, mientras que throws declara en la firma del método qué excepciones puede lanzar",
+      "C": "throw se usa solo con excepciones personalizadas y throws con excepciones estándar",
+      "D": "throw es para errores de compilación y throws para errores de ejecución"
+    },
+    "correcta": "B",
+    "justificacion": "throw lanza excepciones manualmente, mientras que throws declara en la firma del método qué excepciones pueden producirse. [cite: 246, 291]"
+  },
+  {
+    "id": "u6p04",
+    "pregunta": "¿Cuándo se ejecuta el bloque finally en una estructura try-catch-finally?",
+    "opciones": {
+      "A": "Solo si ocurre una excepción",
+      "B": "Solo si NO ocurre una excepción",
+      "C": "Siempre, ocurra o no una excepción, y se usa típicamente para liberar recursos",
+      "D": "Únicamente cuando el programa termina completamente"
+    },
+    "correcta": "C",
+    "justificacion": "El bloque finally se ejecuta siempre, ocurra o no una excepción, y se usa típicamente para liberar recursos como archivos o conexiones. [cite: 252, 291]"
+  },
+  {
+    "id": "u6p05",
+    "pregunta": "¿Qué ventaja aportan las excepciones personalizadas frente a las excepciones genéricas?",
+    "opciones": {
+      "A": "Permiten ejecutar el código más rápido",
+      "B": "Describen condiciones específicas del dominio de negocio, aportando claridad y contexto al error",
+      "C": "Evitan que el programa se detenga en cualquier circunstancia",
+      "D": "Reducen el tamaño del archivo compilado"
+    },
+    "correcta": "B",
+    "justificacion": "Las excepciones personalizadas (como SaldoInsuficienteException) describen errores específicos del dominio, aportando claridad y contexto. [cite: 257, 291]"
+  },
+  {
+    "id": "u6p06",
+    "pregunta": "En el contexto de colecciones en Java, ¿cuál es la principal limitación de los arrays que las colecciones superan?",
+    "opciones": {
+      "A": "Los arrays no pueden almacenar objetos",
+      "B": "Los arrays tienen tamaño fijo y no pueden crecer dinámicamente",
+      "C": "Los arrays solo funcionan con tipos primitivos",
+      "D": "Los arrays no permiten acceso por índice"
+    },
+    "correcta": "B",
+    "justificacion": "Los arrays tienen tamaño fijo que debe definirse al crearlos, mientras las colecciones crecen dinámicamente según necesidad. [cite: 263, 291]"
+  },
+  {
+    "id": "u6p07",
+    "pregunta": "¿Qué característica define a las colecciones de tipo Set en Java?",
+    "opciones": {
+      "A": "Mantienen el orden de inserción siempre",
+      "B": "Permiten elementos duplicados para facilitar búsquedas",
+      "C": "No admiten elementos duplicados, garantizando unicidad",
+      "D": "Solo pueden almacenar números enteros"
+    },
+    "correcta": "C",
+    "justificacion": "Los Set no admiten elementos duplicados, garantizando que cada elemento sea único en la colección. [cite: 270, 291]"
+  },
+  {
+    "id": "u6p08",
+    "pregunta": "¿Para qué se utiliza principalmente la colección Map en Java?",
+    "opciones": {
+      "A": "Para mantener listas ordenadas automáticamente",
+      "B": "Para asociar claves únicas con valores (pares clave-valor), como un diccionario",
+      "C": "Para eliminar duplicados de arrays",
+      "D": "Para reemplazar los bucles for en el código"
+    },
+    "correcta": "B",
+    "justificacion": "Los Map almacenan pares clave-valor, permitiendo asociar claves únicas con sus valores correspondientes (como un diccionario). [cite: 275, 291]"
+  },
+  {
+    "id": "u6p09",
+    "pregunta": "¿Cuándo es más recomendable usar ArrayList en lugar de LinkedList?",
+    "opciones": {
+      "A": "Cuando necesitas inserciones y eliminaciones frecuentes en medio de la lista",
+      "B": "Cuando el acceso por índice y los recorridos secuenciales son frecuentes",
+      "C": "Cuando trabajas exclusivamente con tipos primitivos",
+      "D": "Siempre, porque LinkedList está obsoleto"
+    },
+    "correcta": "B",
+    "justificacion": "ArrayList es más eficiente para acceso por índice y recorridos, mientras que LinkedList es mejor para inserciones/eliminaciones frecuentes. [cite: 280, 291]"
+  },
+  {
+    "id": "u6p10",
+    "pregunta": "¿Qué práctica profesional se recomienda al declarar colecciones en Java?",
+    "opciones": {
+      "A": "Usar siempre la implementación concreta: ArrayList<String> lista = new ArrayList<>()",
+      "B": "Declarar usando interfaces: List<String> lista = new ArrayList<>() para facilitar cambios de implementación",
+      "C": "Evitar inicializar la capacidad estimada para ahorrar memoria",
+      "D": "Usar arrays en lugar de colecciones para mejor rendimiento"
+    },
+    "correcta": "B",
+    "justificacion": "Declarar usando interfaces (List, Set, Map) en lugar de implementaciones concretas permite cambiar la implementación sin afectar el código cliente. [cite: 286, 291]"
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 07",
+            "total": 10,
+            "preguntas": 
+            [
+  {
+    "id": "u7p01",
+    "pregunta": "¿Cuál de los siguientes representa la entrada estándar en Java?",
+    "opciones": {
+      "A": "System.out",
+      "B": "System.err",
+      "C": "System.in",
+      "D": "FileReader"
+    },
+    "correcta": "C",
+    "justificacion": "System.in representa la entrada estándar normalmente asociada al teclado. [cite: 171, 228]"
+  },
+  {
+    "id": "u7p02",
+    "pregunta": "¿Qué concepto describe una secuencia de datos que fluye entre el programa y el sistema operativo?",
+    "opciones": {
+      "A": "Buffer",
+      "B": "Stream",
+      "C": "Registro",
+      "D": "Compilador"
+    },
+    "correcta": "B",
+    "justificacion": "Un stream es una secuencia de datos que fluye entre el programa y el sistema. [cite: 176, 228]"
+  },
+  {
+    "id": "u7p03",
+    "pregunta": "¿Qué clase de Java se utiliza habitualmente para leer datos desde el teclado de forma sencilla?",
+    "opciones": {
+      "A": "Scanner",
+      "B": "BufferedWriter",
+      "C": "FileOutputStream",
+      "D": "Path"
+    },
+    "correcta": "A",
+    "justificacion": "Scanner permite leer datos fácilmente desde distintas fuentes como teclado o archivos. [cite: 181, 228]"
+  },
+  {
+    "id": "u7p04",
+    "pregunta": "¿Qué método de Scanner se utiliza para leer un número entero?",
+    "opciones": {
+      "A": "nextLine()",
+      "B": "nextInt()",
+      "C": "nextDouble()",
+      "D": "readInt()"
+    },
+    "correcta": "B",
+    "justificacion": "nextInt() permite leer valores enteros desde la entrada. [cite: 189, 228]"
+  },
+  {
+    "id": "u7p05",
+    "pregunta": "¿Cuál es la principal diferencia entre next() y nextLine()?",
+    "opciones": {
+      "A": "next() lee números y nextLine() texto",
+      "B": "next() lee hasta el siguiente espacio y nextLine() toda la línea",
+      "C": "nextLine() solo funciona con archivos",
+      "D": "No existe diferencia"
+    },
+    "correcta": "B",
+    "justificacion": "next() lee hasta un espacio mientras que nextLine() captura la línea completa. [cite: 194, 228]"
+  },
+  {
+    "id": "u7p06",
+    "pregunta": "¿Qué problema común ocurre después de usar nextInt() antes de llamar a nextLine()?",
+    "opciones": {
+      "A": "Se produce un error de compilación",
+      "B": "El programa se cierra automáticamente",
+      "C": "Queda pendiente el salto de línea en el buffer",
+      "D": "Se elimina la variable leída"
+    },
+    "correcta": "C",
+    "justificacion": "Después de nextInt() queda el salto de línea pendiente en el buffer, lo que puede afectar a lecturas de texto posteriores. [cite: 201, 228]"
+  },
+  {
+    "id": "u7p07",
+    "pregunta": "¿Qué clase de Java representa un archivo o ruta del sistema pero no permite leer su contenido directamente?",
+    "opciones": {
+      "A": "File",
+      "B": "FileReader",
+      "C": "BufferedReader",
+      "D": "FileInputStream"
+    },
+    "correcta": "A",
+    "justificacion": "File representa rutas y archivos pero no realiza lectura directa de sus datos. [cite: 205, 228]"
+  },
+  {
+    "id": "u7p08",
+    "pregunta": "¿Qué clase mejora el rendimiento de lectura de texto al utilizar un buffer en memoria?",
+    "opciones": {
+      "A": "FileReader",
+      "B": "BufferedReader",
+      "C": "Scanner",
+      "D": "PrintStream"
+    },
+    "correcta": "B",
+    "justificacion": "BufferedReader permite leer texto utilizando un buffer para mejorar sustancialmente el rendimiento. [cite: 212, 228]"
+  },
+  {
+    "id": "u7p09",
+    "pregunta": "¿Qué tipo de clases se utilizan para manejar datos binarios como imágenes o archivos comprimidos?",
+    "opciones": {
+      "A": "FileReader y FileWriter",
+      "B": "BufferedReader y BufferedWriter",
+      "C": "FileInputStream y FileOutputStream",
+      "D": "Scanner y File"
+    },
+    "correcta": "C",
+    "justificacion": "Los streams de entrada y salida (FileInputStream/FileOutputStream) manejan datos binarios en bytes. [cite: 219, 228]"
+  },
+  {
+    "id": "u7p10",
+    "pregunta": "¿Cuál es la ventaja principal de utilizar try-with-resources al trabajar con archivos o Scanner?",
+    "opciones": {
+      "A": "Mejora la velocidad del programa",
+      "B": "Permite compilar sin errores",
+      "C": "Cierra automáticamente los recursos utilizados",
+      "D": "Convierte archivos a formato binario"
+    },
+    "correcta": "C",
+    "justificacion": "try-with-resources garantiza el cierre automático de recursos como archivos o Scanner al finalizar el bloque. [cite: 225, 228]"
+  }
+]
+          },
+          {
+            "unidad": "Test unidad 08",
+            "total": 10,
+            "preguntas": 
+            [
+  {
+    "id": "u8p01",
+    "pregunta": "¿Qué framework es recomendado actualmente para crear interfaces gráficas en Java?",
+    "opciones": {
+      "A": "Swing",
+      "B": "JavaFX",
+      "C": "AWT",
+      "D": "Servlet"
+    },
+    "correcta": "B",
+    "justificacion": "JavaFX es el framework moderno recomendado para crear interfaces gráficas de usuario (GUI) en Java[cite: 648, 708]."
+  },
+  {
+    "id": "u8p02",
+    "pregunta": "En la arquitectura de JavaFX, ¿qué componente representa la ventana principal de la aplicación?",
+    "opciones": {
+      "A": "Scene",
+      "B": "Node",
+      "C": "Stage",
+      "D": "Layout"
+    },
+    "correcta": "C",
+    "justificacion": "El Stage representa la ventana principal o el contenedor de mayor nivel de la aplicación[cite: 657, 708]."
+  },
+  {
+    "id": "u8p03",
+    "pregunta": "¿Qué elemento de JavaFX actúa como el contenedor donde se colocan los componentes visuales?",
+    "opciones": {
+      "A": "Scene",
+      "B": "Stage",
+      "C": "Event",
+      "D": "Handler"
+    },
+    "correcta": "A",
+    "justificacion": "La Scene funciona como el lienzo o contenedor intermedio donde se organizan todos los elementos visuales[cite: 661, 708]."
+  },
+  {
+    "id": "u8p04",
+    "pregunta": "¿Cómo se denominan los elementos visuales de una interfaz en JavaFX, como Button o Label?",
+    "opciones": {
+      "A": "Frames",
+      "B": "Nodes",
+      "C": "Streams",
+      "D": "Panels"
+    },
+    "correcta": "B",
+    "justificacion": "En JavaFX, todos los componentes visuales individuales que forman parte del grafo de escena se denominan Nodes[cite: 668, 708]."
+  },
+  {
+    "id": "u8p05",
+    "pregunta": "¿Cuál es la función principal de un event handler en una interfaz gráfica?",
+    "opciones": {
+      "A": "Crear componentes visuales",
+      "B": "Definir la apariencia de la interfaz",
+      "C": "Ejecutar código cuando ocurre una acción del usuario",
+      "D": "Compilar la aplicación"
+    },
+    "correcta": "C",
+    "justificacion": "Un event handler define la lógica que debe ejecutarse cuando el usuario realiza una acción, como pulsar un botón[cite: 675, 708]."
+  },
+  {
+    "id": "u8p06",
+    "pregunta": "¿Qué tecnología permite separar el diseño visual de la lógica en aplicaciones JavaFX?",
+    "opciones": {
+      "A": "CSS",
+      "B": "JSON",
+      "C": "FXML",
+      "D": "JDBC"
+    },
+    "correcta": "C",
+    "justificacion": "FXML es un lenguaje basado en XML que permite definir la interfaz visual de forma independiente al código Java[cite: 681, 708]."
+  },
+  {
+    "id": "u8p07",
+    "pregunta": "¿Qué layout de JavaFX organiza los elementos en filas y columnas como una tabla?",
+    "opciones": {
+      "A": "VBox",
+      "B": "HBox",
+      "C": "Border Pane",
+      "D": "GridPane"
+    },
+    "correcta": "D",
+    "justificacion": "GridPane es el contenedor que permite organizar los componentes en una cuadrícula flexible de filas y columnas[cite: 688, 708]."
+  },
+  {
+    "id": "u8p08",
+    "pregunta": "¿Qué método se utiliza en JavaFX para registrar un listener de eventos?",
+    "opciones": {
+      "A": "addEventListener()",
+      "B": "setOnAction()",
+      "C": "register Event()",
+      "D": "onClickHandler()"
+    },
+    "correcta": "B",
+    "justificacion": "El método setOnAction() se utiliza comúnmente para registrar la respuesta a eventos de acción en componentes como botones[cite: 692, 708]."
+  },
+  {
+    "id": "u8p09",
+    "pregunta": "¿Qué clase de JavaFX se utiliza para crear animaciones basadas en una secuencia temporal de KeyFrames?",
+    "opciones": {
+      "A": "Timeline",
+      "B": "AnimationTimer",
+      "C": "FadeTransition",
+      "D": "SceneTransition"
+    },
+    "correcta": "A",
+    "justificacion": "Timeline permite crear animaciones personalizadas definiendo estados en puntos específicos del tiempo (KeyFrames)[cite: 697, 708]."
+  },
+  {
+    "id": "u8p10",
+    "pregunta": "¿Qué patrón de arquitectura divide una aplicación en Modelo, Vista y Controlador?",
+    "opciones": {
+      "A": "DAO",
+      "B": "MVC",
+      "C": "Singleton",
+      "D": "Factory"
+    },
+    "correcta": "B",
+    "justificacion": "El patrón MVC separa la lógica de negocio (Modelo), la interfaz de usuario (Vista) y la gestión de eventos (Controlador)[cite: 704, 708]."
+  }
+]
+          }
+        ]
+      }
+    ]
+  }     
+]

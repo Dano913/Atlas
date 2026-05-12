@@ -1,0 +1,619 @@
+[
+  {
+    "asignatura": "Entornos de desarrollo",
+    "fuentes": [
+      {
+        "fuente": "PROMETEO",
+        "total_preguntas": 21,
+        "unidades": [
+          {
+            "unidad": "Test unidad 01",
+            "total": 11,
+            "preguntas": [
+  {
+    "id": "p01",
+    "pregunta": "El software se define como:",
+    "opciones": {
+      "A": "La parte física del ordenador",
+      "B": "Programas, instrucciones y datos",
+      "C": "Solo aplicaciones de usuario",
+      "D": "Hardware lógico"
+    },
+    "correcta": "B",
+    "justificacion": "El software comprende el conjunto de los componentes lógicos necesarios que hacen posible la realización de tareas específicas."
+  },
+  {
+    "id": "p02",
+    "pregunta": "Eclipse o VS Code son ejemplos de:",
+    "opciones": {
+      "A": "Lenguajes",
+      "B": "Sistemas operativos",
+      "C": "Entornos de desarrollo (IDE)",
+      "D": "Frameworks"
+    },
+    "correcta": "C",
+    "justificacion": "Son aplicaciones que proporcionan servicios integrales para facilitarle al desarrollador el desarrollo de software."
+  },
+  {
+    "id": "p03",
+    "pregunta": "Un lenguaje de alto nivel se caracteriza por:",
+    "opciones": {
+      "A": "Cercanía al hardware",
+      "B": "Uso de ceros y unos",
+      "C": "Mayor abstracción y legibilidad",
+      "D": "Dependencia del procesador"
+    },
+    "correcta": "C",
+    "justificacion": "Los lenguajes de alto nivel se caracterizan por expresar los algoritmos de una manera adecuada a la capacidad cognitiva humana."
+  },
+  {
+    "id": "p04",
+    "pregunta": "Git es un sistema de control de versiones:",
+    "opciones": {
+      "A": "Centralizado",
+      "B": "Distribuido",
+      "C": "Exclusivo online",
+      "D": "Propietario"
+    },
+    "correcta": "B",
+    "justificacion": "Git es un sistema de control de versiones distribuido, lo que significa que cada desarrollador tiene una copia completa del repositorio."
+  },
+  {
+    "id": "p05",
+    "pregunta": "Una ventaja clave de Git es:",
+    "opciones": {
+      "A": "Depender del servidor",
+      "B": "No guardar historial",
+      "C": "Copia completa del repositorio en local",
+      "D": "No permitir ramas"
+    },
+    "correcta": "C",
+    "justificacion": "Al ser distribuido, permite trabajar sin conexión y tener todo el historial en local."
+  },
+  {
+    "id": "p06",
+    "pregunta": "Un commit representa:",
+    "opciones": {
+      "A": "Una rama",
+      "B": "Un conflicto",
+      "C": "Una instantánea del proyecto",
+      "D": "Un repositorio"
+    },
+    "correcta": "C",
+    "justificacion": "Un commit en Git representa un estado específico del proyecto en un momento dado."
+  },
+  {
+    "id": "p07",
+    "pregunta": "El comando que prepara archivos para commit es:",
+    "opciones": {
+      "A": "git commit",
+      "B": "git push",
+      "C": "git add",
+      "D": "git status"
+    },
+    "correcta": "C",
+    "justificacion": "El comando git add añade los cambios del directorio de trabajo al área de preparación (staging area)."
+  },
+  {
+    "id": "p08",
+    "pregunta": "El archivo .gitignore sirve para:",
+    "opciones": {
+      "A": "Guardar credenciales",
+      "B": "Eliminar archivos",
+      "C": "Excluir archivos del versionado",
+      "D": "Crear ramas"
+    },
+    "correcta": "C",
+    "justificacion": "Se utiliza para indicar a Git qué archivos o directorios debe ignorar y no rastrear."
+  },
+  {
+    "id": "p09",
+    "pregunta": "Scrum es:",
+    "opciones": {
+      "A": "Un lenguaje",
+      "B": "Un framework ágil",
+      "C": "Una herramienta",
+      "D": "Un patrón de diseño"
+    },
+    "correcta": "B",
+    "justificacion": "Scrum es un marco de trabajo ágil para la gestión de proyectos complejos."
+  },
+  {
+    "id": "p10",
+    "pregunta": "Los sprints en Scrum suelen durar:",
+    "opciones": {
+      "A": "1 día",
+      "B": "1–4 semanas",
+      "C": "2–6 meses",
+      "D": "Sin límite"
+    },
+    "correcta": "B",
+    "justificacion": "Los sprints son bloques de tiempo fijos que normalmente no exceden el mes."
+  },
+  {
+    "id": "p11",
+    "pregunta": "El Product Owner es responsable de:",
+    "opciones": {
+      "A": "Programar",
+      "B": "Facilitar reuniones",
+      "C": "Priorizar el Product Backlog",
+      "D": "Resolver conflictos técnicos"
+    },
+    "correcta": "C",
+    "justificacion": "Es el responsable de maximizar el valor del producto y gestionar el Product Backlog."
+  },
+  {
+    "id": "p12",
+    "pregunta": "La Daily Scrum dura como máximo:",
+    "opciones": {
+      "A": "5 minutos",
+      "B": "10 minutos",
+      "C": "15 minutos",
+      "D": "30 minutos"
+    },
+    "correcta": "C",
+    "justificacion": "Es una reunión diaria de sincronización limitada a un máximo de 15 minutos."
+  },
+  {
+    "id": "p13",
+    "pregunta": "Kanban se basa principalmente en:",
+    "opciones": {
+      "A": "Sprints cerrados",
+      "B": "Roles fijos",
+      "C": "Flujo continuo y visualización",
+      "D": "Entregas trimestrales"
+    },
+    "correcta": "C",
+    "justificacion": "Kanban se centra en visualizar el trabajo y limitar el trabajo en curso (WIP)."
+  },
+  {
+    "id": "p14",
+    "pregunta": "Un límite WIP sirve para:",
+    "opciones": {
+      "A": "Aumentar tareas",
+      "B": "Evitar sobrecarga de trabajo",
+      "C": "Medir velocidad",
+      "D": "Eliminar backlog"
+    },
+    "correcta": "B",
+    "justificacion": "El límite de Work In Progress ayuda a identificar cuellos de botella y evitar la sobrecarga del equipo."
+  },
+  {
+    "id": "p15",
+    "pregunta": "XP pone especial énfasis en:",
+    "opciones": {
+      "A": "Documentación extensa",
+      "B": "Calidad técnica del código",
+      "C": "Jerarquía",
+      "D": "Entregas anuales"
+    },
+    "correcta": "B",
+    "justificacion": "XP (Extreme Programming) se enfoca en la excelencia técnica y prácticas como TDD o programación en pareja."
+  },
+  {
+    "id": "p16",
+    "pregunta": "Un patrón de diseño es:",
+    "opciones": {
+      "A": "Código reutilizable",
+      "B": "Una librería",
+      "C": "Una solución reutilizable a un problema común",
+      "D": "Un framework"
+    },
+    "correcta": "C",
+    "justificacion": "Son soluciones probadas a problemas recurrentes en el diseño de software."
+  },
+  {
+    "id": "p17",
+    "pregunta": "Singleton garantiza:",
+    "opciones": {
+      "A": "Varias instancias",
+      "B": "Herencia múltiple",
+      "C": "Una única instancia",
+      "D": "Bajo acoplamiento siempre"
+    },
+    "correcta": "C",
+    "justificacion": "Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella."
+  },
+  {
+    "id": "p18",
+    "pregunta": "El patrón Factory se usa para:",
+    "opciones": {
+      "A": "Añadir funcionalidades",
+      "B": "Crear objetos sin exponer la lógica",
+      "C": "Notificar cambios",
+      "D": "Cambiar estados"
+    },
+    "correcta": "B",
+    "justificacion": "Define una interfaz para crear un objeto, pero deja que las subclases decidan qué clase instanciar."
+  },
+  {
+    "id": "p19",
+    "pregunta": "Adapter sirve para:",
+    "opciones": {
+      "A": "Crear objetos",
+      "B": "Traducir interfaces incompatibles",
+      "C": "Encapsular acciones",
+      "D": "Gestionar estados"
+    },
+    "correcta": "B",
+    "justificacion": "Permite que clases con interfaces incompatibles trabajen juntas."
+  },
+  {
+    "id": "p20",
+    "pregunta": "Decorator permite:",
+    "opciones": {
+      "A": "Cambiar algoritmos",
+      "B": "Añadir funcionalidades dinámicamente",
+      "C": "Crear instancias únicas",
+      "D": "Gestionar flujos"
+    },
+    "correcta": "B",
+    "justificacion": "Permite añadir responsabilidades a objetos de forma dinámica sin afectar a otros objetos."
+  },
+  {
+    "id": "p21",
+    "pregunta": "Observer se basa en:",
+    "opciones": {
+      "A": "Encapsular comandos",
+      "B": "Notificar cambios a observadores",
+      "C": "Cambiar estados",
+      "D": "Crear objetos complejos"
+    },
+    "correcta": "B",
+    "justificacion": "Define una dependencia uno-a-muchos para que cuando un objeto cambie de estado, sus dependientes sean notificados."
+  },
+  {
+    "id": "p22",
+    "pregunta": "Strategy permite:",
+    "opciones": {
+      "A": "Notificar eventos",
+      "B": "Cambiar algoritmos en tiempo de ejecución",
+      "C": "Crear instancias",
+      "D": "Encapsular acciones"
+    },
+    "correcta": "B",
+    "justificacion": "Define una familia de algoritmos y los hace intercambiables."
+  },
+  {
+    "id": "p23",
+    "pregunta": "Command encapsula:",
+    "opciones": {
+      "A": "Algoritmos",
+      "B": "Estados",
+      "C": "Acciones como objetos",
+      "D": "Dependencias"
+    },
+    "correcta": "C",
+    "justificacion": "Encapsula una petición como un objeto, permitiendo parametrizar clientes con diferentes peticiones."
+  },
+  {
+    "id": "p24",
+    "pregunta": "El patrón State se usa cuando:",
+    "opciones": {
+      "A": "Hay un solo comportamiento",
+      "B": "El comportamiento depende del estado",
+      "C": "No hay estados",
+      "D": "Se usan eventos"
+    },
+    "correcta": "B",
+    "justificacion": "Permite que un objeto altere su comportamiento cuando su estado interno cambia."
+  },
+  {
+    "id": "p25",
+    "pregunta": "SOLID es:",
+    "opciones": {
+      "A": "Un lenguaje",
+      "B": "Un framework",
+      "C": "Un conjunto de principios de diseño",
+      "D": "Un patrón"
+    },
+    "correcta": "C",
+    "justificacion": "Es un acrónimo que representa cinco principios básicos del diseño orientado a objetos y desarrollo de software."
+  },
+  {
+    "id": "p26",
+    "pregunta": "Los patrones creacionales se centran en:",
+    "opciones": {
+      "A": "Comunicación entre objetos",
+      "B": "Creación de objetos",
+      "C": "Flujo de datos",
+      "D": "Interfaces gráficas"
+    },
+    "correcta": "B",
+    "justificacion": "Se encargan de los mecanismos de creación de objetos, tratando de crear objetos de forma adecuada a la situación."
+  },
+  {
+    "id": "p27",
+    "pregunta": "¿Cuál NO es un pilar de Scrum?",
+    "opciones": {
+      "A": "Transparencia",
+      "B": "Inspección",
+      "C": "Adaptación",
+      "D": "Jerarquía"
+    },
+    "correcta": "D",
+    "justificacion": "Los tres pilares de Scrum son transparencia, inspección y adaptación."
+  },
+  {
+    "id": "p28",
+    "pregunta": "Word, Spotify o un navegador web son:",
+    "opciones": {
+      "A": "Software de sistema",
+      "B": "Software de aplicación",
+      "C": "Software de desarrollo",
+      "D": "Lenguajes de programación"
+    },
+    "correcta": "B",
+    "justificacion": "Son programas diseñados para permitir a los usuarios realizar tareas específicas."
+  },
+  {
+    "id": "p29",
+    "pregunta": "¿Qué comando añade archivos al área de preparación?",
+    "opciones": {
+      "A": "git status",
+      "B": "git add",
+      "C": "git commit",
+      "D": "git push"
+    },
+    "correcta": "B",
+    "justificacion": "git add es el comando utilizado para preparar los cambios antes de un commit."
+  },
+  {
+    "id": "p30",
+    "pregunta": "¿Qué comando descarga y fusiona cambios del remoto?",
+    "opciones": {
+      "A": "git merge",
+      "B": "git pull",
+      "C": "git clone",
+      "D": "git diff"
+    },
+    "correcta": "B",
+    "justificacion": "git pull combina git fetch (descargar) y git merge (fusionar) en un solo comando."
+  },
+  {
+    "id": "ss-p01",
+    "pregunta": "¿Qué es un sistema de control de versiones como Git?",
+    "opciones": {
+      "A": "Un programa para diseñar interfaces gráficas",
+      "B": "Un sistema que guarda cambios en archivos y permite trabajar en equipo",
+      "C": "Un compilador de código",
+      "D": "Un sistema operativo"
+    },
+    "correcta": "B",
+    "justificacion": "Git permite rastrear cambios en el código fuente durante el desarrollo de software y facilita la colaboración."
+  },
+  {
+    "id": "ss-p02",
+    "pregunta": "¿Qué hace el comando git commit?",
+    "opciones": {
+      "A": "Borra archivos del proyecto",
+      "B": "Guarda una versión del proyecto con un mensaje",
+      "C": "Descarga cambios del repositorio remoto",
+      "D": "Crea una rama nueva"
+    },
+    "correcta": "B",
+    "justificacion": "El comando git commit captura una instantánea de los cambios preparados actualmente en el proyecto."
+  },
+  {
+    "id": "ss-p03",
+    "pregunta": "¿Qué es la refactorización?",
+    "opciones": {
+      "A": "Añadir nuevas funcionalidades",
+      "B": "Corregir errores del sistema",
+      "C": "Mejorar el código sin cambiar su comportamiento",
+      "D": "Compilar el programa"
+    },
+    "correcta": "C",
+    "justificacion": "La refactorización busca mejorar la estructura interna del código (legibilidad, mantenibilidad) sin alterar su funcionalidad externa."
+  },
+  {
+    "id": "ss-p04",
+    "pregunta": "¿Qué es un “code smell”?",
+    "opciones": {
+      "A": "Un error que rompe el programa",
+      "B": "Un síntoma de mal diseño del código",
+      "C": "Un lenguaje de programación",
+      "D": "Un test automático"
+    },
+    "correcta": "B",
+    "justificacion": "Un 'hedor de código' indica un problema potencial en el diseño que podría dificultar el mantenimiento o la evolución del software."
+  },
+  {
+    "id": "ss-p05",
+    "pregunta": "¿Qué diferencia hay entre verificación y validación?",
+    "opciones": {
+      "A": "No hay diferencia",
+      "B": "Verificación comprueba el código; validación si cumple necesidades del usuario",
+      "C": "Validación es solo para tests automáticos",
+      "D": "Verificación es posterior al desarrollo"
+    },
+    "correcta": "B",
+    "justificacion": "Verificación responde a '¿estamos construyendo el producto correctamente?' y validación a '¿estamos construyendo el producto correcto?'."
+  },
+  {
+    "id": "ss-p06",
+    "pregunta": "En el ciclo de vida del software, ¿por qué se dice que programar NO es lo más importante?",
+    "opciones": {
+      "A": "Porque no es necesario programar",
+      "B": "Porque lo importante es el hardware",
+      "C": "Porque el software incluye análisis, diseño, pruebas y mantenimiento",
+      "D": "Porque solo importa el resultado final"
+    },
+    "correcta": "C",
+    "justificacion": "La codificación es solo una fase; un software de calidad requiere una planificación, diseño y mantenimiento adecuados."
+  },
+  {
+    "id": "ss-p07",
+    "pregunta": "¿Cuál es la principal diferencia entre un lenguaje de alto nivel y uno de bajo nivel?",
+    "opciones": {
+      "A": "Los de bajo nivel son más fáciles",
+      "B": "Los de alto nivel son más cercanos al lenguaje humano",
+      "C": "No hay diferencia",
+      "D": "Los de alto nivel son más rápidos"
+    },
+    "correcta": "B",
+    "justificacion": "Los lenguajes de alto nivel abstraen los detalles del hardware y usan una sintaxis más comprensible para las personas."
+  },
+  {
+    "id": "ss-p08",
+    "pregunta": "En metodologías de desarrollo, ¿qué problema tiene el modelo en cascada frente a los ágiles?",
+    "opciones": {
+      "A": "Es demasiado rápido",
+      "B": "No tiene fases",
+      "C": "Es poco flexible ante cambios",
+      "D": "No se usa en empresas"
+    },
+    "correcta": "C",
+    "justificacion": "El modelo en cascada es rígido y dificulta la incorporación de cambios una vez que el proyecto ha avanzado a fases posteriores."
+  },
+  {
+    "id": "ss-p09",
+    "pregunta": "¿Qué significa que Git sea un sistema de control de versiones distribuido?",
+    "opciones": {
+      "A": "Que solo funciona en Internet",
+      "B": "Que cada desarrollador tiene una copia completa del proyecto",
+      "C": "Que no guarda historial",
+      "D": "Que solo hay un servidor central"
+    },
+    "correcta": "B",
+    "justificacion": "Cada cliente tiene un clon completo del repositorio, incluyendo todo el historial de cambios."
+  },
+  {
+    "id": "ss-p10",
+    "pregunta": "¿Por qué el historial de commits es fundamental en proyectos profesionales?",
+    "opciones": {
+      "A": "Porque ocupa poco espacio",
+      "B": "Porque permite saber quién hizo cada cambio y por qué",
+      "C": "Porque ejecuta el código",
+      "D": "Porque elimina errores automáticamente"
+    },
+    "correcta": "B",
+    "justificacion": "Proporciona trazabilidad, permitiendo entender la evolución del código y facilitar la depuración y auditoría."
+  },
+  {
+    "id": "ss-p11",
+    "pregunta": "¿Cuál es la función principal del Product Owner en Scrum?",
+    "opciones": {
+      "A": "Programar",
+      "B": "Gestionar servidores",
+      "C": "Priorizar el trabajo según el valor para el cliente",
+      "D": "Hacer testing"
+    },
+    "correcta": "C",
+    "justificacion": "El Product Owner es el responsable de maximizar el valor del producto resultante del trabajo del Equipo Scrum."
+  },
+  {
+    "id": "ss-p12",
+    "pregunta": "En Kanban, ¿por qué es importante limitar el trabajo en curso (WIP)?",
+    "opciones": {
+      "A": "Para hacer más tareas a la vez",
+      "B": "Para evitar sobrecarga y mejorar la calidad",
+      "C": "Para eliminar tareas",
+      "D": "Para trabajar más lento"
+    },
+    "correcta": "B",
+    "justificacion": "Limitar el WIP ayuda a optimizar el flujo de trabajo, reducir el tiempo de entrega y evitar cuellos de botella."
+  },
+  {
+    "id": "ss-p13",
+    "pregunta": "¿Por qué los patrones de diseño son importantes en desarrollo de software?",
+    "opciones": {
+      "A": "Porque sustituyen al código",
+      "B": "Porque son soluciones reutilizables a problemas comunes",
+      "C": "Porque hacen el código más corto siempre",
+      "D": "Porque evitan errores automáticamente"
+    },
+    "correcta": "B",
+    "justificacion": "Ofrecen soluciones probadas y estandarizadas que mejoran la comunicación entre desarrolladores y la calidad del diseño."
+  },
+  {
+    "id": "ss-p14",
+    "pregunta": "En testing, ¿por qué es importante combinar pruebas de caja negra y caja blanca?",
+    "opciones": {
+      "A": "Porque una sustituye a la otra",
+      "B": "Porque ambas analizan cosas diferentes y se complementan",
+      "C": "Porque son obligatorias",
+      "D": "Porque reducen el código"
+    },
+    "correcta": "B",
+    "justificacion": "La caja negra se centra en la funcionalidad (entradas/salidas) y la caja blanca en la lógica interna del código."
+  },
+  {
+    "id": "ss-p15",
+    "pregunta": "¿Qué caracteriza a las pruebas unitarias dentro del proceso de testing?",
+    "opciones": {
+      "A": "Analizan todo el sistema completo",
+      "B": "Evalúan módulos pequeños de forma aislada",
+      "C": "Solo las realiza el cliente",
+      "D": "No son automáticas"
+    },
+    "correcta": "B",
+    "justificacion": "Las pruebas unitarias verifican el correcto funcionamiento de una unidad de código (como una función o método) de forma independiente."
+  },
+  {
+    "id": "ss-p16",
+    "pregunta": "¿Qué se busca principalmente en las pruebas de aceptación?",
+    "opciones": {
+      "A": "Validar el código fuente",
+      "B": "Verificar algoritmos",
+      "C": "Confirmar que el sistema cumple las necesidades del cliente",
+      "D": "Analizar rendimiento"
+    },
+    "correcta": "C",
+    "justificacion": "Son pruebas realizadas a menudo por el usuario final para decidir si el sistema está listo para ser entregado."
+  },
+  {
+    "id": "ss-p17",
+    "pregunta": "En pruebas de caja blanca, ¿qué se analiza principalmente?",
+    "opciones": {
+      "A": "Interfaz de usuario",
+      "B": "Entradas del usuario",
+      "C": "Estructura interna del código",
+      "D": "Experiencia del cliente"
+    },
+    "correcta": "C",
+    "justificacion": "Se basan en el conocimiento del código fuente para verificar caminos lógicos, condiciones y bucles."
+  },
+  {
+    "id": "ss-p18",
+    "pregunta": "¿Qué son las pruebas de regresión?",
+    "opciones": {
+      "A": "Pruebas iniciales",
+      "B": "Pruebas para validar interfaz",
+      "C": "Pruebas que aseguran que cambios no rompen funcionalidades existentes",
+      "D": "Pruebas de compilación"
+    },
+    "correcta": "C",
+    "justificacion": "Se realizan después de modificar el software para confirmar que los cambios no han introducido nuevos errores en partes que antes funcionaban."
+  },
+  {
+    "id": "ss-p19",
+    "pregunta": "¿Qué ventaja ofrece el patrón Strategy?",
+    "opciones": {
+      "A": "Cambiar algoritmos sin modificar el código principal",
+      "B": "Borrar código",
+      "C": "Ejecutar código",
+      "D": "Crear repositorios"
+    },
+    "correcta": "A",
+    "justificacion": "Permite seleccionar un algoritmo en tiempo de ejecución de entre una familia de algoritmos definidos."
+  },
+  {
+    "id": "ss-p20",
+    "pregunta": "¿Para qué sirve el Daily Scrum?",
+    "opciones": {
+      "A": "Evaluar código",
+      "B": "Sincronizar al equipo diariamente",
+      "C": "Programar",
+      "D": "Diseñar"
+    },
+    "correcta": "B",
+    "justificacion": "Es una reunión corta para que el equipo de desarrollo sincronice actividades y cree un plan para las próximas 24 horas."
+  }
+            ]
+          }
+        ]
+      }
+    ]
+  }    
+]

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Si usas una librería externa de animaciones, 
+   asegúrate de que esté instalada vía npm */
+@import "tw-animate-css"; 
+
+@theme {
+  /* Aquí puedes añadir tus variables personalizadas si las necesitas */
+}
+
+@layer base {
+  /* Aplicamos la transición a elementos específicos para evitar problemas de rendimiento */
+  body, div, header, main, section, article, nav, button, span {
+    @apply transition-colors duration-300;
+  }
+  
+  html.dark {
+    color-scheme: dark;
+  }
+}
