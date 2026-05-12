@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Search, Filter, BookOpen, ChevronDown, ChevronUp, GraduationCap } from 'lucide-react';
+import { Search, Filter, BookOpen, ChevronDown, GraduationCap, List, LayoutList } from 'lucide-react';
 import { Question, Subject } from '../types';
 import { getQuestions, getSubjects } from '../utils/storage';
+import { Button } from './ui/button';
 
 interface QuestionEditorProps {
   initialSubjectFilter?: string | null;
@@ -12,7 +13,9 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSubject, setSelectedSubject] = useState<string>('all');
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  
+  // Usamos un Set para permitir múltiples preguntas expandidas simultáneamente
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     setQuestions(getQuestions());
@@ -20,11 +23,8 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
     if (initialSubjectFilter) setSelectedSubject(initialSubjectFilter);
   }, [initialSubjectFilter]);
 
-  // Lógica idéntica a SubjectManager para obtener el color
   const getSubjectColor = (subject: Subject) => {
-    if (subject.color && subject.color.startsWith('#')) {
-      return subject.color;
-    }
+    if (subject.color && subject.color.startsWith('#')) return subject.color;
     const defaultColors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899'];
     const charCodeSum = subject.name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
     return defaultColors[charCodeSum % defaultColors.length];
@@ -36,15 +36,54 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
     return matchesSearch && matchesSubject;
   });
 
+  // Funciones para el control global
+  const toggleAll = (expand: boolean) => {
+    if (expand) {
+      setExpandedIds(new Set(filteredQuestions.map(q => q.id)));
+    } else {
+      setExpandedIds(new Set());
+    }
+  };
+
+  const toggleQuestion = (id: string) => {
+    const newExpanded = new Set(expandedIds);
+    if (newExpanded.has(id)) {
+      newExpanded.delete(id);
+    } else {
+      newExpanded.add(id);
+    }
+    setExpandedIds(newExpanded);
+  };
+
+  const allExpanded = filteredQuestions.length > 0 && expandedIds.size === filteredQuestions.length;
+
   return (
     <div className="space-y-6 animate-in fade-in duration-500 p-4">
-      <header>
-        <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">Banco de Preguntas</h2>
-        <p className="text-slate-500 dark:text-slate-400 text-sm">
-          {selectedSubject !== 'all' 
-            ? `Mostrando preguntas de ${subjects.find(s => s.id === selectedSubject)?.name}`
-            : 'Explora el repositorio completo de preguntas.'}
-        </p>
+      <header className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">Banco de Preguntas</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">
+            {selectedSubject !== 'all' 
+              ? `Mostrando preguntas de ${subjects.find(s => s.id === selectedSubject)?.name}`
+              : 'Explora el repositorio completo de preguntas.'}
+          </p>
+        </div>
+
+        {/* BOTÓN DE CONTROL GLOBAL */}
+        <div className="flex gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => toggleAll(!allExpanded)}
+            className="rounded-xl border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-bold"
+          >
+            {allExpanded ? (
+              <><List className="w-3.5 h-3.5 mr-2" /> Plegar todas</>
+            ) : (
+              <><LayoutList className="w-3.5 h-3.5 mr-2" /> Desplegar todas</>
+            )}
+          </Button>
+        </div>
       </header>
 
       {/* Barra de Herramientas */}
@@ -56,7 +95,7 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
             placeholder="Buscar en el enunciado..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border-none rounded-xl text-sm focus:ring-2 focus:ring-blue-500 transition-all"
+            className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border-none rounded-xl text-sm focus:ring-2 focus:ring-blue-500 transition-all text-slate-700 dark:text-slate-200"
           />
         </div>
 
@@ -65,7 +104,7 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
           <select
             value={selectedSubject}
             onChange={(e) => setSelectedSubject(e.target.value)}
-            className="bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            className="bg-slate-50 dark:bg-slate-800 border-none rounded-xl px-4 py-2 text-sm font-medium focus:ring-2 focus:ring-blue-500 cursor-pointer text-slate-700 dark:text-slate-200"
           >
             <option value="all">Todas las materias</option>
             {subjects.map((s) => (
@@ -80,29 +119,29 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
         {filteredQuestions.map((q) => {
           const subject = subjects.find(s => s.id === q.subjectId);
           const mainColor = subject ? getSubjectColor(subject) : '#64748b';
+          const isExpanded = expandedIds.has(q.id);
 
           return (
             <div
               key={q.id}
               className={`bg-white dark:bg-slate-900 border rounded-2xl transition-all duration-200 ${
-                expandedId === q.id 
-                  ? 'border-blue-400 shadow-md ring-1 ring-blue-400/20' 
+                isExpanded 
+                  ? 'border-blue-400 dark:border-blue-500/50 shadow-md ring-1 ring-blue-400/20' 
                   : 'border-slate-200 dark:border-slate-800 hover:border-slate-300'
               }`}
             >
               <button
-                onClick={() => setExpandedId(expandedId === q.id ? null : q.id)}
+                onClick={() => toggleQuestion(q.id)}
                 className="w-full text-left p-4 flex items-start justify-between gap-4"
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
-                    {/* BADGE IDÉNTICO AL SUBJECT MANAGER */}
                     <span 
                       className="text-[10px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-2"
                       style={{ 
-                        backgroundColor: `${mainColor}10`, 
+                        backgroundColor: `${mainColor}15`, 
                         color: mainColor,
-                        border: `1px solid ${mainColor}20` 
+                        border: `1px solid ${mainColor}25` 
                       }}
                     >
                       <GraduationCap className="w-3 h-3" />
@@ -114,13 +153,13 @@ export function QuestionEditor({ initialSubjectFilter = null }: QuestionEditorPr
                     {q.question}
                   </p>
                 </div>
-                <div className={`p-1 rounded-lg transition-transform ${expandedId === q.id ? 'rotate-180 bg-blue-50 text-blue-600' : 'text-slate-400'}`}>
+                <div className={`p-1 rounded-lg transition-transform duration-300 ${isExpanded ? 'rotate-180 bg-blue-50 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400' : 'text-slate-400'}`}>
                   <ChevronDown className="w-5 h-5" />
                 </div>
               </button>
 
-              {expandedId === q.id && (
-                <div className="px-4 pb-4 pt-2 border-t border-slate-50 dark:border-slate-800 animate-in slide-in-from-top-2">
+              {isExpanded && (
+                <div className="px-4 pb-4 pt-2 border-t border-slate-50 dark:border-slate-800 animate-in slide-in-from-top-2 duration-300">
                   <div className="grid gap-2">
                     {Object.entries(q.options).map(([key, value]) => (
                       <div 

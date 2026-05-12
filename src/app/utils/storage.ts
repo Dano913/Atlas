@@ -5,6 +5,8 @@ const STORAGE_KEYS = {
   DATA_LOADED: 'test-app-data-loaded',
 };
 
+const QUESTIONS_KEY = 'quiz_questions';
+
 // Estructura avanzada del JSON
 interface SubjectDataFile {
   asignatura: string;
@@ -157,6 +159,12 @@ export const getQuestions = (): Question[] => questionsCache;
 
 export const getQuestionsBySubject = (subjectId: string): Question[] => {
   return questionsCache.filter(q => q.subjectId === subjectId);
+};
+
+export const addQuestions = (newQuestions: Question[]) => {
+  const currentQuestions = getQuestions();
+  const updatedQuestions = [...currentQuestions, ...newQuestions];
+  localStorage.setItem(QUESTIONS_KEY, JSON.stringify(updatedQuestions));
 };
 
 // --- MÉTODOS DE SOLO LECTURA (LOGS DE ADVERTENCIA) ---
