@@ -1,14 +1,12 @@
 [
   {
     "asignatura": "Itinerario personal para la empleabilidad I",
-    "fuentes": [
+    "unidades": [
       {
-        "fuente": "PROMETEO",
-        "total_preguntas": 21,
-        "unidades": [
-          {
-            "unidad": "Test unidad 01",
-            "total": 11,
+        "unidad": "Test unidad 01",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id":"ipe1-prometeo-u1-p01",
@@ -144,9 +142,259 @@
               }
             ]
           },
-          {
-            "unidad": "Test unidad 02",
-            "total": 10,
+
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u1-p01",
+                "pregunta": "¿Cómo se define la salud laboral según el concepto integral moderno?",
+                "opciones": {
+                  "A": "Únicamente como la ausencia de enfermedades profesionales.",
+                  "B": "Como el estado de bienestar físico, mental y social en el entorno de trabajo.",
+                  "C": "Como la capacidad de trabajar sin sufrir accidentes graves.",
+                  "D": "Como el cumplimiento estricto de las normas de seguridad e higiene."
+                },
+                "correcta": "B",
+                "justificacion": "La salud laboral abarca el bienestar físico, mental y social, no solo la ausencia de enfermedad."
+              },
+              {
+                "id": "ipe1-manus-u1-p02",
+                "pregunta": "¿Qué es la cultura preventiva en una empresa?",
+                "opciones": {
+                  "A": "El conjunto de actitudes, valores y comportamientos compartidos para prevenir riesgos.",
+                  "B": "Un manual de instrucciones que los trabajadores deben leer una vez al año.",
+                  "C": "La obligación legal de contratar un servicio de prevención externo.",
+                  "D": "El registro de accidentes laborales ocurridos en el último ejercicio."
+                },
+                "correcta": "A",
+                "justificacion": "La cultura preventiva implica la integración de la seguridad en los valores y conductas de toda la organización."
+              },
+              {
+                "id": "ipe1-manus-u1-p03",
+                "pregunta": "¿Cuál es la norma básica en España que promueve la seguridad y salud de los trabajadores?",
+                "opciones": {
+                  "A": "El Estatuto de los Trabajadores.",
+                  "B": "La Constitución Española.",
+                  "C": "La Ley 31/1995 de Prevención de Riesgos Laborales (LPRL).",
+                  "D": "El Reglamento General de Protección de Datos."
+                },
+                "correcta": "C",
+                "justificacion": "La LPRL es la norma fundamental que establece el marco de la prevención en España."
+              },
+              {
+                "id": "ipe1-manus-u1-p04",
+                "pregunta": "¿Qué artículo de la Constitución Española establece que los poderes públicos velarán por la seguridad e higiene en el trabajo?",
+                "opciones": {
+                  "A": "Artículo 14.",
+                  "B": "Artículo 40.2.",
+                  "C": "Artículo 27.",
+                  "D": "Artículo 155."
+                },
+                "correcta": "B",
+                "justificacion": "El Art. 40.2 de la CE mandata a los poderes públicos a velar por la seguridad e higiene laboral."
+              },
+              {
+                "id": "ipe1-manus-u1-p05",
+                "pregunta": "¿Cuál de las siguientes es una obligación fundamental de la empresa en materia preventiva?",
+                "opciones": {
+                  "A": "Sancionar a los trabajadores que no usen EPIs sin previo aviso.",
+                  "B": "Evaluar los riesgos de forma continua y actualizada.",
+                  "C": "Garantizar el pleno empleo en la organización.",
+                  "D": "Pagar un plus salarial por peligrosidad a todos los empleados."
+                },
+                "correcta": "B",
+                "justificacion": "La evaluación de riesgos es la base para planificar cualquier acción preventiva en la empresa."
+              },
+              {
+                "id": "ipe1-manus-u1-p06",
+                "pregunta": "¿Cuándo debe la empresa proporcionar Equipos de Protección Individual (EPIs)?",
+                "opciones": {
+                  "A": "Siempre, independientemente de si existen otros medios de protección.",
+                  "B": "Solo si el trabajador lo solicita por escrito.",
+                  "C": "Cuando los riesgos no se puedan evitar por otros medios técnicos o colectivos.",
+                  "D": "Únicamente en trabajos de construcción o minería."
+                },
+                "correcta": "C",
+                "justificacion": "Los EPIs son la última medida de protección, a utilizar cuando la protección colectiva no es suficiente."
+              },
+              {
+                "id": "ipe1-manus-u1-p07",
+                "pregunta": "¿Qué característica debe tener la vigilancia de la salud de los trabajadores?",
+                "opciones": {
+                  "A": "Debe ser obligatoria para todos los trabajadores en cualquier circunstancia.",
+                  "B": "Debe realizarse respetando siempre la intimidad y dignidad del trabajador.",
+                  "C": "Los resultados deben ser públicos para que todos conozcan el estado de salud de sus compañeros.",
+                  "D": "Debe realizarse fuera del horario laboral y a cargo del trabajador."
+                },
+                "correcta": "B",
+                "justificacion": "La vigilancia de la salud debe ser confidencial y respetar la dignidad e intimidad de la persona."
+              },
+              {
+                "id": "ipe1-manus-u1-p08",
+                "pregunta": "¿Qué derecho tiene un trabajador ante una situación de riesgo grave e inminente?",
+                "opciones": {
+                  "A": "A continuar trabajando bajo su propia responsabilidad.",
+                  "B": "A solicitar un aumento de sueldo inmediato.",
+                  "C": "A interrumpir la actividad y abandonar el lugar de trabajo.",
+                  "D": "A denunciar a la empresa solo si ocurre un accidente."
+                },
+                "correcta": "C",
+                "justificacion": "La LPRL reconoce el derecho a paralizar la actividad ante riesgos graves e inminentes."
+              },
+              {
+                "id": "ipe1-manus-u1-p09",
+                "pregunta": "¿Cuál es una obligación del trabajador en relación con los dispositivos de seguridad?",
+                "opciones": {
+                  "A": "Modificarlos para trabajar más rápido.",
+                  "B": "Usarlos correctamente y no ponerlos fuera de funcionamiento.",
+                  "C": "Comprarlos con su propio dinero si se rompen.",
+                  "D": "Ignorarlos si tiene mucha experiencia en el puesto."
+                },
+                "correcta": "B",
+                "justificacion": "Los trabajadores deben usar adecuadamente los dispositivos de seguridad y no alterarlos."
+              },
+              {
+                "id": "ipe1-manus-u1-p10",
+                "pregunta": "¿Qué organismo nacional tiene como función investigar, elaborar guías y asesorar técnicamente?",
+                "opciones": {
+                  "A": "La Inspección de Trabajo y Seguridad Social (ITSS).",
+                  "B": "El Instituto Nacional de Seguridad y Salud en el Trabajo (INSST).",
+                  "C": "El Servicio Público de Empleo Estatal (SEPE).",
+                  "D": "La Tesorería General de la Seguridad Social."
+                },
+                "correcta": "B",
+                "justificacion": "El INSST es el órgano científico-técnico especializado en prevención en España."
+              },
+              {
+                "id": "ipe1-manus-u1-p11",
+                "pregunta": "¿Cuál es la función principal de la Inspección de Trabajo y Seguridad Social (ITSS)?",
+                "opciones": {
+                  "A": "Elaborar las leyes de prevención.",
+                  "B": "Supervisar, inspeccionar y sancionar incumplimientos normativos.",
+                  "C": "Realizar los reconocimientos médicos de los trabajadores.",
+                  "D": "Vender equipos de protección individual a las empresas."
+                },
+                "correcta": "B",
+                "justificacion": "La ITSS vigila el cumplimiento de la normativa y tiene potestad sancionadora."
+              },
+              {
+                "id": "ipe1-manus-u1-p12",
+                "pregunta": "¿Qué agencia de la ONU se encarga de establecer normas internacionales del trabajo?",
+                "opciones": {
+                  "A": "OMS.",
+                  "B": "OIT.",
+                  "C": "EU-OSHA.",
+                  "D": "Eurofound."
+                },
+                "correcta": "B",
+                "justificacion": "La OIT (Organización Internacional del Trabajo) es la agencia de la ONU para el mundo laboral."
+              },
+              {
+                "id": "ipe1-manus-u1-p13",
+                "pregunta": "¿Qué organismo europeo se dedica específicamente a la información sobre seguridad y salud en el trabajo?",
+                "opciones": {
+                  "A": "Eurofound.",
+                  "B": "EU-OSHA.",
+                  "C": "OIT.",
+                  "D": "OMS."
+                },
+                "correcta": "B",
+                "justificacion": "La EU-OSHA es la Agencia Europea para la Seguridad y la Salud en el Trabajo."
+              },
+              {
+                "id": "ipe1-manus-u1-p14",
+                "pregunta": "¿Qué artículos del Estatuto de los Trabajadores recogen derechos y deberes en materia de seguridad?",
+                "opciones": {
+                  "A": "Artículos 1 y 2.",
+                  "B": "Artículos 4 y 5.",
+                  "C": "Artículos 10 y 11.",
+                  "D": "Artículos 50 y 51."
+                },
+                "correcta": "B",
+                "justificacion": "Los artículos 4 y 5 del ET establecen derechos y deberes básicos, incluyendo la seguridad."
+              },
+              {
+                "id": "ipe1-manus-u1-p15",
+                "pregunta": "¿A quién debe proteger la empresa de forma especial según la normativa?",
+                "opciones": {
+                  "A": "Solo a los directivos de la compañía.",
+                  "B": "A trabajadores vulnerables (embarazadas, menores, discapacidad).",
+                  "C": "Únicamente a los trabajadores con contratos indefinidos.",
+                  "D": "A los trabajadores que nunca han tenido accidentes."
+                },
+                "correcta": "B",
+                "justificacion": "La normativa exige una protección específica para colectivos especialmente sensibles."
+              },
+              {
+                "id": "ipe1-manus-u1-p16",
+                "pregunta": "¿Qué debe hacer un trabajador si detecta una situación de riesgo en su puesto?",
+                "opciones": {
+                  "A": "Esperar a que el delegado de prevención pase por allí.",
+                  "B": "Informar de inmediato a su superior o al servicio de prevención.",
+                  "C": "Intentar arreglarlo él mismo aunque no tenga formación.",
+                  "D": "No decir nada para no causar problemas a la empresa."
+                },
+                "correcta": "B",
+                "justificacion": "Es obligación del trabajador informar de cualquier situación de riesgo detectada."
+              },
+              {
+                "id": "ipe1-manus-u1-p17",
+                "pregunta": "¿Cuál es el objetivo de la planificación de la prevención?",
+                "opciones": {
+                  "A": "Cumplir el trámite para evitar multas únicamente.",
+                  "B": "Establecer medidas, recursos y responsables para eliminar o reducir riesgos.",
+                  "C": "Sustituir la evaluación de riesgos por un documento estático.",
+                  "D": "Reducir los costes de producción a costa de la seguridad."
+                },
+                "correcta": "B",
+                "justificacion": "La planificación organiza la acción preventiva derivada de la evaluación de riesgos."
+              },
+              {
+                "id": "ipe1-manus-u1-p18",
+                "pregunta": "¿Qué significa que la formación preventiva debe ser 'adaptada al puesto'?",
+                "opciones": {
+                  "A": "Que todos los trabajadores de la empresa reciben exactamente el mismo curso.",
+                  "B": "Que debe tratar sobre los riesgos específicos que el trabajador encontrará en su tarea.",
+                  "C": "Que se imparte solo cuando el trabajador es ascendido.",
+                  "D": "Que el trabajador debe buscarse la formación por su cuenta en internet."
+                },
+                "correcta": "B",
+                "justificacion": "La formación debe ser específica y relevante para las funciones que desempeña el trabajador."
+              },
+              {
+                "id": "ipe1-manus-u1-p19",
+                "pregunta": "¿Qué organismo internacional se centra en la salud pública mundial, incluyendo la laboral?",
+                "opciones": {
+                  "A": "OIT.",
+                  "B": "OMS.",
+                  "C": "EU-OSHA.",
+                  "D": "Eurofound."
+                },
+                "correcta": "B",
+                "justificacion": "La OMS (Organización Mundial de la Salud) aborda la salud desde una perspectiva global."
+              },
+              {
+                "id": "ipe1-manus-u1-p20",
+                "pregunta": "¿Quiénes forman parte del Comité de Seguridad y Salud en una empresa?",
+                "opciones": {
+                  "A": "Solo el empresario y sus asesores legales.",
+                  "B": "Delegados de prevención y representantes de la empresa.",
+                  "C": "Únicamente los trabajadores que han sufrido accidentes.",
+                  "D": "Inspectores de trabajo externos a la empresa."
+                },
+                "correcta": "B",
+                "justificacion": "El Comité de Seguridad y Salud es el órgano paritario de participación en la empresa."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 02",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 10,
             "preguntas": [
               {
                 "id":"ipe1-prometeo-u2-p01",
@@ -270,9 +518,259 @@
               }
             ]
           },
-          {
-            "unidad": "Test unidad 03",
-            "total": 22,
+
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u2-p01",
+                "pregunta": "¿Qué se entiende por riesgo laboral?",
+                "opciones": {
+                  "A": "Cualquier daño sufrido por un trabajador en su puesto.",
+                  "B": "La posibilidad de que un trabajador sufra un daño derivado del trabajo.",
+                  "C": "Una enfermedad profesional diagnosticada.",
+                  "D": "La ausencia de medidas de seguridad en la empresa."
+                },
+                "correcta": "B",
+                "justificacion": "El riesgo laboral es la probabilidad de que ocurra un daño, no el daño en sí mismo."
+              },
+              {
+                "id": "ipe1-manus-u2-p02",
+                "pregunta": "¿Cuál de los siguientes NO se considera un daño derivado del trabajo?",
+                "opciones": {
+                  "A": "Una patología causada por la exposición a sustancias químicas.",
+                  "B": "Una lesión sufrida durante el trayecto al trabajo.",
+                  "C": "Una enfermedad común no relacionada con la actividad laboral.",
+                  "D": "El estrés crónico provocado por la carga mental en el puesto."
+                },
+                "correcta": "C",
+                "justificacion": "Los daños derivados del trabajo tienen una relación causal con la actividad laboral."
+              },
+              {
+                "id": "ipe1-manus-u2-p03",
+                "pregunta": "Un accidente de trabajo se define como una lesión corporal sufrida...",
+                "opciones": {
+                  "A": "...en cualquier momento del día, si el trabajador está contratado.",
+                  "B": "...por causa del trabajo por cuenta ajena.",
+                  "C": "...únicamente dentro de las instalaciones de la empresa.",
+                  "D": "...que no requiere baja médica."
+                },
+                "correcta": "B",
+                "justificacion": "La clave del accidente de trabajo es la relación causal con el trabajo por cuenta ajena."
+              },
+              {
+                "id": "ipe1-manus-u2-p04",
+                "pregunta": "¿Qué tipo de condición de trabajo genera riesgos relacionados con virus, bacterias u hongos?",
+                "opciones": {
+                  "A": "Físicas.",
+                  "B": "Químicas.",
+                  "C": "Biológicas.",
+                  "D": "Organizativas."
+                },
+                "correcta": "C",
+                "justificacion": "Los agentes biológicos como virus y bacterias son parte de las condiciones biológicas."
+              },
+              {
+                "id": "ipe1-manus-u2-p05",
+                "pregunta": "La carga mental, los turnos y los horarios son ejemplos de condiciones de trabajo de tipo...",
+                "opciones": {
+                  "A": "Físicas.",
+                  "B": "Químicas.",
+                  "C": "Biológicas.",
+                  "D": "Organizativas (Psicosociales)."
+                },
+                "correcta": "D",
+                "justificacion": "Estos factores se derivan de la organización del trabajo y afectan la salud psicosocial."
+              },
+              {
+                "id": "ipe1-manus-u2-p06",
+                "pregunta": "¿Qué rama de la prevención se enfoca en la prevención de accidentes y daños inmediatos mediante medidas técnicas como resguardos y señalización?",
+                "opciones": {
+                  "A": "Higiene Industrial.",
+                  "B": "Ergonomía.",
+                  "C": "Seguridad en el trabajo.",
+                  "D": "Medicina del trabajo."
+                },
+                "correcta": "C",
+                "justificacion": "La seguridad en el trabajo se centra en la prevención de accidentes y daños agudos."
+              },
+              {
+                "id": "ipe1-manus-u2-p07",
+                "pregunta": "La medición de ruido, gases y polvo en el ambiente laboral es una técnica propia de la...",
+                "opciones": {
+                  "A": "Ergonomía.",
+                  "B": "Seguridad en el trabajo.",
+                  "C": "Higiene industrial.",
+                  "D": "Psicosociología aplicada."
+                },
+                "correcta": "C",
+                "justificacion": "La higiene industrial identifica, evalúa y controla agentes nocivos en el ambiente de trabajo."
+              },
+              {
+                "id": "ipe1-manus-u2-p08",
+                "pregunta": "¿Qué disciplina busca adaptar el puesto de trabajo a la persona para prevenir trastornos musculoesqueléticos?",
+                "opciones": {
+                  "A": "Seguridad en el trabajo.",
+                  "B": "Higiene industrial.",
+                  "C": "Ergonomía.",
+                  "D": "Medicina preventiva."
+                },
+                "correcta": "C",
+                "justificacion": "La ergonomía se enfoca en el diseño del puesto y las tareas para optimizar la interacción persona-trabajo."
+              },
+              {
+                "id": "ipe1-manus-u2-p09",
+                "pregunta": "Según el Art. 15 de la LPRL, ¿cuál es el principio de prevención prioritario?",
+                "opciones": {
+                  "A": "Evaluar los riesgos que no se pueden evitar.",
+                  "B": "Adaptar el trabajo a la persona.",
+                  "C": "Evitar los riesgos en su origen.",
+                  "D": "Anteponer la protección colectiva a la individual."
+                },
+                "correcta": "C",
+                "justificacion": "El principio de evitar los riesgos en su origen es el más fundamental y prioritario."
+              },
+              {
+                "id": "ipe1-manus-u2-p10",
+                "pregunta": "¿Qué principio de prevención implica identificar el peligro, estimar la probabilidad y la gravedad de las consecuencias?",
+                "opciones": {
+                  "A": "Combatir los riesgos en su origen.",
+                  "B": "Sustituir lo peligroso por lo que entrañe poco o ningún peligro.",
+                  "C": "Evaluar los riesgos que no se pueden evitar.",
+                  "D": "Planificar la prevención."
+                },
+                "correcta": "C",
+                "justificacion": "La evaluación de riesgos es el proceso de identificar y valorar los riesgos no evitables."
+              },
+              {
+                "id": "ipe1-manus-u2-p11",
+                "pregunta": "¿Qué significa el principio de 'Anteponer la protección colectiva a la individual'?",
+                "opciones": {
+                  "A": "Que los EPIs son siempre la primera opción de protección.",
+                  "B": "Que las medidas que protegen a un grupo de trabajadores tienen preferencia sobre las que protegen a uno solo.",
+                  "C": "Que la empresa debe decidir qué tipo de protección usar sin consultar a los trabajadores.",
+                  "D": "Que solo se deben usar medidas de protección colectiva en grandes empresas."
+                },
+                "correcta": "B",
+                "justificacion": "Las medidas de protección colectiva son más eficaces y fiables al proteger a un mayor número de personas."
+              },
+              {
+                "id": "ipe1-manus-u2-p12",
+                "pregunta": "¿Cuál de los siguientes es un riesgo psicosocial común derivado de condiciones organizativas?",
+                "opciones": {
+                  "A": "Caídas al mismo nivel.",
+                  "B": "Exposición a ruido.",
+                  "C": "Estrés y ansiedad.",
+                  "D": "Cortes con herramientas manuales."
+                },
+                "correcta": "C",
+                "justificacion": "El estrés y la ansiedad son consecuencias directas de riesgos psicosociales como la carga mental o la presión."
+              },
+              {
+                "id": "ipe1-manus-u2-p13",
+                "pregunta": "¿Qué tipo de medida preventiva es la rotación de tareas para evitar la monotonía y la sobrecarga?",
+                "opciones": {
+                  "A": "Control técnico.",
+                  "B": "Medida de seguridad individual.",
+                  "C": "Medida organizativa para riesgos psicosociales.",
+                  "D": "Medida de higiene industrial."
+                },
+                "correcta": "C",
+                "justificacion": "La rotación de tareas es una estrategia organizativa para gestionar riesgos psicosociales y ergonómicos."
+              },
+              {
+                "id": "ipe1-manus-u2-p14",
+                "pregunta": "Las barandillas, redes de seguridad y sistemas de ventilación general son ejemplos de...",
+                "opciones": {
+                  "A": "Equipos de Protección Individual (EPIs).",
+                  "B": "Controles técnicos sobre la fuente.",
+                  "C": "Medidas de protección colectiva.",
+                  "D": "Medidas de higiene industrial."
+                },
+                "correcta": "C",
+                "justificacion": "Estas medidas protegen a un conjunto de trabajadores y son prioritarias sobre las individuales."
+              },
+              {
+                "id": "ipe1-manus-u2-p15",
+                "pregunta": "¿Qué principio de prevención establece que se debe reemplazar lo peligroso por algo menos nocivo?",
+                "opciones": {
+                  "A": "Adaptar el trabajo a la persona.",
+                  "B": "Tener en cuenta la evolución de la técnica.",
+                  "C": "Sustituir lo peligroso por lo que entrañe poco o ningún peligro.",
+                  "D": "Dar instrucciones a los trabajadores."
+                },
+                "correcta": "C",
+                "justificacion": "Este principio busca eliminar o reducir el riesgo en su origen mediante la sustitución."
+              },
+              {
+                "id": "ipe1-manus-u2-p16",
+                "pregunta": "¿Cuál de las siguientes NO es una característica de una enfermedad profesional?",
+                "opciones": {
+                  "A": "Aparición lenta y progresiva.",
+                  "B": "Causada por la exposición continuada a agentes nocivos.",
+                  "C": "Debe estar especificada en un cuadro de enfermedades profesionales.",
+                  "D": "Es una lesión corporal súbita por causa del trabajo."
+                },
+                "correcta": "D",
+                "justificacion": "Una lesión corporal súbita es característica de un accidente de trabajo, no de una enfermedad profesional."
+              },
+              {
+                "id": "ipe1-manus-u2-p17",
+                "pregunta": "¿Qué tipo de riesgo puede generar una iluminación inadecuada en el puesto de trabajo?",
+                "opciones": {
+                  "A": "Químico.",
+                  "B": "Biológico.",
+                  "C": "Físico.",
+                  "D": "Psicosocial."
+                },
+                "correcta": "C",
+                "justificacion": "La iluminación es un factor ambiental físico que puede causar fatiga visual o accidentes."
+              },
+              {
+                "id": "ipe1-manus-u2-p18",
+                "pregunta": "Los cascos, gafas de seguridad y guantes son ejemplos de...",
+                "opciones": {
+                  "A": "Controles técnicos.",
+                  "B": "Medidas de protección colectiva.",
+                  "C": "Equipos de Protección Individual (EPIs).",
+                  "D": "Medidas organizativas."
+                },
+                "correcta": "C",
+                "justificacion": "Estos elementos son diseñados para proteger al trabajador individualmente de riesgos específicos."
+              },
+              {
+                "id": "ipe1-manus-u2-p19",
+                "pregunta": "¿Qué principio de prevención se relaciona con el diseño de puestos de trabajo que consideren las características físicas y mentales de los trabajadores?",
+                "opciones": {
+                  "A": "Evitar los riesgos.",
+                  "B": "Tener en cuenta la evolución de la técnica.",
+                  "C": "Adaptar el trabajo a la persona.",
+                  "D": "Planificar la prevención."
+                },
+                "correcta": "C",
+                "justificacion": "Este principio busca la ergonomía y la adecuación del trabajo al ser humano."
+              },
+              {
+                "id": "ipe1-manus-u2-p20",
+                "pregunta": "¿Cuál es el segundo problema de salud laboral más común, a menudo relacionado con riesgos psicosociales?",
+                "opciones": {
+                  "A": "Hipoacusia.",
+                  "B": "Trastornos musculoesqueléticos.",
+                  "C": "Estrés y ansiedad.",
+                  "D": "Intoxicaciones por sustancias químicas."
+                },
+                "correcta": "C",
+                "justificacion": "El estrés y la ansiedad son problemas psicosociales muy extendidos en el ámbito laboral."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 03",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 22,
             "preguntas": [
               {
                 "id": "ipe1-prometeo-u3-p01",
@@ -540,825 +1038,255 @@
               }
             ]
           },
-          {
-            "unidad": "Test 4.1",
-            "total": 29,
+
+          "MANUS IA": {
+            "total_preguntas": 20,
             "preguntas": [
               {
-                "id": "ipe1-prometeo-u4-p01",
-                "pregunta": "¿Cuál es la norma básica que regula las relaciones laborales en España?",
+                "id": "ipe1-manus-u3-p01",
+                "pregunta": "¿Cuál es el primer pilar de un Plan de Emergencia o Autoprotección?",
                 "opciones": {
-                    "A": "Código Civil",
-                    "B": "Ley General Tributaria",
-                    "C": "Estatuto de los Trabajadores",
-                    "D": "Estatuto Básico del Empleado Público"
-                },
-                "correcta": "C",
-                "justificacion": "El Estatuto de los Trabajadores (ET), aprobado por el Real Decreto Legislativo 2/2015, es la norma básica que regula las relaciones laborales en España. El Código Civil regula relaciones civiles generales, la Ley General Tributaria regula los tributos y el Estatuto Básico del Empleado Público regula a los funcionarios."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p02",
-                "pregunta": "El Derecho del Trabajo regula:",
-                "opciones": {
-                    "A": "Solo las relaciones entre empresas",
-                    "B": "Las relaciones entre empresarios y trabajadores",
-                    "C": "Las relaciones entre consumidores y empresas",
-                    "D": "Solo las relaciones con la Administración"
+                  "A": "Medios de protección.",
+                  "B": "Análisis de riesgos.",
+                  "C": "Organización interna.",
+                  "D": "Plan de actuación."
                 },
                 "correcta": "B",
-                "justificacion": "El Derecho del Trabajo es la rama del ordenamiento jurídico que regula las relaciones que surgen del trabajo por cuenta ajena entre trabajadores y empresarios. No regula relaciones entre empresas (Derecho Mercantil), consumidores (Derecho del Consumo) ni con la Administración en términos funcionariales."
+                "justificacion": "El análisis de riesgos es el paso inicial para identificar las amenazas y evaluar su impacto potencial."
               },
               {
-                "id": "ipe1-prometeo-u4-p03",
-                "pregunta": "Para que exista relación laboral deben darse ciertos elementos. ¿Cuál de los siguientes es uno de ellos?",
+                "id": "ipe1-manus-u3-p02",
+                "pregunta": "¿Qué figura es la máxima autoridad en una emergencia según la organización interna de un plan?",
                 "opciones": {
-                    "A": "Competencia empresarial",
-                    "B": "Independencia",
-                    "C": "Voluntariedad",
-                    "D": "Autonomía"
-                },
-                "correcta": "C",
-                "justificacion": "Los cuatro elementos que deben concurrir para que exista relación laboral son: voluntariedad, ajenidad, dependencia y remuneración. La independencia y la autonomía son características opuestas a la relación laboral, y la competencia empresarial no es un elemento de la relación laboral."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p04",
-                "pregunta": "Un trabajador presta sus servicios libremente sin imposición. ¿Qué elemento de la relación laboral se cumple?",
-                "opciones": {
-                    "A": "Dependencia",
-                    "B": "Voluntariedad",
-                    "C": "Remuneración",
-                    "D": "Ajenidad"
-                },
-                "correcta": "B",
-                "justificacion": "La voluntariedad significa que el trabajador presta sus servicios libremente, sin coacción ni imposición. Es uno de los cuatro elementos esenciales de la relación laboral junto con la ajenidad, la dependencia y la remuneración."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p05",
-                "pregunta": "Cuando el trabajador está sometido a la organización del empresario se habla de:",
-                "opciones": {
-                    "A": "Remuneración",
-                    "B": "Jerarquía normativa",
-                    "C": "Ajenidad",
-                    "D": "Dependencia"
+                  "A": "El Guía.",
+                  "B": "El Contraguía.",
+                  "C": "El Responsable de Planta.",
+                  "D": "El Jefe de Intervención."
                 },
                 "correcta": "D",
-                "justificacion": "La dependencia es el elemento de la relación laboral que implica que el trabajador está sometido a las órdenes, dirección y organización del empresario. Es lo que diferencia al trabajador por cuenta ajena del trabajador autónomo, que organiza su propio trabajo."
+                "justificacion": "El Jefe de Intervención es la máxima autoridad y coordinador de las acciones durante una emergencia."
               },
               {
-                "id": "ipe1-prometeo-u4-p06",
-                "pregunta": "Cuando los beneficios y riesgos del negocio pertenecen al empresario hablamos de:",
+                "id": "ipe1-manus-u3-p03",
+                "pregunta": "¿Qué acción se realiza en la fase 'Antes' de actuación ante una emergencia?",
                 "opciones": {
-                    "A": "Ajenidad",
-                    "B": "Dependencia",
-                    "C": "Personalidad",
-                    "D": "Subordinación jurídica"
-                },
-                "correcta": "A",
-                "justificacion": "La ajenidad significa que los frutos del trabajo, así como los riesgos y beneficios del negocio, pertenecen al empresario y no al trabajador. El trabajador recibe un salario independientemente del resultado económico de la empresa, lo que le distingue del empresario o del autónomo."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p07",
-                "pregunta": "¿Cuál de las siguientes situaciones no se considera relación laboral?",
-                "opciones": {
-                    "A": "Empleado administrativo en una empresa",
-                    "B": "Trabajo voluntario en una ONG sin salario",
-                    "C": "Dependiente en una tienda",
-                    "D": "Trabajador contratado en una empresa"
-                },
-                "correcta": "B",
-                "justificacion": "El trabajo voluntario en una ONG sin salario carece del elemento de remuneración, que es uno de los requisitos esenciales para que exista relación laboral. Sin retribución económica, no hay contrato de trabajo ni relación laboral protegida por el Estatuto de los Trabajadores."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p08",
-                "pregunta": "¿Cuál de los siguientes colectivos tiene una relación laboral excluida?",
-                "opciones": {
-                    "A": "Personal del hogar",
-                    "B": "Alta dirección",
-                    "C": "Funcionarios públicos",
-                    "D": "Deportistas profesionales"
+                  "A": "Activación de la alarma.",
+                  "B": "Vuelta a la normalidad.",
+                  "C": "Conocer puntos de encuentro.",
+                  "D": "Intervención y control del incidente."
                 },
                 "correcta": "C",
-                "justificacion": "Los funcionarios públicos están excluidos del ámbito de aplicación del Estatuto de los Trabajadores. Su relación con la Administración es una relación funcionarial, regulada por el Estatuto Básico del Empleado Público (EBEP), no por el derecho laboral común."
+                "justificacion": "Conocer los puntos de encuentro es una medida de preparación previa a la emergencia."
               },
               {
-                "id": "ipe1-prometeo-u4-p09",
-                "pregunta": "¿Cuál de los siguientes casos se considera relación laboral especial?",
+                "id": "ipe1-manus-u3-p04",
+                "pregunta": "¿Cuál es el objetivo principal de los Primeros Auxilios?",
                 "opciones": {
-                    "A": "Funcionarios",
-                    "B": "Deportistas profesionales",
-                    "C": "Trabajo por amistad",
-                    "D": "Trabajo familiar hasta segundo grado"
+                  "A": "Sustituir la atención médica profesional.",
+                  "B": "Mantener con vida al accidentado y evitar el empeoramiento de su estado hasta la llegada de asistencia sanitaria.",
+                  "C": "Diagnosticar la enfermedad del accidentado.",
+                  "D": "Realizar intervenciones quirúrgicas menores."
                 },
                 "correcta": "B",
-                "justificacion": "Los deportistas profesionales tienen una relación laboral especial, regulada por el Real Decreto 1006/1985. Las relaciones laborales especiales comparten los elementos básicos de la relación laboral pero tienen características particulares que justifican una regulación específica diferente al ET."
+                "justificacion": "Los primeros auxilios son una atención inicial y temporal hasta la llegada de profesionales."
               },
               {
-                "id": "ipe1-prometeo-u4-p10",
-                "pregunta": "Los trabajos realizados por amistad o buena vecindad se consideran:",
+                "id": "ipe1-manus-u3-p05",
+                "pregunta": "Según el Método PAS, ¿qué significa la 'P'?",
                 "opciones": {
-                    "A": "Relación laboral común",
-                    "B": "Relación laboral especial",
-                    "C": "Relación laboral excluida",
-                    "D": "Relación funcionarial"
-                },
-                "correcta": "C",
-                "justificacion": "Los trabajos realizados por amistad, buena vecindad o benevolencia están expresamente excluidos del ámbito laboral por el artículo 1.3 del ET, porque les falta el elemento de la remuneración y la voluntad de crear un vínculo contractual laboral."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p11",
-                "pregunta": "Un administrador de una sociedad mercantil normalmente tiene una relación:",
-                "opciones": {
-                    "A": "Laboral común",
-                    "B": "Laboral especial",
-                    "C": "Excluida del ámbito laboral",
-                    "D": "Funcionarial"
-                },
-                "correcta": "C",
-                "justificacion": "El administrador de una sociedad mercantil tiene una relación mercantil con la sociedad, no laboral. El Tribunal Supremo ha establecido la doctrina del vínculo, según la cual cuando se ejerce el cargo de administrador, cualquier relación laboral queda absorbida por la mercantil y resulta excluida del ámbito del ET."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p12",
-                "pregunta": "Dentro de la jerarquía normativa laboral, ¿qué norma tiene mayor rango?",
-                "opciones": {
-                    "A": "Constitución",
-                    "B": "Reglamento",
-                    "C": "Contrato de trabajo",
-                    "D": "Convenio colectivo"
-                },
-                "correcta": "A",
-                "justificacion": "En la jerarquía normativa laboral española, la Constitución ocupa el rango más alto al ser la norma suprema del ordenamiento jurídico. Por debajo de ella están las normas con rango de ley (ET, LPRL...), los reglamentos, los convenios colectivos y finalmente el contrato de trabajo."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p13",
-                "pregunta": "¿Cuál de las siguientes normas tiene rango de ley?",
-                "opciones": {
-                    "A": "Circular administrativa",
-                    "B": "Real Decreto-ley",
-                    "C": "Orden ministerial",
-                    "D": "Instrucción"
+                  "A": "Preguntar al accidentado.",
+                  "B": "Proteger el lugar del accidente.",
+                  "C": "Prevenir futuros accidentes.",
+                  "D": "Planificar la ayuda."
                 },
                 "correcta": "B",
-                "justificacion": "El Real Decreto-ley es una norma con rango de ley que puede dictar el Gobierno en casos de extraordinaria y urgente necesidad, según el artículo 86 de la Constitución. Las circulares, órdenes ministeriales e instrucciones son normas de rango reglamentario, jerárquicamente inferiores."
+                "justificacion": "La 'P' de PAS significa Proteger, asegurando la seguridad del socorrista y del accidentado."
               },
               {
-                "id": "ipe1-prometeo-u4-p14",
-                "pregunta": "El Estatuto de los Trabajadores es un ejemplo de:",
+                "id": "ipe1-manus-u3-p06",
+                "pregunta": "¿Cuál es el número de emergencias en España al que se debe Avisar según el Método PAS?",
                 "opciones": {
-                    "A": "Norma con rango de ley",
-                    "B": "Reglamento",
-                    "C": "Tratado internacional",
-                    "D": "Uso y costumbre"
-                },
-                "correcta": "A",
-                "justificacion": "El Estatuto de los Trabajadores fue aprobado mediante Real Decreto Legislativo 2/2015, que es una norma con rango de ley. No es un reglamento (norma de rango inferior aprobada por el Gobierno), ni un tratado internacional, ni un uso o costumbre."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p15",
-                "pregunta": "Los convenios colectivos forman parte de:",
-                "opciones": {
-                    "A": "Jurisprudencia",
-                    "B": "Autonomía colectiva",
-                    "C": "Reglamentos",
-                    "D": "Derecho internacional"
-                },
-                "correcta": "B",
-                "justificacion": "Los convenios colectivos son el resultado de la negociación colectiva entre representantes de trabajadores y empresarios, por lo que forman parte de la autonomía colectiva. No son reglamentos (normas estatales), ni jurisprudencia (sentencias judiciales), ni derecho internacional."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p16",
-                "pregunta": "Los usos y costumbres laborales se aplican cuando:",
-                "opciones": {
-                    "A": "Lo decide el empresario",
-                    "B": "La ley no regula una situación",
-                    "C": "El trabajador lo solicita",
-                    "D": "Lo establece el contrato"
-                },
-                "correcta": "B",
-                "justificacion": "Los usos y costumbres laborales son fuente subsidiaria del derecho laboral: solo se aplican cuando la ley, el convenio colectivo o el contrato de trabajo no regulan una situación concreta. Nunca pueden contradecir una norma de rango superior."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p17",
-                "pregunta": "La jurisprudencia laboral está formada por:",
-                "opciones": {
-                    "A": "Convenios colectivos",
-                    "B": "Reglamentos",
-                    "C": "Sentencias del Tribunal Supremo",
-                    "D": "Órdenes ministeriales"
+                  "A": "061.",
+                  "B": "091.",
+                  "C": "112.",
+                  "D": "092."
                 },
                 "correcta": "C",
-                "justificacion": "La jurisprudencia en España está formada por las sentencias reiteradas del Tribunal Supremo que establecen criterios de interpretación de las normas. No la forman los convenios colectivos (autonomía colectiva), los reglamentos (normas administrativas) ni las órdenes ministeriales."
+                "justificacion": "El 112 es el número único de emergencias en España."
               },
               {
-                "id": "ipe1-prometeo-u4-p18",
-                "pregunta": "Las normas de la Unión Europea forman parte de:",
+                "id": "ipe1-manus-u3-p07",
+                "pregunta": "¿Qué se evalúa en la evaluación primaria de un accidentado?",
                 "opciones": {
-                    "A": "Fuentes externas del derecho laboral",
-                    "B": "Autonomía colectiva",
-                    "C": "Usos y costumbres",
-                    "D": "Fuentes internas"
-                },
-                "correcta": "A",
-                "justificacion": "Las normas de la Unión Europea (reglamentos, directivas y decisiones) constituyen fuentes externas del derecho laboral español, ya que provienen de una organización supranacional ajena al ordenamiento interno. Tienen primacía sobre el derecho nacional en las materias en que la UE tiene competencia."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p19",
-                "pregunta": "¿Cuál de los siguientes no es un principio de aplicación de las normas laborales?",
-                "opciones": {
-                    "A": "Norma mínima",
-                    "B": "Norma más favorable",
-                    "C": "Principio de productividad",
-                    "D": "In dubio pro operario"
-                },
-                "correcta": "C",
-                "justificacion": "El principio de productividad no es un principio de aplicación de las normas laborales. Los principios reconocidos son: norma mínima (no se puede empeorar la ley), norma más favorable (entre dos normas aplicables, se elige la mejor para el trabajador) e in dubio pro operario (en caso de duda interpretativa, a favor del trabajador)."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p20",
-                "pregunta": "El principio de norma mínima significa que:",
-                "opciones": {
-                    "A": "Solo se puede mejorar lo establecido en normas superiores",
-                    "B": "Se aplican siempre las normas más antiguas",
-                    "C": "La empresa decide qué norma aplicar",
-                    "D": "Las normas pueden empeorar la ley"
-                },
-                "correcta": "A",
-                "justificacion": "El principio de norma mínima establece que las normas de rango inferior (convenio, contrato) solo pueden mejorar lo establecido en normas de rango superior (ley), nunca empeorarla. Así, un convenio puede mejorar el salario mínimo legal, pero nunca fijarlo por debajo."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p21",
-                "pregunta": "El principio de norma más favorable se aplica cuando:",
-                "opciones": {
-                    "A": "La empresa quiere modificar el contrato",
-                    "B": "Hay dos normas aplicables al mismo caso",
-                    "C": "El trabajador cambia de empresa",
-                    "D": "Hay dudas en una norma"
+                  "A": "Lesiones óseas y musculares.",
+                  "B": "Signos vitales como consciencia, respiración y pulso.",
+                  "C": "Historial médico completo.",
+                  "D": "Daños materiales en el entorno."
                 },
                 "correcta": "B",
-                "justificacion": "El principio de norma más favorable se aplica cuando dos normas son igualmente aplicables a un mismo supuesto. En ese caso, se aplica la que resulte más beneficiosa para el trabajador en su conjunto, no mezclando preceptos de ambas normas."
+                "justificacion": "La evaluación primaria se centra en identificar situaciones que ponen en peligro la vida de forma inmediata."
               },
               {
-                "id": "ipe1-prometeo-u4-p22",
-                "pregunta": "El principio in dubio pro operario significa que:",
+                "id": "ipe1-manus-u3-p08",
+                "pregunta": "¿Qué Real Decreto establece la obligatoriedad del botiquín de primeros auxilios en las empresas?",
                 "opciones": {
-                    "A": "Se interpreta la norma a favor del trabajador cuando hay duda",
-                    "B": "Decide el empresario",
-                    "C": "Se aplica siempre el convenio colectivo",
-                    "D": "Se aplica la norma más antigua"
-                },
-                "correcta": "A",
-                "justificacion": "El principio in dubio pro operario es un criterio de interpretación: cuando una norma admite dos o más interpretaciones razonables, el juez o aplicador del derecho debe elegir la que resulte más favorable para el trabajador. Es distinto del principio de norma más favorable, que se aplica cuando hay dos normas diferentes."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p23",
-                "pregunta": "El principio de irrenunciabilidad de derechos implica que:",
-                "opciones": {
-                    "A": "El trabajador puede renunciar al salario mínimo",
-                    "B": "El trabajador no puede renunciar a derechos reconocidos por la ley",
-                    "C": "La empresa puede eliminar derechos si el trabajador acepta",
-                    "D": "El trabajador puede renunciar a vacaciones"
+                  "A": "Real Decreto 1215/1997.",
+                  "B": "Real Decreto 486/1997.",
+                  "C": "Real Decreto 773/1997.",
+                  "D": "Real Decreto 1627/1997."
                 },
                 "correcta": "B",
-                "justificacion": "El principio de irrenunciabilidad de derechos, recogido en el artículo 3.5 del ET, impide que el trabajador renuncie a los derechos que le reconoce la ley o el convenio colectivo, aunque lo haga voluntariamente. Cualquier pacto en contrario es nulo. Las vacaciones son un derecho irrenunciable."
+                "justificacion": "El RD 486/1997 establece las disposiciones mínimas de seguridad y salud en los lugares de trabajo, incluyendo el botiquín."
               },
               {
-                "id": "ipe1-prometeo-u4-p24",
-                "pregunta": "Una empresa ofrece 35 días de vacaciones aunque el convenio establece 30. ¿Qué principio se aplica?",
+                "id": "ipe1-manus-u3-p09",
+                "pregunta": "¿Qué instrumental debe contener mínimamente un botiquín de primeros auxilios?",
                 "opciones": {
-                    "A": "Jerarquía normativa",
-                    "B": "Norma mínima",
-                    "C": "Condición más beneficiosa",
-                    "D": "Usos y costumbres"
-                },
-                "correcta": "C",
-                "justificacion": "El principio de condición más beneficiosa protege las ventajas que el empresario ha concedido voluntariamente por encima de lo exigido por ley o convenio. Los 35 días de vacaciones son una mejora sobre los 30 del convenio, y esa mejora se convierte en un derecho adquirido del trabajador que no puede ser retirado unilateralmente."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p25",
-                "pregunta": "Si un trabajador tiene dos convenios aplicables y uno establece mejores condiciones salariales:",
-                "opciones": {
-                    "A": "Se aplica el más favorable al trabajador",
-                    "B": "Se aplica el más antiguo",
-                    "C": "Decide la empresa",
-                    "D": "Se aplica el de menor rango"
-                },
-                "correcta": "A",
-                "justificacion": "Cuando existen dos convenios aplicables al mismo caso, se aplica el principio de norma más favorable: se selecciona en su conjunto el convenio que resulte más beneficioso para el trabajador. No se pueden combinar preceptos de ambos convenios de forma selectiva."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p26",
-                "pregunta": "Si una norma puede interpretarse de dos formas y una beneficia más al trabajador:",
-                "opciones": {
-                    "A": "Se aplica la más restrictiva",
-                    "B": "Decide el empresario",
-                    "C": "Se aplica la interpretación más favorable al trabajador",
-                    "D": "Se aplica el convenio colectivo"
-                },
-                "correcta": "C",
-                "justificacion": "Cuando una norma admite dos interpretaciones posibles, se aplica el principio in dubio pro operario: debe elegirse la interpretación que resulte más favorable al trabajador. Este principio protege al trabajador como parte más débil de la relación laboral ante la ambigüedad normativa."
-              },
-              {
-                "id": "ipe1-prometeo-u4-p27",
-                "pregunta": "Un trabajador firma un documento renunciando a sus vacaciones anuales. Según el derecho laboral:",
-                "opciones": {
-                    "A": "Es válido si lo firma voluntariamente",
-                    "B": "No es válido por el principio de irrenunciabilidad",
-                    "C": "Es válido si lo permite la empresa",
-                    "D": "Es válido si lo autoriza el convenio"
+                  "A": "Analgésicos y antibióticos.",
+                  "B": "Tijeras, pinzas y guantes desechables.",
+                  "C": "Tensiómetro y fonendoscopio.",
+                  "D": "Suturas y material quirúrgico."
                 },
                 "correcta": "B",
-                "justificacion": "El principio de irrenunciabilidad de derechos hace que cualquier renuncia del trabajador a derechos reconocidos por la ley o el convenio sea nula de pleno derecho, aunque sea firmada voluntariamente. Las vacaciones son un derecho mínimo legal irrenunciable, por lo que el documento no tiene ninguna validez jurídica."
+                "justificacion": "El instrumental básico incluye tijeras, pinzas y guantes para la manipulación segura."
               },
               {
-                "id": "ipe1-prometeo-u4-p28",
-                "pregunta": "Un hijo trabaja ocasionalmente en el negocio familiar conviviendo con los padres. Se considera:",
+                "id": "ipe1-manus-u3-p10",
+                "pregunta": "¿Qué tipo de local deben tener las empresas con más de 50 empleados en relación con los primeros auxilios?",
                 "opciones": {
-                    "A": "Relación laboral excluida",
-                    "B": "Relación laboral común",
-                    "C": "Relación laboral especial",
-                    "D": "Relación funcionarial"
+                  "A": "Una sala de descanso.",
+                  "B": "Un local destinado a primeros auxilios.",
+                  "C": "Un comedor.",
+                  "D": "Un almacén de material de oficina."
                 },
-                "correcta": "A",
-                "justificacion": "El trabajo del hijo en el negocio familiar, conviviendo con los padres, está expresamente excluido del ámbito laboral por el artículo 1.3.e del ET. Se presume que hay lazos familiares y convivencia que impiden la existencia de una relación laboral, salvo que se demuestre la condición de asalariado."
+                "correcta": "B",
+                "justificacion": "Las empresas con más de 50 empleados deben disponer de un local específico para primeros auxilios."
               },
               {
-                "id": "ipe1-prometeo-u4-p29",
-                "pregunta": "Una persona vende productos para una empresa pero asume el riesgo económico de la operación. Se considera:",
+                "id": "ipe1-manus-u3-p11",
+                "pregunta": "¿Qué técnica se aplica a personas inconscientes que respiran para evitar la obstrucción de las vías respiratorias?",
                 "opciones": {
-                    "A": "Relación laboral común",
-                    "B": "Relación laboral especial",
-                    "C": "Relación laboral excluida",
-                    "D": "Relación funcionarial"
+                  "A": "RCP básica.",
+                  "B": "Maniobra de Heimlich.",
+                  "C": "PLS (Posición Lateral de Seguridad).",
+                  "D": "Compresiones abdominales."
                 },
                 "correcta": "C",
-                "justificacion": "Cuando una persona asume el riesgo económico de la operación comercial que realiza, falta el elemento de la ajenidad: es ella quien soporta los beneficios y pérdidas, no la empresa. Sin ajenidad no hay relación laboral, por lo que su situación queda excluida del ET y se acerca más al trabajo autónomo."
-              }
-            ]
-          },
-          {
-            "unidad": "Test 5",
-            "total": 29,
-            "preguntas": [
-              {
-                "id": "ipe1-prometeo-u5-p01",
-                "pregunta": "Leopoldo ha conseguido la nacionalidad española, por lo que decide dejar su puesto de trabajo actual en una empresa que lo tenía contratado sin papeles y con condiciones mucho peores a las que indica el contrato de trabajo. Su jefe actual le avisa que, de no renovar el actual contrato, tendrá que dar aviso a las autoridades de la situación ilegal de la mujer de Leopoldo. Este decide firmar el contrato. ¿Sería dicho contrato válido?",
-                "opciones": {
-                    "A": "No, ya que le faltaría una causa válida.",
-                    "B": "No, ya que carece de objeto.",
-                    "C": "No, ya que carece de consentimiento.",
-                    "D": "Sí, ya que Leopoldo venía prestando servicios en la empresa referida."
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "El consentimiento está viciado por coacción o amenaza, por lo que el contrato no sería válido."
+                "justificacion": "La PLS es fundamental para mantener la vía aérea permeable en personas inconscientes que respiran."
               },
               {
-                "id": "ipe1-prometeo-u5-p02",
-                "pregunta": "¿Qué tipo de contrato puede celebrarse verbalmente?",
+                "id": "ipe1-manus-u3-p12",
+                "pregunta": "¿Cuál es la secuencia correcta de compresiones y ventilaciones en la RCP básica para adultos?",
                 "opciones": {
-                    "A": "Contrato a tiempo parcial.",
-                    "B": "Contrato indefinido ordinario a jornada completa.",
-                    "C": "Contrato formativo.",
-                    "D": "Ninguno."
+                  "A": "15 compresiones + 2 ventilaciones.",
+                  "B": "30 compresiones + 2 ventilaciones.",
+                  "C": "5 compresiones + 1 ventilación.",
+                  "D": "Solo compresiones, sin ventilaciones."
                 },
-                "respuesta_correcta": "B",
-                "justificacion": "El contrato indefinido ordinario a jornada completa puede formalizarse verbalmente."
+                "correcta": "B",
+                "justificacion": "La secuencia estándar de RCP básica para adultos es de 30 compresiones seguidas de 2 ventilaciones."
               },
               {
-                "id": "ipe1-prometeo-u5-p03",
-                "pregunta": "Clara es hija de un bibliotecario. Ha conseguido un trabajo temporal para cubrir una baja de maternidad, por una duración de 16 semanas. Su jefe, que es un poco descuidado no ha formalizado con ella el contrato por escrito. ¿Qué naturaleza tendría dicho contrato?",
+                "id": "ipe1-manus-u3-p13",
+                "pregunta": "¿Qué se incluye en los 'Medios de protección' de un plan de emergencia?",
                 "opciones": {
-                    "A": "Se considera nulo.",
-                    "B": "Se presume indefinido.",
-                    "C": "Pierde validez legal.",
-                    "D": "Ninguna de las anteriores."
+                  "A": "Análisis de riesgos y evaluación.",
+                  "B": "Formación y simulacros.",
+                  "C": "Extintores y equipos de primeros auxilios.",
+                  "D": "Roles y responsabilidades del personal."
                 },
-                "respuesta_correcta": "B",
-                "justificacion": "Los contratos temporales deben formalizarse por escrito; si no se hace, se presumen indefinidos."
+                "correcta": "C",
+                "justificacion": "Los medios de protección se refieren a los recursos materiales para hacer frente a la emergencia."
               },
               {
-                "id": "ipe1-prometeo-u5-p04",
-                "pregunta": "¿Qué información debe incluir un contrato de trabajo?",
+                "id": "ipe1-manus-u3-p14",
+                "pregunta": "¿Qué se realiza en la fase 'Durante' de actuación ante una emergencia?",
                 "opciones": {
-                    "A": "Duración",
-                    "B": "Retribuciones",
-                    "C": "Convenio colectivo de aplicación",
-                    "D": "Indemnización en caso de despido"
+                  "A": "Análisis y mejora del plan.",
+                  "B": "Detección, alarma y decisiones (intervención, evacuación o confinamiento).",
+                  "C": "Conocer los puntos de encuentro.",
+                  "D": "Formación del personal."
                 },
-                "respuesta_correcta": "D",
-                "justificacion": "La indemnización por despido puede formar parte de las cláusulas contractuales específicas."
+                "correcta": "B",
+                "justificacion": "La fase 'Durante' implica la respuesta activa a la emergencia, desde su detección hasta las decisiones de actuación."
               },
               {
-                "id": "ipe1-prometeo-u5-p05",
-                "pregunta": "Un contrato de trabajo, genera:",
+                "id": "ipe1-manus-u3-p15",
+                "pregunta": "¿Qué debe hacer el socorrista laboral antes de actuar según el Método PAS?",
                 "opciones": {
-                    "A": "Derechos únicamente para el empleador.",
-                    "B": "Obligaciones para el trabajador.",
-                    "C": "Obligaciones mutuas.",
-                    "D": "Ninguna de las anteriores."
+                  "A": "Llamar al 112 inmediatamente.",
+                  "B": "Mover al accidentado a un lugar seguro.",
+                  "C": "Asegurarse de que no existe peligro.",
+                  "D": "Comenzar la RCP."
                 },
-                "respuesta_correcta": "C",
-                "justificacion": "El contrato genera derechos y obligaciones tanto para el trabajador como para el empleador."
+                "correcta": "C",
+                "justificacion": "La seguridad del socorrista y del entorno es la prioridad número uno (Proteger)."
               },
               {
-                "id": "ipe1-prometeo-u5-p06",
-                "pregunta": "¿Cuál de los siguientes NO es un elemento necesario para que un contrato se considere válido?",
+                "id": "ipe1-manus-u3-p16",
+                "pregunta": "¿Qué tipo de locales deben disponer de un DEA (Desfibrilador Externo Automático)?",
                 "opciones": {
-                    "A": "Consentimiento",
-                    "B": "Objeto",
-                    "C": "Causa",
-                    "D": "Objeción"
+                  "A": "Todas las empresas, independientemente de su tamaño.",
+                  "B": "Empresas con más de 50 empleados.",
+                  "C": "Locales con capacidad para 1000 o más personas.",
+                  "D": "Solo hospitales y centros de salud."
                 },
-                "respuesta_correcta": "D",
-                "justificacion": "Los elementos esenciales de un contrato son consentimiento, objeto y causa."
+                "correcta": "C",
+                "justificacion": "La normativa exige DEA en locales de gran afluencia de público."
               },
               {
-                "id": "ipe1-prometeo-u5-p07",
-                "pregunta": "¿Cuál de las siguientes NO es una características del objeto de los contratos?",
+                "id": "ipe1-manus-u3-p17",
+                "pregunta": "¿Qué material de curas es esencial en un botiquín de primeros auxilios?",
                 "opciones": {
-                    "A": "Debe ser lícito",
-                    "B": "Deben ser posibles",
-                    "C": "Deben ser determinados",
-                    "D": "Deben ser indeterminados"
+                  "A": "Analgésicos y antiinflamatorios.",
+                  "B": "Gasas estériles, apósitos adhesivos y vendas.",
+                  "C": "Jeringas y agujas.",
+                  "D": "Medicamentos para la tensión arterial."
                 },
-                "respuesta_correcta": "D",
-                "justificacion": "El objeto del contrato debe ser posible, lícito y determinado o determinable."
+                "correcta": "B",
+                "justificacion": "El material de curas básico incluye elementos para limpiar, cubrir y proteger heridas."
               },
               {
-                "id": "ipe1-prometeo-u5-p08",
-                "pregunta": "Leopolda ha firmado un contrato en la empresa de un amigo para cotizar lo suficiente para cobrar el paro. Sin embargo no tiene intención de ir a trabajar. ¿Estaríamos ante un contrato válido?",
+                "id": "ipe1-manus-u3-p18",
+                "pregunta": "¿Qué se busca con la 'Implantación y mantenimiento' de un plan de emergencia?",
                 "opciones": {
-                    "A": "No, ya que le faltaría una causa válida.",
-                    "B": "No, ya que carecería de objeto.",
-                    "C": "No, ya que carecería de consentimiento.",
-                    "D": "No, ya que no es por escrito."
+                  "A": "Crear el documento inicial del plan.",
+                  "B": "Realizar simulacros y formación periódica.",
+                  "C": "Identificar los riesgos existentes.",
+                  "D": "Designar los roles del personal."
                 },
-                "respuesta_correcta": "A",
-                "justificacion": "Existe simulación contractual y ausencia de causa real, por lo que el contrato no sería válido."
+                "correcta": "B",
+                "justificacion": "La implantación y mantenimiento aseguran que el plan sea operativo y se actualice constantemente."
               },
               {
-                "id": "ipe1-prometeo-u5-p09",
-                "pregunta": "A Lucía le han contratado para vender bolsitas de marihuana a la gente que pase a la tienda en la que está de dependienta. ¿Estaríamos ante un contrato válido?",
+                "id": "ipe1-manus-u3-p19",
+                "pregunta": "¿Qué se debe hacer en la fase 'Después' de una emergencia?",
                 "opciones": {
-                    "A": "Sí, siempre que ella estuviera de acuerdo",
-                    "B": "No, porque carece de un objeto válido",
-                    "C": "Sí, ya que se dan los tres elementos: consentimiento, causa y voluntariedad.",
-                    "D": ""
+                  "A": "Activar la alarma.",
+                  "B": "Realizar la evaluación primaria del accidentado.",
+                  "C": "Volver a la normalidad, analizar lo ocurrido y mejorar.",
+                  "D": "Proteger la zona del incidente."
                 },
-                "respuesta_correcta": "B",
-                "justificacion": "El objeto del contrato es ilícito, por lo que el contrato es nulo."
+                "correcta": "C",
+                "justificacion": "La fase 'Después' se centra en la recuperación, el aprendizaje y la mejora continua."
               },
               {
-                "id": "ipe1-prometeo-u5-p10",
-                "pregunta": "¿Qué define esencialmente a un contrato de trabajo?",
+                "id": "ipe1-manus-u3-p20",
+                "pregunta": "¿Qué tipo de desinfectantes se mencionan como contenido mínimo de un botiquín?",
                 "opciones": {
-                    "A": "La prestación de servicios voluntarios a cambio de salario",
-                    "B": "La realización de un trabajo ocasional",
-                    "C": "La colaboración entre empresas",
-                    "D": "La cesión de trabajadores"
+                  "A": "Yodo y Cloro.",
+                  "B": "Suero fisiológico, agua oxigenada, alcohol y jabón desinfectante.",
+                  "C": "Lejía y amoniaco.",
+                  "D": "Perfumes y colonias."
                 },
-                "respuesta_correcta": "A",
-                "justificacion": "Un contrato de trabajo se basa en la prestación de servicios a cambio de salario."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p11",
-                "pregunta": "¿Cuál NO es un elemento esencial del contrato de trabajo?",
-                "opciones": {
-                    "A": "Consentimiento",
-                    "B": "Objeto",
-                    "C": "Causa",
-                    "D": "Forma escrita"
-                },
-                "respuesta_correcta": "D",
-                "justificacion": "Los elementos esenciales son consentimiento, objeto y causa; la forma escrita no siempre es esencial."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p12",
-                "pregunta": "El consentimiento en el contrato de trabajo debe ser:",
-                "opciones": {
-                    "A": "Presunto y tácito",
-                    "B": "Libre y sin vicios",
-                    "C": "Verbal obligatoriamente",
-                    "D": "Revocable unilateralmente"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "El consentimiento debe prestarse libremente y sin error, dolo, violencia o intimidación."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p13",
-                "pregunta": "La causa del contrato de trabajo consiste en:",
-                "opciones": {
-                    "A": "La prestación laboral",
-                    "B": "La finalidad económica de la empresa",
-                    "C": "El intercambio de trabajo por salario",
-                    "D": "La duración del contrato"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "La causa del contrato es el intercambio de trabajo por salario."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p14",
-                "pregunta": "¿Quién puede actuar como empresario en un contrato de trabajo?",
-                "opciones": {
-                    "A": "Solo personas físicas",
-                    "B": "Solo empresas mercantiles",
-                    "C": "Personas físicas, jurídicas o comunidades de bienes",
-                    "D": "Solo autónomos"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "Puede ser empresario una persona física, jurídica o comunidad de bienes."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p15",
-                "pregunta": "Un contrato verbal es válido cuando:",
-                "opciones": {
-                    "A": "Nunca es válido",
-                    "B": "Siempre que dure menos de un año",
-                    "C": "Siempre que dure menos de 6 meses",
-                    "D": "En contratos indefinidos"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "En este test se considera válido cuando la duración es inferior a 6 meses."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p16",
-                "pregunta": "¿Cuál es contenido mínimo obligatorio de un contrato?",
-                "opciones": {
-                    "A": "Salario y vacaciones",
-                    "B": "Duración y jornada",
-                    "C": "Datos de las partes y tipo de contrato",
-                    "D": "Todas las anteriores"
-                },
-                "respuesta_correcta": "D",
-                "justificacion": "El contrato debe recoger datos de las partes y condiciones básicas como salario, duración y jornada."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p17",
-                "pregunta": "¿Qué modalidad contractual es indefinida?",
-                "opciones": {
-                    "A": "Contrato por circunstancias de la producción",
-                    "B": "Contrato de sustitución",
-                    "C": "Contrato fijo discontinuo",
-                    "D": "Contrato de relevo"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "El contrato fijo discontinuo es una modalidad indefinida."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p18",
-                "pregunta": "El contrato fijo discontinuo se utiliza principalmente para:",
-                "opciones": {
-                    "A": "Trabajos permanentes continuos",
-                    "B": "Trabajos estacionales o intermitentes",
-                    "C": "Trabajos de sustitución",
-                    "D": "Trabajos formativos"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Se usa para trabajos de carácter estacional o intermitente."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p19",
-                "pregunta": "El contrato fijo discontinuo debe formalizarse:",
-                "opciones": {
-                "A": "De forma verbal",
-                "B": "De forma escrita",
-                "C": "Solo si dura más de un año",
-                "D": "Ante la autoridad laboral"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Debe formalizarse por escrito."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p20",
-                "pregunta": "¿Qué contrato se utiliza para incrementos ocasionales e imprevisibles de actividad?",
-                "opciones": {
-                "A": "Contrato de relevo",
-                "B": "Contrato de sustitución",
-                "C": "Contrato por circunstancias de la producción",
-                "D": "Contrato formativo"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "Este contrato se utiliza para atender aumentos puntuales e imprevisibles de la actividad."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p21",
-                "pregunta": "La duración máxima del contrato por circunstancias imprevisibles es:",
-                "opciones": {
-                "A": "3 meses",
-                "B": "6 meses ampliables por convenio",
-                "C": "Hasta 2 años",
-                "D": "90 días al año"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Su duración máxima es de 6 meses, ampliable por convenio colectivo."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p22",
-                "pregunta": "¿Qué indemnización corresponde al finalizar un contrato temporal por producción?",
-                "opciones": {
-                "A": "No tiene indemnización",
-                "B": "8 días por año",
-                "C": "12 días por año trabajado",
-                "D": "20 días por año trabajado"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "Al finalizar este contrato corresponde una indemnización de 12 días por año trabajado."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p23",
-                "pregunta": "El contrato por circunstancias previsibles puede celebrarse como máximo:",
-                "opciones": {
-                "A": "60 días al año",
-                "B": "90 días al año",
-                "C": "120 días continuados",
-                "D": "6 meses"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Para circunstancias previsibles, el límite máximo es de 90 días al año."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p24",
-                "pregunta": "¿Cuál es una característica del contrato por sustitución?",
-                "opciones": {
-                    "A": "Genera indemnización al finalizar",
-                    "B": "Siempre es a tiempo parcial",
-                    "C": "Puede iniciar 15 días antes del comienzo de la sustitución",
-                    "D": "Solo puede durar 6 meses"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "Este contrato puede formalizarse con antelación al inicio efectivo de la sustitución."
-              },              
-              {
-                "id": "ipe1-prometeo-u5-p25",
-                "pregunta": "En el contrato de sustitución es obligatorio indicar:",
-                "opciones": {
-                    "A": "El salario del sustituido",
-                    "B": "El trabajador sustituido y la causa",
-                    "C": "La duración exacta del contrato",
-                    "D": "El convenio colectivo"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Debe identificarse a la persona sustituida y la causa de la sustitución."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p26",
-                "pregunta": "El contrato de relevo se celebra para:",
-                "opciones": {
-                    "A": "Sustituir bajas médicas",
-                    "B": "Cubrir jubilación parcial",
-                    "C": "Incrementos de producción",
-                    "D": "Formación profesional"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "El contrato de relevo se usa para cubrir la jubilación parcial de un trabajador."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p27",
-                "pregunta": "El trabajador relevista debe ser:",
-                "opciones": {
-                    "A": "Trabajador indefinido de la empresa",
-                    "B": "Autónomo colaborador",
-                    "C": "Trabajador sin experiencia pero con título habilitante",
-                    "D": "Trabajador en situación de desempleo"
-                },
-                "respuesta_correcta": "D",
-                "justificacion": "El relevista es la persona contratada para sustituir al jubilado parcial y suele proceder del desempleo."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p28",
-                "pregunta": "En el contrato de relevo ordinario, la duración mínima es:",
-                "opciones": {
-                    "A": "6 meses",
-                    "B": "1 año",
-                    "C": "Hasta jubilación total",
-                    "D": "Sin duración mínima"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "En este test se considera una duración mínima de 1 año."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p29",
-                "pregunta": "¿Qué caracteriza al contrato de formación en alternancia?",
-                "opciones": {
-                    "A": "Compatibiliza trabajo y formación reglada",
-                    "B": "Solo puede durar 6 meses",
-                    "C": "Exige titulación previa",
-                    "D": "Es siempre a tiempo parcial"
-                },
-                "respuesta_correcta": "A",
-                "justificacion": "Este contrato combina actividad laboral con formación reglada."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p30",
-                "pregunta": "La duración del contrato de formación en alternancia es:",
-                "opciones": {
-                    "A": "Entre 6 meses y 1 año",
-                    "B": "Sin límite",
-                    "C": "Máximo 1 año",
-                    "D": "Entre 3 meses y 2 años"
-                },
-                "respuesta_correcta": "D",
-                "justificacion": "Su duración mínima es de 3 meses y la máxima de 2 años."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p31",
-                "pregunta": "La retribución del contrato de formación en alternancia el primer año será como mínimo:",
-                "opciones": {
-                    "A": "50% del salario",
-                    "B": "60% del salario fijado en convenio",
-                    "C": "75% del salario mínimo",
-                    "D": "El SMI íntegro"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Si el convenio no fija otra cosa, la retribución mínima es del 60% el primer año."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p32",
-                "pregunta": "¿Qué requisito NO es necesario para el contrato de formación en alternancia?",
-                "opciones": {
-                    "A": "Plan formativo individual",
-                    "B": "Formalización escrita",
-                    "C": "Titulación previa",
-                    "D": "Alternancia real trabajo-formación"
-                },
-                "respuesta_correcta": "C",
-                "justificacion": "No exige titulación previa; precisamente sirve para compatibilizar trabajo y formación."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p33",
-                "pregunta": "El contrato para la obtención de la práctica profesional requiere:",
-                "opciones": {
-                    "A": "Estar desempleado",
-                    "B": "Poseer una titulación reciente",
-                    "C": "No haber trabajado nunca",
-                    "D": "Ser menor de 25 años"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Este contrato requiere una titulación reciente relacionada con el puesto."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p34",
-                "pregunta": "La duración del contrato de práctica profesional es:",
-                "opciones": {
-                    "A": "Entre 6 meses y 1 año",
-                    "B": "Entre 3 meses y 2 años",
-                    "C": "Siempre 1 año",
-                    "D": "Sin límite"
-                },
-                "respuesta_correcta": "A",
-                "justificacion": "Su duración habitual es de entre 6 meses y 1 año."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p35",
-                "pregunta": "La retribución del contrato de práctica profesional:",
-                "opciones": {
-                    "A": "Puede ser inferior al SMI",
-                    "B": "Es la fijada en convenio y nunca inferior al contrato en alternancia",
-                    "C": "Es siempre el SMI",
-                    "D": "Es libremente pactada"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "La retribución se fija en convenio y no puede ser inferior a la del contrato de formación en alternancia."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p36",
-                "pregunta": "Un contrato a tiempo parcial se caracteriza por:",
-                "opciones": {
-                    "A": "Jornada inferior a la de un trabajador comparable a tiempo completo",
-                    "B": "Prohibición de horas complementarias",
-                    "C": "Ser siempre indefinido",
-                    "D": "No poder ser escrito"
-                },
-                "respuesta_correcta": "A",
-                "justificacion": "Se caracteriza por tener una jornada inferior a la de un trabajador a tiempo completo comparable."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p37",
-                "pregunta": "Las horas complementarias pactadas solo pueden realizarse en:",
-                "opciones": {
-                    "A": "No pueden realizarse en ningún caso",
-                    "B": "Contratos a tiempo parcial indefinidos",
-                    "C": "Todos los contratos",
-                    "D": "Solo contratos formativos"
-                },
-                "respuesta_correcta": "B",
-                "justificacion": "Solo pueden pactarse en contratos a tiempo parcial indefinidos."
-              },
-              {
-                "id": "ipe1-prometeo-u5-p38",
-                "pregunta": "Las Empresas de Trabajo Temporal (ETT):",
-                "opciones": {
-                    "A": "Ceden trabajadores sin contrato",
-                    "B": "No aplican convenios colectivos",
-                    "C": "Sustituyen a la empresa usuaria",
-                    "D": "Contratan y ceden trabajadores a empresas usuarias"
-                },
-                "respuesta_correcta": "D",
-                "justificacion": "Las ETT contratan trabajadores para cederlos temporalmente a empresas usuarias."
+                "correcta": "B",
+                "justificacion": "Los desinfectantes básicos para un botiquín incluyen suero fisiológico, agua oxigenada, alcohol y jabón desinfectante."
               }
             ]
           }
-        ]
+        }
       }
     ]
-  }    
+  }
 ]
 
