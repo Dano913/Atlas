@@ -98,6 +98,12 @@ export function ActiveTest({ questions, onFinish }: ActiveTestProps) {
               {currentQuestion.source}
             </span>
           )}
+
+          {currentQuestion.unitTitle && (
+            <span className="text-[10px] px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">
+              {currentQuestion.unitTitle}
+            </span>
+          )}
           <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
             Pregunta {currentIndex + 1} de {questions.length}
           </span>
