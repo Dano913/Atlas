@@ -6,27 +6,28 @@ import { Button } from './ui/button';
 import { Slider } from './ui/slider';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Checkbox } from './ui/checkbox';
-import { ActiveTest } from './ActiveTest';
 
-interface TestModeSelectorProps {}
+// 1. CORRECCIÓN: Definir la prop que App.tsx te está enviando
+interface TestModeSelectorProps {
+  onStartTest: (config: TestConfig) => void;
+}
 
 type GroupedQuestions = Record<string, Record<string, number>>;
 
-export function TestModeSelector({}: TestModeSelectorProps) {
+// 2. CORRECCIÓN: Recibir onStartTest en los argumentos
+export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [subjectConfigs, setSubjectConfigs] = useState<SubjectConfig[]>([]);
   const [randomOrder, setRandomOrder] = useState(true);
 
-  // 🔥 CONTROL DE EXAMEN
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [started, setStarted] = useState(false);
+  // NOTA: He eliminado los estados locales 'started' y 'questions' porque 
+  // en tu App.tsx (según la captura) ya gestionas tú el cambio de vista.
 
   const loadData = useCallback(() => {
     const data = getSubjects();
     if (data.length > 0) {
       setSubjects(data);
-      console.log("✅ Asignaturas cargadas:", data.length);
     }
   }, []);
 
@@ -39,22 +40,18 @@ export function TestModeSelector({}: TestModeSelectorProps) {
   const groupQuestionsByUnitAndSource = (subjectId: string): GroupedQuestions => {
     const questions = getQuestionsBySubject(subjectId);
     const grouped: GroupedQuestions = {};
-
     for (const q of questions) {
       const unit = (q.unitTitle || 'Sin unidad').trim();
       const source = (q.source || 'General').trim();
-
       if (!grouped[unit]) grouped[unit] = {};
       grouped[unit][source] = (grouped[unit][source] || 0) + 1;
     }
-
     return grouped;
   };
 
   const buildInitialSubjectConfig = (subjectId: string): SubjectConfig => {
     const grouped = groupQuestionsByUnitAndSource(subjectId);
     const currentSubject = subjects.find(s => s.id === subjectId);
-
     const sources: SourceConfig[] = Object.entries(grouped).flatMap(([unitTitle, sourcesMap]) =>
       Object.entries(sourcesMap).map(([sourceTitle, maxQuestions]) => ({
         sourceId: `${unitTitle.trim()}::${sourceTitle.trim()}`,
@@ -63,18 +60,12 @@ export function TestModeSelector({}: TestModeSelectorProps) {
         maxQuestions,
       }))
     );
-
-    return {
-      subjectId,
-      subjectTitle: currentSubject?.name || 'Asignatura',
-      sources,
-    };
+    return { subjectId, subjectTitle: currentSubject?.name || 'Asignatura', sources };
   };
 
   const handleSubjectToggle = (subjectId: string, checked: boolean) => {
     if (checked) {
       setSelectedSubjects(prev => [...prev, subjectId]);
-
       setSubjectConfigs(prev => {
         if (prev.some(c => c.subjectId === subjectId)) return prev;
         return [...prev, buildInitialSubjectConfig(subjectId)];
@@ -85,39 +76,18 @@ export function TestModeSelector({}: TestModeSelectorProps) {
     }
   };
 
-  const updateSource = (subjectId: string, sourceId: string, value: number) => {
-    setSubjectConfigs(prev =>
-      prev.map(cfg => {
-        if (cfg.subjectId !== subjectId) return cfg;
-
-        return {
-          ...cfg,
-          sources: cfg.sources.map(s =>
-            s.sourceId === sourceId
-              ? { ...s, questionCount: value }
-              : s
-          ),
-        };
-      })
-    );
-  };
-
   const updateUnit = (subjectId: string, unitTitle: string, value: number) => {
     setSubjectConfigs(prev =>
       prev.map(cfg => {
         if (cfg.subjectId !== subjectId) return cfg;
-
         const prefix = `${unitTitle}::`;
         let remaining = value;
-
         return {
           ...cfg,
           sources: cfg.sources.map(s => {
             if (!s.sourceId.startsWith(prefix)) return s;
-
             const take = Math.min(s.maxQuestions, remaining);
             remaining -= take;
-
             return { ...s, questionCount: take };
           }),
         };
@@ -125,7 +95,7 @@ export function TestModeSelector({}: TestModeSelectorProps) {
     );
   };
 
-  // 🚀 START COMPLETO
+  // 3. CORRECCIÓN: El handleStart ahora avisa al padre (App.tsx)
   const handleStart = () => {
     const config: TestConfig = {
       mode: 'multi-subject',
@@ -135,25 +105,8 @@ export function TestModeSelector({}: TestModeSelectorProps) {
       randomOrder,
     };
 
-    const generatedQuestions: Question[] = config.subjects.flatMap(subject => {
-      const all = getQuestionsBySubject(subject.subjectId);
-
-      return subject.sources.flatMap(source => {
-        return all
-          .filter(q =>
-            `${q.unitTitle?.trim()}::${q.source?.trim()}` === source.sourceId
-          )
-          .slice(0, source.questionCount);
-      });
-    });
-
-    console.group("🚀 EXAM START");
-    console.log("CONFIG:", config);
-    console.log("QUESTIONS:", generatedQuestions.length);
-    console.groupEnd();
-
-    setQuestions(generatedQuestions);
-    setStarted(true);
+    // Llamamos a la prop que faltaba
+    onStartTest(config);
   };
 
   const getTotalQuestions = () =>
@@ -161,20 +114,6 @@ export function TestModeSelector({}: TestModeSelectorProps) {
       t + cfg.sources.reduce((s, src) => s + src.questionCount, 0), 0
     );
 
-  // 🔥 SI EXAMEN INICIADO → ACTIVE TEST
-  if (started) {
-    return (
-      <ActiveTest
-        questions={questions}
-        onFinish={() => {
-          setStarted(false);
-          setQuestions([]);
-        }}
-      />
-    );
-  }
-
-  // 🔥 UI SELECTOR
   if (subjects.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center p-20 text-slate-500">
@@ -186,58 +125,44 @@ export function TestModeSelector({}: TestModeSelectorProps) {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 pb-24">
-
       <h2 className="text-2xl font-bold">Configurar Examen</h2>
-
       <div className="grid grid-cols-3 gap-6">
-
-        {/* ASIGNATURAS */}
         <div>
           {subjects.map(subject => (
-            <label key={subject.id} className="flex gap-2">
+            <label key={subject.id} className="flex items-center gap-2 mb-2">
               <Checkbox
                 checked={selectedSubjects.includes(subject.id)}
-                onCheckedChange={(v) =>
-                  handleSubjectToggle(subject.id, v as boolean)
-                }
+                onCheckedChange={(v) => handleSubjectToggle(subject.id, v as boolean)}
               />
-              {subject.name}
+              <span className="text-sm font-medium">{subject.name}</span>
             </label>
           ))}
         </div>
 
-        {/* CONFIG */}
         <div className="col-span-2 space-y-6">
           {subjectConfigs.map(cfg => (
             <Card key={cfg.subjectId}>
               <CardHeader>
-                <CardTitle>{cfg.subjectTitle}</CardTitle>
+                <CardTitle className="text-lg">{cfg.subjectTitle}</CardTitle>
               </CardHeader>
-
               <CardContent className="space-y-6">
                 {Object.keys(groupQuestionsByUnitAndSource(cfg.subjectId)).map(unitTitle => {
                   const prefix = `${unitTitle}::`;
-
-                  const unitSources = cfg.sources.filter(s =>
-                    s.sourceId.startsWith(prefix)
-                  );
-
+                  const unitSources = cfg.sources.filter(s => s.sourceId.startsWith(prefix));
                   const unitTotal = unitSources.reduce((a, b) => a + b.questionCount, 0);
                   const unitMax = unitSources.reduce((a, b) => a + b.maxQuestions, 0);
 
                   return (
-                    <div key={unitTitle}>
-                      <div className="flex justify-between">
+                    <div key={unitTitle} className="space-y-2">
+                      <div className="flex justify-between text-sm">
                         <span>{unitTitle}</span>
-                        <span>{unitTotal}/{unitMax}</span>
+                        <span className="font-mono">{unitTotal}/{unitMax}</span>
                       </div>
-
                       <Slider
                         value={[unitTotal]}
                         max={unitMax}
-                        onValueChange={([v]) =>
-                          updateUnit(cfg.subjectId, unitTitle, v)
-                        }
+                        step={1}
+                        onValueChange={([v]) => updateUnit(cfg.subjectId, unitTitle, v)}
                       />
                     </div>
                   );
@@ -249,11 +174,12 @@ export function TestModeSelector({}: TestModeSelectorProps) {
       </div>
 
       <Button
+        className="w-full h-12 text-lg"
         onClick={handleStart}
         disabled={getTotalQuestions() === 0}
       >
-        Empezar ({getTotalQuestions()})
-        <ArrowRight />
+        Empezar ({getTotalQuestions()} preguntas)
+        <ArrowRight className="ml-2 w-5 h-5" />
       </Button>
     </div>
   );
