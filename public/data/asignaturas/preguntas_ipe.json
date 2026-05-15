@@ -2607,7 +2607,994 @@
         "fuentes": {
           "MANUS IA": {
             "total_preguntas": 20,
-            "preguntas": 
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u6-p01",
+                "pregunta": "¿Cuál es la jornada general máxima legal en España en cómputo anual?",
+                "opciones": {
+                  "A": "35 horas semanales.",
+                  "B": "40 horas semanales.",
+                  "C": "48 horas semanales.",
+                  "D": "30 horas semanales."
+                },
+                "correcta": "B",
+                "justificacion": "La jornada general máxima legal es de 40 horas semanales de trabajo efectivo de promedio en cómputo anual."
+              },
+              {
+                "id": "ipe1-manus-u6-p02",
+                "pregunta": "Si la jornada diaria continuada excede de 6 horas, ¿cuánto tiempo de descanso mínimo corresponde al trabajador?",
+                "opciones": {
+                  "A": "10 minutos.",
+                  "B": "15 minutos.",
+                  "C": "30 minutos.",
+                  "D": "No hay descanso obligatorio."
+                },
+                "correcta": "B",
+                "justificacion": "El Estatuto de los Trabajadores establece un descanso de al menos 15 minutos si la jornada continuada excede de 6 horas."
+              },
+              {
+                "id": "ipe1-manus-u6-p03",
+                "pregunta": "¿Cuántas horas ininterrumpidas deben transcurrir como mínimo entre el final de una jornada y el comienzo de la siguiente?",
+                "opciones": {
+                  "A": "8 horas.",
+                  "B": "10 horas.",
+                  "C": "12 horas.",
+                  "D": "24 horas."
+                },
+                "correcta": "C",
+                "justificacion": "El descanso mínimo entre jornadas es de 12 horas ininterrumpidas."
+              },
+              {
+                "id": "ipe1-manus-u6-p04",
+                "pregunta": "¿En qué franja horaria se considera trabajo nocturno?",
+                "opciones": {
+                  "A": "Entre las 20:00 y las 04:00.",
+                  "B": "Entre las 22:00 y las 06:00.",
+                  "C": "Entre las 23:00 y las 07:00.",
+                  "D": "Entre las 21:00 y las 05:00."
+                },
+                "correcta": "B",
+                "justificacion": "El trabajo nocturno se define como el realizado entre las 22:00 y las 6:00 horas."
+              },
+              {
+                "id": "ipe1-manus-u6-p05",
+                "pregunta": "¿Cuál es el límite máximo de horas extraordinarias normales (voluntarias) al año?",
+                "opciones": {
+                  "A": "50 horas.",
+                  "B": "80 horas.",
+                  "C": "100 horas.",
+                  "D": "No hay límite."
+                },
+                "correcta": "B",
+                "justificacion": "El número de horas extraordinarias no podrá ser superior a 80 horas al año."
+              },
+              {
+                "id": "ipe1-manus-u6-p06",
+                "pregunta": "Las horas extraordinarias por fuerza mayor...",
+                "opciones": {
+                  "A": "Computan en el límite de 80 horas anuales.",
+                  "B": "No computan en el límite de 80 horas anuales.",
+                  "C": "No se compensan.",
+                  "D": "Son siempre voluntarias."
+                },
+                "correcta": "B",
+                "justificacion": "Las horas extraordinarias por fuerza mayor no computan en el límite de 80 horas anuales."
+              },
+              {
+                "id": "ipe1-manus-u6-p07",
+                "pregunta": "Si las horas extraordinarias se compensan en tiempo de descanso y no se especifica nada en convenio, ¿en qué plazo deben disfrutarse?",
+                "opciones": {
+                  "A": "En el mes siguiente.",
+                  "B": "En los 3 meses siguientes.",
+                  "C": "En los 4 meses siguientes.",
+                  "D": "En el año siguiente."
+                },
+                "correcta": "C",
+                "justificacion": "Si no se dice nada, el descanso compensatorio debe disfrutarse en los 4 meses siguientes a su realización."
+              },
+              {
+                "id": "ipe1-manus-u6-p08",
+                "pregunta": "¿Hasta qué edad de un menor se puede solicitar reducción de jornada por guarda legal?",
+                "opciones": {
+                  "A": "8 años.",
+                  "B": "10 años.",
+                  "C": "12 años.",
+                  "D": "14 años."
+                },
+                "correcta": "C",
+                "justificacion": "La reducción de jornada por guarda legal se puede solicitar para el cuidado directo de un menor de 12 años."
+              },
+              {
+                "id": "ipe1-manus-u6-p09",
+                "pregunta": "¿Cuántos días naturales de permiso retribuido corresponden por matrimonio o registro de pareja de hecho?",
+                "opciones": {
+                  "A": "5 días.",
+                  "B": "10 días.",
+                  "C": "15 días.",
+                  "D": "20 días."
+                },
+                "correcta": "C",
+                "justificacion": "El permiso retribuido por matrimonio o registro de pareja de hecho es de 15 días naturales."
+              },
+              {
+                "id": "ipe1-manus-u6-p10",
+                "pregunta": "¿Cuál es la duración mínima de las vacaciones anuales retribuidas?",
+                "opciones": {
+                  "A": "20 días naturales.",
+                  "B": "22 días laborables.",
+                  "C": "30 días naturales.",
+                  "D": "30 días laborables."
+                },
+                "correcta": "C",
+                "justificacion": "El período de vacaciones anuales retribuidas no podrá ser inferior a 30 días naturales al año."
+              },
+              {
+                "id": "ipe1-manus-u6-p11",
+                "pregunta": "¿Qué porcentaje máximo del salario puede abonarse en especie?",
+                "opciones": {
+                  "A": "10%.",
+                  "B": "20%.",
+                  "C": "30%.",
+                  "D": "50%."
+                },
+                "correcta": "C",
+                "justificacion": "El valor de las percepciones en especie no podrá exceder del 30% del total de las percepciones salariales."
+              },
+              {
+                "id": "ipe1-manus-u6-p12",
+                "pregunta": "¿Cuál de los siguientes conceptos NO se considera salario?",
+                "opciones": {
+                  "A": "Salario base.",
+                  "B": "Complementos salariales.",
+                  "C": "Indemnizaciones por despido.",
+                  "D": "Horas extraordinarias."
+                },
+                "correcta": "C",
+                "justificacion": "Las indemnizaciones por despido son conceptos no salariales."
+              },
+              {
+                "id": "ipe1-manus-u6-p13",
+                "pregunta": "¿Qué organismo público cubre salarios e indemnizaciones impagados por insolvencia o concurso del empresario?",
+                "opciones": {
+                  "A": "El Servicio Público de Empleo Estatal (SEPE).",
+                  "B": "El Fondo de Garantía Salarial (FOGASA).",
+                  "C": "La Tesorería General de la Seguridad Social (TGSS).",
+                  "D": "El Instituto Nacional de la Seguridad Social (INSS)."
+                },
+                "correcta": "B",
+                "justificacion": "El FOGASA es el organismo encargado de garantizar el pago de salarios e indemnizaciones en caso de insolvencia empresarial."
+              },
+              {
+                "id": "ipe1-manus-u6-p14",
+                "pregunta": "¿Qué porcentaje de cotización por Contingencias Comunes (incluyendo MEI) se aplica al trabajador sobre la BCCC?",
+                "opciones": {
+                  "A": "4,7%.",
+                  "B": "4,85%.",
+                  "C": "1,55%.",
+                  "D": "2%."
+                },
+                "correcta": "B",
+                "justificacion": "El tipo de cotización a cargo del trabajador por Contingencias Comunes es del 4,85% (4,7% + 0,15% MEI)."
+              },
+              {
+                "id": "ipe1-manus-u6-p15",
+                "pregunta": "¿Qué se suma a la BCCC para obtener la BCCP (Base de Cotización por Contingencias Profesionales)?",
+                "opciones": {
+                  "A": "Las pagas extraordinarias prorrateadas.",
+                  "B": "El exceso de percepciones no salariales.",
+                  "C": "Las horas extraordinarias.",
+                  "D": "Los complementos salariales."
+                },
+                "correcta": "C",
+                "justificacion": "La BCCP se calcula sumando la BCCC más el importe de las horas extraordinarias realizadas."
+              },
+              {
+                "id": "ipe1-manus-u6-p16",
+                "pregunta": "Si en la Declaración de la Renta, lo retenido ha sido inferior a lo debido, el resultado será...",
+                "opciones": {
+                  "A": "A devolver.",
+                  "B": "A pagar.",
+                  "C": "Cuadra (sale a cero).",
+                  "D": "No se puede dar esa situación."
+                },
+                "correcta": "B",
+                "justificacion": "Si lo retenido es menor que lo debido, el contribuyente debe pagar la diferencia a Hacienda."
+              },
+              {
+                "id": "ipe1-manus-u6-p17",
+                "pregunta": "¿Cuál de los siguientes es un complemento salarial?",
+                "opciones": {
+                  "A": "Dietas por viaje.",
+                  "B": "Indemnización por despido.",
+                  "C": "Antigüedad.",
+                  "D": "Gastos de transporte."
+                },
+                "correcta": "C",
+                "justificacion": "La antigüedad es un complemento salarial que se añade al salario base."
+              },
+              {
+                "id": "ipe1-manus-u6-p18",
+                "pregunta": "¿Qué se entiende por distribución irregular de la jornada sin acuerdo previo?",
+                "opciones": {
+                  "A": "No está permitida en ningún caso.",
+                  "B": "Máximo el 10% de la jornada al año.",
+                  "C": "Máximo el 20% de la jornada al año.",
+                  "D": "Máximo el 5% de la jornada al año."
+                },
+                "correcta": "B",
+                "justificacion": "En ausencia de acuerdo, la empresa puede distribuir de forma irregular un máximo del 10% de la jornada anual."
+              },
+              {
+                "id": "ipe1-manus-u6-p19",
+                "pregunta": "¿Hasta qué edad puede disfrutarse la reducción por cuidado de menor con enfermedad grave (ej. cáncer)?",
+                "opciones": {
+                  "A": "Hasta los 12 años.",
+                  "B": "Hasta los 18 años.",
+                  "C": "Hasta los 23 años (26 si discapacidad ≥65%).",
+                  "D": "Hasta los 21 años."
+                },
+                "correcta": "C",
+                "justificacion": "La reducción por cuidado de menor con enfermedad grave puede disfrutarse hasta que el menor cumpla 23 años, o 26 si tiene una discapacidad igual o superior al 65%."
+              },
+              {
+                "id": "ipe1-manus-u6-p20",
+                "pregunta": "¿Qué es el IPREM?",
+                "opciones": {
+                  "A": "El Salario Mínimo Interprofesional.",
+                  "B": "Un indicador para el cálculo de becas y ayudas.",
+                  "C": "Un impuesto sobre la renta.",
+                  "D": "Un fondo de garantía salarial."
+                },
+                "correcta": "B",
+                "justificacion": "El IPREM es el Indicador Público de Renta de Efectos Múltiples, utilizado como referencia para diversas ayudas y prestaciones."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 07",
+        "fuentes": {
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u7-p01",
+                "pregunta": "¿Cuál de las siguientes NO es una causa que puede justificar una modificación sustancial de las condiciones de trabajo según el Art. 41 del ET?",
+                "opciones": {
+                  "A": "Jornada de trabajo.",
+                  "B": "Horario y distribución del tiempo de trabajo.",
+                  "C": "Cambio de domicilio personal del trabajador.",
+                  "D": "Sistema de remuneración y cuantía salarial."
+                },
+                "correcta": "C",
+                "justificacion": "El cambio de domicilio personal del trabajador no es una causa legal para la modificación sustancial de las condiciones de trabajo."
+              },
+              {
+                "id": "ipe1-manus-u7-p02",
+                "pregunta": "En una modificación sustancial individual, ¿cuál es el preaviso mínimo que debe dar el empresario al trabajador?",
+                "opciones": {
+                  "A": "5 días.",
+                  "B": "10 días.",
+                  "C": "15 días.",
+                  "D": "30 días."
+                },
+                "correcta": "C",
+                "justificacion": "El empresario debe avisar al trabajador con un preaviso mínimo de 15 días en caso de modificación sustancial individual."
+              },
+              {
+                "id": "ipe1-manus-u7-p03",
+                "pregunta": "Si un trabajador solicita la rescisión de su contrato por una modificación sustancial que le perjudica, ¿qué indemnización le corresponde?",
+                "opciones": {
+                  "A": "33 días por año de servicio, con un máximo de 24 mensualidades.",
+                  "B": "20 días por año de servicio, con un máximo de 9 mensualidades.",
+                  "C": "No le corresponde indemnización.",
+                  "D": "45 días por año de servicio, con un máximo de 42 mensualidades."
+                },
+                "correcta": "B",
+                "justificacion": "La indemnización por rescisión de contrato debido a modificación sustancial perjudicial es de 20 días por año de servicio, con un máximo de 9 mensualidades."
+              },
+              {
+                "id": "ipe1-manus-u7-p04",
+                "pregunta": "¿Qué implica la suspensión del contrato de trabajo?",
+                "opciones": {
+                  "A": "La extinción definitiva de la relación laboral.",
+                  "B": "La cesación temporal de las prestaciones recíprocas de las partes.",
+                  "C": "La modificación permanente de las condiciones de trabajo.",
+                  "D": "El derecho a una indemnización por parte del trabajador."
+                },
+                "correcta": "B",
+                "justificacion": "La suspensión del contrato implica que el trabajador deja de prestar servicios y el empresario de pagar el salario, pero el vínculo laboral se mantiene."
+              },
+              {
+                "id": "ipe1-manus-u7-p05",
+                "pregunta": "¿Cuál de las siguientes es una causa de suspensión del contrato de trabajo independiente de la voluntad de las partes?",
+                "opciones": {
+                  "A": "Mutuo acuerdo.",
+                  "B": "Excedencia voluntaria.",
+                  "C": "Incapacidad Temporal (IT).",
+                  "D": "Dimisión del trabajador."
+                },
+                "correcta": "C",
+                "justificacion": "La Incapacidad Temporal es una causa de suspensión del contrato que no depende de la voluntad de las partes."
+              },
+              {
+                "id": "ipe1-manus-u7-p06",
+                "pregunta": "En una excedencia voluntaria, ¿qué derecho tiene el trabajador al reingreso?",
+                "opciones": {
+                  "A": "Derecho a la reserva de su puesto de trabajo.",
+                  "B": "Derecho preferente al reingreso en vacantes de igual o similar categoría.",
+                  "C": "Derecho a una indemnización por no reincorporación inmediata.",
+                  "D": "No tiene ningún derecho al reingreso."
+                },
+                "correcta": "B",
+                "justificacion": "En la excedencia voluntaria, el trabajador solo tiene un derecho preferente al reingreso, no a la reserva de su puesto."
+              },
+              {
+                "id": "ipe1-manus-u7-p07",
+                "pregunta": "¿Cuál es la duración máxima de una excedencia por cuidado de hijos?",
+                "opciones": {
+                  "A": "1 año.",
+                  "B": "2 años.",
+                  "C": "3 años.",
+                  "D": "5 años."
+                },
+                "correcta": "C",
+                "justificacion": "La excedencia por cuidado de hijos tiene una duración máxima de 3 años."
+              },
+              {
+                "id": "ipe1-manus-u7-p08",
+                "pregunta": "Si un empresario individual se jubila, ¿qué indemnización le corresponde al trabajador?",
+                "opciones": {
+                  "A": "No le corresponde indemnización.",
+                  "B": "20 días por año de servicio.",
+                  "C": "Un mes de salario.",
+                  "D": "33 días por año de servicio."
+                },
+                "correcta": "C",
+                "justificacion": "En caso de jubilación del empresario individual, el trabajador tiene derecho a una indemnización de un mes de salario."
+              },
+              {
+                "id": "ipe1-manus-u7-p09",
+                "pregunta": "¿Qué tipo de extinción del contrato se produce por incumplimiento grave y culpable del trabajador?",
+                "opciones": {
+                  "A": "Despido por causas objetivas.",
+                  "B": "Despido colectivo.",
+                  "C": "Despido disciplinario.",
+                  "D": "Extinción por mutuo acuerdo."
+                },
+                "correcta": "C",
+                "justificacion": "El despido disciplinario se basa en un incumplimiento grave y culpable del trabajador."
+              },
+              {
+                "id": "ipe1-manus-u7-p10",
+                "pregunta": "¿Cuál de las siguientes NO es una causa de despido disciplinario?",
+                "opciones": {
+                  "A": "Faltas repetidas e injustificadas de asistencia.",
+                  "B": "Disminución continuada y voluntaria del rendimiento.",
+                  "C": "Necesidades económicas de la empresa.",
+                  "D": "Ofensas verbales o físicas a compañeros."
+                },
+                "correcta": "C",
+                "justificacion": "Las necesidades económicas de la empresa son causa de despido objetivo, no disciplinario."
+              },
+              {
+                "id": "ipe1-manus-u7-p11",
+                "pregunta": "¿Qué indemnización corresponde al trabajador en un despido por causas objetivas?",
+                "opciones": {
+                  "A": "33 días por año de servicio, con un máximo de 24 mensualidades.",
+                  "B": "20 días por año de servicio, con un máximo de 12 mensualidades.",
+                  "C": "No le corresponde indemnización.",
+                  "D": "45 días por año de servicio, con un máximo de 42 mensualidades."
+                },
+                "correcta": "B",
+                "justificacion": "La indemnización por despido objetivo es de 20 días por año trabajado, con un máximo de 12 mensualidades."
+              },
+              {
+                "id": "ipe1-manus-u7-p12",
+                "pregunta": "¿Cuál es el plazo de preaviso que debe dar el empresario en un despido por causas objetivas?",
+                "opciones": {
+                  "A": "5 días.",
+                  "B": "10 días.",
+                  "C": "15 días.",
+                  "D": "30 días."
+                },
+                "correcta": "C",
+                "justificacion": "El preaviso en el despido por causas objetivas es de 15 días."
+              },
+              {
+                "id": "ipe1-manus-u7-p13",
+                "pregunta": "Un despido colectivo se produce cuando afecta a un número determinado de trabajadores en un período de...",
+                "opciones": {
+                  "A": "30 días.",
+                  "B": "60 días.",
+                  "C": "90 días.",
+                  "D": "120 días."
+                },
+                "correcta": "C",
+                "justificacion": "El despido colectivo se define por afectar a un número de trabajadores en un período de 90 días."
+              },
+              {
+                "id": "ipe1-manus-u7-p14",
+                "pregunta": "Si un juez califica un despido como improcedente, ¿qué opción tiene el empresario en un plazo de 5 días?",
+                "opciones": {
+                  "A": "Readmitir al trabajador sin salarios de tramitación.",
+                  "B": "Abonar una indemnización de 20 días por año de servicio.",
+                  "C": "Elegir entre readmitir al trabajador o abonar una indemnización de 33 días por año de servicio.",
+                  "D": "Declarar el despido nulo."
+                },
+                "correcta": "C",
+                "justificacion": "En caso de despido improcedente, el empresario puede elegir entre readmitir al trabajador (con salarios de tramitación) o indemnizarle con 33 días por año de servicio."
+              },
+              {
+                "id": "ipe1-manus-u7-p15",
+                "pregunta": "¿Qué implica un despido nulo?",
+                "opciones": {
+                  "A": "El empresario puede elegir entre readmisión o indemnización.",
+                  "B": "No genera derecho a indemnización ni a readmisión.",
+                  "C": "La readmisión obligatoria del trabajador con abono de salarios de tramitación.",
+                  "D": "Se convierte automáticamente en un despido procedente."
+                },
+                "correcta": "C",
+                "justificacion": "El despido nulo implica la readmisión obligatoria del trabajador, sin opción para el empresario."
+              },
+              {
+                "id": "ipe1-manus-u7-p16",
+                "pregunta": "¿Cuál es el primer paso para reclamar contra un despido?",
+                "opciones": {
+                  "A": "Presentar una demanda directamente en el Juzgado de lo Social.",
+                  "B": "Presentar una papeleta de conciliación en el SMAC.",
+                  "C": "Enviar un burofax a la empresa.",
+                  "D": "Comunicarlo a los representantes de los trabajadores."
+                },
+                "correcta": "B",
+                "justificacion": "El primer paso es intentar una conciliación en el SMAC antes de acudir a la vía judicial."
+              },
+              {
+                "id": "ipe1-manus-u7-p17",
+                "pregunta": "¿Cuál es el plazo máximo para reclamar contra un despido?",
+                "opciones": {
+                  "A": "10 días hábiles.",
+                  "B": "15 días naturales.",
+                  "C": "20 días hábiles.",
+                  "D": "30 días naturales."
+                },
+                "correcta": "C",
+                "justificacion": "El plazo de caducidad para reclamar contra un despido es de 20 días hábiles."
+              },
+              {
+                "id": "ipe1-manus-u7-p18",
+                "pregunta": "¿Qué tipo de movilidad funcional implica la realización de funciones de un grupo profesional superior?",
+                "opciones": {
+                  "A": "Movilidad funcional inferior.",
+                  "B": "Movilidad funcional equivalente.",
+                  "C": "Movilidad funcional superior.",
+                  "D": "Modificación sustancial de funciones."
+                },
+                "correcta": "C",
+                "justificacion": "La movilidad funcional superior implica el desempeño de funciones de un grupo profesional superior."
+              },
+              {
+                "id": "ipe1-manus-u7-p19",
+                "pregunta": "¿Qué obligación pervive durante la suspensión del contrato de trabajo?",
+                "opciones": {
+                  "A": "La prestación de servicios.",
+                  "B": "El abono del salario.",
+                  "C": "La obligación de guardar secreto profesional.",
+                  "D": "La asistencia al centro de trabajo."
+                },
+                "correcta": "C",
+                "justificacion": "Durante la suspensión del contrato, persisten ciertas obligaciones como la de guardar secreto profesional."
+              },
+              {
+                "id": "ipe1-manus-u7-p20",
+                "pregunta": "¿Qué tipo de despido requiere la apertura de un expediente contradictorio si el trabajador es representante legal?",
+                "opciones": {
+                  "A": "Despido por causas objetivas.",
+                  "B": "Despido colectivo.",
+                  "C": "Despido disciplinario.",
+                  "D": "Extinción por mutuo acuerdo."
+                },
+                "correcta": "C",
+                "justificacion": "En el despido disciplinario de un representante legal de los trabajadores, es obligatorio abrir un expediente contradictorio."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 08",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u8-p01",
+                "pregunta": "Según el Artículo 41 de la Constitución Española, ¿qué garantiza el régimen público de Seguridad Social?",
+                "opciones": {
+                  "A": "Solo asistencia sanitaria a trabajadores activos.",
+                  "B": "Asistencia y prestaciones sociales suficientes ante situaciones de necesidad.",
+                  "C": "Únicamente prestaciones por desempleo.",
+                  "D": "Un sistema privado de pensiones."
+                },
+                "correcta": "B",
+                "justificacion": "El Art. 41 CE establece que el régimen público de Seguridad Social garantiza asistencia y prestaciones sociales suficientes ante situaciones de necesidad."
+              },
+              {
+                "id": "ipe1-manus-u8-p02",
+                "pregunta": "¿Cuál de los siguientes principios de la Seguridad Social implica que las generaciones actuales financian las prestaciones de las anteriores y futuras?",
+                "opciones": {
+                  "A": "Universalidad.",
+                  "B": "Equidad.",
+                  "C": "Solidaridad intergeneracional.",
+                  "D": "Igualdad de derechos."
+                },
+                "correcta": "C",
+                "justificacion": "La solidaridad intergeneracional es el principio que describe cómo las generaciones actuales financian las prestaciones de las anteriores y futuras."
+              },
+              {
+                "id": "ipe1-manus-u8-p03",
+                "pregunta": "¿Qué régimen de la Seguridad Social abarca a la gran mayoría de los trabajadores por cuenta ajena?",
+                "opciones": {
+                  "A": "Régimen Especial de Trabajadores Autónomos (RETA).",
+                  "B": "Régimen General.",
+                  "C": "Régimen de Empleados del Hogar.",
+                  "D": "Régimen de la Minería del Carbón."
+                },
+                "correcta": "B",
+                "justificacion": "El Régimen General es el más amplio y cubre a la mayoría de los trabajadores por cuenta ajena."
+              },
+              {
+                "id": "ipe1-manus-u8-p04",
+                "pregunta": "¿Qué obligación del empresario consiste en solicitar un Código de Cuenta de Cotización (CCC) antes del inicio de la actividad?",
+                "opciones": {
+                  "A": "Afiliación del trabajador.",
+                  "B": "Alta del trabajador.",
+                  "C": "Inscripción de la empresa.",
+                  "D": "Cotización."
+                },
+                "correcta": "C",
+                "justificacion": "La inscripción de la empresa es la obligación de solicitar el CCC antes del comienzo de la actividad."
+              },
+              {
+                "id": "ipe1-manus-u8-p05",
+                "pregunta": "¿Qué entidad gestora de la Seguridad Social se encarga de las prestaciones por desempleo?",
+                "opciones": {
+                  "A": "INSS (Instituto Nacional de la Seguridad Social).",
+                  "B": "IMSERSO (Instituto de Mayores y Servicios Sociales).",
+                  "C": "SEPE (Servicio Público de Empleo Estatal).",
+                  "D": "TGSS (Tesorería General de la Seguridad Social)."
+                },
+                "correcta": "C",
+                "justificacion": "El SEPE es el organismo responsable de la gestión y el pago de las prestaciones por desempleo."
+              },
+              {
+                "id": "ipe1-manus-u8-p06",
+                "pregunta": "¿Qué servicio común de la Seguridad Social gestiona los recursos económicos y la recaudación de cuotas?",
+                "opciones": {
+                  "A": "INSS.",
+                  "B": "SEPE.",
+                  "C": "IMSERSO.",
+                  "D": "TGSS."
+                },
+                "correcta": "D",
+                "justificacion": "La TGSS es la encargada de gestionar los recursos económicos, la recaudación de cuotas y la afiliación."
+              },
+              {
+                "id": "ipe1-manus-u8-p07",
+                "pregunta": "Las Mutuas Colaboradoras con la Seguridad Social gestionan principalmente...",
+                "opciones": {
+                  "A": "Las pensiones de jubilación.",
+                  "B": "Las prestaciones por desempleo.",
+                  "C": "Las contingencias profesionales.",
+                  "D": "Las pensiones no contributivas."
+                },
+                "correcta": "C",
+                "justificacion": "Las Mutuas Colaboradoras con la Seguridad Social se encargan principalmente de la gestión de las contingencias profesionales."
+              },
+              {
+                "id": "ipe1-manus-u8-p08",
+                "pregunta": "Para acceder a la prestación por Incapacidad Temporal (IT) por contingencia común, ¿cuántos días cotizados se requieren en los últimos 5 años?",
+                "opciones": {
+                  "A": "No se requiere período mínimo.",
+                  "B": "90 días.",
+                  "C": "180 días.",
+                  "D": "365 días."
+                },
+                "correcta": "C",
+                "justificacion": "La IT por contingencia común requiere haber cotizado al menos 180 días en los últimos 5 años."
+              },
+              {
+                "id": "ipe1-manus-u8-p09",
+                "pregunta": "¿Qué porcentaje de la base reguladora se percibe en la IT por contingencia común desde el día 21º de la baja?",
+                "opciones": {
+                  "A": "50%.",
+                  "B": "60%.",
+                  "C": "75%.",
+                  "D": "100%."
+                },
+                "correcta": "C",
+                "justificacion": "Desde el día 21º de la baja por IT por contingencia común, se percibe el 75% de la base reguladora."
+              },
+              {
+                "id": "ipe1-manus-u8-p10",
+                "pregunta": "¿Qué tipo de Incapacidad Permanente inhabilita al trabajador para toda profesión u oficio?",
+                "opciones": {
+                  "A": "Parcial.",
+                  "B": "Total.",
+                  "C": "Absoluta.",
+                  "D": "Gran Invalidez."
+                },
+                "correcta": "C",
+                "justificacion": "La Incapacidad Permanente Absoluta inhabilita para toda profesión u oficio."
+              },
+              {
+                "id": "ipe1-manus-u8-p11",
+                "pregunta": "¿Cuál de las siguientes es una prestación no contributiva?",
+                "opciones": {
+                  "A": "Jubilación contributiva.",
+                  "B": "Incapacidad Temporal.",
+                  "C": "Ingreso Mínimo Vital (IMV).",
+                  "D": "Prestación por desempleo."
+                },
+                "correcta": "C",
+                "justificacion": "El Ingreso Mínimo Vital es una prestación no contributiva destinada a garantizar unos ingresos mínimos."
+              },
+              {
+                "id": "ipe1-manus-u8-p12",
+                "pregunta": "¿Qué porcentaje de la base reguladora se percibe en la prestación por desempleo desde el día 181 hasta el final?",
+                "opciones": {
+                  "A": "50%.",
+                  "B": "60%.",
+                  "C": "70%.",
+                  "D": "80%."
+                },
+                "correcta": "B",
+                "justificacion": "Desde el día 181 de la prestación por desempleo, se percibe el 60% de la base reguladora."
+              },
+              {
+                "id": "ipe1-manus-u8-p13",
+                "pregunta": "¿Qué tipo de contingencia cubre un accidente de trabajo?",
+                "opciones": {
+                  "A": "Contingencia común.",
+                  "B": "Contingencia profesional.",
+                  "C": "Contingencia por desempleo.",
+                  "D": "Contingencia por maternidad."
+                },
+                "correcta": "B",
+                "justificacion": "Los accidentes de trabajo están cubiertos por las contingencias profesionales."
+              },
+              {
+                "id": "ipe1-manus-u8-p14",
+                "pregunta": "¿Qué organismo gestiona las prestaciones no contributivas y la dependencia?",
+                "opciones": {
+                  "A": "INSS.",
+                  "B": "SEPE.",
+                  "C": "IMSERSO.",
+                  "D": "ISM."
+                },
+                "correcta": "C",
+                "justificacion": "El IMSERSO gestiona las prestaciones no contributivas y los servicios relacionados con la dependencia."
+              },
+              {
+                "id": "ipe1-manus-u8-p15",
+                "pregunta": "La afiliación a la Seguridad Social del trabajador es...",
+                "opciones": {
+                  "A": "Temporal y debe renovarse con cada empleo.",
+                  "B": "Única para toda la vida laboral.",
+                  "C": "Gestionada directamente por la empresa.",
+                  "D": "Opcional para el trabajador."
+                },
+                "correcta": "B",
+                "justificacion": "La afiliación es un acto único para toda la vida laboral del trabajador."
+              },
+              {
+                "id": "ipe1-manus-u8-p16",
+                "pregunta": "¿Cuál de los siguientes conceptos cotiza a la Seguridad Social?",
+                "opciones": {
+                  "A": "Indemnizaciones por despido.",
+                  "B": "Suplidos por gastos de transporte.",
+                  "C": "Horas extraordinarias.",
+                  "D": "Prestaciones por desempleo."
+                },
+                "correcta": "C",
+                "justificacion": "Las horas extraordinarias son conceptos que cotizan a la Seguridad Social."
+              },
+              {
+                "id": "ipe1-manus-u8-p17",
+                "pregunta": "¿Qué principio de la Seguridad Social busca que la acción protectora se extienda a todos los ciudadanos?",
+                "opciones": {
+                  "A": "Equidad.",
+                  "B": "Solidaridad.",
+                  "C": "Universalidad.",
+                  "D": "Igualdad."
+                },
+                "correcta": "C",
+                "justificacion": "La universalidad es el principio que busca extender la acción protectora a todos los ciudadanos."
+              },
+              {
+                "id": "ipe1-manus-u8-p18",
+                "pregunta": "¿Qué régimen especial de la Seguridad Social está destinado a los trabajadores por cuenta propia?",
+                "opciones": {
+                  "A": "Régimen General.",
+                  "B": "Régimen de Trabajadores del Mar.",
+                  "C": "RETA.",
+                  "D": "Régimen de Funcionarios Civiles."
+                },
+                "correcta": "C",
+                "justificacion": "El RETA es el Régimen Especial de Trabajadores Autónomos."
+              },
+              {
+                "id": "ipe1-manus-u8-p19",
+                "pregunta": "Si un trabajador sufre una enfermedad común y está de baja por IT, ¿cuándo empieza a cobrar la prestación?",
+                "opciones": {
+                  "A": "Desde el primer día.",
+                  "B": "Desde el segundo día.",
+                  "C": "Desde el cuarto día.",
+                  "D": "Desde el octavo día."
+                },
+                "correcta": "C",
+                "justificacion": "En la IT por contingencia común, la prestación se empieza a cobrar a partir del cuarto día de la baja."
+              },
+              {
+                "id": "ipe1-manus-u8-p20",
+                "pregunta": "¿Qué prestación protege a los familiares del fallecido?",
+                "opciones": {
+                  "A": "Jubilación.",
+                  "B": "Incapacidad Permanente.",
+                  "C": "Muerte y Supervivencia.",
+                  "D": "Nacimiento y Cuidado del Menor."
+                },
+                "correcta": "C",
+                "justificacion": "Las prestaciones de Muerte y Supervivencia incluyen la viudedad, orfandad y auxilio por defunción."
+              }
+            ]
+          },
+
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u8-p01",
+                "pregunta": "¿Qué ocurre si un empresario no comunica el alta de un trabajador antes del inicio de su actividad?",
+                "opciones": {
+                  "A": "No ocurre nada si se comunica en los 3 días siguientes.",
+                  "B": "El trabajador no tendrá derecho a ninguna prestación.",
+                  "C": "Se considera una infracción grave y el alta puede ser de oficio por la Inspección.",
+                  "D": "El trabajador debe pagar una multa a la Seguridad Social."
+                },
+                "correcta": "C",
+                "justificacion": "La falta de comunicación del alta es una infracción grave y la Administración puede actuar de oficio para proteger los derechos del trabajador."
+              },
+              {
+                "id": "ipe1-manus-u8-p02",
+                "pregunta": "¿Cuál es la función principal del Mecanismo de Equidad Intergeneracional (MEI)?",
+                "opciones": {
+                  "A": "Pagar las horas extraordinarias de los trabajadores jóvenes.",
+                  "B": "Reforzar la sostenibilidad del sistema de pensiones a largo plazo.",
+                  "C": "Financiar los cursos de formación profesional.",
+                  "D": "Sustituir a las Mutuas en la gestión de accidentes."
+                },
+                "correcta": "B",
+                "justificacion": "El MEI es una cotización adicional destinada a nutrir el fondo de reserva de las pensiones para garantizar su sostenibilidad futura."
+              },
+              {
+                "id": "ipe1-manus-u8-p03",
+                "pregunta": "En la IT por contingencia profesional, ¿quién abona el salario el primer día de la baja?",
+                "opciones": {
+                  "A": "La Seguridad Social.",
+                  "B": "La Mutua.",
+                  "C": "El empresario (salario íntegro).",
+                  "D": "Nadie, el primer día no se cobra."
+                },
+                "correcta": "C",
+                "justificacion": "El día del accidente se considera día de trabajo efectivo y el salario íntegro corre a cargo del empresario."
+              },
+              {
+                "id": "ipe1-manus-u8-p04",
+                "pregunta": "¿Qué grado de incapacidad permanente permite al trabajador seguir realizando su profesión habitual pero con un rendimiento menor?",
+                "opciones": {
+                  "A": "Incapacidad Permanente Parcial.",
+                  "B": "Incapacidad Permanente Total.",
+                  "C": "Incapacidad Permanente Absoluta.",
+                  "D": "Gran Invalidez."
+                },
+                "correcta": "A",
+                "justificacion": "La incapacidad parcial implica una disminución del rendimiento no inferior al 33% para la profesión habitual, sin impedir su realización."
+              },
+              {
+                "id": "ipe1-manus-u8-p05",
+                "pregunta": "¿Cuál es el período máximo de prórroga para una situación de Incapacidad Temporal tras los primeros 365 días?",
+                "opciones": {
+                  "A": "90 días.",
+                  "B": "180 días.",
+                  "C": "365 días más.",
+                  "D": "No hay prórroga posible."
+                },
+                "correcta": "B",
+                "justificacion": "Tras el primer año, el INSS puede prorrogar la IT por un máximo de 180 días adicionales si se prevé curación."
+              },
+              {
+                "id": "ipe1-manus-u8-p06",
+                "pregunta": "¿Qué requisito de carencia (cotización previa) se exige para la prestación por nacimiento y cuidado de menor en mayores de 26 años?",
+                "opciones": {
+                  "A": "No se exige carencia.",
+                  "B": "90 días en los últimos 7 años o 180 en toda la vida laboral.",
+                  "C": "180 días en los últimos 7 años o 360 en toda la vida laboral.",
+                  "D": "365 días en los últimos 5 años."
+                },
+                "correcta": "C",
+                "justificacion": "Para mayores de 26 años, se exigen 180 días cotizados en los 7 años anteriores o 360 días en total."
+              },
+              {
+                "id": "ipe1-manus-u8-p07",
+                "pregunta": "¿Qué prestación cubre la pérdida de ingresos por la suspensión del contrato cuando el puesto de trabajo influye negativamente en la salud del feto?",
+                "opciones": {
+                  "A": "Incapacidad Temporal común.",
+                  "B": "Riesgo durante el embarazo.",
+                  "C": "Nacimiento y cuidado del menor.",
+                  "D": "Cuidado de menor con enfermedad grave."
+                },
+                "correcta": "B",
+                "justificacion": "La prestación por riesgo durante el embarazo protege a la trabajadora cuando el entorno laboral es peligroso para el feto y no es posible la adaptación del puesto."
+              },
+              {
+                "id": "ipe1-manus-u8-p08",
+                "pregunta": "¿Cuál es la cuantía de la pensión de viudedad con carácter general sobre la base reguladora?",
+                "opciones": {
+                  "A": "45%.",
+                  "B": "52%.",
+                  "C": "70%.",
+                  "D": "100%."
+                },
+                "correcta": "B",
+                "justificacion": "Con carácter general, la pensión de viudedad es el 52% de la base reguladora del fallecido, pudiendo aumentar en ciertos casos."
+              },
+              {
+                "id": "ipe1-manus-u8-p09",
+                "pregunta": "¿Qué organismo es responsable de la asistencia sanitaria en España, aunque esté coordinado por el sistema de Seguridad Social?",
+                "opciones": {
+                  "A": "El INSS.",
+                  "B": "La TGSS.",
+                  "C": "Los Servicios de Salud de las Comunidades Autónomas.",
+                  "D": "El SEPE."
+                },
+                "correcta": "C",
+                "justificacion": "La gestión de la asistencia sanitaria está transferida a las Comunidades Autónomas, aunque se financie y coordine a nivel estatal."
+              },
+              {
+                "id": "ipe1-manus-u8-p10",
+                "pregunta": "¿Qué concepto de cotización sirve para financiar el Fondo de Garantía Salarial?",
+                "opciones": {
+                  "A": "Contingencias Comunes.",
+                  "B": "Contingencias Profesionales.",
+                  "C": "Aportación al FOGASA.",
+                  "D": "Mecanismo de Equidad Intergeneracional."
+                },
+                "correcta": "C",
+                "justificacion": "Las empresas cotizan específicamente una cuota al FOGASA para garantizar el pago de salarios en caso de insolvencia."
+              },
+              {
+                "id": "ipe1-manus-u8-p11",
+                "pregunta": "¿Cuál es el tiempo mínimo de cotización necesario para acceder a la prestación contributiva por desempleo?",
+                "opciones": {
+                  "A": "180 días en los últimos 5 años.",
+                  "B": "360 días en los últimos 6 años.",
+                  "C": "1 año en toda la vida laboral.",
+                  "D": "90 días en el último año."
+                },
+                "correcta": "B",
+                "justificacion": "Para la prestación contributiva por desempleo se requieren al menos 360 días cotizados en los 6 años anteriores."
+              },
+              {
+                "id": "ipe1-manus-u8-p12",
+                "pregunta": "¿Qué sucede con la cotización a la Seguridad Social durante el período de percepción de la prestación por desempleo contributiva?",
+                "opciones": {
+                  "A": "Se deja de cotizar totalmente.",
+                  "B": "El SEPE ingresa las cotizaciones a la Seguridad Social.",
+                  "C": "El trabajador debe pagarlas de su bolsillo.",
+                  "D": "Solo se cotiza por accidentes de trabajo."
+                },
+                "correcta": "B",
+                "justificacion": "Durante el desempleo contributivo, el SEPE cotiza por el trabajador a la Seguridad Social, principalmente por jubilación y otras contingencias."
+              },
+              {
+                "id": "ipe1-manus-u8-p13",
+                "pregunta": "¿Qué prestación económica se otorga por el fallecimiento de un trabajador para ayudar con los gastos del sepelio?",
+                "opciones": {
+                  "A": "Pensión de viudedad.",
+                  "B": "Auxilio por defunción.",
+                  "C": "Pensión de orfandad.",
+                  "D": "Indemnización a tanto alzado."
+                },
+                "correcta": "B",
+                "justificacion": "El auxilio por defunción es una cuantía fija destinada a sufragar los gastos del sepelio."
+              },
+              {
+                "id": "ipe1-manus-u8-p14",
+                "pregunta": "¿Cuál es la edad mínima para acceder a una pensión de jubilación no contributiva?",
+                "opciones": {
+                  "A": "60 años.",
+                  "B": "65 años.",
+                  "C": "67 años.",
+                  "D": "70 años."
+                },
+                "correcta": "B",
+                "justificacion": "La jubilación no contributiva requiere tener 65 años o más y carecer de rentas suficientes."
+              },
+              {
+                "id": "ipe1-manus-u8-p15",
+                "pregunta": "¿Qué porcentaje de la base reguladora percibe un trabajador en IT por contingencia común del día 4º al 15º?",
+                "opciones": {
+                  "A": "0%.",
+                  "B": "60% (a cargo del empresario).",
+                  "C": "60% (a cargo de la Seguridad Social).",
+                  "D": "75%."
+                },
+                "correcta": "B",
+                "justificacion": "Del día 4º al 15º de la baja por enfermedad común, el pago es del 60% y corre a cargo del empresario."
+              },
+              {
+                "id": "ipe1-manus-u8-p16",
+                "pregunta": "¿Qué situación se produce cuando un trabajador agota el período máximo de IT y no puede reincorporarse?",
+                "opciones": {
+                  "A": "Despido automático.",
+                  "B": "Pasa a situación de prórroga de efectos de IT o evaluación de Incapacidad Permanente.",
+                  "C": "Se queda sin ninguna protección económica.",
+                  "D": "Debe solicitar el alta voluntaria."
+                },
+                "correcta": "B",
+                "justificacion": "Al agotar la IT, el INSS debe evaluar si el trabajador es apto para el alta o si procede una incapacidad permanente."
+              },
+              {
+                "id": "ipe1-manus-u8-p17",
+                "pregunta": "¿Qué es la 'base reguladora' en el cálculo de una prestación?",
+                "opciones": {
+                  "A": "El salario neto del último mes.",
+                  "B": "El promedio de las bases de cotización de un período determinado.",
+                  "C": "El Salario Mínimo Interprofesional.",
+                  "D": "La cantidad máxima que paga la Seguridad Social."
+                },
+                "correcta": "B",
+                "justificacion": "La base reguladora es el baremo que se utiliza para calcular la cuantía de las prestaciones, basado en cotizaciones previas."
+              },
+              {
+                "id": "ipe1-manus-u8-p18",
+                "pregunta": "¿Pueden los trabajadores autónomos (RETA) cobrar prestación por desempleo?",
+                "opciones": {
+                  "A": "No, en ningún caso.",
+                  "B": "Sí, a través de la prestación por cese de actividad si han cotizado por ella.",
+                  "C": "Sí, exactamente igual que los trabajadores por cuenta ajena.",
+                  "D": "Solo si tienen empleados a su cargo."
+                },
+                "correcta": "B",
+                "justificacion": "Los autónomos tienen una protección específica llamada 'cese de actividad', similar al desempleo, si optan por cotizar por esta contingencia."
+              },
+              {
+                "id": "ipe1-manus-u8-p19",
+                "pregunta": "¿Qué organismo gestiona la tarjeta sanitaria europea?",
+                "opciones": {
+                  "A": "El Ministerio de Asuntos Exteriores.",
+                  "B": "El INSS.",
+                  "C": "La TGSS.",
+                  "D": "Las agencias de viajes."
+                },
+                "correcta": "B",
+                "justificacion": "El INSS es el encargado de emitir la Tarjeta Sanitaria Europea para los asegurados del sistema."
+              },
+              {
+                "id": "ipe1-manus-u8-p20",
+                "pregunta": "¿Qué principio garantiza que el sistema de Seguridad Social sea público y no dependa de entidades privadas con ánimo de lucro?",
+                "opciones": {
+                  "A": "Solidaridad.",
+                  "B": "Gestión pública.",
+                  "C": "Universalidad.",
+                  "D": "Equidad."
+                },
+                "correcta": "B",
+                "justificacion": "La gestión pública es un principio constitucional que asegura que el sistema sea responsabilidad del Estado para garantizar el interés general."
+              }
+            ]
           }
         }
       }
