@@ -1285,6 +1285,1331 @@
             ]
           }
         }
+      },
+      {
+        "unidad": "Test unidad 04",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 22,
+            "preguntas": [
+              {
+                "id": "ipe1-prometeo-u4-p01",
+                "pregunta": "¿Cuál es la norma básica que regula las relaciones laborales en España?",
+                "opciones": {
+                    "A": "Código Civil",
+                    "B": "Ley General Tributaria",
+                    "C": "Estatuto de los Trabajadores",
+                    "D": "Estatuto Básico del Empleado Público"
+                },
+                "correcta": "C",
+                "justificacion": "El Estatuto de los Trabajadores (ET), aprobado por el Real Decreto Legislativo 2/2015, es la norma básica que regula las relaciones laborales en España. El Código Civil regula relaciones civiles generales, la Ley General Tributaria regula los tributos y el Estatuto Básico del Empleado Público regula a los funcionarios."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p02",
+                "pregunta": "El Derecho del Trabajo regula:",
+                "opciones": {
+                    "A": "Solo las relaciones entre empresas",
+                    "B": "Las relaciones entre empresarios y trabajadores",
+                    "C": "Las relaciones entre consumidores y empresas",
+                    "D": "Solo las relaciones con la Administración"
+                },
+                "correcta": "B",
+                "justificacion": "El Derecho del Trabajo es la rama del ordenamiento jurídico que regula las relaciones que surgen del trabajo por cuenta ajena entre trabajadores y empresarios. No regula relaciones entre empresas (Derecho Mercantil), consumidores (Derecho del Consumo) ni con la Administración en términos funcionariales."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p03",
+                "pregunta": "Para que exista relación laboral deben darse ciertos elementos. ¿Cuál de los siguientes es uno de ellos?",
+                "opciones": {
+                    "A": "Competencia empresarial",
+                    "B": "Independencia",
+                    "C": "Voluntariedad",
+                    "D": "Autonomía"
+                },
+                "correcta": "C",
+                "justificacion": "Los cuatro elementos que deben concurrir para que exista relación laboral son: voluntariedad, ajenidad, dependencia y remuneración. La independencia y la autonomía son características opuestas a la relación laboral, y la competencia empresarial no es un elemento de la relación laboral."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p04",
+                "pregunta": "Un trabajador presta sus servicios libremente sin imposición. ¿Qué elemento de la relación laboral se cumple?",
+                "opciones": {
+                    "A": "Dependencia",
+                    "B": "Voluntariedad",
+                    "C": "Remuneración",
+                    "D": "Ajenidad"
+                },
+                "correcta": "B",
+                "justificacion": "La voluntariedad significa que el trabajador presta sus servicios libremente, sin coacción ni imposición. Es uno de los cuatro elementos esenciales de la relación laboral junto con la ajenidad, la dependencia y la remuneración."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p05",
+                "pregunta": "Cuando el trabajador está sometido a la organización del empresario se habla de:",
+                "opciones": {
+                    "A": "Remuneración",
+                    "B": "Jerarquía normativa",
+                    "C": "Ajenidad",
+                    "D": "Dependencia"
+                },
+                "correcta": "D",
+                "justificacion": "La dependencia es el elemento de la relación laboral que implica que el trabajador está sometido a las órdenes, dirección y organización del empresario. Es lo que diferencia al trabajador por cuenta ajena del trabajador autónomo, que organiza su propio trabajo."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p06",
+                "pregunta": "Cuando los beneficios y riesgos del negocio pertenecen al empresario hablamos de:",
+                "opciones": {
+                    "A": "Ajenidad",
+                    "B": "Dependencia",
+                    "C": "Personalidad",
+                    "D": "Subordinación jurídica"
+                },
+                "correcta": "A",
+                "justificacion": "La ajenidad significa que los frutos del trabajo, así como los riesgos y beneficios del negocio, pertenecen al empresario y no al trabajador. El trabajador recibe un salario independientemente del resultado económico de la empresa, lo que le distingue del empresario o del autónomo."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p07",
+                "pregunta": "¿Cuál de las siguientes situaciones no se considera relación laboral?",
+                "opciones": {
+                    "A": "Empleado administrativo en una empresa",
+                    "B": "Trabajo voluntario en una ONG sin salario",
+                    "C": "Dependiente en una tienda",
+                    "D": "Trabajador contratado en una empresa"
+                },
+                "correcta": "B",
+                "justificacion": "El trabajo voluntario en una ONG sin salario carece del elemento de remuneración, que es uno de los requisitos esenciales para que exista relación laboral. Sin retribución económica, no hay contrato de trabajo ni relación laboral protegida por el Estatuto de los Trabajadores."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p08",
+                "pregunta": "¿Cuál de los siguientes colectivos tiene una relación laboral excluida?",
+                "opciones": {
+                    "A": "Personal del hogar",
+                    "B": "Alta dirección",
+                    "C": "Funcionarios públicos",
+                    "D": "Deportistas profesionales"
+                },
+                "correcta": "C",
+                "justificacion": "Los funcionarios públicos están excluidos del ámbito de aplicación del Estatuto de los Trabajadores. Su relación con la Administración es una relación funcionarial, regulada por el Estatuto Básico del Empleado Público (EBEP), no por el derecho laboral común."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p09",
+                "pregunta": "¿Cuál de los siguientes casos se considera relación laboral especial?",
+                "opciones": {
+                    "A": "Funcionarios",
+                    "B": "Deportistas profesionales",
+                    "C": "Trabajo por amistad",
+                    "D": "Trabajo familiar hasta segundo grado"
+                },
+                "correcta": "B",
+                "justificacion": "Los deportistas profesionales tienen una relación laboral especial, regulada por el Real Decreto 1006/1985. Las relaciones laborales especiales comparten los elementos básicos de la relación laboral pero tienen características particulares que justifican una regulación específica diferente al ET."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p10",
+                "pregunta": "Los trabajos realizados por amistad o buena vecindad se consideran:",
+                "opciones": {
+                    "A": "Relación laboral común",
+                    "B": "Relación laboral especial",
+                    "C": "Relación laboral excluida",
+                    "D": "Relación funcionarial"
+                },
+                "correcta": "C",
+                "justificacion": "Los trabajos realizados por amistad, buena vecindad o benevolencia están expresamente excluidos del ámbito laboral por el artículo 1.3 del ET, porque les falta el elemento de la remuneración y la voluntad de crear un vínculo contractual laboral."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p11",
+                "pregunta": "Un administrador de una sociedad mercantil normalmente tiene una relación:",
+                "opciones": {
+                    "A": "Laboral común",
+                    "B": "Laboral especial",
+                    "C": "Excluida del ámbito laboral",
+                    "D": "Funcionarial"
+                },
+                "correcta": "C",
+                "justificacion": "El administrador de una sociedad mercantil tiene una relación mercantil con la sociedad, no laboral. El Tribunal Supremo ha establecido la doctrina del vínculo, según la cual cuando se ejerce el cargo de administrador, cualquier relación laboral queda absorbida por la mercantil y resulta excluida del ámbito del ET."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p12",
+                "pregunta": "Dentro de la jerarquía normativa laboral, ¿qué norma tiene mayor rango?",
+                "opciones": {
+                    "A": "Constitución",
+                    "B": "Reglamento",
+                    "C": "Contrato de trabajo",
+                    "D": "Convenio colectivo"
+                },
+                "correcta": "A",
+                "justificacion": "En la jerarquía normativa laboral española, la Constitución ocupa el rango más alto al ser la norma suprema del ordenamiento jurídico. Por debajo de ella están las normas con rango de ley (ET, LPRL...), los reglamentos, los convenios colectivos y finalmente el contrato de trabajo."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p13",
+                "pregunta": "¿Cuál de las siguientes normas tiene rango de ley?",
+                "opciones": {
+                    "A": "Circular administrativa",
+                    "B": "Real Decreto-ley",
+                    "C": "Orden ministerial",
+                    "D": "Instrucción"
+                },
+                "correcta": "B",
+                "justificacion": "El Real Decreto-ley es una norma con rango de ley que puede dictar el Gobierno en casos de extraordinaria y urgente necesidad, según el artículo 86 de la Constitución. Las circulares, órdenes ministeriales e instrucciones son normas de rango reglamentario, jerárquicamente inferiores."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p14",
+                "pregunta": "El Estatuto de los Trabajadores es un ejemplo de:",
+                "opciones": {
+                    "A": "Norma con rango de ley",
+                    "B": "Reglamento",
+                    "C": "Tratado internacional",
+                    "D": "Uso y costumbre"
+                },
+                "correcta": "A",
+                "justificacion": "El Estatuto de los Trabajadores fue aprobado mediante Real Decreto Legislativo 2/2015, que es una norma con rango de ley. No es un reglamento (norma de rango inferior aprobada por el Gobierno), ni un tratado internacional, ni un uso o costumbre."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p15",
+                "pregunta": "Los convenios colectivos forman parte de:",
+                "opciones": {
+                    "A": "Jurisprudencia",
+                    "B": "Autonomía colectiva",
+                    "C": "Reglamentos",
+                    "D": "Derecho internacional"
+                },
+                "correcta": "B",
+                "justificacion": "Los convenios colectivos son el resultado de la negociación colectiva entre representantes de trabajadores y empresarios, por lo que forman parte de la autonomía colectiva. No son reglamentos (normas estatales), ni jurisprudencia (sentencias judiciales), ni derecho internacional."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p16",
+                "pregunta": "Los usos y costumbres laborales se aplican cuando:",
+                "opciones": {
+                    "A": "Lo decide el empresario",
+                    "B": "La ley no regula una situación",
+                    "C": "El trabajador lo solicita",
+                    "D": "Lo establece el contrato"
+                },
+                "correcta": "B",
+                "justificacion": "Los usos y costumbres laborales son fuente subsidiaria del derecho laboral: solo se aplican cuando la ley, el convenio colectivo o el contrato de trabajo no regulan una situación concreta. Nunca pueden contradecir una norma de rango superior."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p17",
+                "pregunta": "La jurisprudencia laboral está formada por:",
+                "opciones": {
+                    "A": "Convenios colectivos",
+                    "B": "Reglamentos",
+                    "C": "Sentencias del Tribunal Supremo",
+                    "D": "Órdenes ministeriales"
+                },
+                "correcta": "C",
+                "justificacion": "La jurisprudencia en España está formada por las sentencias reiteradas del Tribunal Supremo que establecen criterios de interpretación de las normas. No la forman los convenios colectivos (autonomía colectiva), los reglamentos (normas administrativas) ni las órdenes ministeriales."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p18",
+                "pregunta": "Las normas de la Unión Europea forman parte de:",
+                "opciones": {
+                    "A": "Fuentes externas del derecho laboral",
+                    "B": "Autonomía colectiva",
+                    "C": "Usos y costumbres",
+                    "D": "Fuentes internas"
+                },
+                "correcta": "A",
+                "justificacion": "Las normas de la Unión Europea (reglamentos, directivas y decisiones) constituyen fuentes externas del derecho laboral español, ya que provienen de una organización supranacional ajena al ordenamiento interno. Tienen primacía sobre el derecho nacional en las materias en que la UE tiene competencia."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p19",
+                "pregunta": "¿Cuál de los siguientes no es un principio de aplicación de las normas laborales?",
+                "opciones": {
+                    "A": "Norma mínima",
+                    "B": "Norma más favorable",
+                    "C": "Principio de productividad",
+                    "D": "In dubio pro operario"
+                },
+                "correcta": "C",
+                "justificacion": "El principio de productividad no es un principio de aplicación de las normas laborales. Los principios reconocidos son: norma mínima (no se puede empeorar la ley), norma más favorable (entre dos normas aplicables, se elige la mejor para el trabajador) e in dubio pro operario (en caso de duda interpretativa, a favor del trabajador)."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p20",
+                "pregunta": "El principio de norma mínima significa que:",
+                "opciones": {
+                    "A": "Solo se puede mejorar lo establecido en normas superiores",
+                    "B": "Se aplican siempre las normas más antiguas",
+                    "C": "La empresa decide qué norma aplicar",
+                    "D": "Las normas pueden empeorar la ley"
+                },
+                "correcta": "A",
+                "justificacion": "El principio de norma mínima establece que las normas de rango inferior (convenio, contrato) solo pueden mejorar lo establecido en normas de rango superior (ley), nunca empeorarla. Así, un convenio puede mejorar el salario mínimo legal, pero nunca fijarlo por debajo."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p21",
+                "pregunta": "El principio de norma más favorable se aplica cuando:",
+                "opciones": {
+                    "A": "La empresa quiere modificar el contrato",
+                    "B": "Hay dos normas aplicables al mismo caso",
+                    "C": "El trabajador cambia de empresa",
+                    "D": "Hay dudas en una norma"
+                },
+                "correcta": "B",
+                "justificacion": "El principio de norma más favorable se aplica cuando dos normas son igualmente aplicables a un mismo supuesto. En ese caso, se aplica la que resulte más beneficiosa para el trabajador en su conjunto, no mezclando preceptos de ambas normas."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p22",
+                "pregunta": "El principio in dubio pro operario significa que:",
+                "opciones": {
+                    "A": "Se interpreta la norma a favor del trabajador cuando hay duda",
+                    "B": "Decide el empresario",
+                    "C": "Se aplica siempre el convenio colectivo",
+                    "D": "Se aplica la norma más antigua"
+                },
+                "correcta": "A",
+                "justificacion": "El principio in dubio pro operario es un criterio de interpretación: cuando una norma admite dos o más interpretaciones razonables, el juez o aplicador del derecho debe elegir la que resulte más favorable para el trabajador. Es distinto del principio de norma más favorable, que se aplica cuando hay dos normas diferentes."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p23",
+                "pregunta": "El principio de irrenunciabilidad de derechos implica que:",
+                "opciones": {
+                    "A": "El trabajador puede renunciar al salario mínimo",
+                    "B": "El trabajador no puede renunciar a derechos reconocidos por la ley",
+                    "C": "La empresa puede eliminar derechos si el trabajador acepta",
+                    "D": "El trabajador puede renunciar a vacaciones"
+                },
+                "correcta": "B",
+                "justificacion": "El principio de irrenunciabilidad de derechos, recogido en el artículo 3.5 del ET, impide que el trabajador renuncie a los derechos que le reconoce la ley o el convenio colectivo, aunque lo haga voluntariamente. Cualquier pacto en contrario es nulo. Las vacaciones son un derecho irrenunciable."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p24",
+                "pregunta": "Una empresa ofrece 35 días de vacaciones aunque el convenio establece 30. ¿Qué principio se aplica?",
+                "opciones": {
+                    "A": "Jerarquía normativa",
+                    "B": "Norma mínima",
+                    "C": "Condición más beneficiosa",
+                    "D": "Usos y costumbres"
+                },
+                "correcta": "C",
+                "justificacion": "El principio de condición más beneficiosa protege las ventajas que el empresario ha concedido voluntariamente por encima de lo exigido por ley o convenio. Los 35 días de vacaciones son una mejora sobre los 30 del convenio, y esa mejora se convierte en un derecho adquirido del trabajador que no puede ser retirado unilateralmente."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p25",
+                "pregunta": "Si un trabajador tiene dos convenios aplicables y uno establece mejores condiciones salariales:",
+                "opciones": {
+                    "A": "Se aplica el más favorable al trabajador",
+                    "B": "Se aplica el más antiguo",
+                    "C": "Decide la empresa",
+                    "D": "Se aplica el de menor rango"
+                },
+                "correcta": "A",
+                "justificacion": "Cuando existen dos convenios aplicables al mismo caso, se aplica el principio de norma más favorable: se selecciona en su conjunto el convenio que resulte más beneficioso para el trabajador. No se pueden combinar preceptos de ambos convenios de forma selectiva."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p26",
+                "pregunta": "Si una norma puede interpretarse de dos formas y una beneficia más al trabajador:",
+                "opciones": {
+                    "A": "Se aplica la más restrictiva",
+                    "B": "Decide el empresario",
+                    "C": "Se aplica la interpretación más favorable al trabajador",
+                    "D": "Se aplica el convenio colectivo"
+                },
+                "correcta": "C",
+                "justificacion": "Cuando una norma admite dos interpretaciones posibles, se aplica el principio in dubio pro operario: debe elegirse la interpretación que resulte más favorable al trabajador. Este principio protege al trabajador como parte más débil de la relación laboral ante la ambigüedad normativa."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p27",
+                "pregunta": "Un trabajador firma un documento renunciando a sus vacaciones anuales. Según el derecho laboral:",
+                "opciones": {
+                    "A": "Es válido si lo firma voluntariamente",
+                    "B": "No es válido por el principio de irrenunciabilidad",
+                    "C": "Es válido si lo permite la empresa",
+                    "D": "Es válido si lo autoriza el convenio"
+                },
+                "correcta": "B",
+                "justificacion": "El principio de irrenunciabilidad de derechos hace que cualquier renuncia del trabajador a derechos reconocidos por la ley o el convenio sea nula de pleno derecho, aunque sea firmada voluntariamente. Las vacaciones son un derecho mínimo legal irrenunciable, por lo que el documento no tiene ninguna validez jurídica."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p28",
+                "pregunta": "Un hijo trabaja ocasionalmente en el negocio familiar conviviendo con los padres. Se considera:",
+                "opciones": {
+                    "A": "Relación laboral excluida",
+                    "B": "Relación laboral común",
+                    "C": "Relación laboral especial",
+                    "D": "Relación funcionarial"
+                },
+                "correcta": "A",
+                "justificacion": "El trabajo del hijo en el negocio familiar, conviviendo con los padres, está expresamente excluido del ámbito laboral por el artículo 1.3.e del ET. Se presume que hay lazos familiares y convivencia que impiden la existencia de una relación laboral, salvo que se demuestre la condición de asalariado."
+              },
+              {
+                "id": "ipe1-prometeo-u4-p29",
+                "pregunta": "Una persona vende productos para una empresa pero asume el riesgo económico de la operación. Se considera:",
+                "opciones": {
+                    "A": "Relación laboral común",
+                    "B": "Relación laboral especial",
+                    "C": "Relación laboral excluida",
+                    "D": "Relación funcionarial"
+                },
+                "correcta": "C",
+                "justificacion": "Cuando una persona asume el riesgo económico de la operación comercial que realiza, falta el elemento de la ajenidad: es ella quien soporta los beneficios y pérdidas, no la empresa. Sin ajenidad no hay relación laboral, por lo que su situación queda excluida del ET y se acerca más al trabajo autónomo."
+              }
+            ]
+          },
+          
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u4-p01",
+                "pregunta": "¿Qué regula el Derecho del Trabajo?",
+                "opciones": {
+                  "A": "Solo las relaciones entre trabajadores y el Estado.",
+                  "B": "Las relaciones individuales y colectivas entre empresarios, trabajadores y el Estado.",
+                  "C": "Únicamente los contratos mercantiles.",
+                  "D": "Las relaciones entre empresas y consumidores."
+                },
+                "correcta": "B",
+                "justificacion": "El Derecho del Trabajo abarca la regulación de las relaciones laborales en su conjunto, incluyendo a los tres actores principales."
+              },
+              {
+                "id": "ipe1-manus-u4-p02",
+                "pregunta": "¿Cuál de las siguientes NO es una característica esencial de la relación laboral?",
+                "opciones": {
+                  "A": "Voluntariedad.",
+                  "B": "Retribución.",
+                  "C": "Ajenidad.",
+                  "D": "Independencia económica."
+                },
+                "correcta": "D",
+                "justificacion": "La independencia económica es característica del trabajo autónomo, no de la relación laboral, que implica dependencia o subordinación."
+              },
+              {
+                "id": "ipe1-manus-u4-p03",
+                "pregunta": "¿Qué tipo de relación laboral se rige por el Estatuto de los Trabajadores (ET)?",
+                "opciones": {
+                  "A": "Relaciones laborales especiales.",
+                  "B": "Relaciones laborales excluidas.",
+                  "C": "Relación laboral común (normalita).",
+                  "D": "Trabajos amistosos o benévolos."
+                },
+                "correcta": "C",
+                "justificacion": "La relación laboral común es la regulada por excelencia por el Estatuto de los Trabajadores."
+              },
+              {
+                "id": "ipe1-manus-u4-p04",
+                "pregunta": "Un deportista profesional se considera dentro de las relaciones laborales...",
+                "opciones": {
+                  "A": "Excluidas.",
+                  "B": "Comunes.",
+                  "C": "Especiales.",
+                  "D": "Administrativas."
+                },
+                "correcta": "C",
+                "justificacion": "Las relaciones laborales especiales son aquellas que, por sus particularidades, tienen una regulación específica."
+              },
+              {
+                "id": "ipe1-manus-u4-p05",
+                "pregunta": "¿Cuál es la norma principal que regula las relaciones laborales en España?",
+                "opciones": {
+                  "A": "La Constitución Española.",
+                  "B": "El Código Civil.",
+                  "C": "El Estatuto de los Trabajadores (ET).",
+                  "D": "El Convenio Colectivo."
+                },
+                "correcta": "C",
+                "justificacion": "El Estatuto de los Trabajadores es la ley fundamental que rige las relaciones laborales en España."
+              },
+              {
+                "id": "ipe1-manus-u4-p06",
+                "pregunta": "Según la jerarquía normativa interna, ¿qué se encuentra en el nivel más alto?",
+                "opciones": {
+                  "A": "Las Leyes Ordinarias.",
+                  "B": "Los Reglamentos.",
+                  "C": "La Constitución Española.",
+                  "D": "Los Convenios Colectivos."
+                },
+                "correcta": "C",
+                "justificacion": "La Constitución Española es la norma básica y suprema del ordenamiento jurídico."
+              },
+              {
+                "id": "ipe1-manus-u4-p07",
+                "pregunta": "¿Qué tipo de norma con rango de Ley es dictada por el Gobierno en caso de extraordinaria y urgente necesidad?",
+                "opciones": {
+                  "A": "Ley Orgánica.",
+                  "B": "Real Decreto Legislativo.",
+                  "C": "Real Decreto-Ley.",
+                  "D": "Orden Ministerial."
+                },
+                "correcta": "C",
+                "justificacion": "El Real Decreto-Ley es una norma con rango de ley dictada por el Gobierno en situaciones de urgencia."
+              },
+              {
+                "id": "ipe1-manus-u4-p08",
+                "pregunta": "¿Qué principio general del Derecho del Trabajo establece que, en caso de duda en la interpretación de una norma, se debe optar por la más favorable al trabajador?",
+                "opciones": {
+                  "A": "Principio de Norma más favorable.",
+                  "B": "Principio de Irrenunciabilidad de derechos.",
+                  "C": "Principio Pro-operario.",
+                  "D": "Principio de Autonomía de la voluntad."
+                },
+                "correcta": "C",
+                "justificacion": "El principio Pro-operario es una regla interpretativa que favorece al trabajador."
+              },
+              {
+                "id": "ipe1-manus-u4-p09",
+                "pregunta": "¿Qué significa el principio de irrenunciabilidad de derechos?",
+                "opciones": {
+                  "A": "Que los trabajadores pueden renunciar a sus derechos si lo desean.",
+                  "B": "Que los derechos laborales no pueden ser modificados por ley.",
+                  "C": "Que los trabajadores no pueden renunciar válidamente a los derechos que les reconocen las leyes y convenios.",
+                  "D": "Que la empresa puede exigir la renuncia a ciertos derechos a cambio de mejoras."
+                },
+                "correcta": "C",
+                "justificacion": "Este principio protege al trabajador de presiones para renunciar a derechos mínimos establecidos por la normativa."
+              },
+              {
+                "id": "ipe1-manus-u4-p10",
+                "pregunta": "¿Qué es un Convenio Colectivo?",
+                "opciones": {
+                  "A": "Una ley aprobada por el Parlamento.",
+                  "B": "Un acuerdo individual entre un trabajador y un empresario.",
+                  "C": "Un acuerdo escrito entre representantes de trabajadores y empresarios que regula condiciones laborales.",
+                  "D": "Una norma dictada por el Ministerio de Trabajo."
+                },
+                "correcta": "C",
+                "justificacion": "El convenio colectivo es un acuerdo negociado que regula las condiciones de trabajo en un ámbito determinado."
+              },
+              {
+                "id": "ipe1-manus-u4-p11",
+                "pregunta": "¿Qué fuerza tiene lo pactado en un Convenio Colectivo?",
+                "opciones": {
+                  "A": "Meramente orientativa.",
+                  "B": "Fuerza vinculante, convirtiéndose en norma.",
+                  "C": "Solo aplicable si ambas partes lo ratifican individualmente.",
+                  "D": "Inferior a la de un contrato de trabajo individual."
+                },
+                "correcta": "B",
+                "justificacion": "El convenio colectivo tiene fuerza de ley para las partes incluidas en su ámbito de aplicación."
+              },
+              {
+                "id": "ipe1-manus-u4-p12",
+                "pregunta": "¿Cuál de las siguientes es una función principal del Convenio Colectivo?",
+                "opciones": {
+                  "A": "Derogar la Constitución Española.",
+                  "B": "Regular condiciones de trabajo, salarios y jornada.",
+                  "C": "Establecer condiciones menos favorables que la ley.",
+                  "D": "Sustituir al Estatuto de los Trabajadores por completo."
+                },
+                "correcta": "B",
+                "justificacion": "Los convenios colectivos detallan y mejoran las condiciones laborales establecidas por la ley."
+              },
+              {
+                "id": "ipe1-manus-u4-p13",
+                "pregunta": "¿Qué tipo de relación NO se rige por el Estatuto de los Trabajadores?",
+                "opciones": {
+                  "A": "Trabajadores de alta dirección.",
+                  "B": "Artistas en espectáculos públicos.",
+                  "C": "Empleados del hogar.",
+                  "D": "Funcionarios públicos."
+                },
+                "correcta": "D",
+                "justificacion": "Los funcionarios públicos se rigen por el Derecho Administrativo, no por el Estatuto de los Trabajadores."
+              },
+              {
+                "id": "ipe1-manus-u4-p14",
+                "pregunta": "¿Qué principio general del Derecho del Trabajo se aplica cuando hay contradicción entre normas y se elige la más beneficiosa para el trabajador?",
+                "opciones": {
+                  "A": "Principio Pro-operario.",
+                  "B": "Principio de Norma más favorable.",
+                  "C": "Principio de Irrenunciabilidad.",
+                  "D": "Principio de buena fe."
+                },
+                "correcta": "B",
+                "justificacion": "El principio de norma más favorable permite aplicar la norma que, en su conjunto, sea más beneficiosa para el trabajador."
+              },
+              {
+                "id": "ipe1-manus-u4-p15",
+                "pregunta": "¿Qué son los usos y costumbres como fuente del Derecho del Trabajo?",
+                "opciones": {
+                  "A": "Normas escritas de obligado cumplimiento.",
+                  "B": "Criterios del Tribunal Supremo en sus sentencias.",
+                  "C": "Fuentes subsidiarias que se aplican si la ley se olvida de algo, siempre que sean probados y legales.",
+                  "D": "Acuerdos entre empresarios y trabajadores con fuerza de ley."
+                },
+                "correcta": "C",
+                "justificacion": "Los usos y costumbres son una fuente subsidiaria y residual, aplicable en ausencia de otras normas superiores."
+              },
+              {
+                "id": "ipe1-manus-u4-p16",
+                "pregunta": "¿Qué tipo de normativa de la UE requiere transposición a la legislación nacional?",
+                "opciones": {
+                  "A": "Reglamentos.",
+                  "B": "Directivas.",
+                  "C": "Decisiones.",
+                  "D": "Tratados."
+                },
+                "correcta": "B",
+                "justificacion": "Las Directivas establecen un objetivo que los Estados miembros deben alcanzar, pero les dan libertad en los medios."
+              },
+              {
+                "id": "ipe1-manus-u4-p17",
+                "pregunta": "¿Qué organismo internacional establece convenios y recomendaciones sobre normas del trabajo?",
+                "opciones": {
+                  "A": "OMS.",
+                  "B": "UE-OSHA.",
+                  "C": "OIT.",
+                  "D": "Eurofound."
+                },
+                "correcta": "C",
+                "justificacion": "La OIT (Organización Internacional del Trabajo) es la agencia de la ONU dedicada a las normas laborales."
+              },
+              {
+                "id": "ipe1-manus-u4-p18",
+                "pregunta": "¿Qué característica de la relación laboral implica que los frutos del trabajo son para el empleador?",
+                "opciones": {
+                  "A": "Voluntariedad.",
+                  "B": "Retribución.",
+                  "C": "Ajenidad.",
+                  "D": "Dependencia."
+                },
+                "correcta": "C",
+                "justificacion": "La ajenidad significa que el trabajador presta sus servicios por cuenta y riesgo de otro."
+              },
+              {
+                "id": "ipe1-manus-u4-p19",
+                "pregunta": "¿Qué tipo de norma con rango de Ley se aprueba por delegación de las Cortes al Gobierno?",
+                "opciones": {
+                  "A": "Ley Orgánica.",
+                  "B": "Ley Ordinaria.",
+                  "C": "Real Decreto-Ley.",
+                  "D": "Real Decreto Legislativo."
+                },
+                "correcta": "D",
+                "justificacion": "Los Reales Decretos Legislativos son fruto de una delegación legislativa de las Cortes al Gobierno."
+              },
+              {
+                "id": "ipe1-manus-u4-p20",
+                "pregunta": "¿Qué es la jurisprudencia en el contexto de las fuentes del Derecho del Trabajo?",
+                "opciones": {
+                  "A": "Las leyes aprobadas por el Parlamento.",
+                  "B": "Los acuerdos entre trabajadores y empresarios.",
+                  "C": "El criterio reiterado del Tribunal Supremo en sus sentencias.",
+                  "D": "Las normas dictadas por el Gobierno."
+                },
+                "correcta": "C",
+                "justificacion": "La jurisprudencia, especialmente la del Tribunal Supremo, complementa el ordenamiento jurídico al sentar doctrina."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 05",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 38,
+            "preguntas": [
+              {
+                "id": "ipe1-prometeo-u5-p01",
+                "pregunta": "Leopoldo ha conseguido la nacionalidad española, por lo que decide dejar su puesto de trabajo actual en una empresa que lo tenía contratado sin papeles y con condiciones mucho peores a las que indica el contrato de trabajo. Su jefe actual le avisa que, de no renovar el actual contrato, tendrá que dar aviso a las autoridades de la situación ilegal de la mujer de Leopoldo. Este decide firmar el contrato. ¿Sería dicho contrato válido?",
+                "opciones": {
+                    "A": "No, ya que le faltaría una causa válida.",
+                    "B": "No, ya que carece de objeto.",
+                    "C": "No, ya que carece de consentimiento.",
+                    "D": "Sí, ya que Leopoldo venía prestando servicios en la empresa referida."
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "El consentimiento está viciado por coacción o amenaza, por lo que el contrato no sería válido."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p02",
+                "pregunta": "¿Qué tipo de contrato puede celebrarse verbalmente?",
+                "opciones": {
+                    "A": "Contrato a tiempo parcial.",
+                    "B": "Contrato indefinido ordinario a jornada completa.",
+                    "C": "Contrato formativo.",
+                    "D": "Ninguno."
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "El contrato indefinido ordinario a jornada completa puede formalizarse verbalmente."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p03",
+                "pregunta": "Clara es hija de un bibliotecario. Ha conseguido un trabajo temporal para cubrir una baja de maternidad, por una duración de 16 semanas. Su jefe, que es un poco descuidado no ha formalizado con ella el contrato por escrito. ¿Qué naturaleza tendría dicho contrato?",
+                "opciones": {
+                    "A": "Se considera nulo.",
+                    "B": "Se presume indefinido.",
+                    "C": "Pierde validez legal.",
+                    "D": "Ninguna de las anteriores."
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Los contratos temporales deben formalizarse por escrito; si no se hace, se presumen indefinidos."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p04",
+                "pregunta": "¿Qué información debe incluir un contrato de trabajo?",
+                "opciones": {
+                    "A": "Duración",
+                    "B": "Retribuciones",
+                    "C": "Convenio colectivo de aplicación",
+                    "D": "Indemnización en caso de despido"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "La indemnización por despido puede formar parte de las cláusulas contractuales específicas."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p05",
+                "pregunta": "Un contrato de trabajo, genera:",
+                "opciones": {
+                    "A": "Derechos únicamente para el empleador.",
+                    "B": "Obligaciones para el trabajador.",
+                    "C": "Obligaciones mutuas.",
+                    "D": "Ninguna de las anteriores."
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "El contrato genera derechos y obligaciones tanto para el trabajador como para el empleador."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p06",
+                "pregunta": "¿Cuál de los siguientes NO es un elemento necesario para que un contrato se considere válido?",
+                "opciones": {
+                    "A": "Consentimiento",
+                    "B": "Objeto",
+                    "C": "Causa",
+                    "D": "Objeción"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "Los elementos esenciales de un contrato son consentimiento, objeto y causa."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p07",
+                "pregunta": "¿Cuál de las siguientes NO es una características del objeto de los contratos?",
+                "opciones": {
+                    "A": "Debe ser lícito",
+                    "B": "Deben ser posibles",
+                    "C": "Deben ser determinados",
+                    "D": "Deben ser indeterminados"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "El objeto del contrato debe ser posible, lícito y determinado o determinable."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p08",
+                "pregunta": "Leopolda ha firmado un contrato en la empresa de un amigo para cotizar lo suficiente para cobrar el paro. Sin embargo no tiene intención de ir a trabajar. ¿Estaríamos ante un contrato válido?",
+                "opciones": {
+                    "A": "No, ya que le faltaría una causa válida.",
+                    "B": "No, ya que carecería de objeto.",
+                    "C": "No, ya que carecería de consentimiento.",
+                    "D": "No, ya que no es por escrito."
+                },
+                "respuesta_correcta": "A",
+                "justificacion": "Existe simulación contractual y ausencia de causa real, por lo que el contrato no sería válido."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p09",
+                "pregunta": "A Lucía le han contratado para vender bolsitas de marihuana a la gente que pase a la tienda en la que está de dependienta. ¿Estaríamos ante un contrato válido?",
+                "opciones": {
+                    "A": "Sí, siempre que ella estuviera de acuerdo",
+                    "B": "No, porque carece de un objeto válido",
+                    "C": "Sí, ya que se dan los tres elementos: consentimiento, causa y voluntariedad.",
+                    "D": ""
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "El objeto del contrato es ilícito, por lo que el contrato es nulo."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p10",
+                "pregunta": "¿Qué define esencialmente a un contrato de trabajo?",
+                "opciones": {
+                    "A": "La prestación de servicios voluntarios a cambio de salario",
+                    "B": "La realización de un trabajo ocasional",
+                    "C": "La colaboración entre empresas",
+                    "D": "La cesión de trabajadores"
+                },
+                "respuesta_correcta": "A",
+                "justificacion": "Un contrato de trabajo se basa en la prestación de servicios a cambio de salario."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p11",
+                "pregunta": "¿Cuál NO es un elemento esencial del contrato de trabajo?",
+                "opciones": {
+                    "A": "Consentimiento",
+                    "B": "Objeto",
+                    "C": "Causa",
+                    "D": "Forma escrita"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "Los elementos esenciales son consentimiento, objeto y causa; la forma escrita no siempre es esencial."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p12",
+                "pregunta": "El consentimiento en el contrato de trabajo debe ser:",
+                "opciones": {
+                    "A": "Presunto y tácito",
+                    "B": "Libre y sin vicios",
+                    "C": "Verbal obligatoriamente",
+                    "D": "Revocable unilateralmente"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "El consentimiento debe prestarse libremente y sin error, dolo, violencia o intimidación."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p13",
+                "pregunta": "La causa del contrato de trabajo consiste en:",
+                "opciones": {
+                    "A": "La prestación laboral",
+                    "B": "La finalidad económica de la empresa",
+                    "C": "El intercambio de trabajo por salario",
+                    "D": "La duración del contrato"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "La causa del contrato es el intercambio de trabajo por salario."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p14",
+                "pregunta": "¿Quién puede actuar como empresario en un contrato de trabajo?",
+                "opciones": {
+                    "A": "Solo personas físicas",
+                    "B": "Solo empresas mercantiles",
+                    "C": "Personas físicas, jurídicas o comunidades de bienes",
+                    "D": "Solo autónomos"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "Puede ser empresario una persona física, jurídica o comunidad de bienes."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p15",
+                "pregunta": "Un contrato verbal es válido cuando:",
+                "opciones": {
+                    "A": "Nunca es válido",
+                    "B": "Siempre que dure menos de un año",
+                    "C": "Siempre que dure menos de 6 meses",
+                    "D": "En contratos indefinidos"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "En este test se considera válido cuando la duración es inferior a 6 meses."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p16",
+                "pregunta": "¿Cuál es contenido mínimo obligatorio de un contrato?",
+                "opciones": {
+                    "A": "Salario y vacaciones",
+                    "B": "Duración y jornada",
+                    "C": "Datos de las partes y tipo de contrato",
+                    "D": "Todas las anteriores"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "El contrato debe recoger datos de las partes y condiciones básicas como salario, duración y jornada."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p17",
+                "pregunta": "¿Qué modalidad contractual es indefinida?",
+                "opciones": {
+                    "A": "Contrato por circunstancias de la producción",
+                    "B": "Contrato de sustitución",
+                    "C": "Contrato fijo discontinuo",
+                    "D": "Contrato de relevo"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "El contrato fijo discontinuo es una modalidad indefinida."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p18",
+                "pregunta": "El contrato fijo discontinuo se utiliza principalmente para:",
+                "opciones": {
+                    "A": "Trabajos permanentes continuos",
+                    "B": "Trabajos estacionales o intermitentes",
+                    "C": "Trabajos de sustitución",
+                    "D": "Trabajos formativos"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Se usa para trabajos de carácter estacional o intermitente."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p19",
+                "pregunta": "El contrato fijo discontinuo debe formalizarse:",
+                "opciones": {
+                "A": "De forma verbal",
+                "B": "De forma escrita",
+                "C": "Solo si dura más de un año",
+                "D": "Ante la autoridad laboral"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Debe formalizarse por escrito."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p20",
+                "pregunta": "¿Qué contrato se utiliza para incrementos ocasionales e imprevisibles de actividad?",
+                "opciones": {
+                "A": "Contrato de relevo",
+                "B": "Contrato de sustitución",
+                "C": "Contrato por circunstancias de la producción",
+                "D": "Contrato formativo"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "Este contrato se utiliza para atender aumentos puntuales e imprevisibles de la actividad."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p21",
+                "pregunta": "La duración máxima del contrato por circunstancias imprevisibles es:",
+                "opciones": {
+                "A": "3 meses",
+                "B": "6 meses ampliables por convenio",
+                "C": "Hasta 2 años",
+                "D": "90 días al año"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Su duración máxima es de 6 meses, ampliable por convenio colectivo."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p22",
+                "pregunta": "¿Qué indemnización corresponde al finalizar un contrato temporal por producción?",
+                "opciones": {
+                "A": "No tiene indemnización",
+                "B": "8 días por año",
+                "C": "12 días por año trabajado",
+                "D": "20 días por año trabajado"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "Al finalizar este contrato corresponde una indemnización de 12 días por año trabajado."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p23",
+                "pregunta": "El contrato por circunstancias previsibles puede celebrarse como máximo:",
+                "opciones": {
+                "A": "60 días al año",
+                "B": "90 días al año",
+                "C": "120 días continuados",
+                "D": "6 meses"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Para circunstancias previsibles, el límite máximo es de 90 días al año."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p24",
+                "pregunta": "¿Cuál es una característica del contrato por sustitución?",
+                "opciones": {
+                    "A": "Genera indemnización al finalizar",
+                    "B": "Siempre es a tiempo parcial",
+                    "C": "Puede iniciar 15 días antes del comienzo de la sustitución",
+                    "D": "Solo puede durar 6 meses"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "Este contrato puede formalizarse con antelación al inicio efectivo de la sustitución."
+              },              
+              {
+                "id": "ipe1-prometeo-u5-p25",
+                "pregunta": "En el contrato de sustitución es obligatorio indicar:",
+                "opciones": {
+                    "A": "El salario del sustituido",
+                    "B": "El trabajador sustituido y la causa",
+                    "C": "La duración exacta del contrato",
+                    "D": "El convenio colectivo"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Debe identificarse a la persona sustituida y la causa de la sustitución."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p26",
+                "pregunta": "El contrato de relevo se celebra para:",
+                "opciones": {
+                    "A": "Sustituir bajas médicas",
+                    "B": "Cubrir jubilación parcial",
+                    "C": "Incrementos de producción",
+                    "D": "Formación profesional"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "El contrato de relevo se usa para cubrir la jubilación parcial de un trabajador."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p27",
+                "pregunta": "El trabajador relevista debe ser:",
+                "opciones": {
+                    "A": "Trabajador indefinido de la empresa",
+                    "B": "Autónomo colaborador",
+                    "C": "Trabajador sin experiencia pero con título habilitante",
+                    "D": "Trabajador en situación de desempleo"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "El relevista es la persona contratada para sustituir al jubilado parcial y suele proceder del desempleo."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p28",
+                "pregunta": "En el contrato de relevo ordinario, la duración mínima es:",
+                "opciones": {
+                    "A": "6 meses",
+                    "B": "1 año",
+                    "C": "Hasta jubilación total",
+                    "D": "Sin duración mínima"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "En este test se considera una duración mínima de 1 año."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p29",
+                "pregunta": "¿Qué caracteriza al contrato de formación en alternancia?",
+                "opciones": {
+                    "A": "Compatibiliza trabajo y formación reglada",
+                    "B": "Solo puede durar 6 meses",
+                    "C": "Exige titulación previa",
+                    "D": "Es siempre a tiempo parcial"
+                },
+                "respuesta_correcta": "A",
+                "justificacion": "Este contrato combina actividad laboral con formación reglada."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p30",
+                "pregunta": "La duración del contrato de formación en alternancia es:",
+                "opciones": {
+                    "A": "Entre 6 meses y 1 año",
+                    "B": "Sin límite",
+                    "C": "Máximo 1 año",
+                    "D": "Entre 3 meses y 2 años"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "Su duración mínima es de 3 meses y la máxima de 2 años."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p31",
+                "pregunta": "La retribución del contrato de formación en alternancia el primer año será como mínimo:",
+                "opciones": {
+                    "A": "50% del salario",
+                    "B": "60% del salario fijado en convenio",
+                    "C": "75% del salario mínimo",
+                    "D": "El SMI íntegro"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Si el convenio no fija otra cosa, la retribución mínima es del 60% el primer año."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p32",
+                "pregunta": "¿Qué requisito NO es necesario para el contrato de formación en alternancia?",
+                "opciones": {
+                    "A": "Plan formativo individual",
+                    "B": "Formalización escrita",
+                    "C": "Titulación previa",
+                    "D": "Alternancia real trabajo-formación"
+                },
+                "respuesta_correcta": "C",
+                "justificacion": "No exige titulación previa; precisamente sirve para compatibilizar trabajo y formación."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p33",
+                "pregunta": "El contrato para la obtención de la práctica profesional requiere:",
+                "opciones": {
+                    "A": "Estar desempleado",
+                    "B": "Poseer una titulación reciente",
+                    "C": "No haber trabajado nunca",
+                    "D": "Ser menor de 25 años"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Este contrato requiere una titulación reciente relacionada con el puesto."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p34",
+                "pregunta": "La duración del contrato de práctica profesional es:",
+                "opciones": {
+                    "A": "Entre 6 meses y 1 año",
+                    "B": "Entre 3 meses y 2 años",
+                    "C": "Siempre 1 año",
+                    "D": "Sin límite"
+                },
+                "respuesta_correcta": "A",
+                "justificacion": "Su duración habitual es de entre 6 meses y 1 año."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p35",
+                "pregunta": "La retribución del contrato de práctica profesional:",
+                "opciones": {
+                    "A": "Puede ser inferior al SMI",
+                    "B": "Es la fijada en convenio y nunca inferior al contrato en alternancia",
+                    "C": "Es siempre el SMI",
+                    "D": "Es libremente pactada"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "La retribución se fija en convenio y no puede ser inferior a la del contrato de formación en alternancia."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p36",
+                "pregunta": "Un contrato a tiempo parcial se caracteriza por:",
+                "opciones": {
+                    "A": "Jornada inferior a la de un trabajador comparable a tiempo completo",
+                    "B": "Prohibición de horas complementarias",
+                    "C": "Ser siempre indefinido",
+                    "D": "No poder ser escrito"
+                },
+                "respuesta_correcta": "A",
+                "justificacion": "Se caracteriza por tener una jornada inferior a la de un trabajador a tiempo completo comparable."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p37",
+                "pregunta": "Las horas complementarias pactadas solo pueden realizarse en:",
+                "opciones": {
+                    "A": "No pueden realizarse en ningún caso",
+                    "B": "Contratos a tiempo parcial indefinidos",
+                    "C": "Todos los contratos",
+                    "D": "Solo contratos formativos"
+                },
+                "respuesta_correcta": "B",
+                "justificacion": "Solo pueden pactarse en contratos a tiempo parcial indefinidos."
+              },
+              {
+                "id": "ipe1-prometeo-u5-p38",
+                "pregunta": "Las Empresas de Trabajo Temporal (ETT):",
+                "opciones": {
+                    "A": "Ceden trabajadores sin contrato",
+                    "B": "No aplican convenios colectivos",
+                    "C": "Sustituyen a la empresa usuaria",
+                    "D": "Contratan y ceden trabajadores a empresas usuarias"
+                },
+                "respuesta_correcta": "D",
+                "justificacion": "Las ETT contratan trabajadores para cederlos temporalmente a empresas usuarias."
+              }
+            ]
+          },
+
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "ipe1-manus-u5-p01",
+                "pregunta": "¿Cuál de los siguientes es un elemento esencial para la validez de un contrato de trabajo?",
+                "opciones": {
+                  "A": "La forma escrita.",
+                  "B": "El consentimiento.",
+                  "C": "La duración indefinida.",
+                  "D": "El período de prueba."
+                },
+                "correcta": "B",
+                "justificacion": "El consentimiento, el objeto y la causa son los elementos esenciales de cualquier contrato, incluido el de trabajo."
+              },
+              {
+                "id": "ipe1-manus-u5-p02",
+                "pregunta": "¿Para qué tipo de contrato es válido el formato verbal en España?",
+                "opciones": {
+                  "A": "Contratos formativos.",
+                  "B": "Contratos indefinidos a tiempo parcial.",
+                  "C": "Contratos de duración determinada a tiempo completo inferior a 4 semanas.",
+                  "D": "Contratos fijos discontinuos."
+                },
+                "correcta": "C",
+                "justificacion": "La forma verbal solo es válida para contratos de duración determinada a tiempo completo inferiores a cuatro semanas."
+              },
+              {
+                "id": "ipe1-manus-u5-p03",
+                "pregunta": "¿Qué ocurre si un contrato que debería ser escrito se celebra verbalmente?",
+                "opciones": {
+                  "A": "Es nulo de pleno derecho.",
+                  "B": "Se presume que es indefinido y a tiempo completo, salvo prueba en contrario.",
+                  "C": "Se convierte automáticamente en un contrato de prácticas.",
+                  "D": "La empresa recibe una sanción económica sin más consecuencias."
+                },
+                "correcta": "B",
+                "justificacion": "La presunción de indefinido y a tiempo completo busca proteger al trabajador ante la falta de formalización escrita."
+              },
+              {
+                "id": "ipe1-manus-u5-p04",
+                "pregunta": "¿Qué modalidad de contrato está destinada a trabajos de naturaleza estacional o de temporada con prestación intermitente?",
+                "opciones": {
+                  "A": "Contrato indefinido ordinario.",
+                  "B": "Contrato temporal por circunstancias de la producción.",
+                  "C": "Contrato indefinido fijo discontinuo.",
+                  "D": "Contrato de relevo."
+                },
+                "correcta": "C",
+                "justificacion": "El contrato indefinido fijo discontinuo es el adecuado para actividades estacionales o de temporada."
+              },
+              {
+                "id": "ipe1-manus-u5-p05",
+                "pregunta": "¿Cuál es la duración máxima de un contrato temporal por circunstancias de la producción ocasionales y previsibles?",
+                "opciones": {
+                  "A": "6 meses.",
+                  "B": "1 año.",
+                  "C": "90 días al año, no continuados.",
+                  "D": "3 meses."
+                },
+                "correcta": "C",
+                "justificacion": "Los contratos por circunstancias de la producción ocasionales y previsibles tienen una duración máxima de 90 días al año, no continuados."
+              },
+              {
+                "id": "ipe1-manus-u5-p06",
+                "pregunta": "Al finalizar un contrato temporal por circunstancias de la producción ocasionales e imprevisibles (eventual), ¿qué indemnización corresponde al trabajador?",
+                "opciones": {
+                  "A": "No corresponde ninguna indemnización.",
+                  "B": "20 días de salario por año de servicio.",
+                  "C": "12 días de salario por año de servicio.",
+                  "D": "Una mensualidad de salario."
+                },
+                "correcta": "C",
+                "justificacion": "La indemnización por fin de contrato eventual es de 12 días de salario por año de servicio."
+              },
+              {
+                "id": "ipe1-manus-u5-p07",
+                "pregunta": "¿Cuál es el objetivo principal del contrato de formación en alternancia con el trabajo?",
+                "opciones": {
+                  "A": "Proporcionar práctica profesional adecuada al nivel de estudios.",
+                  "B": "Obtener una cualificación profesional alternando actividad laboral y formativa.",
+                  "C": "Cubrir un puesto de trabajo de forma indefinida.",
+                  "D": "Sustituir a un trabajador con derecho a reserva de puesto."
+                },
+                "correcta": "B",
+                "justificacion": "El contrato en alternancia busca la cualificación profesional combinando trabajo y formación."
+              },
+              {
+                "id": "ipe1-manus-u5-p08",
+                "pregunta": "¿Cuál es la duración máxima de un contrato para la obtención de la práctica profesional?",
+                "opciones": {
+                  "A": "3 meses.",
+                  "B": "6 meses.",
+                  "C": "1 año.",
+                  "D": "2 años."
+                },
+                "correcta": "C",
+                "justificacion": "La duración máxima del contrato para la obtención de la práctica profesional es de 1 año."
+              },
+              {
+                "id": "ipe1-manus-u5-p09",
+                "pregunta": "En un contrato de formación en alternancia, ¿qué porcentaje de la jornada máxima puede ser de trabajo efectivo el primer año?",
+                "opciones": {
+                  "A": "≤ 85%.",
+                  "B": "≤ 65%.",
+                  "C": "100%.",
+                  "D": "≤ 50%."
+                },
+                "correcta": "B",
+                "justificacion": "El tiempo de trabajo efectivo en el contrato en alternancia no puede ser superior al 65% el primer año."
+              },
+              {
+                "id": "ipe1-manus-u5-p10",
+                "pregunta": "¿Qué requisito es indispensable para poder celebrar un contrato para la obtención de la práctica profesional?",
+                "opciones": {
+                  "A": "No poseer titulación universitaria.",
+                  "B": "Haber finalizado los estudios hace más de 5 años.",
+                  "C": "Poseer un título universitario o de FP, entre otros.",
+                  "D": "Ser menor de 25 años."
+                },
+                "correcta": "C",
+                "justificacion": "Este contrato requiere que el trabajador posea una titulación específica para la práctica profesional."
+              },
+              {
+                "id": "ipe1-manus-u5-p11",
+                "pregunta": "¿Pueden los trabajadores a tiempo parcial realizar horas extraordinarias?",
+                "opciones": {
+                  "A": "Sí, sin ninguna limitación.",
+                  "B": "No, salvo por fuerza mayor.",
+                  "C": "Solo si lo permite el convenio colectivo.",
+                  "D": "Sí, hasta un máximo del 30% de su jornada."
+                },
+                "correcta": "B",
+                "justificacion": "Los contratos a tiempo parcial no pueden realizar horas extraordinarias, excepto por fuerza mayor."
+              },
+              {
+                "id": "ipe1-manus-u5-p12",
+                "pregunta": "¿Qué tipo de horas complementarias requieren un pacto por escrito y solo son posibles en contratos indefinidos a tiempo parcial?",
+                "opciones": {
+                  "A": "Horas complementarias voluntarias.",
+                  "B": "Horas extraordinarias.",
+                  "C": "Horas complementarias pactadas.",
+                  "D": "Horas de formación."
+                },
+                "correcta": "C",
+                "justificacion": "Las horas complementarias pactadas requieren un acuerdo formal y son exclusivas de los contratos indefinidos a tiempo parcial."
+              },
+              {
+                "id": "ipe1-manus-u5-p13",
+                "pregunta": "¿Cuál es el preaviso mínimo para la realización de horas complementarias pactadas?",
+                "opciones": {
+                  "A": "24 horas.",
+                  "B": "1 semana.",
+                  "C": "3 días.",
+                  "D": "No requiere preaviso."
+                },
+                "correcta": "C",
+                "justificacion": "El trabajador debe ser preavisado con un mínimo de 3 días de antelación para las horas complementarias pactadas."
+              },
+              {
+                "id": "ipe1-manus-u5-p14",
+                "pregunta": "¿Qué tipo de contrato cubre la parte de jornada de un trabajador que accede a la jubilación parcial?",
+                "opciones": {
+                  "A": "Contrato por sustitución.",
+                  "B": "Contrato de relevo.",
+                  "C": "Contrato fijo discontinuo.",
+                  "D": "Contrato formativo en alternancia."
+                },
+                "correcta": "B",
+                "justificacion": "El contrato de relevo está específicamente diseñado para cubrir la jornada del jubilado parcial."
+              },
+              {
+                "id": "ipe1-manus-u5-p15",
+                "pregunta": "¿Qué modalidad de contrato de trabajo NO puede utilizar una Empresa de Trabajo Temporal (ETT)?",
+                "opciones": {
+                  "A": "Indefinido.",
+                  "B": "Fijo discontinuo.",
+                  "C": "Por sustitución de persona trabajadora.",
+                  "D": "Contrato para la obtención de la práctica profesional."
+                },
+                "correcta": "D",
+                "justificacion": "Las ETT pueden utilizar contratos indefinidos, fijos discontinuos, temporales por circunstancias de producción, sustitución y formativos (alternancia), pero no el de práctica profesional."
+              },
+              {
+                "id": "ipe1-manus-u5-p16",
+                "pregunta": "¿Qué convenio colectivo es aplicable a un trabajador de una ETT que presta servicios en una empresa usuaria?",
+                "opciones": {
+                  "A": "El convenio de la ETT.",
+                  "B": "El convenio de la empresa usuaria.",
+                  "C": "El convenio estatal de ETTs.",
+                  "D": "Ningún convenio, se rige por el ET directamente."
+                },
+                "correcta": "B",
+                "justificacion": "El trabajador de la ETT tiene derecho a las condiciones del convenio de la empresa usuaria para el puesto que desempeña."
+              },
+              {
+                "id": "ipe1-manus-u5-p17",
+                "pregunta": "¿Cuál de las siguientes actividades NO puede ser cubierta por trabajadores cedidos por una ETT?",
+                "opciones": {
+                  "A": "Trabajos estacionales.",
+                  "B": "Sustitución de un trabajador de baja.",
+                  "C": "Trabajos con exposición a agentes cancerígenos.",
+                  "D": "Incremento ocasional de la producción."
+                },
+                "correcta": "C",
+                "justificacion": "Existen limitaciones para el uso de ETTs en trabajos con riesgos especialmente peligrosos, como la exposición a agentes cancerígenos."
+              },
+              {
+                "id": "ipe1-manus-u5-p18",
+                "pregunta": "¿Qué debe constar obligatoriamente en un contrato a tiempo parcial formalizado por escrito?",
+                "opciones": {
+                  "A": "El nombre de los familiares del trabajador.",
+                  "B": "El número de horas ordinarias de trabajo y su distribución horaria.",
+                  "C": "El historial médico del trabajador.",
+                  "D": "La causa de la temporalidad, aunque sea indefinido."
+                },
+                "correcta": "B",
+                "justificacion": "La especificación de la jornada y su distribución es esencial en los contratos a tiempo parcial."
+              },
+              {
+                "id": "ipe1-manus-u5-p19",
+                "pregunta": "¿Qué requisito de titulación se exige para el contrato para la obtención de la práctica profesional?",
+                "opciones": {
+                  "A": "Solo título de ESO.",
+                  "B": "Título universitario, FP, máster profesional o certificado del sistema de FP.",
+                  "C": "Cualquier titulación, siempre que sea oficial.",
+                  "D": "No se exige titulación alguna."
+                },
+                "correcta": "B",
+                "justificacion": "Este contrato está dirigido a titulados que buscan aplicar sus conocimientos en un entorno laboral."
+              },
+              {
+                "id": "ipe1-manus-u5-p20",
+                "pregunta": "¿Cuál es la retribución mínima para un contrato de formación en alternancia el segundo año?",
+                "opciones": {
+                  "A": "≥ 60% del convenio y > SMI.",
+                  "B": "≥ 75% del convenio y > SMI.",
+                  "C": "El 100% del convenio.",
+                  "D": "El SMI, sin más."
+                },
+                "correcta": "B",
+                "justificacion": "La retribución mínima para el segundo año en un contrato en alternancia es del 75% del convenio y siempre superior al SMI."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 06",
+        "fuentes": {
+          "MANUS IA": {
+            "total_preguntas": 20,
+            "preguntas": 
+          }
+        }
       }
     ]
   }

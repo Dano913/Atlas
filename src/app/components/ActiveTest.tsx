@@ -93,6 +93,11 @@ export function ActiveTest({ questions, onFinish }: ActiveTestProps) {
             <GraduationCap className="w-3 h-3" />
             {subject?.name || 'General'}
           </span>
+          {currentQuestion.source && (
+            <span className="ml-2 text-[10px] px-2 py-0.5 rounded-md bg-white/20 border border-current opacity-80">
+              {currentQuestion.source}
+            </span>
+          )}
           <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
             Pregunta {currentIndex + 1} de {questions.length}
           </span>

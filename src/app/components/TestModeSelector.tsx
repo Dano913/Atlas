@@ -1,43 +1,48 @@
-import { useEffect, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-
-import {
-  Subject,
-  TestConfig,
-  SubjectConfig,
-  SourceConfig,
-} from '../types';
-
-import { getSubjects, getQuestionsBySubject } from '../utils/storage';
+import { useEffect, useState, useCallback } from 'react';
+import { ArrowRight, RefreshCw } from 'lucide-react';
+import { Subject, TestConfig, SubjectConfig, SourceConfig, Question } from '../types';
+import { getSubjects, getQuestionsBySubject, subscribeToData } from '../utils/storage';
 import { Button } from './ui/button';
 import { Slider } from './ui/slider';
-import { Progress } from './ui/progress';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Checkbox } from './ui/checkbox';
+import { ActiveTest } from './ActiveTest';
 
-interface TestModeSelectorProps {
-  onStartTest: (config: TestConfig) => void;
-}
+interface TestModeSelectorProps {}
 
 type GroupedQuestions = Record<string, Record<string, number>>;
 
-export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
+export function TestModeSelector({}: TestModeSelectorProps) {
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [subjectConfigs, setSubjectConfigs] = useState<SubjectConfig[]>([]);
   const [randomOrder, setRandomOrder] = useState(true);
 
-  useEffect(() => {
-    setSubjects(getSubjects());
+  // 🔥 CONTROL DE EXAMEN
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [started, setStarted] = useState(false);
+
+  const loadData = useCallback(() => {
+    const data = getSubjects();
+    if (data.length > 0) {
+      setSubjects(data);
+      console.log("✅ Asignaturas cargadas:", data.length);
+    }
   }, []);
+
+  useEffect(() => {
+    loadData();
+    const unsubscribe = subscribeToData(loadData);
+    return () => unsubscribe();
+  }, [loadData]);
 
   const groupQuestionsByUnitAndSource = (subjectId: string): GroupedQuestions => {
     const questions = getQuestionsBySubject(subjectId);
     const grouped: GroupedQuestions = {};
 
     for (const q of questions) {
-      const unit = q.unitTitle || 'Sin unidad';
-      const source = q.source || 'General';
+      const unit = (q.unitTitle || 'Sin unidad').trim();
+      const source = (q.source || 'General').trim();
 
       if (!grouped[unit]) grouped[unit] = {};
       grouped[unit][source] = (grouped[unit][source] || 0) + 1;
@@ -48,11 +53,12 @@ export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
 
   const buildInitialSubjectConfig = (subjectId: string): SubjectConfig => {
     const grouped = groupQuestionsByUnitAndSource(subjectId);
+    const currentSubject = subjects.find(s => s.id === subjectId);
 
-    const sources: SourceConfig[] = Object.entries(grouped).flatMap(([unitTitle, sources]) =>
-      Object.entries(sources).map(([sourceTitle, maxQuestions]) => ({
-        sourceId: `${unitTitle}::${sourceTitle}`,
-        sourceTitle,
+    const sources: SourceConfig[] = Object.entries(grouped).flatMap(([unitTitle, sourcesMap]) =>
+      Object.entries(sourcesMap).map(([sourceTitle, maxQuestions]) => ({
+        sourceId: `${unitTitle.trim()}::${sourceTitle.trim()}`,
+        sourceTitle: sourceTitle.trim(),
         questionCount: 0,
         maxQuestions,
       }))
@@ -60,7 +66,7 @@ export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
 
     return {
       subjectId,
-      subjectTitle: subjects.find(s => s.id === subjectId)?.name,
+      subjectTitle: currentSubject?.name || 'Asignatura',
       sources,
     };
   };
@@ -68,6 +74,7 @@ export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
   const handleSubjectToggle = (subjectId: string, checked: boolean) => {
     if (checked) {
       setSelectedSubjects(prev => [...prev, subjectId]);
+
       setSubjectConfigs(prev => {
         if (prev.some(c => c.subjectId === subjectId)) return prev;
         return [...prev, buildInitialSubjectConfig(subjectId)];
@@ -87,7 +94,7 @@ export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
           ...cfg,
           sources: cfg.sources.map(s =>
             s.sourceId === sourceId
-              ? { ...s, questionCount: Math.max(0, Math.min(value, s.maxQuestions)) }
+              ? { ...s, questionCount: value }
               : s
           ),
         };
@@ -101,235 +108,153 @@ export function TestModeSelector({ onStartTest }: TestModeSelectorProps) {
         if (cfg.subjectId !== subjectId) return cfg;
 
         const prefix = `${unitTitle}::`;
-        const unitSources = cfg.sources.filter(s => s.sourceId.startsWith(prefix));
-        const unitMax = unitSources.reduce((sum, s) => sum + s.maxQuestions, 0);
-        const target = Math.max(0, Math.min(value, unitMax));
+        let remaining = value;
 
-        if (unitSources.length === 0) return cfg;
+        return {
+          ...cfg,
+          sources: cfg.sources.map(s => {
+            if (!s.sourceId.startsWith(prefix)) return s;
 
-        if (target === 0) {
-          return {
-            ...cfg,
-            sources: cfg.sources.map(s =>
-              s.sourceId.startsWith(prefix)
-                ? { ...s, questionCount: 0 }
-                : s
-            ),
-          };
-        }
+            const take = Math.min(s.maxQuestions, remaining);
+            remaining -= take;
 
-        const currentTotal = unitSources.reduce((sum, s) => sum + s.questionCount, 0);
-
-        if (currentTotal === 0) {
-          let remaining = target;
-
-          return {
-            ...cfg,
-            sources: cfg.sources.map(s => {
-              if (!s.sourceId.startsWith(prefix)) return s;
-              if (remaining <= 0) return { ...s, questionCount: 0 };
-
-              const add = Math.min(s.maxQuestions, remaining);
-              remaining -= add;
-              return { ...s, questionCount: add };
-            }),
-          };
-        }
-
-        const factor = target / currentTotal;
-
-        const redistributed = cfg.sources.map(s => {
-          if (!s.sourceId.startsWith(prefix)) return s;
-          const next = Math.floor(s.questionCount * factor);
-          return { ...s, questionCount: Math.min(next, s.maxQuestions) };
-        });
-
-        let assigned = redistributed
-          .filter(s => s.sourceId.startsWith(prefix))
-          .reduce((sum, s) => sum + s.questionCount, 0);
-
-        let remaining = target - assigned;
-
-        for (const source of unitSources) {
-          if (remaining <= 0) break;
-          const idx = redistributed.findIndex(s => s.sourceId === source.sourceId);
-          if (idx >= 0 && redistributed[idx].questionCount < redistributed[idx].maxQuestions) {
-            redistributed[idx] = {
-              ...redistributed[idx],
-              questionCount: redistributed[idx].questionCount + 1,
-            };
-            remaining--;
-          }
-        }
-
-        return { ...cfg, sources: redistributed };
+            return { ...s, questionCount: take };
+          }),
+        };
       })
     );
   };
 
-  const getSubjectUnits = (subjectId: string) => {
-    const grouped = groupQuestionsByUnitAndSource(subjectId);
-    return Object.keys(grouped);
-  };
+  // 🚀 START COMPLETO
+  const handleStart = () => {
+    const config: TestConfig = {
+      mode: 'multi-subject',
+      subjects: subjectConfigs.filter(s =>
+        s.sources.some(src => src.questionCount > 0)
+      ),
+      randomOrder,
+    };
 
-  const getUnitStats = (cfg: SubjectConfig, unitTitle: string) => {
-    const prefix = `${unitTitle}::`;
-    const unitSources = cfg.sources.filter(s => s.sourceId.startsWith(prefix));
-    const total = unitSources.reduce((sum, s) => sum + s.questionCount, 0);
-    const max = unitSources.reduce((sum, s) => sum + s.maxQuestions, 0);
-    return { total, max, sources: unitSources };
+    const generatedQuestions: Question[] = config.subjects.flatMap(subject => {
+      const all = getQuestionsBySubject(subject.subjectId);
+
+      return subject.sources.flatMap(source => {
+        return all
+          .filter(q =>
+            `${q.unitTitle?.trim()}::${q.source?.trim()}` === source.sourceId
+          )
+          .slice(0, source.questionCount);
+      });
+    });
+
+    console.group("🚀 EXAM START");
+    console.log("CONFIG:", config);
+    console.log("QUESTIONS:", generatedQuestions.length);
+    console.groupEnd();
+
+    setQuestions(generatedQuestions);
+    setStarted(true);
   };
 
   const getTotalQuestions = () =>
-    subjectConfigs.reduce(
-      (total, cfg) => total + cfg.sources.reduce((sum, s) => sum + s.questionCount, 0),
-      0
+    subjectConfigs.reduce((t, cfg) =>
+      t + cfg.sources.reduce((s, src) => s + src.questionCount, 0), 0
     );
 
-  const handleStart = () => {
-    onStartTest({
-      mode: 'multi-subject',
-      subjects: subjectConfigs,
-      randomOrder,
-    });
-  };
+  // 🔥 SI EXAMEN INICIADO → ACTIVE TEST
+  if (started) {
+    return (
+      <ActiveTest
+        questions={questions}
+        onFinish={() => {
+          setStarted(false);
+          setQuestions([]);
+        }}
+      />
+    );
+  }
 
-  const canStart = selectedSubjects.length > 0 && getTotalQuestions() > 0;
+  // 🔥 UI SELECTOR
+  if (subjects.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center p-20 text-slate-500">
+        <RefreshCw className="w-10 h-10 animate-spin mb-4 text-blue-500" />
+        <p>Cargando asignaturas...</p>
+      </div>
+    );
+  }
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 pb-24 animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <header className="text-center space-y-2">
-        <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100">
-          Configurar Examen
-        </h2>
-        <p className="text-sm text-slate-500 dark:text-slate-400">
-          Selecciona asignaturas, unidades y fuentes. Todo empieza en 0.
-        </p>
-      </header>
+    <div className="max-w-4xl mx-auto space-y-8 pb-24">
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-4 space-y-3">
-            <h3 className="font-semibold text-slate-800 dark:text-slate-100">
-              Asignaturas
-            </h3>
+      <h2 className="text-2xl font-bold">Configurar Examen</h2>
 
-            {subjects.map(subject => {
-              const isSelected = selectedSubjects.includes(subject.id);
+      <div className="grid grid-cols-3 gap-6">
 
-              return (
-                <label
-                  key={subject.id}
-                  className="flex items-center gap-3 p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60"
-                >
-                  <Checkbox
-                    checked={isSelected}
-                    onCheckedChange={(v) => handleSubjectToggle(subject.id, v as boolean)}
-                  />
-                  <span className="font-medium text-slate-800 dark:text-slate-100">
-                    {subject.name}
-                  </span>
-                </label>
-              );
-            })}
-          </div>
+        {/* ASIGNATURAS */}
+        <div>
+          {subjects.map(subject => (
+            <label key={subject.id} className="flex gap-2">
+              <Checkbox
+                checked={selectedSubjects.includes(subject.id)}
+                onCheckedChange={(v) =>
+                  handleSubjectToggle(subject.id, v as boolean)
+                }
+              />
+              {subject.name}
+            </label>
+          ))}
         </div>
 
-        <div className="lg:col-span-2 space-y-6">
-          {subjectConfigs.map(cfg => {
-            const subject = subjects.find(s => s.id === cfg.subjectId);
-            const units = getSubjectUnits(cfg.subjectId);
+        {/* CONFIG */}
+        <div className="col-span-2 space-y-6">
+          {subjectConfigs.map(cfg => (
+            <Card key={cfg.subjectId}>
+              <CardHeader>
+                <CardTitle>{cfg.subjectTitle}</CardTitle>
+              </CardHeader>
 
-            return (
-              <Card
-                key={cfg.subjectId}
-                className="bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800"
-              >
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-slate-800 dark:text-slate-100">
-                    {subject?.name ?? cfg.subjectTitle ?? 'Asignatura'}
-                  </CardTitle>
-                </CardHeader>
+              <CardContent className="space-y-6">
+                {Object.keys(groupQuestionsByUnitAndSource(cfg.subjectId)).map(unitTitle => {
+                  const prefix = `${unitTitle}::`;
 
-                <CardContent className="space-y-6">
-                  {units.map(unitTitle => {
-                    const { total: unitTotal, max: unitMax, sources } = getUnitStats(cfg, unitTitle);
+                  const unitSources = cfg.sources.filter(s =>
+                    s.sourceId.startsWith(prefix)
+                  );
 
-                    return (
-                      <div
-                        key={unitTitle}
-                        className="space-y-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 p-4"
-                      >
-                        <div className="space-y-2">
-                          <div className="flex items-center justify-between">
-                            <span className="font-semibold text-slate-800 dark:text-slate-100">
-                              {unitTitle}
-                            </span>
-                            <span className="text-sm text-slate-500 dark:text-slate-400">
-                              {unitTotal}/{unitMax}
-                            </span>
-                          </div>
+                  const unitTotal = unitSources.reduce((a, b) => a + b.questionCount, 0);
+                  const unitMax = unitSources.reduce((a, b) => a + b.maxQuestions, 0);
 
-                          <Slider
-                            value={[unitTotal]}
-                            max={unitMax}
-                            min={0}
-                            step={1}
-                            onValueChange={([v]) => updateUnit(cfg.subjectId, unitTitle, v)}
-                          />
-
-                          <Progress
-                            value={unitMax > 0 ? (unitTotal / unitMax) * 100 : 0}
-                            className="h-2 bg-slate-200 dark:bg-slate-800"
-                          />
-                        </div>
-
-                        <div className="space-y-4 pl-2">
-                          {sources.map(src => (
-                            <div key={src.sourceId} className="space-y-1">
-                              <div className="flex items-center justify-between text-sm">
-                                <span className="text-slate-700 dark:text-slate-200">
-                                  {src.sourceTitle}
-                                </span>
-                                <span className="text-slate-500 dark:text-slate-400">
-                                  {src.questionCount}/{src.maxQuestions}
-                                </span>
-                              </div>
-
-                              <Slider
-                                value={[src.questionCount]}
-                                max={src.maxQuestions}
-                                min={0}
-                                step={1}
-                                onValueChange={([v]) => updateSource(cfg.subjectId, src.sourceId, v)}
-                              />
-
-                              <Progress
-                                value={src.maxQuestions > 0 ? (src.questionCount / src.maxQuestions) * 100 : 0}
-                                className="h-2 bg-slate-200 dark:bg-slate-800"
-                              />
-                            </div>
-                          ))}
-                        </div>
+                  return (
+                    <div key={unitTitle}>
+                      <div className="flex justify-between">
+                        <span>{unitTitle}</span>
+                        <span>{unitTotal}/{unitMax}</span>
                       </div>
-                    );
-                  })}
-                </CardContent>
-              </Card>
-            );
-          })}
+
+                      <Slider
+                        value={[unitTotal]}
+                        max={unitMax}
+                        onValueChange={([v]) =>
+                          updateUnit(cfg.subjectId, unitTitle, v)
+                        }
+                      />
+                    </div>
+                  );
+                })}
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
 
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-        <Button
-          disabled={!canStart}
-          onClick={handleStart}
-          className="px-8 shadow-lg"
-        >
-          Lanzar Examen <ArrowRight className="ml-2 w-4 h-4" />
-        </Button>
-      </div>
+      <Button
+        onClick={handleStart}
+        disabled={getTotalQuestions() === 0}
+      >
+        Empezar ({getTotalQuestions()})
+        <ArrowRight />
+      </Button>
     </div>
   );
 }

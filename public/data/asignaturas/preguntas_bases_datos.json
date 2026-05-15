@@ -1,620 +1,1780 @@
 [
   {
     "asignatura": "Bases de datos",
-    "fuentes": [
-      {
-        "fuente": "PROMETEO",
-        "total_preguntas": 21,
-        "unidades": [
-          {
-            "unidad": "Test unidad 01",
-            "total": 11,
-            "preguntas": [
-  {
-    "id": "db-p01",
-    "pregunta": "¿Por qué los sistemas basados en archivos tradicionales generaban problemas en la gestión de la información?",
-    "opciones": {
-      "A": "Porque eran demasiado rápidos",
-      "B": "Porque impedían el acceso a los datos",
-      "C": "Porque producían redundancia y falta de coherencia entre los datos",
-      "D": "Porque no permitían almacenar información"
-    },
-    "correcta": "C",
-    "justificacion": "Los sistemas de archivos tradicionales a menudo almacenaban los mismos datos en múltiples lugares, lo que llevaba a inconsistencias cuando se actualizaba la información en un lugar pero no en otros."
-  },
-  {
-    "id": "db-p02",
-    "pregunta": "¿Cuál es la principal función de un Sistema Gestor de Bases de Datos (SGBD)?",
-    "opciones": {
-      "A": "Ejecutar programas",
-      "B": "Actuar como intermediario entre usuarios y datos, gestionando su almacenamiento y acceso",
-      "C": "Crear sistemas operativos",
-      "D": "Eliminar información automáticamente"
-    },
-    "correcta": "B",
-    "justificacion": "Un SGBD es el software que permite a los usuarios definir, crear, mantener y controlar el acceso a la base de datos."
-  },
-  {
-    "id": "db-p03",
-    "pregunta": "En el diseño de bases de datos, ¿por qué es importante separar los datos de las aplicaciones que los utilizan?",
-    "opciones": {
-      "A": "Para reducir el tamaño del software",
-      "B": "Para mejorar la independencia y facilitar cambios sin afectar a las aplicaciones",
-      "C": "Para eliminar el uso de SQL",
-      "D": "Para evitar errores de compilación"
-    },
-    "correcta": "B",
-    "justificacion": "La independencia de datos permite modificar la estructura de almacenamiento o la estrategia de acceso sin tener que cambiar los programas de aplicación."
-  },
-  {
-    "id": "db-p04",
-    "pregunta": "En un modelo Entidad-Relación, ¿qué representa una entidad y por qué es fundamental en el diseño?",
-    "opciones": {
-      "A": "Un tipo de dato",
-      "B": "Un objeto del mundo real sobre el que queremos almacenar información",
-      "C": "Una relación entre tablas",
-      "D": "Un atributo"
-    },
-    "correcta": "B",
-    "justificacion": "Las entidades son los bloques básicos del modelo E-R y representan cosas u objetos (físicos o abstractos) que son relevantes para el sistema."
-  },
-  {
-    "id": "db-p05",
-    "pregunta": "¿Qué diferencia existe entre una entidad y un atributo dentro de un modelo E-R?",
-    "opciones": {
-      "A": "No hay diferencia",
-      "B": "La entidad es un objeto y el atributo es una característica de ese objeto",
-      "C": "El atributo es más importante",
-      "D": "La entidad es una tabla"
-    },
-    "correcta": "B",
-    "justificacion": "Los atributos describen las propiedades de las entidades (por ejemplo, el nombre y la edad son atributos de la entidad Persona)."
-  },
-  {
-    "id": "db-p06",
-    "pregunta": "En un diagrama E-R, ¿por qué es importante definir correctamente la cardinalidad de las relaciones?",
-    "opciones": {
-      "A": "Para reducir el número de tablas",
-      "B": "Porque determina cómo se relacionan los datos en la base de datos final",
-      "C": "Porque elimina atributos",
-      "D": "Porque evita usar claves"
-    },
-    "correcta": "B",
-    "justificacion": "La cardinalidad expresa el número de entidades a las que otra entidad puede estar asociada mediante una relación (1:1, 1:N, N:M)."
-  },
-  {
-    "id": "db-p07",
-    "pregunta": "¿Por qué la clave primaria es un elemento fundamental en una tabla?",
-    "opciones": {
-      "A": "Porque reduce el tamaño",
-      "B": "Porque identifica de forma única cada registro",
-      "C": "Porque elimina errores automáticamente",
-      "D": "Porque mejora el diseño visual"
-    },
-    "correcta": "B",
-    "justificacion": "La clave primaria garantiza que no haya dos filas iguales en una tabla y permite referenciar registros de forma inequívoca."
-  },
-  {
-    "id": "db-p08",
-    "pregunta": "¿Qué papel desempeñan las claves foráneas en una base de datos relacional?",
-    "opciones": {
-      "A": "Crear tablas",
-      "B": "Relacionar tablas entre sí",
-      "C": "Eliminar datos",
-      "D": "Validar código"
-    },
-    "correcta": "B",
-    "justificacion": "Una clave foránea es un campo en una tabla que apunta a la clave primaria de otra tabla, estableciendo un vínculo entre ambas."
-  },
-  {
-    "id": "db-p09",
-    "pregunta": "¿Cómo se implementa una relación N:M en un modelo relacional?",
-    "opciones": {
-      "A": "Eliminándola",
-      "B": "Creando una tabla intermedia con claves foráneas",
-      "C": "Duplicando tablas",
-      "D": "Ignorándola"
-    },
-    "correcta": "B",
-    "justificacion": "Las relaciones muchos-a-muchos se resuelven creando una tabla asociativa que contiene las claves primarias de las dos tablas relacionadas."
-  },
-  {
-    "id": "db-p10",
-    "pregunta": "¿Cuál es el objetivo principal de la normalización en bases de datos?",
-    "opciones": {
-      "A": "Aumentar el número de tablas",
-      "B": "Reducir redundancia y mejorar integridad",
-      "C": "Reducir código",
-      "D": "Eliminar relaciones"
-    },
-    "correcta": "B",
-    "justificacion": "La normalización organiza los datos para minimizar la duplicidad y asegurar que las dependencias de datos tengan sentido lógico."
-  },
-  {
-    "id": "db-p11",
-    "pregunta": "¿Qué caracteriza a la Primera Forma Normal (1FN)?",
-    "opciones": {
-      "A": "Tablas grandes",
-      "B": "Valores atómicos",
-      "C": "Claves compuestas",
-      "D": "Relaciones"
-    },
-    "correcta": "B",
-    "justificacion": "La 1FN exige que cada columna contenga valores atómicos (indivisibles) y que no haya grupos repetidos."
-  },
-  {
-    "id": "db-p12",
-    "pregunta": "¿Qué problema elimina la Segunda Forma Normal (2FN)?",
-    "opciones": {
-      "A": "Redundancia total",
-      "B": "Dependencias parciales",
-      "C": "Relaciones",
-      "D": "Claves"
-    },
-    "correcta": "B",
-    "justificacion": "La 2FN requiere estar en 1FN y que todos los atributos no clave dependan de la clave primaria completa, no solo de una parte de ella."
-  },
-  {
-    "id": "db-p13",
-    "pregunta": "¿Qué son las dependencias transitivas que elimina la 3FN?",
-    "opciones": {
-      "A": "Dependencias directas",
-      "B": "Dependencias indirectas entre atributos no clave",
-      "C": "Claves",
-      "D": "Relaciones"
-    },
-    "correcta": "B",
-    "justificacion": "La 3FN elimina situaciones donde un atributo no clave depende de otro atributo no clave en lugar de depender directamente de la clave primaria."
-  },
-  {
-    "id": "db-p14",
-    "pregunta": "¿Qué tipo de lenguaje es SQL y qué implica esto?",
-    "opciones": {
-      "A": "Imperativo",
-      "B": "Declarativo",
-      "C": "Binario",
-      "D": "Compilado"
-    },
-    "correcta": "B",
-    "justificacion": "SQL es declarativo porque el usuario especifica 'qué' datos quiere obtener, no 'cómo' debe el sistema proceder para encontrarlos."
-  },
-  {
-    "id": "db-p15",
-    "pregunta": "¿Qué diferencia hay entre DDL y DML en SQL?",
-    "opciones": {
-      "A": "Ninguna",
-      "B": "DDL define estructura y DML manipula datos",
-      "C": "DML crea tablas",
-      "D": "DDL elimina datos"
-    },
-    "correcta": "B",
-    "justificacion": "DDL (Data Definition Language) se usa para crear/alterar tablas, y DML (Data Manipulation Language) para insertar, consultar o actualizar registros."
-  },
-  {
-    "id": "db-p16",
-    "pregunta": "¿Por qué es importante definir correctamente los tipos de datos en SQL?",
-    "opciones": {
-      "A": "Para decorar",
-      "B": "Para evitar errores y optimizar almacenamiento",
-      "C": "Para compilar",
-      "D": "Para ejecutar"
-    },
-    "correcta": "B",
-    "justificacion": "Elegir el tipo de dato adecuado (INT, VARCHAR, DATE, etc.) asegura la integridad de los datos y hace que la base de datos sea más eficiente."
-  },
-  {
-    "id": "db-p17",
-    "pregunta": "¿Qué garantiza la restricción NOT NULL?",
-    "opciones": {
-      "A": "Valores únicos",
-      "B": "Campo obligatorio",
-      "C": "Relación",
-      "D": "Eliminación"
-    },
-    "correcta": "B",
-    "justificacion": "La restricción NOT NULL impide que se inserten valores nulos en una columna, obligando a que siempre tenga un valor."
-  },
-  {
-    "id": "db-p18",
-    "pregunta": "¿Por qué UNIQUE evita errores en una base de datos?",
-    "opciones": {
-      "A": "Porque elimina datos",
-      "B": "Porque evita duplicados",
-      "C": "Porque crea tablas",
-      "D": "Porque valida código"
-    },
-    "correcta": "B",
-    "justificacion": "La restricción UNIQUE asegura que todos los valores de una columna sean diferentes entre sí, evitando duplicidad de información sensible."
-  },
-  {
-    "id": "db-p19",
-    "pregunta": "¿Qué función tiene la restricción CHECK en SQL?",
-    "opciones": {
-      "A": "Validar reglas o condiciones sobre los datos",
-      "B": "Crear tablas",
-      "C": "Eliminar datos",
-      "D": "Insertar datos"
-    },
-    "correcta": "A",
-    "justificacion": "CHECK permite especificar una condición que cada fila de la tabla debe cumplir (por ejemplo, que la edad sea mayor de 18)."
-  },
-  {
-    "id": "db-p20",
-    "pregunta": "¿Qué representa una fila dentro de una tabla relacional?",
-    "opciones": {
-      "A": "Columna",
-      "B": "Registro",
-      "C": "Tabla",
-      "D": "Clave"
-    },
-    "correcta": "B",
-    "justificacion": "En el modelo relacional, una fila (o tupla) representa un registro individual que contiene los datos de una instancia específica de la entidad."
-  },
-  {
-    "id": "db-dec-p01",
-    "pregunta": "Una base de datos es:",
-    "opciones": {
-      "A": "Un programa",
-      "B": "Un conjunto de tablas sin relación",
-      "C": "Un conjunto organizado de datos relacionados",
-      "D": "Un sistema operativo"
-    },
-    "correcta": "C",
-    "justificacion": "Una base de datos es una colección organizada de información estructurada, o datos, típicamente almacenados electrónicamente en un sistema informático."
-  },
-  {
-    "id": "db-dec-p02",
-    "pregunta": "¿Qué problema resolvieron los SGBD frente a los ficheros planos?",
-    "opciones": {
-      "A": "El coste",
-      "B": "La duplicidad e inconsistencia de datos",
-      "C": "El uso de SQL",
-      "D": "La velocidad de Internet"
-    },
-    "correcta": "B",
-    "justificacion": "Los SGBD centralizan la gestión de datos, evitando que la misma información esté repetida y desactualizada en diferentes archivos."
-  },
-  {
-    "id": "db-dec-p03",
-    "pregunta": "¿Qué es un SGBD?",
-    "opciones": {
-      "A": "Un lenguaje",
-      "B": "Un modelo de datos",
-      "C": "Un software para gestionar bases de datos",
-      "D": "Una tabla"
-    },
-    "correcta": "C",
-    "justificacion": "SGBD (Sistema Gestor de Bases de Datos) es el software que interactúa con los usuarios, las aplicaciones y la propia base de datos para capturar y analizar datos."
-  },
-  {
-    "id": "db-dec-p04",
-    "pregunta": "El modelo relacional fue propuesto por:",
-    "opciones": {
-      "A": "Bill Gates",
-      "B": "Edgar F. Codd",
-      "C": "Tim Berners-Lee",
-      "D": "Oracle"
-    },
-    "correcta": "B",
-    "justificacion": "Edgar F. Codd propuso el modelo relacional en 1970 mientras trabajaba para IBM."
-  },
-  {
-    "id": "db-dec-p05",
-    "pregunta": "El modelo relacional organiza la información en:",
-    "opciones": {
-      "A": "Árboles",
-      "B": "Grafos",
-      "C": "Tablas",
-      "D": "Documentos"
-    },
-    "correcta": "C",
-    "justificacion": "En el modelo relacional, todos los datos se representan en términos de tuplas, agrupadas en relaciones (tablas)."
-  },
-  {
-    "id": "db-dec-p06",
-    "pregunta": "SQL se utiliza principalmente para:",
-    "opciones": {
-      "A": "Diseñar interfaces",
-      "B": "Gestionar y consultar bases de datos",
-      "C": "Crear diagramas",
-      "D": "Programar servidores"
-    },
-    "correcta": "B",
-    "justificacion": "SQL (Structured Query Language) es el lenguaje estándar para comunicarse con sistemas de gestión de bases de datos relacionales."
-  },
-  {
-    "id": "db-dec-p07",
-    "pregunta": "La arquitectura ANSI/SPARC se compone de:",
-    "opciones": {
-      "A": "2 niveles",
-      "B": "3 niveles",
-      "C": "4 niveles",
-      "D": "5 niveles"
-    },
-    "correcta": "B",
-    "justificacion": "Se compone de tres niveles: externo (vistas), conceptual (lógico) e interno (físico)."
-  },
-  {
-    "id": "db-dec-p08",
-    "pregunta": "El nivel externo de ANSI/SPARC representa:",
-    "opciones": {
-      "A": "El almacenamiento físico",
-      "B": "El modelo lógico global",
-      "C": "Las vistas de usuario",
-      "D": "Los índices"
-    },
-    "correcta": "C",
-    "justificacion": "El nivel externo describe la parte de la base de datos que es relevante para cada usuario o aplicación específica."
-  },
-  {
-    "id": "db-dec-p09",
-    "pregunta": "El modelo Entidad-Relación se usa para:",
-    "opciones": {
-      "A": "Crear tablas físicas",
-      "B": "Representar conceptualmente la realidad",
-      "C": "Ejecutar consultas",
-      "D": "Optimizar índices"
-    },
-    "correcta": "B",
-    "justificacion": "Es una herramienta para el modelado de datos que permite representar las entidades relevantes de un sistema y sus interrelaciones."
-  },
-  {
-    "id": "db-dec-p10",
-    "pregunta": "Una entidad representa:",
-    "opciones": {
-      "A": "Un atributo",
-      "B": "Una relación",
-      "C": "Un objeto del mundo real",
-      "D": "Una clave"
-    },
-    "correcta": "C",
-    "justificacion": "Una entidad es una 'cosa' u 'objeto' en el mundo real que es distinguible de todos los demás objetos."
-  },
-  {
-    "id": "db-dec-p11",
-    "pregunta": "En un diagrama E-R, las entidades se representan con:",
-    "opciones": {
-      "A": "Óvalos",
-      "B": "Rombos",
-      "C": "Rectángulos",
-      "D": "Flechas"
-    },
-    "correcta": "C",
-    "justificacion": "En la notación estándar de Chen, los rectángulos representan conjuntos de entidades."
-  },
-  {
-    "id": "db-dec-p12",
-    "pregunta": "La clave primaria sirve para:",
-    "opciones": {
-      "A": "Relacionar tablas",
-      "B": "Identificar registros de forma única",
-      "C": "Evitar claves foráneas",
-      "D": "Crear vistas"
-    },
-    "correcta": "B",
-    "justificacion": "Una clave primaria es un campo o conjunto de campos que identifica de forma única cada fila de una tabla."
-  },
-  {
-    "id": "db-dec-p13",
-    "pregunta": "Una relación 1:N se implementa:",
-    "opciones": {
-      "A": "Con una tabla intermedia",
-      "B": "Con una FK en el lado N",
-      "C": "Con una FK en el lado 1",
-      "D": "Con una PK compuesta"
-    },
-    "correcta": "B",
-    "justificacion": "Para implementar una relación uno-a-muchos, se coloca la clave primaria de la entidad '1' como clave foránea en la tabla de la entidad 'N'."
-  },
-  {
-    "id": "db-dec-p14",
-    "pregunta": "Una relación N:M se transforma en:",
-    "opciones": {
-      "A": "Una FK",
-      "B": "Una vista",
-      "C": "Una tabla intermedia",
-      "D": "Un índice"
-    },
-    "correcta": "C",
-    "justificacion": "Las relaciones muchos-a-muchos no pueden representarse directamente en el modelo relacional y requieren una tabla adicional."
-  },
-  {
-    "id": "db-dec-p15",
-    "pregunta": "La tabla intermedia de una N:M contiene:",
-    "opciones": {
-      "A": "Una PK simple",
-      "B": "Solo atributos",
-      "C": "Las PK de ambas entidades como FK",
-      "D": "Datos duplicados"
-    },
-    "correcta": "C",
-    "justificacion": "La tabla intermedia vincula ambas entidades mediante sus respectivas claves primarias, que actúan como claves foráneas."
-  },
-  {
-    "id": "db-dec-p16",
-    "pregunta": "Un atributo multivaluado:",
-    "opciones": {
-      "A": "Cumple 1FN",
-      "B": "Viola 1FN",
-      "C": "Viola 2FN",
-      "D": "Viola 3FN"
-    },
-    "correcta": "B",
-    "justificacion": "La Primera Forma Normal exige que cada atributo contenga solo valores atómicos; un atributo con múltiples valores rompe esta regla."
-  },
-  {
-    "id": "db-dec-p17",
-    "pregunta": "La integridad referencial garantiza que:",
-    "opciones": {
-      "A": "No haya duplicados",
-      "B": "Las FK apunten a valores existentes",
-      "C": "Los datos estén ordenados",
-      "D": "No existan NULL"
-    },
-    "correcta": "B",
-    "justificacion": "Asegura que las relaciones entre tablas permanezcan consistentes, impidiendo que una clave foránea apunte a un registro inexistente."
-  },
-  {
-    "id": "db-dec-p18",
-    "pregunta": "El diseño lógico consiste en:",
-    "opciones": {
-      "A": "Crear el modelo E-R",
-      "B": "Convertir el modelo E-R en tablas",
-      "C": "Insertar datos",
-      "D": "Optimizar consultas"
-    },
-    "correcta": "B",
-    "justificacion": "Es la fase donde el esquema conceptual (E-R) se traduce al esquema del modelo de datos que utiliza el SGBD (normalmente el relacional)."
-  },
-  {
-    "id": "db-dec-p19",
-    "pregunta": "Normalizar una base de datos sirve para:",
-    "opciones": {
-      "A": "Aumentar redundancia",
-      "B": "Evitar anomalías",
-      "C": "Reducir claves",
-      "D": "Eliminar relaciones"
-    },
-    "correcta": "B",
-    "justificacion": "La normalización previene anomalías de inserción, actualización y borrado al organizar los datos de forma lógica."
-  },
-  {
-    "id": "db-dec-p20",
-    "pregunta": "La 1ª Forma Normal (1FN) exige:",
-    "opciones": {
-      "A": "Claves compuestas",
-      "B": "Valores atómicos",
-      "C": "No dependencias transitivas",
-      "D": "PK simples"
-    },
-    "correcta": "B",
-    "justificacion": "Una tabla está en 1FN si todos sus atributos son atómicos y no hay grupos repetitivos."
-  },
-  {
-    "id": "db-dec-p21",
-    "pregunta": "La 2ª Forma Normal (2FN) elimina:",
-    "opciones": {
-      "A": "Listas",
-      "B": "Dependencias transitivas",
-      "C": "Dependencias parciales",
-      "D": "Claves foráneas"
-    },
-    "correcta": "C",
-    "justificacion": "La 2FN elimina las dependencias de atributos no clave respecto a solo una parte de la clave primaria (en claves compuestas)."
-  },
-  {
-    "id": "db-dec-p22",
-    "pregunta": "La 3ª Forma Normal (3FN) elimina:",
-    "opciones": {
-      "A": "Dependencias parciales",
-      "B": "Dependencias transitivas",
-      "C": "Valores atómicos",
-      "D": "PK compuestas"
-    },
-    "correcta": "B",
-    "justificacion": "La 3FN elimina las dependencias entre atributos que no forman parte de la clave primaria."
-  },
-  {
-    "id": "db-dec-p23",
-    "pregunta": "Una dependencia transitiva ocurre cuando:",
-    "opciones": {
-      "A": "Un atributo depende de la PK",
-      "B": "Un atributo depende de otro no clave",
-      "C": "Hay FK",
-      "D": "Hay una N:M"
-    },
-    "correcta": "B",
-    "justificacion": "Ocurre cuando un atributo A depende de B, y B depende de la clave primaria, por lo que A depende indirectamente de la clave."
-  },
-  {
-    "id": "db-dec-p24",
-    "pregunta": "Una tabla en 3FN:",
-    "opciones": {
-      "A": "Siempre cumple BCNF",
-      "B": "Nunca cumple BCNF",
-      "C": "Puede no cumplir BCNF",
-      "D": "No tiene dependencias"
-    },
-    "correcta": "C",
-    "justificacion": "BCNF (Boyce-Codd Normal Form) es una versión ligeramente más fuerte de la 3FN; una tabla en 3FN podría no cumplir BCNF si tiene claves candidatas solapadas."
-  },
-  {
-    "id": "db-dec-p25",
-    "pregunta": "BCNF es:",
-    "opciones": {
-      "A": "Inferior a 3FN",
-      "B": "Igual que 2FN",
-      "C": "Más estricta que 3FN",
-      "D": "Solo teórica"
-    },
-    "correcta": "C",
-    "justificacion": "BCNF es una forma normal superior que resuelve anomalías que la 3FN no puede manejar en ciertos casos específicos."
-  },
-  {
-    "id": "db-dec-p26",
-    "pregunta": "Una tabla cumple BCNF si:",
-    "opciones": {
-      "A": "No tiene FK",
-      "B": "Cada determinante es clave candidata",
-      "C": "No tiene PK compuesta",
-      "D": "Está normalizada"
-    },
-    "correcta": "B",
-    "justificacion": "La regla de BCNF establece que para cada dependencia funcional no trivial X -> Y, X debe ser una superclave."
-  },
-  {
-    "id": "db-dec-p27",
-    "pregunta": "Una desnormalización controlada se usa para:",
-    "opciones": {
-      "A": "Romper integridad",
-      "B": "Reducir coherencia",
-      "C": "Mejorar rendimiento",
-      "D": "Eliminar tablas"
-    },
-    "correcta": "C",
-    "justificacion": "A veces se introduce redundancia de forma deliberada para evitar uniones (joins) costosas y acelerar las consultas de lectura."
-  },
-  {
-    "id": "db-dec-p28",
-    "pregunta": "Un error común es pensar que:",
-    "opciones": {
-      "A": "Las FK son necesarias",
-      "B": "La normalización es útil",
-      "C": "Excel sustituye a un SGBD",
-      "D": "SQL es estándar"
-    },
-    "correcta": "C",
-    "justificacion": "Excel es una hoja de cálculo, no un sistema de gestión de bases de datos relacionales; carece de integridad referencial y escalabilidad para datos complejos."
-  },
-  {
-    "id": "db-dec-p29",
-    "pregunta": "Una base de datos bien diseñada es:",
-    "opciones": {
-      "A": "Rígida",
-      "B": "Difícil de mantener",
-      "C": "Coherente y escalable",
-      "D": "Dependiente del hardware"
-    },
-    "correcta": "C",
-    "justificacion": "Un buen diseño asegura que los datos sean precisos, consistentes y que el sistema pueda crecer sin problemas."
-  },
-  {
-    "id": "db-dec-p30",
-    "pregunta": "Regla fundamental en bases de datos:",
-    "opciones": {
-      "A": "Programar primero",
-      "B": "Priorizar integridad y coherencia",
-      "C": "Evitar claves",
-      "D": "Minimizar tablas"
-    },
-    "correcta": "B",
-    "justificacion": "La integridad de los datos es el aspecto más crítico; sin ella, la información almacenada pierde su valor y fiabilidad."
-  }
+    "unidades": [
 
+      {
+        "unidad": 1,
+        "titulo": "Fundamentos de bases de datos",
+        "fuentes": [
+          {
+            "fuente": "PROMETEO",
+            "preguntas": [
+              {
+                "id": "u1-prom-01",
+                "pregunta": "¿Por qué los sistemas basados en archivos tradicionales generaban problemas en la gestión de la información?",
+                "opciones": {
+                  "A": "Porque eran demasiado rápidos",
+                  "B": "Porque impedían el acceso a los datos",
+                  "C": "Porque producían redundancia y falta de coherencia entre los datos",
+                  "D": "Porque no permitían almacenar información"
+                },
+                "correcta": "C",
+                "justificacion": "Los sistemas de archivos tradicionales almacenaban los mismos datos en múltiples lugares, lo que generaba inconsistencias cuando se actualizaba la información en un lugar pero no en otros."
+              },
+              {
+                "id": "u1-prom-02",
+                "pregunta": "¿Cuál es la principal función de un Sistema Gestor de Bases de Datos (SGBD)?",
+                "opciones": {
+                  "A": "Ejecutar programas",
+                  "B": "Actuar como intermediario entre usuarios y datos, gestionando su almacenamiento y acceso",
+                  "C": "Crear sistemas operativos",
+                  "D": "Eliminar información automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "Un SGBD es el software que permite a los usuarios definir, crear, mantener y controlar el acceso a la base de datos."
+              },
+              {
+                "id": "u1-prom-03",
+                "pregunta": "En el diseño de bases de datos, ¿por qué es importante separar los datos de las aplicaciones que los utilizan?",
+                "opciones": {
+                  "A": "Para reducir el tamaño del software",
+                  "B": "Para mejorar la independencia y facilitar cambios sin afectar a las aplicaciones",
+                  "C": "Para eliminar el uso de SQL",
+                  "D": "Para evitar errores de compilación"
+                },
+                "correcta": "B",
+                "justificacion": "La independencia de datos permite modificar la estructura de almacenamiento o la estrategia de acceso sin tener que cambiar los programas de aplicación."
+              },
+              {
+                "id": "u1-prom-04",
+                "pregunta": "Una base de datos es:",
+                "opciones": {
+                  "A": "Un programa",
+                  "B": "Un conjunto de tablas sin relación",
+                  "C": "Un conjunto organizado de datos relacionados",
+                  "D": "Un sistema operativo"
+                },
+                "correcta": "C",
+                "justificacion": "Una base de datos es una colección organizada de información estructurada, típicamente almacenada electrónicamente en un sistema informático."
+              },
+              {
+                "id": "u1-prom-05",
+                "pregunta": "¿Qué problema resolvieron los SGBD frente a los ficheros planos?",
+                "opciones": {
+                  "A": "El coste",
+                  "B": "La duplicidad e inconsistencia de datos",
+                  "C": "El uso de SQL",
+                  "D": "La velocidad de Internet"
+                },
+                "correcta": "B",
+                "justificacion": "Los SGBD centralizan la gestión de datos, evitando que la misma información esté repetida y desactualizada en diferentes archivos."
+              },
+              {
+                "id": "u1-prom-06",
+                "pregunta": "¿Qué es un SGBD?",
+                "opciones": {
+                  "A": "Un lenguaje",
+                  "B": "Un modelo de datos",
+                  "C": "Un software para gestionar bases de datos",
+                  "D": "Una tabla"
+                },
+                "correcta": "C",
+                "justificacion": "SGBD (Sistema Gestor de Bases de Datos) es el software que interactúa con los usuarios, las aplicaciones y la propia base de datos para capturar y analizar datos."
+              },
+              {
+                "id": "u1-prom-07",
+                "pregunta": "El modelo relacional fue propuesto por:",
+                "opciones": {
+                  "A": "Bill Gates",
+                  "B": "Edgar F. Codd",
+                  "C": "Tim Berners-Lee",
+                  "D": "Oracle"
+                },
+                "correcta": "B",
+                "justificacion": "Edgar F. Codd propuso el modelo relacional en 1970 mientras trabajaba para IBM."
+              },
+              {
+                "id": "u1-prom-08",
+                "pregunta": "El modelo relacional organiza la información en:",
+                "opciones": {
+                  "A": "Árboles",
+                  "B": "Grafos",
+                  "C": "Tablas",
+                  "D": "Documentos"
+                },
+                "correcta": "C",
+                "justificacion": "En el modelo relacional, todos los datos se representan en términos de tuplas, agrupadas en relaciones (tablas)."
+              },
+              {
+                "id": "u1-prom-09",
+                "pregunta": "La arquitectura ANSI/SPARC se compone de:",
+                "opciones": {
+                  "A": "2 niveles",
+                  "B": "3 niveles",
+                  "C": "4 niveles",
+                  "D": "5 niveles"
+                },
+                "correcta": "B",
+                "justificacion": "Se compone de tres niveles: externo (vistas), conceptual (lógico) e interno (físico)."
+              },
+              {
+                "id": "u1-prom-10",
+                "pregunta": "El nivel externo de ANSI/SPARC representa:",
+                "opciones": {
+                  "A": "El almacenamiento físico",
+                  "B": "El modelo lógico global",
+                  "C": "Las vistas de usuario",
+                  "D": "Los índices"
+                },
+                "correcta": "C",
+                "justificacion": "El nivel externo describe la parte de la base de datos que es relevante para cada usuario o aplicación específica."
+              },
+              {
+                "id": "u1-prom-11",
+                "pregunta": "Un error común es pensar que:",
+                "opciones": {
+                  "A": "Las FK son necesarias",
+                  "B": "La normalización es útil",
+                  "C": "Excel sustituye a un SGBD",
+                  "D": "SQL es estándar"
+                },
+                "correcta": "C",
+                "justificacion": "Excel es una hoja de cálculo, no un sistema de gestión de bases de datos relacionales; carece de integridad referencial y escalabilidad para datos complejos."
+              }
+            ]
+          },
+          {
+            "fuente": "Claude AI",
+            "preguntas": [
+              {
+                "id": "u1-ai-01",
+                "pregunta": "¿Cuál de los siguientes es un ejemplo de base de datos NO relacional (NoSQL)?",
+                "opciones": {
+                  "A": "MySQL",
+                  "B": "PostgreSQL",
+                  "C": "MongoDB",
+                  "D": "Oracle Database"
+                },
+                "correcta": "C",
+                "justificacion": "MongoDB es una base de datos orientada a documentos que pertenece a la familia NoSQL, mientras que MySQL, PostgreSQL y Oracle son bases de datos relacionales."
+              },
+              {
+                "id": "u1-ai-02",
+                "pregunta": "¿Qué propiedad de un SGBD garantiza que los datos no se corrompan ante un fallo del sistema?",
+                "opciones": {
+                  "A": "Escalabilidad",
+                  "B": "Recuperación ante fallos",
+                  "C": "Portabilidad",
+                  "D": "Modularidad"
+                },
+                "correcta": "B",
+                "justificacion": "Los SGBD incluyen mecanismos de recuperación (logs, puntos de control) que permiten restaurar los datos a un estado consistente tras un fallo."
+              },
+              {
+                "id": "u1-ai-03",
+                "pregunta": "¿Qué nivel de la arquitectura ANSI/SPARC describe cómo se almacenan físicamente los datos en el disco?",
+                "opciones": {
+                  "A": "Nivel externo",
+                  "B": "Nivel conceptual",
+                  "C": "Nivel lógico",
+                  "D": "Nivel interno"
+                },
+                "correcta": "D",
+                "justificacion": "El nivel interno (o físico) describe la forma en que los datos son almacenados en los dispositivos de almacenamiento, incluyendo estructuras de ficheros e índices."
+              },
+              {
+                "id": "u1-ai-04",
+                "pregunta": "La independencia lógica de datos significa que:",
+                "opciones": {
+                  "A": "Se pueden cambiar los programas sin cambiar los datos",
+                  "B": "Se puede modificar el esquema conceptual sin afectar a las vistas externas",
+                  "C": "Se puede cambiar el almacenamiento físico sin cambiar el esquema lógico",
+                  "D": "Los datos son independientes del hardware"
+                },
+                "correcta": "B",
+                "justificacion": "La independencia lógica permite alterar el esquema conceptual (añadir tablas, cambiar relaciones) sin que las aplicaciones que usan vistas externas se vean afectadas."
+              },
+              {
+                "id": "u1-ai-05",
+                "pregunta": "¿Cuál de las siguientes NO es una ventaja de usar un SGBD frente a ficheros planos?",
+                "opciones": {
+                  "A": "Control de concurrencia",
+                  "B": "Mayor coste de implementación inicial",
+                  "C": "Integridad de datos",
+                  "D": "Control de acceso y seguridad"
+                },
+                "correcta": "B",
+                "justificacion": "El mayor coste inicial es una desventaja de los SGBD, no una ventaja. Las ventajas incluyen control de concurrencia, integridad y seguridad."
+              },
+              {
+                "id": "u1-ai-06",
+                "pregunta": "¿Qué rol del SGBD se encarga de definir el esquema global de la base de datos?",
+                "opciones": {
+                  "A": "Usuario final",
+                  "B": "Programador de aplicaciones",
+                  "C": "Administrador de la base de datos (DBA)",
+                  "D": "Operador del sistema"
+                },
+                "correcta": "C",
+                "justificacion": "El DBA (Database Administrator) es responsable de diseñar, implementar y mantener el esquema de la base de datos, así como de gestionar permisos y rendimiento."
+              },
+              {
+                "id": "u1-ai-07",
+                "pregunta": "¿Qué tipo de base de datos organiza los datos en una jerarquía de nodos padre-hijo?",
+                "opciones": {
+                  "A": "Base de datos relacional",
+                  "B": "Base de datos orientada a objetos",
+                  "C": "Base de datos jerárquica",
+                  "D": "Base de datos en red"
+                },
+                "correcta": "C",
+                "justificacion": "Las bases de datos jerárquicas organizan la información en una estructura de árbol donde cada registro tiene un único padre, como el modelo IMS de IBM."
+              },
+              {
+                "id": "u1-ai-08",
+                "pregunta": "¿Cuál es la diferencia entre datos e información en el contexto de las bases de datos?",
+                "opciones": {
+                  "A": "Son exactamente lo mismo",
+                  "B": "Los datos son hechos en bruto; la información son datos procesados con significado",
+                  "C": "La información se almacena y los datos se procesan",
+                  "D": "Los datos son más valiosos que la información"
+                },
+                "correcta": "B",
+                "justificacion": "Los datos son valores en bruto (ej. '25'), mientras que la información es el resultado de procesar esos datos para darles contexto y significado (ej. 'el cliente tiene 25 años')."
+              },
+              {
+                "id": "u1-ai-09",
+                "pregunta": "¿Qué característica define a una base de datos distribuida?",
+                "opciones": {
+                  "A": "Todos los datos están en un único servidor",
+                  "B": "Los datos están repartidos en múltiples nodos o ubicaciones físicas",
+                  "C": "Solo permite acceso de un usuario a la vez",
+                  "D": "No utiliza SQL"
+                },
+                "correcta": "B",
+                "justificacion": "Una base de datos distribuida almacena y gestiona datos en múltiples ubicaciones físicas o servidores, que cooperan para presentarse como un sistema único."
+              },
+              {
+                "id": "u1-ai-10",
+                "pregunta": "El catálogo del sistema (o diccionario de datos) de un SGBD contiene:",
+                "opciones": {
+                  "A": "Solo los datos de los usuarios",
+                  "B": "Los metadatos: información sobre la estructura y definición de la base de datos",
+                  "C": "Las copias de seguridad",
+                  "D": "Los índices únicamente"
+                },
+                "correcta": "B",
+                "justificacion": "El diccionario de datos almacena metadatos: nombres de tablas, columnas, tipos de datos, restricciones y relaciones definidas en la base de datos."
+              },
+              {
+                "id": "u1-ai-11",
+                "pregunta": "¿Cuál de los siguientes SGBD es de código abierto (open source)?",
+                "opciones": {
+                  "A": "Oracle Database",
+                  "B": "Microsoft SQL Server",
+                  "C": "PostgreSQL",
+                  "D": "IBM DB2"
+                },
+                "correcta": "C",
+                "justificacion": "PostgreSQL es un SGBD relacional de código abierto y gratuito, ampliamente utilizado y con soporte para estándares SQL avanzados."
+              },
+              {
+                "id": "u1-ai-12",
+                "pregunta": "¿Qué diferencia hay entre una base de datos OLTP y una OLAP?",
+                "opciones": {
+                  "A": "OLTP almacena más datos que OLAP",
+                  "B": "OLTP está optimizada para transacciones operacionales frecuentes; OLAP para análisis de grandes volúmenes de datos históricos",
+                  "C": "OLAP es más rápida en inserciones que OLTP",
+                  "D": "No hay diferencias relevantes entre ambas"
+                },
+                "correcta": "B",
+                "justificacion": "OLTP (Online Transaction Processing) gestiona operaciones del día a día (insertar pedidos, actualizar stock). OLAP (Online Analytical Processing) está diseñada para consultas complejas de análisis empresarial."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "unidad": 2,
+        "titulo": "Modelado conceptual con diagramas E-R",
+        "fuentes": [
+          {
+            "fuente": "PROMETEO",
+            "preguntas": [
+              {
+                "id": "u2-prom-01",
+                "pregunta": "En un modelo Entidad-Relación, ¿qué representa una entidad y por qué es fundamental en el diseño?",
+                "opciones": {
+                  "A": "Un tipo de dato",
+                  "B": "Un objeto del mundo real sobre el que queremos almacenar información",
+                  "C": "Una relación entre tablas",
+                  "D": "Un atributo"
+                },
+                "correcta": "B",
+                "justificacion": "Las entidades son los bloques básicos del modelo E-R y representan cosas u objetos (físicos o abstractos) que son relevantes para el sistema."
+              },
+              {
+                "id": "u2-prom-02",
+                "pregunta": "¿Qué diferencia existe entre una entidad y un atributo dentro de un modelo E-R?",
+                "opciones": {
+                  "A": "No hay diferencia",
+                  "B": "La entidad es un objeto y el atributo es una característica de ese objeto",
+                  "C": "El atributo es más importante",
+                  "D": "La entidad es una tabla"
+                },
+                "correcta": "B",
+                "justificacion": "Los atributos describen las propiedades de las entidades (por ejemplo, el nombre y la edad son atributos de la entidad Persona)."
+              },
+              {
+                "id": "u2-prom-03",
+                "pregunta": "En un diagrama E-R, ¿por qué es importante definir correctamente la cardinalidad de las relaciones?",
+                "opciones": {
+                  "A": "Para reducir el número de tablas",
+                  "B": "Porque determina cómo se relacionan los datos en la base de datos final",
+                  "C": "Porque elimina atributos",
+                  "D": "Porque evita usar claves"
+                },
+                "correcta": "B",
+                "justificacion": "La cardinalidad expresa el número de entidades a las que otra entidad puede estar asociada mediante una relación (1:1, 1:N, N:M)."
+              },
+              {
+                "id": "u2-prom-04",
+                "pregunta": "El modelo Entidad-Relación se usa para:",
+                "opciones": {
+                  "A": "Crear tablas físicas",
+                  "B": "Representar conceptualmente la realidad",
+                  "C": "Ejecutar consultas",
+                  "D": "Optimizar índices"
+                },
+                "correcta": "B",
+                "justificacion": "Es una herramienta para el modelado de datos que permite representar las entidades relevantes de un sistema y sus interrelaciones."
+              },
+              {
+                "id": "u2-prom-05",
+                "pregunta": "Una entidad representa:",
+                "opciones": {
+                  "A": "Un atributo",
+                  "B": "Una relación",
+                  "C": "Un objeto del mundo real",
+                  "D": "Una clave"
+                },
+                "correcta": "C",
+                "justificacion": "Una entidad es una cosa u objeto en el mundo real que es distinguible de todos los demás objetos."
+              },
+              {
+                "id": "u2-prom-06",
+                "pregunta": "En un diagrama E-R, las entidades se representan con:",
+                "opciones": {
+                  "A": "Óvalos",
+                  "B": "Rombos",
+                  "C": "Rectángulos",
+                  "D": "Flechas"
+                },
+                "correcta": "C",
+                "justificacion": "En la notación estándar de Chen, los rectángulos representan conjuntos de entidades."
+              },
+              {
+                "id": "u2-prom-07",
+                "pregunta": "Un atributo multivaluado:",
+                "opciones": {
+                  "A": "Cumple 1FN",
+                  "B": "Viola 1FN",
+                  "C": "Viola 2FN",
+                  "D": "Viola 3FN"
+                },
+                "correcta": "B",
+                "justificacion": "La Primera Forma Normal exige que cada atributo contenga solo valores atómicos; un atributo con múltiples valores rompe esta regla."
+              }
+            ]
+          },
+          {
+            "fuente": "Claude AI",
+            "preguntas": [
+              {
+                "id": "u2-ai-01",
+                "pregunta": "¿Cómo se representan los atributos en la notación de Chen para diagramas E-R?",
+                "opciones": {
+                  "A": "Rectángulos",
+                  "B": "Rombos",
+                  "C": "Óvalos o elipses",
+                  "D": "Triángulos"
+                },
+                "correcta": "C",
+                "justificacion": "En la notación de Chen, los atributos se representan mediante óvalos o elipses conectados a su entidad mediante líneas."
+              },
+              {
+                "id": "u2-ai-02",
+                "pregunta": "¿Qué es una entidad débil en un diagrama E-R?",
+                "opciones": {
+                  "A": "Una entidad sin atributos",
+                  "B": "Una entidad cuya existencia depende de otra entidad fuerte",
+                  "C": "Una entidad con muchos atributos",
+                  "D": "Una entidad sin relaciones"
+                },
+                "correcta": "B",
+                "justificacion": "Una entidad débil no tiene clave primaria propia y depende de una entidad fuerte para su identificación. Se representa con un rectángulo doble en la notación de Chen."
+              },
+              {
+                "id": "u2-ai-03",
+                "pregunta": "¿Qué símbolo se usa en la notación de Chen para representar una relación entre entidades?",
+                "opciones": {
+                  "A": "Rectángulo",
+                  "B": "Óvalo",
+                  "C": "Rombo",
+                  "D": "Círculo"
+                },
+                "correcta": "C",
+                "justificacion": "En la notación de Chen, las relaciones se representan con rombos conectados a las entidades participantes mediante líneas."
+              },
+              {
+                "id": "u2-ai-04",
+                "pregunta": "¿Qué es un atributo derivado en un modelo E-R?",
+                "opciones": {
+                  "A": "Un atributo que puede tener múltiples valores",
+                  "B": "Un atributo cuyo valor se calcula a partir de otros atributos",
+                  "C": "Un atributo que identifica únicamente a la entidad",
+                  "D": "Un atributo sin valor definido"
+                },
+                "correcta": "B",
+                "justificacion": "Un atributo derivado es aquel cuyo valor puede calcularse a partir de otros atributos (ej. la edad puede derivarse de la fecha de nacimiento). Se representa con un óvalo discontinuo."
+              },
+              {
+                "id": "u2-ai-05",
+                "pregunta": "¿Qué indica la participación total de una entidad en una relación?",
+                "opciones": {
+                  "A": "Que la entidad puede no participar en la relación",
+                  "B": "Que todos los miembros de esa entidad deben participar en la relación",
+                  "C": "Que la relación es N:M",
+                  "D": "Que la entidad tiene muchos atributos"
+                },
+                "correcta": "B",
+                "justificacion": "La participación total (representada con doble línea en Chen) indica que cada instancia de esa entidad debe estar asociada a al menos una instancia de la entidad relacionada."
+              },
+              {
+                "id": "u2-ai-06",
+                "pregunta": "En un diagrama E-R extendido (EER), ¿qué representa la especialización?",
+                "opciones": {
+                  "A": "La unión de varias entidades en una sola",
+                  "B": "La división de una entidad en subtipos más específicos",
+                  "C": "La eliminación de atributos redundantes",
+                  "D": "La creación de claves compuestas"
+                },
+                "correcta": "B",
+                "justificacion": "La especialización es un proceso top-down que consiste en definir subclases de una entidad (superclase) que heredan sus atributos y añaden los propios."
+              },
+              {
+                "id": "u2-ai-07",
+                "pregunta": "¿Qué es la generalización en el modelo E-R extendido?",
+                "opciones": {
+                  "A": "Dividir una entidad en subtipos",
+                  "B": "Combinar varias entidades con características comunes en una superentidad",
+                  "C": "Eliminar relaciones redundantes",
+                  "D": "Añadir atributos a una entidad"
+                },
+                "correcta": "B",
+                "justificacion": "La generalización es el proceso inverso a la especialización: se identifican características comunes de varias entidades y se crea una superentidad que las agrupa."
+              },
+              {
+                "id": "u2-ai-08",
+                "pregunta": "¿Qué es la clave discriminante de una entidad débil?",
+                "opciones": {
+                  "A": "La clave primaria de la entidad fuerte",
+                  "B": "Un atributo que distingue instancias de la entidad débil dentro de las asociadas a la misma entidad fuerte",
+                  "C": "Un atributo multivaluado",
+                  "D": "La clave foránea de la entidad débil"
+                },
+                "correcta": "B",
+                "justificacion": "El discriminante es el atributo que, combinado con la clave de la entidad fuerte, identifica de forma única a cada instancia de la entidad débil."
+              },
+              {
+                "id": "u2-ai-09",
+                "pregunta": "Una relación ternaria en un diagrama E-R involucra:",
+                "opciones": {
+                  "A": "Una sola entidad consigo misma",
+                  "B": "Dos entidades",
+                  "C": "Tres entidades simultáneamente",
+                  "D": "Solo atributos, sin entidades"
+                },
+                "correcta": "C",
+                "justificacion": "Una relación ternaria asocia tres conjuntos de entidades al mismo tiempo, siendo necesaria cuando la relación no puede descomponerse en relaciones binarias sin perder información."
+              },
+              {
+                "id": "u2-ai-10",
+                "pregunta": "¿Qué representa una relación reflexiva (o recursiva) en un modelo E-R?",
+                "opciones": {
+                  "A": "Una relación entre dos entidades distintas",
+                  "B": "Una relación entre instancias de la misma entidad",
+                  "C": "Una relación con cardinalidad 1:1",
+                  "D": "Una relación sin atributos"
+                },
+                "correcta": "B",
+                "justificacion": "Una relación reflexiva o recursiva asocia una entidad consigo misma (ej. un empleado puede ser supervisor de otro empleado de la misma tabla)."
+              },
+              {
+                "id": "u2-ai-11",
+                "pregunta": "En la notación crow's foot (pata de cuervo), ¿qué indica una línea con un círculo y una línea perpendicular en el extremo?",
+                "opciones": {
+                  "A": "Uno y solo uno",
+                  "B": "Cero o uno",
+                  "C": "Uno o muchos",
+                  "D": "Cero o muchos"
+                },
+                "correcta": "B",
+                "justificacion": "En crow's foot, el círculo representa 'cero' y la línea perpendicular representa 'uno', indicando que la participación es opcional (cero o uno)."
+              },
+              {
+                "id": "u2-ai-12",
+                "pregunta": "¿Cuál es la diferencia entre el modelo conceptual y el modelo lógico de una base de datos?",
+                "opciones": {
+                  "A": "El modelo conceptual usa SQL; el lógico usa E-R",
+                  "B": "El modelo conceptual es independiente del SGBD; el lógico está adaptado al modelo de datos del SGBD elegido",
+                  "C": "No hay diferencia entre ambos modelos",
+                  "D": "El modelo lógico describe el almacenamiento físico"
+                },
+                "correcta": "B",
+                "justificacion": "El modelo conceptual (E-R) es abstracto e independiente de la tecnología; el modelo lógico traduce ese diseño al modelo concreto del SGBD (relacional en la mayoría de los casos)."
+              },
+              {
+                "id": "u2-ai-13",
+                "pregunta": "¿Cuándo se dice que una relación tiene un atributo propio en el modelo E-R?",
+                "opciones": {
+                  "A": "Cuando la relación tiene cardinalidad 1:1",
+                  "B": "Cuando la propia relación tiene características que no pertenecen a ninguna de las entidades participantes",
+                  "C": "Cuando una entidad participa más de una vez",
+                  "D": "Cuando la relación es recursiva"
+                },
+                "correcta": "B",
+                "justificacion": "Un atributo de relación describe características de la asociación en sí misma. Por ejemplo, en la relación TRABAJA_EN entre Empleado y Proyecto, la 'fecha de incorporación' es un atributo de la relación, no de las entidades."
+              },
+              {
+                "id": "u2-ai-14",
+                "pregunta": "¿Qué es un conjunto de entidades en el modelo E-R?",
+                "opciones": {
+                  "A": "Una instancia concreta de una entidad",
+                  "B": "El tipo o clase de entidad, que agrupa todas las instancias con las mismas propiedades",
+                  "C": "La tabla física de la base de datos",
+                  "D": "Un atributo compuesto"
+                },
+                "correcta": "B",
+                "justificacion": "Un conjunto de entidades (entity set) es la colección de todas las instancias del mismo tipo de entidad (ej. todos los alumnos), equivalente al concepto de clase en programación orientada a objetos."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "unidad": 3,
+        "titulo": "Diseño lógico relacional",
+        "fuentes": [
+          {
+            "fuente": "PROMETEO",
+            "preguntas": [
+              {
+                "id": "u3-prom-01",
+                "pregunta": "¿Por qué la clave primaria es un elemento fundamental en una tabla?",
+                "opciones": {
+                  "A": "Porque reduce el tamaño",
+                  "B": "Porque identifica de forma única cada registro",
+                  "C": "Porque elimina errores automáticamente",
+                  "D": "Porque mejora el diseño visual"
+                },
+                "correcta": "B",
+                "justificacion": "La clave primaria garantiza que no haya dos filas iguales en una tabla y permite referenciar registros de forma inequívoca."
+              },
+              {
+                "id": "u3-prom-02",
+                "pregunta": "¿Qué papel desempeñan las claves foráneas en una base de datos relacional?",
+                "opciones": {
+                  "A": "Crear tablas",
+                  "B": "Relacionar tablas entre sí",
+                  "C": "Eliminar datos",
+                  "D": "Validar código"
+                },
+                "correcta": "B",
+                "justificacion": "Una clave foránea es un campo en una tabla que apunta a la clave primaria de otra tabla, estableciendo un vínculo entre ambas."
+              },
+              {
+                "id": "u3-prom-03",
+                "pregunta": "¿Cómo se implementa una relación N:M en un modelo relacional?",
+                "opciones": {
+                  "A": "Eliminándola",
+                  "B": "Creando una tabla intermedia con claves foráneas",
+                  "C": "Duplicando tablas",
+                  "D": "Ignorándola"
+                },
+                "correcta": "B",
+                "justificacion": "Las relaciones muchos-a-muchos se resuelven creando una tabla asociativa que contiene las claves primarias de las dos tablas relacionadas."
+              },
+              {
+                "id": "u3-prom-04",
+                "pregunta": "La clave primaria sirve para:",
+                "opciones": {
+                  "A": "Relacionar tablas",
+                  "B": "Identificar registros de forma única",
+                  "C": "Evitar claves foráneas",
+                  "D": "Crear vistas"
+                },
+                "correcta": "B",
+                "justificacion": "Una clave primaria es un campo o conjunto de campos que identifica de forma única cada fila de una tabla."
+              },
+              {
+                "id": "u3-prom-05",
+                "pregunta": "Una relación 1:N se implementa:",
+                "opciones": {
+                  "A": "Con una tabla intermedia",
+                  "B": "Con una FK en el lado N",
+                  "C": "Con una FK en el lado 1",
+                  "D": "Con una PK compuesta"
+                },
+                "correcta": "B",
+                "justificacion": "Para implementar una relación uno-a-muchos, se coloca la clave primaria de la entidad '1' como clave foránea en la tabla de la entidad 'N'."
+              },
+              {
+                "id": "u3-prom-06",
+                "pregunta": "Una relación N:M se transforma en:",
+                "opciones": {
+                  "A": "Una FK",
+                  "B": "Una vista",
+                  "C": "Una tabla intermedia",
+                  "D": "Un índice"
+                },
+                "correcta": "C",
+                "justificacion": "Las relaciones muchos-a-muchos no pueden representarse directamente en el modelo relacional y requieren una tabla adicional."
+              },
+              {
+                "id": "u3-prom-07",
+                "pregunta": "La tabla intermedia de una N:M contiene:",
+                "opciones": {
+                  "A": "Una PK simple",
+                  "B": "Solo atributos",
+                  "C": "Las PK de ambas entidades como FK",
+                  "D": "Datos duplicados"
+                },
+                "correcta": "C",
+                "justificacion": "La tabla intermedia vincula ambas entidades mediante sus respectivas claves primarias, que actúan como claves foráneas."
+              },
+              {
+                "id": "u3-prom-08",
+                "pregunta": "La integridad referencial garantiza que:",
+                "opciones": {
+                  "A": "No haya duplicados",
+                  "B": "Las FK apunten a valores existentes",
+                  "C": "Los datos estén ordenados",
+                  "D": "No existan NULL"
+                },
+                "correcta": "B",
+                "justificacion": "Asegura que las relaciones entre tablas permanezcan consistentes, impidiendo que una clave foránea apunte a un registro inexistente."
+              },
+              {
+                "id": "u3-prom-09",
+                "pregunta": "El diseño lógico consiste en:",
+                "opciones": {
+                  "A": "Crear el modelo E-R",
+                  "B": "Convertir el modelo E-R en tablas",
+                  "C": "Insertar datos",
+                  "D": "Optimizar consultas"
+                },
+                "correcta": "B",
+                "justificacion": "Es la fase donde el esquema conceptual (E-R) se traduce al esquema del modelo de datos que utiliza el SGBD, normalmente el relacional."
+              },
+              {
+                "id": "u3-prom-10",
+                "pregunta": "¿Qué representa una fila dentro de una tabla relacional?",
+                "opciones": {
+                  "A": "Columna",
+                  "B": "Registro",
+                  "C": "Tabla",
+                  "D": "Clave"
+                },
+                "correcta": "B",
+                "justificacion": "En el modelo relacional, una fila (o tupla) representa un registro individual que contiene los datos de una instancia específica de la entidad."
+              }
+            ]
+          },
+          {
+            "fuente": "Claude AI",
+            "preguntas": [
+              {
+                "id": "u3-ai-01",
+                "pregunta": "¿Qué es una clave candidata en el modelo relacional?",
+                "opciones": {
+                  "A": "Cualquier columna de la tabla",
+                  "B": "Un conjunto mínimo de atributos que identifica de forma única cada fila",
+                  "C": "La clave foránea de una tabla",
+                  "D": "Un índice secundario"
+                },
+                "correcta": "B",
+                "justificacion": "Una clave candidata es un atributo o conjunto mínimo de atributos que puede servir como clave primaria; de entre todas las candidatas se elige una como clave primaria."
+              },
+              {
+                "id": "u3-ai-02",
+                "pregunta": "¿Qué ocurre con una relación 1:1 al trasladarla al modelo relacional?",
+                "opciones": {
+                  "A": "Siempre se crea una tabla intermedia",
+                  "B": "La FK puede colocarse en cualquiera de las dos tablas, generalmente en la de participación total",
+                  "C": "Debe eliminarse siempre",
+                  "D": "Se convierte automáticamente en 1:N"
+                },
+                "correcta": "B",
+                "justificacion": "En una relación 1:1, la clave foránea puede ir en cualquiera de las dos tablas; se recomienda ponerla en la entidad con participación total para evitar valores NULL innecesarios."
+              },
+              {
+                "id": "u3-ai-03",
+                "pregunta": "¿Qué es una superclave en el modelo relacional?",
+                "opciones": {
+                  "A": "Un conjunto de atributos que identifica únicamente cada tupla, aunque no sea mínimo",
+                  "B": "Una clave primaria compuesta",
+                  "C": "Una clave foránea con valor único",
+                  "D": "Un índice de alto rendimiento"
+                },
+                "correcta": "A",
+                "justificacion": "Una superclave es cualquier conjunto de atributos que garantiza la unicidad de las filas, pero puede contener atributos redundantes. La clave candidata es la superclave mínima."
+              },
+              {
+                "id": "u3-ai-04",
+                "pregunta": "¿Qué acción implica ON DELETE CASCADE en una restricción de clave foránea?",
+                "opciones": {
+                  "A": "Impide el borrado del registro referenciado",
+                  "B": "Pone a NULL la FK al borrar el registro referenciado",
+                  "C": "Borra automáticamente los registros hijos al borrar el padre",
+                  "D": "No hace nada al borrar el registro referenciado"
+                },
+                "correcta": "C",
+                "justificacion": "Con ON DELETE CASCADE, al eliminar un registro en la tabla padre, todos los registros de la tabla hija que lo referencian se eliminan automáticamente."
+              },
+              {
+                "id": "u3-ai-05",
+                "pregunta": "¿Qué es una vista (VIEW) en una base de datos relacional?",
+                "opciones": {
+                  "A": "Una tabla física con sus propios datos almacenados",
+                  "B": "Una consulta almacenada que se comporta como una tabla virtual",
+                  "C": "Un índice para acelerar consultas",
+                  "D": "Una copia de seguridad de una tabla"
+                },
+                "correcta": "B",
+                "justificacion": "Una vista es una consulta SQL guardada que se presenta como una tabla virtual; no almacena datos propios, sino que los obtiene de las tablas base al ser consultada."
+              },
+              {
+                "id": "u3-ai-06",
+                "pregunta": "¿Para qué sirve un índice en una base de datos?",
+                "opciones": {
+                  "A": "Para almacenar datos duplicados",
+                  "B": "Para acelerar la búsqueda y recuperación de datos en una tabla",
+                  "C": "Para definir la estructura de las tablas",
+                  "D": "Para eliminar registros automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "Un índice es una estructura de datos que mejora la velocidad de las operaciones de consulta sobre una tabla, a costa de mayor espacio de almacenamiento y tiempos de escritura."
+              },
+              {
+                "id": "u3-ai-07",
+                "pregunta": "¿Cuál es el término formal para denominar las columnas de una tabla en el modelo relacional?",
+                "opciones": {
+                  "A": "Registros",
+                  "B": "Tuplas",
+                  "C": "Atributos",
+                  "D": "Esquemas"
+                },
+                "correcta": "C",
+                "justificacion": "En la terminología formal del modelo relacional, las columnas se denominan atributos, las filas son tuplas y las tablas son relaciones."
+              },
+              {
+                "id": "u3-ai-08",
+                "pregunta": "¿Qué es la integridad de entidad en el modelo relacional?",
+                "opciones": {
+                  "A": "Garantizar que las FK apunten a registros existentes",
+                  "B": "Garantizar que ningún atributo de la clave primaria tenga valor NULL",
+                  "C": "Garantizar que todos los datos sean únicos",
+                  "D": "Garantizar que las tablas tengan índices"
+                },
+                "correcta": "B",
+                "justificacion": "La integridad de entidad establece que ningún componente de la clave primaria puede ser nulo, ya que su propósito es identificar de forma única cada fila."
+              },
+              {
+                "id": "u3-ai-09",
+                "pregunta": "Al trasladar una entidad débil al modelo relacional, su clave primaria se forma por:",
+                "opciones": {
+                  "A": "Solo el discriminante de la entidad débil",
+                  "B": "La PK de la entidad fuerte más el discriminante de la entidad débil",
+                  "C": "Un identificador autogenerado únicamente",
+                  "D": "Los atributos de la entidad fuerte solamente"
+                },
+                "correcta": "B",
+                "justificacion": "La clave primaria de la tabla de una entidad débil se compone de la clave primaria de la entidad fuerte (como FK) más el discriminante propio de la entidad débil."
+              },
+              {
+                "id": "u3-ai-10",
+                "pregunta": "¿Qué es el grado de una relación en el modelo relacional?",
+                "opciones": {
+                  "A": "El número de filas de la tabla",
+                  "B": "El número de columnas (atributos) de la relación",
+                  "C": "El número de claves primarias",
+                  "D": "El número de claves foráneas"
+                },
+                "correcta": "B",
+                "justificacion": "El grado de una relación es el número de atributos (columnas) que tiene. La cardinalidad, en cambio, hace referencia al número de tuplas (filas)."
+              },
+              {
+                "id": "u3-ai-11",
+                "pregunta": "¿Qué diferencia hay entre una clave natural y una clave surrogate (subrogada)?",
+                "opciones": {
+                  "A": "La clave natural es siempre numérica; la surrogate es alfanumérica",
+                  "B": "La clave natural proviene del dominio del problema; la surrogate es un identificador artificial generado por el sistema",
+                  "C": "Son exactamente lo mismo",
+                  "D": "La clave surrogate siempre se prefiere por ser más corta"
+                },
+                "correcta": "B",
+                "justificacion": "Una clave natural tiene significado en el negocio (ej. DNI), mientras que una clave surrogate es un identificador artificial (ej. ID autonumérico) sin significado semántico propio."
+              },
+              {
+                "id": "u3-ai-12",
+                "pregunta": "¿Qué restricción de integridad impide que una fila de la tabla hija exista sin su correspondiente fila en la tabla padre?",
+                "opciones": {
+                  "A": "NOT NULL",
+                  "B": "UNIQUE",
+                  "C": "CHECK",
+                  "D": "FOREIGN KEY (clave foránea)"
+                },
+                "correcta": "D",
+                "justificacion": "La restricción de clave foránea (FOREIGN KEY) garantiza la integridad referencial, impidiendo que existan valores en la columna FK que no tengan correspondencia en la clave primaria de la tabla referenciada."
+              },
+              {
+                "id": "u3-ai-13",
+                "pregunta": "¿Qué es el álgebra relacional?",
+                "opciones": {
+                  "A": "El lenguaje de programación de los SGBD",
+                  "B": "Un conjunto de operaciones formales sobre relaciones que permiten consultar y manipular datos",
+                  "C": "El proceso de normalización de tablas",
+                  "D": "La estructura de almacenamiento física de los datos"
+                },
+                "correcta": "B",
+                "justificacion": "El álgebra relacional es un lenguaje formal procedural compuesto por operaciones (selección, proyección, unión, diferencia, producto cartesiano, etc.) que toman relaciones como entrada y devuelven relaciones."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "unidad": 4,
+        "titulo": "Normalización",
+        "fuentes": [
+          {
+            "fuente": "PROMETEO",
+            "preguntas": [
+              {
+                "id": "u4-prom-01",
+                "pregunta": "¿Cuál es el objetivo principal de la normalización en bases de datos?",
+                "opciones": {
+                  "A": "Aumentar el número de tablas",
+                  "B": "Reducir redundancia y mejorar integridad",
+                  "C": "Reducir código",
+                  "D": "Eliminar relaciones"
+                },
+                "correcta": "B",
+                "justificacion": "La normalización organiza los datos para minimizar la duplicidad y asegurar que las dependencias de datos tengan sentido lógico."
+              },
+              {
+                "id": "u4-prom-02",
+                "pregunta": "¿Qué caracteriza a la Primera Forma Normal (1FN)?",
+                "opciones": {
+                  "A": "Tablas grandes",
+                  "B": "Valores atómicos",
+                  "C": "Claves compuestas",
+                  "D": "Relaciones"
+                },
+                "correcta": "B",
+                "justificacion": "La 1FN exige que cada columna contenga valores atómicos (indivisibles) y que no haya grupos repetidos."
+              },
+              {
+                "id": "u4-prom-03",
+                "pregunta": "¿Qué problema elimina la Segunda Forma Normal (2FN)?",
+                "opciones": {
+                  "A": "Redundancia total",
+                  "B": "Dependencias parciales",
+                  "C": "Relaciones",
+                  "D": "Claves"
+                },
+                "correcta": "B",
+                "justificacion": "La 2FN requiere estar en 1FN y que todos los atributos no clave dependan de la clave primaria completa, no solo de una parte de ella."
+              },
+              {
+                "id": "u4-prom-04",
+                "pregunta": "¿Qué son las dependencias transitivas que elimina la 3FN?",
+                "opciones": {
+                  "A": "Dependencias directas",
+                  "B": "Dependencias indirectas entre atributos no clave",
+                  "C": "Claves",
+                  "D": "Relaciones"
+                },
+                "correcta": "B",
+                "justificacion": "La 3FN elimina situaciones donde un atributo no clave depende de otro atributo no clave en lugar de depender directamente de la clave primaria."
+              },
+              {
+                "id": "u4-prom-05",
+                "pregunta": "Normalizar una base de datos sirve para:",
+                "opciones": {
+                  "A": "Aumentar redundancia",
+                  "B": "Evitar anomalías",
+                  "C": "Reducir claves",
+                  "D": "Eliminar relaciones"
+                },
+                "correcta": "B",
+                "justificacion": "La normalización previene anomalías de inserción, actualización y borrado al organizar los datos de forma lógica."
+              },
+              {
+                "id": "u4-prom-06",
+                "pregunta": "La 1ª Forma Normal (1FN) exige:",
+                "opciones": {
+                  "A": "Claves compuestas",
+                  "B": "Valores atómicos",
+                  "C": "No dependencias transitivas",
+                  "D": "PK simples"
+                },
+                "correcta": "B",
+                "justificacion": "Una tabla está en 1FN si todos sus atributos son atómicos y no hay grupos repetitivos."
+              },
+              {
+                "id": "u4-prom-07",
+                "pregunta": "La 2ª Forma Normal (2FN) elimina:",
+                "opciones": {
+                  "A": "Listas",
+                  "B": "Dependencias transitivas",
+                  "C": "Dependencias parciales",
+                  "D": "Claves foráneas"
+                },
+                "correcta": "C",
+                "justificacion": "La 2FN elimina las dependencias de atributos no clave respecto a solo una parte de la clave primaria (en claves compuestas)."
+              },
+              {
+                "id": "u4-prom-08",
+                "pregunta": "La 3ª Forma Normal (3FN) elimina:",
+                "opciones": {
+                  "A": "Dependencias parciales",
+                  "B": "Dependencias transitivas",
+                  "C": "Valores atómicos",
+                  "D": "PK compuestas"
+                },
+                "correcta": "B",
+                "justificacion": "La 3FN elimina las dependencias entre atributos que no forman parte de la clave primaria."
+              },
+              {
+                "id": "u4-prom-09",
+                "pregunta": "Una dependencia transitiva ocurre cuando:",
+                "opciones": {
+                  "A": "Un atributo depende de la PK",
+                  "B": "Un atributo depende de otro no clave",
+                  "C": "Hay FK",
+                  "D": "Hay una N:M"
+                },
+                "correcta": "B",
+                "justificacion": "Ocurre cuando un atributo A depende de B, y B depende de la clave primaria, por lo que A depende indirectamente de la clave."
+              },
+              {
+                "id": "u4-prom-10",
+                "pregunta": "Una tabla en 3FN:",
+                "opciones": {
+                  "A": "Siempre cumple BCNF",
+                  "B": "Nunca cumple BCNF",
+                  "C": "Puede no cumplir BCNF",
+                  "D": "No tiene dependencias"
+                },
+                "correcta": "C",
+                "justificacion": "BCNF es una versión ligeramente más fuerte de la 3FN; una tabla en 3FN podría no cumplir BCNF si tiene claves candidatas solapadas."
+              },
+              {
+                "id": "u4-prom-11",
+                "pregunta": "BCNF es:",
+                "opciones": {
+                  "A": "Inferior a 3FN",
+                  "B": "Igual que 2FN",
+                  "C": "Más estricta que 3FN",
+                  "D": "Solo teórica"
+                },
+                "correcta": "C",
+                "justificacion": "BCNF es una forma normal superior que resuelve anomalías que la 3FN no puede manejar en ciertos casos específicos."
+              },
+              {
+                "id": "u4-prom-12",
+                "pregunta": "Una tabla cumple BCNF si:",
+                "opciones": {
+                  "A": "No tiene FK",
+                  "B": "Cada determinante es clave candidata",
+                  "C": "No tiene PK compuesta",
+                  "D": "Está normalizada"
+                },
+                "correcta": "B",
+                "justificacion": "La regla de BCNF establece que para cada dependencia funcional no trivial X -> Y, X debe ser una superclave."
+              },
+              {
+                "id": "u4-prom-13",
+                "pregunta": "Una desnormalización controlada se usa para:",
+                "opciones": {
+                  "A": "Romper integridad",
+                  "B": "Reducir coherencia",
+                  "C": "Mejorar rendimiento",
+                  "D": "Eliminar tablas"
+                },
+                "correcta": "C",
+                "justificacion": "A veces se introduce redundancia de forma deliberada para evitar uniones (joins) costosas y acelerar las consultas de lectura."
+              }
+            ]
+          },
+          {
+            "fuente": "Claude AI",
+            "preguntas": [
+              {
+                "id": "u4-ai-01",
+                "pregunta": "¿Qué tipo de anomalía ocurre cuando no podemos insertar un dato sin que exista otro dato relacionado?",
+                "opciones": {
+                  "A": "Anomalía de actualización",
+                  "B": "Anomalía de borrado",
+                  "C": "Anomalía de inserción",
+                  "D": "Anomalía de integridad"
+                },
+                "correcta": "C",
+                "justificacion": "La anomalía de inserción ocurre cuando no se puede añadir un hecho sin añadir otro innecesario (ej. no poder registrar un curso si aún no tiene alumnos matriculados)."
+              },
+              {
+                "id": "u4-ai-02",
+                "pregunta": "¿Qué es una dependencia funcional en el contexto de la normalización?",
+                "opciones": {
+                  "A": "Una restricción que impide valores nulos",
+                  "B": "Una relación donde el valor de un atributo determina el valor de otro",
+                  "C": "Una clave foránea entre dos tablas",
+                  "D": "Un índice sobre una columna"
+                },
+                "correcta": "B",
+                "justificacion": "Existe una dependencia funcional A → B cuando para cada valor de A hay exactamente un valor de B; es decir, A determina funcionalmente a B."
+              },
+              {
+                "id": "u4-ai-03",
+                "pregunta": "¿En qué Forma Normal se encuentran la mayoría de las bases de datos en producción como mínimo aceptable?",
+                "opciones": {
+                  "A": "1FN",
+                  "B": "2FN",
+                  "C": "3FN",
+                  "D": "4FN"
+                },
+                "correcta": "C",
+                "justificacion": "La Tercera Forma Normal (3FN) se considera el estándar mínimo aceptable para bases de datos en producción, ya que elimina las redundancias más comunes."
+              },
+              {
+                "id": "u4-ai-04",
+                "pregunta": "¿Qué elimina la Cuarta Forma Normal (4FN)?",
+                "opciones": {
+                  "A": "Dependencias parciales",
+                  "B": "Dependencias transitivas",
+                  "C": "Dependencias multivaluadas",
+                  "D": "Claves candidatas solapadas"
+                },
+                "correcta": "C",
+                "justificacion": "La 4FN trata las dependencias multivaluadas: ocurren cuando un atributo puede tener múltiples valores independientes para un mismo valor de otro atributo."
+              },
+              {
+                "id": "u4-ai-05",
+                "pregunta": "¿La 2FN es aplicable cuando la clave primaria es simple (un solo atributo)?",
+                "opciones": {
+                  "A": "Sí, siempre se aplica igual",
+                  "B": "No, las dependencias parciales solo pueden existir con claves primarias compuestas",
+                  "C": "Sí, pero solo si hay valores nulos",
+                  "D": "No, porque la 2FN solo aplica a tablas de gran tamaño"
+                },
+                "correcta": "B",
+                "justificacion": "Las dependencias parciales requieren una clave primaria compuesta; si la PK es un único atributo, cualquier tabla en 1FN ya cumple automáticamente la 2FN."
+              },
+              {
+                "id": "u4-ai-06",
+                "pregunta": "¿Cuál de las siguientes situaciones viola la Primera Forma Normal?",
+                "opciones": {
+                  "A": "Una tabla con una clave primaria compuesta",
+                  "B": "Una columna que almacena una lista de teléfonos separados por comas",
+                  "C": "Una tabla con clave foránea",
+                  "D": "Una tabla con valores nulos en columnas opcionales"
+                },
+                "correcta": "B",
+                "justificacion": "Almacenar múltiples valores en una sola celda (como 'tel1, tel2, tel3') viola la atomicidad exigida por la 1FN."
+              },
+              {
+                "id": "u4-ai-07",
+                "pregunta": "¿Qué es el cierre (clausura) de un conjunto de atributos en la teoría de dependencias funcionales?",
+                "opciones": {
+                  "A": "El conjunto de todas las claves candidatas",
+                  "B": "El conjunto de todos los atributos que pueden determinarse a partir de un conjunto dado de atributos aplicando las dependencias funcionales",
+                  "C": "La lista de todas las tablas de la base de datos",
+                  "D": "El conjunto de todas las dependencias funcionales de la base de datos"
+                },
+                "correcta": "B",
+                "justificacion": "La clausura de un conjunto de atributos X (X+) es el conjunto de todos los atributos que se pueden derivar de X usando las dependencias funcionales existentes."
+              },
+              {
+                "id": "u4-ai-08",
+                "pregunta": "¿Cuándo se produce una anomalía de borrado en una base de datos no normalizada?",
+                "opciones": {
+                  "A": "Cuando se borra una tabla entera",
+                  "B": "Cuando al eliminar un registro se pierde información no relacionada que estaba almacenada junto a él",
+                  "C": "Cuando se borra un índice",
+                  "D": "Cuando una FK queda huérfana"
+                },
+                "correcta": "B",
+                "justificacion": "La anomalía de borrado ocurre cuando eliminar un registro hace que se pierda accidentalmente información sobre otro hecho diferente almacenado en la misma fila."
+              },
+              {
+                "id": "u4-ai-09",
+                "pregunta": "¿Cuál de las siguientes afirmaciones sobre la normalización es FALSA?",
+                "opciones": {
+                  "A": "Reduce la redundancia de datos",
+                  "B": "Puede aumentar el número de tablas necesarias",
+                  "C": "Siempre mejora el rendimiento de las consultas de lectura",
+                  "D": "Ayuda a mantener la integridad de los datos"
+                },
+                "correcta": "C",
+                "justificacion": "La normalización puede empeorar el rendimiento de lectura al requerir más JOINs entre tablas; por eso en algunos sistemas OLAP se aplica desnormalización deliberada."
+              },
+              {
+                "id": "u4-ai-10",
+                "pregunta": "¿Qué son los axiomas de Armstrong en la teoría de normalización?",
+                "opciones": {
+                  "A": "Las reglas para crear claves primarias",
+                  "B": "Un conjunto de reglas de inferencia para derivar todas las dependencias funcionales de una relación",
+                  "C": "Las formas normales definidas por Codd",
+                  "D": "Las reglas de integridad referencial del modelo relacional"
+                },
+                "correcta": "B",
+                "justificacion": "Los axiomas de Armstrong (reflexividad, aumento y transitividad) son un conjunto completo y correcto de reglas de inferencia para deducir todas las dependencias funcionales válidas."
+              },
+              {
+                "id": "u4-ai-11",
+                "pregunta": "Una anomalía de actualización en una base de datos no normalizada se produce cuando:",
+                "opciones": {
+                  "A": "No se puede insertar un registro nuevo",
+                  "B": "Hay que modificar el mismo dato en múltiples filas para mantener la coherencia",
+                  "C": "Se borra accidentalmente información importante",
+                  "D": "La clave primaria tiene valor nulo"
+                },
+                "correcta": "B",
+                "justificacion": "La anomalía de actualización surge de la redundancia: si un dato está repetido en varias filas y se actualiza en unas pero no en otras, la base de datos queda en un estado inconsistente."
+              },
+              {
+                "id": "u4-ai-12",
+                "pregunta": "¿Cuál es la diferencia entre una dependencia funcional trivial y una no trivial?",
+                "opciones": {
+                  "A": "Una trivial involucra claves foráneas; la no trivial, claves primarias",
+                  "B": "Una dependencia X → Y es trivial si Y es subconjunto de X; no trivial si Y no está contenido en X",
+                  "C": "Las triviales son las que cumplen BCNF; las no triviales no",
+                  "D": "No existe esa distinción en la teoría relacional"
+                },
+                "correcta": "B",
+                "justificacion": "Una dependencia funcional es trivial cuando el conjunto de atributos del lado derecho está incluido en el del izquierdo (ej. {A, B} → A). Las formas normales se preocupan de las dependencias no triviales."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "unidad": 5,
+        "titulo": "Lenguaje SQL – DDL y DML",
+        "fuentes": [
+          {
+            "fuente": "PROMETEO",
+            "total_preguntas": 7,
+            "preguntas": [
+              {
+                "id": "u5-prom-01",
+                "pregunta": "¿Qué tipo de lenguaje es SQL y qué implica esto?",
+                "opciones": {
+                  "A": "Imperativo",
+                  "B": "Declarativo",
+                  "C": "Binario",
+                  "D": "Compilado"
+                },
+                "correcta": "B",
+                "justificacion": "SQL es declarativo porque el usuario especifica qué datos quiere obtener, no cómo debe el sistema proceder para encontrarlos."
+              },
+              {
+                "id": "u5-prom-02",
+                "pregunta": "¿Qué diferencia hay entre DDL y DML en SQL?",
+                "opciones": {
+                  "A": "Ninguna",
+                  "B": "DDL define estructura y DML manipula datos",
+                  "C": "DML crea tablas",
+                  "D": "DDL elimina datos"
+                },
+                "correcta": "B",
+                "justificacion": "DDL (Data Definition Language) se usa para crear/alterar tablas, y DML (Data Manipulation Language) para insertar, consultar o actualizar registros."
+              },
+              {
+                "id": "u5-prom-03",
+                "pregunta": "¿Por qué es importante definir correctamente los tipos de datos en SQL?",
+                "opciones": {
+                  "A": "Para decorar la base de datos",
+                  "B": "Para evitar errores y optimizar el almacenamiento",
+                  "C": "Para compilar el código",
+                  "D": "Para ejecutar el servidor"
+                },
+                "correcta": "B",
+                "justificacion": "Elegir el tipo de dato adecuado (INT, VARCHAR, DATE, etc.) asegura la integridad de los datos y hace que la base de datos sea más eficiente."
+              },
+              {
+                "id": "u5-prom-04",
+                "pregunta": "¿Qué garantiza la restricción NOT NULL?",
+                "opciones": {
+                  "A": "Valores únicos",
+                  "B": "Campo obligatorio",
+                  "C": "Relación entre tablas",
+                  "D": "Eliminación automática"
+                },
+                "correcta": "B",
+                "justificacion": "La restricción NOT NULL impide que se inserten valores nulos en una columna, obligando a que siempre tenga un valor."
+              },
+              {
+                "id": "u5-prom-05",
+                "pregunta": "¿Por qué UNIQUE evita errores en una base de datos?",
+                "opciones": {
+                  "A": "Porque elimina datos",
+                  "B": "Porque evita duplicados",
+                  "C": "Porque crea tablas",
+                  "D": "Porque valida código"
+                },
+                "correcta": "B",
+                "justificacion": "La restricción UNIQUE asegura que todos los valores de una columna sean diferentes entre sí, evitando duplicidad de información sensible."
+              },
+              {
+                "id": "u5-prom-06",
+                "pregunta": "¿Qué función tiene la restricción CHECK en SQL?",
+                "opciones": {
+                  "A": "Validar reglas o condiciones sobre los datos",
+                  "B": "Crear tablas",
+                  "C": "Eliminar datos",
+                  "D": "Insertar datos"
+                },
+                "correcta": "A",
+                "justificacion": "CHECK permite especificar una condición que cada fila de la tabla debe cumplir (por ejemplo, que la edad sea mayor de 18)."
+              },
+              {
+                "id": "u5-prom-07",
+                "pregunta": "SQL se utiliza principalmente para:",
+                "opciones": {
+                  "A": "Diseñar interfaces gráficas",
+                  "B": "Gestionar y consultar bases de datos",
+                  "C": "Crear diagramas E-R",
+                  "D": "Programar servidores web"
+                },
+                "correcta": "B",
+                "justificacion": "SQL (Structured Query Language) es el lenguaje estándar para comunicarse con sistemas de gestión de bases de datos relacionales."
+              }
+            ]
+          },
+          {
+            "fuente": "Claude AI",
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u5-ai-01",
+                "pregunta": "¿Cuál de los siguientes comandos SQL pertenece al DDL?",
+                "opciones": {
+                  "A": "SELECT",
+                  "B": "INSERT",
+                  "C": "ALTER TABLE",
+                  "D": "UPDATE"
+                },
+                "correcta": "C",
+                "justificacion": "ALTER TABLE es un comando DDL que modifica la estructura de una tabla existente (añadir/eliminar columnas, cambiar tipos de datos, etc.)."
+              },
+              {
+                "id": "u5-ai-02",
+                "pregunta": "¿Qué hace la cláusula GROUP BY en una consulta SQL?",
+                "opciones": {
+                  "A": "Ordena los resultados de la consulta",
+                  "B": "Filtra filas antes del agrupamiento",
+                  "C": "Agrupa filas con el mismo valor para aplicar funciones de agregado",
+                  "D": "Une dos tablas por un campo común"
+                },
+                "correcta": "C",
+                "justificacion": "GROUP BY agrupa las filas que tienen el mismo valor en las columnas especificadas, permitiendo aplicar funciones de agregado (SUM, COUNT, AVG, etc.) a cada grupo."
+              },
+              {
+                "id": "u5-ai-03",
+                "pregunta": "¿Cuál es la diferencia entre WHERE y HAVING en SQL?",
+                "opciones": {
+                  "A": "No hay diferencia; son sinónimos",
+                  "B": "WHERE filtra filas antes del agrupamiento; HAVING filtra grupos después del GROUP BY",
+                  "C": "HAVING filtra filas individuales; WHERE filtra grupos",
+                  "D": "WHERE solo funciona con SELECT; HAVING con DELETE"
+                },
+                "correcta": "B",
+                "justificacion": "WHERE se aplica a filas individuales antes de agrupar. HAVING se aplica a los grupos resultantes del GROUP BY, permitiendo filtrar por condiciones sobre funciones de agregado."
+              },
+              {
+                "id": "u5-ai-04",
+                "pregunta": "¿Qué tipo de JOIN devuelve todas las filas de ambas tablas, con NULL donde no hay coincidencia?",
+                "opciones": {
+                  "A": "INNER JOIN",
+                  "B": "LEFT JOIN",
+                  "C": "RIGHT JOIN",
+                  "D": "FULL OUTER JOIN"
+                },
+                "correcta": "D",
+                "justificacion": "FULL OUTER JOIN devuelve todas las filas de ambas tablas; donde no existe correspondencia en alguno de los lados, los campos de esa tabla aparecen como NULL."
+              },
+              {
+                "id": "u5-ai-05",
+                "pregunta": "¿Qué hace el comando TRUNCATE TABLE en SQL?",
+                "opciones": {
+                  "A": "Elimina la tabla y su estructura",
+                  "B": "Elimina todas las filas de la tabla de forma rápida sin registrar cada borrado individualmente",
+                  "C": "Elimina solo las filas que cumplen una condición WHERE",
+                  "D": "Renombra la tabla"
+                },
+                "correcta": "B",
+                "justificacion": "TRUNCATE TABLE borra todos los datos de la tabla de manera muy eficiente; a diferencia de DELETE sin WHERE, no genera un log por cada fila y normalmente no puede deshacerse fácilmente con ROLLBACK."
+              },
+              {
+                "id": "u5-ai-06",
+                "pregunta": "¿Qué es una subconsulta (subquery) en SQL?",
+                "opciones": {
+                  "A": "Una consulta guardada como vista",
+                  "B": "Una consulta anidada dentro de otra consulta",
+                  "C": "Una consulta que usa GROUP BY",
+                  "D": "Una consulta que siempre devuelve un único valor"
+                },
+                "correcta": "B",
+                "justificacion": "Una subconsulta es una sentencia SELECT incluida dentro de otra sentencia SQL (SELECT, INSERT, UPDATE o DELETE) que proporciona datos para la consulta exterior."
+              },
+              {
+                "id": "u5-ai-07",
+                "pregunta": "¿Para qué se utiliza la función COUNT(*) en SQL?",
+                "opciones": {
+                  "A": "Suma los valores de una columna numérica",
+                  "B": "Calcula el promedio de una columna",
+                  "C": "Cuenta el número total de filas en un resultado o grupo",
+                  "D": "Devuelve el valor máximo de una columna"
+                },
+                "correcta": "C",
+                "justificacion": "COUNT(*) cuenta todas las filas del resultado, incluyendo aquellas con valores NULL. COUNT(columna) cuenta solo las filas con valor no nulo en esa columna."
+              },
+              {
+                "id": "u5-ai-08",
+                "pregunta": "¿Qué hace la cláusula ORDER BY DESC en una consulta SQL?",
+                "opciones": {
+                  "A": "Ordena los resultados en orden ascendente",
+                  "B": "Ordena los resultados en orden descendente",
+                  "C": "Elimina duplicados del resultado",
+                  "D": "Agrupa los resultados por columna"
+                },
+                "correcta": "B",
+                "justificacion": "ORDER BY ordena el resultado de la consulta; DESC indica orden descendente (de mayor a menor o de Z a A). ASC es el orden ascendente por defecto."
+              },
+              {
+                "id": "u5-ai-09",
+                "pregunta": "¿Qué hace la sentencia ROLLBACK en SQL?",
+                "opciones": {
+                  "A": "Guarda permanentemente los cambios de una transacción",
+                  "B": "Deshace todos los cambios realizados desde el inicio de la transacción actual",
+                  "C": "Elimina todas las tablas de la base de datos",
+                  "D": "Crea un punto de guardado en la transacción"
+                },
+                "correcta": "B",
+                "justificacion": "ROLLBACK revierte todos los cambios realizados en la transacción actual, restaurando la base de datos al estado previo al inicio de dicha transacción."
+              },
+              {
+                "id": "u5-ai-10",
+                "pregunta": "¿Qué devuelve un INNER JOIN entre dos tablas?",
+                "opciones": {
+                  "A": "Todas las filas de la tabla izquierda",
+                  "B": "Solo las filas que tienen correspondencia en ambas tablas",
+                  "C": "Todas las filas de ambas tablas",
+                  "D": "Solo las filas sin correspondencia en ninguna de las dos tablas"
+                },
+                "correcta": "B",
+                "justificacion": "INNER JOIN devuelve únicamente las filas donde existe coincidencia en la condición de unión en ambas tablas; las filas sin correspondencia se excluyen del resultado."
+              },
+              {
+                "id": "u5-ai-11",
+                "pregunta": "¿Cuál es la función de la cláusula DISTINCT en un SELECT?",
+                "opciones": {
+                  "A": "Ordenar los resultados",
+                  "B": "Eliminar filas duplicadas del resultado",
+                  "C": "Filtrar filas por condición",
+                  "D": "Agrupar filas por columna"
+                },
+                "correcta": "B",
+                "justificacion": "DISTINCT elimina las filas duplicadas del resultado de la consulta, devolviendo solo valores únicos para las columnas especificadas."
+              },
+              {
+                "id": "u5-ai-12",
+                "pregunta": "¿Qué comando SQL se usa para modificar datos existentes en una tabla?",
+                "opciones": {
+                  "A": "INSERT",
+                  "B": "ALTER",
+                  "C": "UPDATE",
+                  "D": "MODIFY"
+                },
+                "correcta": "C",
+                "justificacion": "UPDATE modifica los valores de una o más columnas en las filas que cumplen la condición especificada en la cláusula WHERE."
+              },
+              {
+                "id": "u5-ai-13",
+                "pregunta": "¿Qué hace el operador LIKE en SQL?",
+                "opciones": {
+                  "A": "Compara valores exactos entre dos columnas",
+                  "B": "Realiza búsquedas de patrones en cadenas de texto usando comodines",
+                  "C": "Compara si un valor está dentro de un rango numérico",
+                  "D": "Une dos tablas por un campo común"
+                },
+                "correcta": "B",
+                "justificacion": "LIKE permite buscar patrones en cadenas usando '%' (cualquier secuencia de caracteres) y '_' (un único carácter cualquiera). Ej: WHERE nombre LIKE 'A%'."
+              },
+              {
+                "id": "u5-ai-14",
+                "pregunta": "¿Qué es un procedimiento almacenado (stored procedure) en SQL?",
+                "opciones": {
+                  "A": "Una vista que almacena resultados de consultas",
+                  "B": "Un conjunto de instrucciones SQL guardadas en el servidor y ejecutadas como una unidad",
+                  "C": "Un tipo de índice de acceso rápido",
+                  "D": "Una copia de seguridad automática de una tabla"
+                },
+                "correcta": "B",
+                "justificacion": "Un procedimiento almacenado es un programa SQL precompilado que reside en el servidor de base de datos, puede recibir parámetros y ejecutar lógica compleja reutilizable."
+              },
+              {
+                "id": "u5-ai-15",
+                "pregunta": "¿Qué es un trigger (disparador) en SQL?",
+                "opciones": {
+                  "A": "Un tipo de restricción de integridad referencial",
+                  "B": "Un procedimiento que se ejecuta automáticamente ante ciertos eventos como INSERT, UPDATE o DELETE",
+                  "C": "Una consulta programada para ejecutarse periódicamente",
+                  "D": "Un índice que se actualiza automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "Un trigger es un bloque de código SQL que se dispara automáticamente cuando ocurre un evento específico (inserción, actualización o borrado) en una tabla."
+              },
+              {
+                "id": "u5-ai-16",
+                "pregunta": "¿Qué sentencia SQL se usa para añadir filas nuevas a una tabla?",
+                "opciones": {
+                  "A": "UPDATE",
+                  "B": "ADD",
+                  "C": "INSERT INTO",
+                  "D": "CREATE ROW"
+                },
+                "correcta": "C",
+                "justificacion": "INSERT INTO es el comando DML que añade una o varias filas nuevas a una tabla existente especificando las columnas y sus valores."
+              },
+              {
+                "id": "u5-ai-17",
+                "pregunta": "¿Qué hace el operador IN en una cláusula WHERE de SQL?",
+                "opciones": {
+                  "A": "Comprueba si un valor está dentro de un rango numérico",
+                  "B": "Comprueba si un valor coincide con alguno de los valores de una lista o subconsulta",
+                  "C": "Combina dos condiciones con AND",
+                  "D": "Comprueba si un valor existe en otra tabla"
+                },
+                "correcta": "B",
+                "justificacion": "El operador IN permite filtrar filas comprobando si el valor de una columna coincide con alguno de los valores de una lista (ej. WHERE pais IN ('España', 'Francia', 'Italia'))."
+              },
+              {
+                "id": "u5-ai-18",
+                "pregunta": "¿Cuál es la diferencia entre DELETE y DROP TABLE en SQL?",
+                "opciones": {
+                  "A": "No hay diferencia; ambas eliminan la tabla completamente",
+                  "B": "DELETE elimina filas de datos; DROP TABLE elimina la tabla completa con su estructura",
+                  "C": "DROP TABLE elimina filas; DELETE elimina la tabla",
+                  "D": "DELETE es DDL; DROP TABLE es DML"
+                },
+                "correcta": "B",
+                "justificacion": "DELETE (DML) borra una o varias filas de datos conservando la estructura de la tabla. DROP TABLE (DDL) elimina la tabla entera, incluyendo su definición y todos sus datos."
+              },
+              {
+                "id": "u5-ai-19",
+                "pregunta": "¿Qué hace la sentencia COMMIT en el contexto de las transacciones SQL?",
+                "opciones": {
+                  "A": "Inicia una nueva transacción",
+                  "B": "Deshace los cambios de la transacción actual",
+                  "C": "Confirma y guarda permanentemente todos los cambios de la transacción",
+                  "D": "Crea un punto de guardado dentro de la transacción"
+                },
+                "correcta": "C",
+                "justificacion": "COMMIT finaliza la transacción actual y hace permanentes todos los cambios realizados en ella. Después de un COMMIT, los cambios no pueden revertirse con ROLLBACK."
+              },
+              {
+                "id": "u5-ai-20",
+                "pregunta": "¿Qué función SQL devuelve el valor promedio de una columna numérica?",
+                "opciones": {
+                  "A": "SUM()",
+                  "B": "MAX()",
+                  "C": "COUNT()",
+                  "D": "AVG()"
+                },
+                "correcta": "D",
+                "justificacion": "AVG() es la función de agregado SQL que calcula la media aritmética de los valores no nulos de una columna numérica."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unidad": 6,
+        "titulo": "Administración de bases de datos",
+        "fuentes": [
+          {
+            "fuente": "PROMETEO",
+            "total_preguntas": 2,
+            "preguntas": [
+              {
+                "id": "u6-prom-01",
+                "pregunta": "Una base de datos bien diseñada es:",
+                "opciones": {
+                  "A": "Rígida y difícil de modificar",
+                  "B": "Difícil de mantener a largo plazo",
+                  "C": "Coherente y escalable",
+                  "D": "Dependiente del hardware subyacente"
+                },
+                "correcta": "C",
+                "justificacion": "Un buen diseño asegura que los datos sean precisos, consistentes y que el sistema pueda crecer sin problemas."
+              },
+              {
+                "id": "u6-prom-02",
+                "pregunta": "La regla fundamental en bases de datos es:",
+                "opciones": {
+                  "A": "Programar primero y diseñar después",
+                  "B": "Priorizar integridad y coherencia de los datos",
+                  "C": "Evitar el uso de claves primarias",
+                  "D": "Minimizar el número de tablas"
+                },
+                "correcta": "B",
+                "justificacion": "La integridad de los datos es el aspecto más crítico; sin ella, la información almacenada pierde su valor y fiabilidad."
+              }
+            ]
+          },
+          {
+            "fuente": "Claude AI",
+            "total_preguntas": 18,
+            "preguntas": [
+              {
+                "id": "u6-ai-01",
+                "pregunta": "¿Qué significan las siglas ACID en el contexto de las transacciones de bases de datos?",
+                "opciones": {
+                  "A": "Atomicidad, Coherencia, Aislamiento, Durabilidad",
+                  "B": "Acceso, Control, Integridad, Datos",
+                  "C": "Autenticación, Concurrencia, Indexación, Disponibilidad",
+                  "D": "Arquitectura, Compilación, Instalación, Despliegue"
+                },
+                "correcta": "A",
+                "justificacion": "ACID garantiza la fiabilidad de las transacciones: Atomicidad (todo o nada), Coherencia (estado válido), Aislamiento (independencia entre transacciones) y Durabilidad (los cambios confirmados persisten)."
+              },
+              {
+                "id": "u6-ai-02",
+                "pregunta": "¿Qué es la concurrencia en el contexto de las bases de datos?",
+                "opciones": {
+                  "A": "La capacidad de almacenar grandes volúmenes de datos",
+                  "B": "La capacidad de que múltiples usuarios o procesos accedan a la base de datos simultáneamente",
+                  "C": "La velocidad de procesamiento de las consultas SQL",
+                  "D": "La capacidad de conectarse desde Internet de forma segura"
+                },
+                "correcta": "B",
+                "justificacion": "La concurrencia se refiere al acceso simultáneo de múltiples usuarios o transacciones a la base de datos; el SGBD debe gestionarla para evitar conflictos e inconsistencias."
+              },
+              {
+                "id": "u6-ai-03",
+                "pregunta": "¿Qué es un deadlock (interbloqueo) en una base de datos?",
+                "opciones": {
+                  "A": "Una consulta que tarda demasiado en ejecutarse",
+                  "B": "Una situación en que dos o más transacciones se bloquean mutuamente esperando recursos que la otra posee",
+                  "C": "Un fallo físico del servidor de base de datos",
+                  "D": "Una tabla sin índices que ralentiza las consultas"
+                },
+                "correcta": "B",
+                "justificacion": "Un deadlock ocurre cuando dos o más transacciones se esperan mutuamente para liberar bloqueos, quedando todas bloqueadas indefinidamente; el SGBD lo detecta y aborta una de ellas."
+              },
+              {
+                "id": "u6-ai-04",
+                "pregunta": "¿Qué tipo de copia de seguridad guarda solo los cambios producidos desde la última copia de cualquier tipo?",
+                "opciones": {
+                  "A": "Copia completa (full backup)",
+                  "B": "Copia diferencial",
+                  "C": "Copia incremental",
+                  "D": "Copia espejo"
+                },
+                "correcta": "C",
+                "justificacion": "La copia incremental almacena únicamente los datos modificados desde la última copia de seguridad (ya sea completa o incremental previa), siendo más rápida pero más compleja de restaurar."
+              },
+              {
+                "id": "u6-ai-05",
+                "pregunta": "¿Qué es el control de acceso basado en roles (RBAC) en una base de datos?",
+                "opciones": {
+                  "A": "Un mecanismo que cifra todos los datos almacenados",
+                  "B": "Un modelo donde los permisos se asignan a roles y los usuarios reciben esos roles",
+                  "C": "Una técnica de optimización de consultas SQL",
+                  "D": "Un tipo de índice de acceso rápido"
+                },
+                "correcta": "B",
+                "justificacion": "RBAC (Role-Based Access Control) agrupa los permisos en roles (ej. administrador, lector) y asigna esos roles a los usuarios, simplificando la gestión de seguridad."
+              },
+              {
+                "id": "u6-ai-06",
+                "pregunta": "¿Qué es el plan de ejecución de una consulta SQL?",
+                "opciones": {
+                  "A": "El código SQL escrito por el programador",
+                  "B": "La estrategia que el optimizador del SGBD elige para ejecutar una consulta de la forma más eficiente",
+                  "C": "Un log histórico de todas las consultas ejecutadas",
+                  "D": "Un conjunto de índices asociados a una tabla concreta"
+                },
+                "correcta": "B",
+                "justificacion": "El plan de ejecución detalla los pasos que el motor de base de datos seguirá para ejecutar una consulta; herramientas como EXPLAIN permiten analizarlo para optimizar el rendimiento."
+              },
+              {
+                "id": "u6-ai-07",
+                "pregunta": "¿Qué es el registro de transacciones (transaction log) en un SGBD?",
+                "opciones": {
+                  "A": "Una tabla que almacena el historial de conexiones de usuarios",
+                  "B": "Un archivo que registra cronológicamente todas las modificaciones de datos para permitir recuperación",
+                  "C": "Una copia de seguridad completa de la base de datos",
+                  "D": "Un índice de rendimiento del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "El log de transacciones registra todas las operaciones de modificación de datos en orden cronológico, siendo esencial para la recuperación ante fallos y para el control ACID."
+              },
+              {
+                "id": "u6-ai-08",
+                "pregunta": "¿Qué hace el comando GRANT en SQL?",
+                "opciones": {
+                  "A": "Elimina permisos de un usuario o rol",
+                  "B": "Concede permisos a un usuario o rol sobre objetos de la base de datos",
+                  "C": "Crea un nuevo usuario en el sistema",
+                  "D": "Cambia la contraseña de un usuario existente"
+                },
+                "correcta": "B",
+                "justificacion": "GRANT es el comando DCL (Data Control Language) que otorga privilegios específicos (SELECT, INSERT, UPDATE, DELETE, etc.) a usuarios o roles sobre objetos de la base de datos."
+              },
+              {
+                "id": "u6-ai-09",
+                "pregunta": "¿Qué significa la alta disponibilidad (HA) en el contexto de las bases de datos?",
+                "opciones": {
+                  "A": "Que la base de datos tiene muchos usuarios conectados simultáneamente",
+                  "B": "Que el sistema está diseñado para minimizar el tiempo de inactividad y garantizar el acceso continuo",
+                  "C": "Que la base de datos almacena grandes volúmenes de datos (Big Data)",
+                  "D": "Que el sistema utiliza muchos índices para mejorar las lecturas"
+                },
+                "correcta": "B",
+                "justificacion": "La alta disponibilidad se consigue mediante técnicas como clustering, replicación y failover automático, asegurando que la base de datos permanezca accesible incluso ante fallos."
+              },
+              {
+                "id": "u6-ai-10",
+                "pregunta": "¿Qué es la replicación de bases de datos?",
+                "opciones": {
+                  "A": "Hacer varias copias de tablas dentro de la misma base de datos",
+                  "B": "Copiar y sincronizar datos de una base de datos a una o más bases de datos secundarias",
+                  "C": "Duplicar los índices de una tabla para mejorar la velocidad",
+                  "D": "Normalizar una base de datos para eliminar redundancias"
+                },
+                "correcta": "B",
+                "justificacion": "La replicación consiste en mantener copias sincronizadas de la base de datos en múltiples servidores, mejorando la disponibilidad, el rendimiento de lectura y la tolerancia a fallos."
+              },
+              {
+                "id": "u6-ai-11",
+                "pregunta": "¿Qué establece el teorema CAP en bases de datos distribuidas?",
+                "opciones": {
+                  "A": "Consistencia, Atomicidad y Persistencia son garantizables simultáneamente",
+                  "B": "Un sistema distribuido solo puede garantizar dos de estas tres propiedades a la vez: Consistencia, Disponibilidad y Tolerancia a particiones",
+                  "C": "Control, Acceso y Protección son los pilares de la seguridad",
+                  "D": "Caché, Asincronía y Paralelismo mejoran el rendimiento"
+                },
+                "correcta": "B",
+                "justificacion": "El teorema CAP (Consistency, Availability, Partition tolerance) establece que en un sistema distribuido es imposible garantizar las tres propiedades simultáneamente; se debe elegir priorizar dos."
+              },
+              {
+                "id": "u6-ai-12",
+                "pregunta": "¿Qué es el tuning o ajuste de rendimiento en una base de datos?",
+                "opciones": {
+                  "A": "El proceso de normalizar las tablas hasta 3FN",
+                  "B": "El conjunto de técnicas para optimizar el rendimiento (consultas, índices, configuración del SGBD)",
+                  "C": "La creación periódica de copias de seguridad",
+                  "D": "El proceso de diseño del modelo E-R inicial"
+                },
+                "correcta": "B",
+                "justificacion": "El tuning incluye optimizar consultas SQL, elegir índices adecuados y ajustar parámetros de memoria y configuración del SGBD para mejorar el rendimiento general del sistema."
+              },
+              {
+                "id": "u6-ai-13",
+                "pregunta": "¿Qué es el nivel de aislamiento SERIALIZABLE en transacciones SQL?",
+                "opciones": {
+                  "A": "El nivel más bajo de aislamiento, que permite leer datos no confirmados",
+                  "B": "El nivel más alto de aislamiento, que garantiza que las transacciones se ejecutan como si fueran secuenciales",
+                  "C": "Un nivel intermedio que permite lecturas fantasma",
+                  "D": "El nivel predeterminado en todos los SGBD comerciales"
+                },
+                "correcta": "B",
+                "justificacion": "SERIALIZABLE es el nivel de aislamiento más estricto: garantiza que el resultado de ejecutar transacciones concurrentes sea equivalente a alguna ejecución serial de las mismas."
+              },
+              {
+                "id": "u6-ai-14",
+                "pregunta": "¿Qué diferencia hay entre un esquema y una instancia de una base de datos?",
+                "opciones": {
+                  "A": "Son exactamente lo mismo",
+                  "B": "El esquema es la estructura definida; la instancia son los datos concretos almacenados en un momento dado",
+                  "C": "La instancia es la estructura y el esquema son los datos actuales",
+                  "D": "El esquema incluye los datos y la instancia solo los metadatos"
+                },
+                "correcta": "B",
+                "justificacion": "El esquema (intensión) describe la estructura lógica de la base de datos. La instancia (extensión) es el conjunto de datos reales almacenados en un momento específico."
+              },
+              {
+                "id": "u6-ai-15",
+                "pregunta": "¿Qué es una política de retención de datos en la administración de bases de datos?",
+                "opciones": {
+                  "A": "Una regla que define cuántos usuarios pueden conectarse simultáneamente",
+                  "B": "Un conjunto de normas que establece durante cuánto tiempo se conservan los datos antes de archivarlos o eliminarlos",
+                  "C": "Una estrategia de indexación para mejorar el rendimiento",
+                  "D": "Un tipo especial de clave primaria"
+                },
+                "correcta": "B",
+                "justificacion": "La política de retención define el ciclo de vida de los datos: durante cuánto tiempo se mantienen activos, cuándo se archivan y cuándo se eliminan de forma segura, cumpliendo normativas como el RGPD."
+              },
+              {
+                "id": "u6-ai-16",
+                "pregunta": "¿Qué es una lectura sucia (dirty read) en el contexto de transacciones concurrentes?",
+                "opciones": {
+                  "A": "Leer datos de una tabla sin los permisos adecuados",
+                  "B": "Leer datos modificados por una transacción que aún no ha confirmado (committed) dichos cambios",
+                  "C": "Leer el mismo registro dos veces obteniendo resultados distintos",
+                  "D": "Leer datos de una tabla eliminada"
+                },
+                "correcta": "B",
+                "justificacion": "Una lectura sucia ocurre cuando una transacción lee datos que han sido modificados por otra transacción que aún no ha realizado el COMMIT; si esa transacción hace ROLLBACK, los datos leídos nunca existieron."
+              },
+              {
+                "id": "u6-ai-17",
+                "pregunta": "¿Qué comando SQL revoca permisos previamente concedidos a un usuario?",
+                "opciones": {
+                  "A": "DENY",
+                  "B": "REMOVE",
+                  "C": "REVOKE",
+                  "D": "DELETE GRANT"
+                },
+                "correcta": "C",
+                "justificacion": "REVOKE es el comando DCL complementario a GRANT: elimina los privilegios concedidos previamente a un usuario o rol sobre objetos de la base de datos."
+              },
+              {
+                "id": "u6-ai-18",
+                "pregunta": "¿Qué es el cifrado en reposo (encryption at rest) en una base de datos?",
+                "opciones": {
+                  "A": "Cifrar las comunicaciones entre el cliente y el servidor",
+                  "B": "Cifrar los datos almacenados en disco para protegerlos de accesos físicos no autorizados",
+                  "C": "Cifrar las contraseñas de los usuarios en la base de datos",
+                  "D": "Cifrar el código SQL de los procedimientos almacenados"
+                },
+                "correcta": "B",
+                "justificacion": "El cifrado en reposo protege los datos almacenados en los ficheros físicos del SGBD; aunque alguien acceda al disco, no puede leer la información sin la clave de descifrado."
+              }
             ]
           }
         ]
       }
     ]
-  }    
+  }
 ]
