@@ -1,619 +1,2450 @@
 [
   {
     "asignatura": "Entornos de desarrollo",
-    "fuentes": [
+    "unidades": [
       {
-        "fuente": "PROMETEO",
-        "total_preguntas": 21,
-        "unidades": [
-          {
-            "unidad": "Test unidad 01",
-            "total": 11,
+        "unidad": "Test unidad 01",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
-  {
-    "id": "p01",
-    "pregunta": "El software se define como:",
-    "opciones": {
-      "A": "La parte física del ordenador",
-      "B": "Programas, instrucciones y datos",
-      "C": "Solo aplicaciones de usuario",
-      "D": "Hardware lógico"
-    },
-    "correcta": "B",
-    "justificacion": "El software comprende el conjunto de los componentes lógicos necesarios que hacen posible la realización de tareas específicas."
-  },
-  {
-    "id": "p02",
-    "pregunta": "Eclipse o VS Code son ejemplos de:",
-    "opciones": {
-      "A": "Lenguajes",
-      "B": "Sistemas operativos",
-      "C": "Entornos de desarrollo (IDE)",
-      "D": "Frameworks"
-    },
-    "correcta": "C",
-    "justificacion": "Son aplicaciones que proporcionan servicios integrales para facilitarle al desarrollador el desarrollo de software."
-  },
-  {
-    "id": "p03",
-    "pregunta": "Un lenguaje de alto nivel se caracteriza por:",
-    "opciones": {
-      "A": "Cercanía al hardware",
-      "B": "Uso de ceros y unos",
-      "C": "Mayor abstracción y legibilidad",
-      "D": "Dependencia del procesador"
-    },
-    "correcta": "C",
-    "justificacion": "Los lenguajes de alto nivel se caracterizan por expresar los algoritmos de una manera adecuada a la capacidad cognitiva humana."
-  },
-  {
-    "id": "p04",
-    "pregunta": "Git es un sistema de control de versiones:",
-    "opciones": {
-      "A": "Centralizado",
-      "B": "Distribuido",
-      "C": "Exclusivo online",
-      "D": "Propietario"
-    },
-    "correcta": "B",
-    "justificacion": "Git es un sistema de control de versiones distribuido, lo que significa que cada desarrollador tiene una copia completa del repositorio."
-  },
-  {
-    "id": "p05",
-    "pregunta": "Una ventaja clave de Git es:",
-    "opciones": {
-      "A": "Depender del servidor",
-      "B": "No guardar historial",
-      "C": "Copia completa del repositorio en local",
-      "D": "No permitir ramas"
-    },
-    "correcta": "C",
-    "justificacion": "Al ser distribuido, permite trabajar sin conexión y tener todo el historial en local."
-  },
-  {
-    "id": "p06",
-    "pregunta": "Un commit representa:",
-    "opciones": {
-      "A": "Una rama",
-      "B": "Un conflicto",
-      "C": "Una instantánea del proyecto",
-      "D": "Un repositorio"
-    },
-    "correcta": "C",
-    "justificacion": "Un commit en Git representa un estado específico del proyecto en un momento dado."
-  },
-  {
-    "id": "p07",
-    "pregunta": "El comando que prepara archivos para commit es:",
-    "opciones": {
-      "A": "git commit",
-      "B": "git push",
-      "C": "git add",
-      "D": "git status"
-    },
-    "correcta": "C",
-    "justificacion": "El comando git add añade los cambios del directorio de trabajo al área de preparación (staging area)."
-  },
-  {
-    "id": "p08",
-    "pregunta": "El archivo .gitignore sirve para:",
-    "opciones": {
-      "A": "Guardar credenciales",
-      "B": "Eliminar archivos",
-      "C": "Excluir archivos del versionado",
-      "D": "Crear ramas"
-    },
-    "correcta": "C",
-    "justificacion": "Se utiliza para indicar a Git qué archivos o directorios debe ignorar y no rastrear."
-  },
-  {
-    "id": "p09",
-    "pregunta": "Scrum es:",
-    "opciones": {
-      "A": "Un lenguaje",
-      "B": "Un framework ágil",
-      "C": "Una herramienta",
-      "D": "Un patrón de diseño"
-    },
-    "correcta": "B",
-    "justificacion": "Scrum es un marco de trabajo ágil para la gestión de proyectos complejos."
-  },
-  {
-    "id": "p10",
-    "pregunta": "Los sprints en Scrum suelen durar:",
-    "opciones": {
-      "A": "1 día",
-      "B": "1–4 semanas",
-      "C": "2–6 meses",
-      "D": "Sin límite"
-    },
-    "correcta": "B",
-    "justificacion": "Los sprints son bloques de tiempo fijos que normalmente no exceden el mes."
-  },
-  {
-    "id": "p11",
-    "pregunta": "El Product Owner es responsable de:",
-    "opciones": {
-      "A": "Programar",
-      "B": "Facilitar reuniones",
-      "C": "Priorizar el Product Backlog",
-      "D": "Resolver conflictos técnicos"
-    },
-    "correcta": "C",
-    "justificacion": "Es el responsable de maximizar el valor del producto y gestionar el Product Backlog."
-  },
-  {
-    "id": "p12",
-    "pregunta": "La Daily Scrum dura como máximo:",
-    "opciones": {
-      "A": "5 minutos",
-      "B": "10 minutos",
-      "C": "15 minutos",
-      "D": "30 minutos"
-    },
-    "correcta": "C",
-    "justificacion": "Es una reunión diaria de sincronización limitada a un máximo de 15 minutos."
-  },
-  {
-    "id": "p13",
-    "pregunta": "Kanban se basa principalmente en:",
-    "opciones": {
-      "A": "Sprints cerrados",
-      "B": "Roles fijos",
-      "C": "Flujo continuo y visualización",
-      "D": "Entregas trimestrales"
-    },
-    "correcta": "C",
-    "justificacion": "Kanban se centra en visualizar el trabajo y limitar el trabajo en curso (WIP)."
-  },
-  {
-    "id": "p14",
-    "pregunta": "Un límite WIP sirve para:",
-    "opciones": {
-      "A": "Aumentar tareas",
-      "B": "Evitar sobrecarga de trabajo",
-      "C": "Medir velocidad",
-      "D": "Eliminar backlog"
-    },
-    "correcta": "B",
-    "justificacion": "El límite de Work In Progress ayuda a identificar cuellos de botella y evitar la sobrecarga del equipo."
-  },
-  {
-    "id": "p15",
-    "pregunta": "XP pone especial énfasis en:",
-    "opciones": {
-      "A": "Documentación extensa",
-      "B": "Calidad técnica del código",
-      "C": "Jerarquía",
-      "D": "Entregas anuales"
-    },
-    "correcta": "B",
-    "justificacion": "XP (Extreme Programming) se enfoca en la excelencia técnica y prácticas como TDD o programación en pareja."
-  },
-  {
-    "id": "p16",
-    "pregunta": "Un patrón de diseño es:",
-    "opciones": {
-      "A": "Código reutilizable",
-      "B": "Una librería",
-      "C": "Una solución reutilizable a un problema común",
-      "D": "Un framework"
-    },
-    "correcta": "C",
-    "justificacion": "Son soluciones probadas a problemas recurrentes en el diseño de software."
-  },
-  {
-    "id": "p17",
-    "pregunta": "Singleton garantiza:",
-    "opciones": {
-      "A": "Varias instancias",
-      "B": "Herencia múltiple",
-      "C": "Una única instancia",
-      "D": "Bajo acoplamiento siempre"
-    },
-    "correcta": "C",
-    "justificacion": "Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella."
-  },
-  {
-    "id": "p18",
-    "pregunta": "El patrón Factory se usa para:",
-    "opciones": {
-      "A": "Añadir funcionalidades",
-      "B": "Crear objetos sin exponer la lógica",
-      "C": "Notificar cambios",
-      "D": "Cambiar estados"
-    },
-    "correcta": "B",
-    "justificacion": "Define una interfaz para crear un objeto, pero deja que las subclases decidan qué clase instanciar."
-  },
-  {
-    "id": "p19",
-    "pregunta": "Adapter sirve para:",
-    "opciones": {
-      "A": "Crear objetos",
-      "B": "Traducir interfaces incompatibles",
-      "C": "Encapsular acciones",
-      "D": "Gestionar estados"
-    },
-    "correcta": "B",
-    "justificacion": "Permite que clases con interfaces incompatibles trabajen juntas."
-  },
-  {
-    "id": "p20",
-    "pregunta": "Decorator permite:",
-    "opciones": {
-      "A": "Cambiar algoritmos",
-      "B": "Añadir funcionalidades dinámicamente",
-      "C": "Crear instancias únicas",
-      "D": "Gestionar flujos"
-    },
-    "correcta": "B",
-    "justificacion": "Permite añadir responsabilidades a objetos de forma dinámica sin afectar a otros objetos."
-  },
-  {
-    "id": "p21",
-    "pregunta": "Observer se basa en:",
-    "opciones": {
-      "A": "Encapsular comandos",
-      "B": "Notificar cambios a observadores",
-      "C": "Cambiar estados",
-      "D": "Crear objetos complejos"
-    },
-    "correcta": "B",
-    "justificacion": "Define una dependencia uno-a-muchos para que cuando un objeto cambie de estado, sus dependientes sean notificados."
-  },
-  {
-    "id": "p22",
-    "pregunta": "Strategy permite:",
-    "opciones": {
-      "A": "Notificar eventos",
-      "B": "Cambiar algoritmos en tiempo de ejecución",
-      "C": "Crear instancias",
-      "D": "Encapsular acciones"
-    },
-    "correcta": "B",
-    "justificacion": "Define una familia de algoritmos y los hace intercambiables."
-  },
-  {
-    "id": "p23",
-    "pregunta": "Command encapsula:",
-    "opciones": {
-      "A": "Algoritmos",
-      "B": "Estados",
-      "C": "Acciones como objetos",
-      "D": "Dependencias"
-    },
-    "correcta": "C",
-    "justificacion": "Encapsula una petición como un objeto, permitiendo parametrizar clientes con diferentes peticiones."
-  },
-  {
-    "id": "p24",
-    "pregunta": "El patrón State se usa cuando:",
-    "opciones": {
-      "A": "Hay un solo comportamiento",
-      "B": "El comportamiento depende del estado",
-      "C": "No hay estados",
-      "D": "Se usan eventos"
-    },
-    "correcta": "B",
-    "justificacion": "Permite que un objeto altere su comportamiento cuando su estado interno cambia."
-  },
-  {
-    "id": "p25",
-    "pregunta": "SOLID es:",
-    "opciones": {
-      "A": "Un lenguaje",
-      "B": "Un framework",
-      "C": "Un conjunto de principios de diseño",
-      "D": "Un patrón"
-    },
-    "correcta": "C",
-    "justificacion": "Es un acrónimo que representa cinco principios básicos del diseño orientado a objetos y desarrollo de software."
-  },
-  {
-    "id": "p26",
-    "pregunta": "Los patrones creacionales se centran en:",
-    "opciones": {
-      "A": "Comunicación entre objetos",
-      "B": "Creación de objetos",
-      "C": "Flujo de datos",
-      "D": "Interfaces gráficas"
-    },
-    "correcta": "B",
-    "justificacion": "Se encargan de los mecanismos de creación de objetos, tratando de crear objetos de forma adecuada a la situación."
-  },
-  {
-    "id": "p27",
-    "pregunta": "¿Cuál NO es un pilar de Scrum?",
-    "opciones": {
-      "A": "Transparencia",
-      "B": "Inspección",
-      "C": "Adaptación",
-      "D": "Jerarquía"
-    },
-    "correcta": "D",
-    "justificacion": "Los tres pilares de Scrum son transparencia, inspección y adaptación."
-  },
-  {
-    "id": "p28",
-    "pregunta": "Word, Spotify o un navegador web son:",
-    "opciones": {
-      "A": "Software de sistema",
-      "B": "Software de aplicación",
-      "C": "Software de desarrollo",
-      "D": "Lenguajes de programación"
-    },
-    "correcta": "B",
-    "justificacion": "Son programas diseñados para permitir a los usuarios realizar tareas específicas."
-  },
-  {
-    "id": "p29",
-    "pregunta": "¿Qué comando añade archivos al área de preparación?",
-    "opciones": {
-      "A": "git status",
-      "B": "git add",
-      "C": "git commit",
-      "D": "git push"
-    },
-    "correcta": "B",
-    "justificacion": "git add es el comando utilizado para preparar los cambios antes de un commit."
-  },
-  {
-    "id": "p30",
-    "pregunta": "¿Qué comando descarga y fusiona cambios del remoto?",
-    "opciones": {
-      "A": "git merge",
-      "B": "git pull",
-      "C": "git clone",
-      "D": "git diff"
-    },
-    "correcta": "B",
-    "justificacion": "git pull combina git fetch (descargar) y git merge (fusionar) en un solo comando."
-  },
-  {
-    "id": "ss-p01",
-    "pregunta": "¿Qué es un sistema de control de versiones como Git?",
-    "opciones": {
-      "A": "Un programa para diseñar interfaces gráficas",
-      "B": "Un sistema que guarda cambios en archivos y permite trabajar en equipo",
-      "C": "Un compilador de código",
-      "D": "Un sistema operativo"
-    },
-    "correcta": "B",
-    "justificacion": "Git permite rastrear cambios en el código fuente durante el desarrollo de software y facilita la colaboración."
-  },
-  {
-    "id": "ss-p02",
-    "pregunta": "¿Qué hace el comando git commit?",
-    "opciones": {
-      "A": "Borra archivos del proyecto",
-      "B": "Guarda una versión del proyecto con un mensaje",
-      "C": "Descarga cambios del repositorio remoto",
-      "D": "Crea una rama nueva"
-    },
-    "correcta": "B",
-    "justificacion": "El comando git commit captura una instantánea de los cambios preparados actualmente en el proyecto."
-  },
-  {
-    "id": "ss-p03",
-    "pregunta": "¿Qué es la refactorización?",
-    "opciones": {
-      "A": "Añadir nuevas funcionalidades",
-      "B": "Corregir errores del sistema",
-      "C": "Mejorar el código sin cambiar su comportamiento",
-      "D": "Compilar el programa"
-    },
-    "correcta": "C",
-    "justificacion": "La refactorización busca mejorar la estructura interna del código (legibilidad, mantenibilidad) sin alterar su funcionalidad externa."
-  },
-  {
-    "id": "ss-p04",
-    "pregunta": "¿Qué es un “code smell”?",
-    "opciones": {
-      "A": "Un error que rompe el programa",
-      "B": "Un síntoma de mal diseño del código",
-      "C": "Un lenguaje de programación",
-      "D": "Un test automático"
-    },
-    "correcta": "B",
-    "justificacion": "Un 'hedor de código' indica un problema potencial en el diseño que podría dificultar el mantenimiento o la evolución del software."
-  },
-  {
-    "id": "ss-p05",
-    "pregunta": "¿Qué diferencia hay entre verificación y validación?",
-    "opciones": {
-      "A": "No hay diferencia",
-      "B": "Verificación comprueba el código; validación si cumple necesidades del usuario",
-      "C": "Validación es solo para tests automáticos",
-      "D": "Verificación es posterior al desarrollo"
-    },
-    "correcta": "B",
-    "justificacion": "Verificación responde a '¿estamos construyendo el producto correctamente?' y validación a '¿estamos construyendo el producto correcto?'."
-  },
-  {
-    "id": "ss-p06",
-    "pregunta": "En el ciclo de vida del software, ¿por qué se dice que programar NO es lo más importante?",
-    "opciones": {
-      "A": "Porque no es necesario programar",
-      "B": "Porque lo importante es el hardware",
-      "C": "Porque el software incluye análisis, diseño, pruebas y mantenimiento",
-      "D": "Porque solo importa el resultado final"
-    },
-    "correcta": "C",
-    "justificacion": "La codificación es solo una fase; un software de calidad requiere una planificación, diseño y mantenimiento adecuados."
-  },
-  {
-    "id": "ss-p07",
-    "pregunta": "¿Cuál es la principal diferencia entre un lenguaje de alto nivel y uno de bajo nivel?",
-    "opciones": {
-      "A": "Los de bajo nivel son más fáciles",
-      "B": "Los de alto nivel son más cercanos al lenguaje humano",
-      "C": "No hay diferencia",
-      "D": "Los de alto nivel son más rápidos"
-    },
-    "correcta": "B",
-    "justificacion": "Los lenguajes de alto nivel abstraen los detalles del hardware y usan una sintaxis más comprensible para las personas."
-  },
-  {
-    "id": "ss-p08",
-    "pregunta": "En metodologías de desarrollo, ¿qué problema tiene el modelo en cascada frente a los ágiles?",
-    "opciones": {
-      "A": "Es demasiado rápido",
-      "B": "No tiene fases",
-      "C": "Es poco flexible ante cambios",
-      "D": "No se usa en empresas"
-    },
-    "correcta": "C",
-    "justificacion": "El modelo en cascada es rígido y dificulta la incorporación de cambios una vez que el proyecto ha avanzado a fases posteriores."
-  },
-  {
-    "id": "ss-p09",
-    "pregunta": "¿Qué significa que Git sea un sistema de control de versiones distribuido?",
-    "opciones": {
-      "A": "Que solo funciona en Internet",
-      "B": "Que cada desarrollador tiene una copia completa del proyecto",
-      "C": "Que no guarda historial",
-      "D": "Que solo hay un servidor central"
-    },
-    "correcta": "B",
-    "justificacion": "Cada cliente tiene un clon completo del repositorio, incluyendo todo el historial de cambios."
-  },
-  {
-    "id": "ss-p10",
-    "pregunta": "¿Por qué el historial de commits es fundamental en proyectos profesionales?",
-    "opciones": {
-      "A": "Porque ocupa poco espacio",
-      "B": "Porque permite saber quién hizo cada cambio y por qué",
-      "C": "Porque ejecuta el código",
-      "D": "Porque elimina errores automáticamente"
-    },
-    "correcta": "B",
-    "justificacion": "Proporciona trazabilidad, permitiendo entender la evolución del código y facilitar la depuración y auditoría."
-  },
-  {
-    "id": "ss-p11",
-    "pregunta": "¿Cuál es la función principal del Product Owner en Scrum?",
-    "opciones": {
-      "A": "Programar",
-      "B": "Gestionar servidores",
-      "C": "Priorizar el trabajo según el valor para el cliente",
-      "D": "Hacer testing"
-    },
-    "correcta": "C",
-    "justificacion": "El Product Owner es el responsable de maximizar el valor del producto resultante del trabajo del Equipo Scrum."
-  },
-  {
-    "id": "ss-p12",
-    "pregunta": "En Kanban, ¿por qué es importante limitar el trabajo en curso (WIP)?",
-    "opciones": {
-      "A": "Para hacer más tareas a la vez",
-      "B": "Para evitar sobrecarga y mejorar la calidad",
-      "C": "Para eliminar tareas",
-      "D": "Para trabajar más lento"
-    },
-    "correcta": "B",
-    "justificacion": "Limitar el WIP ayuda a optimizar el flujo de trabajo, reducir el tiempo de entrega y evitar cuellos de botella."
-  },
-  {
-    "id": "ss-p13",
-    "pregunta": "¿Por qué los patrones de diseño son importantes en desarrollo de software?",
-    "opciones": {
-      "A": "Porque sustituyen al código",
-      "B": "Porque son soluciones reutilizables a problemas comunes",
-      "C": "Porque hacen el código más corto siempre",
-      "D": "Porque evitan errores automáticamente"
-    },
-    "correcta": "B",
-    "justificacion": "Ofrecen soluciones probadas y estandarizadas que mejoran la comunicación entre desarrolladores y la calidad del diseño."
-  },
-  {
-    "id": "ss-p14",
-    "pregunta": "En testing, ¿por qué es importante combinar pruebas de caja negra y caja blanca?",
-    "opciones": {
-      "A": "Porque una sustituye a la otra",
-      "B": "Porque ambas analizan cosas diferentes y se complementan",
-      "C": "Porque son obligatorias",
-      "D": "Porque reducen el código"
-    },
-    "correcta": "B",
-    "justificacion": "La caja negra se centra en la funcionalidad (entradas/salidas) y la caja blanca en la lógica interna del código."
-  },
-  {
-    "id": "ss-p15",
-    "pregunta": "¿Qué caracteriza a las pruebas unitarias dentro del proceso de testing?",
-    "opciones": {
-      "A": "Analizan todo el sistema completo",
-      "B": "Evalúan módulos pequeños de forma aislada",
-      "C": "Solo las realiza el cliente",
-      "D": "No son automáticas"
-    },
-    "correcta": "B",
-    "justificacion": "Las pruebas unitarias verifican el correcto funcionamiento de una unidad de código (como una función o método) de forma independiente."
-  },
-  {
-    "id": "ss-p16",
-    "pregunta": "¿Qué se busca principalmente en las pruebas de aceptación?",
-    "opciones": {
-      "A": "Validar el código fuente",
-      "B": "Verificar algoritmos",
-      "C": "Confirmar que el sistema cumple las necesidades del cliente",
-      "D": "Analizar rendimiento"
-    },
-    "correcta": "C",
-    "justificacion": "Son pruebas realizadas a menudo por el usuario final para decidir si el sistema está listo para ser entregado."
-  },
-  {
-    "id": "ss-p17",
-    "pregunta": "En pruebas de caja blanca, ¿qué se analiza principalmente?",
-    "opciones": {
-      "A": "Interfaz de usuario",
-      "B": "Entradas del usuario",
-      "C": "Estructura interna del código",
-      "D": "Experiencia del cliente"
-    },
-    "correcta": "C",
-    "justificacion": "Se basan en el conocimiento del código fuente para verificar caminos lógicos, condiciones y bucles."
-  },
-  {
-    "id": "ss-p18",
-    "pregunta": "¿Qué son las pruebas de regresión?",
-    "opciones": {
-      "A": "Pruebas iniciales",
-      "B": "Pruebas para validar interfaz",
-      "C": "Pruebas que aseguran que cambios no rompen funcionalidades existentes",
-      "D": "Pruebas de compilación"
-    },
-    "correcta": "C",
-    "justificacion": "Se realizan después de modificar el software para confirmar que los cambios no han introducido nuevos errores en partes que antes funcionaban."
-  },
-  {
-    "id": "ss-p19",
-    "pregunta": "¿Qué ventaja ofrece el patrón Strategy?",
-    "opciones": {
-      "A": "Cambiar algoritmos sin modificar el código principal",
-      "B": "Borrar código",
-      "C": "Ejecutar código",
-      "D": "Crear repositorios"
-    },
-    "correcta": "A",
-    "justificacion": "Permite seleccionar un algoritmo en tiempo de ejecución de entre una familia de algoritmos definidos."
-  },
-  {
-    "id": "ss-p20",
-    "pregunta": "¿Para qué sirve el Daily Scrum?",
-    "opciones": {
-      "A": "Evaluar código",
-      "B": "Sincronizar al equipo diariamente",
-      "C": "Programar",
-      "D": "Diseñar"
-    },
-    "correcta": "B",
-    "justificacion": "Es una reunión corta para que el equipo de desarrollo sincronice actividades y cree un plan para las próximas 24 horas."
-  }
+              {
+                "id": "u1-prom-01",
+                "pregunta": "El software se define como:",
+                "opciones": {
+                  "A": "La parte física del ordenador",
+                  "B": "Programas, instrucciones y datos",
+                  "C": "Solo aplicaciones de usuario",
+                  "D": "Hardware lógico"
+                },
+                "correcta": "B",
+                "justificacion": "El software comprende el conjunto de los componentes lógicos necesarios que hacen posible la realización de tareas específicas."
+              },
+              {
+                "id": "u1-prom-02",
+                "pregunta": "Eclipse o VS Code son ejemplos de:",
+                "opciones": {
+                  "A": "Lenguajes",
+                  "B": "Sistemas operativos",
+                  "C": "Entornos de desarrollo (IDE)",
+                  "D": "Frameworks"
+                },
+                "correcta": "C",
+                "justificacion": "Son aplicaciones que proporcionan servicios integrales para facilitarle al desarrollador el desarrollo de software."
+              },
+              {
+                "id": "u1-prom-03",
+                "pregunta": "Un lenguaje de alto nivel se caracteriza por:",
+                "opciones": {
+                  "A": "Cercanía al hardware",
+                  "B": "Uso de ceros y unos",
+                  "C": "Mayor abstracción y legibilidad",
+                  "D": "Dependencia del procesador"
+                },
+                "correcta": "C",
+                "justificacion": "Los lenguajes de alto nivel se caracterizan por expresar los algoritmos de una manera adecuada a la capacidad cognitiva humana."
+              },
+              {
+                "id": "u1-prom-04",
+                "pregunta": "¿Cuál es la principal diferencia entre un lenguaje de alto nivel y uno de bajo nivel?",
+                "opciones": {
+                  "A": "Los de bajo nivel son más fáciles",
+                  "B": "Los de alto nivel son más cercanos al lenguaje humano",
+                  "C": "No hay diferencia",
+                  "D": "Los de alto nivel son más rápidos"
+                },
+                "correcta": "B",
+                "justificacion": "Los lenguajes de alto nivel abstraen los detalles del hardware y usan una sintaxis más comprensible para las personas."
+              },
+              {
+                "id": "u1-prom-05",
+                "pregunta": "En el ciclo de vida del software, ¿por qué se dice que programar NO es lo más importante?",
+                "opciones": {
+                  "A": "Porque no es necesario programar",
+                  "B": "Porque lo importante es el hardware",
+                  "C": "Porque el software incluye análisis, diseño, pruebas y mantenimiento",
+                  "D": "Porque solo importa el resultado final"
+                },
+                "correcta": "C",
+                "justificacion": "La codificación es solo una fase; un software de calidad requiere una planificación, diseño y mantenimiento adecuados."
+              },
+              {
+                "id": "u1-prom-06",
+                "pregunta": "Word, Spotify o un navegador web son:",
+                "opciones": {
+                  "A": "Software de sistema",
+                  "B": "Software de aplicación",
+                  "C": "Software de desarrollo",
+                  "D": "Lenguajes de programación"
+                },
+                "correcta": "B",
+                "justificacion": "Son programas diseñados para permitir a los usuarios realizar tareas específicas."
+              },
+              {
+                "id": "u1-prom-07",
+                "pregunta": "¿Qué es la refactorización?",
+                "opciones": {
+                  "A": "Añadir nuevas funcionalidades",
+                  "B": "Corregir errores del sistema",
+                  "C": "Mejorar el código sin cambiar su comportamiento",
+                  "D": "Compilar el programa"
+                },
+                "correcta": "C",
+                "justificacion": "La refactorización busca mejorar la estructura interna del código (legibilidad, mantenibilidad) sin alterar su funcionalidad externa."
+              },
+              {
+                "id": "u1-prom-08",
+                "pregunta": "¿Qué es un 'code smell'?",
+                "opciones": {
+                  "A": "Un error que rompe el programa",
+                  "B": "Un síntoma de mal diseño del código",
+                  "C": "Un lenguaje de programación",
+                  "D": "Un test automático"
+                },
+                "correcta": "B",
+                "justificacion": "Un 'hedor de código' indica un problema potencial en el diseño que podría dificultar el mantenimiento o la evolución del software."
+              },
+              {
+                "id": "u1-prom-09",
+                "pregunta": "En metodologías de desarrollo, ¿qué problema tiene el modelo en cascada frente a los ágiles?",
+                "opciones": {
+                  "A": "Es demasiado rápido",
+                  "B": "No tiene fases",
+                  "C": "Es poco flexible ante cambios",
+                  "D": "No se usa en empresas"
+                },
+                "correcta": "C",
+                "justificacion": "El modelo en cascada es rígido y dificulta la incorporación de cambios una vez que el proyecto ha avanzado a fases posteriores."
+              },
+              {
+                "id": "u1-prom-10",
+                "pregunta": "¿Qué diferencia hay entre verificación y validación?",
+                "opciones": {
+                  "A": "No hay diferencia",
+                  "B": "Verificación comprueba el código; validación si cumple necesidades del usuario",
+                  "C": "Validación es solo para tests automáticos",
+                  "D": "Verificación es posterior al desarrollo"
+                },
+                "correcta": "B",
+                "justificacion": "Verificación responde a '¿estamos construyendo el producto correctamente?' y validación a '¿estamos construyendo el producto correcto?'."
+              },
+              {
+                "id": "u1-prom-11",
+                "pregunta": "SOLID es:",
+                "opciones": {
+                  "A": "Un lenguaje",
+                  "B": "Un framework",
+                  "C": "Un conjunto de principios de diseño",
+                  "D": "Un patrón"
+                },
+                "correcta": "C",
+                "justificacion": "Es un acrónimo que representa cinco principios básicos del diseño orientado a objetos y desarrollo de software."
+              }
+            ]
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u1-ai-01",
+                "pregunta": "¿Cuál de las siguientes fases NO pertenece al ciclo de vida clásico del software?",
+                "opciones": {
+                  "A": "Análisis de requisitos",
+                  "B": "Diseño del sistema",
+                  "C": "Publicación en redes sociales",
+                  "D": "Mantenimiento"
+                },
+                "correcta": "C",
+                "justificacion": "El ciclo de vida del software incluye análisis, diseño, implementación, pruebas y mantenimiento. La publicación en redes sociales no es una fase del proceso."
+              },
+              {
+                "id": "u1-ai-02",
+                "pregunta": "¿Qué es un compilador?",
+                "opciones": {
+                  "A": "Un programa que ejecuta código línea a línea",
+                  "B": "Un editor de texto especializado",
+                  "C": "Un programa que traduce código fuente a código máquina de una sola vez",
+                  "D": "Un depurador de errores"
+                },
+                "correcta": "C",
+                "justificacion": "Un compilador transforma el código fuente escrito en un lenguaje de alto nivel a código máquina o código intermedio, generando un ejecutable antes de la ejecución."
+              },
+              {
+                "id": "u1-ai-03",
+                "pregunta": "¿Qué diferencia hay entre un compilador y un intérprete?",
+                "opciones": {
+                  "A": "El compilador ejecuta más lento que el intérprete",
+                  "B": "El intérprete traduce y ejecuta el código línea a línea; el compilador lo traduce todo antes de ejecutar",
+                  "C": "El intérprete genera un archivo ejecutable",
+                  "D": "No hay diferencia relevante entre ambos"
+                },
+                "correcta": "B",
+                "justificacion": "El intérprete procesa y ejecuta el código fuente instrucción a instrucción en tiempo real, mientras que el compilador genera un programa ejecutable previo a la ejecución."
+              },
+              {
+                "id": "u1-ai-04",
+                "pregunta": "¿Qué es el código ensamblador?",
+                "opciones": {
+                  "A": "Un lenguaje de alto nivel orientado a objetos",
+                  "B": "Un lenguaje de bajo nivel que usa mnemónicos cercanos al lenguaje máquina",
+                  "C": "El código que genera automáticamente un IDE",
+                  "D": "Un tipo de pseudocódigo"
+                },
+                "correcta": "B",
+                "justificacion": "El ensamblador es un lenguaje de bajo nivel que usa abreviaturas simbólicas (mnemónicos) para representar instrucciones del procesador, siendo casi una correspondencia directa con el código máquina."
+              },
+              {
+                "id": "u1-ai-05",
+                "pregunta": "¿Cuál es el objetivo principal de un IDE (Entorno de Desarrollo Integrado)?",
+                "opciones": {
+                  "A": "Gestionar bases de datos",
+                  "B": "Proveer en una sola herramienta editor, compilador, depurador y otras utilidades para el desarrollo",
+                  "C": "Diseñar interfaces gráficas exclusivamente",
+                  "D": "Conectarse a servidores remotos"
+                },
+                "correcta": "B",
+                "justificacion": "Un IDE integra en un único entorno las herramientas necesarias para escribir, compilar, depurar y ejecutar software, aumentando la productividad del desarrollador."
+              },
+              {
+                "id": "u1-ai-06",
+                "pregunta": "¿Qué es el pseudocódigo?",
+                "opciones": {
+                  "A": "Un lenguaje de programación real",
+                  "B": "Una representación informal de un algoritmo en lenguaje natural estructurado",
+                  "C": "El código binario generado por el compilador",
+                  "D": "Un tipo de diagrama UML"
+                },
+                "correcta": "B",
+                "justificacion": "El pseudocódigo es una descripción de alto nivel de un algoritmo usando una mezcla de lenguaje natural y estructuras de programación, sin seguir la sintaxis exacta de ningún lenguaje."
+              },
+              {
+                "id": "u1-ai-07",
+                "pregunta": "¿Qué tipo de software es el sistema operativo?",
+                "opciones": {
+                  "A": "Software de aplicación",
+                  "B": "Software de entretenimiento",
+                  "C": "Software de sistema",
+                  "D": "Software de desarrollo"
+                },
+                "correcta": "C",
+                "justificacion": "El sistema operativo es software de sistema porque gestiona los recursos del hardware y proporciona servicios a los programas de aplicación."
+              },
+              {
+                "id": "u1-ai-08",
+                "pregunta": "¿Qué es la programación orientada a objetos (POO)?",
+                "opciones": {
+                  "A": "Un paradigma basado en instrucciones secuenciales",
+                  "B": "Un paradigma que organiza el software en objetos con atributos y métodos",
+                  "C": "Un paradigma exclusivo de Java",
+                  "D": "Un método para crear bases de datos"
+                },
+                "correcta": "B",
+                "justificacion": "La POO es un paradigma de programación que organiza el diseño del software alrededor de datos (objetos) en lugar de funciones y lógica, usando conceptos como clases, herencia y polimorfismo."
+              },
+              {
+                "id": "u1-ai-09",
+                "pregunta": "¿Qué significa el principio DRY en desarrollo de software?",
+                "opciones": {
+                  "A": "Define, Refactoriza, Yield",
+                  "B": "No te repitas (Don't Repeat Yourself): evitar la duplicación de código",
+                  "C": "Diseño Rápido y eficiente",
+                  "D": "Documentar, Revisar, Yield"
+                },
+                "correcta": "B",
+                "justificacion": "DRY (Don't Repeat Yourself) es un principio de desarrollo que indica que cada pieza de conocimiento debe tener una única representación en el sistema para evitar la duplicación y facilitar el mantenimiento."
+              },
+              {
+                "id": "u1-ai-10",
+                "pregunta": "¿Qué es un framework de desarrollo?",
+                "opciones": {
+                  "A": "Un lenguaje de programación de bajo nivel",
+                  "B": "Una estructura de soporte que proporciona componentes reutilizables para desarrollar aplicaciones",
+                  "C": "Un sistema operativo especializado",
+                  "D": "Un tipo de base de datos"
+                },
+                "correcta": "B",
+                "justificacion": "Un framework es un conjunto de herramientas, librerías y convenciones que proporciona una estructura base para desarrollar aplicaciones, acelerando el proceso al reutilizar componentes comunes."
+              },
+              {
+                "id": "u1-ai-11",
+                "pregunta": "¿Qué es el modelo en cascada en el desarrollo de software?",
+                "opciones": {
+                  "A": "Un modelo ágil con iteraciones cortas",
+                  "B": "Un modelo secuencial donde cada fase debe completarse antes de empezar la siguiente",
+                  "C": "Un modelo sin fases definidas",
+                  "D": "Un modelo exclusivo para videojuegos"
+                },
+                "correcta": "B",
+                "justificacion": "El modelo en cascada organiza el desarrollo en fases secuenciales (análisis, diseño, implementación, pruebas, mantenimiento) donde cada una debe completarse antes de pasar a la siguiente."
+              },
+              {
+                "id": "u1-ai-12",
+                "pregunta": "¿Cuál de los siguientes es un lenguaje de programación interpretado?",
+                "opciones": {
+                  "A": "C",
+                  "B": "C++",
+                  "C": "Python",
+                  "D": "Rust"
+                },
+                "correcta": "C",
+                "justificacion": "Python es un lenguaje interpretado: el intérprete ejecuta el código directamente línea por línea sin necesidad de compilarlo previamente a código máquina."
+              },
+              {
+                "id": "u1-ai-13",
+                "pregunta": "¿Qué es la documentación técnica del software?",
+                "opciones": {
+                  "A": "El código fuente del programa",
+                  "B": "El manual de usuario del sistema",
+                  "C": "El conjunto de documentos que describe la arquitectura, diseño y funcionamiento del sistema para desarrolladores",
+                  "D": "Los comentarios del código únicamente"
+                },
+                "correcta": "C",
+                "justificacion": "La documentación técnica describe la arquitectura, decisiones de diseño, APIs y funcionamiento interno del sistema, orientada a desarrolladores y equipos de mantenimiento."
+              },
+              {
+                "id": "u1-ai-14",
+                "pregunta": "¿Qué es la deuda técnica en un proyecto de software?",
+                "opciones": {
+                  "A": "El coste económico de comprar licencias de software",
+                  "B": "El coste futuro de corregir atajos o malas decisiones de diseño tomadas para acelerar el desarrollo",
+                  "C": "Los errores sintácticos pendientes de corregir",
+                  "D": "El tiempo invertido en reuniones de equipo"
+                },
+                "correcta": "B",
+                "justificacion": "La deuda técnica representa el esfuerzo adicional que se necesitará en el futuro para corregir implementaciones rápidas o de baja calidad tomadas deliberadamente para acelerar el desarrollo presente."
+              },
+              {
+                "id": "u1-ai-15",
+                "pregunta": "¿Qué significa el paradigma de programación funcional?",
+                "opciones": {
+                  "A": "Programar usando solo bucles y condicionales",
+                  "B": "Programar basándose en la evaluación de funciones matemáticas puras sin efectos secundarios",
+                  "C": "Programar exclusivamente para funciones de usuario",
+                  "D": "Programar con orientación a objetos avanzada"
+                },
+                "correcta": "B",
+                "justificacion": "La programación funcional es un paradigma que trata la computación como la evaluación de funciones matemáticas, evitando el estado compartido y los efectos secundarios."
+              },
+              {
+                "id": "u1-ai-16",
+                "pregunta": "¿Qué herramienta se utiliza para automatizar la construcción y compilación de un proyecto de software?",
+                "opciones": {
+                  "A": "Un editor de texto",
+                  "B": "Una herramienta de build (como Maven, Gradle o Make)",
+                  "C": "Un sistema de control de versiones",
+                  "D": "Un gestor de bases de datos"
+                },
+                "correcta": "B",
+                "justificacion": "Las herramientas de build automatizan tareas repetitivas del desarrollo como la compilación, ejecución de tests, empaquetado y despliegue del software."
+              },
+              {
+                "id": "u1-ai-17",
+                "pregunta": "¿Qué es la programación dirigida por eventos?",
+                "opciones": {
+                  "A": "Un paradigma donde el flujo del programa está determinado por eventos como clics, mensajes o sensores",
+                  "B": "Un paradigma exclusivo de videojuegos",
+                  "C": "Un modelo de desarrollo en cascada",
+                  "D": "Un tipo de programación funcional"
+                },
+                "correcta": "A",
+                "justificacion": "En la programación dirigida por eventos, el flujo del programa es determinado por eventos (acciones del usuario, mensajes de otros programas, etc.), siendo común en interfaces gráficas y sistemas reactivos."
+              },
+              {
+                "id": "u1-ai-18",
+                "pregunta": "¿Qué es la integración continua (CI)?",
+                "opciones": {
+                  "A": "Integrar el software con la base de datos continuamente",
+                  "B": "Una práctica donde los desarrolladores fusionan su código frecuentemente y se ejecutan pruebas automáticas en cada integración",
+                  "C": "Un método para gestionar reuniones diarias",
+                  "D": "Una técnica de diseño de interfaces"
+                },
+                "correcta": "B",
+                "justificacion": "La integración continua (CI) es una práctica DevOps donde los cambios de código se integran frecuentemente en un repositorio compartido, verificándolos automáticamente con tests para detectar errores temprano."
+              },
+              {
+                "id": "u1-ai-19",
+                "pregunta": "¿Cuál es la diferencia entre software libre y software de código abierto (open source)?",
+                "opciones": {
+                  "A": "Son términos completamente sinónimos sin ninguna diferencia",
+                  "B": "El software libre enfatiza la libertad del usuario; el open source enfatiza ventajas prácticas del código accesible",
+                  "C": "El software libre siempre es gratuito; el open source no",
+                  "D": "El open source no puede modificarse"
+                },
+                "correcta": "B",
+                "justificacion": "Aunque comparten muchas características, el software libre (Free Software, FSF) pone énfasis filosófico en las libertades del usuario, mientras que open source (OSI) enfatiza el valor práctico y colaborativo del código accesible."
+              },
+              {
+                "id": "u1-ai-20",
+                "pregunta": "¿Qué es el principio KISS en desarrollo de software?",
+                "opciones": {
+                  "A": "Keep It Synchronized and Secure",
+                  "B": "Keep It Simple, Stupid: diseñar soluciones lo más simples posible",
+                  "C": "Know Integration, Streamline Software",
+                  "D": "Keep It Structured and Scalable"
+                },
+                "correcta": "B",
+                "justificacion": "KISS (Keep It Simple, Stupid) es un principio de diseño que establece que los sistemas funcionan mejor si se mantienen simples; la complejidad innecesaria debe evitarse."
+              }
             ]
           }
-        ]
+        }
+      },
+      {
+        "unidad": "Test unidad 02",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
+            "preguntas": [
+              {
+                "id": "u2-prom-01",
+                "pregunta": "Git es un sistema de control de versiones:",
+                "opciones": {
+                  "A": "Centralizado",
+                  "B": "Distribuido",
+                  "C": "Exclusivo online",
+                  "D": "Propietario"
+                },
+                "correcta": "B",
+                "justificacion": "Git es un sistema de control de versiones distribuido, lo que significa que cada desarrollador tiene una copia completa del repositorio."
+              },
+              {
+                "id": "u2-prom-02",
+                "pregunta": "Una ventaja clave de Git es:",
+                "opciones": {
+                  "A": "Depender del servidor",
+                  "B": "No guardar historial",
+                  "C": "Copia completa del repositorio en local",
+                  "D": "No permitir ramas"
+                },
+                "correcta": "C",
+                "justificacion": "Al ser distribuido, permite trabajar sin conexión y tener todo el historial en local."
+              },
+              {
+                "id": "u2-prom-03",
+                "pregunta": "Un commit representa:",
+                "opciones": {
+                  "A": "Una rama",
+                  "B": "Un conflicto",
+                  "C": "Una instantánea del proyecto",
+                  "D": "Un repositorio"
+                },
+                "correcta": "C",
+                "justificacion": "Un commit en Git representa un estado específico del proyecto en un momento dado."
+              },
+              {
+                "id": "u2-prom-04",
+                "pregunta": "El comando que prepara archivos para commit es:",
+                "opciones": {
+                  "A": "git commit",
+                  "B": "git push",
+                  "C": "git add",
+                  "D": "git status"
+                },
+                "correcta": "C",
+                "justificacion": "El comando git add añade los cambios del directorio de trabajo al área de preparación (staging area)."
+              },
+              {
+                "id": "u2-prom-05",
+                "pregunta": "El archivo .gitignore sirve para:",
+                "opciones": {
+                  "A": "Guardar credenciales",
+                  "B": "Eliminar archivos",
+                  "C": "Excluir archivos del versionado",
+                  "D": "Crear ramas"
+                },
+                "correcta": "C",
+                "justificacion": "Se utiliza para indicar a Git qué archivos o directorios debe ignorar y no rastrear."
+              },
+              {
+                "id": "u2-prom-06",
+                "pregunta": "¿Qué es un sistema de control de versiones como Git?",
+                "opciones": {
+                  "A": "Un programa para diseñar interfaces gráficas",
+                  "B": "Un sistema que guarda cambios en archivos y permite trabajar en equipo",
+                  "C": "Un compilador de código",
+                  "D": "Un sistema operativo"
+                },
+                "correcta": "B",
+                "justificacion": "Git permite rastrear cambios en el código fuente durante el desarrollo de software y facilita la colaboración."
+              },
+              {
+                "id": "u2-prom-07",
+                "pregunta": "¿Qué hace el comando git commit?",
+                "opciones": {
+                  "A": "Borra archivos del proyecto",
+                  "B": "Guarda una versión del proyecto con un mensaje",
+                  "C": "Descarga cambios del repositorio remoto",
+                  "D": "Crea una rama nueva"
+                },
+                "correcta": "B",
+                "justificacion": "El comando git commit captura una instantánea de los cambios preparados actualmente en el proyecto."
+              },
+              {
+                "id": "u2-prom-08",
+                "pregunta": "¿Qué significa que Git sea un sistema de control de versiones distribuido?",
+                "opciones": {
+                  "A": "Que solo funciona en Internet",
+                  "B": "Que cada desarrollador tiene una copia completa del proyecto",
+                  "C": "Que no guarda historial",
+                  "D": "Que solo hay un servidor central"
+                },
+                "correcta": "B",
+                "justificacion": "Cada cliente tiene un clon completo del repositorio, incluyendo todo el historial de cambios."
+              },
+              {
+                "id": "u2-prom-09",
+                "pregunta": "¿Por qué el historial de commits es fundamental en proyectos profesionales?",
+                "opciones": {
+                  "A": "Porque ocupa poco espacio",
+                  "B": "Porque permite saber quién hizo cada cambio y por qué",
+                  "C": "Porque ejecuta el código",
+                  "D": "Porque elimina errores automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "Proporciona trazabilidad, permitiendo entender la evolución del código y facilitar la depuración y auditoría."
+              },
+              {
+                "id": "u2-prom-10",
+                "pregunta": "¿Qué comando descarga y fusiona cambios del remoto?",
+                "opciones": {
+                  "A": "git merge",
+                  "B": "git pull",
+                  "C": "git clone",
+                  "D": "git diff"
+                },
+                "correcta": "B",
+                "justificacion": "git pull combina git fetch (descargar) y git merge (fusionar) en un solo comando."
+              },
+              {
+                "id": "u2-prom-11",
+                "pregunta": "¿Qué comando añade archivos al área de preparación?",
+                "opciones": {
+                  "A": "git status",
+                  "B": "git add",
+                  "C": "git commit",
+                  "D": "git push"
+                },
+                "correcta": "B",
+                "justificacion": "git add es el comando utilizado para preparar los cambios antes de un commit."
+              }
+            ]
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u2-ai-01",
+                "pregunta": "¿Qué es una rama (branch) en Git?",
+                "opciones": {
+                  "A": "Una copia de seguridad del repositorio remoto",
+                  "B": "Un puntero ligero a un commit que permite desarrollar en paralelo sin afectar la rama principal",
+                  "C": "Un tipo de commit especial",
+                  "D": "Un archivo de configuración de Git"
+                },
+                "correcta": "B",
+                "justificacion": "Una rama en Git es un puntero móvil a un commit específico, lo que permite trabajar en nuevas funcionalidades o correcciones de forma aislada sin afectar la rama principal."
+              },
+              {
+                "id": "u2-ai-02",
+                "pregunta": "¿Para qué se usa git merge?",
+                "opciones": {
+                  "A": "Para eliminar una rama",
+                  "B": "Para combinar los cambios de una rama en otra",
+                  "C": "Para crear un nuevo repositorio",
+                  "D": "Para deshacer el último commit"
+                },
+                "correcta": "B",
+                "justificacion": "git merge integra los cambios de una rama en otra, combinando los historiales de ambas ramas."
+              },
+              {
+                "id": "u2-ai-03",
+                "pregunta": "¿Qué diferencia hay entre git fetch y git pull?",
+                "opciones": {
+                  "A": "No hay ninguna diferencia",
+                  "B": "git fetch descarga cambios sin fusionarlos; git pull descarga y fusiona automáticamente",
+                  "C": "git pull solo descarga; git fetch también fusiona",
+                  "D": "git fetch es más lento que git pull"
+                },
+                "correcta": "B",
+                "justificacion": "git fetch descarga los cambios del repositorio remoto pero no los integra en la rama local. git pull equivale a hacer fetch + merge en un solo paso."
+              },
+              {
+                "id": "u2-ai-04",
+                "pregunta": "¿Qué es un conflicto en Git y cuándo ocurre?",
+                "opciones": {
+                  "A": "Un error de compilación en el proyecto",
+                  "B": "Una situación en que dos ramas han modificado las mismas líneas de un archivo de forma diferente",
+                  "C": "Un fallo en la conexión con el repositorio remoto",
+                  "D": "Un commit sin mensaje descriptivo"
+                },
+                "correcta": "B",
+                "justificacion": "Un conflicto ocurre al intentar fusionar dos ramas que han modificado las mismas partes de un archivo de forma diferente; Git no puede resolverlo automáticamente y requiere intervención manual."
+              },
+              {
+                "id": "u2-ai-05",
+                "pregunta": "¿Para qué sirve git rebase?",
+                "opciones": {
+                  "A": "Para eliminar commits del historial permanentemente",
+                  "B": "Para mover o combinar commits de una rama aplicándolos sobre otra, obteniendo un historial lineal",
+                  "C": "Para crear una nueva rama desde un commit específico",
+                  "D": "Para publicar cambios en el repositorio remoto"
+                },
+                "correcta": "B",
+                "justificacion": "git rebase integra cambios de una rama en otra reescribiendo el historial de commits para que aparezcan en línea recta, a diferencia de merge que preserva el historial de bifurcación."
+              },
+              {
+                "id": "u2-ai-06",
+                "pregunta": "¿Qué es GitHub en relación con Git?",
+                "opciones": {
+                  "A": "Un sinónimo de Git",
+                  "B": "Una empresa que creó Git",
+                  "C": "Una plataforma de alojamiento de repositorios Git en la nube con herramientas colaborativas",
+                  "D": "Un IDE para desarrollo"
+                },
+                "correcta": "C",
+                "justificacion": "GitHub es una plataforma web que usa Git como base y añade funcionalidades colaborativas como pull requests, issues, wikis y CI/CD. Git es el sistema de control de versiones; GitHub es el servicio que lo aloja."
+              },
+              {
+                "id": "u2-ai-07",
+                "pregunta": "¿Qué es una Pull Request (PR) en GitHub?",
+                "opciones": {
+                  "A": "Un comando de Git para descargar cambios",
+                  "B": "Una solicitud para que los cambios de una rama se revisen y fusionen en otra rama",
+                  "C": "Un archivo de configuración del repositorio",
+                  "D": "Un informe automático de errores"
+                },
+                "correcta": "B",
+                "justificacion": "Una Pull Request es un mecanismo de GitHub (y plataformas similares) para proponer cambios, permitir su revisión por otros miembros del equipo y solicitar su integración en la rama principal."
+              },
+              {
+                "id": "u2-ai-08",
+                "pregunta": "¿Qué hace el comando git stash?",
+                "opciones": {
+                  "A": "Elimina todos los cambios no guardados",
+                  "B": "Guarda temporalmente los cambios del directorio de trabajo sin hacer un commit",
+                  "C": "Crea un nuevo repositorio local",
+                  "D": "Sube cambios al repositorio remoto"
+                },
+                "correcta": "B",
+                "justificacion": "git stash guarda temporalmente los cambios locales no confirmados en una pila, permitiendo limpiar el directorio de trabajo para cambiar de contexto y recuperarlos más tarde con git stash pop."
+              },
+              {
+                "id": "u2-ai-09",
+                "pregunta": "¿Qué es un tag en Git?",
+                "opciones": {
+                  "A": "Un tipo de rama temporal",
+                  "B": "Una etiqueta que marca un commit específico como importante, usualmente para señalar versiones",
+                  "C": "Un comentario dentro del código",
+                  "D": "Un archivo de metadatos del repositorio"
+                },
+                "correcta": "B",
+                "justificacion": "Un tag en Git es una referencia fija a un commit concreto, utilizado habitualmente para marcar puntos de lanzamiento (versiones) del software como v1.0, v2.3, etc."
+              },
+              {
+                "id": "u2-ai-10",
+                "pregunta": "¿Qué hace git reset --hard HEAD?",
+                "opciones": {
+                  "A": "Crea una nueva rama desde el último commit",
+                  "B": "Descarta todos los cambios locales y vuelve al estado del último commit",
+                  "C": "Elimina el repositorio local",
+                  "D": "Fusiona la rama actual con HEAD"
+                },
+                "correcta": "B",
+                "justificacion": "git reset --hard HEAD descarta completamente todos los cambios del directorio de trabajo y del área de preparación, restaurando el estado exacto del último commit."
+              },
+              {
+                "id": "u2-ai-11",
+                "pregunta": "¿Qué es el flujo de trabajo GitFlow?",
+                "opciones": {
+                  "A": "Un comando de Git para gestionar ramas",
+                  "B": "Una estrategia de ramificación que define ramas específicas para features, releases y hotfixes",
+                  "C": "Un sistema de integración continua",
+                  "D": "Una herramienta de gestión de proyectos"
+                },
+                "correcta": "B",
+                "justificacion": "GitFlow es un modelo de ramificación que define roles para diferentes ramas (main, develop, feature, release, hotfix) y cómo deben interactuar, proporcionando una estructura clara para proyectos de software."
+              },
+              {
+                "id": "u2-ai-12",
+                "pregunta": "¿Para qué se usa git log?",
+                "opciones": {
+                  "A": "Para inicializar un nuevo repositorio",
+                  "B": "Para mostrar el historial de commits del repositorio",
+                  "C": "Para comparar cambios entre ramas",
+                  "D": "Para añadir archivos al área de preparación"
+                },
+                "correcta": "B",
+                "justificacion": "git log muestra el historial de commits de la rama actual, incluyendo autor, fecha y mensaje de cada commit, permitiendo ver la evolución del proyecto."
+              },
+              {
+                "id": "u2-ai-13",
+                "pregunta": "¿Qué es un repositorio remoto en Git?",
+                "opciones": {
+                  "A": "Una copia del repositorio almacenada en un servidor accesible para el equipo",
+                  "B": "Un repositorio privado solo para el desarrollador local",
+                  "C": "Una rama especial del repositorio",
+                  "D": "Un repositorio sin historial de commits"
+                },
+                "correcta": "A",
+                "justificacion": "Un repositorio remoto es una versión del proyecto alojada en un servidor (como GitHub, GitLab o Bitbucket) que permite a múltiples desarrolladores colaborar y sincronizar su trabajo."
+              },
+              {
+                "id": "u2-ai-14",
+                "pregunta": "¿Qué significa hacer un fork de un repositorio en GitHub?",
+                "opciones": {
+                  "A": "Eliminar el repositorio original",
+                  "B": "Crear una copia personal del repositorio de otra persona en tu cuenta para modificarlo libremente",
+                  "C": "Crear una nueva rama en el repositorio original",
+                  "D": "Descargarlo al equipo local"
+                },
+                "correcta": "B",
+                "justificacion": "Un fork crea una copia independiente de un repositorio ajeno en tu cuenta de GitHub, permitiéndote experimentar y proponer cambios sin afectar el repositorio original."
+              },
+              {
+                "id": "u2-ai-15",
+                "pregunta": "¿Para qué se usa el comando git diff?",
+                "opciones": {
+                  "A": "Para fusionar dos ramas",
+                  "B": "Para mostrar las diferencias entre el directorio de trabajo y el último commit",
+                  "C": "Para borrar archivos del repositorio",
+                  "D": "Para crear un commit nuevo"
+                },
+                "correcta": "B",
+                "justificacion": "git diff muestra las diferencias línea por línea entre el estado actual del directorio de trabajo (o del staging area) y la versión del último commit u otra referencia."
+              },
+              {
+                "id": "u2-ai-16",
+                "pregunta": "¿Qué es el staging area (área de preparación) en Git?",
+                "opciones": {
+                  "A": "El servidor remoto donde se almacena el repositorio",
+                  "B": "Una zona intermedia donde se colocan los cambios seleccionados antes de ser confirmados con commit",
+                  "C": "El directorio donde está almacenado el código fuente",
+                  "D": "El historial de todos los commits realizados"
+                },
+                "correcta": "B",
+                "justificacion": "El staging area (o índice) es una zona intermedia entre el directorio de trabajo y el repositorio. Los cambios añadidos con git add pasan al staging area antes de ser definitivamente guardados con git commit."
+              },
+              {
+                "id": "u2-ai-17",
+                "pregunta": "¿Qué comando se usa para crear y cambiar a una nueva rama en un solo paso?",
+                "opciones": {
+                  "A": "git branch nueva-rama",
+                  "B": "git switch nueva-rama",
+                  "C": "git checkout -b nueva-rama",
+                  "D": "git create nueva-rama"
+                },
+                "correcta": "C",
+                "justificacion": "git checkout -b nombre-rama crea la rama y cambia directamente a ella en un solo comando. El equivalente moderno sería git switch -c nombre-rama."
+              },
+              {
+                "id": "u2-ai-18",
+                "pregunta": "¿Qué es git clone?",
+                "opciones": {
+                  "A": "Un comando para copiar archivos localmente",
+                  "B": "Un comando para crear una copia local completa de un repositorio remoto",
+                  "C": "Un comando para crear una rama nueva",
+                  "D": "Un comando para combinar repositorios"
+                },
+                "correcta": "B",
+                "justificacion": "git clone descarga una copia completa del repositorio remoto (incluyendo todo el historial y todas las ramas) en el equipo local."
+              },
+              {
+                "id": "u2-ai-19",
+                "pregunta": "¿Para qué sirve git cherry-pick?",
+                "opciones": {
+                  "A": "Para seleccionar y aplicar commits concretos de una rama en otra sin fusionar todo el historial",
+                  "B": "Para elegir qué archivos incluir en el .gitignore",
+                  "C": "Para seleccionar la mejor versión entre dos conflictos",
+                  "D": "Para filtrar el historial de commits por autor"
+                },
+                "correcta": "A",
+                "justificacion": "git cherry-pick permite aplicar los cambios de un commit específico (o varios) en la rama actual sin tener que fusionar toda la rama de origen."
+              },
+              {
+                "id": "u2-ai-20",
+                "pregunta": "¿Qué información almacena internamente un commit de Git?",
+                "opciones": {
+                  "A": "Solo el nombre del archivo modificado",
+                  "B": "Un hash SHA-1, la referencia al commit padre, el autor, la fecha y el mensaje",
+                  "C": "Solo el diff con respecto al commit anterior",
+                  "D": "El nombre de la rama en que se creó únicamente"
+                },
+                "correcta": "B",
+                "justificacion": "Cada commit en Git almacena un identificador único (hash SHA-1), un puntero al commit padre, información del autor y committer, marca de tiempo y mensaje descriptivo, además de una instantánea del árbol de archivos."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 03",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
+            "preguntas": [
+              {
+                "id": "u3-prom-01",
+                "pregunta": "Scrum es:",
+                "opciones": {
+                  "A": "Un lenguaje",
+                  "B": "Un framework ágil",
+                  "C": "Una herramienta",
+                  "D": "Un patrón de diseño"
+                },
+                "correcta": "B",
+                "justificacion": "Scrum es un marco de trabajo ágil para la gestión de proyectos complejos."
+              },
+              {
+                "id": "u3-prom-02",
+                "pregunta": "Los sprints en Scrum suelen durar:",
+                "opciones": {
+                  "A": "1 día",
+                  "B": "1–4 semanas",
+                  "C": "2–6 meses",
+                  "D": "Sin límite"
+                },
+                "correcta": "B",
+                "justificacion": "Los sprints son bloques de tiempo fijos que normalmente no exceden el mes."
+              },
+              {
+                "id": "u3-prom-03",
+                "pregunta": "El Product Owner es responsable de:",
+                "opciones": {
+                  "A": "Programar",
+                  "B": "Facilitar reuniones",
+                  "C": "Priorizar el Product Backlog",
+                  "D": "Resolver conflictos técnicos"
+                },
+                "correcta": "C",
+                "justificacion": "Es el responsable de maximizar el valor del producto y gestionar el Product Backlog."
+              },
+              {
+                "id": "u3-prom-04",
+                "pregunta": "La Daily Scrum dura como máximo:",
+                "opciones": {
+                  "A": "5 minutos",
+                  "B": "10 minutos",
+                  "C": "15 minutos",
+                  "D": "30 minutos"
+                },
+                "correcta": "C",
+                "justificacion": "Es una reunión diaria de sincronización limitada a un máximo de 15 minutos."
+              },
+              {
+                "id": "u3-prom-05",
+                "pregunta": "Kanban se basa principalmente en:",
+                "opciones": {
+                  "A": "Sprints cerrados",
+                  "B": "Roles fijos",
+                  "C": "Flujo continuo y visualización",
+                  "D": "Entregas trimestrales"
+                },
+                "correcta": "C",
+                "justificacion": "Kanban se centra en visualizar el trabajo y limitar el trabajo en curso (WIP)."
+              },
+              {
+                "id": "u3-prom-06",
+                "pregunta": "Un límite WIP sirve para:",
+                "opciones": {
+                  "A": "Aumentar tareas",
+                  "B": "Evitar sobrecarga de trabajo",
+                  "C": "Medir velocidad",
+                  "D": "Eliminar backlog"
+                },
+                "correcta": "B",
+                "justificacion": "El límite de Work In Progress ayuda a identificar cuellos de botella y evitar la sobrecarga del equipo."
+              },
+              {
+                "id": "u3-prom-07",
+                "pregunta": "XP pone especial énfasis en:",
+                "opciones": {
+                  "A": "Documentación extensa",
+                  "B": "Calidad técnica del código",
+                  "C": "Jerarquía",
+                  "D": "Entregas anuales"
+                },
+                "correcta": "B",
+                "justificacion": "XP (Extreme Programming) se enfoca en la excelencia técnica y prácticas como TDD o programación en pareja."
+              },
+              {
+                "id": "u3-prom-08",
+                "pregunta": "¿Cuál NO es un pilar de Scrum?",
+                "opciones": {
+                  "A": "Transparencia",
+                  "B": "Inspección",
+                  "C": "Adaptación",
+                  "D": "Jerarquía"
+                },
+                "correcta": "D",
+                "justificacion": "Los tres pilares de Scrum son transparencia, inspección y adaptación."
+              },
+              {
+                "id": "u3-prom-09",
+                "pregunta": "¿Cuál es la función principal del Product Owner en Scrum?",
+                "opciones": {
+                  "A": "Programar",
+                  "B": "Gestionar servidores",
+                  "C": "Priorizar el trabajo según el valor para el cliente",
+                  "D": "Hacer testing"
+                },
+                "correcta": "C",
+                "justificacion": "El Product Owner es el responsable de maximizar el valor del producto resultante del trabajo del Equipo Scrum."
+              },
+              {
+                "id": "u3-prom-10",
+                "pregunta": "¿Para qué sirve el Daily Scrum?",
+                "opciones": {
+                  "A": "Evaluar código",
+                  "B": "Sincronizar al equipo diariamente",
+                  "C": "Programar",
+                  "D": "Diseñar"
+                },
+                "correcta": "B",
+                "justificacion": "Es una reunión corta para que el equipo de desarrollo sincronice actividades y cree un plan para las próximas 24 horas."
+              },
+              {
+                "id": "u3-prom-11",
+                "pregunta": "En Kanban, ¿por qué es importante limitar el trabajo en curso (WIP)?",
+                "opciones": {
+                  "A": "Para hacer más tareas a la vez",
+                  "B": "Para evitar sobrecarga y mejorar la calidad",
+                  "C": "Para eliminar tareas",
+                  "D": "Para trabajar más lento"
+                },
+                "correcta": "B",
+                "justificacion": "Limitar el WIP ayuda a optimizar el flujo de trabajo, reducir el tiempo de entrega y evitar cuellos de botella."
+              }
+            ]
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u3-ai-01",
+                "pregunta": "¿Qué es el Manifiesto Ágil?",
+                "opciones": {
+                  "A": "Un framework de gestión de proyectos",
+                  "B": "Un documento que establece valores y principios para el desarrollo ágil de software",
+                  "C": "Un lenguaje de programación",
+                  "D": "Un sistema de control de versiones"
+                },
+                "correcta": "B",
+                "justificacion": "El Manifiesto Ágil (2001) es un documento firmado por 17 desarrolladores que establece 4 valores y 12 principios que sustentan las metodologías ágiles de desarrollo de software."
+              },
+              {
+                "id": "u3-ai-02",
+                "pregunta": "¿Cuál de estos NO es uno de los cuatro valores del Manifiesto Ágil?",
+                "opciones": {
+                  "A": "Individuos e interacciones sobre procesos y herramientas",
+                  "B": "Software funcionando sobre documentación exhaustiva",
+                  "C": "Documentación completa sobre código funcional",
+                  "D": "Respuesta al cambio sobre seguir un plan"
+                },
+                "correcta": "C",
+                "justificacion": "Los cuatro valores del Manifiesto Ágil priorizan individuos, software funcionando, colaboración con el cliente y respuesta al cambio. 'Documentación completa sobre código funcional' contradice el segundo valor."
+              },
+              {
+                "id": "u3-ai-03",
+                "pregunta": "¿Qué rol tiene el Scrum Master en un equipo Scrum?",
+                "opciones": {
+                  "A": "Tomar decisiones de negocio sobre el producto",
+                  "B": "Programar las funcionalidades más complejas",
+                  "C": "Facilitar el proceso Scrum, eliminar impedimentos y proteger al equipo",
+                  "D": "Gestionar el presupuesto del proyecto"
+                },
+                "correcta": "C",
+                "justificacion": "El Scrum Master es un facilitador y coach que ayuda al equipo a comprender y aplicar Scrum, elimina obstáculos y protege al equipo de interrupciones externas."
+              },
+              {
+                "id": "u3-ai-04",
+                "pregunta": "¿Qué es el Product Backlog en Scrum?",
+                "opciones": {
+                  "A": "La lista de errores pendientes de corregir",
+                  "B": "Una lista ordenada de todo lo que podría necesitarse en el producto",
+                  "C": "El conjunto de tareas del sprint actual",
+                  "D": "El historial de sprints completados"
+                },
+                "correcta": "B",
+                "justificacion": "El Product Backlog es una lista dinámica y ordenada de todo lo que podría necesitarse en el producto, gestionada por el Product Owner según el valor aportado al negocio."
+              },
+              {
+                "id": "u3-ai-05",
+                "pregunta": "¿Qué es el Sprint Backlog?",
+                "opciones": {
+                  "A": "La lista completa de todas las funcionalidades del producto",
+                  "B": "El subconjunto de elementos del Product Backlog seleccionados para completar durante el sprint actual",
+                  "C": "El informe de velocidad del equipo",
+                  "D": "La documentación técnica del sprint anterior"
+                },
+                "correcta": "B",
+                "justificacion": "El Sprint Backlog contiene los elementos del Product Backlog seleccionados para el sprint más el plan para entregar el incremento del producto y alcanzar el objetivo del sprint."
+              },
+              {
+                "id": "u3-ai-06",
+                "pregunta": "¿En qué consiste la Sprint Review en Scrum?",
+                "opciones": {
+                  "A": "Una reunión interna del equipo para evaluar el proceso",
+                  "B": "Una reunión al final del sprint donde el equipo muestra el incremento al Product Owner y stakeholders",
+                  "C": "La planificación del siguiente sprint",
+                  "D": "La reunión diaria de sincronización"
+                },
+                "correcta": "B",
+                "justificacion": "La Sprint Review es una reunión al final de cada sprint donde el equipo presenta el incremento completado a los interesados para recibir retroalimentación y adaptar el Product Backlog."
+              },
+              {
+                "id": "u3-ai-07",
+                "pregunta": "¿En qué se diferencia la Sprint Retrospective de la Sprint Review?",
+                "opciones": {
+                  "A": "No hay diferencia, son la misma reunión",
+                  "B": "La Review inspecciona el producto; la Retrospective inspecciona el proceso y forma de trabajar del equipo",
+                  "C": "La Retrospective la realiza el Product Owner; la Review, el Scrum Master",
+                  "D": "La Review es interna; la Retrospective incluye stakeholders"
+                },
+                "correcta": "B",
+                "justificacion": "La Sprint Review evalúa QUÉ se construyó (el producto). La Sprint Retrospective evalúa CÓMO trabajó el equipo (el proceso) para identificar mejoras para el siguiente sprint."
+              },
+              {
+                "id": "u3-ai-08",
+                "pregunta": "¿Qué es la velocidad (velocity) en Scrum?",
+                "opciones": {
+                  "A": "La rapidez con que el equipo programa",
+                  "B": "La cantidad de trabajo que un equipo completa en promedio durante un sprint",
+                  "C": "El tiempo que tarda en realizarse el Daily Scrum",
+                  "D": "La velocidad de conexión del servidor"
+                },
+                "correcta": "B",
+                "justificacion": "La velocidad es una métrica que mide la cantidad de trabajo (generalmente en puntos de historia) que un equipo Scrum completa en promedio por sprint, útil para planificar futuros sprints."
+              },
+              {
+                "id": "u3-ai-09",
+                "pregunta": "¿Qué es una historia de usuario (user story)?",
+                "opciones": {
+                  "A": "La historia del proyecto desde su inicio",
+                  "B": "Una descripción simple de una funcionalidad desde la perspectiva del usuario final",
+                  "C": "Un informe técnico detallado de requisitos",
+                  "D": "Un diagrama UML del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "Una historia de usuario es una descripción informal de una funcionalidad del software desde la perspectiva del usuario, con el formato: 'Como [rol], quiero [funcionalidad] para [beneficio]'."
+              },
+              {
+                "id": "u3-ai-10",
+                "pregunta": "¿Qué metodología ágil usa las columnas 'Por hacer', 'En progreso' y 'Hecho' como base?",
+                "opciones": {
+                  "A": "Scrum",
+                  "B": "XP (Extreme Programming)",
+                  "C": "Kanban",
+                  "D": "RUP"
+                },
+                "correcta": "C",
+                "justificacion": "Kanban usa un tablero visual con columnas que representan estados del flujo de trabajo (típicamente: Por hacer, En progreso, Hecho) para visualizar y gestionar el trabajo."
+              },
+              {
+                "id": "u3-ai-11",
+                "pregunta": "¿Qué es el TDD (Test-Driven Development)?",
+                "opciones": {
+                  "A": "Una metodología donde se escribe el test antes que el código de producción",
+                  "B": "Una herramienta automática de testing",
+                  "C": "Un tipo de sprint de Scrum dedicado a pruebas",
+                  "D": "Una técnica para diseñar bases de datos"
+                },
+                "correcta": "A",
+                "justificacion": "TDD es una práctica de XP donde el ciclo es: escribir un test que falla, escribir el mínimo código para que pase, y refactorizar. Esto guía el diseño del software desde las pruebas."
+              },
+              {
+                "id": "u3-ai-12",
+                "pregunta": "¿Qué es la programación en pareja (pair programming)?",
+                "opciones": {
+                  "A": "Dos programadores trabajando en el mismo proyecto pero de forma independiente",
+                  "B": "Dos programadores trabajando en el mismo código simultáneamente en un solo ordenador",
+                  "C": "Un sistema de revisión de código asíncrona",
+                  "D": "Una técnica de estimación en Scrum"
+                },
+                "correcta": "B",
+                "justificacion": "La programación en pareja es una práctica de XP donde dos desarrolladores comparten un único ordenador; uno escribe el código (driver) y el otro lo revisa en tiempo real (navigator), intercambiando roles frecuentemente."
+              },
+              {
+                "id": "u3-ai-13",
+                "pregunta": "¿Cuál es la principal diferencia entre Scrum y Kanban?",
+                "opciones": {
+                  "A": "Scrum usa tableros; Kanban no",
+                  "B": "Scrum trabaja en iteraciones con sprints; Kanban usa un flujo continuo sin iteraciones fijas",
+                  "C": "Kanban tiene roles definidos; Scrum no",
+                  "D": "No hay diferencia significativa entre ambos"
+                },
+                "correcta": "B",
+                "justificacion": "Scrum organiza el trabajo en sprints con duración fija y roles definidos. Kanban usa un flujo continuo sin sprints, sin roles obligatorios, donde las tareas entran y salen del tablero de forma continua."
+              },
+              {
+                "id": "u3-ai-14",
+                "pregunta": "¿Qué es el Definition of Done (DoD) en Scrum?",
+                "opciones": {
+                  "A": "El criterio por el que el Product Owner acepta el trabajo como completo",
+                  "B": "Una lista compartida de criterios que debe cumplir un elemento de trabajo para considerarse terminado",
+                  "C": "El momento en que termina el sprint",
+                  "D": "La fecha de entrega final del proyecto"
+                },
+                "correcta": "B",
+                "justificacion": "El Definition of Done es un acuerdo compartido del equipo sobre qué significa que un elemento del backlog está completamente terminado (código revisado, probado, documentado, etc.)."
+              },
+              {
+                "id": "u3-ai-15",
+                "pregunta": "¿Qué son los puntos de historia (story points) en metodologías ágiles?",
+                "opciones": {
+                  "A": "El número de líneas de código de una historia de usuario",
+                  "B": "Las horas exactas que tardará en implementarse una funcionalidad",
+                  "C": "Una unidad relativa para estimar el esfuerzo y complejidad de una historia de usuario",
+                  "D": "Los puntos de reputación del equipo en la plataforma"
+                },
+                "correcta": "C",
+                "justificacion": "Los puntos de historia son una medida relativa y abstracta de la complejidad, esfuerzo e incertidumbre de una historia de usuario, no expresan tiempo absoluto sino comparación con otras historias."
+              },
+              {
+                "id": "u3-ai-16",
+                "pregunta": "¿Qué es el Planning Poker en estimación ágil?",
+                "opciones": {
+                  "A": "Un juego de cartas para descansar entre reuniones",
+                  "B": "Una técnica de estimación donde el equipo asigna puntos de historia usando cartas de forma simultánea para evitar sesgos",
+                  "C": "Una técnica de priorización del backlog",
+                  "D": "Un sistema de recompensas para el equipo"
+                },
+                "correcta": "B",
+                "justificacion": "Planning Poker es una técnica de estimación donde todos los miembros del equipo revelan simultáneamente su estimación en cartas, evitando el efecto ancla. Las discrepancias se discuten hasta llegar a un consenso."
+              },
+              {
+                "id": "u3-ai-17",
+                "pregunta": "¿Qué es el Scrumban?",
+                "opciones": {
+                  "A": "Un tipo de Kanban exclusivamente para proyectos de software",
+                  "B": "Un enfoque híbrido que combina elementos de Scrum y Kanban",
+                  "C": "Una metodología completamente diferente a ambas",
+                  "D": "Un framework para gestión de equipos grandes"
+                },
+                "correcta": "B",
+                "justificacion": "Scrumban combina la estructura de Scrum (sprints, retrospectivas) con la visualización del flujo de Kanban (tablero continuo, límites WIP), siendo útil para equipos en transición entre metodologías."
+              },
+              {
+                "id": "u3-ai-18",
+                "pregunta": "¿Cuál es la diferencia entre el modelo RUP y los métodos ágiles?",
+                "opciones": {
+                  "A": "RUP es más rápido que los métodos ágiles",
+                  "B": "RUP es un proceso prescriptivo con fases definidas; los ágiles son adaptativos e iterativos con menos formalismo",
+                  "C": "No existen diferencias entre RUP y los métodos ágiles",
+                  "D": "RUP no incluye iteraciones"
+                },
+                "correcta": "B",
+                "justificacion": "RUP (Rational Unified Process) es un proceso de software prescriptivo con cuatro fases (inicio, elaboración, construcción, transición) y mucha documentación. Los métodos ágiles son más adaptativos, ligeros y centrados en el software funcionando."
+              },
+              {
+                "id": "u3-ai-19",
+                "pregunta": "En Scrum, ¿qué es el incremento del producto?",
+                "opciones": {
+                  "A": "El aumento del presupuesto del proyecto",
+                  "B": "La suma de todos los elementos completados del Product Backlog durante el sprint, que debe ser funcional y potencialmente entregable",
+                  "C": "El número de nuevas funcionalidades planificadas",
+                  "D": "La velocidad del equipo al final del sprint"
+                },
+                "correcta": "B",
+                "justificacion": "El incremento es la suma de todos los ítems del Product Backlog completados durante el sprint más el valor de incrementos anteriores; debe cumplir el Definition of Done y ser potencialmente entregable."
+              },
+              {
+                "id": "u3-ai-20",
+                "pregunta": "¿Qué es el burndown chart en Scrum?",
+                "opciones": {
+                  "A": "Un diagrama que muestra el trabajo restante a lo largo del tiempo en un sprint",
+                  "B": "Un gráfico de la velocidad histórica del equipo",
+                  "C": "Un esquema de la arquitectura del sistema",
+                  "D": "Un mapa de riesgos del proyecto"
+                },
+                "correcta": "A",
+                "justificacion": "El burndown chart es un gráfico que muestra el trabajo pendiente (en puntos de historia u horas) a lo largo del tiempo del sprint, permitiendo visualizar si el equipo va a completar los objetivos a tiempo."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 04",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
+            "preguntas": [
+              {
+                "id": "u4-prom-01",
+                "pregunta": "Un patrón de diseño es:",
+                "opciones": {
+                  "A": "Código reutilizable",
+                  "B": "Una librería",
+                  "C": "Una solución reutilizable a un problema común",
+                  "D": "Un framework"
+                },
+                "correcta": "C",
+                "justificacion": "Son soluciones probadas a problemas recurrentes en el diseño de software."
+              },
+              {
+                "id": "u4-prom-02",
+                "pregunta": "Singleton garantiza:",
+                "opciones": {
+                  "A": "Varias instancias",
+                  "B": "Herencia múltiple",
+                  "C": "Una única instancia",
+                  "D": "Bajo acoplamiento siempre"
+                },
+                "correcta": "C",
+                "justificacion": "Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella."
+              },
+              {
+                "id": "u4-prom-03",
+                "pregunta": "El patrón Factory se usa para:",
+                "opciones": {
+                  "A": "Añadir funcionalidades",
+                  "B": "Crear objetos sin exponer la lógica",
+                  "C": "Notificar cambios",
+                  "D": "Cambiar estados"
+                },
+                "correcta": "B",
+                "justificacion": "Define una interfaz para crear un objeto, pero deja que las subclases decidan qué clase instanciar."
+              },
+              {
+                "id": "u4-prom-04",
+                "pregunta": "Adapter sirve para:",
+                "opciones": {
+                  "A": "Crear objetos",
+                  "B": "Traducir interfaces incompatibles",
+                  "C": "Encapsular acciones",
+                  "D": "Gestionar estados"
+                },
+                "correcta": "B",
+                "justificacion": "Permite que clases con interfaces incompatibles trabajen juntas."
+              },
+              {
+                "id": "u4-prom-05",
+                "pregunta": "Decorator permite:",
+                "opciones": {
+                  "A": "Cambiar algoritmos",
+                  "B": "Añadir funcionalidades dinámicamente",
+                  "C": "Crear instancias únicas",
+                  "D": "Gestionar flujos"
+                },
+                "correcta": "B",
+                "justificacion": "Permite añadir responsabilidades a objetos de forma dinámica sin afectar a otros objetos."
+              },
+              {
+                "id": "u4-prom-06",
+                "pregunta": "Observer se basa en:",
+                "opciones": {
+                  "A": "Encapsular comandos",
+                  "B": "Notificar cambios a observadores",
+                  "C": "Cambiar estados",
+                  "D": "Crear objetos complejos"
+                },
+                "correcta": "B",
+                "justificacion": "Define una dependencia uno-a-muchos para que cuando un objeto cambie de estado, sus dependientes sean notificados."
+              },
+              {
+                "id": "u4-prom-07",
+                "pregunta": "Strategy permite:",
+                "opciones": {
+                  "A": "Notificar eventos",
+                  "B": "Cambiar algoritmos en tiempo de ejecución",
+                  "C": "Crear instancias",
+                  "D": "Encapsular acciones"
+                },
+                "correcta": "B",
+                "justificacion": "Define una familia de algoritmos y los hace intercambiables."
+              },
+              {
+                "id": "u4-prom-08",
+                "pregunta": "Command encapsula:",
+                "opciones": {
+                  "A": "Algoritmos",
+                  "B": "Estados",
+                  "C": "Acciones como objetos",
+                  "D": "Dependencias"
+                },
+                "correcta": "C",
+                "justificacion": "Encapsula una petición como un objeto, permitiendo parametrizar clientes con diferentes peticiones."
+              },
+              {
+                "id": "u4-prom-09",
+                "pregunta": "El patrón State se usa cuando:",
+                "opciones": {
+                  "A": "Hay un solo comportamiento",
+                  "B": "El comportamiento depende del estado",
+                  "C": "No hay estados",
+                  "D": "Se usan eventos"
+                },
+                "correcta": "B",
+                "justificacion": "Permite que un objeto altere su comportamiento cuando su estado interno cambia."
+              },
+              {
+                "id": "u4-prom-10",
+                "pregunta": "Los patrones creacionales se centran en:",
+                "opciones": {
+                  "A": "Comunicación entre objetos",
+                  "B": "Creación de objetos",
+                  "C": "Flujo de datos",
+                  "D": "Interfaces gráficas"
+                },
+                "correcta": "B",
+                "justificacion": "Se encargan de los mecanismos de creación de objetos, tratando de crear objetos de forma adecuada a la situación."
+              },
+              {
+                "id": "u4-prom-11",
+                "pregunta": "¿Por qué los patrones de diseño son importantes en desarrollo de software?",
+                "opciones": {
+                  "A": "Porque sustituyen al código",
+                  "B": "Porque son soluciones reutilizables a problemas comunes",
+                  "C": "Porque hacen el código más corto siempre",
+                  "D": "Porque evitan errores automáticamente"
+                },
+                "correcta": "B",
+                "justificacion": "Ofrecen soluciones probadas y estandarizadas que mejoran la comunicación entre desarrolladores y la calidad del diseño."
+              }
+            ]
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u4-ai-01",
+                "pregunta": "¿Cuáles son las tres categorías principales de los patrones de diseño según el libro 'Gang of Four'?",
+                "opciones": {
+                  "A": "Básicos, intermedios y avanzados",
+                  "B": "Creacionales, estructurales y de comportamiento",
+                  "C": "Simples, compuestos y abstractos",
+                  "D": "Frontend, backend y base de datos"
+                },
+                "correcta": "B",
+                "justificacion": "Los 23 patrones del libro 'Design Patterns' (GoF) se clasifican en: creacionales (cómo crear objetos), estructurales (cómo componer objetos) y de comportamiento (cómo interactúan los objetos)."
+              },
+              {
+                "id": "u4-ai-02",
+                "pregunta": "¿A qué categoría pertenece el patrón Facade?",
+                "opciones": {
+                  "A": "Creacional",
+                  "B": "De comportamiento",
+                  "C": "Estructural",
+                  "D": "Funcional"
+                },
+                "correcta": "C",
+                "justificacion": "Facade es un patrón estructural que proporciona una interfaz simplificada a un conjunto complejo de clases, ocultando la complejidad del subsistema."
+              },
+              {
+                "id": "u4-ai-03",
+                "pregunta": "¿Cuál es el propósito del patrón Composite?",
+                "opciones": {
+                  "A": "Crear objetos complejos paso a paso",
+                  "B": "Tratar objetos individuales y composiciones de objetos de forma uniforme mediante una estructura de árbol",
+                  "C": "Notificar cambios de estado a múltiples objetos",
+                  "D": "Proporcionar un sustituto para controlar el acceso a un objeto"
+                },
+                "correcta": "B",
+                "justificacion": "Composite permite componer objetos en estructuras de árbol para representar jerarquías parte-todo, de modo que los clientes puedan tratar objetos individuales y composiciones de forma uniforme."
+              },
+              {
+                "id": "u4-ai-04",
+                "pregunta": "¿Qué es el principio de responsabilidad única (SRP) de SOLID?",
+                "opciones": {
+                  "A": "Una clase debe tener una única instancia",
+                  "B": "Una clase debe tener solo una razón para cambiar, es decir, una única responsabilidad",
+                  "C": "Cada método debe tener una única línea de código",
+                  "D": "Un módulo debe depender de una única interfaz"
+                },
+                "correcta": "B",
+                "justificacion": "SRP (Single Responsibility Principle) establece que una clase debe tener una única responsabilidad y, por tanto, una única razón para cambiar. Esto facilita el mantenimiento y la comprensión del código."
+              },
+              {
+                "id": "u4-ai-05",
+                "pregunta": "¿Qué establece el principio abierto/cerrado (OCP) de SOLID?",
+                "opciones": {
+                  "A": "Las clases deben estar abiertas a modificaciones pero cerradas a extensiones",
+                  "B": "Las clases deben estar abiertas a extensión pero cerradas a modificación",
+                  "C": "El código debe ser accesible (abierto) desde cualquier módulo",
+                  "D": "Los métodos privados deben convertirse en públicos"
+                },
+                "correcta": "B",
+                "justificacion": "OCP (Open/Closed Principle) indica que el software debe estar abierto para ser extendido (con nuevas funcionalidades) pero cerrado para ser modificado, favoreciendo la extensión mediante herencia o composición."
+              },
+              {
+                "id": "u4-ai-06",
+                "pregunta": "¿Qué dice el principio de sustitución de Liskov (LSP)?",
+                "opciones": {
+                  "A": "Las subclases deben poder sustituir a sus clases base sin alterar el comportamiento del programa",
+                  "B": "Solo se puede usar herencia con clases abstractas",
+                  "C": "Las interfaces deben ser lo más grandes posible",
+                  "D": "Las clases deben depender de implementaciones concretas"
+                },
+                "correcta": "A",
+                "justificacion": "LSP (Liskov Substitution Principle) establece que los objetos de una clase derivada deben poder reemplazar a los de su clase base sin que el programa deje de funcionar correctamente."
+              },
+              {
+                "id": "u4-ai-07",
+                "pregunta": "¿Qué propone el principio de segregación de interfaces (ISP) de SOLID?",
+                "opciones": {
+                  "A": "Usar una única interfaz grande para todo el sistema",
+                  "B": "Los clientes no deben depender de métodos que no usan; preferir interfaces pequeñas y específicas",
+                  "C": "Las interfaces deben heredar de clases abstractas",
+                  "D": "Cada clase debe implementar todas las interfaces disponibles"
+                },
+                "correcta": "B",
+                "justificacion": "ISP indica que es mejor tener muchas interfaces específicas pequeñas que una interfaz general grande, evitando que las clases tengan que implementar métodos que no necesitan."
+              },
+              {
+                "id": "u4-ai-08",
+                "pregunta": "¿Qué establece el principio de inversión de dependencias (DIP) de SOLID?",
+                "opciones": {
+                  "A": "Los módulos de alto nivel deben depender de módulos de bajo nivel",
+                  "B": "Los módulos de alto y bajo nivel deben depender de abstracciones, no de implementaciones concretas",
+                  "C": "Las clases hija deben depender de las clases padre",
+                  "D": "Las dependencias deben eliminarse completamente del código"
+                },
+                "correcta": "B",
+                "justificacion": "DIP establece que los módulos de alto nivel no deben depender de los de bajo nivel; ambos deben depender de abstracciones (interfaces). Esto reduce el acoplamiento y facilita los cambios."
+              },
+              {
+                "id": "u4-ai-09",
+                "pregunta": "¿Cuál es la diferencia entre el patrón Abstract Factory y el Factory Method?",
+                "opciones": {
+                  "A": "No hay diferencia entre ambos patrones",
+                  "B": "Factory Method crea un tipo de objeto; Abstract Factory crea familias de objetos relacionados",
+                  "C": "Abstract Factory es más simple que Factory Method",
+                  "D": "Factory Method usa herencia; Abstract Factory usa composición únicamente"
+                },
+                "correcta": "B",
+                "justificacion": "Factory Method define una interfaz para crear un objeto dejando a las subclases decidir qué instanciar. Abstract Factory proporciona una interfaz para crear familias de objetos relacionados sin especificar sus clases concretas."
+              },
+              {
+                "id": "u4-ai-10",
+                "pregunta": "¿Qué es el patrón Proxy?",
+                "opciones": {
+                  "A": "Un patrón que crea múltiples instancias de una clase",
+                  "B": "Un patrón que proporciona un sustituto o marcador de posición para controlar el acceso a otro objeto",
+                  "C": "Un patrón para componer estructuras complejas en árbol",
+                  "D": "Un patrón para notificar cambios de estado"
+                },
+                "correcta": "B",
+                "justificacion": "El patrón Proxy proporciona un sustituto de otro objeto para controlar el acceso a él, pudiendo añadir funcionalidades como control de acceso, caché, registro o lazy initialization."
+              },
+              {
+                "id": "u4-ai-11",
+                "pregunta": "¿Qué problema resuelve el patrón Builder?",
+                "opciones": {
+                  "A": "La creación de objetos con muchos parámetros opcionales de forma clara y flexible",
+                  "B": "La notificación de cambios de estado a múltiples objetos",
+                  "C": "La comunicación entre objetos sin acoplamiento directo",
+                  "D": "La reutilización de instancias ya creadas"
+                },
+                "correcta": "A",
+                "justificacion": "Builder permite construir objetos complejos paso a paso, separando la construcción de la representación. Es especialmente útil cuando hay muchos parámetros opcionales, evitando constructores con decenas de parámetros."
+              },
+              {
+                "id": "u4-ai-12",
+                "pregunta": "¿Qué es el patrón Template Method?",
+                "opciones": {
+                  "A": "Un patrón que define una plantilla visual para la interfaz",
+                  "B": "Un patrón que define el esqueleto de un algoritmo en una clase base, dejando que las subclases implementen ciertos pasos",
+                  "C": "Un patrón para reutilizar plantillas de código entre proyectos",
+                  "D": "Un patrón para crear objetos a partir de plantillas predefinidas"
+                },
+                "correcta": "B",
+                "justificacion": "Template Method define la estructura de un algoritmo en la clase base, delegando algunos pasos a las subclases, que pueden redefinir ciertas partes sin cambiar la estructura general del algoritmo."
+              },
+              {
+                "id": "u4-ai-13",
+                "pregunta": "¿Qué es el principio de 'favor composition over inheritance'?",
+                "opciones": {
+                  "A": "Usar siempre herencia múltiple en lugar de interfaces",
+                  "B": "Preferir la composición de objetos sobre la herencia de clases para mayor flexibilidad",
+                  "C": "Evitar completamente el uso de herencia en el código",
+                  "D": "Usar composición solo en patrones creacionales"
+                },
+                "correcta": "B",
+                "justificacion": "Este principio sugiere que es preferible construir comportamiento combinando objetos (composición) en lugar de extender clases (herencia), ya que la composición es más flexible y evita los problemas de jerarquías profundas."
+              },
+              {
+                "id": "u4-ai-14",
+                "pregunta": "¿Qué es el patrón Iterator?",
+                "opciones": {
+                  "A": "Un patrón para crear bucles eficientes en código",
+                  "B": "Un patrón que proporciona una forma de acceder secuencialmente a los elementos de una colección sin exponer su representación interna",
+                  "C": "Un patrón para iterar sobre jerarquías de clases",
+                  "D": "Un patrón para recorrer el historial de commits"
+                },
+                "correcta": "B",
+                "justificacion": "Iterator proporciona una interfaz estándar para recorrer cualquier tipo de colección (lista, árbol, grafo, etc.) sin conocer su implementación interna, desacoplando el algoritmo de recorrido de la estructura de datos."
+              },
+              {
+                "id": "u4-ai-15",
+                "pregunta": "¿Qué significa el principio 'Tell, Don't Ask' en diseño orientado a objetos?",
+                "opciones": {
+                  "A": "Los objetos deben pedir información a otros objetos antes de actuar",
+                  "B": "Los objetos deben dar instrucciones a otros objetos en lugar de preguntar por su estado para decidir",
+                  "C": "Las clases no deben tener métodos getters",
+                  "D": "Los comentarios en el código deben decir qué hace el código, no el cómo"
+                },
+                "correcta": "B",
+                "justificacion": "'Tell, Don't Ask' indica que en lugar de preguntar a un objeto sobre su estado y tomar decisiones externamente, es mejor decirle al objeto qué debe hacer, manteniendo el comportamiento junto a los datos."
+              },
+              {
+                "id": "u4-ai-16",
+                "pregunta": "¿Qué es el anti-patrón 'God Object'?",
+                "opciones": {
+                  "A": "Un patrón de diseño avanzado para sistemas complejos",
+                  "B": "Una clase que conoce o hace demasiado, violando el principio de responsabilidad única",
+                  "C": "Un patrón para gestionar permisos de administrador",
+                  "D": "Una clase que sirve como base para todas las demás clases"
+                },
+                "correcta": "B",
+                "justificacion": "El God Object (o God Class) es un anti-patrón donde una única clase centraliza demasiada lógica y conocimiento del sistema, dificultando el mantenimiento, las pruebas y la comprensión del código."
+              },
+              {
+                "id": "u4-ai-17",
+                "pregunta": "¿Qué es el patrón Mediator?",
+                "opciones": {
+                  "A": "Un patrón que almacena el historial de cambios de estado",
+                  "B": "Un patrón que centraliza la comunicación entre objetos para reducir dependencias directas entre ellos",
+                  "C": "Un patrón para crear objetos de forma centralizada",
+                  "D": "Un patrón para gestionar transacciones en bases de datos"
+                },
+                "correcta": "B",
+                "justificacion": "Mediator define un objeto que encapsula cómo interactúan otros objetos, promoviendo el bajo acoplamiento al evitar que los objetos se referencien mutuamente de forma directa."
+              },
+              {
+                "id": "u4-ai-18",
+                "pregunta": "¿Qué es la alta cohesión en diseño de software?",
+                "opciones": {
+                  "A": "Que los módulos del sistema tienen muchas dependencias entre sí",
+                  "B": "Que los elementos dentro de un módulo están fuertemente relacionados y trabajan juntos para un único propósito",
+                  "C": "Que el sistema usa muchas clases diferentes",
+                  "D": "Que el código es difícil de modificar"
+                },
+                "correcta": "B",
+                "justificacion": "La alta cohesión significa que los elementos de un módulo (métodos de una clase) están estrechamente relacionados y trabajan hacia un propósito común, haciendo el código más comprensible y mantenible."
+              },
+              {
+                "id": "u4-ai-19",
+                "pregunta": "¿Qué es el bajo acoplamiento (loose coupling) en diseño de software?",
+                "opciones": {
+                  "A": "Que los módulos del sistema son completamente independientes y no se comunican",
+                  "B": "Que los módulos del sistema tienen pocas dependencias entre sí, facilitando cambios sin efecto cascada",
+                  "C": "Que el código tiene pocas líneas",
+                  "D": "Que el sistema usa pocas clases"
+                },
+                "correcta": "B",
+                "justificacion": "El bajo acoplamiento implica que los módulos dependen poco unos de otros, de modo que los cambios en un módulo tienen un impacto mínimo en los demás, facilitando el mantenimiento y la reutilización."
+              },
+              {
+                "id": "u4-ai-20",
+                "pregunta": "¿Qué es el patrón Chain of Responsibility?",
+                "opciones": {
+                  "A": "Un patrón que hereda comportamiento en cadena de clases",
+                  "B": "Un patrón que pasa una solicitud a lo largo de una cadena de manejadores hasta que uno la procesa",
+                  "C": "Un patrón para encadenar consultas a bases de datos",
+                  "D": "Un patrón para crear objetos en cascada"
+                },
+                "correcta": "B",
+                "justificacion": "Chain of Responsibility permite que múltiples objetos tengan oportunidad de manejar una solicitud; la solicitud pasa por la cadena hasta que algún manejador la procesa, desacoplando el emisor del receptor."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 05",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
+            "preguntas": [
+              {
+                "id": "u5-prom-01",
+                "pregunta": "¿Qué caracteriza a las pruebas unitarias dentro del proceso de testing?",
+                "opciones": {
+                  "A": "Analizan todo el sistema completo",
+                  "B": "Evalúan módulos pequeños de forma aislada",
+                  "C": "Solo las realiza el cliente",
+                  "D": "No son automáticas"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas unitarias verifican el correcto funcionamiento de una unidad de código (como una función o método) de forma independiente."
+              },
+              {
+                "id": "u5-prom-02",
+                "pregunta": "¿Qué se busca principalmente en las pruebas de aceptación?",
+                "opciones": {
+                  "A": "Validar el código fuente",
+                  "B": "Verificar algoritmos",
+                  "C": "Confirmar que el sistema cumple las necesidades del cliente",
+                  "D": "Analizar rendimiento"
+                },
+                "correcta": "C",
+                "justificacion": "Son pruebas realizadas a menudo por el usuario final para decidir si el sistema está listo para ser entregado."
+              },
+              {
+                "id": "u5-prom-03",
+                "pregunta": "En pruebas de caja blanca, ¿qué se analiza principalmente?",
+                "opciones": {
+                  "A": "Interfaz de usuario",
+                  "B": "Entradas del usuario",
+                  "C": "Estructura interna del código",
+                  "D": "Experiencia del cliente"
+                },
+                "correcta": "C",
+                "justificacion": "Se basan en el conocimiento del código fuente para verificar caminos lógicos, condiciones y bucles."
+              },
+              {
+                "id": "u5-prom-04",
+                "pregunta": "¿Qué son las pruebas de regresión?",
+                "opciones": {
+                  "A": "Pruebas iniciales",
+                  "B": "Pruebas para validar interfaz",
+                  "C": "Pruebas que aseguran que cambios no rompen funcionalidades existentes",
+                  "D": "Pruebas de compilación"
+                },
+                "correcta": "C",
+                "justificacion": "Se realizan después de modificar el software para confirmar que los cambios no han introducido nuevos errores en partes que antes funcionaban."
+              },
+              {
+                "id": "u5-prom-05",
+                "pregunta": "En testing, ¿por qué es importante combinar pruebas de caja negra y caja blanca?",
+                "opciones": {
+                  "A": "Porque una sustituye a la otra",
+                  "B": "Porque ambas analizan cosas diferentes y se complementan",
+                  "C": "Porque son obligatorias",
+                  "D": "Porque reducen el código"
+                },
+                "correcta": "B",
+                "justificacion": "La caja negra se centra en la funcionalidad (entradas/salidas) y la caja blanca en la lógica interna del código."
+              },
+              {
+                "id": "u5-prom-06",
+                "pregunta": "¿Qué diferencia hay entre verificación y validación?",
+                "opciones": {
+                  "A": "No hay diferencia",
+                  "B": "Verificación comprueba el código; validación si cumple necesidades del usuario",
+                  "C": "Validación es solo para tests automáticos",
+                  "D": "Verificación es posterior al desarrollo"
+                },
+                "correcta": "B",
+                "justificacion": "Verificación responde a '¿estamos construyendo el producto correctamente?' y validación a '¿estamos construyendo el producto correcto?'."
+              },
+              {
+                "id": "u5-prom-07",
+                "pregunta": "¿Qué ventaja ofrece el patrón Strategy en testing?",
+                "opciones": {
+                  "A": "Cambiar algoritmos sin modificar el código principal",
+                  "B": "Borrar código",
+                  "C": "Ejecutar código",
+                  "D": "Crear repositorios"
+                },
+                "correcta": "A",
+                "justificacion": "Permite seleccionar un algoritmo en tiempo de ejecución de entre una familia de algoritmos definidos."
+              },
+              {
+                "id": "u5-prom-08",
+                "pregunta": "¿Qué es la refactorización en el contexto de las pruebas?",
+                "opciones": {
+                  "A": "Añadir nuevas funcionalidades",
+                  "B": "Corregir errores del sistema",
+                  "C": "Mejorar el código sin cambiar su comportamiento",
+                  "D": "Compilar el programa"
+                },
+                "correcta": "C",
+                "justificacion": "La refactorización busca mejorar la estructura interna del código (legibilidad, mantenibilidad) sin alterar su funcionalidad externa."
+              },
+              {
+                "id": "u5-prom-09",
+                "pregunta": "¿Qué es un 'code smell' en el contexto de calidad del software?",
+                "opciones": {
+                  "A": "Un error que rompe el programa",
+                  "B": "Un síntoma de mal diseño del código",
+                  "C": "Un lenguaje de programación",
+                  "D": "Un test automático"
+                },
+                "correcta": "B",
+                "justificacion": "Un 'hedor de código' indica un problema potencial en el diseño que podría dificultar el mantenimiento o la evolución del software."
+              },
+              {
+                "id": "u5-prom-10",
+                "pregunta": "¿Qué es un depurador (debugger)?",
+                "opciones": {
+                  "A": "Una herramienta que compila el código",
+                  "B": "Una herramienta que permite ejecutar el código paso a paso para encontrar errores",
+                  "C": "Un programa que optimiza el rendimiento",
+                  "D": "Un tipo de prueba automática"
+                },
+                "correcta": "B",
+                "justificacion": "Un depurador es una herramienta que permite inspeccionar el estado del programa durante su ejecución (variables, pila de llamadas) para identificar y corregir errores."
+              },
+              {
+                "id": "u5-prom-11",
+                "pregunta": "¿Qué es TDD (Test-Driven Development)?",
+                "opciones": {
+                  "A": "Una metodología donde se escribe el test antes que el código de producción",
+                  "B": "Una herramienta automática de testing",
+                  "C": "Un tipo de sprint de Scrum dedicado a pruebas",
+                  "D": "Una técnica para diseñar bases de datos"
+                },
+                "correcta": "A",
+                "justificacion": "TDD es una práctica donde el ciclo es: escribir un test que falla, escribir el mínimo código para que pase, y refactorizar. Esto guía el diseño del software desde las pruebas."
+              }
+            ]
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u5-ai-01",
+                "pregunta": "¿Qué son las pruebas de integración?",
+                "opciones": {
+                  "A": "Pruebas que verifican módulos de forma aislada",
+                  "B": "Pruebas que verifican que distintos módulos o servicios funcionan correctamente juntos",
+                  "C": "Pruebas realizadas por el usuario final",
+                  "D": "Pruebas de rendimiento bajo carga"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas de integración verifican que los diferentes módulos o componentes del sistema interactúan correctamente entre sí, detectando problemas en las interfaces entre componentes."
+              },
+              {
+                "id": "u5-ai-02",
+                "pregunta": "¿Qué es la cobertura de código (code coverage)?",
+                "opciones": {
+                  "A": "El número total de líneas de código del proyecto",
+                  "B": "El porcentaje de código fuente que es ejecutado durante las pruebas",
+                  "C": "La documentación que cubre cada función del sistema",
+                  "D": "El número de pruebas unitarias escritas"
+                },
+                "correcta": "B",
+                "justificacion": "La cobertura de código mide qué porcentaje del código fuente es ejecutado al correr las pruebas, indicando qué partes del código no están siendo probadas."
+              },
+              {
+                "id": "u5-ai-03",
+                "pregunta": "¿Qué es un mock en testing?",
+                "opciones": {
+                  "A": "Un entorno de producción simulado",
+                  "B": "Un objeto simulado que imita el comportamiento de dependencias reales para aislar la unidad bajo prueba",
+                  "C": "Un tipo de prueba de rendimiento",
+                  "D": "Una herramienta de cobertura de código"
+                },
+                "correcta": "B",
+                "justificacion": "Un mock es un objeto que simula el comportamiento de dependencias reales (bases de datos, APIs externas, etc.) de forma controlada, permitiendo probar una unidad de código de forma aislada."
+              },
+              {
+                "id": "u5-ai-04",
+                "pregunta": "¿Qué es una prueba de caja negra?",
+                "opciones": {
+                  "A": "Una prueba que analiza la estructura interna del código",
+                  "B": "Una prueba que verifica el comportamiento del sistema basándose solo en entradas y salidas sin conocer el código interno",
+                  "C": "Una prueba realizada en entornos sin iluminación",
+                  "D": "Una prueba que solo comprueba errores de compilación"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas de caja negra tratan el sistema como una caja opaca: solo se consideran las entradas y las salidas esperadas, sin acceso ni conocimiento de la implementación interna."
+              },
+              {
+                "id": "u5-ai-05",
+                "pregunta": "¿Qué es el BDD (Behavior-Driven Development)?",
+                "opciones": {
+                  "A": "Una extensión del TDD que describe el comportamiento del sistema en lenguaje natural comprensible para todos los stakeholders",
+                  "B": "Una herramienta automática de generación de tests",
+                  "C": "Un tipo de prueba de carga y rendimiento",
+                  "D": "Una metodología exclusiva de Scrum"
+                },
+                "correcta": "A",
+                "justificacion": "BDD extiende TDD describiendo el comportamiento del sistema con un lenguaje natural estructurado (Gherkin: Given-When-Then) que pueden entender tanto técnicos como no técnicos."
+              },
+              {
+                "id": "u5-ai-06",
+                "pregunta": "¿Qué son las pruebas de carga (load testing)?",
+                "opciones": {
+                  "A": "Pruebas que comprueban la lógica de negocio del sistema",
+                  "B": "Pruebas que verifican cómo se comporta el sistema bajo condiciones de uso normal y elevada",
+                  "C": "Pruebas que comprueban errores de sintaxis",
+                  "D": "Pruebas de aceptación realizadas por el cliente"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas de carga evalúan el comportamiento del sistema bajo diferentes niveles de carga para verificar que mantiene un rendimiento aceptable y detectar cuellos de botella."
+              },
+              {
+                "id": "u5-ai-07",
+                "pregunta": "¿Qué diferencia hay entre un bug y una excepción en programación?",
+                "opciones": {
+                  "A": "Son exactamente lo mismo",
+                  "B": "Un bug es un error en la lógica del código; una excepción es un evento anormal durante la ejecución que puede manejarse",
+                  "C": "Las excepciones solo ocurren en Java",
+                  "D": "Los bugs son intencionados; las excepciones no"
+                },
+                "correcta": "B",
+                "justificacion": "Un bug es un defecto en el código que produce resultados incorrectos. Una excepción es un evento anormal en tiempo de ejecución (como división por cero) que puede anticiparse y manejarse con try-catch."
+              },
+              {
+                "id": "u5-ai-08",
+                "pregunta": "¿Qué es el principio de 'fail fast' en el desarrollo de software?",
+                "opciones": {
+                  "A": "Fallar lo más rápido posible para llegar al mercado antes",
+                  "B": "Detectar y notificar errores lo antes posible en lugar de continuar con un estado inconsistente",
+                  "C": "Lanzar el producto sin pruebas para obtener feedback",
+                  "D": "Usar siempre excepciones en lugar de validaciones"
+                },
+                "correcta": "B",
+                "justificacion": "Fail fast es un principio que propone que el sistema debe detectar y reportar fallos lo antes posible, interrumpiendo la operación en lugar de continuar con datos incorrectos que podrían causar problemas mayores."
+              },
+              {
+                "id": "u5-ai-09",
+                "pregunta": "¿Qué es un stub en testing?",
+                "opciones": {
+                  "A": "Un tipo de prueba de rendimiento",
+                  "B": "Un objeto que devuelve respuestas predefinidas a llamadas durante las pruebas, sin implementar lógica real",
+                  "C": "Un fragmento de código que genera errores de forma intencionada",
+                  "D": "Una cobertura del 100% del código"
+                },
+                "correcta": "B",
+                "justificacion": "Un stub es un sustituto de una dependencia real que devuelve respuestas preprogramadas. A diferencia del mock, no verifica interacciones; simplemente proporciona datos de respuesta para que la prueba pueda continuar."
+              },
+              {
+                "id": "u5-ai-10",
+                "pregunta": "¿Qué es la pirámide de testing?",
+                "opciones": {
+                  "A": "Un modelo visual que sugiere tener más pruebas unitarias que de integración y más de integración que end-to-end",
+                  "B": "Un framework de testing popular",
+                  "C": "Un diagrama UML del sistema de pruebas",
+                  "D": "Un modelo que sugiere más pruebas manuales que automáticas"
+                },
+                "correcta": "A",
+                "justificacion": "La pirámide de testing propone una distribución: muchas pruebas unitarias (base), menos de integración (medio) y pocas pruebas end-to-end o UI (cima), ya que las unitarias son más rápidas y baratas."
+              },
+              {
+                "id": "u5-ai-11",
+                "pregunta": "¿Qué es el punto de ruptura (breakpoint) en depuración?",
+                "opciones": {
+                  "A": "El punto donde el código falla con un error fatal",
+                  "B": "Una marca en el código donde el depurador pausa la ejecución para inspeccionar el estado",
+                  "C": "El límite máximo de memoria del programa",
+                  "D": "El número máximo de errores permitidos en el código"
+                },
+                "correcta": "B",
+                "justificacion": "Un breakpoint es una señal colocada en una línea de código que indica al depurador que pause la ejecución en ese punto, permitiendo inspeccionar variables, la pila de llamadas y el estado del programa."
+              },
+              {
+                "id": "u5-ai-12",
+                "pregunta": "¿Qué es la inspección de código (code review)?",
+                "opciones": {
+                  "A": "Una herramienta automática de análisis de código",
+                  "B": "El proceso de que otro desarrollador examine el código de un compañero para detectar errores y mejorar la calidad",
+                  "C": "La ejecución de pruebas unitarias automáticas",
+                  "D": "La documentación del código fuente"
+                },
+                "correcta": "B",
+                "justificacion": "La revisión de código es un proceso donde uno o más desarrolladores examinan el código de un compañero antes de integrarlo, con el objetivo de detectar defectos, mejorar la calidad y compartir conocimiento."
+              },
+              {
+                "id": "u5-ai-13",
+                "pregunta": "¿Qué es el análisis estático de código?",
+                "opciones": {
+                  "A": "Ejecutar el código para buscar errores en tiempo de ejecución",
+                  "B": "Analizar el código fuente sin ejecutarlo para detectar posibles errores, vulnerabilidades o malas prácticas",
+                  "C": "Revisar el código manualmente en equipo",
+                  "D": "Medir el rendimiento del sistema bajo carga"
+                },
+                "correcta": "B",
+                "justificacion": "El análisis estático examina el código sin ejecutarlo, usando herramientas (linters, SonarQube, etc.) para detectar errores potenciales, malas prácticas de codificación y vulnerabilidades de seguridad."
+              },
+              {
+                "id": "u5-ai-14",
+                "pregunta": "¿Qué son las pruebas end-to-end (E2E)?",
+                "opciones": {
+                  "A": "Pruebas que verifican el código de principio a fin línea a línea",
+                  "B": "Pruebas que simulan el comportamiento completo de un usuario real a través de todo el sistema",
+                  "C": "Pruebas que solo comprueban la primera y última función del programa",
+                  "D": "Pruebas que verifican la integración con servicios externos"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas E2E simulan escenarios reales de usuario interactuando con el sistema completo (UI, backend, base de datos, servicios externos) para verificar que el flujo completo funciona correctamente."
+              },
+              {
+                "id": "u5-ai-15",
+                "pregunta": "¿Qué es el smoke testing?",
+                "opciones": {
+                  "A": "Pruebas de rendimiento bajo altas temperaturas",
+                  "B": "Un conjunto básico de pruebas que verifica que las funcionalidades principales del sistema funcionan tras un despliegue",
+                  "C": "Pruebas de seguridad del sistema",
+                  "D": "Pruebas que generan errores de forma intencionada"
+                },
+                "correcta": "B",
+                "justificacion": "El smoke testing es un conjunto mínimo de pruebas que verifica que las funcionalidades críticas del sistema funcionan tras un build o despliegue, antes de ejecutar pruebas más exhaustivas."
+              },
+              {
+                "id": "u5-ai-16",
+                "pregunta": "¿Qué es un error de tipo 'null pointer exception'?",
+                "opciones": {
+                  "A": "Un error producido por dividir entre cero",
+                  "B": "Un error que ocurre al intentar acceder a métodos o propiedades de una referencia nula",
+                  "C": "Un error de sintaxis en el código fuente",
+                  "D": "Un error de conexión con la base de datos"
+                },
+                "correcta": "B",
+                "justificacion": "Una NullPointerException ocurre cuando se intenta usar una variable de objeto que tiene valor null, intentando acceder a sus métodos o atributos. Es uno de los errores más comunes en programación orientada a objetos."
+              },
+              {
+                "id": "u5-ai-17",
+                "pregunta": "¿Qué es el principio de 'test isolation' en pruebas unitarias?",
+                "opciones": {
+                  "A": "Ejecutar las pruebas en un servidor separado",
+                  "B": "Que cada prueba sea independiente y no dependa ni afecte al resultado de otras pruebas",
+                  "C": "Aislar el código de producción del código de pruebas",
+                  "D": "Usar un lenguaje diferente para escribir las pruebas"
+                },
+                "correcta": "B",
+                "justificacion": "El aislamiento de pruebas garantiza que cada test se ejecuta de forma independiente: no depende del orden de ejecución ni del estado dejado por otras pruebas, haciendo los resultados reproducibles y fiables."
+              },
+              {
+                "id": "u5-ai-18",
+                "pregunta": "¿Qué son las pruebas de seguridad (security testing)?",
+                "opciones": {
+                  "A": "Pruebas que verifican el acceso de usuarios al sistema",
+                  "B": "Pruebas que buscan vulnerabilidades, riesgos y debilidades en el software que podrían ser explotadas",
+                  "C": "Pruebas que comprueban el cifrado de la base de datos",
+                  "D": "Pruebas de autenticación únicamente"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas de seguridad identifican vulnerabilidades (inyección SQL, XSS, autenticación débil, etc.) que podrían permitir ataques, asegurando que el sistema protege adecuadamente los datos e impide accesos no autorizados."
+              },
+              {
+                "id": "u5-ai-19",
+                "pregunta": "¿Qué herramienta de Java se usa habitualmente para pruebas unitarias?",
+                "opciones": {
+                  "A": "Maven",
+                  "B": "Gradle",
+                  "C": "JUnit",
+                  "D": "Jenkins"
+                },
+                "correcta": "C",
+                "justificacion": "JUnit es el framework de pruebas unitarias más utilizado en el ecosistema Java, proporcionando anotaciones (@Test, @BeforeEach, etc.) y aserciones para escribir y ejecutar pruebas unitarias."
+              },
+              {
+                "id": "u5-ai-20",
+                "pregunta": "¿Qué es una prueba de usabilidad?",
+                "opciones": {
+                  "A": "Una prueba que verifica el rendimiento del sistema",
+                  "B": "Una prueba donde usuarios reales interactúan con el sistema para evaluar su facilidad de uso e identificar problemas de experiencia",
+                  "C": "Una prueba que comprueba la compatibilidad con navegadores",
+                  "D": "Una prueba de la documentación del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "Las pruebas de usabilidad evalúan qué tan fácil e intuitivo resulta el sistema para los usuarios reales, identificando problemas en la interfaz y experiencia de usuario antes del lanzamiento."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 06",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 0,
+            "preguntas": []
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u6-ai-01",
+                "pregunta": "¿Qué es UML (Unified Modeling Language)?",
+                "opciones": {
+                  "A": "Un lenguaje de programación orientado a objetos",
+                  "B": "Un lenguaje de modelado estándar para visualizar, especificar y documentar sistemas de software",
+                  "C": "Un framework de desarrollo ágil",
+                  "D": "Un sistema de control de versiones"
+                },
+                "correcta": "B",
+                "justificacion": "UML es un lenguaje gráfico estandarizado (OMG) para visualizar, especificar, construir y documentar los componentes de un sistema de software, independientemente del lenguaje de implementación."
+              },
+              {
+                "id": "u6-ai-02",
+                "pregunta": "¿Qué representa una clase en un diagrama de clases UML?",
+                "opciones": {
+                  "A": "Una instancia concreta de un objeto",
+                  "B": "Un rectángulo dividido en tres secciones: nombre, atributos y métodos",
+                  "C": "Una relación entre dos objetos",
+                  "D": "Un paquete de clases relacionadas"
+                },
+                "correcta": "B",
+                "justificacion": "En UML, una clase se representa como un rectángulo con tres compartimentos: el nombre en la parte superior, los atributos en el centro y las operaciones (métodos) en la parte inferior."
+              },
+              {
+                "id": "u6-ai-03",
+                "pregunta": "¿Qué indica el signo '+' antes de un atributo o método en un diagrama de clases UML?",
+                "opciones": {
+                  "A": "Que es un atributo de clase (estático)",
+                  "B": "Que tiene visibilidad pública (public)",
+                  "C": "Que es un método abstracto",
+                  "D": "Que es un método sobrescrito"
+                },
+                "correcta": "B",
+                "justificacion": "En UML, los modificadores de visibilidad se representan con símbolos: + (public), - (private), # (protected) y ~ (package). El signo + indica que el miembro es accesible desde cualquier clase."
+              },
+              {
+                "id": "u6-ai-04",
+                "pregunta": "¿Qué tipo de relación UML representa la herencia entre clases?",
+                "opciones": {
+                  "A": "Asociación (línea sólida)",
+                  "B": "Composición (rombo relleno)",
+                  "C": "Generalización (flecha con triángulo vacío hacia la clase padre)",
+                  "D": "Dependencia (línea discontinua con flecha)"
+                },
+                "correcta": "C",
+                "justificacion": "La generalización representa la herencia en UML: una línea sólida con una punta de flecha triangular vacía apuntando hacia la clase padre (superclase), indicando una relación 'es-un'."
+              },
+              {
+                "id": "u6-ai-05",
+                "pregunta": "¿Qué diferencia hay entre composición y agregación en UML?",
+                "opciones": {
+                  "A": "No hay diferencia; son sinónimos",
+                  "B": "En composición, la parte no puede existir sin el todo; en agregación, la parte puede existir independientemente",
+                  "C": "La agregación es más fuerte que la composición",
+                  "D": "La composición se usa solo para herencia múltiple"
+                },
+                "correcta": "B",
+                "justificacion": "La composición (rombo relleno) implica que las partes son propiedad del todo y no pueden existir sin él. La agregación (rombo vacío) es una relación más débil donde las partes pueden existir independientemente del todo."
+              },
+              {
+                "id": "u6-ai-06",
+                "pregunta": "¿Qué es una interfaz en un diagrama de clases UML?",
+                "opciones": {
+                  "A": "Una clase con todos los métodos implementados",
+                  "B": "Un contrato que define métodos que las clases implementadoras deben proporcionar, sin implementación",
+                  "C": "Una clase abstracta con herencia múltiple",
+                  "D": "Un paquete de clases relacionadas"
+                },
+                "correcta": "B",
+                "justificacion": "Una interfaz en UML (notada con «interface») define un conjunto de operaciones que las clases que la implementan deben proporcionar. La relación de implementación se representa con una línea discontinua y flecha triangular vacía."
+              },
+              {
+                "id": "u6-ai-07",
+                "pregunta": "¿Qué es la multiplicidad en una relación UML?",
+                "opciones": {
+                  "A": "El número de clases en el diagrama",
+                  "B": "La notación que indica cuántas instancias de una clase pueden relacionarse con instancias de otra",
+                  "C": "El número de métodos de una clase",
+                  "D": "El nivel de herencia entre clases"
+                },
+                "correcta": "B",
+                "justificacion": "La multiplicidad indica la cantidad de objetos de una clase que pueden participar en una relación: 1 (exactamente uno), 0..1 (cero o uno), * o 0..* (cero o más), 1..* (uno o más)."
+              },
+              {
+                "id": "u6-ai-08",
+                "pregunta": "¿Qué indica el símbolo '#' en la visibilidad de un miembro de clase en UML?",
+                "opciones": {
+                  "A": "Visibilidad pública",
+                  "B": "Visibilidad privada",
+                  "C": "Visibilidad protegida",
+                  "D": "Visibilidad de paquete"
+                },
+                "correcta": "C",
+                "justificacion": "En UML, '#' indica visibilidad protected: el miembro es accesible dentro de la propia clase y en sus subclases, pero no desde clases externas no relacionadas por herencia."
+              },
+              {
+                "id": "u6-ai-09",
+                "pregunta": "¿Qué es una clase abstracta en UML?",
+                "opciones": {
+                  "A": "Una clase que no tiene atributos",
+                  "B": "Una clase que no puede instanciarse directamente y puede tener métodos sin implementar, representada con el nombre en cursiva",
+                  "C": "Una clase con todos sus métodos públicos",
+                  "D": "Una clase que hereda de múltiples padres"
+                },
+                "correcta": "B",
+                "justificacion": "Una clase abstracta en UML se representa con su nombre en cursiva. No puede instanciarse directamente y puede contener métodos abstractos (también en cursiva) que las subclases concretas deben implementar."
+              },
+              {
+                "id": "u6-ai-10",
+                "pregunta": "¿Qué es una asociación dirigida en un diagrama de clases UML?",
+                "opciones": {
+                  "A": "Una asociación entre tres o más clases",
+                  "B": "Una relación entre clases donde una clase conoce a la otra pero no al revés, indicada con una flecha en un extremo",
+                  "C": "Una asociación con multiplicidad obligatoria",
+                  "D": "Una herencia en sentido inverso"
+                },
+                "correcta": "B",
+                "justificacion": "La asociación dirigida indica navegabilidad: la flecha muestra que la clase origen conoce (tiene referencia) a la clase destino, pero no necesariamente al contrario. Sin flecha, la asociación es bidireccional."
+              },
+              {
+                "id": "u6-ai-11",
+                "pregunta": "¿Cuántos compartimentos tiene normalmente un rectángulo de clase en UML?",
+                "opciones": {
+                  "A": "Uno",
+                  "B": "Dos",
+                  "C": "Tres",
+                  "D": "Cuatro"
+                },
+                "correcta": "C",
+                "justificacion": "Un rectángulo de clase UML tiene tres compartimentos: el superior para el nombre de la clase (y estereotipo si aplica), el central para los atributos y el inferior para las operaciones (métodos)."
+              },
+              {
+                "id": "u6-ai-12",
+                "pregunta": "¿Qué es la dependencia en un diagrama de clases UML?",
+                "opciones": {
+                  "A": "La herencia entre dos clases",
+                  "B": "Una relación débil donde un cambio en una clase puede afectar a otra, representada con línea discontinua y flecha",
+                  "C": "La composición de objetos complejos",
+                  "D": "La multiplicidad entre instancias"
+                },
+                "correcta": "B",
+                "justificacion": "La dependencia es la relación más débil en UML: indica que una clase usa temporalmente a otra (como parámetro de método o variable local). Se representa con línea discontinua y flecha abierta."
+              },
+              {
+                "id": "u6-ai-13",
+                "pregunta": "¿Qué representa el rombo relleno en una relación UML?",
+                "opciones": {
+                  "A": "Agregación",
+                  "B": "Dependencia",
+                  "C": "Composición",
+                  "D": "Realización"
+                },
+                "correcta": "C",
+                "justificacion": "El rombo relleno (negro) en UML representa composición: una relación fuerte donde las partes son propiedad exclusiva del todo y no pueden existir sin él. El rombo vacío representa la agregación (relación más débil)."
+              },
+              {
+                "id": "u6-ai-14",
+                "pregunta": "¿Cómo se representa la implementación de una interfaz en UML?",
+                "opciones": {
+                  "A": "Con una línea sólida y rombo relleno",
+                  "B": "Con una línea discontinua y una flecha triangular vacía hacia la interfaz",
+                  "C": "Con una línea sólida y flecha abierta",
+                  "D": "Con una línea doble sólida"
+                },
+                "correcta": "B",
+                "justificacion": "La relación de realización (implementación de interfaz) se representa en UML con una línea discontinua y una flecha triangular vacía apuntando hacia la interfaz, similar a la herencia pero con línea discontinua."
+              },
+              {
+                "id": "u6-ai-15",
+                "pregunta": "¿Qué es un paquete (package) en UML?",
+                "opciones": {
+                  "A": "Una clase que agrupa métodos relacionados",
+                  "B": "Un mecanismo para agrupar elementos UML relacionados, representado como una carpeta con pestaña",
+                  "C": "Un método estático de la clase",
+                  "D": "Una interfaz con múltiples implementaciones"
+                },
+                "correcta": "B",
+                "justificacion": "Un paquete en UML agrupa elementos relacionados (clases, interfaces, etc.) en un espacio de nombres, representado gráficamente como un rectángulo con una pestaña en la esquina superior izquierda."
+              },
+              {
+                "id": "u6-ai-16",
+                "pregunta": "¿Cómo se indica que un atributo es de clase (estático) en UML?",
+                "opciones": {
+                  "A": "Con el símbolo $ antes del nombre",
+                  "B": "Con el nombre subrayado",
+                  "C": "Con el nombre en negrita",
+                  "D": "Con el nombre en cursiva"
+                },
+                "correcta": "B",
+                "justificacion": "En UML, los miembros estáticos (de clase) se representan subrayando el nombre del atributo u operación, indicando que pertenece a la clase en sí y no a las instancias individuales."
+              },
+              {
+                "id": "u6-ai-17",
+                "pregunta": "¿Qué tipo de relación UML indica que una clase 'usa' o 'conoce' a otra pero de forma temporal?",
+                "opciones": {
+                  "A": "Composición",
+                  "B": "Generalización",
+                  "C": "Dependencia",
+                  "D": "Agregación"
+                },
+                "correcta": "C",
+                "justificacion": "La dependencia es la relación más débil y temporal en UML, indicando que una clase usa otra como parámetro de método, tipo de retorno o variable local, sin mantener una referencia persistente."
+              },
+              {
+                "id": "u6-ai-18",
+                "pregunta": "¿Qué significa la multiplicidad '1..*' en UML?",
+                "opciones": {
+                  "A": "Exactamente uno",
+                  "B": "Cero o más",
+                  "C": "Uno o más",
+                  "D": "Cero o uno"
+                },
+                "correcta": "C",
+                "justificacion": "La multiplicidad 1..* significa 'uno o más': debe haber al menos una instancia participando en la relación, pero no hay límite superior. Es diferente de 0..* (cero o más) que permite ninguna instancia."
+              },
+              {
+                "id": "u6-ai-19",
+                "pregunta": "¿Cuál es la diferencia entre un diagrama de clases y un diagrama de objetos en UML?",
+                "opciones": {
+                  "A": "No hay diferencia; son el mismo tipo de diagrama",
+                  "B": "El diagrama de clases muestra tipos y relaciones; el de objetos muestra instancias concretas en un momento específico",
+                  "C": "El diagrama de objetos incluye métodos; el de clases no",
+                  "D": "El diagrama de clases es dinámico; el de objetos es estático"
+                },
+                "correcta": "B",
+                "justificacion": "El diagrama de clases muestra la estructura estática del sistema (clases, relaciones, atributos). El diagrama de objetos es una 'fotografía' del sistema en un instante concreto, mostrando objetos con sus valores actuales."
+              },
+              {
+                "id": "u6-ai-20",
+                "pregunta": "¿Cómo se denota en UML que una operación es abstracta?",
+                "opciones": {
+                  "A": "Con el símbolo {abstract} al final",
+                  "B": "Con el nombre de la operación en cursiva",
+                  "C": "Con un asterisco al principio",
+                  "D": "Con la operación subrayada"
+                },
+                "correcta": "B",
+                "justificacion": "Al igual que los nombres de clases abstractas, las operaciones abstractas se representan en UML con el nombre en cursiva, indicando que no tienen implementación en esa clase y deben ser definidas en las subclases."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 07",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 0,
+            "preguntas": []
+          },
+          "CLAUDE IA": {
+            "total_preguntas": 20,
+            "preguntas": [
+              {
+                "id": "u7-ai-01",
+                "pregunta": "¿Qué tipos de diagramas de comportamiento incluye UML?",
+                "opciones": {
+                  "A": "Solo diagramas de secuencia y de clases",
+                  "B": "Diagramas de casos de uso, secuencia, actividad, estado y comunicación, entre otros",
+                  "C": "Solo diagramas de flujo y de componentes",
+                  "D": "Únicamente diagramas de estado"
+                },
+                "correcta": "B",
+                "justificacion": "Los diagramas de comportamiento UML incluyen: casos de uso, secuencia, comunicación, actividad, estados, temporización e interacción global, describiendo el comportamiento dinámico del sistema."
+              },
+              {
+                "id": "u7-ai-02",
+                "pregunta": "¿Qué muestra un diagrama de casos de uso en UML?",
+                "opciones": {
+                  "A": "La estructura interna de las clases del sistema",
+                  "B": "Las interacciones entre actores externos y las funcionalidades que el sistema ofrece",
+                  "C": "El flujo de datos entre módulos",
+                  "D": "El historial de versiones del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "El diagrama de casos de uso muestra los actores (usuarios o sistemas externos) y los casos de uso (funcionalidades) del sistema, describiendo qué puede hacer el sistema desde la perspectiva del usuario."
+              },
+              {
+                "id": "u7-ai-03",
+                "pregunta": "¿Qué es un actor en un diagrama de casos de uso UML?",
+                "opciones": {
+                  "A": "Un objeto interno del sistema",
+                  "B": "Una persona, sistema externo u organización que interactúa con el sistema",
+                  "C": "Una función del sistema",
+                  "D": "Un método de una clase"
+                },
+                "correcta": "B",
+                "justificacion": "Un actor en UML representa cualquier entidad externa al sistema que interactúa con él: puede ser una persona (usuario), otro sistema de software o un dispositivo hardware. Se representa como un muñeco de palo."
+              },
+              {
+                "id": "u7-ai-04",
+                "pregunta": "¿Qué es un diagrama de secuencia en UML?",
+                "opciones": {
+                  "A": "Un diagrama que muestra el orden de las clases en el sistema",
+                  "B": "Un diagrama que muestra cómo los objetos interactúan entre sí a lo largo del tiempo mediante mensajes",
+                  "C": "Un diagrama que muestra los pasos para instalar el sistema",
+                  "D": "Un diagrama de flujo de datos"
+                },
+                "correcta": "B",
+                "justificacion": "El diagrama de secuencia muestra cómo objetos o actores interactúan en una secuencia temporal, representando el orden de los mensajes intercambiados. El tiempo avanza de arriba hacia abajo."
+              },
+              {
+                "id": "u7-ai-05",
+                "pregunta": "¿Qué representa la línea de vida (lifeline) en un diagrama de secuencia?",
+                "opciones": {
+                  "A": "La duración total del proyecto",
+                  "B": "La existencia de un objeto durante el período de tiempo representado en el diagrama",
+                  "C": "El camino crítico del sistema",
+                  "D": "El tiempo de respuesta del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "Una lifeline en un diagrama de secuencia representa la existencia temporal de un participante (objeto o actor) a lo largo de la interacción, mostrada como una línea vertical discontinua debajo del participante."
+              },
+              {
+                "id": "u7-ai-06",
+                "pregunta": "¿Qué es un diagrama de actividad en UML?",
+                "opciones": {
+                  "A": "Un diagrama que muestra los actores del sistema",
+                  "B": "Un diagrama que modela el flujo de trabajo o proceso, similar a un diagrama de flujo orientado a objetos",
+                  "C": "Un diagrama que representa el estado actual de los objetos",
+                  "D": "Un diagrama de la arquitectura del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "El diagrama de actividad modela el flujo de control o de objetos de una actividad, describiendo la secuencia de acciones en un proceso. Es similar a un diagrama de flujo pero orientado a objetos."
+              },
+              {
+                "id": "u7-ai-07",
+                "pregunta": "¿Qué representa el símbolo de decisión (rombo) en un diagrama de actividad UML?",
+                "opciones": {
+                  "A": "El inicio del flujo de actividad",
+                  "B": "Un punto donde el flujo se divide según una condición, tomando un camino u otro",
+                  "C": "Una actividad que se repite en bucle",
+                  "D": "El fin del diagrama de actividad"
+                },
+                "correcta": "B",
+                "justificacion": "El rombo (nodo de decisión) en un diagrama de actividad representa un punto de bifurcación: el flujo toma uno de varios caminos posibles según la condición evaluada (guards) en cada transición saliente."
+              },
+              {
+                "id": "u7-ai-08",
+                "pregunta": "¿Qué es un diagrama de estados (máquina de estados) en UML?",
+                "opciones": {
+                  "A": "Un diagrama que muestra todos los atributos posibles de una clase",
+                  "B": "Un diagrama que modela los distintos estados por los que pasa un objeto y las transiciones entre ellos ante eventos",
+                  "C": "Un diagrama que representa el flujo de datos del sistema",
+                  "D": "Un diagrama que muestra la configuración del servidor"
+                },
+                "correcta": "B",
+                "justificacion": "El diagrama de máquina de estados modela el comportamiento de un objeto a lo largo de su vida, mostrando los estados en que puede estar y las transiciones que ocurren ante eventos externos o condiciones."
+              },
+              {
+                "id": "u7-ai-09",
+                "pregunta": "En un diagrama de casos de uso, ¿qué indica la relación 'include'?",
+                "opciones": {
+                  "A": "Que un caso de uso extiende el comportamiento de otro opcionalmente",
+                  "B": "Que un caso de uso siempre incluye (ejecuta) otro caso de uso como parte de su flujo",
+                  "C": "Que un actor incluye a otro actor",
+                  "D": "Que el caso de uso está dentro del límite del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "La relación 'include' indica que la ejecución de un caso de uso base siempre incluye la ejecución del caso de uso incluido. Es útil para factorizar comportamiento común entre casos de uso."
+              },
+              {
+                "id": "u7-ai-10",
+                "pregunta": "¿Qué indica la relación 'extend' en un diagrama de casos de uso UML?",
+                "opciones": {
+                  "A": "Que un caso de uso siempre se ejecuta al llamar al base",
+                  "B": "Que un caso de uso puede extender opcionalmente el comportamiento del caso de uso base bajo ciertas condiciones",
+                  "C": "Que un actor hereda de otro actor",
+                  "D": "Que el sistema extiende sus funcionalidades"
+                },
+                "correcta": "B",
+                "justificacion": "La relación 'extend' indica que el caso de uso extendido puede añadir comportamiento opcional al caso de uso base, solo bajo ciertas condiciones o en puntos de extensión específicos definidos en el base."
+              },
+              {
+                "id": "u7-ai-11",
+                "pregunta": "¿Qué símbolo representa el estado inicial en un diagrama de estados UML?",
+                "opciones": {
+                  "A": "Un rectángulo con esquinas redondeadas",
+                  "B": "Un círculo relleno (negro sólido)",
+                  "C": "Un rombo vacío",
+                  "D": "Un rectángulo con doble borde"
+                },
+                "correcta": "B",
+                "justificacion": "El estado inicial en un diagrama de estados UML se representa con un círculo negro sólido (pseudoestado inicial). El estado final se representa con un círculo negro rodeado por otro círculo vacío."
+              },
+              {
+                "id": "u7-ai-12",
+                "pregunta": "¿Qué diferencia hay entre un diagrama de secuencia y un diagrama de comunicación en UML?",
+                "opciones": {
+                  "A": "Son el mismo diagrama con diferente nombre",
+                  "B": "El diagrama de secuencia enfatiza el orden temporal; el de comunicación enfatiza las relaciones estructurales entre los objetos",
+                  "C": "El de comunicación solo se usa para sistemas distribuidos",
+                  "D": "El de secuencia no muestra mensajes; el de comunicación sí"
+                },
+                "correcta": "B",
+                "justificacion": "Ambos muestran interacciones entre objetos, pero el diagrama de secuencia destaca el orden temporal con una línea de tiempo vertical. El diagrama de comunicación destaca los vínculos estructurales y numera los mensajes."
+              },
+              {
+                "id": "u7-ai-13",
+                "pregunta": "¿Qué es una transición en un diagrama de estados UML?",
+                "opciones": {
+                  "A": "El tiempo que permanece un objeto en un estado",
+                  "B": "El cambio de un estado a otro, disparado por un evento y opcionalmente con una condición de guarda y una acción",
+                  "C": "El estado inicial del objeto",
+                  "D": "Un método que cambia el estado del objeto"
+                },
+                "correcta": "B",
+                "justificacion": "Una transición representa el cambio de un estado a otro. Se representa con una flecha y puede incluir: el evento que la dispara, una condición de guarda entre corchetes y una acción que se ejecuta, con el formato: evento [condición] / acción."
+              },
+              {
+                "id": "u7-ai-14",
+                "pregunta": "¿Qué son las swimlanes (carriles) en un diagrama de actividad UML?",
+                "opciones": {
+                  "A": "Líneas horizontales que marcan el tiempo en el diagrama",
+                  "B": "Divisiones verticales u horizontales que indican qué actor o componente es responsable de cada actividad",
+                  "C": "Los bucles dentro del flujo de actividades",
+                  "D": "Las condiciones de decisión del flujo"
+                },
+                "correcta": "B",
+                "justificacion": "Las swimlanes (o particiones) en un diagrama de actividad dividen el diagrama en áreas que indican quién (actor, departamento, sistema) es responsable de cada actividad, facilitando la comprensión de la distribución de responsabilidades."
+              },
+              {
+                "id": "u7-ai-15",
+                "pregunta": "¿Qué es el límite del sistema (system boundary) en un diagrama de casos de uso?",
+                "opciones": {
+                  "A": "El número máximo de usuarios del sistema",
+                  "B": "Un rectángulo que delimita lo que está dentro y fuera del sistema, separando actores de casos de uso",
+                  "C": "La interfaz gráfica del sistema",
+                  "D": "El límite de rendimiento del sistema"
+                },
+                "correcta": "B",
+                "justificacion": "El límite del sistema se representa como un rectángulo que contiene todos los casos de uso del sistema. Los actores se sitúan fuera de este límite, indicando que son entidades externas que interactúan con él."
+              },
+              {
+                "id": "u7-ai-16",
+                "pregunta": "¿Qué representa la barra de activación (activation box) en un diagrama de secuencia?",
+                "opciones": {
+                  "A": "El inicio del diagrama",
+                  "B": "El período durante el cual un objeto está ejecutando una operación o esperando una respuesta",
+                  "C": "El estado en que se encuentra el objeto",
+                  "D": "El tiempo de vida del objeto"
+                },
+                "correcta": "B",
+                "justificacion": "La barra de activación (rectángulo estrecho sobre la lifeline) indica el período en que el objeto está activo, es decir, ejecutando directamente una operación o esperando el retorno de un objeto subordinado."
+              },
+              {
+                "id": "u7-ai-17",
+                "pregunta": "¿Qué tipo de mensaje en un diagrama de secuencia no espera respuesta del receptor?",
+                "opciones": {
+                  "A": "Mensaje síncrono",
+                  "B": "Mensaje de retorno",
+                  "C": "Mensaje asíncrono",
+                  "D": "Mensaje de creación"
+                },
+                "correcta": "C",
+                "justificacion": "Un mensaje asíncrono (representado con flecha de punta abierta) no bloquea al emisor: lo envía y continúa su ejecución sin esperar respuesta. El mensaje síncrono (punta rellena) bloquea al emisor hasta recibir respuesta."
+              },
+              {
+                "id": "u7-ai-18",
+                "pregunta": "¿Para qué se usa el fragmento combinado 'loop' en un diagrama de secuencia UML?",
+                "opciones": {
+                  "A": "Para representar una condición alternativa",
+                  "B": "Para indicar que una secuencia de mensajes se repite mientras se cumpla una condición",
+                  "C": "Para indicar comportamiento opcional",
+                  "D": "Para mostrar ejecución paralela de mensajes"
+                },
+                "correcta": "B",
+                "justificacion": "El fragmento combinado 'loop' en UML delimita una sección del diagrama de secuencia que se repite mientras se cumpla la condición de guarda especificada entre corchetes, similar a un bucle while."
+              },
+              {
+                "id": "u7-ai-19",
+                "pregunta": "¿Qué diagrama UML se usa para modelar el comportamiento de un objeto a lo largo de todo su ciclo de vida?",
+                "opciones": {
+                  "A": "Diagrama de casos de uso",
+                  "B": "Diagrama de secuencia",
+                  "C": "Diagrama de máquina de estados",
+                  "D": "Diagrama de componentes"
+                },
+                "correcta": "C",
+                "justificacion": "El diagrama de máquina de estados es el más adecuado para modelar el ciclo de vida completo de un objeto, mostrando todos los estados por los que puede pasar desde su creación hasta su destrucción."
+              },
+              {
+                "id": "u7-ai-20",
+                "pregunta": "¿Qué es el fragmento combinado 'alt' en un diagrama de secuencia UML?",
+                "opciones": {
+                  "A": "Un fragmento que indica repetición de mensajes",
+                  "B": "Un fragmento que muestra alternativas excluyentes, similar a un if-else",
+                  "C": "Un fragmento para comportamiento opcional",
+                  "D": "Un fragmento para ejecución en paralelo"
+                },
+                "correcta": "B",
+                "justificacion": "El fragmento 'alt' (alternative) divide el fragmento en secciones separadas por líneas discontinuas, cada una con una condición de guarda. Solo la sección cuya condición sea verdadera se ejecuta, equivalente a un if-else if-else."
+              }
+            ]
+          }
+        }
       }
     ]
-  }    
+  }
 ]

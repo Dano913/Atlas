@@ -2,13 +2,11 @@
   {
     "asignatura": "Bases de datos",
     "unidades": [
-
       {
-        "unidad": 1,
-        "titulo": "Fundamentos de bases de datos",
-        "fuentes": [
-          {
-            "fuente": "PROMETEO",
+        "unidad": "Test unidad 01",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u1-prom-01",
@@ -144,8 +142,9 @@
               }
             ]
           },
-          {
-            "fuente": "Claude AI",
+          
+          "CLAUDE IA": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u1-ai-01",
@@ -293,409 +292,407 @@
               }
             ]
           }
-        ]
+        }
       },
-
       {
-        "unidad": 2,
-        "titulo": "Modelado conceptual con diagramas E-R",
-        "fuentes": [
-          {
-            "fuente": "PROMETEO",
+        "unidad": "Test unidad 02",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
-              {
-                "id": "u2-prom-01",
-                "pregunta": "En un modelo Entidad-Relación, ¿qué representa una entidad y por qué es fundamental en el diseño?",
-                "opciones": {
-                  "A": "Un tipo de dato",
-                  "B": "Un objeto del mundo real sobre el que queremos almacenar información",
-                  "C": "Una relación entre tablas",
-                  "D": "Un atributo"
-                },
-                "correcta": "B",
-                "justificacion": "Las entidades son los bloques básicos del modelo E-R y representan cosas u objetos (físicos o abstractos) que son relevantes para el sistema."
-              },
-              {
-                "id": "u2-prom-02",
-                "pregunta": "¿Qué diferencia existe entre una entidad y un atributo dentro de un modelo E-R?",
-                "opciones": {
-                  "A": "No hay diferencia",
-                  "B": "La entidad es un objeto y el atributo es una característica de ese objeto",
-                  "C": "El atributo es más importante",
-                  "D": "La entidad es una tabla"
-                },
-                "correcta": "B",
-                "justificacion": "Los atributos describen las propiedades de las entidades (por ejemplo, el nombre y la edad son atributos de la entidad Persona)."
-              },
-              {
-                "id": "u2-prom-03",
-                "pregunta": "En un diagrama E-R, ¿por qué es importante definir correctamente la cardinalidad de las relaciones?",
-                "opciones": {
-                  "A": "Para reducir el número de tablas",
-                  "B": "Porque determina cómo se relacionan los datos en la base de datos final",
-                  "C": "Porque elimina atributos",
-                  "D": "Porque evita usar claves"
-                },
-                "correcta": "B",
-                "justificacion": "La cardinalidad expresa el número de entidades a las que otra entidad puede estar asociada mediante una relación (1:1, 1:N, N:M)."
-              },
-              {
-                "id": "u2-prom-04",
-                "pregunta": "El modelo Entidad-Relación se usa para:",
-                "opciones": {
-                  "A": "Crear tablas físicas",
-                  "B": "Representar conceptualmente la realidad",
-                  "C": "Ejecutar consultas",
-                  "D": "Optimizar índices"
-                },
-                "correcta": "B",
-                "justificacion": "Es una herramienta para el modelado de datos que permite representar las entidades relevantes de un sistema y sus interrelaciones."
-              },
-              {
-                "id": "u2-prom-05",
-                "pregunta": "Una entidad representa:",
-                "opciones": {
-                  "A": "Un atributo",
-                  "B": "Una relación",
-                  "C": "Un objeto del mundo real",
-                  "D": "Una clave"
-                },
-                "correcta": "C",
-                "justificacion": "Una entidad es una cosa u objeto en el mundo real que es distinguible de todos los demás objetos."
-              },
-              {
-                "id": "u2-prom-06",
-                "pregunta": "En un diagrama E-R, las entidades se representan con:",
-                "opciones": {
-                  "A": "Óvalos",
-                  "B": "Rombos",
-                  "C": "Rectángulos",
-                  "D": "Flechas"
-                },
-                "correcta": "C",
-                "justificacion": "En la notación estándar de Chen, los rectángulos representan conjuntos de entidades."
-              },
-              {
-                "id": "u2-prom-07",
-                "pregunta": "Un atributo multivaluado:",
-                "opciones": {
-                  "A": "Cumple 1FN",
-                  "B": "Viola 1FN",
-                  "C": "Viola 2FN",
-                  "D": "Viola 3FN"
-                },
-                "correcta": "B",
-                "justificacion": "La Primera Forma Normal exige que cada atributo contenga solo valores atómicos; un atributo con múltiples valores rompe esta regla."
-              }
-            ]
+          {
+            "id": "u2-prom-01",
+            "pregunta": "En un modelo Entidad-Relación, ¿qué representa una entidad y por qué es fundamental en el diseño?",
+            "opciones": {
+              "A": "Un tipo de dato",
+              "B": "Un objeto del mundo real sobre el que queremos almacenar información",
+              "C": "Una relación entre tablas",
+              "D": "Un atributo"
+            },
+            "correcta": "B",
+            "justificacion": "Las entidades son los bloques básicos del modelo E-R y representan cosas u objetos (físicos o abstractos) que son relevantes para el sistema."
           },
           {
-            "fuente": "Claude AI",
-            "preguntas": [
-              {
-                "id": "u2-ai-01",
-                "pregunta": "¿Cómo se representan los atributos en la notación de Chen para diagramas E-R?",
-                "opciones": {
-                  "A": "Rectángulos",
-                  "B": "Rombos",
-                  "C": "Óvalos o elipses",
-                  "D": "Triángulos"
-                },
-                "correcta": "C",
-                "justificacion": "En la notación de Chen, los atributos se representan mediante óvalos o elipses conectados a su entidad mediante líneas."
-              },
-              {
-                "id": "u2-ai-02",
-                "pregunta": "¿Qué es una entidad débil en un diagrama E-R?",
-                "opciones": {
-                  "A": "Una entidad sin atributos",
-                  "B": "Una entidad cuya existencia depende de otra entidad fuerte",
-                  "C": "Una entidad con muchos atributos",
-                  "D": "Una entidad sin relaciones"
-                },
-                "correcta": "B",
-                "justificacion": "Una entidad débil no tiene clave primaria propia y depende de una entidad fuerte para su identificación. Se representa con un rectángulo doble en la notación de Chen."
-              },
-              {
-                "id": "u2-ai-03",
-                "pregunta": "¿Qué símbolo se usa en la notación de Chen para representar una relación entre entidades?",
-                "opciones": {
-                  "A": "Rectángulo",
-                  "B": "Óvalo",
-                  "C": "Rombo",
-                  "D": "Círculo"
-                },
-                "correcta": "C",
-                "justificacion": "En la notación de Chen, las relaciones se representan con rombos conectados a las entidades participantes mediante líneas."
-              },
-              {
-                "id": "u2-ai-04",
-                "pregunta": "¿Qué es un atributo derivado en un modelo E-R?",
-                "opciones": {
-                  "A": "Un atributo que puede tener múltiples valores",
-                  "B": "Un atributo cuyo valor se calcula a partir de otros atributos",
-                  "C": "Un atributo que identifica únicamente a la entidad",
-                  "D": "Un atributo sin valor definido"
-                },
-                "correcta": "B",
-                "justificacion": "Un atributo derivado es aquel cuyo valor puede calcularse a partir de otros atributos (ej. la edad puede derivarse de la fecha de nacimiento). Se representa con un óvalo discontinuo."
-              },
-              {
-                "id": "u2-ai-05",
-                "pregunta": "¿Qué indica la participación total de una entidad en una relación?",
-                "opciones": {
-                  "A": "Que la entidad puede no participar en la relación",
-                  "B": "Que todos los miembros de esa entidad deben participar en la relación",
-                  "C": "Que la relación es N:M",
-                  "D": "Que la entidad tiene muchos atributos"
-                },
-                "correcta": "B",
-                "justificacion": "La participación total (representada con doble línea en Chen) indica que cada instancia de esa entidad debe estar asociada a al menos una instancia de la entidad relacionada."
-              },
-              {
-                "id": "u2-ai-06",
-                "pregunta": "En un diagrama E-R extendido (EER), ¿qué representa la especialización?",
-                "opciones": {
-                  "A": "La unión de varias entidades en una sola",
-                  "B": "La división de una entidad en subtipos más específicos",
-                  "C": "La eliminación de atributos redundantes",
-                  "D": "La creación de claves compuestas"
-                },
-                "correcta": "B",
-                "justificacion": "La especialización es un proceso top-down que consiste en definir subclases de una entidad (superclase) que heredan sus atributos y añaden los propios."
-              },
-              {
-                "id": "u2-ai-07",
-                "pregunta": "¿Qué es la generalización en el modelo E-R extendido?",
-                "opciones": {
-                  "A": "Dividir una entidad en subtipos",
-                  "B": "Combinar varias entidades con características comunes en una superentidad",
-                  "C": "Eliminar relaciones redundantes",
-                  "D": "Añadir atributos a una entidad"
-                },
-                "correcta": "B",
-                "justificacion": "La generalización es el proceso inverso a la especialización: se identifican características comunes de varias entidades y se crea una superentidad que las agrupa."
-              },
-              {
-                "id": "u2-ai-08",
-                "pregunta": "¿Qué es la clave discriminante de una entidad débil?",
-                "opciones": {
-                  "A": "La clave primaria de la entidad fuerte",
-                  "B": "Un atributo que distingue instancias de la entidad débil dentro de las asociadas a la misma entidad fuerte",
-                  "C": "Un atributo multivaluado",
-                  "D": "La clave foránea de la entidad débil"
-                },
-                "correcta": "B",
-                "justificacion": "El discriminante es el atributo que, combinado con la clave de la entidad fuerte, identifica de forma única a cada instancia de la entidad débil."
-              },
-              {
-                "id": "u2-ai-09",
-                "pregunta": "Una relación ternaria en un diagrama E-R involucra:",
-                "opciones": {
-                  "A": "Una sola entidad consigo misma",
-                  "B": "Dos entidades",
-                  "C": "Tres entidades simultáneamente",
-                  "D": "Solo atributos, sin entidades"
-                },
-                "correcta": "C",
-                "justificacion": "Una relación ternaria asocia tres conjuntos de entidades al mismo tiempo, siendo necesaria cuando la relación no puede descomponerse en relaciones binarias sin perder información."
-              },
-              {
-                "id": "u2-ai-10",
-                "pregunta": "¿Qué representa una relación reflexiva (o recursiva) en un modelo E-R?",
-                "opciones": {
-                  "A": "Una relación entre dos entidades distintas",
-                  "B": "Una relación entre instancias de la misma entidad",
-                  "C": "Una relación con cardinalidad 1:1",
-                  "D": "Una relación sin atributos"
-                },
-                "correcta": "B",
-                "justificacion": "Una relación reflexiva o recursiva asocia una entidad consigo misma (ej. un empleado puede ser supervisor de otro empleado de la misma tabla)."
-              },
-              {
-                "id": "u2-ai-11",
-                "pregunta": "En la notación crow's foot (pata de cuervo), ¿qué indica una línea con un círculo y una línea perpendicular en el extremo?",
-                "opciones": {
-                  "A": "Uno y solo uno",
-                  "B": "Cero o uno",
-                  "C": "Uno o muchos",
-                  "D": "Cero o muchos"
-                },
-                "correcta": "B",
-                "justificacion": "En crow's foot, el círculo representa 'cero' y la línea perpendicular representa 'uno', indicando que la participación es opcional (cero o uno)."
-              },
-              {
-                "id": "u2-ai-12",
-                "pregunta": "¿Cuál es la diferencia entre el modelo conceptual y el modelo lógico de una base de datos?",
-                "opciones": {
-                  "A": "El modelo conceptual usa SQL; el lógico usa E-R",
-                  "B": "El modelo conceptual es independiente del SGBD; el lógico está adaptado al modelo de datos del SGBD elegido",
-                  "C": "No hay diferencia entre ambos modelos",
-                  "D": "El modelo lógico describe el almacenamiento físico"
-                },
-                "correcta": "B",
-                "justificacion": "El modelo conceptual (E-R) es abstracto e independiente de la tecnología; el modelo lógico traduce ese diseño al modelo concreto del SGBD (relacional en la mayoría de los casos)."
-              },
-              {
-                "id": "u2-ai-13",
-                "pregunta": "¿Cuándo se dice que una relación tiene un atributo propio en el modelo E-R?",
-                "opciones": {
-                  "A": "Cuando la relación tiene cardinalidad 1:1",
-                  "B": "Cuando la propia relación tiene características que no pertenecen a ninguna de las entidades participantes",
-                  "C": "Cuando una entidad participa más de una vez",
-                  "D": "Cuando la relación es recursiva"
-                },
-                "correcta": "B",
-                "justificacion": "Un atributo de relación describe características de la asociación en sí misma. Por ejemplo, en la relación TRABAJA_EN entre Empleado y Proyecto, la 'fecha de incorporación' es un atributo de la relación, no de las entidades."
-              },
-              {
-                "id": "u2-ai-14",
-                "pregunta": "¿Qué es un conjunto de entidades en el modelo E-R?",
-                "opciones": {
-                  "A": "Una instancia concreta de una entidad",
-                  "B": "El tipo o clase de entidad, que agrupa todas las instancias con las mismas propiedades",
-                  "C": "La tabla física de la base de datos",
-                  "D": "Un atributo compuesto"
-                },
-                "correcta": "B",
-                "justificacion": "Un conjunto de entidades (entity set) es la colección de todas las instancias del mismo tipo de entidad (ej. todos los alumnos), equivalente al concepto de clase en programación orientada a objetos."
-              }
-            ]
+            "id": "u2-prom-02",
+            "pregunta": "¿Qué diferencia existe entre una entidad y un atributo dentro de un modelo E-R?",
+            "opciones": {
+              "A": "No hay diferencia",
+              "B": "La entidad es un objeto y el atributo es una característica de ese objeto",
+              "C": "El atributo es más importante",
+              "D": "La entidad es una tabla"
+            },
+            "correcta": "B",
+            "justificacion": "Los atributos describen las propiedades de las entidades (por ejemplo, el nombre y la edad son atributos de la entidad Persona)."
+          },
+          {
+            "id": "u2-prom-03",
+            "pregunta": "En un diagrama E-R, ¿por qué es importante definir correctamente la cardinalidad de las relaciones?",
+            "opciones": {
+              "A": "Para reducir el número de tablas",
+              "B": "Porque determina cómo se relacionan los datos en la base de datos final",
+              "C": "Porque elimina atributos",
+              "D": "Porque evita usar claves"
+            },
+            "correcta": "B",
+            "justificacion": "La cardinalidad expresa el número de entidades a las que otra entidad puede estar asociada mediante una relación (1:1, 1:N, N:M)."
+          },
+          {
+            "id": "u2-prom-04",
+            "pregunta": "El modelo Entidad-Relación se usa para:",
+            "opciones": {
+              "A": "Crear tablas físicas",
+              "B": "Representar conceptualmente la realidad",
+              "C": "Ejecutar consultas",
+              "D": "Optimizar índices"
+            },
+            "correcta": "B",
+            "justificacion": "Es una herramienta para el modelado de datos que permite representar las entidades relevantes de un sistema y sus interrelaciones."
+          },
+          {
+            "id": "u2-prom-05",
+            "pregunta": "Una entidad representa:",
+            "opciones": {
+              "A": "Un atributo",
+              "B": "Una relación",
+              "C": "Un objeto del mundo real",
+              "D": "Una clave"
+            },
+            "correcta": "C",
+            "justificacion": "Una entidad es una cosa u objeto en el mundo real que es distinguible de todos los demás objetos."
+          },
+          {
+            "id": "u2-prom-06",
+            "pregunta": "En un diagrama E-R, las entidades se representan con:",
+            "opciones": {
+              "A": "Óvalos",
+              "B": "Rombos",
+              "C": "Rectángulos",
+              "D": "Flechas"
+            },
+            "correcta": "C",
+            "justificacion": "En la notación estándar de Chen, los rectángulos representan conjuntos de entidades."
+          },
+          {
+            "id": "u2-prom-07",
+            "pregunta": "Un atributo multivaluado:",
+            "opciones": {
+              "A": "Cumple 1FN",
+              "B": "Viola 1FN",
+              "C": "Viola 2FN",
+              "D": "Viola 3FN"
+            },
+            "correcta": "B",
+            "justificacion": "La Primera Forma Normal exige que cada atributo contenga solo valores atómicos; un atributo con múltiples valores rompe esta regla."
           }
-        ]
-      },
-
-      {
-        "unidad": 3,
-        "titulo": "Diseño lógico relacional",
-        "fuentes": [
-          {
-            "fuente": "PROMETEO",
-            "preguntas": [
-              {
-                "id": "u3-prom-01",
-                "pregunta": "¿Por qué la clave primaria es un elemento fundamental en una tabla?",
-                "opciones": {
-                  "A": "Porque reduce el tamaño",
-                  "B": "Porque identifica de forma única cada registro",
-                  "C": "Porque elimina errores automáticamente",
-                  "D": "Porque mejora el diseño visual"
-                },
-                "correcta": "B",
-                "justificacion": "La clave primaria garantiza que no haya dos filas iguales en una tabla y permite referenciar registros de forma inequívoca."
-              },
-              {
-                "id": "u3-prom-02",
-                "pregunta": "¿Qué papel desempeñan las claves foráneas en una base de datos relacional?",
-                "opciones": {
-                  "A": "Crear tablas",
-                  "B": "Relacionar tablas entre sí",
-                  "C": "Eliminar datos",
-                  "D": "Validar código"
-                },
-                "correcta": "B",
-                "justificacion": "Una clave foránea es un campo en una tabla que apunta a la clave primaria de otra tabla, estableciendo un vínculo entre ambas."
-              },
-              {
-                "id": "u3-prom-03",
-                "pregunta": "¿Cómo se implementa una relación N:M en un modelo relacional?",
-                "opciones": {
-                  "A": "Eliminándola",
-                  "B": "Creando una tabla intermedia con claves foráneas",
-                  "C": "Duplicando tablas",
-                  "D": "Ignorándola"
-                },
-                "correcta": "B",
-                "justificacion": "Las relaciones muchos-a-muchos se resuelven creando una tabla asociativa que contiene las claves primarias de las dos tablas relacionadas."
-              },
-              {
-                "id": "u3-prom-04",
-                "pregunta": "La clave primaria sirve para:",
-                "opciones": {
-                  "A": "Relacionar tablas",
-                  "B": "Identificar registros de forma única",
-                  "C": "Evitar claves foráneas",
-                  "D": "Crear vistas"
-                },
-                "correcta": "B",
-                "justificacion": "Una clave primaria es un campo o conjunto de campos que identifica de forma única cada fila de una tabla."
-              },
-              {
-                "id": "u3-prom-05",
-                "pregunta": "Una relación 1:N se implementa:",
-                "opciones": {
-                  "A": "Con una tabla intermedia",
-                  "B": "Con una FK en el lado N",
-                  "C": "Con una FK en el lado 1",
-                  "D": "Con una PK compuesta"
-                },
-                "correcta": "B",
-                "justificacion": "Para implementar una relación uno-a-muchos, se coloca la clave primaria de la entidad '1' como clave foránea en la tabla de la entidad 'N'."
-              },
-              {
-                "id": "u3-prom-06",
-                "pregunta": "Una relación N:M se transforma en:",
-                "opciones": {
-                  "A": "Una FK",
-                  "B": "Una vista",
-                  "C": "Una tabla intermedia",
-                  "D": "Un índice"
-                },
-                "correcta": "C",
-                "justificacion": "Las relaciones muchos-a-muchos no pueden representarse directamente en el modelo relacional y requieren una tabla adicional."
-              },
-              {
-                "id": "u3-prom-07",
-                "pregunta": "La tabla intermedia de una N:M contiene:",
-                "opciones": {
-                  "A": "Una PK simple",
-                  "B": "Solo atributos",
-                  "C": "Las PK de ambas entidades como FK",
-                  "D": "Datos duplicados"
-                },
-                "correcta": "C",
-                "justificacion": "La tabla intermedia vincula ambas entidades mediante sus respectivas claves primarias, que actúan como claves foráneas."
-              },
-              {
-                "id": "u3-prom-08",
-                "pregunta": "La integridad referencial garantiza que:",
-                "opciones": {
-                  "A": "No haya duplicados",
-                  "B": "Las FK apunten a valores existentes",
-                  "C": "Los datos estén ordenados",
-                  "D": "No existan NULL"
-                },
-                "correcta": "B",
-                "justificacion": "Asegura que las relaciones entre tablas permanezcan consistentes, impidiendo que una clave foránea apunte a un registro inexistente."
-              },
-              {
-                "id": "u3-prom-09",
-                "pregunta": "El diseño lógico consiste en:",
-                "opciones": {
-                  "A": "Crear el modelo E-R",
-                  "B": "Convertir el modelo E-R en tablas",
-                  "C": "Insertar datos",
-                  "D": "Optimizar consultas"
-                },
-                "correcta": "B",
-                "justificacion": "Es la fase donde el esquema conceptual (E-R) se traduce al esquema del modelo de datos que utiliza el SGBD, normalmente el relacional."
-              },
-              {
-                "id": "u3-prom-10",
-                "pregunta": "¿Qué representa una fila dentro de una tabla relacional?",
-                "opciones": {
-                  "A": "Columna",
-                  "B": "Registro",
-                  "C": "Tabla",
-                  "D": "Clave"
-                },
-                "correcta": "B",
-                "justificacion": "En el modelo relacional, una fila (o tupla) representa un registro individual que contiene los datos de una instancia específica de la entidad."
-              }
             ]
           },
+              
+          "CLAUDE IA": {
+            "total_preguntas": 11,
+            "preguntas": [
           {
-            "fuente": "Claude AI",
+            "id": "u2-ai-01",
+            "pregunta": "¿Cómo se representan los atributos en la notación de Chen para diagramas E-R?",
+            "opciones": {
+              "A": "Rectángulos",
+              "B": "Rombos",
+              "C": "Óvalos o elipses",
+              "D": "Triángulos"
+            },
+            "correcta": "C",
+            "justificacion": "En la notación de Chen, los atributos se representan mediante óvalos o elipses conectados a su entidad mediante líneas."
+          },
+          {
+            "id": "u2-ai-02",
+            "pregunta": "¿Qué es una entidad débil en un diagrama E-R?",
+            "opciones": {
+              "A": "Una entidad sin atributos",
+              "B": "Una entidad cuya existencia depende de otra entidad fuerte",
+              "C": "Una entidad con muchos atributos",
+              "D": "Una entidad sin relaciones"
+            },
+            "correcta": "B",
+            "justificacion": "Una entidad débil no tiene clave primaria propia y depende de una entidad fuerte para su identificación. Se representa con un rectángulo doble en la notación de Chen."
+          },
+          {
+            "id": "u2-ai-03",
+            "pregunta": "¿Qué símbolo se usa en la notación de Chen para representar una relación entre entidades?",
+            "opciones": {
+              "A": "Rectángulo",
+              "B": "Óvalo",
+              "C": "Rombo",
+              "D": "Círculo"
+            },
+            "correcta": "C",
+            "justificacion": "En la notación de Chen, las relaciones se representan con rombos conectados a las entidades participantes mediante líneas."
+          },
+          {
+            "id": "u2-ai-04",
+            "pregunta": "¿Qué es un atributo derivado en un modelo E-R?",
+            "opciones": {
+              "A": "Un atributo que puede tener múltiples valores",
+              "B": "Un atributo cuyo valor se calcula a partir de otros atributos",
+              "C": "Un atributo que identifica únicamente a la entidad",
+              "D": "Un atributo sin valor definido"
+            },
+            "correcta": "B",
+            "justificacion": "Un atributo derivado es aquel cuyo valor puede calcularse a partir de otros atributos (ej. la edad puede derivarse de la fecha de nacimiento). Se representa con un óvalo discontinuo."
+          },
+          {
+            "id": "u2-ai-05",
+            "pregunta": "¿Qué indica la participación total de una entidad en una relación?",
+            "opciones": {
+              "A": "Que la entidad puede no participar en la relación",
+              "B": "Que todos los miembros de esa entidad deben participar en la relación",
+              "C": "Que la relación es N:M",
+              "D": "Que la entidad tiene muchos atributos"
+            },
+            "correcta": "B",
+            "justificacion": "La participación total (representada con doble línea en Chen) indica que cada instancia de esa entidad debe estar asociada a al menos una instancia de la entidad relacionada."
+          },
+          {
+            "id": "u2-ai-06",
+            "pregunta": "En un diagrama E-R extendido (EER), ¿qué representa la especialización?",
+            "opciones": {
+              "A": "La unión de varias entidades en una sola",
+              "B": "La división de una entidad en subtipos más específicos",
+              "C": "La eliminación de atributos redundantes",
+              "D": "La creación de claves compuestas"
+            },
+            "correcta": "B",
+            "justificacion": "La especialización es un proceso top-down que consiste en definir subclases de una entidad (superclase) que heredan sus atributos y añaden los propios."
+          },
+          {
+            "id": "u2-ai-07",
+            "pregunta": "¿Qué es la generalización en el modelo E-R extendido?",
+            "opciones": {
+              "A": "Dividir una entidad en subtipos",
+              "B": "Combinar varias entidades con características comunes en una superentidad",
+              "C": "Eliminar relaciones redundantes",
+              "D": "Añadir atributos a una entidad"
+            },
+            "correcta": "B",
+            "justificacion": "La generalización es el proceso inverso a la especialización: se identifican características comunes de varias entidades y se crea una superentidad que las agrupa."
+          },
+          {
+            "id": "u2-ai-08",
+            "pregunta": "¿Qué es la clave discriminante de una entidad débil?",
+            "opciones": {
+              "A": "La clave primaria de la entidad fuerte",
+              "B": "Un atributo que distingue instancias de la entidad débil dentro de las asociadas a la misma entidad fuerte",
+              "C": "Un atributo multivaluado",
+              "D": "La clave foránea de la entidad débil"
+            },
+            "correcta": "B",
+            "justificacion": "El discriminante es el atributo que, combinado con la clave de la entidad fuerte, identifica de forma única a cada instancia de la entidad débil."
+          },
+          {
+            "id": "u2-ai-09",
+            "pregunta": "Una relación ternaria en un diagrama E-R involucra:",
+            "opciones": {
+              "A": "Una sola entidad consigo misma",
+              "B": "Dos entidades",
+              "C": "Tres entidades simultáneamente",
+              "D": "Solo atributos, sin entidades"
+            },
+            "correcta": "C",
+            "justificacion": "Una relación ternaria asocia tres conjuntos de entidades al mismo tiempo, siendo necesaria cuando la relación no puede descomponerse en relaciones binarias sin perder información."
+          },
+          {
+            "id": "u2-ai-10",
+            "pregunta": "¿Qué representa una relación reflexiva (o recursiva) en un modelo E-R?",
+            "opciones": {
+              "A": "Una relación entre dos entidades distintas",
+              "B": "Una relación entre instancias de la misma entidad",
+              "C": "Una relación con cardinalidad 1:1",
+              "D": "Una relación sin atributos"
+            },
+            "correcta": "B",
+            "justificacion": "Una relación reflexiva o recursiva asocia una entidad consigo misma (ej. un empleado puede ser supervisor de otro empleado de la misma tabla)."
+          },
+          {
+            "id": "u2-ai-11",
+            "pregunta": "En la notación crow's foot (pata de cuervo), ¿qué indica una línea con un círculo y una línea perpendicular en el extremo?",
+            "opciones": {
+              "A": "Uno y solo uno",
+              "B": "Cero o uno",
+              "C": "Uno o muchos",
+              "D": "Cero o muchos"
+            },
+            "correcta": "B",
+            "justificacion": "En crow's foot, el círculo representa 'cero' y la línea perpendicular representa 'uno', indicando que la participación es opcional (cero o uno)."
+          },
+          {
+            "id": "u2-ai-12",
+            "pregunta": "¿Cuál es la diferencia entre el modelo conceptual y el modelo lógico de una base de datos?",
+            "opciones": {
+              "A": "El modelo conceptual usa SQL; el lógico usa E-R",
+              "B": "El modelo conceptual es independiente del SGBD; el lógico está adaptado al modelo de datos del SGBD elegido",
+              "C": "No hay diferencia entre ambos modelos",
+              "D": "El modelo lógico describe el almacenamiento físico"
+            },
+            "correcta": "B",
+            "justificacion": "El modelo conceptual (E-R) es abstracto e independiente de la tecnología; el modelo lógico traduce ese diseño al modelo concreto del SGBD (relacional en la mayoría de los casos)."
+          },
+          {
+            "id": "u2-ai-13",
+            "pregunta": "¿Cuándo se dice que una relación tiene un atributo propio en el modelo E-R?",
+            "opciones": {
+              "A": "Cuando la relación tiene cardinalidad 1:1",
+              "B": "Cuando la propia relación tiene características que no pertenecen a ninguna de las entidades participantes",
+              "C": "Cuando una entidad participa más de una vez",
+              "D": "Cuando la relación es recursiva"
+            },
+            "correcta": "B",
+            "justificacion": "Un atributo de relación describe características de la asociación en sí misma. Por ejemplo, en la relación TRABAJA_EN entre Empleado y Proyecto, la 'fecha de incorporación' es un atributo de la relación, no de las entidades."
+          },
+          {
+            "id": "u2-ai-14",
+            "pregunta": "¿Qué es un conjunto de entidades en el modelo E-R?",
+            "opciones": {
+              "A": "Una instancia concreta de una entidad",
+              "B": "El tipo o clase de entidad, que agrupa todas las instancias con las mismas propiedades",
+              "C": "La tabla física de la base de datos",
+              "D": "Un atributo compuesto"
+            },
+            "correcta": "B",
+            "justificacion": "Un conjunto de entidades (entity set) es la colección de todas las instancias del mismo tipo de entidad (ej. todos los alumnos), equivalente al concepto de clase en programación orientada a objetos."
+          }
+            ]
+          } 
+        }
+      },
+      {
+        "unidad": "Test unidad 03",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
+            "preguntas":[
+          {
+            "id": "u3-prom-01",
+            "pregunta": "¿Por qué la clave primaria es un elemento fundamental en una tabla?",
+            "opciones": {
+              "A": "Porque reduce el tamaño",
+              "B": "Porque identifica de forma única cada registro",
+              "C": "Porque elimina errores automáticamente",
+              "D": "Porque mejora el diseño visual"
+            },
+            "correcta": "B",
+            "justificacion": "La clave primaria garantiza que no haya dos filas iguales en una tabla y permite referenciar registros de forma inequívoca."
+          },
+          {
+            "id": "u3-prom-02",
+            "pregunta": "¿Qué papel desempeñan las claves foráneas en una base de datos relacional?",
+            "opciones": {
+              "A": "Crear tablas",
+              "B": "Relacionar tablas entre sí",
+              "C": "Eliminar datos",
+              "D": "Validar código"
+            },
+            "correcta": "B",
+            "justificacion": "Una clave foránea es un campo en una tabla que apunta a la clave primaria de otra tabla, estableciendo un vínculo entre ambas."
+          },
+          {
+            "id": "u3-prom-03",
+            "pregunta": "¿Cómo se implementa una relación N:M en un modelo relacional?",
+            "opciones": {
+              "A": "Eliminándola",
+              "B": "Creando una tabla intermedia con claves foráneas",
+              "C": "Duplicando tablas",
+              "D": "Ignorándola"
+            },
+            "correcta": "B",
+            "justificacion": "Las relaciones muchos-a-muchos se resuelven creando una tabla asociativa que contiene las claves primarias de las dos tablas relacionadas."
+          },
+          {
+            "id": "u3-prom-04",
+            "pregunta": "La clave primaria sirve para:",
+            "opciones": {
+              "A": "Relacionar tablas",
+              "B": "Identificar registros de forma única",
+              "C": "Evitar claves foráneas",
+              "D": "Crear vistas"
+            },
+            "correcta": "B",
+            "justificacion": "Una clave primaria es un campo o conjunto de campos que identifica de forma única cada fila de una tabla."
+          },
+          {
+            "id": "u3-prom-05",
+            "pregunta": "Una relación 1:N se implementa:",
+            "opciones": {
+              "A": "Con una tabla intermedia",
+              "B": "Con una FK en el lado N",
+              "C": "Con una FK en el lado 1",
+              "D": "Con una PK compuesta"
+            },
+            "correcta": "B",
+            "justificacion": "Para implementar una relación uno-a-muchos, se coloca la clave primaria de la entidad '1' como clave foránea en la tabla de la entidad 'N'."
+          },
+          {
+            "id": "u3-prom-06",
+            "pregunta": "Una relación N:M se transforma en:",
+            "opciones": {
+              "A": "Una FK",
+              "B": "Una vista",
+              "C": "Una tabla intermedia",
+              "D": "Un índice"
+            },
+            "correcta": "C",
+            "justificacion": "Las relaciones muchos-a-muchos no pueden representarse directamente en el modelo relacional y requieren una tabla adicional."
+          },
+          {
+            "id": "u3-prom-07",
+            "pregunta": "La tabla intermedia de una N:M contiene:",
+            "opciones": {
+              "A": "Una PK simple",
+              "B": "Solo atributos",
+              "C": "Las PK de ambas entidades como FK",
+              "D": "Datos duplicados"
+            },
+            "correcta": "C",
+            "justificacion": "La tabla intermedia vincula ambas entidades mediante sus respectivas claves primarias, que actúan como claves foráneas."
+          },
+          {
+            "id": "u3-prom-08",
+            "pregunta": "La integridad referencial garantiza que:",
+            "opciones": {
+              "A": "No haya duplicados",
+              "B": "Las FK apunten a valores existentes",
+              "C": "Los datos estén ordenados",
+              "D": "No existan NULL"
+            },
+            "correcta": "B",
+            "justificacion": "Asegura que las relaciones entre tablas permanezcan consistentes, impidiendo que una clave foránea apunte a un registro inexistente."
+          },
+          {
+            "id": "u3-prom-09",
+            "pregunta": "El diseño lógico consiste en:",
+            "opciones": {
+              "A": "Crear el modelo E-R",
+              "B": "Convertir el modelo E-R en tablas",
+              "C": "Insertar datos",
+              "D": "Optimizar consultas"
+            },
+            "correcta": "B",
+            "justificacion": "Es la fase donde el esquema conceptual (E-R) se traduce al esquema del modelo de datos que utiliza el SGBD, normalmente el relacional."
+          },
+          {
+            "id": "u3-prom-10",
+            "pregunta": "¿Qué representa una fila dentro de una tabla relacional?",
+            "opciones": {
+              "A": "Columna",
+              "B": "Registro",
+              "C": "Tabla",
+              "D": "Clave"
+            },
+            "correcta": "B",
+            "justificacion": "En el modelo relacional, una fila (o tupla) representa un registro individual que contiene los datos de una instancia específica de la entidad."
+          }
+            ]
+          },
+              
+          "CLAUDE IA": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u3-ai-01",
@@ -854,16 +851,14 @@
                 "justificacion": "El álgebra relacional es un lenguaje formal procedural compuesto por operaciones (selección, proyección, unión, diferencia, producto cartesiano, etc.) que toman relaciones como entrada y devuelven relaciones."
               }
             ]
-          }
-        ]
+          } 
+        }
       },
-
       {
-        "unidad": 4,
-        "titulo": "Normalización",
-        "fuentes": [
-          {
-            "fuente": "PROMETEO",
+        "unidad": "Test unidad 04",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u4-prom-01",
@@ -1023,8 +1018,9 @@
               }
             ]
           },
-          {
-            "fuente": "Claude AI",
+              
+          "CLAUDE IA": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u4-ai-01",
@@ -1172,16 +1168,13 @@
               }
             ]
           }
-        ]
+        }
       },
-
       {
-        "unidad": 5,
-        "titulo": "Lenguaje SQL – DDL y DML",
-        "fuentes": [
-          {
-            "fuente": "PROMETEO",
-            "total_preguntas": 7,
+        "unidad": "Test unidad 05",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u5-prom-01",
@@ -1269,9 +1262,10 @@
               }
             ]
           },
-          {
-            "fuente": "Claude AI",
-            "total_preguntas": 20,
+          
+              
+          "CLAUDE IA": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u5-ai-01",
@@ -1515,15 +1509,13 @@
               }
             ]
           }
-        ]
+        }
       },
       {
-        "unidad": 6,
-        "titulo": "Administración de bases de datos",
-        "fuentes": [
-          {
-            "fuente": "PROMETEO",
-            "total_preguntas": 2,
+        "unidad": "Test unidad 06",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u6-prom-01",
@@ -1551,9 +1543,9 @@
               }
             ]
           },
-          {
-            "fuente": "Claude AI",
-            "total_preguntas": 18,
+              
+          "CLAUDE IA": {
+            "total_preguntas": 11,
             "preguntas": [
               {
                 "id": "u6-ai-01",
@@ -1773,7 +1765,7 @@
               }
             ]
           }
-        ]
+        }
       }
     ]
   }
