@@ -1,49 +1,48 @@
 [
   {
     "asignatura": "Sistemas Informáticos",
-    "fuentes":[
+    "unidades": [
       {
-        "fuente": "PROMETEO",
-        "total_preguntas": 20,
-        "unidades": [
-          {
-            "unidad": 1,
-            "total": 11,
+        "unidad": "Test unidad 01",
+        "titulo": "Fundamentos de los sistemas operativos",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 28,
             "preguntas": [
               {
                 "id": "si-u1-p01",
                 "pregunta": "¿Cuál es la definición más adecuada de un sistema operativo?",
                 "opciones": {
-                  "A": "Un programa de diseño gráfico",
-                  "B": "Software base que gestiona el hardware y permite ejecutar aplicaciones",
+                  "A": "Software base que gestiona el hardware y permite ejecutar aplicaciones",
+                  "B": "Un programa de diseño gráfico",
                   "C": "Un componente físico del ordenador como la RAM",
                   "D": "Una aplicación automática de usuario"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El SO actúa como intermediario entre el hardware y el usuario, gestionando recursos."
               },
               {
                 "id": "si-u1-p02",
                 "pregunta": "¿Qué significan las siglas AOSP en el contexto de Android?",
                 "opciones": {
-                  "A": "Android Open System Protocol",
-                  "B": "Android Open Source Project",
+                  "A": "Android Open Source Project",
+                  "B": "Android Open System Protocol",
                   "C": "All Operating System Package",
                   "D": "Android Original Software Part"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "AOSP es el proyecto de código abierto de Android liderado por Google."
               },
               {
                 "id": "si-u1-p03",
                 "pregunta": "Sobre el mito de que 'el software libre es siempre gratis', ¿cuál es la afirmación correcta?",
                 "opciones": {
-                  "A": "Es cierto, nunca se puede cobrar por él",
-                  "B": "Es falso, el término 'libre' se refiere a libertades de uso, no al precio",
+                  "A": "Es falso, el término 'libre' se refiere a libertades de uso, no al precio",
+                  "B": "Es cierto, nunca se puede cobrar por él",
                   "C": "Solo es gratis si se usa en Linux",
                   "D": "Libre y gratis significan exactamente lo mismo"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "La libertad del software es independiente de si tiene un coste comercial o no."
               },
               {
@@ -52,10 +51,10 @@
                 "opciones": {
                   "A": "Licencia Retail",
                   "B": "Licencia GPL",
-                  "C": "Licencia OEM",
-                  "D": "Licencia de prueba (Trial)"
+                  "C": "Licencia de prueba (Trial)",
+                  "D": "Licencia OEM"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "Las licencias OEM están ligadas a la placa base del equipo donde se instalan primero."
               },
               {
@@ -63,11 +62,11 @@
                 "pregunta": "¿Qué criterio es fundamental para seleccionar un sistema operativo a nivel empresarial?",
                 "opciones": {
                   "A": "El color de los iconos del escritorio",
-                  "B": "La seguridad, la integración y la capacidad de escalar",
+                  "B": "Solo el nombre de la marca",
                   "C": "Que tenga el fondo de pantalla más bonito",
-                  "D": "Solo el nombre de la marca"
+                  "D": "La seguridad, la integración y la capacidad de escalar"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "En empresas, se prioriza la estabilidad, la seguridad y cómo se integra con el resto de servidores."
               },
               {
@@ -75,11 +74,11 @@
                 "pregunta": "Según la jerarquía de un sistema informático, ¿cuáles son sus tres pilares?",
                 "opciones": {
                   "A": "Pantalla, Teclado y Ratón",
-                  "B": "Hardware, Software y Usuario",
+                  "B": "CPU, RAM y Disco Duro",
                   "C": "Windows, Linux y macOS",
-                  "D": "CPU, RAM y Disco Duro"
+                  "D": "Hardware, Software y Usuario"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "El sistema es la suma de hardware, software y las personas que lo operan."
               },
               {
@@ -87,11 +86,11 @@
                 "pregunta": "¿Cuál es la función principal de la Memoria RAM?",
                 "opciones": {
                   "A": "Guardar archivos para siempre aunque se apague el PC",
-                  "B": "Almacenar temporalmente los datos y programas con los que se está operando",
+                  "B": "Controlar la temperatura de la CPU",
                   "C": "Aumentar la velocidad de internet",
-                  "D": "Controlar la temperatura de la CPU"
+                  "D": "Almacenar temporalmente los datos y programas con los que se está operando"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "La RAM es memoria volátil de acceso rápido para los procesos activos."
               },
               {
@@ -100,10 +99,10 @@
                 "opciones": {
                   "A": "Memoria Caché",
                   "B": "Tarjeta de Red",
-                  "C": "CPU (Procesador)",
-                  "D": "Disco SSD"
+                  "C": "Disco SSD",
+                  "D": "CPU (Procesador)"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "La CPU es el 'cerebro' del ordenador donde se ejecutan las instrucciones del software."
               },
               {
@@ -341,93 +340,98 @@
                 "justificacion": "El color del equipo no influye en la elección del sistema operativo."
               }
             ]
-          },
-          {
-            "unidad": 2,
-            "total": 11,
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 02",
+        "titulo": "Linux: fundamentos y comandos básicos",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 38,
             "preguntas": [
               {
                 "id": "si-u2-p11",
                 "pregunta": "¿Qué comando de Linux permite ver los permisos detallados, el tamaño y la fecha de modificación de los archivos?",
                 "opciones": {
-                  "A": "ls -a",
-                  "B": "ls -l",
+                  "A": "ls -l",
+                  "B": "ls -a",
                   "C": "cd ..",
                   "D": "dir /w"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El parámetro '-l' muestra el listado en formato largo, incluyendo los permisos rwx."
               },
               {
                 "id": "si-u2-p12",
                 "pregunta": "Si queremos dar todos los permisos al usuario, lectura y ejecución al grupo, y solo lectura a otros, ¿qué número usamos en chmod?",
                 "opciones": {
-                  "A": "777",
-                  "B": "754",
+                  "A": "754",
+                  "B": "777",
                   "C": "644",
                   "D": "751"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "7 (rwx), 5 (r-x) y 4 (r--)."
               },
               {
                 "id": "si-u2-p13",
                 "pregunta": "¿Qué comando de Windows se utiliza para listar el contenido de un directorio?",
                 "opciones": {
-                  "A": "ls",
-                  "B": "dir",
+                  "A": "dir",
+                  "B": "ls",
                   "C": "list",
                   "D": "show"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "'dir' es el comando equivalente a 'ls' en el entorno CMD de Windows."
               },
               {
                 "id": "si-u2-p14",
                 "pregunta": "En Linux, ¿qué representa la letra 'r' en los permisos de un archivo?",
                 "opciones": {
-                  "A": "Root",
-                  "B": "Read (Lectura)",
+                  "A": "Read (Lectura)",
+                  "B": "Root",
                   "C": "Run (Ejecución)",
                   "D": "Rewrite (Sobrescribir)"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "Los permisos básicos son Read (r), Write (w) y Execute (x)."
               },
               {
                 "id": "si-u2-p15",
                 "pregunta": "¿Qué comando de Linux se usa para cambiar los permisos de un archivo o directorio?",
                 "opciones": {
-                  "A": "chown",
-                  "B": "chmod",
+                  "A": "chmod",
+                  "B": "chown",
                   "C": "chperm",
                   "D": "attrib"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "'chmod' (change mode) es el comando estándar para gestionar los bits de permisos."
               },
               {
                 "id": "si-u2-p17",
                 "pregunta": "¿Qué comando de Linux nos permite ver los archivos ocultos (los que empiezan por punto)?",
                 "opciones": {
-                  "A": "ls -l",
-                  "B": "ls -a",
+                  "A": "ls -a",
+                  "B": "ls -l",
                   "C": "ls -h",
                   "D": "ls -x"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El parámetro '-a' (all) muestra todas las entradas, incluyendo las ocultas."
               },
               {
                 "id": "si-u2-p18",
                 "pregunta": "Al trabajar con permisos en formato simbólico (letras), ¿qué letra representa al grupo?",
                 "opciones": {
-                  "A": "u",
-                  "B": "g",
+                  "A": "g",
+                  "B": "u",
                   "C": "o",
                   "D": "a"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "u (user), g (group), o (others) y a (all)."
               },
               {
@@ -435,11 +439,11 @@
                 "pregunta": "¿Qué comando se usa en Linux para cambiar el propietario de un archivo?",
                 "opciones": {
                   "A": "chmod",
-                  "B": "chown",
-                  "C": "passwd",
+                  "B": "passwd",
+                  "C": "chown",
                   "D": "useradd"
                 },
-                "correcta": "B",
+                "correcta": "C",
                 "justificacion": "'chown' (change owner) cambia el usuario y/o el grupo propietario del archivo."
               },
               {
@@ -447,11 +451,11 @@
                 "pregunta": "¿Qué comando de Linux permite ver los procesos activos del sistema en tiempo real?",
                 "opciones": {
                   "A": "ls -l",
-                  "B": "top (o htop)",
-                  "C": "cd /proc",
+                  "B": "cd /proc",
+                  "C": "top (o htop)",
                   "D": "mkdir"
                 },
-                "correcta": "B",
+                "correcta": "C",
                 "justificacion": "top y htop son esenciales para monitorizar el consumo de CPU y RAM."
               },
               {
@@ -459,11 +463,11 @@
                 "pregunta": "¿Qué hace el comando 'chmod 777 archivo'?",
                 "opciones": {
                   "A": "Borra el archivo",
-                  "B": "Otorga permisos de lectura, escritura y ejecución a todo el mundo",
-                  "C": "Cambia el nombre del archivo a '777'",
+                  "B": "Cambia el nombre del archivo a '777'",
+                  "C": "Otorga permisos de lectura, escritura y ejecución a todo el mundo",
                   "D": "Oculta el archivo"
                 },
-                "correcta": "B",
+                "correcta": "C",
                 "justificacion": "El 7 representa la suma de r(4)+w(2)+x(1); al ponerlo tres veces, se aplica a dueño, grupo y otros."
               },
               {
@@ -471,11 +475,11 @@
                 "pregunta": "¿Con qué comando abrimos el manual de ayuda en Linux?",
                 "opciones": {
                   "A": "nam",
-                  "B": "man",
+                  "B": "sos",
                   "C": "manual",
-                  "D": "sos"
+                  "D": "man"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "El comando man muestra el manual de ayuda."
               },
               {
@@ -803,57 +807,62 @@
                 "justificacion": ".bash_profile se ejecuta en sesiones de inicio de sesión de Bash."
               }
             ]
-          },
-          {
-            "unidad": 3,
-            "total": 11,
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 03",
+        "titulo": "Instalación y configuración de sistemas operativos",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 22,
             "preguntas": [
               {
                 "id": "si-u2-p16",
                 "pregunta": "¿Cuál es el sistema de archivos que utiliza Windows 11 por defecto?",
                 "opciones": {
-                  "A": "FAT32",
+                  "A": "NTFS",
                   "B": "EXT4",
-                  "C": "NTFS",
+                  "C": "FAT32",
                   "D": "ExFAT"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "NTFS es el sistema de archivos moderno de Microsoft que permite permisos de seguridad avanzados."
               },
               {
                 "id": "si-u2-p45",
                 "pregunta": "¿Cuál es la función del 'Journaling' en sistemas de archivos como EXT4 o NTFS?",
                 "opciones": {
-                  "A": "Cambiar el color de las carpetas",
-                  "B": "Llevar un registro de los cambios para recuperar el sistema rápidamente tras un fallo",
+                  "A": "Llevar un registro de los cambios para recuperar el sistema rápidamente tras un fallo",
+                  "B": "Cambiar el color de las carpetas",
                   "C": "Cifrar los correos electrónicos",
                   "D": "Eliminar virus automáticamente"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El journaling evita la corrupción del sistema de archivos al anotar las operaciones antes de ejecutarlas."
               },
               {
                 "id": "si-u2-p46",
                 "pregunta": "¿Qué nombre recibe la partición de Linux utilizada como memoria virtual cuando la RAM física se llena?",
                 "opciones": {
-                  "A": "Root",
+                  "A": "Swap (Área de intercambio)",
                   "B": "Home",
-                  "C": "Swap (Área de intercambio)",
+                  "C": "Root",
                   "D": "Boot"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "La partición Swap actúa como una extensión de la RAM en el disco duro."
               },
               {
                 "id": "si-u2-p47",
                 "pregunta": "En Windows, ¿cuál es la herramienta gráfica para gestionar las particiones del disco duro?",
                 "opciones": {
-                  "A": "Administrador de tareas",
-                  "B": "Administrador de discos",
+                  "A": "Administrador de discos",
+                  "B": "Administrador de tareas",
                   "C": "Panel de control de red",
                   "D": "Bloc de notas"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "Desde el Administrador de Discos podemos reducir, ampliar o crear nuevas particiones."
               },
               {
@@ -896,12 +905,12 @@
                 "id": "u01-p09",
                 "pregunta": "¿Cuál es la versión LTS de Ubuntu?",
                 "opciones": {
-                  "A": "25",
+                  "A": "24",
                   "B": "23",
-                  "C": "24",
+                  "C": "25",
                   "D": "26"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "La opción correcta indicada en el test es la 24."
               },
               {
@@ -910,10 +919,10 @@
                 "opciones": {
                   "A": "Bootear un USB",
                   "B": "Reinstalar el SO",
-                  "C": "Entrar en la configuración del sistema",
-                  "D": "Ninguna de las anteriores"
+                  "C": "Ninguna de las anteriores",
+                  "D": "Entrar en la configuración del sistema"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "El orden de arranque se modifica desde BIOS o UEFI."
               },
               {
@@ -922,10 +931,10 @@
                 "opciones": {
                   "A": "Solo la interfaz",
                   "B": "Sistema de archivos",
-                  "C": "Soporte para discos >2TB e interfaz moderna",
-                  "D": "Más de 2 particiones e interfaz"
+                  "C": "Más de 2 particiones e interfaz",
+                  "D": "Soporte para discos >2TB e interfaz moderna"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "UEFI ofrece una interfaz más moderna y soporta discos grandes."
               },
               {
@@ -970,10 +979,10 @@
                 "opciones": {
                   "A": "msconfig",
                   "B": "regedit",
-                  "C": "msinfo32",
-                  "D": "dxdiag"
+                  "C": "dxdiag",
+                  "D": "msinfo32"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "Información del Sistema (msinfo32) muestra el Modo de BIOS."
               },
               {
@@ -1073,45 +1082,50 @@
                 "justificacion": "NTFS permite archivos de más de 4 GB."
               }
             ]
-          },
-          {
-            "unidad": 4,
-            "total": 11,
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 04",
+        "titulo": "Gestión de sistemas múltiples y arranque",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 21,
             "preguntas": [
               {
                 "id": "si-u2-p41",
                 "pregunta": "¿Qué es el Dual Boot o arranque dual?",
                 "opciones": {
-                  "A": "Un sistema con dos tarjetas gráficas",
+                  "A": "La configuración que permite elegir entre dos o más sistemas operativos al encender el equipo",
                   "B": "Tener dos monitores conectados al mismo PC",
-                  "C": "La configuración que permite elegir entre dos o más sistemas operativos al encender el equipo",
+                  "C": "Un sistema con dos tarjetas gráficas",
                   "D": "Un tipo de memoria RAM de doble canal"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "El arranque dual permite instalar Windows y Linux en el mismo disco y elegir cuál iniciar."
               },
               {
                 "id": "si-u2-p42",
                 "pregunta": "¿En qué consiste una partición de tipo Extendida en el esquema MBR?",
                 "opciones": {
-                  "A": "Una partición que aumenta la velocidad del procesador",
-                  "B": "Un contenedor que permite crear dentro múltiples particiones lógicas para superar el límite de 4 primarias",
+                  "A": "Un contenedor que permite crear dentro múltiples particiones lógicas para superar el límite de 4 primarias",
+                  "B": "Una partición que aumenta la velocidad del procesador",
                   "C": "Una partición que se borra automáticamente al apagar",
                   "D": "El espacio que ocupa el archivo de paginación de Windows"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "En MBR, si necesitas más de 4 particiones, debes crear una extendida para albergar unidades lógicas."
               },
               {
                 "id": "si-u2-p43",
                 "pregunta": "¿Qué ventaja principal ofrece el esquema de particiones GPT frente al antiguo MBR?",
                 "opciones": {
-                  "A": "Es compatible con disquetes",
+                  "A": "Soporta discos de más de 2 TB y permite un número mucho mayor de particiones (hasta 128)",
                   "B": "No permite más de 2 particiones",
-                  "C": "Soporta discos de más de 2 TB y permite un número mucho mayor de particiones (hasta 128)",
+                  "C": "Es compatible con disquetes",
                   "D": "Solo funciona con sistemas operativos de 32 bits"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "GPT es el estándar moderno asociado a UEFI que elimina las limitaciones de MBR."
               },
               {
@@ -1119,11 +1133,11 @@
                 "pregunta": "¿Qué sucede si eliminamos la partición donde reside el gestor de arranque (como GRUB)?",
                 "opciones": {
                   "A": "El ordenador arranca más rápido",
-                  "B": "No podremos iniciar ninguno de los sistemas operativos instalados",
+                  "B": "Se duplica la memoria RAM disponible",
                   "C": "Windows se reinstala automáticamente",
-                  "D": "Se duplica la memoria RAM disponible"
+                  "D": "No podremos iniciar ninguno de los sistemas operativos instalados"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "El gestor de arranque es el software que presenta el menú de elección; sin él, la BIOS/UEFI no sabe qué cargar."
               },
               {
@@ -1131,11 +1145,11 @@
                 "pregunta": "Para que Linux pueda montar particiones de Windows en un arranque dual sin errores, ¿qué debemos asegurar?",
                 "opciones": {
                   "A": "Que Windows esté en modo hibernación",
-                  "B": "Que el inicio rápido (Fast Boot) esté desactivado y el apagado sea completo",
+                  "B": "Que no haya contraseña en Windows",
                   "C": "Que la partición sea FAT32 obligatoriamente",
-                  "D": "Que no haya contraseña en Windows"
+                  "D": "Que el inicio rápido (Fast Boot) esté desactivado y el apagado sea completo"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Si Windows no se apaga totalmente, bloquea el sistema de archivos NTFS y Linux no puede escribir en él."
               },
               {
@@ -1144,10 +1158,10 @@
                 "opciones": {
                   "A": "LILO",
                   "B": "GRUB Legacy",
-                  "C": "GRUB 2",
-                  "D": "BOOTMGR"
+                  "C": "BOOTMGR",
+                  "D": "GRUB 2"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "GRUB 2 es el estándar actual en Linux."
               },
               {
@@ -1168,10 +1182,10 @@
                 "opciones": {
                   "A": "512 GB",
                   "B": "1 TB",
-                  "C": "2 TB",
-                  "D": "4 TB"
+                  "C": "4 TB",
+                  "D": "2 TB"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "MBR tiene una limitación técnica que le impide gestionar discos de más de 2 Terabytes."
               },
               {
@@ -1331,117 +1345,122 @@
                 "justificacion": "GPT permite un tamaño teórico de aproximadamente 9.4 zettabytes."
               }
             ]
-          },
-          {
-            "unidad": 5,
-            "total": 11,
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 05",
+        "titulo": "Redes y conectividad en sistemas operativos",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 42,
             "preguntas": [
               {
                 "id": "si-u3-p21",
                 "pregunta": "¿Qué protocolo se encarga de asignar direcciones IP de forma automática a los dispositivos de una red?",
                 "opciones": {
-                  "A": "DNS",
+                  "A": "DHCP",
                   "B": "HTTP",
-                  "C": "DHCP",
+                  "C": "DNS",
                   "D": "TCP"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "DHCP permite que los dispositivos obtengan su configuración de red sin intervención manual."
               },
               {
                 "id": "si-u3-p22",
                 "pregunta": "¿Cuál es la función principal del protocolo DNS?",
                 "opciones": {
-                  "A": "Cifrar las comunicaciones de red",
-                  "B": "Traducir nombres de dominio (como google.com) en direcciones IP",
+                  "A": "Traducir nombres de dominio (como google.com) en direcciones IP",
+                  "B": "Cifrar las comunicaciones de red",
                   "C": "Enviar correos electrónicos",
                   "D": "Dividir una red en subredes"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El DNS actúa como la agenda de Internet, convirtiendo nombres legibles en IPs."
               },
               {
                 "id": "si-u3-p23",
                 "pregunta": "¿Qué dispositivo trabaja en la Capa 2 (Enlace de datos) del modelo OSI y utiliza direcciones MAC?",
                 "opciones": {
-                  "A": "Hub",
+                  "A": "Switch",
                   "B": "Router",
-                  "C": "Switch",
+                  "C": "Hub",
                   "D": "Repetidor"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "A diferencia del Hub, el Switch segmenta la red basándose en la MAC del destinatario."
               },
               {
                 "id": "si-u3-p24",
                 "pregunta": "¿Cuántas capas tiene el modelo OSI?",
                 "opciones": {
-                  "A": "4",
+                  "A": "7",
                   "B": "5",
-                  "C": "7",
+                  "C": "4",
                   "D": "8"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "El modelo OSI se divide en 7 capas, desde la física hasta la de aplicación."
               },
               {
                 "id": "si-u3-p25",
                 "pregunta": "¿Cuál de las siguientes es una dirección IP de Clase C?",
                 "opciones": {
-                  "A": "10.0.0.1",
+                  "A": "192.168.1.50",
                   "B": "172.16.0.5",
-                  "C": "192.168.1.50",
+                  "C": "10.0.0.1",
                   "D": "224.0.0.1"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "Las direcciones de Clase C comienzan en el rango 192.0.0.0 hasta 223.255.255.255."
               },
               {
                 "id": "si-u3-p26",
                 "pregunta": "En una subred con máscara /24, ¿cuántas direcciones IP totales hay disponibles (incluyendo red y broadcast)?",
                 "opciones": {
-                  "A": "128",
+                  "A": "256",
                   "B": "254",
-                  "C": "256",
+                  "C": "128",
                   "D": "512"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "Un /24 deja 8 bits para hosts (2^8 = 256). Para hosts utilizables serían 254."
               },
               {
                 "id": "si-u3-p27",
                 "pregunta": "¿Qué comando se usa en Windows para verificar la conectividad con otro equipo mediante paquetes ICMP?",
                 "opciones": {
-                  "A": "ipconfig",
+                  "A": "ping",
                   "B": "tracert",
-                  "C": "ping",
+                  "C": "ipconfig",
                   "D": "netstat"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "El comando ping es la herramienta básica para comprobar si un host remoto responde."
               },
               {
                 "id": "si-u3-p28",
                 "pregunta": "¿Cuál es el puerto estándar para el protocolo HTTP?",
                 "opciones": {
-                  "A": "21",
-                  "B": "80",
+                  "A": "80",
+                  "B": "21",
                   "C": "443",
                   "D": "3306"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El puerto 80 es para tráfico web no cifrado (HTTP), mientras que el 443 es para HTTPS."
               },
               {
                 "id": "si-u3-p29",
                 "pregunta": "¿Qué protocolo se utiliza para la transferencia de archivos de forma remota?",
                 "opciones": {
-                  "A": "SMTP",
+                  "A": "FTP",
                   "B": "SSH",
-                  "C": "FTP",
+                  "C": "SMTP",
                   "D": "ICMP"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "FTP (File Transfer Protocol) es el protocolo diseñado específicamente para mover archivos entre sistemas."
               },
               {
@@ -1461,11 +1480,11 @@
                 "pregunta": "¿Qué comando utilizarías en Windows para conocer la dirección IP, la máscara de subred y la puerta de enlace predeterminada?",
                 "opciones": {
                   "A": "ifconfig",
-                  "B": "ipconfig",
+                  "B": "netstat",
                   "C": "ping -all",
-                  "D": "netstat"
+                  "D": "ipconfig"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "ipconfig es el comando estándar en Windows para mostrar la configuración de los adaptadores de red."
               },
               {
@@ -1485,11 +1504,11 @@
                 "pregunta": "¿Cuál es la función principal del comando ping?",
                 "opciones": {
                   "A": "Descargar archivos de internet",
-                  "B": "Comprobar la conectividad con otro equipo mediante el protocolo ICMP",
+                  "B": "Cifrar la conexión de red",
                   "C": "Cambiar la dirección MAC de la tarjeta",
-                  "D": "Cifrar la conexión de red"
+                  "D": "Comprobar la conectividad con otro equipo mediante el protocolo ICMP"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "El ping envía paquetes de eco para verificar si un destino es alcanzable y medir el tiempo de respuesta."
               },
               {
@@ -1497,11 +1516,11 @@
                 "pregunta": "¿Qué indica una máscara de subred (por ejemplo, 255.255.255.0)?",
                 "opciones": {
                   "A": "La velocidad máxima de la conexión",
-                  "B": "Qué parte de la dirección IP pertenece a la red y qué parte pertenece al host",
+                  "B": "El número de puertos abiertos en el router",
                   "C": "El nombre del equipo en la red",
-                  "D": "El número de puertos abiertos en el router"
+                  "D": "Qué parte de la dirección IP pertenece a la red y qué parte pertenece al host"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "La máscara delimita el rango de red, permitiendo que los equipos sepan si un destino está en su misma red local o fuera."
               },
               {
@@ -1509,11 +1528,11 @@
                 "pregunta": "Si un equipo tiene la IP 192.168.1.10 y la máscara 255.255.255.0, ¿cuál sería la dirección de red?",
                 "opciones": {
                   "A": "192.168.1.255",
-                  "B": "192.168.1.0",
+                  "B": "255.255.255.255",
                   "C": "192.168.1.1",
-                  "D": "255.255.255.255"
+                  "D": "192.168.1.0"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "En una red de clase C (/24), el último octeto se reserva en .0 para identificar la red."
               },
               {
@@ -1521,11 +1540,11 @@
                 "pregunta": "¿Para qué sirve el comando tracert (Windows) o traceroute (Linux)?",
                 "opciones": {
                   "A": "Para borrar el historial del navegador",
-                  "B": "Para mostrar la ruta que sigue un paquete hasta llegar a un destino, indicando cada salto (router)",
+                  "B": "Para ver quién está conectado a mi carpeta compartida",
                   "C": "Para aumentar la potencia del WiFi",
-                  "D": "Para ver quién está conectado a mi carpeta compartida"
+                  "D": "Para mostrar la ruta que sigue un paquete hasta llegar a un destino, indicando cada salto (router)"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Es vital para diagnosticar en qué punto de la red se está perdiendo la conexión."
               },
               {
@@ -1533,11 +1552,11 @@
                 "pregunta": "¿Qué es la Puerta de Enlace Predeterminada (Default Gateway)?",
                 "opciones": {
                   "A": "La dirección IP del propio equipo",
-                  "B": "La dirección IP del router que permite salir a otras redes o a Internet",
+                  "B": "Un tipo de cable de red blindado",
                   "C": "El servidor que traduce nombres de dominio",
-                  "D": "Un tipo de cable de red blindado"
+                  "D": "La dirección IP del router que permite salir a otras redes o a Internet"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Sin la puerta de enlace configurada, el tráfico no sabría cómo salir de la red local."
               },
               {
@@ -1545,11 +1564,11 @@
                 "pregunta": "¿Cuál es la función de un servidor DNS?",
                 "opciones": {
                   "A": "Asignar direcciones IP automáticamente (DHCP)",
-                  "B": "Traducir nombres de dominio (ej. www.cachyos.org) en direcciones IP",
+                  "B": "Limpiar los archivos temporales del sistema",
                   "C": "Almacenar las páginas web para que carguen más rápido",
-                  "D": "Limpiar los archivos temporales del sistema"
+                  "D": "Traducir nombres de dominio (ej. www.cachyos.org) en direcciones IP"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "El DNS actúa como la agenda de Internet, permitiéndonos usar nombres en lugar de números IP."
               },
               {
@@ -1581,11 +1600,11 @@
                 "pregunta": "¿Cuál es la característica principal de la dirección de broadcast en una subred simétrica?",
                 "opciones": {
                   "A": "Siempre es una dirección par",
-                  "B": "Siempre es una dirección impar",
+                  "B": "Es igual a la dirección de red",
                   "C": "Es la primera dirección del rango",
-                  "D": "Es igual a la dirección de red"
+                  "D": "Siempre es una dirección impar"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Si la dirección de red es par, el broadcast resultará impar."
               },
               {
@@ -1841,10 +1860,15 @@
                 "justificacion": "La capa de presentación se encarga de la traducción, compresión y cifrado."
               }
             ]
-          },
-          {
-            "unidad": 6,
-            "total": 11,
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 06",
+        "titulo": "Almacenamiento y administración",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 7,
             "preguntas": [
               {
                 "id": "si-t1-p07",
@@ -1862,12 +1886,12 @@
                 "id": "si-t1-p24",
                 "pregunta": "¿Qué nivel de RAID es conocido como espejo (mirroring)?",
                 "opciones": {
-                  "A": "RAID 0",
-                  "B": "RAID 1",
+                  "A": "RAID 1",
+                  "B": "RAID 0",
                   "C": "RAID 5",
                   "D": "RAID 6"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El RAID 1 duplica los datos en dos discos; si uno falla, el sistema sigue funcionando con el otro."
               },
               {
@@ -1932,80 +1956,246 @@
               }
             ]
           },
-          {
-            "unidad": 7,
-            "total": 11,
+          "GENERADA IA": {
+            "total_preguntas": 13,
+            "preguntas": [
+              {
+                "id": "ssii-gen-u6-p01",
+                "pregunta": "¿Qué significa RAID en el contexto del almacenamiento?",
+                "opciones": {
+                  "A": "Redundant Array of Independent Disks",
+                  "B": "Random Access Internal Drive",
+                  "C": "Remote Array for Indexed Data",
+                  "D": "Redundant Access for Indexed Disks"
+                },
+                "correcta": "A",
+                "justificacion": "RAID (Redundant Array of Independent Disks) es una tecnología que combina varios discos físicos para mejorar el rendimiento o la tolerancia a fallos."
+              },
+              {
+                "id": "ssii-gen-u6-p02",
+                "pregunta": "En un sistema de archivos, ¿qué es la fragmentación?",
+                "opciones": {
+                  "A": "La pérdida de archivos al formatear",
+                  "B": "El cifrado de los sectores del disco",
+                  "C": "La compresión de datos en sectores adyacentes",
+                  "D": "La dispersión de los fragmentos de un archivo en sectores no contiguos del disco"
+                },
+                "correcta": "D",
+                "justificacion": "Cuando un archivo se guarda en sectores no contiguos, el disco tarda más en acceder a él. La desfragmentación reorganiza esos sectores para mejorar el rendimiento."
+              },
+              {
+                "id": "ssii-gen-u6-p03",
+                "pregunta": "¿Qué ventaja principal tiene un SSD frente a un HDD?",
+                "opciones": {
+                  "A": "Mayor capacidad de almacenamiento por euro",
+                  "B": "Funciona sin electricidad",
+                  "C": "Acceso más rápido a los datos al no tener partes móviles",
+                  "D": "Permite mayor temperatura de operación"
+                },
+                "correcta": "C",
+                "justificacion": "Los SSD usan memoria flash sin partes mecánicas, lo que reduce drásticamente los tiempos de acceso y lectura/escritura frente a los discos duros tradicionales."
+              },
+              {
+                "id": "ssii-gen-u6-p04",
+                "pregunta": "En RAID 1, si un disco falla, ¿qué ocurre con los datos?",
+                "opciones": {
+                  "A": "Se pierden todos",
+                  "B": "Se recuperan con paridad",
+                  "C": "Se degradan parcialmente",
+                  "D": "Permanecen íntegros en el disco espejo"
+                },
+                "correcta": "D",
+                "justificacion": "RAID 1 duplica exactamente los datos en dos discos (espejo). Si uno falla, el otro contiene una copia completa y el sistema sigue funcionando."
+              },
+              {
+                "id": "ssii-gen-u6-p05",
+                "pregunta": "¿Cuál es la diferencia entre almacenamiento NAS y SAN?",
+                "opciones": {
+                  "A": "NAS usa fibra óptica y SAN usa Ethernet",
+                  "B": "NAS es accesible por red como unidad de archivos; SAN ofrece bloques de disco a nivel de red",
+                  "C": "SAN es para usuarios domésticos y NAS para empresas",
+                  "D": "No hay diferencia práctica entre ambos"
+                },
+                "correcta": "B",
+                "justificacion": "NAS (Network Attached Storage) se presenta como sistema de archivos sobre red. SAN (Storage Area Network) ofrece almacenamiento a nivel de bloque, habitual en entornos empresariales de alto rendimiento."
+              },
+              {
+                "id": "ssii-gen-u6-p06",
+                "pregunta": "¿Qué es el LVM (Logical Volume Manager) en Linux?",
+                "opciones": {
+                  "A": "Un sistema de particiones físicas fijas",
+                  "B": "Un antivirus de disco",
+                  "C": "Una capa de abstracción que permite gestionar el espacio de disco de forma flexible y dinámica",
+                  "D": "Un sistema de archivos alternativo a EXT4"
+                },
+                "correcta": "C",
+                "justificacion": "LVM permite crear volúmenes lógicos que pueden redimensionarse, moverse y combinarse fácilmente sin necesidad de reparticionar el disco físico."
+              },
+              {
+                "id": "ssii-gen-u6-p07",
+                "pregunta": "¿Para qué sirve el comando 'mkfs' en Linux?",
+                "opciones": {
+                  "A": "Para montar un sistema de ficheros",
+                  "B": "Para formatear una partición con un sistema de archivos determinado",
+                  "C": "Para listar los sistemas de ficheros montados",
+                  "D": "Para reparar errores en el disco"
+                },
+                "correcta": "B",
+                "justificacion": "'mkfs' (make filesystem) crea un sistema de archivos nuevo en una partición. Por ejemplo, 'mkfs.ext4 /dev/sdb1' formatea la partición con EXT4."
+              },
+              {
+                "id": "ssii-gen-u6-p08",
+                "pregunta": "¿Qué indica el campo 'inode' en un sistema de archivos Linux?",
+                "opciones": {
+                  "A": "El nombre del archivo",
+                  "B": "La extensión del archivo",
+                  "C": "El contenido del archivo en texto plano",
+                  "D": "Una estructura de datos que almacena los metadatos del archivo (permisos, tamaño, fechas, punteros a bloques de datos)"
+                },
+                "correcta": "D",
+                "justificacion": "Cada archivo en Linux tiene un inode asociado que guarda sus metadatos. El nombre del archivo es simplemente un enlace a ese inode; el contenido real está en los bloques de datos a los que apunta."
+              },
+              {
+                "id": "ssii-gen-u6-p09",
+                "pregunta": "¿Cuál es la capacidad máxima de un archivo individual en FAT32?",
+                "opciones": {
+                  "A": "4 GB - 1 byte",
+                  "B": "2 TB",
+                  "C": "16 TB",
+                  "D": "Sin límite"
+                },
+                "correcta": "A",
+                "justificacion": "FAT32 utiliza un campo de 32 bits para el tamaño de archivo, lo que limita cada archivo individual a un máximo de 4 GB - 1 byte. Esta limitación es una razón clave para usar NTFS o EXT4 en archivos grandes."
+              },
+              {
+                "id": "ssii-gen-u6-p10",
+                "pregunta": "¿Qué es una cuota de disco en administración de sistemas?",
+                "opciones": {
+                  "A": "El precio del disco en el mercado",
+                  "B": "Un límite de espacio asignado a un usuario o grupo en el sistema de archivos",
+                  "C": "El porcentaje de disco libre mínimo recomendado",
+                  "D": "El número máximo de particiones permitidas"
+                },
+                "correcta": "B",
+                "justificacion": "Las cuotas de disco permiten al administrador establecer límites de espacio por usuario o grupo, evitando que un solo usuario consuma toda la capacidad del sistema."
+              },
+              {
+                "id": "ssii-gen-u6-p11",
+                "pregunta": "¿Qué tipo de backup copia únicamente los datos modificados desde el último backup completo?",
+                "opciones": {
+                  "A": "Backup completo (full)",
+                  "B": "Backup espejo (mirror)",
+                  "C": "Backup diferencial",
+                  "D": "Backup de arranque"
+                },
+                "correcta": "C",
+                "justificacion": "El backup diferencial copia todos los datos cambiados desde el último backup completo. Es más rápido que hacer un full backup, aunque crece en tamaño con el tiempo."
+              },
+              {
+                "id": "ssii-gen-u6-p12",
+                "pregunta": "¿Cuál es la función del comando 'du' en Linux?",
+                "opciones": {
+                  "A": "Descargar actualizaciones del sistema",
+                  "B": "Duplicar archivos entre discos",
+                  "C": "Mostrar el uso de espacio en disco de archivos y directorios",
+                  "D": "Desmontar unidades de almacenamiento"
+                },
+                "correcta": "C",
+                "justificacion": "'du' (disk usage) muestra el espacio que ocupan archivos y directorios. Con 'du -sh /ruta' se obtiene el tamaño total de forma legible."
+              },
+              {
+                "id": "ssii-gen-u6-p13",
+                "pregunta": "¿Qué es TRIM en el contexto de los SSD?",
+                "opciones": {
+                  "A": "Una herramienta de particionado",
+                  "B": "Un tipo de cifrado de disco",
+                  "C": "Un estándar de conector físico para SSD",
+                  "D": "Un comando que permite al SO informar al SSD de qué bloques ya no están en uso para que pueda limpiarlos"
+                },
+                "correcta": "D",
+                "justificacion": "TRIM ayuda al SSD a mantener su rendimiento con el tiempo. Sin TRIM, el SSD debe leer-modificar-escribir en lugar de escribir directamente, lo que degrada el rendimiento."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 07",
+        "titulo": "Virtualización, contenedores y tendencias",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 23,
             "preguntas": [
               {
                 "id": "si-u1-p05",
                 "pregunta": "En virtualización, ¿cómo se denomina al sistema operativo instalado en la máquina real que hospeda a los demás?",
                 "opciones": {
-                  "A": "Guest (Invitado)",
+                  "A": "Host (Anfitrión)",
                   "B": "Kernel",
-                  "C": "Host (Anfitrión)",
+                  "C": "Guest (Invitado)",
                   "D": "Root"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "El Host es el sistema físico sobre el cual corren las máquinas virtuales."
               },
               {
                 "id": "si-u1-p06",
                 "pregunta": "En virtualización, ¿cómo se denomina al sistema operativo que corre dentro de una máquina virtual?",
                 "opciones": {
-                  "A": "Host",
-                  "B": "Guest (Invitado)",
+                  "A": "Guest (Invitado)",
+                  "B": "Host",
                   "C": "BIOS",
                   "D": "Hypervisor"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "El sistema Guest es el que vive dentro del entorno emulado."
               },
               {
                 "id": "si-u1-p07",
                 "pregunta": "¿Cuál es una ventaja típica de la virtualización?",
                 "opciones": {
-                  "A": "Aumenta siempre el rendimiento del hardware real",
+                  "A": "Permite que coexistan varios sistemas aislados en un mismo equipo físico",
                   "B": "Elimina la necesidad de tener disco duro físico",
-                  "C": "Permite que coexistan varios sistemas aislados en un mismo equipo físico",
+                  "C": "Aumenta siempre el rendimiento del hardware real",
                   "D": "Hace que el ordenador no consuma electricidad"
                 },
-                "correcta": "C",
+                "correcta": "A",
                 "justificacion": "La principal ventaja es la consolidación de servidores y el aislamiento de entornos para pruebas."
               },
               {
                 "id": "si-u1-p08",
                 "pregunta": "¿Cuál es un inconveniente frecuente de usar un sistema operativo como invitado (Guest)?",
                 "opciones": {
-                  "A": "No puede tener conexión a red bajo ningún concepto",
-                  "B": "Suele ofrecer menor rendimiento que una instalación nativa debido a la capa de emulación",
+                  "A": "Suele ofrecer menor rendimiento que una instalación nativa debido a la capa de emulación",
+                  "B": "No puede tener conexión a red bajo ningún concepto",
                   "C": "Consume 0 MB de memoria RAM",
                   "D": "Solo puede ejecutar programas de diseño"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "Al haber una capa intermedia (Hypervisor), el acceso al hardware no es tan directo y el rendimiento puede ser inferior."
               },
               {
                 "id": "si-u1-p09",
                 "pregunta": "¿Qué herramienta de virtualización se menciona habitualmente para crear máquinas virtuales de forma gratuita?",
                 "opciones": {
-                  "A": "Adobe Photoshop",
-                  "B": "Oracle VirtualBox",
+                  "A": "Oracle VirtualBox",
+                  "B": "Adobe Photoshop",
                   "C": "Microsoft Excel",
                   "D": "VLC Player"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "VirtualBox es una de las soluciones de virtualización de código abierto y gratuitas más populares."
               },
               {
                 "id": "si-u1-p31",
                 "pregunta": "¿Por qué se dice que el rendimiento de un Sistema Operativo invitado (Guest) suele ser menor?",
                 "opciones": {
-                  "A": "Porque no tiene acceso a internet",
-                  "B": "Debido al uso de hardware emulado y la capa intermedia del hipervisor",
+                  "A": "Debido al uso de hardware emulado y la capa intermedia del hipervisor",
+                  "B": "Porque no tiene acceso a internet",
                   "C": "Porque consume 0 MB de RAM",
                   "D": "Porque el procesador se apaga automáticamente"
                 },
-                "correcta": "B",
+                "correcta": "A",
                 "justificacion": "La emulación de hardware genera un consumo de recursos extra que no existe en una instalación nativa."
               },
               {
@@ -2013,11 +2203,11 @@
                 "pregunta": "¿Cuál es la forma real en la que una máquina virtual obtiene conexión de red?",
                 "opciones": {
                   "A": "Conectando un cable físico directamente a la VM",
-                  "B": "A través de un conector interno que emula el cable (adaptador virtual)",
+                  "B": "Usando solo señales de radio internas del procesador",
                   "C": "No puede tener red bajo ningún concepto",
-                  "D": "Usando solo señales de radio internas del procesador"
+                  "D": "A través de un conector interno que emula el cable (adaptador virtual)"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "El software de virtualización crea un adaptador de red virtual que actúa como puente con el hardware real."
               },
               {
@@ -2025,11 +2215,11 @@
                 "pregunta": "En el contexto de VirtualBox, ¿qué acción es recomendable al clonar una máquina virtual para evitar conflictos en la red física?",
                 "opciones": {
                   "A": "Cambiar el color del escritorio",
-                  "B": "Reiniciar las direcciones MAC de las tarjetas de red",
+                  "B": "Borrar el archivo ISO",
                   "C": "Desinstalar el sistema operativo",
-                  "D": "Borrar el archivo ISO"
+                  "D": "Reiniciar las direcciones MAC de las tarjetas de red"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Si dos máquinas tienen la misma MAC en la misma red, se producen conflictos de comunicación."
               },
               {
@@ -2037,11 +2227,11 @@
                 "pregunta": "¿Qué tipo de clonación crea una copia totalmente independiente de la máquina original?",
                 "opciones": {
                   "A": "Clonación enlazada",
-                  "B": "Clonación completa",
+                  "B": "Clonación incremental",
                   "C": "Clonación simbólica",
-                  "D": "Clonación incremental"
+                  "D": "Clonación completa"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "La clonación completa duplica todos los archivos de disco, haciendo que la nueva máquina no dependa de la original."
               },
               {
@@ -2049,11 +2239,11 @@
                 "pregunta": "¿Qué es un disco de diferenciación en virtualización?",
                 "opciones": {
                   "A": "Un disco que mejora el brillo de la pantalla",
-                  "B": "Un disco que solo guarda los cambios realizados respecto a un disco maestro o base",
+                  "B": "Un software para limpiar el registro de Windows",
                   "C": "Un disco físico externo conectado por USB",
-                  "D": "Un software para limpiar el registro de Windows"
+                  "D": "Un disco que solo guarda los cambios realizados respecto a un disco maestro o base"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Permite ahorrar espacio, ya que varias máquinas pueden compartir un disco base y solo escribir sus diferencias."
               },
               {
@@ -2061,11 +2251,11 @@
                 "pregunta": "Estadísticamente, ¿cuándo recomienda Olga arriesgarse a contestar una pregunta si las respuestas negativas restan 0.33?",
                 "opciones": {
                   "A": "Cuando no tienes ni idea de ninguna opción",
-                  "B": "Solo cuando dudas entre dos opciones (50% de probabilidad)",
+                  "B": "Siempre, en todas las preguntas",
                   "C": "Nunca, bajo ninguna circunstancia",
-                  "D": "Siempre, en todas las preguntas"
+                  "D": "Solo cuando dudas entre dos opciones (50% de probabilidad)"
                 },
-                "correcta": "B",
+                "correcta": "D",
                 "justificacion": "Si dudas entre dos, la probabilidad matemática juega a tu favor."
               },
               {
@@ -2146,10 +2336,10 @@
                 "opciones": {
                   "A": "Guest",
                   "B": "Virtual",
-                  "C": "Host",
-                  "D": "Emulado"
+                  "C": "Emulado",
+                  "D": "Host"
                 },
-                "correcta": "C",
+                "correcta": "D",
                 "justificacion": "El sistema operativo de la máquina real se denomina host."
               },
               {
@@ -2213,8 +2403,169 @@
                 "justificacion": "Lo primero es comprobar y activar la virtualización en la BIOS o UEFI."
               }
             ]
+          },
+          "GENERADA IA": {
+            "total_preguntas": 13,
+            "preguntas": [
+              {
+                "id": "ssii-gen-u7-p01",
+                "pregunta": "¿Qué es un hipervisor de tipo 1 (bare-metal)?",
+                "opciones": {
+                  "A": "Un hipervisor que se instala sobre un sistema operativo existente",
+                  "B": "Un hipervisor que se ejecuta directamente sobre el hardware sin SO base",
+                  "C": "Un contenedor de aplicaciones",
+                  "D": "Un emulador de arquitectura de CPU"
+                },
+                "correcta": "B",
+                "justificacion": "Los hipervisores de tipo 1 (VMware ESXi, Hyper-V Server) corren directamente sobre el hardware, ofreciendo mejor rendimiento y aislamiento que los de tipo 2."
+              },
+              {
+                "id": "ssii-gen-u7-p02",
+                "pregunta": "¿Cuál es la diferencia fundamental entre una máquina virtual y un contenedor (Docker)?",
+                "opciones": {
+                  "A": "Los contenedores no pueden conectarse a Internet",
+                  "B": "Las máquinas virtuales son más ligeras que los contenedores",
+                  "C": "Los contenedores comparten el kernel del SO anfitrión, mientras las VMs tienen su propio kernel completo",
+                  "D": "No hay diferencia práctica entre ambos"
+                },
+                "correcta": "C",
+                "justificacion": "Las VMs virtualizan hardware completo e incluyen su propio SO. Los contenedores comparten el kernel del host, son mucho más ligeros y arrancan en segundos, aunque ofrecen un aislamiento algo menor."
+              },
+              {
+                "id": "ssii-gen-u7-p03",
+                "pregunta": "¿Qué es una snapshot (instantánea) en virtualización?",
+                "opciones": {
+                  "A": "Una copia de seguridad cifrada del disco",
+                  "B": "Una captura del estado completo de una VM en un momento dado, incluyendo RAM y disco",
+                  "C": "Una imagen ISO del sistema operativo",
+                  "D": "Un archivo de configuración de red de la VM"
+                },
+                "correcta": "B",
+                "justificacion": "Una snapshot congela el estado de la VM (memoria, disco, configuración) en un instante. Permite volver a ese estado exacto si algo falla, muy útil para pruebas o actualizaciones arriesgadas."
+              },
+              {
+                "id": "ssii-gen-u7-p04",
+                "pregunta": "En VirtualBox/VMware, ¿qué modo de red hace que la VM comparta la IP del host mediante traducción de direcciones?",
+                "opciones": {
+                  "A": "Red interna",
+                  "B": "Solo anfitrión (Host-Only)",
+                  "C": "NAT",
+                  "D": "Adaptador puente (Bridge)"
+                },
+                "correcta": "C",
+                "justificacion": "En modo NAT, la VM se conecta a Internet a través de la IP del host usando traducción de direcciones de red. El exterior solo ve la IP del host, no la de la VM."
+              },
+              {
+                "id": "ssii-gen-u7-p05",
+                "pregunta": "¿Qué es Docker Hub?",
+                "opciones": {
+                  "A": "El motor de contenedores de Docker",
+                  "B": "Un registro público donde se almacenan y comparten imágenes de contenedores Docker",
+                  "C": "La interfaz gráfica de Docker",
+                  "D": "El orquestador de contenedores de Docker"
+                },
+                "correcta": "B",
+                "justificacion": "Docker Hub es el repositorio público oficial de imágenes Docker. Permite descargar imágenes preconfiguradas (ubuntu, nginx, postgres…) o publicar las propias."
+              },
+              {
+                "id": "ssii-gen-u7-p06",
+                "pregunta": "¿Qué comando de Docker muestra los contenedores en ejecución?",
+                "opciones": {
+                  "A": "docker images",
+                  "B": "docker run",
+                  "C": "docker ps",
+                  "D": "docker build"
+                },
+                "correcta": "C",
+                "justificacion": "'docker ps' lista los contenedores actualmente activos. Con 'docker ps -a' se muestran también los contenedores detenidos."
+              },
+              {
+                "id": "ssii-gen-u7-p07",
+                "pregunta": "¿Cuál es la ventaja principal de Kubernetes frente a usar Docker solo?",
+                "opciones": {
+                  "A": "Kubernetes crea imágenes más rápido",
+                  "B": "Kubernetes sustituye a Docker completamente",
+                  "C": "Kubernetes puede ejecutarse sin contenedores",
+                  "D": "Kubernetes orquesta y gestiona automáticamente clústeres de contenedores (escalado, balanceo, recuperación)"
+                },
+                "correcta": "D",
+                "justificacion": "Kubernetes automatiza el despliegue, escalado y gestión de contenedores. Si uno falla lo reinicia; si hay carga, escala automáticamente. Docker por sí solo no ofrece estas capacidades de orquestación."
+              },
+              {
+                "id": "ssii-gen-u7-p08",
+                "pregunta": "¿Qué es la migración en vivo (live migration) en virtualización?",
+                "opciones": {
+                  "A": "Instalar un SO en una VM desde un USB",
+                  "B": "Mover una VM encendida de un servidor físico a otro sin interrumpir su servicio",
+                  "C": "Actualizar el hipervisor con la VM apagada",
+                  "D": "Clonar una VM a otro datacenter"
+                },
+                "correcta": "B",
+                "justificacion": "La live migration (vMotion en VMware, Live Migration en Hyper-V) permite trasladar una VM en marcha entre servidores físicos con cero o mínima interrupción, fundamental para mantenimiento sin downtime."
+              },
+              {
+                "id": "ssii-gen-u7-p09",
+                "pregunta": "¿Cuál es la diferencia entre IaaS, PaaS y SaaS en la nube?",
+                "opciones": {
+                  "A": "IaaS ofrece software listo para usar; PaaS ofrece plataforma; SaaS ofrece infraestructura",
+                  "B": "Son tres nombres del mismo servicio",
+                  "C": "IaaS ofrece infraestructura (VMs, redes); PaaS ofrece plataforma de desarrollo; SaaS ofrece aplicaciones listas para usar",
+                  "D": "Solo IaaS es un servicio en la nube real"
+                },
+                "correcta": "C",
+                "justificacion": "IaaS (AWS EC2, Azure VMs): infraestructura virtualizada. PaaS (Heroku, Google App Engine): plataforma para desarrollar. SaaS (Gmail, Office 365): aplicaciones directamente usables sin gestión de infraestructura."
+              },
+              {
+                "id": "ssii-gen-u7-p10",
+                "pregunta": "¿Qué es el overcommitting de RAM en virtualización?",
+                "opciones": {
+                  "A": "Asignar menos RAM de la física disponible a las VMs",
+                  "B": "Asignar a las VMs más RAM en total de la que tiene físicamente el host",
+                  "C": "Cifrar la memoria RAM de las VMs",
+                  "D": "Compartir RAM entre el host y las VMs en igual proporción"
+                },
+                "correcta": "B",
+                "justificacion": "El overcommitting permite asignar más RAM virtual que la RAM física real, aprovechando que no todas las VMs usan su RAM asignada simultáneamente. Puede provocar paginación excesiva si todas la usan a la vez."
+              },
+              {
+                "id": "ssii-gen-u7-p11",
+                "pregunta": "¿Para qué se utilizan las Guest Additions (VirtualBox) o VMware Tools en una VM?",
+                "opciones": {
+                  "A": "Para instalar el hipervisor en el host",
+                  "B": "Para conectar la VM a Internet",
+                  "C": "Para mejorar la integración entre la VM y el host: rendimiento gráfico, portapapeles compartido, carpetas compartidas y sincronización de tiempo",
+                  "D": "Para crear snapshots de la VM"
+                },
+                "correcta": "C",
+                "justificacion": "Las Guest Additions/VMware Tools son paquetes de software que se instalan dentro de la VM para mejorar la experiencia: drivers optimizados, resolución dinámica, arrastrar archivos entre host y VM, etc."
+              },
+              {
+                "id": "ssii-gen-u7-p12",
+                "pregunta": "¿Qué es un Dockerfile?",
+                "opciones": {
+                  "A": "Un archivo de configuración de red para contenedores",
+                  "B": "La interfaz gráfica de Docker",
+                  "C": "Un script de texto que define paso a paso cómo construir una imagen Docker",
+                  "D": "Un archivo que lista los contenedores en ejecución"
+                },
+                "correcta": "C",
+                "justificacion": "El Dockerfile contiene instrucciones (FROM, RUN, COPY, CMD…) que Docker lee para construir automáticamente una imagen personalizada y reproducible."
+              },
+              {
+                "id": "ssii-gen-u7-p13",
+                "pregunta": "¿Qué hipervisor de tipo 2 se usa habitualmente en entornos educativos y es gratuito?",
+                "opciones": {
+                  "A": "VMware ESXi",
+                  "B": "Microsoft Hyper-V Server",
+                  "C": "Citrix XenServer",
+                  "D": "Oracle VirtualBox"
+                },
+                "correcta": "D",
+                "justificacion": "VirtualBox de Oracle es un hipervisor de tipo 2 (corre sobre un SO existente) gratuito y multiplataforma, ampliamente usado en entornos educativos por su accesibilidad y facilidad de uso."
+              }
+            ]
           }
-        ]
+        }
       }
     ]
   }
