@@ -1,457 +1,1279 @@
 [
   {
     "asignatura": "Fundamentos de programación",
-    "fuentes": [
+    "unidades": [
       {
-        "fuente": "PROMETEO",
-        "total_preguntas": 21,
-        "unidades": [
-          {
-            "unidad": "Test unidad 01",
-            "total": 9,
+        "unidad": "Test unidad 01",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 17,
             "preguntas": [
               {
-                "id": "f1p01",
-                "pregunta": "Cuando hablamos de 'paradigma de programación', ¿a qué nos estamos refiriendo realmente?",
+                "id": "f1n-p01",
+                "pregunta": "¿Qué mide la complejidad espacial de un algoritmo?",
                 "opciones": {
-                  "A": "A la versión del lenguaje que estamos usando",
-                  "B": "A la forma de pensar y estructurar soluciones en código, incluyendo cómo modelamos el estado",
-                  "C": "A la cantidad de librerías que tiene un lenguaje",
-                  "D": "A las convenciones de estilo (sangrías, nombres de variables, etc.)"
+                  "A": "La cantidad de memoria adicional que necesita el algoritmo en función del tamaño de la entrada",
+                  "B": "El número de líneas de código del programa",
+                  "C": "El tiempo de ejecución en distintos sistemas operativos",
+                  "D": "El número de llamadas a función durante la ejecución"
                 },
-                "correcta": "B",
-                "justificacion": "Un paradigma es un marco conceptual que determina cómo se estructura el código y cómo se razona sobre la lógica del programa."
+                "correcta": "A",
+                "justificacion": "La complejidad espacial mide la memoria extra que consume un algoritmo además de la entrada, en función de n. Un algoritmo que copia el array completo tiene O(n) espacial; uno que solo usa variables auxiliares fijas tiene O(1). Se analiza junto a la temporal para evaluar la eficiencia global."
               },
               {
-                "id": "f1p02",
-                "pregunta": "¿Cuál de las siguientes descripciones encaja mejor con el paradigma imperativo?",
+                "id": "f1n-p02",
+                "pregunta": "¿Qué diferencia al paradigma funcional del imperativo?",
                 "opciones": {
-                  "A": "Describes el resultado que quieres y el motor decide cómo obtenerlo",
-                  "B": "Defines reglas y hechos, y un motor de inferencia deduce las respuestas",
-                  "C": "Te centras en una secuencia de instrucciones que modifican un estado mediante variables y estructuras",
-                  "D": "Solo utilizas funciones matemáticas sin efectos secundarios"
+                  "A": "El funcional solo funciona en lenguajes compilados como C",
+                  "B": "El imperativo usa funciones puras sin efectos secundarios",
+                  "C": "El funcional evita el estado mutable y los efectos secundarios; el imperativo describe pasos que modifican el estado del programa",
+                  "D": "El funcional es exclusivo de lenguajes orientados a objetos"
                 },
                 "correcta": "C",
-                "justificacion": "El paradigma imperativo se basa en dar órdenes explícitas paso a paso que cambian el estado del programa (variables)."
+                "justificacion": "El paradigma funcional se basa en funciones puras (mismo input → mismo output, sin efectos secundarios) y datos inmutables. El imperativo describe secuencias de instrucciones que modifican variables y estado. Haskell es puramente funcional; Java permite mezclar ambos con lambdas y Streams."
               },
               {
-                "id": "f1p03",
-                "pregunta": "¿Por qué se dice que lenguajes como SQL se consideran declarativos?",
+                "id": "f1n-p03",
+                "pregunta": "¿Qué significa que un algoritmo tenga complejidad O(log n)?",
                 "opciones": {
-                  "A": "Porque obligan a declarar todas las variables al principio",
-                  "B": "Porque describen 'qué' se quiere obtener, dejando que el motor decida el 'cómo'",
-                  "C": "Porque no permiten trabajar con bases de datos reales",
-                  "D": "Porque siempre son más rápidos que el enfoque imperativo"
+                  "A": "Que tarda el mismo tiempo independientemente del tamaño de la entrada",
+                  "B": "Que el tiempo de ejecución crece de forma cuadrática con n",
+                  "C": "Que el algoritmo divide el problema en n subproblemas iguales en cada paso",
+                  "D": "Que duplicar el tamaño de la entrada solo añade un paso constante al tiempo de ejecución"
                 },
-                "correcta": "B",
-                "justificacion": "En el enfoque declarativo se especifica el resultado deseado y el sistema subyacente gestiona la ejecución técnica."
+                "correcta": "D",
+                "justificacion": "O(log n) describe algoritmos que dividen el problema a la mitad en cada paso, como la búsqueda binaria. Si n=1000 requiere ~10 pasos, n=2000 requiere ~11. Duplicar n solo suma 1 operación (log₂(2n) = log₂(n)+1). Es mucho más eficiente que O(n) para entradas grandes."
               },
               {
-                "id": "f1p06",
-                "pregunta": "¿Cuál es el propósito principal de la notación Big-O en el desarrollo de software?",
+                "id": "f1n-p04",
+                "pregunta": "¿Cuál es el objetivo principal del principio DRY?",
                 "opciones": {
-                  "A": "Medir el tiempo exacto en segundos que tarda un programa",
-                  "B": "Clasificar algoritmos según cómo crece su requerimiento de tiempo o espacio al aumentar la entrada",
-                  "C": "Contar cuántas líneas de código tiene un archivo",
-                  "D": "Determinar si un programa tiene errores de sintaxis"
+                  "A": "Evitar la duplicación de lógica para que cada pieza de conocimiento tenga una única representación en el sistema",
+                  "B": "Reducir el uso de memoria eliminando objetos innecesarios en el heap",
+                  "C": "Hacer el código independiente del sistema operativo mediante interfaces",
+                  "D": "Eliminar todos los comentarios escribiendo código perfectamente autoexplicativo"
                 },
-                "correcta": "B",
-                "justificacion": "Big-O analiza la eficiencia teórica y escalabilidad de un algoritmo en función del tamaño de los datos de entrada."
+                "correcta": "A",
+                "justificacion": "DRY (Don't Repeat Yourself) establece que la duplicación de lógica es la principal fuente de problemas de mantenimiento. Si la misma lógica existe en dos sitios, un cambio debe hacerse en ambos y es fácil olvidar uno. La solución es extraerla a una función, clase o constante reutilizable."
               },
               {
-                "id": "f1p07",
-                "pregunta": "¿Qué complejidad temporal representa típicamente recorrer una lista completa con un bucle simple?",
+                "id": "f1n-p05",
+                "pregunta": "¿Cuál es la unidad básica del paradigma orientado a objetos?",
                 "opciones": {
-                  "A": "O(1) - Constante",
-                  "B": "O(n) - Lineal",
-                  "C": "O(n²) - Cuadrática",
-                  "D": "O(log n) - Logarítmica"
+                  "A": "La función pura que transforma datos sin efectos secundarios",
+                  "B": "La instrucción secuencial que el procesador ejecuta paso a paso",
+                  "C": "El predicado lógico que expresa hechos y reglas del dominio",
+                  "D": "El objeto, que combina datos (atributos) y comportamiento (métodos) en una entidad cohesionada"
                 },
-                "correcta": "B",
-                "justificacion": "Es lineal O(n) porque el tiempo de ejecución crece proporcionalmente al número de elementos procesados."
+                "correcta": "D",
+                "justificacion": "La POO organiza los programas alrededor de objetos que encapsulan datos y comportamiento. Los objetos son instancias de clases. Sus pilares son encapsulamiento, herencia, polimorfismo y abstracción. Java, C++ y Python tienen fuerte soporte POO."
               },
               {
-                "id": "f1p09",
-                "pregunta": "En el contexto de código limpio, ¿qué significa 'refactorizar'?",
+                "id": "f1n-p06",
+                "pregunta": "¿Qué es un algoritmo de ordenación estable?",
                 "opciones": {
-                  "A": "Añadir nuevas funcionalidades al programa",
-                  "B": "Mejorar la estructura interna del código sin cambiar su comportamiento externo",
-                  "C": "Reescribir el programa desde cero en un lenguaje diferente",
-                  "D": "Corregir errores críticos que impiden la compilación"
-                },
-                "correcta": "B",
-                "justificacion": "Refactorizar busca aumentar la legibilidad y mantenibilidad del código manteniendo su funcionalidad intacta."
-              }
-            ]
-          },
-          {
-            "unidad": "Test unidad 02",
-            "total": 17,
-            "preguntas": [
-              {
-                "id": "f2p01",
-                "pregunta": "En Java, ¿cuál es la diferencia principal entre un tipo primitivo (ej. int) y su clase envoltorio (Integer)?",
-                "opciones": {
-                  "A": "No hay diferencia real, solo cambian las mayúsculas",
-                  "B": "El primitivo guarda el valor directamente y es más ligero, mientras que el wrapper es un objeto en el heap con métodos y posibilidad de ser null",
-                  "C": "El primitivo solo se usa en proyectos pequeños",
-                  "D": "El wrapper siempre es más rápido que el primitivo"
-                },
-                "correcta": "B",
-                "justificacion": "Los primitivos almacenan valores directos, mientras que los wrappers son objetos que ofrecen funcionalidades adicionales pero con mayor coste de memoria."
-              },
-              {
-                "id": "f2p03",
-                "pregunta": "¿Qué afirmación describe mejor el autoboxing y el unboxing en Java?",
-                "opciones": {
-                  "A": "Autoboxing es convertir un String en un int",
-                  "B": "Autoboxing convierte automáticamente un primitivo en su wrapper, y unboxing lo contrario",
-                  "C": "Ambos procesos son gratuitos en términos de rendimiento",
-                  "D": "Solo existen para los tipos int e Integer"
-                },
-                "correcta": "B",
-                "justificacion": "Java realiza estas conversiones de forma automática para facilitar el uso de colecciones que requieren objetos."
-              },
-              {
-                "id": "f2p06",
-                "pregunta": "En la gestión de memoria de Java, ¿qué se almacena principalmente en el 'Stack'?",
-                "opciones": {
-                  "A": "Todos los objetos creados con 'new'",
-                  "B": "Variables locales y referencias a objetos",
-                  "C": "El código fuente del programa",
-                  "D": "Las imágenes y archivos externos"
-                },
-                "correcta": "B",
-                "justificacion": "El Stack gestiona la ejecución de hilos y almacena variables de ámbito local, mientras que los objetos residen en el Heap."
-              },
-              {
-                "id": "f2p07",
-                "pregunta": "¿Cuál es la función principal del Garbage Collector (GC)?",
-                "opciones": {
-                  "A": "Detectar errores de sintaxis en el código",
-                  "B": "Identificar y liberar la memoria ocupada por objetos en el heap que ya no tienen referencias activas",
-                  "C": "Aumentar la velocidad de la CPU",
-                  "D": "Organizar los archivos en el disco duro"
-                },
-                "correcta": "B",
-                "justificacion": "El GC automatiza la gestión de memoria eliminando objetos inalcanzables para evitar fugas de memoria (memory leaks)."
-              },
-              {
-                "id": "f2p10",
-                "pregunta": "¿Cuál es el principal riesgo de hacer una conversión explícita (casting) de double a int?",
-                "opciones": {
-                  "A": "Que el programa no compile",
-                  "B": "Que se produzca un redondeo perfecto",
-                  "C": "Que se pierda la parte decimal (truncamiento) y se pueda producir overflow",
-                  "D": "Que Java lo convierta automáticamente a long"
+                  "A": "Uno que nunca produce errores independientemente de la entrada",
+                  "B": "Uno que siempre termina en el mismo número de pasos exacto para cualquier entrada",
+                  "C": "Uno que mantiene el orden relativo de elementos con claves iguales tras la ordenación",
+                  "D": "Uno que no modifica la entrada original, trabajando sobre una copia"
                 },
                 "correcta": "C",
-                "justificacion": "El casting a entero elimina los decimales sin redondear, lo que puede alterar significativamente el valor original."
-              }
-            ]
-          },
-          {
-            "unidad": "Test unidad 03",
-            "total": 10,
-            "preguntas": [
-              {
-                "id": "f3p01",
-                "pregunta": "¿Cuál es la diferencia principal entre el switch clásico y el switch expression (moderno) en Java?",
-                "opciones": {
-                  "A": "El moderno solo cambia la palabra clave",
-                  "B": "El moderno permite devolver valores directamente, usa '->' y elimina la necesidad de 'break'",
-                  "C": "El moderno solo funciona con enteros",
-                  "D": "El moderno es más lento"
-                },
-                "correcta": "B",
-                "justificacion": "Las expresiones switch mejoran la seguridad al evitar el 'fall-through' accidental y permitir la asignación directa de resultados."
+                "justificacion": "Un algoritmo estable conserva el orden relativo de elementos con igual clave. Si hay dos registros con nota=7, el que estaba primero sigue estando antes tras ordenar. Merge Sort es estable; Quick Sort y Heap Sort en forma básica no lo son. La estabilidad importa al ordenar por múltiples criterios."
               },
               {
-                "id": "f3p02",
-                "pregunta": "¿Por qué se consideran buena práctica los 'enum' cuando se combinan con switch?",
+                "id": "f1n-p07",
+                "pregunta": "¿Qué es el principio KISS en el desarrollo de software?",
                 "opciones": {
-                  "A": "Porque ocupan menos memoria",
-                  "B": "Porque evitan errores tipográficos y ayudan al compilador a detectar casos no manejados",
-                  "C": "Porque obligan a que los métodos sean estáticos",
-                  "D": "Porque solo sirven para proyectos pequeños"
+                  "A": "Keep It Simple, Stupid: las soluciones deben ser lo más simples posible; la complejidad innecesaria dificulta el mantenimiento",
+                  "B": "Keep Interfaces Structured and Secure: las interfaces deben estar bien definidas y protegidas",
+                  "C": "Knowledge Is Shared System: el conocimiento del código debe estar documentado y accesible",
+                  "D": "Kernel Integration and System Synchronization: gestión de recursos del sistema operativo"
                 },
-                "correcta": "B",
-                "justificacion": "El uso de enums proporciona seguridad de tipos y permite que el IDE/compilador verifique la exhaustividad del switch."
+                "correcta": "A",
+                "justificacion": "KISS defiende que los sistemas simples son más fáciles de entender, mantener y depurar. No se deben añadir abstracciones, patrones o generalizaciones innecesarias. Es complementario a YAGNI (You Aren't Gonna Need It). La complejidad accidental es el principal enemigo del mantenimiento."
               },
               {
-                "id": "f3p04",
-                "pregunta": "¿Cuál es la relación correcta entre break, continue y return?",
+                "id": "f1n-p08",
+                "pregunta": "¿Cuál es la diferencia práctica entre O(n) y O(n²) para entradas grandes?",
                 "opciones": {
-                  "A": "Break salta una iteración, continue sale del bucle",
-                  "B": "Break sale del bucle actual, continue salta a la siguiente iteración y return finaliza el método",
-                  "C": "Todos hacen lo mismo",
-                  "D": "Return solo se usa en bucles while"
+                  "A": "O(n) es para algoritmos recursivos; O(n²) para iterativos sin excepción",
+                  "B": "No hay diferencia práctica significativa para ningún tamaño de entrada real",
+                  "C": "O(n²) siempre es preferible porque procesa más elementos por iteración",
+                  "D": "O(n) crece linealmente; O(n²) crece de forma cuadrática: con n=10.000, O(n) ejecuta 10.000 operaciones y O(n²) ejecuta 100.000.000"
                 },
-                "correcta": "B",
-                "justificacion": "Cada palabra clave tiene un impacto distinto en el flujo: break rompe el ciclo, continue lo reinicia y return abandona la función."
+                "correcta": "D",
+                "justificacion": "Con n=1000: O(n)→1000 ops, O(n²)→1.000.000 ops. Con n=10.000: O(n)→10.000 ops, O(n²)→100.000.000 ops. La diferencia es decisiva a escala. El burbuja sort es O(n²); merge sort es O(n log n). Elegir el algoritmo correcto es crítico para datos grandes."
               },
               {
-                "id": "f3p06",
-                "pregunta": "¿A qué se refiere el término 'código espagueti'?",
+                "id": "f1n-p09",
+                "pregunta": "¿Qué caracteriza al paradigma lógico de programación?",
                 "opciones": {
-                  "A": "Código escrito en Python",
-                  "B": "Código con anidación excesiva y lógica enredada, difícil de mantener",
-                  "C": "Código que utiliza muchas librerías externas",
-                  "D": "Código optimizado para alto rendimiento"
+                  "A": "Modela el conocimiento como hechos y reglas; el motor de inferencia deduce conclusiones automáticamente sin que el programador describa cómo computarlas",
+                  "B": "Se basa en instrucciones paso a paso que el procesador ejecuta secuencialmente",
+                  "C": "Organiza el código en clases y objetos con herencia y polimorfismo",
+                  "D": "Usa funciones puras sin estado mutable ni efectos secundarios"
                 },
-                "correcta": "B",
-                "justificacion": "Se refiere a estructuras de control mal organizadas que dificultan seguir el hilo de ejecución del programa."
+                "correcta": "A",
+                "justificacion": "El paradigma lógico (Prolog) expresa el programa como base de conocimiento: hechos (perro(rex)) y reglas (animal(X) :- perro(X)). El motor de inferencia deduce respuestas mediante unificación y backtracking. El programador describe QUÉ es verdad, no CÓMO computarlo. Es útil en IA y sistemas expertos."
               },
               {
-                "id": "f3p09",
-                "pregunta": "¿Qué ventaja aporta una Máquina de Estados Finitos (FSM) frente a múltiples booleanos?",
+                "id": "f1n-p10",
+                "pregunta": "¿Qué significa que un nombre de variable sea autoexplicativo?",
                 "opciones": {
-                  "A": "Es más rápida de escribir",
-                  "B": "Garantiza un único estado válido, evitando combinaciones lógicas imposibles",
-                  "C": "Permite usar menos memoria RAM",
-                  "D": "No requiere el uso de clases"
+                  "A": "Que el IDE genera el nombre automáticamente basándose en el tipo de dato",
+                  "B": "Que el nombre revela la intención y propósito de la variable sin necesidad de comentarios adicionales",
+                  "C": "Que sigue estrictamente el formato camelCase o snake_case según el lenguaje",
+                  "D": "Que tiene entre 3 y 10 caracteres para mayor legibilidad tipográfica"
                 },
                 "correcta": "B",
-                "justificacion": "Una FSM modela transiciones claras, asegurando que el sistema no entre en estados inconsistentes o contradictorios."
-              }
-            ]
-          },
-          {
-            "unidad": "Test unidad 04",
-            "total": 10,
-            "preguntas": [
-              {
-                "id": "f4p01",
-                "pregunta": "En Java, cuando pasamos un objeto como parámetro a un método, ¿qué se copia realmente?",
-                "opciones": {
-                  "A": "Se copia el objeto completo con todos sus atributos",
-                  "B": "Se copia la referencia (dirección de memoria) al objeto",
-                  "C": "Se crea un nuevo objeto idéntico al original",
-                  "D": "Se pasa directamente el objeto sin copiar nada"
-                },
-                "correcta": "B",
-                "justificacion": "En Java todo se pasa por valor; en el caso de objetos, el 'valor' que se copia es la dirección de memoria (referencia)."
+                "justificacion": "Un nombre autoexplicativo hace el código legible sin comentarios. Comparar: int d; (¿qué es d?) vs int diasHastaExpiracion; (totalmente claro). Robert C. Martin en Clean Code enfatiza que el tiempo que ahorra un buen nombre supera el de escribirlo. Los comentarios son a menudo señal de código que no se explica solo."
               },
               {
-                "id": "f4p02",
-                "pregunta": "Si dentro de un método modificamos un atributo de un objeto recibido como parámetro, ¿qué ocurre fuera del método?",
+                "id": "f1n-p11",
+                "pregunta": "¿Cuál es el propósito del análisis de algoritmos?",
                 "opciones": {
-                  "A": "El objeto original no se ve afectado",
-                  "B": "El objeto original refleja los cambios realizados",
-                  "C": "Se crea una copia del objeto con los cambios",
-                  "D": "El método genera un error de compilación"
+                  "A": "Revisar el código en busca de errores de sintaxis antes de compilar",
+                  "B": "Medir el tiempo de ejecución real de un programa en milisegundos con un profiler",
+                  "C": "Generar automáticamente casos de prueba para verificar la corrección del programa",
+                  "D": "Estudiar cómo crecen el tiempo y el espacio en función del tamaño de la entrada, de forma independiente del hardware, para comparar algoritmos teóricamente"
                 },
-                "correcta": "B",
-                "justificacion": "Como el método trabaja sobre la misma referencia de memoria, los cambios en el estado interno del objeto son visibles globalmente."
+                "correcta": "D",
+                "justificacion": "El análisis de algoritmos usa notaciones como Big-O para expresar el crecimiento del coste independientemente del hardware o lenguaje. Permite comparar algoritmos teóricamente y predecir cuál es más adecuado para datos grandes antes de implementarlos."
               },
               {
-                "id": "f4p03",
-                "pregunta": "¿Cuál de las siguientes afirmaciones sobre la sobrecarga de métodos (overloading) es correcta?",
+                "id": "f1n-p12",
+                "pregunta": "¿Qué es un 'code smell'?",
                 "opciones": {
-                  "A": "Depende únicamente del tipo de retorno del método",
-                  "B": "Permite tener varios métodos con el mismo nombre pero diferente firma (parámetros)",
-                  "C": "Se resuelve en tiempo de ejecución (runtime)",
-                  "D": "Solo se puede aplicar a constructores"
-                },
-                "correcta": "B",
-                "justificacion": "La sobrecarga permite reutilizar nombres de métodos siempre que varíen el número, tipo u orden de sus parámetros."
-              },
-              {
-                "id": "f4p05",
-                "pregunta": "En modularización, ¿qué significa el principio de 'alta cohesión'?",
-                "opciones": {
-                  "A": "Que los módulos dependan mucho unos de otros",
-                  "B": "Que cada módulo o método realice una única tarea bien definida",
-                  "C": "Que todo el código esté en un solo archivo",
-                  "D": "Que el programa sea capaz de ejecutarse en varios servidores"
-                },
-                "correcta": "B",
-                "justificacion": "La alta cohesión implica que los elementos de un módulo están estrechamente relacionados en cuanto a su propósito."
-              },
-              {
-                "id": "f4p07",
-                "pregunta": "¿Cuál es la característica principal de los métodos estáticos (static)?",
-                "opciones": {
-                  "A": "Solo pueden ser privados",
-                  "B": "No cambian su valor nunca",
-                  "C": "Pertenecen a la clase y se invocan sin necesidad de crear una instancia u objeto",
-                  "D": "Solo se ejecutan una vez al iniciar el programa"
+                  "A": "Un error de compilación que el IDE detecta automáticamente con subrayado rojo",
+                  "B": "Una vulnerabilidad de seguridad detectada por un analizador estático de código",
+                  "C": "Una señal superficial en el código que indica un problema de diseño más profundo que dificulta el mantenimiento, aunque el código funcione correctamente",
+                  "D": "Un estilo de código no estándar que viola las convenciones del equipo sin consecuencias funcionales"
                 },
                 "correcta": "C",
-                "justificacion": "Los métodos estáticos pueden llamarse usando el nombre de la clase, ya que no dependen del estado de un objeto concreto."
+                "justificacion": "Un code smell es un síntoma de problemas de diseño: métodos demasiado largos, clases con demasiadas responsabilidades, duplicación, comentarios excesivos. No son bugs (el código funciona), pero indican que algo puede refactorizarse para mejorar la mantenibilidad. El término fue popularizado por Martin Fowler en Refactoring."
               },
               {
-                "id": "f4p09",
-                "pregunta": "En Javadoc, ¿para qué sirve la etiqueta @param?",
+                "id": "f1n-p13",
+                "pregunta": "¿Cuál es la diferencia entre verificación y validación del software?",
                 "opciones": {
-                  "A": "Para definir el autor del código",
-                  "B": "Para documentar cada parámetro de entrada de un método, explicando su propósito",
-                  "C": "Para indicar el tipo de retorno de la función",
-                  "D": "Para declarar una variable global"
+                  "A": "Verificación comprueba errores de sintaxis; validación comprueba errores de lógica en tiempo de ejecución",
+                  "B": "Son sinónimos; ambos términos describen el mismo proceso de pruebas del software",
+                  "C": "La verificación la hace el equipo de desarrollo; la validación el compilador automáticamente al construir",
+                  "D": "Verificación: ¿lo estamos construyendo bien? (cumple la especificación); Validación: ¿estamos construyendo lo correcto? (satisface las necesidades reales del usuario)"
                 },
-                "correcta": "B",
-                "justificacion": "@param es la etiqueta estándar para describir qué información recibe el método y qué representan sus parámetros."
-              }
-            ]
-          },
-          {
-            "unidad": "Test unidad 05",
-            "total": 10,
-            "preguntas": [
-              {
-                "id": "f5p01",
-                "pregunta": "Al comparar arrays y colecciones en Java, ¿cuál es la principal diferencia estructural?",
-                "opciones": {
-                  "A": "Los arrays son dinámicos y las colecciones tienen tamaño fijo",
-                  "B": "Los arrays tienen tamaño fijo y memoria contigua con acceso O(1), mientras que las colecciones son dinámicas y pueden crecer según necesidad",
-                  "C": "Ambos tienen exactamente el mismo rendimiento y características",
-                  "D": "Las colecciones solo pueden almacenar tipos primitivos"
-                },
-                "correcta": "B",
-                "justificacion": "Los arrays se reservan en bloques contiguos de memoria con un tamaño inmutable, mientras que las colecciones gestionan la memoria de forma flexible."
+                "correcta": "D",
+                "justificacion": "Verificación: ¿cumple el software su especificación? (revisiones, pruebas unitarias). Validación: ¿satisface las necesidades reales del usuario? (pruebas de aceptación, demos con el cliente). Es posible construir software verificado (que cumple la spec) pero no válido (la spec era incorrecta). Ambas perspectivas son necesarias."
               },
               {
-                "id": "f5p03",
-                "pregunta": "Respecto al bucle foreach y al Iterator, ¿qué diferencia clave los distingue al modificar colecciones?",
+                "id": "f1n-p14",
+                "pregunta": "¿Qué es la deuda técnica en un proyecto de software?",
                 "opciones": {
-                  "A": "Foreach permite eliminar elementos de forma segura, Iterator no",
-                  "B": "Iterator permite eliminar elementos con remove() de forma segura, mientras que foreach genera ConcurrentModificationException",
-                  "C": "Ambos permiten exactamente las mismas operaciones de modificación",
-                  "D": "Ninguno de los dos puede recorrer colecciones, solo arrays"
+                  "A": "El coste económico de las licencias de herramientas de desarrollo utilizadas en el proyecto",
+                  "B": "El coste futuro de trabajo adicional causado por tomar atajos o malas decisiones de diseño para entregar más rápido",
+                  "C": "La cantidad de bugs pendientes de resolver acumulados en el backlog del proyecto",
+                  "D": "El tiempo invertido en actualizar dependencias y librerías de terceros en cada release"
                 },
                 "correcta": "B",
-                "justificacion": "El Iterator mantiene el control del estado de la colección, permitiendo borrados durante el recorrido que el foreach no soporta."
+                "justificacion": "Ward Cunningham acuñó el término: la deuda técnica es como una deuda financiera. Tomar atajos (código duplicado, sin tests, mal diseñado) permite entregar antes pero genera intereses (más tiempo para añadir funcionalidades, más bugs). Si no se amortiza refactorizando, la deuda crece hasta hacer el proyecto inmanejable."
               },
               {
-                "id": "f5p05",
-                "pregunta": "¿Qué es la clase 'Collections' (en plural) en Java?",
+                "id": "f1n-p15",
+                "pregunta": "¿Qué representa la notación Ω (Omega) en el análisis de algoritmos?",
                 "opciones": {
-                  "A": "La interfaz base de todas las listas",
-                  "B": "Una clase con métodos estáticos utilitarios (sort, binarySearch, reverse, etc.) que operan sobre colecciones",
-                  "C": "Un tipo de array moderno",
-                  "D": "Una base de datos integrada en Java"
+                  "A": "El caso promedio del tiempo de ejecución para entradas aleatorias típicas",
+                  "B": "El peor caso posible: la cota superior del tiempo de ejecución del algoritmo",
+                  "C": "La complejidad exacta cuando la cota superior e inferior coinciden perfectamente",
+                  "D": "El mejor caso posible: la cota inferior, el mínimo trabajo que siempre debe realizarse"
                 },
-                "correcta": "B",
-                "justificacion": "Collections es una clase de utilidad que proporciona algoritmos polimórficos para manipular o buscar en colecciones."
+                "correcta": "D",
+                "justificacion": "Mientras Big-O es la cota superior (peor caso), Omega (Ω) es la cota inferior (mejor caso): el mínimo trabajo que siempre debe hacerse. Theta (Θ) es cuando ambas cotas coinciden. En la práctica Big-O es la más usada porque interesa garantizar el peor comportamiento posible del algoritmo."
               },
               {
-                "id": "f5p06",
-                "pregunta": "¿Cuál es un requisito indispensable para usar el método Collections.binarySearch()?",
+                "id": "f1n-p16",
+                "pregunta": "¿Qué establece el principio de responsabilidad única (SRP) de SOLID?",
                 "opciones": {
-                  "A": "Que la lista esté vacía",
-                  "B": "Que la lista esté ordenada previamente",
-                  "C": "Que la lista contenga solo números",
-                  "D": "Que la lista sea de tipo LinkedList"
-                },
-                "correcta": "B",
-                "justificacion": "La búsqueda binaria asume que los datos están ordenados; de lo contrario, el algoritmo no puede descartar mitades y falla."
-              },
-              {
-                "id": "f5p07",
-                "pregunta": "¿Cómo logra un HashMap obtener un valor de forma casi instantánea (O(1) promedio)?",
-                "opciones": {
-                  "A": "Recorriendo toda la lista hasta encontrar la clave",
-                  "B": "Convirtiendo las claves en índices mediante una función hash",
-                  "C": "Almacenando los datos en archivos de texto",
-                  "D": "Ordenando los datos cada vez que se inserta uno nuevo"
-                },
-                "correcta": "B",
-                "justificacion": "El hashing permite calcular directamente la posición de memoria del valor a partir de la clave, evitando búsquedas secuenciales."
-              },
-              {
-                "id": "f5p09",
-                "pregunta": "¿Por qué es crítico que una clase implemente correctamente hashCode() y equals() para usarse en un HashMap?",
-                "opciones": {
-                  "A": "Solo para que el código sea más bonito",
-                  "B": "Porque HashMap usa hashCode() para localizar el bucket y equals() para distinguir entre claves en caso de colisión",
-                  "C": "Solo afectan al rendimiento, no a la corrección del programa",
-                  "D": "Porque equals() se usa para ordenar las claves alfabéticamente"
-                },
-                "correcta": "B",
-                "justificacion": "Sin estos métodos, el HashMap no puede identificar de forma única los objetos, lo que provoca la pérdida de datos o duplicados."
-              }
-            ]
-          },
-          {
-            "unidad": "Test unidad 06",
-            "total": 10,
-            "preguntas": [
-              {
-                "id": "f6p01",
-                "pregunta": "¿Qué es la recursividad en programación?",
-                "opciones": {
-                  "A": "Un tipo de bucle que se repite un número fijo de veces",
-                  "B": "Una técnica donde una función se llama a sí misma para resolver un problema dividiéndolo en versiones más simples",
-                  "C": "Un método para ordenar arrays de forma automática",
-                  "D": "Una estructura de datos similar a las listas enlazadas"
-                },
-                "correcta": "B",
-                "justificacion": "La recursividad se basa en el principio de 'divide y vencerás', donde un problema se define en términos de una versión más pequeña de sí mismo."
-              },
-              {
-                "id": "f6p02",
-                "pregunta": "¿Cuáles son los dos elementos esenciales que toda función recursiva debe tener?",
-                "opciones": {
-                  "A": "Bucle for y bucle while",
-                  "B": "Entrada y salida",
-                  "C": "Caso base y llamada recursiva",
-                  "D": "Array y lista"
+                  "A": "Que cada clase tenga exactamente un único método público visible desde el exterior",
+                  "B": "Que una clase no pueda tener más de un atributo privado por responsabilidad definida",
+                  "C": "Que cada módulo o clase tenga una única razón para cambiar, es decir, una sola responsabilidad o propósito bien definido",
+                  "D": "Que solo el desarrollador responsable de una clase pueda modificar su código fuente"
                 },
                 "correcta": "C",
-                "justificacion": "El caso base detiene la ejecución y la llamada recursiva permite avanzar hacia la solución."
+                "justificacion": "El SRP (Robert C. Martin) dice que una clase debe tener una única responsabilidad. Si una clase gestiona tanto la lógica de negocio como la persistencia en base de datos, tiene dos razones para cambiar y viola el SRP. Clases con múltiples responsabilidades son más difíciles de entender, testear y mantener."
               },
               {
-                "id": "f6p03",
-                "pregunta": "¿Qué ocurre si una función recursiva no tiene un caso base correctamente definido?",
+                "id": "f1n-p17",
+                "pregunta": "¿En qué consiste el análisis del caso promedio de un algoritmo?",
                 "opciones": {
-                  "A": "El programa se ejecuta más rápido",
-                  "B": "Se produce un bucle infinito que provoca un StackOverflowError",
-                  "C": "Java optimiza automáticamente la función",
-                  "D": "La función devuelve siempre el valor 0"
+                  "A": "Medir el tiempo de ejecución en la mitad de iteraciones posibles del algoritmo concreto",
+                  "B": "Calcular la media aritmética entre el mejor y el peor caso medidos experimentalmente",
+                  "C": "Calcular el comportamiento esperado promediando sobre todas las posibles entradas considerando su distribución de probabilidad",
+                  "D": "Ejecutar el algoritmo 100 veces con distintos datos y promediar el tiempo medido en milisegundos"
                 },
-                "correcta": "B",
-                "justificacion": "Sin un punto de parada, la pila de llamadas (stack) se llena de marcos de ejecución hasta agotar la memoria asignada."
-              },
-              {
-                "id": "f6p04",
-                "pregunta": "¿Qué estructura de memoria utiliza Java para gestionar las llamadas recursivas?",
-                "opciones": {
-                  "A": "El heap (montículo)",
-                  "B": "La pila de llamadas (call stack) con comportamiento LIFO",
-                  "C": "Una cola FIFO",
-                  "D": "El registro de variables globales"
-                },
-                "correcta": "B",
-                "justificacion": "Cada llamada se apila (push) y se desapila (pop) siguiendo una estructura de 'Último en entrar, Primero en salir'."
-              },
-              {
-                "id": "f6p07",
-                "pregunta": "¿En qué escenario es más natural y legible usar recursión en lugar de iteración?",
-                "opciones": {
-                  "A": "Para sumar los números de un array simple",
-                  "B": "Para recorrer estructuras jerárquicas como árboles de directorios o documentos XML/JSON",
-                  "C": "Para imprimir una lista de 10 elementos",
-                  "D": "Para realizar operaciones matemáticas básicas como una resta"
-                },
-                "correcta": "B",
-                "justificacion": "La naturaleza recursiva de los árboles (un nodo es padre de otros sub-árboles) encaja perfectamente con algoritmos recursivos."
-              },
-              {
-                "id": "f6p09",
-                "pregunta": "¿Qué es la 'memoización' en el contexto de algoritmos recursivos?",
-                "opciones": {
-                  "A": "Borrar la memoria después de cada llamada",
-                  "B": "Almacenar resultados de cálculos costosos para reutilizarlos y no tener que recalcularlos",
-                  "C": "Limitar el número de variables globales",
-                  "D": "Convertir el código recursivo a un bucle for"
-                },
-                "correcta": "B",
-                "justificacion": "La memoización es una técnica de optimización que reduce drásticamente la complejidad temporal en problemas como la serie de Fibonacci."
+                "correcta": "C",
+                "justificacion": "El caso promedio analiza el comportamiento esperado considerando la distribución de probabilidad de todas las posibles entradas. Es el más difícil de calcular matemáticamente. Quick Sort tiene caso promedio O(n log n) aunque su peor caso sea O(n²). Es más representativo de la realidad que el peor caso."
               }
             ]
           }
-        ]
+        }
+      },
+      {
+        "unidad": "Test unidad 02",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 17,
+            "preguntas": [
+              {
+                "id": "f2n-p01",
+                "pregunta": "¿Qué es el String pool en Java y qué beneficio aporta?",
+                "opciones": {
+                  "A": "Una zona especial del Heap donde Java reutiliza literales String idénticos, ahorrando memoria al no crear objetos duplicados",
+                  "B": "Una estructura para ordenar cadenas eficientemente en memoria mediante tabla hash",
+                  "C": "Un pool de hilos dedicado exclusivamente al procesamiento de operaciones con cadenas",
+                  "D": "Un área del Stack donde se almacenan temporalmente las cadenas locales de los métodos"
+                },
+                "correcta": "A",
+                "justificacion": "El String pool es una zona del Heap donde la JVM almacena literales String. Si dos variables se asignan con el mismo literal 'hola', ambas apuntan al mismo objeto del pool, ahorrando memoria. Los String creados con new String('hola') NO van al pool. El método intern() fuerza que un String vaya al pool."
+              },
+              {
+                "id": "f2n-p02",
+                "pregunta": "¿Qué ocurre con un objeto Java cuando ya no tiene ninguna referencia apuntando a él?",
+                "opciones": {
+                  "A": "Permanece en memoria hasta que el programa termina explícitamente con System.exit()",
+                  "B": "El programador debe liberarlo explícitamente con delete, como en C++",
+                  "C": "Se lanza automáticamente una NullPointerException al detectar el objeto huérfano en el heap",
+                  "D": "Se convierte en elegible para ser recolectado por el Garbage Collector, que liberará su memoria en algún momento futuro indeterminado"
+                },
+                "correcta": "D",
+                "justificacion": "En Java no hay gestión manual de memoria (no existe delete/free). Cuando un objeto deja de tener referencias se convierte en unreachable y es candidato para el GC. El GC decide cuándo ejecutarse, no es determinista. El método finalize() (obsoleto desde Java 9) podía usarse para limpieza, pero no debe dependerse de él."
+              },
+              {
+                "id": "f2n-p03",
+                "pregunta": "¿Qué almacena el Stack de la JVM frente al Heap?",
+                "opciones": {
+                  "A": "Stack almacena objetos grandes; Heap almacena variables de tipo primitivo pequeño",
+                  "B": "Stack almacena solo constantes y literales; Heap almacena todo lo demás",
+                  "C": "Stack almacena marcos de llamada, variables locales y referencias; Heap almacena los objetos creados con new",
+                  "D": "Stack y Heap almacenan los mismos datos; solo difieren en velocidad de acceso"
+                },
+                "correcta": "C",
+                "justificacion": "El Stack es LIFO y contiene el frame de cada método activo: variables locales, parámetros y referencia de retorno. Es rápido y se gestiona automáticamente. El Heap contiene todos los objetos creados con new. Las variables locales que son objetos guardan solo la referencia (dirección) del objeto que reside en el Heap."
+              },
+              {
+                "id": "f2n-p04",
+                "pregunta": "¿Qué ventaja principal ofrecen los tipos genéricos en Java?",
+                "opciones": {
+                  "A": "Permiten almacenar tipos primitivos directamente en colecciones sin necesidad de wrapper",
+                  "B": "Funcionan exclusivamente con la clase Object como parámetro de tipo",
+                  "C": "Permiten escribir clases y métodos reutilizables para distintos tipos manteniendo la seguridad de tipos en compilación, evitando casts explícitos y ClassCastException en tiempo de ejecución",
+                  "D": "Son un alias para Object que simplifica la escritura de código sin tipos bien definidos"
+                },
+                "correcta": "C",
+                "justificacion": "Los genéricos (List<String>, Map<K,V>) parametrizan tipos. Sin genéricos se usaría List de Objects con cast al recuperar. Con genéricos el compilador verifica los tipos y el cast es implícito y seguro. List<String> garantiza que solo entran Strings, evitando ClassCastException en tiempo de ejecución."
+              },
+              {
+                "id": "f2n-p05",
+                "pregunta": "¿Qué es el autoboxing en Java y cuándo se produce automáticamente?",
+                "opciones": {
+                  "A": "El proceso de empaquetar múltiples objetos en un array o colección estándar",
+                  "B": "La serialización automática de un objeto para enviarlo a través de la red",
+                  "C": "La creación de una copia defensiva de un objeto para proteger su inmutabilidad interna",
+                  "D": "La conversión automática de un tipo primitivo (int, double) a su clase envoltorio (Integer, Double) cuando el contexto lo requiere, como al añadirlo a una List<Integer>"
+                },
+                "correcta": "D",
+                "justificacion": "El autoboxing convierte automáticamente primitivos a wrappers: al añadir un int a un List<Integer>, Java lo convierte a Integer sin código explícito. El unboxing es el proceso inverso. El boxing crea un objeto en el Heap, lo cual puede impactar el rendimiento en bucles intensivos. Por eso existen IntStream, DoubleStream, etc."
+              },
+              {
+                "id": "f2n-p06",
+                "pregunta": "¿Puede ocurrir un memory leak en Java aunque exista el Garbage Collector?",
+                "opciones": {
+                  "A": "No puede ocurrir; el GC elimina automáticamente toda memoria no utilizada sin excepción posible",
+                  "B": "Solo ocurre con librerías nativas JNI que no gestionan el GC de Java directamente",
+                  "C": "Sí: cuando el código mantiene referencias a objetos ya inútiles (en colecciones estáticas, listeners no eliminados), el GC no puede recolectarlos porque siguen siendo reachable",
+                  "D": "Solo en Java 8 o anterior; las versiones modernas lo han resuelto completamente"
+                },
+                "correcta": "C",
+                "justificacion": "En Java un memory leak ocurre cuando se mantienen referencias a objetos que ya no se usan, impidiendo al GC recolectarlos. Causas comunes: añadir objetos a colecciones estáticas sin eliminarlos, listeners no desregistrados, cachés sin límite. El GC solo recolecta objetos unreachable. Si hay referencia, aunque sea inútil, el objeto sobrevive."
+              },
+              {
+                "id": "f2n-p07",
+                "pregunta": "¿Cuál es la trampa del operador == al comparar objetos Integer en Java?",
+                "opciones": {
+                  "A": "== compara referencias; equals() el valor. Además Java cachea Integer entre -128 y 127, por lo que == puede dar true inesperadamente en ese rango aunque sean objetos distintos en apariencia",
+                  "B": "Son idénticos para Integer; ambos comparan siempre el valor numérico sin distinción",
+                  "C": "== siempre da false para cualquier objeto Integer sin ninguna excepción",
+                  "D": "No existe diferencia práctica para tipos numéricos como Integer o Long"
+                },
+                "correcta": "A",
+                "justificacion": "Para Integer, == compara referencias. Java cachea instancias entre -128 y 127: Integer a=127; Integer b=127; a==b es true (misma referencia cacheada). Pero Integer a=200; Integer b=200; a==b es false (objetos distintos). equals() siempre compara el valor numérico. Esta trampa es fuente frecuente de bugs sutiles."
+              },
+              {
+                "id": "f2n-p08",
+                "pregunta": "¿Qué es el tipo 'var' introducido en Java 10?",
+                "opciones": {
+                  "A": "Un tipo dinámico como en JavaScript que permite cambiar el tipo de la variable en tiempo de ejecución",
+                  "B": "Un tipo que acepta cualquier valor, equivalente a Object pero sin necesidad de cast al recuperar",
+                  "C": "Una palabra clave para inferencia de tipo local: el compilador deduce el tipo en la declaración; solo válido para variables locales con inicialización inmediata",
+                  "D": "Una forma abreviada de declarar variables de tipo void en métodos sin valor de retorno"
+                },
+                "correcta": "C",
+                "justificacion": "var permite inferencia de tipo local: var lista = new ArrayList<String>() → el compilador infiere ArrayList<String>. Es azúcar sintáctico; el tipo es estático (no cambia en runtime). Solo funciona en variables locales con inicialización, variables de bucle for y recursos de try-with-resources. No en atributos de clase ni parámetros de métodos."
+              },
+              {
+                "id": "f2n-p09",
+                "pregunta": "¿Por qué se dice que Java usa 'paso por valor' aunque los objetos parezcan pasarse por referencia?",
+                "opciones": {
+                  "A": "Java solo pasa tipos primitivos; los objetos siempre se pasan por referencia real sin copia",
+                  "B": "Java siempre crea una copia completa (deep copy) del objeto al pasarlo a un método",
+                  "C": "Modificar un parámetro dentro de un método nunca afecta a la variable original bajo ninguna circunstancia posible",
+                  "D": "Java siempre pasa una copia del valor; para objetos ese valor es la referencia (dirección en el Heap), por lo que reasignar el parámetro no afecta al original pero modificar sus atributos sí"
+                },
+                "correcta": "D",
+                "justificacion": "Java es siempre paso por valor. Para primitivos, se copia el número. Para objetos, se copia la referencia (dirección en el Heap). Por eso modificar atributos del objeto dentro del método SÍ afecta al objeto original (ambas referencias apuntan al mismo heap). Pero reasignar el parámetro (param = new Objeto()) NO afecta a la variable original."
+              },
+              {
+                "id": "f2n-p10",
+                "pregunta": "¿Qué ventajas aporta la inmutabilidad de un objeto?",
+                "opciones": {
+                  "A": "Permite al objeto cambiar su estado en respuesta a mensajes externos con mayor rapidez y flexibilidad",
+                  "B": "Los objetos inmutables no pueden cambiar tras crearse: son seguros en entornos multihilo, fáciles de razonar y se pueden compartir sin copias defensivas",
+                  "C": "La inmutabilidad es una propiedad exclusiva de variables declaradas con la palabra clave final",
+                  "D": "Una técnica de optimización que hace que el compilador trate todas las variables como constantes"
+                },
+                "correcta": "B",
+                "justificacion": "Un objeto inmutable (como String o Integer) no puede modificarse tras crearse. Ventajas: seguridad en concurrencia (no hay race conditions, se puede compartir entre hilos sin sincronización), facilidad de razonamiento (el estado no cambia inesperadamente) y posibilidad de caché y reutilización. La inmutabilidad es un pilar del paradigma funcional."
+              },
+              {
+                "id": "f2n-p11",
+                "pregunta": "¿Qué almacena el Metaspace de la JVM (sucesor del PermGen desde Java 8)?",
+                "opciones": {
+                  "A": "Los objetos creados con new durante la ejecución del programa en el heap",
+                  "B": "Los marcos de llamada de métodos activos y sus variables locales en el stack",
+                  "C": "Los metadatos de clases cargadas: bytecode, nombres de métodos, información de tipos; usa memoria nativa del SO y crece dinámicamente sin límite fijo",
+                  "D": "Una zona temporal usada exclusivamente durante la compilación JIT de hotspots"
+                },
+                "correcta": "C",
+                "justificacion": "PermGen (Java ≤7) almacenaba metadatos de clases con tamaño fijo y podía lanzar OutOfMemoryError: PermGen space. Desde Java 8, Metaspace usa memoria nativa del sistema operativo (fuera del Heap Java) y crece dinámicamente. Almacena bytecode de métodos, nombres de clases y estructuras de tipos cargados por el ClassLoader."
+              },
+              {
+                "id": "f2n-p12",
+                "pregunta": "¿Qué diferencia hay entre una variable de instancia y una variable local en Java?",
+                "opciones": {
+                  "A": "Las de instancia se declaran en métodos; las locales en la definición de la propia clase",
+                  "B": "Las de instancia son siempre public; las locales siempre private por defecto",
+                  "C": "No hay diferencia funcional real; solo difieren en la posición dentro del archivo fuente",
+                  "D": "Las de instancia pertenecen a cada objeto y viven en el Heap mientras exista el objeto; las locales se crean en el Stack al entrar en el método y mueren al salir"
+                },
+                "correcta": "D",
+                "justificacion": "Las variables de instancia se declaran en la clase fuera de métodos. Cada objeto tiene su copia y viven en el Heap mientras exista el objeto. Reciben valores por defecto (0, null, false). Las locales se crean en el Stack al entrar al método y se destruyen al salir; no tienen valor por defecto y deben inicializarse antes de usarse."
+              },
+              {
+                "id": "f2n-p13",
+                "pregunta": "¿Por qué son necesarias las clases envoltorio (wrapper classes) en Java?",
+                "opciones": {
+                  "A": "Añaden seguridad al acceso de atributos privados mediante getters y setters públicos",
+                  "B": "Convierten objetos de una clase a otra para compatibilidad entre interfaces distintas",
+                  "C": "Envuelven tipos primitivos como objetos: necesarias para usarlos en colecciones genéricas (List<Integer>, no List<int>), permiten null y aportan métodos de utilidad como Integer.parseInt()",
+                  "D": "Simplifican operaciones matemáticas complejas como trigonometría o logaritmos"
+                },
+                "correcta": "C",
+                "justificacion": "Los wrappers (Integer, Double, Boolean) envuelven primitivos (int, double, boolean) como objetos. Son necesarios porque: 1) Las colecciones genéricas no admiten primitivos. 2) Pueden ser null. 3) Aportan métodos útiles (Integer.parseInt(), Integer.MAX_VALUE). El autoboxing automatiza la conversión entre primitivo y wrapper."
+              },
+              {
+                "id": "f2n-p14",
+                "pregunta": "¿Qué es la compilación JIT (Just-In-Time) en la JVM?",
+                "opciones": {
+                  "A": "La compilación del código Java a bytecode en el momento de escribirlo en el IDE",
+                  "B": "Un modo de depuración que compila y ejecuta el código línea a línea sincrónicamente",
+                  "C": "La compilación diferida que solo ocurre cuando el programa lanza errores en tiempo de ejecución",
+                  "D": "Una técnica donde la JVM compila en tiempo de ejecución el bytecode a código máquina nativo para los fragmentos ejecutados frecuentemente (hotspots), mejorando el rendimiento"
+                },
+                "correcta": "D",
+                "justificacion": "La JVM inicialmente interpreta bytecode. El compilador JIT identifica los hotspots (código muy ejecutado) y los compila a código máquina nativo optimizado que se reutiliza en ejecuciones posteriores. Combina la portabilidad del bytecode con el rendimiento del código nativo. HotSpot es el nombre del JIT de la JVM de Oracle/OpenJDK."
+              },
+              {
+                "id": "f2n-p15",
+                "pregunta": "¿Qué problema resuelve el tipo Optional<T> de Java 8?",
+                "opciones": {
+                  "A": "Permite almacenar múltiples valores del tipo T simultáneamente en un contenedor dinámico",
+                  "B": "Es una colección ordenada con capacidad máxima de un único elemento de tipo T",
+                  "C": "Es un flujo (stream) para procesar elementos de tipo T de forma opcional y perezosa",
+                  "D": "Hace explícita la posibilidad de ausencia de valor: el método devuelve Optional<T> en lugar de null, obligando al llamador a considerar el caso vacío y reduciendo NullPointerException"
+                },
+                "correcta": "D",
+                "justificacion": "Optional<T> es un envoltorio que fuerza a considerar la ausencia de valor. En lugar de devolver null (que puede olvidarse de comprobar), el método devuelve Optional<T>. Métodos: isPresent(), get(), orElse(defecto), orElseThrow(), map(). Hace el contrato del método más explícito y reduce NPE en APIs."
+              },
+              {
+                "id": "f2n-p16",
+                "pregunta": "¿Cuándo es preferible usar StringBuilder en lugar de concatenación con + en Java?",
+                "opciones": {
+                  "A": "Siempre que se concatenen exactamente dos cadenas en una expresión simple y aislada",
+                  "B": "Solo cuando el texto resultante supere los 255 caracteres de longitud total",
+                  "C": "Cuando se realizan múltiples concatenaciones en un bucle, ya que cada + crea un nuevo objeto String inmutable acumulando basura en el Heap",
+                  "D": "Solo en código multihilo donde se necesita sincronización automática de las operaciones de concatenación"
+                },
+                "correcta": "C",
+                "justificacion": "Cada + con String crea un nuevo objeto String inmutable. En un bucle de n iteraciones esto genera n objetos intermedios. StringBuilder modifica el mismo buffer interno sin crear objetos adicionales. Para concatenaciones simples fuera de bucles, el compilador ya optimiza el +. La alternativa sincronizada es StringBuffer (multihilo)."
+              },
+              {
+                "id": "f2n-p17",
+                "pregunta": "¿Qué es la reflexión (Reflection) en Java y cuándo se usa?",
+                "opciones": {
+                  "A": "Una técnica para reutilizar código entre clases similares sin necesidad de herencia ni interfaces",
+                  "B": "Un mecanismo para crear copias exactas (clones) de objetos en tiempo de ejecución automáticamente",
+                  "C": "Una forma de aplicar patrones de diseño automáticamente basándose en el nombre de la clase",
+                  "D": "La capacidad de inspeccionar y manipular clases, métodos y atributos en tiempo de ejecución; usada en frameworks como Spring para inyección de dependencias y en JUnit para descubrir tests"
+                },
+                "correcta": "D",
+                "justificacion": "La API Reflection (java.lang.reflect) permite en tiempo de ejecución: obtener información de clases, invocar métodos por nombre, acceder a atributos privados, crear instancias dinámicamente. Es la base de frameworks como Spring (inyección de dependencias), JUnit (descubrimiento de @Test) y ORM como Hibernate. Tiene coste de rendimiento y rompe el encapsulamiento."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 03",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 16,
+            "preguntas": [
+              {
+                "id": "f3n-p01",
+                "pregunta": "¿Qué es un enum en Java y cuándo conviene usarlo frente a constantes int?",
+                "opciones": {
+                  "A": "Un tipo de array que solo puede contener números enteros ordenados secuencialmente",
+                  "B": "Una interfaz que deben implementar las clases que representan estados del sistema",
+                  "C": "Un bucle especial para iterar sobre valores constantes definidos en la propia clase",
+                  "D": "Un tipo que define un conjunto fijo y nombrado de constantes con tipo seguro, más legible y con soporte de métodos frente a las constantes int"
+                },
+                "correcta": "D",
+                "justificacion": "Un enum (DIA_SEMANA, ESTADO_PEDIDO) define constantes con nombre y tipo seguro. Ventajas sobre int: el compilador verifica que solo se usen valores válidos, son legibles (LUNES en lugar de 1), admiten métodos y atributos, y funcionan perfectamente en switch. Desde Java 16, los sealed classes complementan a los enums."
+              },
+              {
+                "id": "f3n-p02",
+                "pregunta": "¿Qué es la programación defensiva?",
+                "opciones": {
+                  "A": "Un estilo que evita el uso de excepciones para manejar errores en producción",
+                  "B": "Un enfoque que asume que el código siempre se comportará correctamente y minimiza comprobaciones",
+                  "C": "Programar asumiendo que los inputs pueden ser incorrectos o maliciosos; incluye validación de parámetros, precondiciones, postcondiciones y manejo robusto de errores inesperados",
+                  "D": "Una técnica de seguridad exclusiva para aplicaciones web que previene inyección SQL y XSS"
+                },
+                "correcta": "C",
+                "justificacion": "La programación defensiva anticipa fallos: valida parámetros al entrar (Objects.requireNonNull, comprobación de rangos), usa aserciones para invariantes, maneja excepciones apropiadamente, no confía en el estado externo. Bertrand Meyer lo formalizó con el diseño por contrato: precondiciones, postcondiciones, invariantes."
+              },
+              {
+                "id": "f3n-p03",
+                "pregunta": "¿Cuál es la diferencia entre un diagrama de flujo y un diagrama de estados?",
+                "opciones": {
+                  "A": "El de flujo modela la secuencia de pasos de un algoritmo; el de estados modela los estados posibles de un sistema y las transiciones entre ellos provocadas por eventos externos",
+                  "B": "No hay diferencia real; ambos modelan el flujo de ejecución de la misma manera",
+                  "C": "El de estados es una versión simplificada del de flujo pensada para sistemas de pequeño tamaño",
+                  "D": "El de flujo solo puede usarse para bucles; el de estados exclusivamente para condicionales"
+                },
+                "correcta": "A",
+                "justificacion": "El diagrama de flujo describe el flujo de control de un algoritmo: decisiones, bucles, secuencias. El diagrama de estados (UML State Machine) modela el comportamiento reactivo: estados posibles de un objeto/sistema, eventos que provocan transiciones y acciones asociadas. Son herramientas complementarias para distintos niveles de modelado."
+              },
+              {
+                "id": "f3n-p04",
+                "pregunta": "¿Qué es la cobertura de código (code coverage)?",
+                "opciones": {
+                  "A": "La cantidad de documentación técnica que cubre el código fuente del proyecto completo",
+                  "B": "El porcentaje de líneas, ramas o instrucciones del código ejecutadas por los tests; indica qué partes no están siendo probadas actualmente",
+                  "C": "El porcentaje de requisitos del cliente que han sido implementados satisfactoriamente",
+                  "D": "Una métrica que mide cuántos comentarios tiene el código en relación con el total de líneas"
+                },
+                "correcta": "B",
+                "justificacion": "La cobertura mide qué proporción del código ejecutan los tests. Tipos: línea, rama (cada camino en if/switch), condición. Un 100% de cobertura no garantiza ausencia de bugs, pero una cobertura baja indica áreas sin verificar. Herramientas Java: JaCoCo, Cobertura. Es útil pero no suficiente por sí sola como métrica de calidad."
+              },
+              {
+                "id": "f3n-p05",
+                "pregunta": "¿Cuándo es preferible usar switch frente a una cadena de if-else-if?",
+                "opciones": {
+                  "A": "Cuando se necesita comparar expresiones booleanas complejas con múltiples variables simultáneas",
+                  "B": "Cuando las condiciones son rangos de valores como mayor que o menor que un umbral",
+                  "C": "Exclusivamente cuando la variable a comparar es de tipo String o char sin excepción",
+                  "D": "Cuando se compara una única variable contra múltiples valores constantes posibles, lo que resulta más legible y el compilador puede optimizarlo con jump table"
+                },
+                "correcta": "D",
+                "justificacion": "Switch es ideal para comparar una variable contra múltiples constantes conocidas en compilación (int, char, String, enum). Es más legible que if-else-if y el compilador puede optimizarlo. if-else es mejor para condiciones complejas (rangos, múltiples variables). Los switch expressions modernos (Java 14+) con -> son aún más expresivos."
+              },
+              {
+                "id": "f3n-p06",
+                "pregunta": "¿Qué es la invariante de bucle y para qué sirve?",
+                "opciones": {
+                  "A": "El número máximo de iteraciones que puede ejecutar un bucle antes de terminar forzosamente",
+                  "B": "Una condición lógica verdadera antes, durante y después de cada iteración, que ayuda a demostrar que el bucle hace lo correcto",
+                  "C": "La variable de control del bucle que no debe ser modificada dentro del cuerpo bajo ningún concepto",
+                  "D": "Una excepción especial que se lanza cuando el bucle excede el límite de iteraciones configurado"
+                },
+                "correcta": "B",
+                "justificacion": "Una invariante de bucle es una propiedad que se mantiene verdadera en cada iteración: antes de la primera, al inicio/final de cada una, y al terminar. Ejemplo en búsqueda lineal: 'ninguno de los elementos a[0..i-1] es el buscado'. Ayuda a diseñar bucles correctos y es base de la demostración formal de algoritmos."
+              },
+              {
+                "id": "f3n-p07",
+                "pregunta": "¿Qué diferencia a las pruebas unitarias de las pruebas de integración?",
+                "opciones": {
+                  "A": "Las pruebas unitarias son manuales; las de integración son completamente automáticas",
+                  "B": "Las pruebas de integración son siempre más rápidas que las pruebas unitarias bien escritas",
+                  "C": "Solo las pruebas de integración detectan bugs reales; las unitarias verifican únicamente la sintaxis",
+                  "D": "Las unitarias verifican componentes aislados usando mocks; las de integración verifican la interacción correcta entre varios componentes o sistemas reales"
+                },
+                "correcta": "D",
+                "justificacion": "Las pruebas unitarias aislan la unidad usando mocks/stubs para sus dependencias: son rápidas y deterministas. Las de integración verifican que varios componentes reales funcionan juntos (base de datos, APIs, módulos): son más lentas y menos aisladas. La pirámide de tests sugiere muchas unitarias, menos de integración y aún menos E2E."
+              },
+              {
+                "id": "f3n-p08",
+                "pregunta": "¿En qué consiste el ciclo básico del TDD?",
+                "opciones": {
+                  "A": "Los tests se escriben al final del desarrollo para verificar que el código ya terminado funciona",
+                  "B": "Primero se escribe el test que falla (Rojo), luego el mínimo código para que pase (Verde), y finalmente se refactoriza; ciclo Red-Green-Refactor",
+                  "C": "Una herramienta de automatización que genera tests a partir del código existente automáticamente",
+                  "D": "El código de test y el de producción se escriben simultáneamente en el mismo archivo fuente"
+                },
+                "correcta": "B",
+                "justificacion": "TDD sigue Red-Green-Refactor: 1) Rojo: test que falla porque el código no existe. 2) Verde: mínimo código para que el test pase. 3) Refactor: mejorar el código sin romper los tests. Beneficios: diseño emerge guiado por los tests, alta cobertura por construcción, suite crece con el código. Popularizado por Kent Beck."
+              },
+              {
+                "id": "f3n-p09",
+                "pregunta": "¿Qué establece la Ley de Demeter?",
+                "opciones": {
+                  "A": "Una ley matemática que define la complejidad máxima permisible de un algoritmo en producción",
+                  "B": "Un estándar que exige que cada clase tenga al menos un comentario Javadoc por método público",
+                  "C": "Una regla que limita el número máximo de parámetros que puede tener un método bien diseñado",
+                  "D": "Un objeto solo debe hablar con sus amigos directos: no encadenar llamadas a objetos obtenidos de otros objetos (a.getB().getC().hacerAlgo()), reduciendo el acoplamiento"
+                },
+                "correcta": "D",
+                "justificacion": "La Ley de Demeter ('solo habla con tus amigos') dice que un método solo debe llamar a métodos del propio objeto, sus parámetros, objetos creados localmente o sus atributos directos. Viola la ley: a.getB().getC().hacerAlgo(). Promueve bajo acoplamiento: los objetos conocen poco de la estructura interna de otros."
+              },
+              {
+                "id": "f3n-p10",
+                "pregunta": "¿Qué mide la complejidad ciclomática de un método?",
+                "opciones": {
+                  "A": "El número de veces que un método se llama a sí mismo recursivamente durante la ejecución",
+                  "B": "El tiempo de ejecución del método medido en ciclos de reloj del procesador hardware",
+                  "C": "El número de dependencias externas que tiene un módulo o función en el proyecto completo",
+                  "D": "El número de caminos de ejecución linealmente independientes: empieza en 1 y suma 1 por cada punto de decisión (if, while, for, &&, ||, case)"
+                },
+                "correcta": "D",
+                "justificacion": "La complejidad ciclomática (McCabe, 1976) cuenta los caminos independientes. Un método con complejidad 1-5 es simple; 6-10 moderado; >10 complejo y difícil de testear. Correlaciona con el número mínimo de casos de prueba necesarios para cobertura total de ramas. Herramientas como SonarQube la calculan automáticamente."
+              },
+              {
+                "id": "f3n-p11",
+                "pregunta": "¿Qué es un mock en el contexto de pruebas unitarias?",
+                "opciones": {
+                  "A": "Una copia exacta del entorno de producción usada para pruebas de carga y rendimiento",
+                  "B": "Un objeto simulado que imita una dependencia real, permitiendo probar una unidad en aislamiento y verificar las interacciones con esa dependencia",
+                  "C": "Un archivo de configuración XML que define los datos de prueba para toda la suite",
+                  "D": "Una herramienta que genera automáticamente casos de prueba basándose en el análisis del código fuente"
+                },
+                "correcta": "B",
+                "justificacion": "Un mock simula una dependencia (base de datos, servicio web, otro módulo). Permite: probar en aislamiento sin dependencias reales, definir comportamientos controlados y verificar interacciones (¿se llamó al método X con los parámetros Y?). Frameworks: Mockito (Java), Jest (JS). Distinto de stubs (solo devuelven valores fijos)."
+              },
+              {
+                "id": "f3n-p12",
+                "pregunta": "¿Cuál es el propósito de @Test en JUnit?",
+                "opciones": {
+                  "A": "Documenta el método como experimental; JUnit los omite completamente en la ejecución normal",
+                  "B": "Marca un método como privado para que solo JUnit pueda acceder a él mediante reflexión",
+                  "C": "Genera automáticamente casos de prueba basados en la firma y los tipos de parámetros del método",
+                  "D": "Marca un método como caso de prueba: JUnit lo descubre via reflexión y lo ejecuta; dentro se usan aserciones (assertEquals, assertThrows) para verificar el comportamiento esperado"
+                },
+                "correcta": "D",
+                "justificacion": "@Test indica que el método es un caso de prueba. JUnit descubre estos métodos via reflexión y los ejecuta automáticamente. Dentro se usan aserciones para verificar el comportamiento esperado. En JUnit 5 los métodos pueden ser package-private. Las anotaciones @BeforeEach y @AfterEach gestionan la inicialización y limpieza entre tests."
+              },
+              {
+                "id": "f3n-p13",
+                "pregunta": "¿En qué consiste la refactorización 'Extract Method'?",
+                "opciones": {
+                  "A": "Mover un método de una clase a otra para mejorar la cohesión entre módulos relacionados",
+                  "B": "Convertir un método en un atributo calculado para simplificar el acceso desde otras clases",
+                  "C": "Extraer un fragmento de código de un método largo en un nuevo método con nombre descriptivo, haciendo el original más corto y legible",
+                  "D": "Eliminar un método obsoleto sustituyendo todas sus llamadas por el código inline equivalente"
+                },
+                "correcta": "C",
+                "justificacion": "Extract Method es una de las refactorizaciones más comunes (Fowler). Se aplica cuando un método hace demasiadas cosas: se identifica un bloque con propósito claro, se extrae a un nuevo método privado con nombre descriptivo y se sustituye por la llamada. Beneficios: métodos más cortos, código reutilizable y más fácil de testear. Los IDEs la realizan automáticamente."
+              },
+              {
+                "id": "f3n-p14",
+                "pregunta": "¿Qué es la integración continua (CI)?",
+                "opciones": {
+                  "A": "Un proceso manual donde el equipo se reúne semanalmente para integrar los cambios de código revisados",
+                  "B": "Una técnica de fusión de código que resuelve automáticamente todos los conflictos de merge sin intervención",
+                  "C": "Un tipo de base de datos distribuida para almacenar código fuente de forma redundante y segura",
+                  "D": "Una práctica donde cada integración de código al repositorio principal dispara automáticamente la compilación y ejecución de tests, detectando errores rápidamente"
+                },
+                "correcta": "D",
+                "justificacion": "CI automatiza la compilación y tests en cada push al repositorio. Herramientas: Jenkins, GitHub Actions, GitLab CI. Detecta conflictos e integraciones rotas en minutos en lugar de días. Es la base del ciclo de entrega continua (CD). El principio es: integrar frecuentemente para que los problemas sean pequeños y fáciles de resolver."
+              },
+              {
+                "id": "f3n-p15",
+                "pregunta": "¿Qué es el patrón de diseño Strategy y para qué sirve?",
+                "opciones": {
+                  "A": "Asegura que una clase tenga una única instancia accesible globalmente en toda la aplicación",
+                  "B": "Permite añadir responsabilidades a objetos de forma dinámica sin modificar su clase base directamente",
+                  "C": "Define una familia de algoritmos intercambiables encapsulados en clases separadas, permitiendo cambiar el algoritmo en tiempo de ejecución sin modificar el cliente que lo usa",
+                  "D": "Proporciona una interfaz simplificada para un subsistema complejo de múltiples clases relacionadas"
+                },
+                "correcta": "C",
+                "justificacion": "Strategy encapsula cada variante de un algoritmo en una clase que implementa una interfaz común. El contexto usa la interfaz sin conocer la implementación concreta. Ejemplo: distintos algoritmos de ordenación, distintas formas de calcular impuestos. Permite cambiar el comportamiento en tiempo de ejecución y facilita añadir nuevas variantes sin modificar el cliente."
+              },
+              {
+                "id": "f3n-p16",
+                "pregunta": "¿Qué establece el principio de inversión de dependencias (DIP) de SOLID?",
+                "opciones": {
+                  "A": "Los módulos de alto nivel deben depender de implementaciones concretas para mayor control directo",
+                  "B": "Las clases deben depender de sus subclases para facilitar la extensibilidad del sistema",
+                  "C": "Los constructores deben inicializarse en orden inverso al de declaración de atributos",
+                  "D": "Los módulos de alto nivel no deben depender de los de bajo nivel; ambos deben depender de abstracciones (interfaces), no de implementaciones concretas"
+                },
+                "correcta": "D",
+                "justificacion": "DIP dice: depende de abstracciones, no de implementaciones. En lugar de que un servicio cree directamente su repositorio (acoplamiento concreto), recibe por inyección una interfaz Repositorio. Esto permite cambiar la implementación (MySQL por MongoDB) sin tocar el servicio. Es la base de la inyección de dependencias y frameworks como Spring."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 04",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 17,
+            "preguntas": [
+              {
+                "id": "f4n-p01",
+                "pregunta": "¿Qué es el acoplamiento entre módulos y por qué interesa minimizarlo?",
+                "opciones": {
+                  "A": "El acoplamiento mide la longitud del código de un módulo; minimizarlo hace los métodos más cortos",
+                  "B": "El grado de interdependencia entre módulos; un alto acoplamiento hace que cambiar uno obligue a cambiar otros, dificultando el mantenimiento y las pruebas",
+                  "C": "El número de parámetros que acepta un método; reducirlo mejora la legibilidad del código",
+                  "D": "El tiempo de comunicación entre módulos en red; minimizarlo mejora el rendimiento de la aplicación"
+                },
+                "correcta": "B",
+                "justificacion": "El acoplamiento mide cuánto dependen los módulos entre sí. Alto acoplamiento: cambiar un módulo rompe otros. Bajo acoplamiento (deseable): cada módulo puede cambiar independientemente. Se consigue mediante interfaces, inyección de dependencias y siguiendo el principio DIP. Complemento de la cohesión: alta cohesión + bajo acoplamiento = buen diseño."
+              },
+              {
+                "id": "f4n-p02",
+                "pregunta": "¿Qué es la programación por contrato (Design by Contract)?",
+                "opciones": {
+                  "A": "Un acuerdo legal entre el equipo de desarrollo y el cliente sobre funcionalidades a entregar y plazos",
+                  "B": "Una metodología ágil donde los sprints se definen como contratos de entrega con el product owner",
+                  "C": "Un enfoque donde cada método especifica precondiciones (lo que exige al llamador), postcondiciones (lo que garantiza al retornar) e invariantes de clase (siempre verdaderas)",
+                  "D": "Un patrón de diseño que separa la interfaz pública de la implementación privada de una clase"
+                },
+                "correcta": "C",
+                "justificacion": "Bertrand Meyer (lenguaje Eiffel) formalizó el diseño por contrato: precondición (qué debe cumplir el llamador antes de invocar), postcondición (qué garantiza el método al retornar), invariante de clase (propiedad siempre verdadera del objeto). Si el llamador cumple la precondición, el método garantiza la postcondición. Java tiene aserciones (assert) para implementarlo."
+              },
+              {
+                "id": "f4n-p03",
+                "pregunta": "¿Qué es la recursión de cola (tail recursion) y qué ventaja tiene?",
+                "opciones": {
+                  "A": "Una recursión que solo funciona con listas enlazadas cuya estructura parte desde la cola del nodo",
+                  "B": "Una llamada recursiva que ocurre justo en la mitad del método, no al principio ni al final",
+                  "C": "Una forma de recursión donde la llamada recursiva es la última operación del método, lo que permite al compilador optimizarla convirtiéndola en iteración y evitando el crecimiento del stack",
+                  "D": "Una técnica que almacena los resultados parciales al final de un array para reutilizarlos después"
+                },
+                "correcta": "C",
+                "justificacion": "En tail recursion, la llamada recursiva es la última instrucción del método (sin operaciones pendientes después). Compiladores que implementan TCO (Tail Call Optimization) pueden convertirla en un bucle, evitando apilar nuevos frames. Haskell y Scala lo hacen; la JVM estándar no garantiza TCO, por lo que en Java puede seguir habiendo StackOverflow con recursión profunda."
+              },
+              {
+                "id": "f4n-p04",
+                "pregunta": "¿Qué diferencia al paso de parámetros por posición del paso por nombre?",
+                "opciones": {
+                  "A": "En el paso por posición los argumentos se pasan en el orden en que se declaran; en el paso por nombre se especifica explícitamente qué parámetro recibe cada valor, ignorando el orden de declaración",
+                  "B": "El paso por nombre es más lento porque requiere búsqueda del parámetro en tiempo de ejecución",
+                  "C": "El paso por posición solo funciona con tipos primitivos; el por nombre con objetos y colecciones",
+                  "D": "No existe diferencia funcional; son simplemente dos sintaxis equivalentes del mismo mecanismo de paso"
+                },
+                "correcta": "A",
+                "justificacion": "El paso por posición (Java, C) vincula cada argumento al parámetro en la misma posición de la declaración. El paso por nombre (Kotlin, Python, Swift) permite especificar crear(nombre='Ana', edad=25) en cualquier orden. Mejora la legibilidad en métodos con muchos parámetros y evita errores al pasar argumentos en orden incorrecto."
+              },
+              {
+                "id": "f4n-p05",
+                "pregunta": "¿Para qué sirve la etiqueta @return en Javadoc?",
+                "opciones": {
+                  "A": "Para indicar que el método puede retornar null en determinadas condiciones de error",
+                  "B": "Para documentar el tipo y significado semántico del valor que devuelve el método",
+                  "C": "Para forzar al compilador a verificar que el método siempre retorna un valor no nulo",
+                  "D": "Para marcar métodos que deben ser sobreescritos obligatoriamente en todas las subclases"
+                },
+                "correcta": "B",
+                "justificacion": "@return en Javadoc describe qué devuelve el método: el tipo (si no es obvio por la firma) y su significado semántico. Ejemplo: @return el índice del elemento encontrado, o -1 si no existe. Junto con @param y @throws forma el contrato documentado del método. Se omite en métodos void ya que no devuelven valor."
+              },
+              {
+                "id": "f4n-p06",
+                "pregunta": "¿Qué establece el principio de separación de interfaces (ISP) de SOLID?",
+                "opciones": {
+                  "A": "Que las interfaces deben separarse de su implementación en archivos de código distintos",
+                  "B": "Que las interfaces deben ser públicas y las clases que las implementan privadas al paquete",
+                  "C": "Que ninguna clase debe depender de interfaces que no usa: mejor muchas interfaces pequeñas y específicas que una grande y general que obligue a implementar métodos irrelevantes",
+                  "D": "Que cada interfaz debe tener exactamente un método para cumplir el principio de interfaz funcional"
+                },
+                "correcta": "C",
+                "justificacion": "ISP dice: no fuerces a las clases a implementar métodos que no usan. Una interfaz grande (Dios) obliga a implementar métodos irrelevantes con cuerpos vacíos o excepciones. La solución es dividirla en interfaces pequeñas y cohesionadas. Ejemplo: Imprimible, Escaneable, Copiable en lugar de una sola interfaz Multifuncion con todos los métodos."
+              },
+              {
+                "id": "f4n-p07",
+                "pregunta": "¿Qué hace la palabra clave 'final' cuando se aplica a un método en Java?",
+                "opciones": {
+                  "A": "Hace que el método solo pueda llamarse una vez por instancia durante todo su ciclo de vida",
+                  "B": "Convierte el método en estático, eliminando la necesidad de instanciar la clase para usarlo",
+                  "C": "Impide que las subclases puedan sobreescribir (override) ese método, garantizando que la implementación no cambie en toda la jerarquía",
+                  "D": "Obliga al compilador a ejecutar el método de forma síncrona siempre en el hilo principal"
+                },
+                "correcta": "C",
+                "justificacion": "Un método final no puede sobreescribirse en ninguna subclase. Se usa para garantizar que el comportamiento no varíe en la jerarquía (seguridad, corrección). Ejemplo: métodos críticos en clases de seguridad o plantillas inmutables. Combinado con class final (que impide heredar) ofrece máxima protección. El compilador puede inlinear llamadas a métodos final."
+              },
+              {
+                "id": "f4n-p08",
+                "pregunta": "¿Qué es un método fábrica (factory method) y cuándo se usa?",
+                "opciones": {
+                  "A": "Un método que fabrica (genera) números aleatorios para inicializar los objetos de la clase",
+                  "B": "Un método static que crea y devuelve instancias de una clase, encapsulando la lógica de construcción y permitiendo devolver subtipos o instancias cacheadas",
+                  "C": "Un constructor sobrecargado que acepta parámetros opcionales mediante la sintaxis varargs",
+                  "D": "Un método que destruye y recrea un objeto cuando su estado interno se vuelve inválido o corrupto"
+                },
+                "correcta": "B",
+                "justificacion": "Un factory method estático encapsula la construcción: Optional.of(), LocalDate.of(), List.of(). Ventajas sobre el constructor: puede tener nombre descriptivo, puede devolver subtipos, puede cachear instancias (Integer.valueOf() cachea -128..127), puede retornar null o implementar lógica compleja de selección de implementación."
+              },
+              {
+                "id": "f4n-p09",
+                "pregunta": "¿Qué establece el principio de sustitución de Liskov (LSP)?",
+                "opciones": {
+                  "A": "Los objetos de una superclase deben poder sustituirse por objetos de sus subclases sin alterar la corrección del programa",
+                  "B": "Las subclases deben sustituir siempre a sus superclases en la declaración de variables locales",
+                  "C": "Los métodos de una interfaz pueden sustituirse por otros con la misma firma en cualquier implementación",
+                  "D": "Las variables de tipo abstracto deben declararse siempre con el tipo concreto de la subclase"
+                },
+                "correcta": "A",
+                "justificacion": "LSP (Barbara Liskov, 1987): si S es subtipo de T, los objetos de T pueden sustituirse por objetos de S sin romper el programa. Una subclase que viola el contrato de la superclase (ej: Square que rompe la invariante de Rectangle setWidth/setHeight) viola LSP. Es fundamental para que el polimorfismo funcione correctamente en la práctica."
+              },
+              {
+                "id": "f4n-p10",
+                "pregunta": "¿Qué son los varargs en Java y cómo se usan?",
+                "opciones": {
+                  "A": "Variables que pueden cambiar su tipo en tiempo de ejecución según el valor que se les asigne",
+                  "B": "Referencias a métodos virtuales que se resuelven en tiempo de ejecución por la JVM",
+                  "C": "Parámetros que permiten pasar un número variable de argumentos del mismo tipo; Java los trata internamente como un array: void suma(int... nums)",
+                  "D": "Variables locales cuyo ámbito varía dinámicamente según el nivel de anidamiento del bloque"
+                },
+                "correcta": "C",
+                "justificacion": "Los varargs (tipo... nombre) permiten que un método acepte cero o más argumentos del mismo tipo. Java los empaqueta automáticamente en un array. Ejemplo: suma(1, 2, 3) o suma(1) o suma(). Deben ser el último parámetro. Se usan en métodos como printf(String format, Object... args) o List.of(E... elements). Internamente son arrays normales."
+              },
+              {
+                "id": "f4n-p11",
+                "pregunta": "¿Qué es la anotación @Override en Java y por qué es recomendable usarla?",
+                "opciones": {
+                  "A": "Obliga al compilador a usar la versión del método de la superclase ignorando completamente la subclase",
+                  "B": "Permite sobreescribir métodos privados de la superclase en cualquier subclase que la extienda",
+                  "C": "Indica al compilador que el método sobreescribe uno de la superclase; el compilador verifica que la firma sea correcta y lanza error si no existe tal método en el padre",
+                  "D": "Convierte automáticamente el método en public aunque estuviera declarado como protected en la subclase"
+                },
+                "correcta": "C",
+                "justificacion": "@Override hace que el compilador verifique que realmente se está sobreescribiendo un método existente en la superclase o interfaz. Sin ella, una firma errónea (typo en el nombre, parámetros distintos) crearía silenciosamente un nuevo método en lugar de sobreescribir, causando un bug difícil de detectar. Es una anotación de comprobación en tiempo de compilación."
+              },
+              {
+                "id": "f4n-p12",
+                "pregunta": "¿Qué es la inyección de dependencias (DI) y qué problema resuelve?",
+                "opciones": {
+                  "A": "Una técnica para inyectar código malicioso en aplicaciones durante las pruebas de seguridad",
+                  "B": "Un mecanismo para inicializar variables estáticas en el momento de carga de la clase por el ClassLoader",
+                  "C": "Pasar las dependencias de una clase desde el exterior (por constructor, setter o parámetro) en lugar de que la propia clase las cree, reduciendo el acoplamiento y facilitando el testing",
+                  "D": "Un proceso automático del Garbage Collector para liberar dependencias circulares atrapadas en el Heap"
+                },
+                "correcta": "C",
+                "justificacion": "DI invierte la creación de dependencias: en lugar de new Repositorio() dentro del servicio, el repositorio se pasa desde fuera. Ventajas: bajo acoplamiento (el servicio depende de la interfaz, no de la implementación), testabilidad (se puede inyectar un mock), flexibilidad (cambiar implementación sin tocar el servicio). Base de frameworks como Spring."
+              },
+              {
+                "id": "f4n-p13",
+                "pregunta": "¿Qué diferencia hay entre un método de instancia y un método estático en cuanto al acceso a datos?",
+                "opciones": {
+                  "A": "Los métodos estáticos son más rápidos porque acceden directamente a la memoria sin pasar por el objeto",
+                  "B": "Los métodos de instancia solo pueden acceder a atributos estáticos; los estáticos a todos los atributos",
+                  "C": "No hay diferencia de acceso; ambos pueden leer y modificar cualquier atributo de la clase sin restricciones",
+                  "D": "Los métodos de instancia acceden a atributos de instancia y estáticos; los estáticos solo a atributos estáticos (no pueden usar 'this' porque no pertenecen a un objeto concreto)"
+                },
+                "correcta": "D",
+                "justificacion": "Los métodos de instancia tienen acceso a this (el objeto actual) y pueden acceder a atributos de instancia y estáticos. Los métodos estáticos no tienen this (no pertenecen a ningún objeto) y solo pueden acceder a atributos estáticos y a parámetros locales. Intentar acceder a un atributo de instancia desde un método estático es error de compilación en Java."
+              },
+              {
+                "id": "f4n-p14",
+                "pregunta": "¿Para qué sirve la etiqueta @throws en Javadoc?",
+                "opciones": {
+                  "A": "Es un modificador de acceso especial para métodos que pueden lanzar excepciones en producción",
+                  "B": "Indica que el método está en fase experimental y puede lanzar errores inesperados sin documentar",
+                  "C": "Genera automáticamente el bloque try-catch en el código cliente que llama al método documentado",
+                  "D": "Documenta qué excepciones puede lanzar el método y bajo qué condiciones; especialmente importante para excepciones checked que el llamador debe gestionar obligatoriamente"
+                },
+                "correcta": "D",
+                "justificacion": "@throws (o @exception) en Javadoc describe las excepciones que puede lanzar un método y las condiciones que las provocan. Es especialmente importante para excepciones checked, que el compilador obliga a gestionar, pero también útil para unchecked importantes. Ejemplo: @throws IllegalArgumentException si el parámetro es negativo."
+              },
+              {
+                "id": "f4n-p15",
+                "pregunta": "¿Qué es el patrón de diseño Template Method?",
+                "opciones": {
+                  "A": "Un patrón que genera código automáticamente a partir de una plantilla de texto con marcadores variables",
+                  "B": "Un patrón que define el esqueleto de un algoritmo en la superclase, dejando que las subclases implementen los pasos específicos sin cambiar la estructura general del algoritmo",
+                  "C": "Un patrón que crea objetos copiando una plantilla (prototipo) existente en memoria",
+                  "D": "Un patrón que proporciona una plantilla vacía de interfaz para que cada clase la rellene como quiera"
+                },
+                "correcta": "B",
+                "justificacion": "Template Method define en la clase base el esqueleto del algoritmo con métodos abstractos (hooks) que las subclases implementan. Ejemplo: clase base Informe con métodos cabecera(), cuerpo(), pie(); las subclases InformeHTML e InformePDF implementan cada parte. El flujo del algoritmo está en la superclase; la variación específica en las subclases."
+              },
+              {
+                "id": "f4n-p16",
+                "pregunta": "¿Cuál es la diferencia entre un Error y una Exception en Java?",
+                "opciones": {
+                  "A": "Error y Exception son sinónimos en Java; solo cambia el nombre por convención histórica del lenguaje",
+                  "B": "Exception representa problemas recuperables en la aplicación; Error representa problemas graves de la JVM (StackOverflowError, OutOfMemoryError) que generalmente no deben capturarse",
+                  "C": "Error solo puede lanzarse desde código nativo JNI; Exception únicamente desde código Java puro",
+                  "D": "Exception es siempre checked y debe capturarse; Error es unchecked y técnicamente nunca puede capturarse"
+                },
+                "correcta": "B",
+                "justificacion": "Ambos extienden Throwable. Exception representa condiciones recuperables: errores de I/O, parsing, lógica de negocio. Error representa fallos graves de la JVM sin recuperación posible: StackOverflowError (stack agotado), OutOfMemoryError (heap agotado). Capturar Errors generalmente es una mala práctica salvo casos muy específicos y justificados."
+              },
+              {
+                "id": "f4n-p17",
+                "pregunta": "¿Qué establece el principio abierto/cerrado (OCP) de SOLID?",
+                "opciones": {
+                  "A": "Las clases deben tener métodos tanto públicos (abiertos) como privados (cerrados) en equilibrio",
+                  "B": "Una clase debe ser accesible desde cualquier paquete (abierta) y no puede eliminarse del proyecto (cerrada)",
+                  "C": "Los constructores deben ser siempre públicos (abiertos) y los destructores privados (cerrados) por diseño",
+                  "D": "Las entidades de software deben estar abiertas para extensión (añadir nuevo comportamiento) pero cerradas para modificación del código existente y ya probado"
+                },
+                "correcta": "D",
+                "justificacion": "OCP (Bertrand Meyer / Robert Martin): añadir nuevas funcionalidades extendiendo (herencia, interfaces, composición) sin modificar el código existente y probado. Reduce el riesgo de introducir bugs en código que ya funciona. Se logra mediante herencia, interfaces y patrones como Strategy o Decorator. Es el principio que más justifica el uso de abstracciones en el diseño."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 05",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 17,
+            "preguntas": [
+              {
+                "id": "f5n-p01",
+                "pregunta": "¿Qué es un TreeSet en Java y cuándo conviene usarlo frente a HashSet?",
+                "opciones": {
+                  "A": "Un Set que permite elementos duplicados ordenados por orden de inserción de forma automática",
+                  "B": "Un Set que almacena los elementos en un árbol rojo-negro, manteniéndolos ordenados según su orden natural o un Comparator, con operaciones O(log n)",
+                  "C": "Un Set que mantiene el orden de inserción usando una lista enlazada interna adicional",
+                  "D": "Un Set que agrupa elementos en cubos (buckets) por su valor hash para acceso O(1) amortizado"
+                },
+                "correcta": "B",
+                "justificacion": "TreeSet implementa NavigableSet usando un árbol rojo-negro: los elementos siempre están ordenados. Operaciones O(log n) vs O(1) de HashSet. Útil cuando se necesita iterar en orden, acceder al primer/último elemento (first(), last()), o a rangos (subSet(), headSet(), tailSet()). Los elementos deben implementar Comparable o proveer un Comparator."
+              },
+              {
+                "id": "f5n-p02",
+                "pregunta": "¿Qué devuelve Map.getOrDefault(clave, valorPorDefecto)?",
+                "opciones": {
+                  "A": "Lanza una excepción si la clave no existe en el mapa en lugar de devolver nulo",
+                  "B": "Devuelve null si la clave no existe en el mapa, ignorando completamente el segundo parámetro",
+                  "C": "Devuelve siempre el valorPorDefecto sin consultar el mapa en ningún caso",
+                  "D": "El valor asociado a la clave si existe; si no existe, devuelve el valorPorDefecto sin modificar el mapa"
+                },
+                "correcta": "D",
+                "justificacion": "getOrDefault(K clave, V defecto) es más seguro que get(clave) porque evita tener que comprobar null. Si la clave está en el mapa devuelve su valor; si no, devuelve defecto sin insertar nada. Es útil para contadores: mapa.getOrDefault(palabra, 0) + 1. Variante que sí inserta el valor por defecto: computeIfAbsent()."
+              },
+              {
+                "id": "f5n-p03",
+                "pregunta": "¿Qué caracteriza a una Queue (cola) como estructura de datos?",
+                "opciones": {
+                  "A": "LIFO: el último elemento añadido es el primero en salir de la estructura",
+                  "B": "Los elementos se acceden por índice numérico en O(1) como en un array normal",
+                  "C": "FIFO: el primer elemento añadido es el primero en ser procesado, como una fila de espera real",
+                  "D": "Los elementos se ordenan automáticamente por su valor al insertarse en la estructura"
+                },
+                "correcta": "C",
+                "justificacion": "Queue sigue FIFO: los elementos entran por un extremo (tail) y salen por el otro (head). Métodos principales: offer() para añadir, poll() para retirar y devolver el primero (o null si vacía), peek() para consultar sin retirar. Implementaciones en Java: LinkedList, ArrayDeque, PriorityQueue (ordena por prioridad, no FIFO estricto)."
+              },
+              {
+                "id": "f5n-p04",
+                "pregunta": "¿Qué hace Collections.shuffle() en Java?",
+                "opciones": {
+                  "A": "Ordena la lista usando un algoritmo de mezcla (merge) optimizado para listas grandes",
+                  "B": "Elimina elementos duplicados de la lista reordenándola para eliminar repeticiones",
+                  "C": "Crea una nueva lista con los elementos de la original en orden aleatorio sin modificar la original",
+                  "D": "Reordena aleatoriamente los elementos de la lista in-place usando el algoritmo Fisher-Yates con un Random"
+                },
+                "correcta": "D",
+                "justificacion": "Collections.shuffle(lista) reordena aleatoriamente los elementos de la lista in-place usando el algoritmo de Fisher-Yates. Se puede pasar un Random con semilla para resultados reproducibles: Collections.shuffle(lista, new Random(42)). Útil para barajar cartas, generar preguntas de test en orden aleatorio, etc."
+              },
+              {
+                "id": "f5n-p05",
+                "pregunta": "¿Qué diferencia a List.of() de new ArrayList() en Java 9+?",
+                "opciones": {
+                  "A": "List.of() crea una lista que acepta null como elemento; ArrayList rechaza null al añadirlo",
+                  "B": "List.of() devuelve una lista inmutable (cualquier intento de modificarla lanza UnsupportedOperationException); ArrayList es mutable y dinámica",
+                  "C": "List.of() solo puede contener tipos primitivos; ArrayList requiere obligatoriamente wrappers",
+                  "D": "No hay diferencia funcional; List.of() es solo una sintaxis abreviada de new ArrayList() con elementos iniciales"
+                },
+                "correcta": "B",
+                "justificacion": "List.of() (Java 9+) devuelve una lista inmutable: cualquier intento de add(), remove() o set() lanza UnsupportedOperationException. Tampoco acepta null. Es más eficiente en memoria que ArrayList para datos que no cambian. ArrayList es mutable y de tamaño dinámico. Para colecciones de solo lectura, List.of() es la opción preferible."
+              },
+              {
+                "id": "f5n-p06",
+                "pregunta": "¿Qué es una PriorityQueue en Java y cómo extrae los elementos?",
+                "opciones": {
+                  "A": "Una cola que extrae siempre el elemento añadido más recientemente siguiendo el orden LIFO",
+                  "B": "Una cola que extrae elementos en el orden en que fueron insertados siguiendo FIFO estricto",
+                  "C": "Una cola que extrae siempre el elemento con mayor prioridad (el mínimo según orden natural o Comparator), no necesariamente en orden de inserción",
+                  "D": "Una cola de tamaño fijo que bloquea la inserción de nuevos elementos cuando está completamente llena"
+                },
+                "correcta": "C",
+                "justificacion": "PriorityQueue implementa un montículo (heap) mínimo: poll() siempre devuelve el elemento menor según el orden natural o el Comparator proporcionado. No garantiza orden al iterar. Útil para algoritmos como Dijkstra (extraer el nodo de menor coste), planificadores de tareas por prioridad. Para máximo, se invierte el Comparator: (a, b) -> b - a."
+              },
+              {
+                "id": "f5n-p07",
+                "pregunta": "¿Qué ofrece la API Stream de Java 8?",
+                "opciones": {
+                  "A": "Una API simplificada para leer y escribir archivos de texto con una cadena de métodos fluida",
+                  "B": "Un tipo de colección que reemplaza a List y Set con mayor rendimiento en todos los casos",
+                  "C": "Una API para procesar colecciones de forma declarativa y funcional con operaciones intermedias (filter, map) y terminales (collect, reduce), con posible ejecución en paralelo",
+                  "D": "Una forma de crear hilos de ejecución paralelos dedicados a operaciones sobre colecciones en múltiples CPU"
+                },
+                "correcta": "C",
+                "justificacion": "La API Stream (java.util.stream) permite procesar colecciones de forma declarativa. Operaciones intermedias (lazy, devuelven otro Stream): filter(), map(), sorted(), distinct(). Terminales (eager, producen resultado): collect(), count(), reduce(), forEach(). Soporta paralelismo con parallelStream(). No modifica la colección original."
+              },
+              {
+                "id": "f5n-p08",
+                "pregunta": "¿Qué hace el método Comparator.comparing() en Java?",
+                "opciones": {
+                  "A": "Compara directamente dos objetos usando su método compareTo() del orden natural definido",
+                  "B": "Crea un Comparator que ordena objetos extrayendo una clave comparable con una función, de forma más legible que una lambda manual equivalente",
+                  "C": "Comprueba si dos colecciones tienen exactamente los mismos elementos en el mismo orden",
+                  "D": "Devuelve el elemento máximo entre dos objetos según su orden natural definido"
+                },
+                "correcta": "B",
+                "justificacion": "Comparator.comparing(Persona::getNombre) crea un Comparator que ordena Personas por nombre. Es más legible que (a, b) -> a.getNombre().compareTo(b.getNombre()). Se puede encadenar: comparing(Persona::getApellido).thenComparing(Persona::getNombre). También existe comparingInt(), comparingDouble() para evitar autoboxing innecesario."
+              },
+              {
+                "id": "f5n-p09",
+                "pregunta": "¿Cuál es la diferencia entre Map.put() y Map.putIfAbsent()?",
+                "opciones": {
+                  "A": "put() solo inserta si la clave no existe; putIfAbsent() sobreescribe siempre el valor existente",
+                  "B": "Son idénticos; putIfAbsent() es solo un alias de put() introducido en Java 8 por conveniencia",
+                  "C": "put() inserta o sobreescribe el valor; putIfAbsent() solo inserta si la clave no existe o su valor actual es null, sin sobreescribir valores ya presentes",
+                  "D": "putIfAbsent() lanza excepción si la clave ya existe en el mapa; put() nunca lanza excepciones"
+                },
+                "correcta": "C",
+                "justificacion": "put(k, v) siempre asocia v a k, sobreescribiendo el valor anterior si existía. putIfAbsent(k, v) solo inserta si k no está en el mapa o su valor es null; si ya existe un valor no null, no lo modifica y devuelve el valor existente. Útil para inicializar entradas sin sobreescribir las ya presentes, como en cachés o contadores iniciales."
+              },
+              {
+                "id": "f5n-p10",
+                "pregunta": "¿Qué hace el método reduce() en la API Stream de Java?",
+                "opciones": {
+                  "A": "Elimina elementos duplicados del stream reduciendo el número total de elementos",
+                  "B": "Filtra el stream quedándose solo con los primeros n elementos especificados",
+                  "C": "Convierte el stream en una colección (List, Set) como operación terminal estándar",
+                  "D": "Una operación terminal que combina todos los elementos del stream en un único valor aplicando una función acumuladora repetidamente: suma, producto, máximo, concatenación"
+                },
+                "correcta": "D",
+                "justificacion": "reduce() aplica una función acumuladora a todos los elementos para producir un resultado: stream.reduce(0, Integer::sum) suma todos. Tiene variantes: con identidad (siempre devuelve valor), sin identidad (devuelve Optional), y con combinador para streams paralelos. Es la operación base de la que derivan sum(), max(), min(), count()."
+              },
+              {
+                "id": "f5n-p11",
+                "pregunta": "¿Qué problema resuelve ConcurrentHashMap frente a HashMap en entornos multihilo?",
+                "opciones": {
+                  "A": "ConcurrentHashMap puede almacenar más elementos gracias a su arquitectura de particiones distribuidas",
+                  "B": "ConcurrentHashMap es más rápido que HashMap incluso en entornos de un único hilo de ejecución",
+                  "C": "HashMap no está sincronizado: el acceso concurrente puede causar corrupción o bucles infinitos; ConcurrentHashMap permite acceso concurrente seguro sin bloquear toda la estructura",
+                  "D": "ConcurrentHashMap acepta null como clave y valor; HashMap no permite ni claves ni valores nulos"
+                },
+                "correcta": "C",
+                "justificacion": "HashMap no es thread-safe: accesos concurrentes simultáneos pueden corromper la estructura interna. ConcurrentHashMap usa segmentación (particiones bloqueadas independientemente) para permitir concurrencia sin bloquear el mapa completo. Mejor rendimiento que Collections.synchronizedMap() en alta concurrencia. No acepta null en claves ni valores."
+              },
+              {
+                "id": "f5n-p12",
+                "pregunta": "¿Qué hace la operación flatMap() en la API Stream?",
+                "opciones": {
+                  "A": "Aplana un Stream de streams en un único Stream continuo, concatenando todos los elementos de los streams internos en uno solo",
+                  "B": "Crea un mapa plano (HashMap) a partir de los elementos del stream usándolos como claves",
+                  "C": "Filtra los elementos nulos del stream dejando únicamente los elementos no nulos presentes",
+                  "D": "Transforma cada elemento en un único valor de tipo diferente, igual que map() pero sin soporte para streams anidados"
+                },
+                "correcta": "A",
+                "justificacion": "flatMap(función) aplica la función a cada elemento (que produce un Stream) y luego 'aplana' todos esos streams en uno solo. Ejemplo: lista de listas de palabras → Stream<List<String>> con map() → Stream<String> con flatMap(). Fundamental cuando se mapea un elemento a cero, uno o varios resultados y se quiere un stream plano sin anidamiento."
+              },
+              {
+                "id": "f5n-p13",
+                "pregunta": "¿Qué es un Deque en Java y qué ventaja ofrece sobre Stack y Queue por separado?",
+                "opciones": {
+                  "A": "Una cola con capacidad limitada que bloquea el hilo cuando está llena o completamente vacía",
+                  "B": "Una lista doblemente enlazada que permite inserción y extracción eficientes por ambos extremos, funcionando tanto como Stack (LIFO) como Queue (FIFO) según cómo se use",
+                  "C": "Una cola de prioridad que ordena los elementos automáticamente por su hashCode interno",
+                  "D": "Una estructura de datos inmutable para almacenar pares clave-valor de forma muy eficiente"
+                },
+                "correcta": "B",
+                "justificacion": "Deque (Double Ended Queue) permite insertar y extraer por ambos extremos (addFirst/addLast, pollFirst/pollLast). Puede usarse como Stack (addFirst/pollFirst = push/pop) o como Queue (addLast/pollFirst = enqueue/dequeue). ArrayDeque es la implementación más eficiente y reemplaza a la clase Stack obsoleta y a LinkedList para estos usos."
+              },
+              {
+                "id": "f5n-p14",
+                "pregunta": "¿Qué diferencia hay entre Iterable e Iterator en Java?",
+                "opciones": {
+                  "A": "Son sinónimos; Iterable es el nombre antiguo de Iterator en versiones anteriores de Java",
+                  "B": "Iterable es la interfaz que debe implementar una colección para poder usarse en for-each; Iterator es el objeto que realiza el recorrido con hasNext() y next()",
+                  "C": "Iterator puede recorrer cualquier estructura de datos; Iterable solo puede recorrer arrays primitivos",
+                  "D": "Iterable garantiza siempre el orden de recorrido; Iterator no garantiza nada sobre el orden"
+                },
+                "correcta": "B",
+                "justificacion": "Iterable<T> tiene un único método: iterator() que devuelve un Iterator<T>. Implementar Iterable permite usar la clase en un for-each. Iterator<T> tiene hasNext(), next() para recorrer y remove() para eliminar. El for-each es azúcar sintáctico: for (T elem : coleccion) es equivalente a usar el Iterator manualmente con while."
+              },
+              {
+                "id": "f5n-p15",
+                "pregunta": "¿Qué hace Collectors.groupingBy() al usar collect() en un Stream?",
+                "opciones": {
+                  "A": "Ordena los elementos del stream agrupándolos por su valor hash para mayor eficiencia",
+                  "B": "Filtra los elementos y los agrupa eliminando los que no cumplen el criterio de clasificación",
+                  "C": "Convierte el stream en un Set eliminando duplicados y agrupando los elementos iguales",
+                  "D": "Agrupa los elementos del stream en un Map según una función clasificadora; cada clave mapea a una List con todos los elementos que comparten ese valor de clasificación"
+                },
+                "correcta": "D",
+                "justificacion": "Collectors.groupingBy(Persona::getCiudad) agrupa personas por ciudad produciendo Map<String, List<Persona>>. Se puede encadenar con downstream collector: groupingBy(Persona::getCiudad, counting()) cuenta personas por ciudad. Es el equivalente Stream del GROUP BY de SQL. Una de las operaciones de agregación más potentes de la API Stream."
+              },
+              {
+                "id": "f5n-p16",
+                "pregunta": "¿Qué garantiza la interfaz Set y qué implementación elegir si importa el orden de inserción?",
+                "opciones": {
+                  "A": "Set garantiza orden ascendente de los elementos; para orden de inserción se usa TreeSet con Comparator",
+                  "B": "Set no garantiza unicidad de elementos; para elementos únicos se usa List con comprobación manual de contains()",
+                  "C": "Set permite duplicados pero los ignora silenciosamente al añadirlos; para orden de inserción se usa HashSet",
+                  "D": "Set garantiza que no hay elementos duplicados; para mantener el orden de inserción se usa LinkedHashSet"
+                },
+                "correcta": "D",
+                "justificacion": "La interfaz Set garantiza unicidad: add() no inserta si el elemento ya existe (según equals/hashCode). HashSet: sin orden garantizado, O(1). LinkedHashSet: mantiene orden de inserción con lista enlazada adicional, O(1). TreeSet: orden natural/Comparator, O(log n). Para iteración predecible sin orden específico: LinkedHashSet."
+              },
+              {
+                "id": "f5n-p17",
+                "pregunta": "¿Qué hace el método Collections.frequency() en Java?",
+                "opciones": {
+                  "A": "Mide la frecuencia de acceso a los elementos de la colección para optimizar el caché interno",
+                  "B": "Ordena la colección por frecuencia de aparición de cada elemento de mayor a menor",
+                  "C": "Devuelve el número de veces que aparece un elemento específico en la colección, usando equals() para la comparación elemento a elemento",
+                  "D": "Calcula la frecuencia relativa de cada elemento como porcentaje del total de elementos"
+                },
+                "correcta": "C",
+                "justificacion": "Collections.frequency(coleccion, elemento) cuenta cuántas veces aparece el elemento en la colección, comparando con equals(). Es O(n) ya que recorre toda la colección. Para colecciones grandes con muchas consultas de frecuencia es mejor construir un Map<E, Integer> de frecuencias una vez y consultarlo en O(1)."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "unidad": "Test unidad 06",
+        "fuentes": {
+          "PROMETEO": {
+            "total_preguntas": 17,
+            "preguntas": [
+              {
+                "id": "f6n-p01",
+                "pregunta": "¿Cuándo conviene usar iteración en lugar de recursión?",
+                "opciones": {
+                  "A": "Cuando el problema tiene una estructura naturalmente jerárquica como árboles o grafos",
+                  "B": "Cuando el problema se puede dividir limpiamente en subproblemas del mismo tipo y tamaño",
+                  "C": "Nunca; la recursión es siempre más clara y eficiente que cualquier solución iterativa equivalente",
+                  "D": "Cuando el nivel de profundidad puede ser muy alto, cuando el rendimiento es crítico, o cuando el lenguaje no optimiza la recursión de cola, para evitar StackOverflow"
+                },
+                "correcta": "D",
+                "justificacion": "La iteración es preferible cuando: la profundidad puede ser grande (riesgo de StackOverflow), el rendimiento es crítico (la iteración evita el overhead de los frames de pila) o la lógica es simple y secuencial. La recursión brilla en árboles, grafos, divide y vencerás y cuando la solución recursiva es mucho más clara que la iterativa."
+              },
+              {
+                "id": "f6n-p02",
+                "pregunta": "¿Qué es el algoritmo de búsqueda binaria y cuál es su requisito fundamental?",
+                "opciones": {
+                  "A": "Busca el elemento recorriendo la colección de dos en dos posiciones para mayor velocidad relativa",
+                  "B": "Divide la colección en dos mitades y busca en ambas simultáneamente en hilos paralelos independientes",
+                  "C": "Compara el elemento buscado con el del centro; descarta la mitad que no puede contenerlo y repite. Requiere que la colección esté ordenada previamente",
+                  "D": "Aplica una función hash al elemento buscado para calcular directamente su posición en la estructura"
+                },
+                "correcta": "C",
+                "justificacion": "La búsqueda binaria compara el objetivo con el elemento central del rango actual: si es igual encontrado; si es menor busca en la mitad izquierda; si es mayor en la derecha. Complejidad O(log n). Requisito absoluto: la colección debe estar ordenada. Sin ordenar, el resultado es incorrecto. En Java: Arrays.binarySearch() y Collections.binarySearch()."
+              },
+              {
+                "id": "f6n-p03",
+                "pregunta": "¿Qué es el Merge Sort y cuáles son sus características principales?",
+                "opciones": {
+                  "A": "Ordena intercambiando elementos adyacentes repetidamente; O(n²) en todos los casos posibles",
+                  "B": "Selecciona el mínimo en cada pasada y lo coloca al principio del subarray; O(n²) siempre",
+                  "C": "Ordena comparando cada elemento con todos los anteriores e insertándolo en su posición; O(n²) promedio",
+                  "D": "Divide recursivamente en mitades, ordena cada mitad y las fusiona; O(n log n) garantizado en todos los casos, estable, pero requiere O(n) de espacio adicional en memoria"
+                },
+                "correcta": "D",
+                "justificacion": "Merge Sort sigue divide y vencerás: divide el array a la mitad recursivamente hasta tener subarrays de 1 elemento, luego fusiona pares de subarrays ordenados en uno mayor. O(n log n) garantizado en mejor, promedio y peor caso. Es estable. El coste es O(n) de memoria extra para el array auxiliar de fusión durante el merge."
+              },
+              {
+                "id": "f6n-p04",
+                "pregunta": "¿Qué es la programación dinámica y cómo se diferencia de la recursión simple?",
+                "opciones": {
+                  "A": "Programación dinámica es otro nombre para la programación orientada a objetos con herencia múltiple",
+                  "B": "Es una técnica que resuelve problemas con subproblemas superpuestos almacenando resultados ya calculados (memoización o tabulación) para evitar recalcularlos, a diferencia de la recursión que los recalcula",
+                  "C": "Es una forma de programar en tiempo real respondiendo dinámicamente a eventos del sistema operativo",
+                  "D": "Es lo mismo que divide y vencerás; solo cambia el nombre según el contexto académico del problema"
+                },
+                "correcta": "B",
+                "justificacion": "La programación dinámica aplica a problemas con subproblemas superpuestos (el mismo subproblema se resuelve múltiples veces en la recursión simple). Soluciones: memoización (top-down: cachear resultados) o tabulación (bottom-up: llenar tabla iterativamente). Ejemplos clásicos: Fibonacci, mochila, camino mínimo, secuencia común más larga."
+              },
+              {
+                "id": "f6n-p05",
+                "pregunta": "¿Qué es Quick Sort y cuál es su caso peor?",
+                "opciones": {
+                  "A": "Ordena fusionando mitades ordenadas; su peor caso es O(n log n) garantizado siempre",
+                  "B": "Ordena seleccionando el mínimo en cada pasada y colocándolo al principio; O(n) en el peor caso",
+                  "C": "Ordena insertando cada elemento en su posición correcta entre los anteriores; O(n log n) promedio",
+                  "D": "Elige un pivote, particiona el array en menores y mayores, ordena recursivamente cada parte; peor caso O(n²) cuando el pivote es siempre el mínimo o el máximo del subarray"
+                },
+                "correcta": "D",
+                "justificacion": "Quick Sort elige un pivote y reordena: menores al pivote a la izquierda, mayores a la derecha. Luego ordena recursivamente cada parte. Caso promedio O(n log n), muy rápido en la práctica. Peor caso O(n²) cuando el pivote es siempre el extremo (array ya ordenado con pivote=primero). El Dual-Pivot Quicksort de Java mitiga este problema."
+              },
+              {
+                "id": "f6n-p06",
+                "pregunta": "¿Qué es una función lambda en Java y desde qué versión está disponible?",
+                "opciones": {
+                  "A": "Una clase anónima con nombre generado automáticamente por el compilador de Java",
+                  "B": "Un método estático que puede pasarse como argumento a otros métodos directamente",
+                  "C": "Una expresión que representa una función anónima (sin nombre) que implementa una interfaz funcional; disponible desde Java 8. Sintaxis: (parámetros) -> cuerpo",
+                  "D": "Una anotación que convierte automáticamente cualquier método en una expresión funcional reutilizable"
+                },
+                "correcta": "C",
+                "justificacion": "Las lambdas (Java 8+) permiten tratar comportamiento como datos. Sintaxis: (x) -> x * 2 o (x, y) -> x + y. Implementan interfaces funcionales (exactamente un método abstracto): Runnable, Comparator, Predicate, Function, Consumer, Supplier. Son la base de la API Stream y del estilo funcional en Java moderno."
+              },
+              {
+                "id": "f6n-p07",
+                "pregunta": "¿Qué es una referencia a método (method reference) en Java 8?",
+                "opciones": {
+                  "A": "Una variable que guarda la dirección de memoria donde está almacenado el bytecode del método",
+                  "B": "Una forma de invocar un método sin pasar por el objeto que lo contiene directamente",
+                  "C": "Una anotación que permite llamar a métodos privados desde clases externas sin reflexión",
+                  "D": "Una sintaxis abreviada para lambdas que simplemente llaman a un método existente: Clase::metodo o instancia::metodo, como System.out::println o String::toUpperCase"
+                },
+                "correcta": "D",
+                "justificacion": "Las referencias a método son azúcar sintáctico para lambdas que llaman a un método existente. Tipos: estático (Integer::parseInt), de instancia de tipo (String::toUpperCase → s -> s.toUpperCase()), de instancia específica (miObj::metodo), y de constructor (Persona::new). Son más concisas y legibles que la lambda equivalente escrita manualmente."
+              },
+              {
+                "id": "f6n-p08",
+                "pregunta": "¿Qué es el Bubble Sort y por qué raramente se usa en producción?",
+                "opciones": {
+                  "A": "Ordena usando un árbol binario de montículo (heap); se evita porque consume demasiada memoria auxiliar",
+                  "B": "Divide el array en mitades y las fusiona ordenadas; se evita porque no es estable en todas las implementaciones",
+                  "C": "Compara elementos adyacentes e intercambia si están en orden incorrecto, repitiendo hasta que no haya intercambios; O(n²) en promedio y peor caso; solo O(n) si ya está ordenado",
+                  "D": "Selecciona el máximo en cada pasada y lo coloca al final del subarray; O(n²) siempre incluso si ya está ordenado"
+                },
+                "correcta": "C",
+                "justificacion": "Bubble Sort compara pares adyacentes e intercambia si están desordenados, 'burbujeando' los mayores hacia el final. Peor y promedio O(n²), ineficiente para datos grandes. Ventaja teórica: O(n) si ya está ordenado con la variante optimizada que detecta la ausencia de intercambios. Se usa principalmente con fines didácticos, no en producción real."
+              },
+              {
+                "id": "f6n-p09",
+                "pregunta": "¿Qué son la notación infija, prefija y postfija en expresiones matemáticas?",
+                "opciones": {
+                  "A": "Tres tipos de bucles para iterar sobre expresiones: infijo para arrays, prefijo para listas, postfijo para árboles",
+                  "B": "Tres niveles de precedencia de operadores: infijo (baja), prefijo (media), postfijo (alta prioridad)",
+                  "C": "Infija coloca el operador entre operandos (2+3); prefija antes (+ 2 3, notación polaca); postfija después (2 3 +, notación polaca inversa, usada en calculadoras de pila)",
+                  "D": "Tres formas de declarar variables: infija en la línea, prefija al inicio del método, postfija al final del bloque"
+                },
+                "correcta": "C",
+                "justificacion": "Infija: el operador va entre los operandos (2+3*4). Prefija (notación polaca): operador antes de los operandos (+ 2 * 3 4). Postfija (RPN): operador después (2 3 4 * +). Las calculadoras HP y los compiladores usan postfija con una pila para evaluar sin necesidad de paréntesis ni reglas de precedencia explícitas."
+              },
+              {
+                "id": "f6n-p10",
+                "pregunta": "¿Qué es un árbol binario de búsqueda (BST) y cuál es su propiedad fundamental?",
+                "opciones": {
+                  "A": "Un árbol donde cada nodo tiene exactamente dos hijos y todos los nodos están siempre al mismo nivel",
+                  "B": "Un árbol donde los nodos se almacenan en orden de inserción sin ninguna propiedad de ordenación adicional",
+                  "C": "Para cada nodo, todos los valores del subárbol izquierdo son menores que el nodo y todos los del subárbol derecho son mayores, permitiendo búsqueda O(log n) en el caso promedio",
+                  "D": "Un árbol que garantiza O(log n) en todas las operaciones mediante rebalanceo automático en cada inserción"
+                },
+                "correcta": "C",
+                "justificacion": "En un BST: nodo.izquierdo < nodo ≤ nodo.derecho. Búsqueda: comparar con la raíz, ir izquierda si menor, derecha si mayor; O(log n) si está equilibrado, O(n) si está degenerado (como una lista). Los árboles autoequilibrados (AVL, Rojo-Negro) garantizan O(log n) siempre. Java's TreeMap/TreeSet usan árbol rojo-negro internamente."
+              },
+              {
+                "id": "f6n-p11",
+                "pregunta": "¿Qué es la búsqueda en anchura (BFS) en grafos y qué garantiza?",
+                "opciones": {
+                  "A": "Explora primero el camino más profundo antes de hacer backtracking; usa una pila (Stack) internamente",
+                  "B": "Explora los nodos en orden de menor coste de arista ponderada; usa una cola de prioridad",
+                  "C": "Asigna pesos a las aristas y encuentra el árbol de expansión mínimo del grafo completo",
+                  "D": "Explora el grafo nivel por nivel desde el nodo origen usando una cola (Queue); garantiza encontrar el camino más corto en número de aristas en grafos no ponderados"
+                },
+                "correcta": "D",
+                "justificacion": "BFS usa una Queue: visita primero todos los vecinos del nodo actual antes de pasar al siguiente nivel. Garantiza el camino más corto en número de aristas (no de peso) en grafos no ponderados. Complejidad O(V+E). DFS usa una Stack y explora en profundidad antes de retroceder, útil para detección de ciclos y ordenación topológica."
+              },
+              {
+                "id": "f6n-p12",
+                "pregunta": "¿Qué es la recursión mutua y cuándo puede ser problemática?",
+                "opciones": {
+                  "A": "Una recursión donde el mismo método se llama a sí mismo más de una vez en la misma invocación",
+                  "B": "Cuando dos o más métodos se llaman mutuamente de forma circular; problemática si no hay caso base alcanzable, causando StackOverflowError igual que la recursión directa infinita",
+                  "C": "Una recursión que usa múltiples hilos simultáneos para explorar diferentes ramas del árbol de llamadas",
+                  "D": "Una técnica donde dos métodos comparten el mismo frame de pila para reducir el uso de memoria del stack"
+                },
+                "correcta": "B",
+                "justificacion": "La recursión mutua ocurre cuando A() llama a B() y B() llama a A(). Ejemplo clásico: esImpar(n) y esPar(n) que se llaman mutuamente. Es problemática si no existe un caso base que rompa el ciclo, causando StackOverflowError. También puede dificultar la comprensión del código y la detección de bucles infinitos en el flujo de ejecución."
+              },
+              {
+                "id": "f6n-p13",
+                "pregunta": "¿Qué caracteriza a la pila (Stack) como estructura de datos y cuál es su uso típico?",
+                "opciones": {
+                  "A": "FIFO: el primer elemento añadido es el primero en salir; usada en planificación de procesos del SO",
+                  "B": "Acceso por índice en O(1); usada principalmente para ordenación eficiente de elementos",
+                  "C": "LIFO: el último elemento añadido es el primero en salir; usada para gestión de llamadas recursivas, evaluación de expresiones, historial de navegación y operación deshacer",
+                  "D": "Acceso por clave hash en O(1); usada para búsqueda rápida de elementos por nombre o identificador"
+                },
+                "correcta": "C",
+                "justificacion": "Stack (LIFO - Last In First Out): push() añade arriba, pop() retira el tope. Usos: la JVM usa el Call Stack para gestionar llamadas a métodos; evaluación de expresiones postfijas; algoritmos DFS; implementación de deshacer/rehacer; validación de paréntesis balanceados. En Java, ArrayDeque es preferible a la clase Stack que extiende Vector (obsoleta)."
+              },
+              {
+                "id": "f6n-p14",
+                "pregunta": "¿Qué es la tabulación en programación dinámica y en qué se diferencia de la memoización?",
+                "opciones": {
+                  "A": "Tabulación es top-down con recursión y caché; memoización es bottom-up con iteración y tabla",
+                  "B": "Son exactamente lo mismo; tabulación es el término académico y memoización el término práctico",
+                  "C": "Tabulación llena una tabla de resultados de forma iterativa (bottom-up), comenzando desde los casos base; memoización es top-down con recursión y caché de resultados ya calculados",
+                  "D": "Tabulación usa arrays; memoización usa HashMaps exclusivamente. No hay diferencia algorítmica entre ambas"
+                },
+                "correcta": "C",
+                "justificacion": "Memoización (top-down): se parte del problema completo, se recursa y se cachean resultados en un mapa. Tabulación (bottom-up): se parte de los casos base y se rellena iterativamente una tabla hasta el resultado final. La tabulación evita el overhead de la recursión y el riesgo de StackOverflow. Ambos tienen la misma complejidad temporal asintótica."
+              },
+              {
+                "id": "f6n-p15",
+                "pregunta": "¿Qué es la complejidad amortizada en el análisis de algoritmos?",
+                "opciones": {
+                  "A": "El coste promedio de un algoritmo sobre todas las posibles entradas de tamaño n con distribución uniforme",
+                  "B": "La complejidad del caso peor dividida entre el número de operaciones para simplificar el análisis matemático",
+                  "C": "Una estimación aproximada que se usa cuando no se puede calcular la complejidad exacta de forma cerrada",
+                  "D": "El coste promedio por operación en una secuencia de operaciones, donde las costosas se compensan con las baratas; ejemplo: ArrayList.add() es O(1) amortizado aunque ocasionalmente sea O(n) al redimensionar"
+                },
+                "correcta": "D",
+                "justificacion": "El análisis amortizado considera el coste total de n operaciones dividido entre n. ArrayList.add() normalmente es O(1) pero cuando el array interno está lleno duplica su capacidad (O(n)). Esto ocurre tan raramente que el coste amortizado sigue siendo O(1). Métodos de análisis amortizado: agregado, contabilidad (créditos), potencial."
+              },
+              {
+                "id": "f6n-p16",
+                "pregunta": "¿Qué es la búsqueda en profundidad (DFS) y qué estructura de datos utiliza?",
+                "opciones": {
+                  "A": "Explora el grafo nivel por nivel desde el nodo origen; usa una Queue (cola) internamente",
+                  "B": "Explora primero en profundidad siguiendo un camino hasta el final antes de retroceder (backtracking); usa una Stack, implícitamente la pila de llamadas recursivas o explícitamente una Stack",
+                  "C": "Asigna pesos a las aristas para encontrar el camino más corto ponderado; usa una PriorityQueue",
+                  "D": "Busca en orden alfabético de los nodos del grafo; usa un TreeSet para mantener el orden lexicográfico"
+                },
+                "correcta": "B",
+                "justificacion": "DFS explora tan profundo como sea posible siguiendo un camino antes de retroceder. Implementación recursiva usa implícitamente la pila de llamadas. Implementación iterativa usa una Stack explícita. Usos: detección de ciclos, ordenación topológica, componentes conexas, resolución de laberintos. Complejidad O(V+E) igual que BFS."
+              },
+              {
+                "id": "f6n-p17",
+                "pregunta": "¿Qué es el Selection Sort y cuál es su principal desventaja frente a otros algoritmos?",
+                "opciones": {
+                  "A": "Ordena fusionando mitades ordenadas; su desventaja es que necesita espacio extra O(n) en memoria",
+                  "B": "Ordena comparando elementos adyacentes; su desventaja es que no puede detectar cuando ya está ordenado",
+                  "C": "Ordena insertando cada elemento en su posición correcta entre los anteriores; O(n²) siempre sin mejora",
+                  "D": "Selecciona el mínimo del subarray no ordenado y lo coloca al inicio en cada pasada; su principal desventaja es O(n²) en todos los casos incluso si el array ya está completamente ordenado, sin optimización posible"
+                },
+                "correcta": "D",
+                "justificacion": "Selection Sort divide el array en parte ordenada (izquierda) y no ordenada (derecha). En cada pasada encuentra el mínimo del lado derecho y lo intercambia con el primer elemento de ese lado. Siempre hace n(n-1)/2 comparaciones: O(n²) en mejor, promedio y peor caso. No puede detectar que el array ya está ordenado. Su ventaja es el número mínimo de intercambios: O(n)."
+              }
+            ]
+          }
+        }
       }
     ]
-  }     
+  }
 ]
